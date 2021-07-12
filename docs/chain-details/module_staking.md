@@ -109,7 +109,7 @@ $ chain-maind query staking delegation [delegator-addr] [validator-addr] --outpu
       "shares": "[delegator_shares]"
     },
     "balance": {
-      "denom": "basecro",
+      "denom": "aphoton",
       "amount": "[delegator_balance]"
     }
   }
@@ -131,7 +131,7 @@ $ chain-maind query staking delegations-to [validator-addr] --output json  | jq
           "shares": "[delegator_shares]"
         },
         "balance": {
-          "denom": "basecro",
+          "denom": "aphoton",
           "amount": "[delegator_balance_1]"
         }
       },
@@ -142,7 +142,7 @@ $ chain-maind query staking delegations-to [validator-addr] --output json  | jq
           "shares": "[delegator_shares-2]"
         },
         "balance": {
-          "denom": "basecro",
+          "denom": "aphoton",
           "amount": "[delegator_balance_2]"
         }
       }
@@ -250,7 +250,7 @@ $ chain-maind query staking params --output json | jq
     "max_validators": 100,
     "max_entries": 7,
     "historical_entries": 100,
-    "bond_denom": "basecro"
+    "bond_denom": "aphoton"
   }
 ```
 
@@ -266,7 +266,7 @@ The following tables show overall effects on different configurations of the sta
 | Higher               | N/A          | More historical entries to persist | More entries for either unbonding delegation or redelegation  |
 | Lower                | N/A          | Less historical entries to persist | Fewer entries for either unbonding delegation or redelegation |
 | Constraints          | N/A          | Value has to be positive           | Value has to be a positive                                    |
-| Sample configuration | `basecro`    | `100` (50%)                        | `7`                                                           |
+| Sample configuration | `aphoton`    | `100` (50%)                        | `7`                                                           |
 
 ---
 

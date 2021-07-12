@@ -131,7 +131,7 @@ $ chain-maind query gov proposals -o json | jq
         "deposit_end_time": "2020-10-15T22:05:49.996956080Z",
         "total_deposit": [
           {
-            "denom": "basecro",
+            "denom": "aphoton",
             "amount": "100000000000"
           }
         ],
@@ -175,7 +175,7 @@ $ chain-maind query gov params --output json | jq
     "deposit_params": {
       "min_deposit": [
         {
-          "denom": "basecro",
+          "denom": "aphoton",
           "amount": "10000000"
         }
       ],

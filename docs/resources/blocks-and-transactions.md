@@ -217,12 +217,12 @@ This is commonly seen in `staking` module but may appear in other module as well
 
 ```json
 {
-  "denom": "basecro",
+  "denom": "aphoton",
   "amount": "10000"
 }
 ```
 
-where `denom` is the asset type and `amount` is the amount and `basecro` is the basic unit of CRO token (where 10^8 `basecro` = 1 cro)
+where `denom` is the asset type and `amount` is the amount and `aphoton` is the basic unit of CRO token (where 10^8 `aphoton` = 1 cro)
 
 Note that the `amount` is always in string for precision accuracy. Please make sure your language is capable to handle big integer number.It is highly recommended to use library similar to [bignumber.js](https://mikemcl.github.io/bignumber.js/) in your language to handle the `amount`.
 
@@ -234,14 +234,14 @@ Note that the `amount` is always in string for precision accuracy. Please make s
 
 This is commonly seen in most message types. It represents a list of tokens.
 
-At the time of writing there will only be a single entry in this array because `basecro` (or `basetcro` in Croeseid Testnet) is the only supported asset on Crypto.org Chain. However, after IBC transfer and other coins issuance methods are enabled, there will be more asset types, the coin source tracing and their denomination can be found [here](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-001-coin-source-tracing.md)
+At the time of writing there will only be a single entry in this array because `aphoton` (or `basetcro` in Croeseid Testnet) is the only supported asset on Crypto.org Chain. However, after IBC transfer and other coins issuance methods are enabled, there will be more asset types, the coin source tracing and their denomination can be found [here](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-001-coin-source-tracing.md)
 
 **Example**:
 
 ```json
 [
   {
-    "denom": "basecro",
+    "denom": "aphoton",
     "amount": "10000"
   },
   {
@@ -262,7 +262,7 @@ This is commonly seen in events' attributes of block and transaction.
 ```json
 {
   "key": "amount",
-  "value": "1234basecro,5678apple"
+  "value": "1234aphoton,5678apple"
 }
 ```
 
@@ -705,7 +705,7 @@ There may be multiple auto rewards withdrawals happen. In such a case, the `tran
     },
     {
       "key": "amount",
-      "value": "30763basecro"
+      "value": "30763aphoton"
     },
     {
       "key": "recipient",
@@ -717,7 +717,7 @@ There may be multiple auto rewards withdrawals happen. In such a case, the `tran
     },
     {
       "key": "amount",
-      "value": "6881basecro"
+      "value": "6881aphoton"
     }
   ]
 }
@@ -1025,14 +1025,14 @@ Example of Community Pool Spend Proposal tranaction:
             "recipient": "cro1kkqxv3szgh099xezt7y38t5anqzue4s3fhp2tm",
             "amount": [
               {
-                "denom": "basecro",
+                "denom": "aphoton",
                 "amount": "30000"
               }
             ]
           },
           "initial_deposit": [
             {
-              "denom": "basecro",
+              "denom": "aphoton",
               "amount": "20000"
             }
           ],
@@ -1062,7 +1062,7 @@ Example of Community Pool Spend Proposal tranaction:
       "fee": {
         "amount": [
           {
-            "denom": "basecro",
+            "denom": "aphoton",
             "amount": "5000"
           }
         ],
@@ -1081,7 +1081,7 @@ Example of Community Pool Spend Proposal tranaction:
     "codespace": "",
     "code": 0,
     "data": "0A150A0F7375626D69745F70726F706F73616C12020801",
-    "raw_log": "[{\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"submit_proposal\"},{\"key\":\"sender\",\"value\":\"cro1nk4rq3q46ltgjghxz80hy385p9uj0tf58apkcd\"},{\"key\":\"module\",\"value\":\"governance\"},{\"key\":\"sender\",\"value\":\"cro1nk4rq3q46ltgjghxz80hy385p9uj0tf58apkcd\"}]},{\"type\":\"proposal_deposit\",\"attributes\":[{\"key\":\"amount\",\"value\":\"20000basecro\"},{\"key\":\"proposal_id\",\"value\":\"1\"}]},{\"type\":\"submit_proposal\",\"attributes\":[{\"key\":\"proposal_id\",\"value\":\"1\"},{\"key\":\"proposal_type\",\"value\":\"CommunityPoolSpend\"},{\"key\":\"voting_period_start\",\"value\":\"1\"}]},{\"type\":\"transfer\",\"attributes\":[{\"key\":\"recipient\",\"value\":\"cro10d07y265gmmuvt4z0w9aw880jnsr700jzemu2z\"},{\"key\":\"sender\",\"value\":\"cro1nk4rq3q46ltgjghxz80hy385p9uj0tf58apkcd\"},{\"key\":\"amount\",\"value\":\"20000basecro\"}]}]}]",
+    "raw_log": "[{\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"submit_proposal\"},{\"key\":\"sender\",\"value\":\"cro1nk4rq3q46ltgjghxz80hy385p9uj0tf58apkcd\"},{\"key\":\"module\",\"value\":\"governance\"},{\"key\":\"sender\",\"value\":\"cro1nk4rq3q46ltgjghxz80hy385p9uj0tf58apkcd\"}]},{\"type\":\"proposal_deposit\",\"attributes\":[{\"key\":\"amount\",\"value\":\"20000aphoton\"},{\"key\":\"proposal_id\",\"value\":\"1\"}]},{\"type\":\"submit_proposal\",\"attributes\":[{\"key\":\"proposal_id\",\"value\":\"1\"},{\"key\":\"proposal_type\",\"value\":\"CommunityPoolSpend\"},{\"key\":\"voting_period_start\",\"value\":\"1\"}]},{\"type\":\"transfer\",\"attributes\":[{\"key\":\"recipient\",\"value\":\"cro10d07y265gmmuvt4z0w9aw880jnsr700jzemu2z\"},{\"key\":\"sender\",\"value\":\"cro1nk4rq3q46ltgjghxz80hy385p9uj0tf58apkcd\"},{\"key\":\"amount\",\"value\":\"20000aphoton\"}]}]}]",
     "logs": [
       {
         "msg_index": 0,
@@ -1113,7 +1113,7 @@ Example of Community Pool Spend Proposal tranaction:
             "attributes": [
               {
                 "key": "amount",
-                "value": "20000basecro"
+                "value": "20000aphoton"
               },
               {
                 "key": "proposal_id",
@@ -1151,7 +1151,7 @@ Example of Community Pool Spend Proposal tranaction:
               },
               {
                 "key": "amount",
-                "value": "20000basecro"
+                "value": "20000aphoton"
               }
             ]
           }
@@ -1174,14 +1174,14 @@ Example of Community Pool Spend Proposal tranaction:
               "recipient": "cro1kkqxv3szgh099xezt7y38t5anqzue4s3fhp2tm",
               "amount": [
                 {
-                  "denom": "basecro",
+                  "denom": "aphoton",
                   "amount": "30000"
                 }
               ]
             },
             "initial_deposit": [
               {
-                "denom": "basecro",
+                "denom": "aphoton",
                 "amount": "20000"
               }
             ],
@@ -1211,7 +1211,7 @@ Example of Community Pool Spend Proposal tranaction:
         "fee": {
           "amount": [
             {
-              "denom": "basecro",
+              "denom": "aphoton",
               "amount": "5000"
             }
           ],
@@ -1268,7 +1268,7 @@ Example of Block Results API when Community Pool Spend Proposal Funds is Release
           },
           {
             "key": "amount",
-            "value": "20000basecro",
+            "value": "20000aphoton",
             "index": true
           }
         ]
@@ -1298,7 +1298,7 @@ Example of Block Results API when Community Pool Spend Proposal Funds is Release
           },
           {
             "key": "amount",
-            "value": "30000basecro",
+            "value": "30000aphoton",
             "index": true
           }
         ]
@@ -1437,7 +1437,7 @@ Note that there may be multiple depositors of a proposal, so the event may appea
       },
       {
         "key": "amount",
-        "value": "1000000000basecro",
+        "value": "1000000000aphoton",
         "index": true
       }
     ]
@@ -1457,7 +1457,7 @@ Note that there may be multiple depositors of a proposal, so the event may appea
       },
       {
         "key": "amount",
-        "value": "2000000000000basecro",
+        "value": "2000000000000aphoton",
         "index": true
       }
     ]

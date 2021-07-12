@@ -41,7 +41,7 @@ $ chain-maind query bank balances <address> --output json | jq
     {
     "balances": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[token_balance]"
         }
     ],
@@ -61,7 +61,7 @@ $ chain-maind query bank total --output json | jq
     {
     "supply": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -75,5 +75,5 @@ $ chain-maind query bank total --output json | jq
 
 | Key                  | Type          | Example                              |
 | -------------------- | ------------- | ------------------------------------ |
-| `SendEnabled`        | []SendEnabled | [{denom: "basecro", enabled: true }] |
+| `SendEnabled`        | []SendEnabled | [{denom: "aphoton", enabled: true }] |
 | `DefaultSendEnabled` | bool          | true                                 |

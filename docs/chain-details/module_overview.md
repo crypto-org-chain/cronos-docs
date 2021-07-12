@@ -57,7 +57,7 @@ $ chain-maind query bank balances <address> --output json | jq
     {
     "balances": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[token_balance]"
         }
     ],
@@ -77,7 +77,7 @@ $ chain-maind query bank total --output json | jq
     {
     "supply": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -91,7 +91,7 @@ $ chain-maind query bank total --output json | jq
 
 | Key                  | Type          | Example                              |
 | -------------------- | ------------- | ------------------------------------ |
-| `SendEnabled`        | []SendEnabled | [{denom: "basecro", enabled: true }] |
+| `SendEnabled`        | []SendEnabled | [{denom: "aphoton", enabled: true }] |
 | `DefaultSendEnabled` | bool          | true                                 |
 
 ## `distribution`
@@ -354,7 +354,7 @@ $ chain-maind query gov proposals -o json | jq
         "deposit_end_time": "2020-10-15T22:05:49.996956080Z",
         "total_deposit": [
           {
-            "denom": "basecro",
+            "denom": "aphoton",
             "amount": "100000000000"
           }
         ],
@@ -398,7 +398,7 @@ $ chain-maind query gov params --output json | jq
     "deposit_params": {
       "min_deposit": [
         {
-          "denom": "basecro",
+          "denom": "aphoton",
           "amount": "10000000"
         }
       ],
@@ -464,7 +464,7 @@ We can query the current minting annual provisions value, for example:
   109573801550200370
 ```
 
-implies that the current minting annual provisions will be `109573801550200370` basecro ( i.e. `1,095,738,015` cro)
+implies that the current minting annual provisions will be `109573801550200370` aphoton ( i.e. `1,095,738,015` cro)
 
 #### `query mint inflation` - Query the current minting inflation value
 
@@ -485,7 +485,7 @@ We can query the current query parameters by
 $ chain-maind query mint params --output json | jq
 
   {
-    "mint_denom": "basecro",
+    "mint_denom": "aphoton",
     "inflation_rate_change": "0.013000000000000000",
     "inflation_max": "0.020000000000000000",
     "inflation_min": "0.007000000000000000",
@@ -506,7 +506,7 @@ The following tables show overall effects on different configurations of the min
 | Higher               | More expected blocks per year      | Higher target bonding ratio          | N/A          |
 | Lower                | Less expected blocks per year      | Lower target bonding ratio           | N/A          |
 | Constraints          | Value has to be a positive integer | Value has to be less or equal to `1` | N/A          |
-| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `basecro`    |
+| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `aphoton`    |
 
 |                      | `inflation_max`                       | `inflation_min`                      | `inflation_rate_change`                       |
 | -------------------- | ------------------------------------- | ------------------------------------ | --------------------------------------------- |
@@ -779,7 +779,7 @@ $ chain-maind query chain-maind query staking delegation [delegator-addr] [valid
       "shares": "[delegator_shares]"
     },
     "balance": {
-      "denom": "basecro",
+      "denom": "aphoton",
       "amount": "[delegator_balance]"
     }
   }
@@ -801,7 +801,7 @@ $ chain-maind query staking delegations-to [validator-addr] --output json  | jq
           "shares": "[delegator_shares]"
         },
         "balance": {
-          "denom": "basecro",
+          "denom": "aphoton",
           "amount": "[delegator_balance_1]"
         }
       },
@@ -812,7 +812,7 @@ $ chain-maind query staking delegations-to [validator-addr] --output json  | jq
           "shares": "[delegator_shares-2]"
         },
         "balance": {
-          "denom": "basecro",
+          "denom": "aphoton",
           "amount": "[delegator_balance_2]"
         }
       }
@@ -920,7 +920,7 @@ $ chain-maind query staking params --output json | jq
     "max_validators": 100,
     "max_entries": 7,
     "historical_entries": 100,
-    "bond_denom": "basecro"
+    "bond_denom": "aphoton"
   }
 ```
 
@@ -936,7 +936,7 @@ The following tables show overall effects on different configurations of the sta
 | Higher               | N/A          | More historical entries to persist | More entries for either unbonding delegation or redelegation  |
 | Lower                | N/A          | Less historical entries to persist | Fewer entries for either unbonding delegation or redelegation |
 | Constraints          | N/A          | Value has to be positive           | Value has to be a positive                                    |
-| Sample configuration | `basecro`    | `100` (50%)                        | `7`                                                           |
+| Sample configuration | `aphoton`    | `100` (50%)                        | `7`                                                           |
 
 ---
 
@@ -968,7 +968,7 @@ $ chain-maind query supply total
     {
     "supply": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -984,7 +984,7 @@ $ chain-maind query supply total
     {
     "supply": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[total_circulating_amount]"
         }
     ]

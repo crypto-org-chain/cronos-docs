@@ -58,7 +58,7 @@ Once we finish with the configuration, we are ready to start the chain: in the r
 $ ./init.sh
 ```
 
-Blocks are now being generated! You can view the blockchain data by the rpc port [http://localhost:26657/](http://localhost:26657/).
+Blocks are now being generated! You can verify and visit the rpc port [http://localhost:26657/](http://localhost:26657/) to view the blockchain data.
 
 ## Interact with the chain
 

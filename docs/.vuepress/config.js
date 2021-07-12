@@ -25,21 +25,18 @@ module.exports = {
             link: "/getting-started/croeseid-testnet"
           },
           {
-            text: "Token Migration",
+            text: "Local network deployment",
             link: "/getting-started/local-devnet"
           },
-          {
-            text: "NFT",
-            link: "/getting-started/nft-guide"
-          },
-          {
-              text: "Block Explorer",
-              link: "https://crypto.org/explorer"
-          },
-          {
-            text: "Cronos Testnet Faucet",
-            link: "https://crypto.org/faucet"
-          }
+//          {
+//              text: "Block Explorer",
+//              link: "https://crypto.org/explorer"
+//          },
+
+//          {
+//            text: "Cronos Testnet Faucet",
+//              link: "https://crypto.org/faucet"
+//            text}
         ]
       },
       {
@@ -113,19 +110,9 @@ module.exports = {
     sidebar: {
       "/getting-started/": [
         "",
-        "mainnet",
-        "mainnet_validator",
-        "security-checklist.md",
-        "croeseid-testnet",
-        "aws-1click",
-        "azure-1click",
-        "croeseid-testnet-nix",
         "local-devnet",
-        "advanced-tmkms-integration",
-        "token-migration",
-        "nft-guide"
-        // "notes-on-production-deployment",
-//        "notes-on-performance"
+        "security-checklist.md",
+        "croeseid-testnet"
       ],
       "/chain-details/": [
         "introduction",
@@ -137,13 +124,7 @@ module.exports = {
         "govprocess"
       ],
       "/wallets/": [
-        "cli",
-        "ledger",
-        "ledger_desktop_wallet",
-        "keplr_ledger_guide",
-        "keplr_IBC_guide",
-        "mainnet-address-generation",
-        "mainnet-address-verification",
+        "cli"
       ],
       "/resources/": [
         "chain-integration",

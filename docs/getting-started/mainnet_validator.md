@@ -149,7 +149,7 @@ Before kick-starting your node, we will have to configure the node so that it co
 - In `~/.chain-maind/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
   ```bash
-  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025basecro"#' ~/.chain-maind/config/app.toml
+  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025aphoton"#' ~/.chain-maind/config/app.toml
   ```
 
 
@@ -273,7 +273,7 @@ $ ./chain-maind tx staking create-validator \
 --commission-max-change-rate="[The_maximum_change_of_commission_rate_per_day e.g. 0.01 (1%)]" \
 --min-self-delegation="1" \
 --gas 8000000 \
---gas-prices 0.1basecro
+--gas-prices 0.1aphoton
 
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -331,7 +331,7 @@ $ ./chain-maind query bank balances cro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n
 
   balances:
   - amount: "10005471622381693"
-    denom: basecro
+    denom: aphoton
   pagination:
     next_key: null
     total: "0"
@@ -348,7 +348,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 :::details Example: Send 10cro from an address to another.
 
 ```bash
-$ ./chain-maind tx bank send Default cro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10cro --chain-id="crypto-org-chain-mainnet-1" --gas-prices 0.1basecro
+$ ./chain-maind tx bank send Default cro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10cro --chain-id="crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -368,7 +368,7 @@ Note that you can look up validators and their operator address by the validator
 ::: details Example: Delegate funds from `Default` to a validator under the operator address `crocncl16k...edcer`
 
 ```bash
-$ ./chain-maind tx staking delegate crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1basecro
+$ ./chain-maind tx staking delegate crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -385,7 +385,7 @@ On the other hand, we can create an `Unbond` transaction to unbond the delegated
 ::: details Example: Unbond funds from a validator under the address `crocncl16k...edcer`
 
 ```bash
-$ ./chain-maind tx staking unbond crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1basecro
+$ ./chain-maind tx staking unbond crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -409,10 +409,10 @@ We can check distribution outstanding (un-withdrawn) rewards for a validator and
 ::: details Example: Check all outstanding rewards under the operator address `crocncl1...zrf8`
 
 ```bash
-$ ./chain-maind q distribution validator-outstanding-rewards crocncl1kkqxv3szgh099xezt7y38t5anqzue4s326zrf8 --gas-prices 0.1basecro
+$ ./chain-maind q distribution validator-outstanding-rewards crocncl1kkqxv3szgh099xezt7y38t5anqzue4s326zrf8 --gas-prices 0.1aphoton
   rewards:
   - amount: "1920761912.927067330419141688"
-    denom: basecro
+    denom: aphoton
 ```
 :::
 
@@ -423,7 +423,7 @@ We can check distribution outstanding (un-withdrawn) rewards for a validator and
 ::: details Example: Withdraw all outstanding under a delegation address:
 
 ```bash
-$ ./chain-maind tx distribution withdraw-all-rewards --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1basecro
+$ ./chain-maind tx distribution withdraw-all-rewards --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1aphoton
 
 {"body":{"messages":[{"@type":"/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"...}]}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -450,7 +450,7 @@ $ ./chain-maind query staking validators -o json | jq
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./chain-maind tx slashing unjail --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1basecro
+$ ./chain-maind tx slashing unjail --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1aphoton
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y

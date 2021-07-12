@@ -17,7 +17,7 @@ $ chain-maind query supply total
     {
     "supply": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -33,7 +33,7 @@ $ chain-maind query supply total
     {
     "supply": [
         {
-        "denom": "basecro",
+        "denom": "aphoton",
         "amount": "[total_circulating_amount]"
         }
     ]
