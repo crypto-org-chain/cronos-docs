@@ -102,51 +102,8 @@ Users can vote for an active proposal. Valid value of `"option"` field can be `"
 We can check the proposal with optional filters by:
 
 ```json
-$ chain-maind query gov proposals -o json | jq
-
-  {
-    "proposals": [
-      {
-        "proposal_id": "1",
-        "content": {
-          "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
-          "title": "Staking Param Change",
-          "description": "Update max validators",
-          "changes": [
-            {
-              "subspace": "staking",
-              "key": "MaxValidators",
-              "value": "151"
-            }
-          ]
-        },
-        "status": "PROPOSAL_STATUS_PASSED",
-        "final_tally_result": {
-          "yes": "50040000000000",
-          "abstain": "0",
-          "no": "0",
-          "no_with_veto": "0"
-        },
-        "submit_time": "2020-10-15T10:05:49.996956080Z",
-        "deposit_end_time": "2020-10-15T22:05:49.996956080Z",
-        "total_deposit": [
-          {
-            "denom": "aphoton",
-            "amount": "100000000000"
-          }
-        ],
-        "voting_start_time": "2020-10-15T10:14:56.958963929Z",
-        "voting_end_time": "2020-10-15T22:14:56.958963929Z"
-      }
-    ],
-    "pagination": {
-      "next_key": null,
-      "total": "0"
-    }
-  }
+$ ethermintd query gov proposals -o json | jq
 ```
-
-In the above example, there is only one proposal with `"proposal_id": "1"`, with the title: `"Staking Param Change"` that change the `MaxValidators` parameter of the `staking` module to `151`. We can also see that the status of the proposal is `"PROPOSAL_STATUS_PASSED"`, which means that this proposal has bee passed.
 
 #### `query gov proposal [proposal-id]` Query details of a single proposal
 
@@ -161,27 +118,21 @@ We can also the tally of a proposal with a given `"proposal_id"`.
 We can query the current gov parameters by
 
 ```json
-$ chain-maind query gov params --output json | jq
+$ ethermintd query gov params --output json | jq
 
-  {
-    "voting_params": {
-      "voting_period": "43200000000000"
-    },
-    "tally_params": {
-      "quorum": "0.334000000000000000",
-      "threshold": "0.500000000000000000",
-      "veto_threshold": "0.334000000000000000"
-    },
-    "deposit_params": {
-      "min_deposit": [
-        {
-          "denom": "aphoton",
-          "amount": "10000000"
-        }
-      ],
-      "max_deposit_period": "43200000000000"
-    }
-  }
+ethermintd query gov params                
+deposit_params:
+  max_deposit_period: "172800000000000"
+  min_deposit:
+  - amount: "10000000"
+    denom: aphoton
+tally_params:
+  quorum: "0.334000000000000000"
+  threshold: "0.500000000000000000"
+  veto_threshold: "0.334000000000000000"
+voting_params:
+  voting_period: "172800000000000"
+
 ```
 
 ### Appendix
