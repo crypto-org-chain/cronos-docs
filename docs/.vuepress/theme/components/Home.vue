@@ -7,31 +7,36 @@
           :src="$withBase('/logo-icon-white.svg')"
           alt="logo-icon-white"
         />
-        <p class="description">Welcome to</p>
-        <h1 v-if="data.heroText !== null" id="main-title">
-          Crypto.org Chain Documentation
-        </h1>
+        <h1 id="main-title">CRONOS</h1>
+        <div class="description">
+          The blockchain bridged with the Crypto.org chain to empower and scale decentralised applications
+        </div>
         <p class="action" v-if="data.actionText && data.actionLink">
           <NavLink class="action-button" :item="actionLink" />
         </p>
       </header>
 
 
-      <div class="signup-newsletter">
+      <div class="introduction">
+        <div class="introduction-headline">
+          Testnet is launching soon
+        </div>
         <div class="signup-newsletter-text">
-          Crypto.org Cronos Chain is releasing soon.
-          <br/>
           Sign up to our newsletter to get the latest updates!
+        </div>
+        <div class="introduction-text">
+          For now, you can try out our chain by following the documentation.
         </div>
 
         <div>
           <NavLink class="subscription-button" :item="subscriptionLink" />
+          <NavLink class="readdoc-button" :item="readdocLink" />
         </div>
       </div>
 
 
       <div class="features">
-        <h3>Features</h3>
+        <h3>Why Cronos</h3>
         <div class="row">
           <div class="column">
             <div class="icon">
@@ -102,7 +107,7 @@
               <h3>Developers</h3>
               <p>View our latest chain releases and features</p>
               <a href="/releases">
-                Get involved
+                Download latest release
                 <img
                   class="action-arrow"
                   :src="$withBase('/arrow_blue.svg')"
@@ -117,7 +122,7 @@
             </div>
             <div>
               <h3>Partners</h3>
-              <p>Join the others and be part of our Chain project</p>
+              <p>Launch your project on the network or join the network as a validator </p>
               <a href="/partners">
                 Join us
                 <img
@@ -135,7 +140,7 @@
             <div>
               <h3>Community</h3>
               <p>
-                Connect with our developer community and stay tuned with our
+                Connect with our developer community on Discord and stay tuned with our
                 Chain development updates
               </p>
               <a href="/community">
@@ -183,6 +188,13 @@ export default {
         text: this.data.subscriptionText,
       };
     },
+
+    readdocLink() {
+      return {
+        link: this.data.readdocLink,
+        text: this.data.readdocText,
+      };
+    },
   },
 };
 </script>
@@ -223,8 +235,9 @@ export default {
     .description {
       font-size 2.4rem;
       line-height 1.3;
-      margin 1rem 0 0;
+      margin 1rem auto 0;
       font-weight 300;
+      max-width: 800px;
     }
 
     .action-button {
@@ -247,6 +260,7 @@ export default {
   .subscription-button {
     display inline-block;
     font-size 1rem;
+    border: 1px solid #fff;
     color #fff;
     background-color $accentColor;
     padding 0.6rem 2.2rem;
@@ -254,12 +268,37 @@ export default {
     transition background-color 0.1s ease;
     box-sizing border-box;
     border-bottom 1px solid darken($accentColor, 10%);
+    line-height: 1.7;
+    margin-right: 20px;
 
     svg {
       color #fff
     }
 
     &:hover {
+      background-color lighten($accentColor, 10%);
+    }
+  }
+
+  .readdoc-button {
+    display inline-block;
+    font-size 1rem;
+    border: 1px solid $accentColor;
+    color #accentColor;
+    background-color #fff;
+    padding 0.6rem 2.2rem;
+    border-radius 4px;
+    transition background-color 0.1s ease;
+    box-sizing border-box;
+    border-bottom 1px solid darken($accentColor, 10%);
+    line-height: 1.7;
+
+    svg {
+      color #fff
+    }
+
+    &:hover {
+      color #fff
       background-color lighten($accentColor, 10%);
     }
   }
@@ -361,14 +400,24 @@ export default {
     }
   }
 
-  .signup-newsletter {
+  .introduction {
     border-radius 4px
     margin 80px auto
     padding 34px
     text-align center
     font-size 1.5em
 
+    .introduction-headline {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
     .signup-newsletter-text {
+      margin-top 20px
+      line-height 40px
+    }
+
+    .introduction-text {
       margin-bottom 20px
       line-height 40px
     }
@@ -457,6 +506,11 @@ export default {
       }
 
       .subscription-button {
+        font-size 1rem;
+        padding 0.6rem 1.2rem;
+      }
+
+      .readdoc-button {
         font-size 1rem;
         padding 0.6rem 1.2rem;
       }
