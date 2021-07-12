@@ -16,19 +16,6 @@
         </p>
       </header>
 
-<!--
-EVM Compatible - Built on Ethermint that supports any smart contracts, DAOs or Dapps deployed on Ethereum.
-
-Scalable - Cronos can process more transactions per minute than Etherum, which makes it faster, cheaper and greener to execute smart contracts.
-
-Interoperable - IBC protocol that allows blockchains to connect, interoperate and transfer value, interchange assets and services.
-
-Proof of authority (POA) - A more streamlined and scalable consensus protocol while still maintaining security with a range of validators that are run by many different parties.
-
-Open Source - We welcome our community to work together with us and strengthen the CRONOS chain.
-
- -->
-
       <div class="features">
         <h3>Features</h3>
         <div class="row">
