@@ -120,18 +120,25 @@ We can query the current gov parameters by
 ```json
 $ ethermintd query gov params --output json | jq
 
-ethermintd query gov params                
-deposit_params:
-  max_deposit_period: "172800000000000"
-  min_deposit:
-  - amount: "10000000"
-    denom: aphoton
-tally_params:
-  quorum: "0.334000000000000000"
-  threshold: "0.500000000000000000"
-  veto_threshold: "0.334000000000000000"
-voting_params:
-  voting_period: "172800000000000"
+{
+  "voting_params": {
+    "voting_period": "172800000000000"
+  },
+  "tally_params": {
+    "quorum": "0.334000000000000000",
+    "threshold": "0.500000000000000000",
+    "veto_threshold": "0.334000000000000000"
+  },
+  "deposit_params": {
+    "min_deposit": [
+      {
+        "denom": "aphoton",
+        "amount": "10000000"
+      }
+    ],
+    "max_deposit_period": "172800000000000"
+  }
+}
 
 ```
 
