@@ -16,6 +16,20 @@
         </p>
       </header>
 
+
+      <div class="signup-newsletter">
+        <div class="signup-newsletter-text">
+          Crypto.org Cronos Chain is releasing soon.
+          <br/>
+          Sign up to our newsletter to get the latest updates!
+        </div>
+
+        <div>
+          <NavLink class="subscription-button" :item="subscriptionLink" />
+        </div>
+      </div>
+
+
       <div class="features">
         <h3>Features</h3>
         <div class="row">
@@ -134,19 +148,6 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
-
-
-      <div class="signup-newsletter">
-        <div class="signup-newsletter-text">
-          Crypto.org Cronos Chain is releasing soon.
-          <br/>
-          Sign up to our newsletter to get the latest updates!
-        </div>
-
-        <div>
-          <NavLink class="subscription-button" :item="subscriptionLink" />
         </div>
       </div>
 
@@ -362,10 +363,9 @@ export default {
 
   .signup-newsletter {
     border-radius 4px
-    margin 20px auto
+    margin 80px auto
     padding 34px
     text-align center
-    margin-bottom 80px
     font-size 1.5em
 
     .signup-newsletter-text {
