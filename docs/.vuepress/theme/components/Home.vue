@@ -16,6 +16,72 @@
         </p>
       </header>
 
+<!--
+EVM Compatible - Built on Ethermint that supports any smart contracts, DAOs or Dapps deployed on Ethereum.
+
+Scalable - Cronos can process more transactions per minute than Etherum, which makes it faster, cheaper and greener to execute smart contracts.
+
+Interoperable - IBC protocol that allows blockchains to connect, interoperate and transfer value, interchange assets and services.
+
+Proof of authority (POA) - A more streamlined and scalable consensus protocol while still maintaining security with a range of validators that are run by many different parties.
+
+Open Source - We welcome our community to work together with us and strengthen the CRONOS chain.
+
+ -->
+
+      <div class="features">
+        <h3>Features</h3>
+        <div class="row">
+          <div class="column">
+            <div class="icon">
+              <img :src="$withBase('/secure.svg')" alt="secure" />
+            </div>
+            <div class="title">EVM Compatible</div>
+            <p>
+              Built on Ethermint that supports any smart contracts, DAOs or Dapps deployed on Ethereum.
+            </p>
+          </div>
+          <div class="column">
+            <div class="icon">
+              <img :src="$withBase('/instant.svg')" alt="instant" />
+            </div>
+            <div class="title">Scalable</div>
+            <p>
+              Cronos can process more transactions per minute than Etherum, which makes it faster, cheaper and greener to execute smart contracts.
+            </p>
+          </div>
+          <div class="column">
+            <div class="icon">
+              <img :src="$withBase('/permissionless.svg')" alt="permissionless" />
+            </div>
+            <div class="title">Interoperable</div>
+            <p>
+              IBC protocol that allows blockchains to connect, interoperate and transfer value, interchange assets and services.
+            </p>
+          </div>
+          <div class="column">
+            <div class="icon">
+              <img :src="$withBase('/sustainable.svg')" />
+            </div>
+            <div class="title">Proof of authority (POA)</div>
+            <p>
+              A more streamlined and scalable consensus protocol while still maintaining security with a range of validators that are run by many different parties.
+            </p>
+          </div>
+          <div class="column">
+            <div class="icon">
+              <img :src="$withBase('/open-ecosystem.svg')" alt="Open Source" />
+            </div>
+            <div class="title">Open Source</div>
+            <p>
+              We welcome our community to work together with us and strengthen the CRONOS chain.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
 
       <div class="get-involved">
         <div class="left">
@@ -84,31 +150,19 @@
         </div>
       </div>
 
-      <div class="pay-doc">
-        <div class="left">
-          <h1 class="text-header">Crypto.com Pay Documents</h1>
-          <p>
-            Crypto.com Pay Checkout is a feature of Crypto.com Pay, which
-            utilizes Crypto.org Chain as a high performing native blockchain
-            solution
-          </p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://pay-docs.crypto.com/"
-          >
-            Learn more
-            <img
-              class="action-arrow"
-              :src="$withBase('/arrow_blue.svg')"
-              alt="arrow"
-            />
-          </a>
+
+      <div class="signup-newsletter">
+        <div class="signup-newsletter-text">
+          Crypto.org Cronos Chain is releasing soon.
+          <br/>
+          Sign up to our newsletter to get the latest updates!
         </div>
-        <div class="right">
-          <img class="logo" :src="$withBase('/pay_doc.svg')" alt="pay_doc" />
+
+        <div>
+          <NavLink class="subscription-button" :item="subscriptionLink" />
         </div>
       </div>
+
 
       <!-- <Content class="theme-default-content custom" /> -->
     </main>
@@ -132,6 +186,13 @@ export default {
       return {
         link: this.data.actionLink,
         text: this.data.actionText,
+      };
+    },
+
+    subscriptionLink() {
+      return {
+        link: this.data.subscriptionLink,
+        text: this.data.subscriptionText,
       };
     },
   },
@@ -195,6 +256,26 @@ export default {
     }
   }
 
+  .subscription-button {
+    display inline-block;
+    font-size 1rem;
+    color #fff;
+    background-color $accentColor;
+    padding 0.6rem 2.2rem;
+    border-radius 4px;
+    transition background-color 0.1s ease;
+    box-sizing border-box;
+    border-bottom 1px solid darken($accentColor, 10%);
+
+    svg {
+      color #fff
+    }
+
+    &:hover {
+      background-color lighten($accentColor, 10%);
+    }
+  }
+
   .text-header {
     margin-top 5rem
     font-weight 500
@@ -237,6 +318,75 @@ export default {
     }
   }
 
+  .features {
+
+    margin-bottom: 28px
+
+    h3 {
+      margin-top 160px
+      font-weight 600
+      font-size 40px
+      text-align center
+    }
+    .row {
+      display flex
+      flex-wrap wrap
+      padding 48px
+      justify-content center
+
+      .column {
+        flex-basis 28%
+        padding 32px 20px
+        color #0b1426
+
+        .title {
+          margin 16px 0
+          font-weight 500
+          font-size 20px
+        }
+      }
+    }
+
+    // responsive
+    @media (max-width $MQMobileNarrow) {
+      .row {
+        .column {
+          flex-basis 50%
+        }
+      }
+    }
+
+    @media (max-width $MQMobileNarrow) {
+
+      h3 {
+        font-size 22px
+      }
+      .row {
+        padding 16px
+
+        .column {
+          flex-basis 100%
+          padding 32px 32px 32px 0
+          text-align left
+        }
+      }
+    }
+  }
+
+  .signup-newsletter {
+    border-radius 4px
+    margin 20px auto
+    padding 34px
+    text-align center
+    margin-bottom 80px
+    font-size 1.5em
+
+    .signup-newsletter-text {
+      margin-bottom 20px
+      line-height 40px
+    }
+  }
+
   .get-involved {
     display flex
     margin 6rem 3rem
@@ -267,22 +417,6 @@ export default {
       }
     }
   }
-
-  .pay-doc {
-    display flex
-    margin 6rem 6rem 8rem
-    justify-content space-between
-    .left {
-      flex-basis 40%
-      h1 {
-        margin-top 2.5rem
-        text-align left
-      }
-    }
-    .right {
-      margin-right 3rem
-    }
-  }
 }
 
 @media (max-width $MQMobile) {
@@ -299,16 +433,6 @@ export default {
       .left {
         padding 0
         margin-bottom 3rem
-        text-align center
-      }
-    }
-    .pay-doc {
-      margin 2rem 1rem 6rem
-      flex-direction column-reverse
-      .left {
-        flex-basis 100%
-      }
-      .right {
         text-align center
       }
     }
@@ -341,6 +465,11 @@ export default {
       }
 
       .action-button {
+        font-size 1rem;
+        padding 0.6rem 1.2rem;
+      }
+
+      .subscription-button {
         font-size 1rem;
         padding 0.6rem 1.2rem;
       }
