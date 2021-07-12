@@ -1,0 +1,15 @@
+{
+  "name": "demo-doc-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:pdf": "cd docs && vuepress export"
+  },
+  "dependencies": {
+    "vuepress": "1.5.0",
+    "vuepress-plugin-export": "https://github.com/calvinaco/vuepress-plugin-export.git"
+  }
+}

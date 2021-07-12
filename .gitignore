@@ -1,0 +1,10 @@
+# macOS
+*.DS_Store
+
+node_modules
+docs/.vuepress/dist/
+
+# IDE
+.idea
+
+ci/env

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -e
+
+echo 
+echo "npm install 💾"
+echo
+
+npm install 
+
+echo 
+echo "npm run docs:build 🔧🔨🛠"
+echo
+
+npm run docs:build
+
+echo
+echo "done 🎉"
