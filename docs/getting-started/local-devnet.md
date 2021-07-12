@@ -160,7 +160,7 @@ Congratulations! You've successfully transferred tokens to Bob.
 Firstly, we can check the details of the current validator set by the query command of chain-maind, for example:
 
 ```
-$ chain-maind query staking validators -o json | jq
+$ ethermintd query staking validators -o json | jq 
 ```
 
 will result in
@@ -169,10 +169,10 @@ will result in
 {
   "validators": [
     {
-      "operator_address": "ethvaloper1zwm45n5r3u3xcpsd00d3arwzhz7250rtsadv65",
+      "operator_address": "ethvaloper1a303tt49l5uhe87yaneyggly83g7e4unxlc59p",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
-        "key": "fD6cWVYv5rsNbXDw3hVIbB3nd9x57HsTyeMgwmH472U="
+        "key": "T3srVdJb8CXku5GobwHHt37t2iGQ+mRL/bEHK8Zlusw="
       },
       "jailed": false,
       "status": "BOND_STATUS_BONDED",
@@ -193,7 +193,7 @@ will result in
           "max_rate": "0.200000000000000000",
           "max_change_rate": "0.010000000000000000"
         },
-        "update_time": "2021-07-12T12:32:29.400973Z"
+        "update_time": "2021-07-06T16:15:07.061973Z"
       },
       "min_self_delegation": "1"
     }
@@ -203,6 +203,7 @@ will result in
     "total": "0"
   }
 }
+
 ```
 
 then we can see that there are two active validator `localtestnet` at the moment.
