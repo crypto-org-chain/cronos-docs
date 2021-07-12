@@ -1,8 +1,8 @@
 # Croeseid Testnet: Running Nodes
 
-The latest Crypto.org Chain Testnet has been named as **Croeseid**.
+The latest Crypto.org Chain Testnet has been named as **Cronos**.
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Croeseid testnet `testnet-croeseid-3`.
+This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `testnet-croeseid-3`.
 
 ## Pre-requisites
 

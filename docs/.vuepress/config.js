@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Crypto.org Chain",
-  description: "Welcome to Crypto.org Chain's documentation!",
+  title: "Cronos Testnet",
+  description: "Welcome to Cronos Testnet documentation!",
   themeConfig: {
     navbar: true,
     logo: '/chain_doc_nav_logo.svg',
@@ -14,19 +14,19 @@ module.exports = {
       },
 
       {
-        text: "Crypto.org Chain",
+        text: "Cronos Testnet",
         items: [
+//          {
+//            text: "Mainnet",
+//            link: "/getting-started/mainnet"
+//          },
           {
-            text: "Mainnet",
-            link: "/getting-started/mainnet"
-          },
-          {
-            text: "Croeseid Testnet",
+            text: "Cronos Testnet",
             link: "/getting-started/croeseid-testnet"
           },
           {
             text: "Token Migration",
-            link: "/getting-started/token-migration"
+            link: "/getting-started/local-devnet"
           },
           {
             text: "NFT",
@@ -37,7 +37,7 @@ module.exports = {
               link: "https://crypto.org/explorer"
           },
           {
-            text: "Testnet Faucet",
+            text: "Cronos Testnet Faucet",
             link: "https://crypto.org/faucet"
           }
         ]
@@ -92,11 +92,6 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   text: "Download",
-      //   link: "https://crypto-com.github.io/Crypto.com_Chain.pdf"
-      // }
-
         {
             text: "Resources",
             items: [
