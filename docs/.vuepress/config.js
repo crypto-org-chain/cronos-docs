@@ -28,6 +28,10 @@ module.exports = {
             text: "Local network deployment",
             link: "/getting-started/local-devnet"
           },
+          {
+            text: "Deploy Smart Contract at Cronos",
+            link: "/getting-started/cronos-smart-contract"
+          },
 //          {
 //              text: "Block Explorer",
 //              link: "https://crypto.org/explorer"
@@ -112,7 +116,8 @@ module.exports = {
         "",
         "local-devnet",
         "security-checklist.md",
-        "croeseid-testnet"
+        "croeseid-testnet",
+        "cronos-smart-contract"
       ],
       "/chain-details/": [
         "introduction",
