@@ -5,7 +5,7 @@ In the following step-by-step guide, you will learn how to use the Metamask chro
 
 First of all we would need to connect the metamask with the Cronos testnet network: 
 
-Under metamask setting, choose **"Networks"**
+Hit the my account button in the top right corner, under **"Settings"**, select **"Networks"** 
 
 <img src="./assets/1.png" />
 
@@ -27,17 +27,19 @@ We can export the private key by using the `unsafe-export-eth-key` command, for 
 ethermintd keys unsafe-export-eth-key mykey --keyring-backend test
 ```
 
-It will show your private, we can save it and prepare for the next step.  
+It will show your private, we can copy it for the next step.  
 
-Select "Import Account" under "My account" on your metamask:
+Then hit my account button in the top right corner again, select "Import Account" under "My account" on your metamask:
 
 <img src="./assets/4.png" />
 
-Pase the private from the former step here and click Import. 
+
+Paste the private from the former step here and click "Import". 
+
 <img src="./assets/5.png" />
 
 
-Once it has been connect, you should see the balance start performing transactions via metamask! 
+Once it has been connect, you should see the balance and may start performing transactions via metamask! 
 
 <img src="./assets/6.png" />
 
