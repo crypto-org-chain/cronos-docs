@@ -71,7 +71,6 @@ A key will be generated according to the configuration specified in `init.sh`. B
 ```
 $ ethermintd keys list
 ```
-
 You will be able to list the address with allocated initial funds, for example:
 
 ```bash
@@ -83,6 +82,26 @@ You will be able to list the address with allocated initial funds, for example:
   threshold: 0
   pubkeys: []
 ```
+
+You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity. 
+
+```
+$ ethermintd keys add mykey --recover --keyring-backend test
+```
+
+```bash
+Enter your bip39 mnemonic
+sense slim three rally device lazy slice thumb bridge general essence seven diamond broom scan tell cactus into exotic paddle ignore tape unaware also
+ 
+- name: mykey
+  type: local
+  address: eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
+  pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A9J4ELPAqyyrmypT9CtOVyWrO66eEXum3d8Z2mV7MS6O"}'
+  mnemonic: ""
+
+```
+
+
 
 ### Check account balance
 
