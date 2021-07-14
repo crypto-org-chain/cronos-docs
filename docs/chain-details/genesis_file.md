@@ -115,10 +115,10 @@ Specifically, the genesis file includes the following fields:
   - `"validators"`: List of existing validators, if any.
 - `"transfer"`: The transfer module that handles token transfer transactions.
   - `"receive_enabled"`: An array of Receive enabled entries mapping coin denominations to their `receive_enabled` status.
-  - `"send_enabled"`: An array of SendEnabled entries mapping coin denominations to their `send_enabled` statu.
+  - `"send_enabled"`: An array of SendEnabled entries mapping coin denominations to their `send_enabled` status.
 - `"evm"`: Ethereum Virtual Machine
   - `"evm_denom"`: The token denomination used on the EVM state transitions and gas consumption for EVM messages.
-  - `"enable_create"`: Toggles state transitions that use the `vm.Create` function, and it will prevent all contract creation functionality if it is disabled.
-  - `"enable_call"`: Toggles state transitions that use the `vm.Call` function, and it will prevent transfers between accounts and executing a smart contract call if it is disabled.
+  - `"enable_create"`: Toggles state transitions that use the `vm.Create` function, and it prevents all contract creation functionality if it is disabled.
+  - `"enable_call"`: Toggles state transitions that use the `vm.Call` function, and it prevents transfers between accounts and executing a smart contract call if it is disabled.
   - `"extra_eips"`: The set of activateable Ethereum Improvement Proposals (EIPs) on the Ethereum VM Config that apply custom jump tables. 
  
