@@ -12,7 +12,9 @@ Thanks for your interest in Crypto.org Chain. In this technical documentation, w
 
 #### Devnet
 
-- **Devnet** - [Build latest development version](./local-devnet.md): Try running latest development network (Devnet)
+- **Devnet** - [Build latest development version](./local-devnet.md):
+
+  Try running the latest development network (*Devnet*)
 
 ### Useful links
 

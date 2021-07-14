@@ -103,13 +103,12 @@ scare blur bless unfair chat gadget leaf reveal job depend daughter unveil fatal
 
 #### Step 1-3. Search for "Crypto.org Chain" and install the application to your Ledger.
 
-<!-- <img src="./assets/ledger_desktop_wallet/s1-5.png" /> -->
+
 
 #### Step 1-4. Confirm the installation
 
 You can confirm the installation by checking if the Crypto.org App shows up in the main menu of your Ledger device:
 
-<!-- <img src="./assets/ledger_desktop_wallet/s1-5-1.jpeg" /> -->
 
 ---
 

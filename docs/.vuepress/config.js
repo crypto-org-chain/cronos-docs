@@ -60,11 +60,11 @@ module.exports = {
         text: "Wallet",
         items: [
           {
-            text: "chain-maind",
-            link: "/wallets/cli.html#chain-maind"
+            text: "ethermind",
+            link: "/wallets/cli.html#ethermind"
           },
           {
-            text: "Ledger Hardware Wallets with chain-maind",
+            text: "Ledger Hardware Wallets with ethermind",
             link: "/wallets/ledger.html#ledger-hardware-wallets"
           },                   
           {
