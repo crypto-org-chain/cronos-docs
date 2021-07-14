@@ -34,14 +34,16 @@ The `bank` module maintains the state of two primary objects:
 
 #### `tx bank send [from_key_or_address] [to_address] [amount] [network_id]` - **Send Funds**
 
-You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 10 cro from `address_a` to `address_b` by
+You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 1 aphoton from `address_a` to `address_b` by
 
 ```bash
-$ chain-maind tx bank send <address_a> <address_b> 10cro --chain-id <chain-id>
+$ ethermintd tx bank send <address_a> <address_b> 1aphoton --keyring-backend test --chain-id <chain-id>
 
 ## Transaction payload##
-{"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
+{"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":<address a>,"to_address":<address b>,"amount":[{"denom":"aphoton","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
+
 confirm transaction before signing and broadcasting [y/N]: y
+
 ```
 
 
@@ -53,7 +55,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 One can check the current balance of a specified account by:
 
 ```json
-$ chain-maind query bank balances <address> --output json | jq
+$ ethermintd query bank balances <address> --output json | jq
     {
     "balances": [
         {
@@ -73,7 +75,7 @@ $ chain-maind query bank balances <address> --output json | jq
 You can also check the current total supply of the token by:
 
 ```json
-$ chain-maind query bank total --output json | jq
+$ ethermintd query bank total --output json | jq
     {
     "supply": [
         {
@@ -325,48 +327,7 @@ Users can vote for an active proposal. Valid value of `"option"` field can be `"
 We can check the proposal with optional filters by:
 
 ```json
-$ chain-maind query gov proposals -o json | jq
-
-  {
-    "proposals": [
-      {
-        "proposal_id": "1",
-        "content": {
-          "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
-          "title": "Staking Param Change",
-          "description": "Update max validators",
-          "changes": [
-            {
-              "subspace": "staking",
-              "key": "MaxValidators",
-              "value": "151"
-            }
-          ]
-        },
-        "status": "PROPOSAL_STATUS_PASSED",
-        "final_tally_result": {
-          "yes": "50040000000000",
-          "abstain": "0",
-          "no": "0",
-          "no_with_veto": "0"
-        },
-        "submit_time": "2020-10-15T10:05:49.996956080Z",
-        "deposit_end_time": "2020-10-15T22:05:49.996956080Z",
-        "total_deposit": [
-          {
-            "denom": "aphoton",
-            "amount": "100000000000"
-          }
-        ],
-        "voting_start_time": "2020-10-15T10:14:56.958963929Z",
-        "voting_end_time": "2020-10-15T22:14:56.958963929Z"
-      }
-    ],
-    "pagination": {
-      "next_key": null,
-      "total": "0"
-    }
-  }
+$ ethermintd query gov proposals -o json | jq
 ```
 
 In the above example, there is only one proposal with `"proposal_id": "1"`, with the title: `"Staking Param Change"` that change the `MaxValidators` parameter of the `staking` module to `151`. We can also see that the status of the proposal is `"PROPOSAL_STATUS_PASSED"`, which means that this proposal has bee passed.
@@ -384,7 +345,7 @@ We can also the tally of a proposal with a given `"proposal_id"`.
 We can query the current gov parameters by
 
 ```json
-$ chain-maind query gov params --output json | jq
+$ ethermintd query gov params --output json | jq
 
   {
     "voting_params": {

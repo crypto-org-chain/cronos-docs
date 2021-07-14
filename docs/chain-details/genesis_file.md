@@ -113,3 +113,14 @@ Specifically, the genesis file includes the following fields:
   - `"redelegations"`: List of redelegations for validators, if any.
   - `"unbonding_delegations"`: List of unbonding delegations for validators, if any.
   - `"validators"`: List of existing validators, if any.
+- `"transfer"`
+  - `"receive_enabled"`
+  - `"send_enabled"`
+- `"evm"`
+  - `"evm_denom"`
+  - `"enable_create"`
+  - `"enable_call"`
+  - `"extra_eips"`
+  
+  - `"minimum-gas-prices"`
+  - `"create_empty_blocks_interval"`

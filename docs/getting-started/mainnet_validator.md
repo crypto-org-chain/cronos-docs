@@ -42,7 +42,7 @@ The following is the minimal setup to join Crypto.org Chain Mainnet. Furthermore
 :::
 
 
-To simplify the following step, we will be using **Linux** for illustration. Binary for
+To simplify the following step, we will be using **Linux** for illustration. Binaries for
 [Mac](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.1/chain-main_2.0.1_Darwin_x86_64.tar.gz) and [Windows](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.1/chain-main_2.0.1_Windows_x86_64.zip) are also available. 
 
 There are two options to install `chain-maind`:
@@ -100,7 +100,7 @@ To install binaries in Homebrew for macOS X or Linux
   ```
 ## Step 2. Configure `chain-maind`
 
-Before kick-starting your node, we will have to configure the node so that it connects to the Crypto.org mainnet
+Before kick-starting your node, we will have to configure the node so that it connects to the Crypto.org mainnet.
 
 ::: tip NOTE
 
