@@ -18,6 +18,11 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 ### Sufficient fund on deployer address
 You can access to [Croeseid testnet faucet and explorer](http://localhost:8080/docs/getting-started/croeseid-testnet.html#croeseid-testnet-faucet-and-explorer) to obtain testnet TCRO.
 
+### Git clone `smart-contract-example`
+  ```bash
+  $ git clone git@github.com:crypto-org-chain/cronos-smart-contract-example.git
+  ```
+
 ## Truffle: Deploy ERC20 Contract
 
 ### Step 1. Enter `smart-contract-example/truffle` folder
