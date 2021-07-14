@@ -13,7 +13,8 @@ jobs:
       github.event_name == 'push' || github.event_name == 'pull_request' || (github.event.comment.body == '/staging' && 
       (github.actor == 'allthatjazzleo' || github.actor == 'tomtau' || github.actor == 'lezzokafka' || github.actor == 'yihuang' || 
       github.actor == 'calvinaco' || github.actor == 'CeruleanAtMonaco' || github.actor == 'devashishdxt' || 
-      github.actor == 'leejw51crypto' || github.actor == 'cdc-Hitesh' || github.actor == 'eddycpc' || github.actor == 'crypto-matto' || github.actor == 'borischeuk-crypto'))
+      github.actor == 'leejw51crypto' || github.actor == 'cdc-Hitesh' || github.actor == 'eddycpc' || github.actor == 'crypto-matto' || 
+      github.actor == 'borischeuk-crypto' || github.actor == 'mofhusseini'))
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -40,7 +41,8 @@ jobs:
       github.event_name == 'push' || (github.event.comment.body == '/staging' && (github.actor == 'allthatjazzleo' || github.actor == 'tomtau' || 
       github.actor == 'lezzokafka' || github.actor == 'yihuang' || github.actor == 'calvinaco' || 
       github.actor == 'CeruleanAtMonaco' || github.actor == 'devashishdxt' || github.actor == 'leejw51crypto' || 
-      github.actor == 'cdc-Hitesh' || github.actor == 'eddycpc' || github.actor == 'crypto-matto' || github.actor == 'borischeuk-crypto'))
+      github.actor == 'cdc-Hitesh' || github.actor == 'eddycpc' || github.actor == 'crypto-matto' || 
+      github.actor == 'borischeuk-crypto' || github.actor == 'mofhusseini'))
     steps:
     - name: Github API Request
       id: request
