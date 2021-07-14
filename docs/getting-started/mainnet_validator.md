@@ -100,7 +100,7 @@ To install binaries in Homebrew for macOS X or Linux
   ```
 ## Step 2. Configure `chain-maind`
 
-Before kick-starting your node, we will have to configure the node so that it connects to the Crypto.org mainnet
+Before kick-starting your node, we will have to configure the node so that it connects to the Crypto.org mainnet.
 
 ::: tip NOTE
 
