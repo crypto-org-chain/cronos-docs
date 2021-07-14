@@ -20,8 +20,8 @@ This section aims to collect and provide brief a description of all the mentione
 | `max_deposit_period` | string (time in ns)  | Maximum period for Cro holders to deposit on a proposal                                                 |
 | `voting_period`      | string (time in ns)) | The length of voting period                                                                             |
 | `quorum`             | string (dec)         | The minimum percentage of voting power that needs to be casted on a proposal for the result to be valid |
-| `threshold`          | string (dec)         | Minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted.          |
-| `veto`               | string (dec)         | Minimum proportion of `Veto` votes to Total votes ratio for proposal to be vetoed.                      |
+| `threshold`          | string (dec)         | Minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted           |
+| `veto`               | string (dec)         | Minimum proportion of `Veto` votes to Total votes ratio for proposal to be vetoed                       |
 
 
 #### Reward-related parameters - `mint` module
@@ -51,8 +51,24 @@ This section aims to collect and provide brief a description of all the mentione
 
 | Key                  | Type   | Description                                                     |
 | -------------------- | ------ | --------------------------------------------------------------- |
-| `bond_denom`         | string | Coin denomination for staking. Denominations can be 3 ~ 128 characters long and support letters, followed by either a letter, a number or a separator ('/').                                  |
+| `bond_denom`         | string | Coin denomination for staking. Denominations can be 3 ~ 128 characters long and support letters, followed by either a letter, a number or a separator ('/')                                   |
 | `historical_entries` | uint16 | The number of historical entries to persist                     |
 | `max_entries`        | uint16 | The max entries for either unbonding delegation or redelegation |
 | `max_validators`     | uint16 | The maximum number of validator                                 |
 | `unbonding_time`     | string | The time duration of unbonding                                  |
+
+#### Transfer-related parameters - `transfer` module
+
+| Key                     | Type           | Description                                           |
+| ----------------------- | -------------- | ----------------------------------------------------- |
+| `receive_enabled`       | bool           | An array of Receive enabled entries mapping coin denominations to their `receive_enabled` status |
+| `send_enabled`          | bool           | An array of SendEnabled entries mapping coin denominations to their `send_enabled` status |
+
+#### Evm-related parameters - `evm` module
+
+| Key                     | Type         | Description                                                              |
+| ----------------------- | ------------ | ------------------------------------------------------------------------ |
+| `evm_denom`             | string       | The token denomination used on the EVM state transitions and gas consumption for EVM messages. The default value is "aphoton"              |
+| `enable_create`         | bool         | Toggles state transitions that use the `vm.Create` function, and it prevents all contract creation functionality if it is disabled.                |
+| `enable_call`           | bool         | Toggles state transitions that use the `vm.Call` function, and it prevents transfers between accounts and executing a smart contract call if it is disabled                                                |
+| `extra_eips`            | []int        | The set of activateable Ethereum Improvement Proposals (EIPs) on the Ethereum VM Config that apply custom jump tables |
