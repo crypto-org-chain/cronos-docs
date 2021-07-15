@@ -6,65 +6,42 @@ This is a detailed documentation for setting up a Validator or a full node on Cr
 
 ## Pre-requisites
 
-**Remarks**:
-`testnet-cronos-3` is the latest Crypto.org Chain testnet. If you have joined `testnet-cronos-2` and received test tokens before, you should be able to access the test token with the same key. Otherwise, you can request test tokens by sending a message on [Discord](https://discord.gg/pahqHz26q4) **#request-tcro** channel.
 ### Supported OS
 
 We officially support macOS, Windows and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Prepare your machine
 
-- To run Crypto.org Chain nodes in the testnet, you will need a machine with the following minimum requirements:
+- To run Cronos testnet nodes, you will need a machine with the following minimum requirements:
 
-  - Dual-core, x86_64 architecture processor;
-  - 4 GB RAM;
-  - 100 GB of storage space.
+  - 4-core, x86_64 architecture processor;
+  - 16 GB RAM;
+  - 1 TB of storage space.
 
-
-## Step 1. Get the Crypto.org Chain testnet binary
+## Step 1. Get the Cronos testnet binary
 
 ::: tip Remarks:
-The following is the minimal setup for a **validator node**. 
+The following is the minimal setup for a **validator node**.
 :::
 
-::: tip Reminder:
-The binary for _testnet_ and the binary for _mainnet_ are two **different** binaries. Please make sure you are using the correct binary.
-:::
+<!--TODO: Update Links-->
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 **Mac** ([Intel x86](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Windows_x86_64.zip) are also available.
 
-- To install Crypto.org Chain released **testnet binaries** from github:
+<!--TODO: Update Links-->
 
+- To install released **Cronos testnet binaries** from github:
+  <!--TODO: Update Links-->
   ```bash
   $ curl -LOJ https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Linux_x86_64.tar.gz
   $ tar -zxvf chain-main_2.0.0-cronos_Linux_x86_64.tar.gz
   ```
-- You can verify the installation by checking the version of the ethermintd, the current version is `2.0.0-cronos`.
+  <!--TODO: Update Links-->
 
-  ```bash
-  $./ethermintd version
-  2.0.0-cronos
-  ```
 ## Step 2. Configure `ethermintd`
 
 Before kick-starting your node, we will have to configure your node so that it connects to the cronos testnet:
-
-### Step 2-0 (Optional) Clean up the old blockchain data
-- If you have joined `testnet-cronos-2` before, you would have to clean up the old blockchain data and start over again, it can be done by running:
-    ``` bash
-    $ ./ethermintd unsafe-reset-all
-    ```
-  and remove the old genesis file by
-    ```
-    $ rm ~/.ethermintd/config/genesis.json
-    ```
-
-- You cannnot override the previous validator through `ethermintd init`. If you want to have a new validator, you need to manually remove the `priv_validator_key.json`:
-    ``` bash
-    rm ~/.ethermintd/config/priv_validator_key.json
-    ```
-  Then, in Step 2-1, `ethermintd init` should help you to generate a new validator key file. 
 
 ### Step 2-1 Initialize `ethermintd`
 
@@ -90,13 +67,18 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 ### Step 2-2 Configure ethermintd
 
+<!--TODO: Update Links-->
+
 - Download and replace the cronos Testnet `genesis.json` by:
 
   ```bash
   $ curl https://raw.githubusercontent.com/crypto-com/testnets/main/testnet-cronos-3/genesis.json > ~/.ethermintd/config/genesis.json
   ```
 
+  <!--TODO: Update Links-->
+
 - Verify sha256sum checksum of the downloaded `genesis.json`. You should see `OK!` if the sha256sum checksum matches.
+  <!--TODO: Update sha256sum-->
 
   ```bash
   $ if [[ $(sha256sum ~/.ethermintd/config/genesis.json | awk '{print $1}') = "1808aef70872b306ba1af51f49b5a3ffde24e3db8c96c51f555930879f25125f" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
@@ -104,13 +86,16 @@ Before kick-starting your node, we will have to configure your node so that it c
   OK!
   ```
 
+  <!--TODO: Update sha256sum-->
+
   ::: tip NOTE
 
-  - For Mac environment, `sha256sum` was not installed by default.  In this case, you may setup `sha256sum` with this command:
+  - For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
 
     ```bash
     function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
     ```
+
     :::
 
 - In `~/.ethermintd/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
@@ -119,53 +104,25 @@ Before kick-starting your node, we will have to configure your node so that it c
   $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025basetcro"#' ~/.ethermintd/config/app.toml
   ```
 
-- For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers`,  `create_empty_blocks_interval` and `timeout_commit` by:
+- For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
 
   ```bash
   $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"b2a4c8db43b815e1ed83ab4723a6af84ccb8e3e4@13.213.110.242:26656,c76d7d28141daf037bec919268d0f38e64fd8389@3.1.240.30:26656"#' ~/.ethermintd/config/config.toml
   $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
-  $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"2s"#' ~/.ethermintd/config/config.toml  
+  $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"2s"#' ~/.ethermintd/config/config.toml
   ```
 
 **Note**: We suggest using `persistent_peers` instead of `seeds` to provide stable state-sync experience.
-### Step 2-3 Enable STATE-SYNC
-  [STATE-SYNC](https://docs.tendermint.com/master/tendermint-core/state-sync.html) is supported in our testnet! 🎉
 
-With state sync your node will download data related to the head or near the head of the chain and verify the data. This leads to drastically shorter times for joining a network for validator.
+::: tip NOTE
 
-However, you should keep in mind that the block before state-sync `trust height` will not be queryable. So if you want to run a full node, better not use state-sync feature to ensure your node has every data on the blockchain network. 
-
-
-For **validator**, it will be amazingly fast to sync the near head of the chain and join the network.
-
-Follow the below optional steps to enable state-sync.
-
-
-- For state-sync configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of [statesync] `enable`, `rpc_servers`, `trust_height` and `trust_hash` by:
-
-  ```bash
-
-  $ LATEST_HEIGHT=$(curl -s https://testnet-cronos-3.crypto.org:26657/block | jq -r .result.block.header.height); \
-  BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
-  TRUST_HASH=$(curl -s "https://testnet-cronos-3.crypto.org:26657/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
-
-  $ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
-  s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"https://testnet-cronos-3.crypto.org:26657,https://testnet-cronos-3.crypto.org:26657\"| ; \
-  s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
-  s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-  s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.ethermintd/config/config.toml
-  ```
-
-  ::: tip NOTE
-
-  - For Mac environment, if `jq` is missing, you may install it by: `brew install jq`
-    :::
+- For Mac environment, if `jq` is missing, you may install it by: `brew install jq`
+  :::
 
 ## Step 3. Run everything
 
 ::: warning CAUTION
 This page only shows the minimal setup for validator node.
-
 
 Furthermore, you may want to run full nodes
 as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
@@ -195,7 +152,14 @@ You can obtain your validator public key by:
   $ ./ethermintd tendermint show-validator
 ```
 
-The public key should begin with the `tcrocnclconspub1` prefix, e.g. `tcrocnclconspub1zcjduepq6jgw5hz44jnmlhnx93dawqx6kwzhp96w5pqsxwryp8nrr5vldmsqu3838p`.
+The public key should in a json format, for example:
+
+```json
+{
+  "@type": "/cosmos.crypto.ed25519.PubKey",
+  "key": "gvPPVShkWjuUn7cuqS3ci9fHnC+nLFxzsNWkwGJ6iMI="
+}
+```
 
 ### Step 3-4. Run everything
 
@@ -206,18 +170,21 @@ Once the `ethermintd` has been configured, we are ready to start the node and sy
 ```bash
   $ ./ethermintd start
 ```
+
 ::: tip Remarks:
 If you see errors saying `too many files opened...`, then you need to set a higher number for maximum open file descriptors in your OS.
 
 If you are on OSX or Linux, then the following could be useful:
-  ``` bash
-  # Check current max fd
-  $ ulimit -n
-  # Set a new max fd
-  $ ulimit -Sn [NEW_MAX_FILE_DESCRIPTOR]
-  # Example
-  $ ulimit -Sn 4096 
-  ```
+
+```bash
+# Check current max fd
+$ ulimit -n
+# Set a new max fd
+$ ulimit -Sn [NEW_MAX_FILE_DESCRIPTOR]
+# Example
+$ ulimit -Sn 4096
+```
+
 :::
 
 - _(Optional for Linux)_ Start ethermintd with systemd service, e.g.:
@@ -257,9 +224,11 @@ WantedBy=multi-user.target
 It should begin fetching blocks from the other peers. Please wait until it is fully synced before moving onto the next step.
 
 - You can query the node syncing status by
+
   ```bash
   $ ./ethermintd status 2>&1 | jq '.SyncInfo.catching_up'
   ```
+
   If the above command returns `false`, It means that your node **is fully synced**; otherwise, it returns `true` and implies your node is still catching up.
 
 - One can check the current block height by querying the public full node by:
@@ -300,7 +269,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 You will be required to insert the following:
 
 - `--from`: The `trco...` address that holds your funds;
-- `--pubkey`: The validator public key( See Step [3-3](#step-3-3-obtain-the-validator-public-key) above ) with **tcrocnclconspub** as the prefix;
+- `--pubkey`: The validator public key( See Step [3-3](#step-3-3-obtain-the-validator-public-key) above )
 - `--moniker`: A moniker (name) for your validator node;
 - `--security-contact`: Security contact email/contact method.
 
@@ -379,78 +348,10 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 :::
 
-### Step 4-3. `tx staking` - Staking operations
 
-Staking operations involve the interaction between an address and a validator. It allows you to create a validator and lock/unlocking funds for staking purposes.
-
-#### **Delegate you funds to a validator** [`tx staking delegate <validator-addr> <amount>`]
-
-To bond funds for staking, you can delegate funds to a validator by the `delegate` command
-
-::: details Example: Delegate funds from `Default` to a validator under the address `tcrocncl16k...edcer`
-
-```bash
-$ ./ethermintd tx staking delegate tcrocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100tcro --from Default --chain-id "testnet-cronos-3" --gas-prices 0.1basetcro
-## Transactions payload##
-{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"....}
-confirm transaction before signing and broadcasting [y/N]: y
-```
-
-:::
-
-#### **Unbond your delegated funds** [`tx staking unbond <validator-addr> <amount>`]
-
-On the other hand, we can create a `Unbond` transaction to unbond the delegated funds
-
-::: details Example: Unbond funds from a validator under the address `tcrocncl16k...edcer`
-
-```bash
-$ ./ethermintd tx staking unbond tcrocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100tcro --from Default --chain-id "testnet-cronos-3" --gas-prices 0.1basetcro
-## Transaction payload##
-{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
-confirm transaction before signing and broadcasting [y/N]: y
-```
-
-:::
-
-::: tip
-
-- Once your funds were unbonded, It will be locked until the `unbonding_time` has passed.
-
-:::
-
-### Reward related transactions and queries
-
-After you have delegated or create a validator, reward will be accumulated, you can check/ withdraw it by:
-#### `query distribution validator-outstanding-rewards` - Query un-withdrawn rewards for a validator
-
-We can check distribution outstanding (un-withdrawn) rewards for a validator and all of their delegations by its operator address.
-
-::: details Example: Check all outstanding rewards under the operator address `tcrocncl1...zrf8`
-
-```bash
-$ ./ethermintd q distribution validator-outstanding-rewards tcrocncl1kkqxv3szgh099xezt7y38t5anqzue4s326zrf8
-  rewards:
-  - amount: "1920761912.927067330419141688"
-    denom: basetcro
-```
-:::
-
-#### `tx distribution validator-outstanding-rewards` - Query un-withdrawn rewards for a validator
-
-We can check distribution outstanding (un-withdrawn) rewards for a validator and all of their delegations by its operator address.
-
-::: details Example: Withdraw all outstanding under a delegation address:
-
-```bash
-$ ./ethermintd tx distribution withdraw-all-rewards --from [key_name] --chain-id "testnet-cronos-3" --gas-prices 0.1basetcro
-
-{"body":{"messages":[{"@type":"/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"...}]}
-confirm transaction before signing and broadcasting [y/N]: y
-```
-:::
 
 ### Slashing related transaction
+
 ### `tx slashing unjail` - Unjail a validator
 
 Validator could be punished and jailed due to network misbehaviour, we can check the jailing status of a validator, for example:
@@ -482,7 +383,12 @@ Congratulations! You've successfully set up a Testnet node and performed some ba
 
 ## cronos testnet faucet and explorer
 
+<!--TODO: Update Links-->
+
 - You can lookup data within the `testnet-cronos-3` network by the [explorer](https://crypto.org/explorer/cronos3/);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **cronos** testnet.
+
   - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
+
+<!--TODO: Update Links-->
