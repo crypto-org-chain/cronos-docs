@@ -6,9 +6,9 @@ Thanks for your interest in Crypto.org Chain. In this technical documentation, w
 
 #### Crypto.org Cronos Testnet
 
-- [Join Cronos Testnet](./croeseid-testnet.md):
+- [Join Cronos Testnet](./cronos-testnet.md):
 
-  Try running Full Nodes or Validators connected to our Croeseid Testnet.
+  Try running Full Nodes or Validators connected to our cronos Testnet.
 
 #### Devnet
 

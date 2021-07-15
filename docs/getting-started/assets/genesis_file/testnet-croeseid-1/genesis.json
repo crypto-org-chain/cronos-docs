@@ -1,6 +1,6 @@
 {
   "genesis_time": "2020-10-13T08:55:58.046949Z",
-  "chain_id": "testnet-croeseid-1",
+  "chain_id": "testnet-cronos-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {

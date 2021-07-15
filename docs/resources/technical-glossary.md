@@ -9,7 +9,7 @@ A | [B](#b) | [C](#c) | [D](#d) | E | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J
 
 **Block Explorer**
 
-An application that allows a user to explore the different blocks on a blockchain. It has a record of all the transactions in each block and is often made public to increase blockchain visibility and transparency. Here are our explorers: [Crypto.org Chain Explorer](https://crypto.org/explorer/) and [Croeseid Testnet Explorer](https://crypto.org/explorer/croeseid3/).
+An application that allows a user to explore the different blocks on a blockchain. It has a record of all the transactions in each block and is often made public to increase blockchain visibility and transparency. Here are our explorers: [Crypto.org Chain Explorer](https://crypto.org/explorer/) and [cronos Testnet Explorer](https://crypto.org/explorer/cronos3/).
 
 **Bonded (staking state)**
 
@@ -24,7 +24,7 @@ A validator is said to make a byzantine fault when they sign conflicting message
 
 **Chain ID**
 A unique identifier for the blockchain. Different prefixes of the Chain ID are used to distinguish between _mainnet_, _devnet_, and _testnet_. 
-For example, the Chain ID of our [testnet](https://crypto.org/docs/getting-started/croeseid-testnet.html) is `testnet-croeseid-3`.
+For example, the Chain ID of our [testnet](https://crypto.org/docs/getting-started/cronos-testnet.html) is `testnet-cronos-3`.
 
 **Chain-abci**
 
@@ -163,7 +163,7 @@ Multisig (multi-signature) is a digital signature that makes it possible for mul
 
 **Network ID**
 
-The last two hex characters of the Chain ID. Using our testnet Chain ID `testnet-croeseid-2` as an example, the network ID would be `2`.
+The last two hex characters of the Chain ID. Using our testnet Chain ID `testnet-cronos-2` as an example, the network ID would be `2`.
 
 **Non-fungible Token (NFT)**
 

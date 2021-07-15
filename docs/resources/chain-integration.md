@@ -17,8 +17,8 @@
     - [Running a validator;](https://crypto.org/docs/getting-started/mainnet_validator.html)
     - [Mainnet Validator Security Checklist.](https://crypto.org/docs/getting-started/security-checklist.html#part-1-conduct-survey-on-general-controls-of-hosting-data-centre)    
 - **Testnet**: 
-    - [Joining the Croeseid Testnet](https://crypto.org/docs/getting-started/croeseid-testnet.html)
-    - [Deploy testnet node with nix](https://crypto.org/docs/getting-started/croeseid-testnet-nix.html#pre-requisites)
+    - [Joining the cronos Testnet](https://crypto.org/docs/getting-started/cronos-testnet.html)
+    - [Deploy testnet node with nix](https://crypto.org/docs/getting-started/cronos-testnet-nix.html#pre-requisites)
 - **Devnet**
     - [Running latest development network locally](https://crypto.org/docs/getting-started/local-devnet.html#overview)
 
@@ -60,10 +60,10 @@ The Ansible playbook for deploying Prometheus and some rules we are using are un
 - [Tendermint](https://mainnet.crypto.org:26657/)
 - [Cosmos RESTful gRPC](https://mainnet.crypto.org:1317/)
 
-### Croeseid Testnet - `testnet-croeseid-3`
+### cronos Testnet - `testnet-cronos-3`
 
-- [Tendermint](https://testnet-croeseid-3.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://testnet-croeseid-3.crypto.org:1317/)
+- [Tendermint](https://testnet-cronos-3.crypto.org:26657/)
+- [Cosmos RESTful gRPC](https://testnet-cronos-3.crypto.org:1317/)
 
 ## Block Explorer
 
@@ -71,9 +71,9 @@ The Ansible playbook for deploying Prometheus and some rules we are using are un
 
 [https://crypto.org/explorer](https://crypto.org/explorer)
 
-### Croeseid Testnet
+### cronos Testnet
 
-[https://crypto.org/explorer/croeseid3/](https://crypto.org/explorer/croeseid3/)
+[https://crypto.org/explorer/cronos3/](https://crypto.org/explorer/cronos3/)
 
 ## Community
 

@@ -22,7 +22,7 @@ module.exports = {
 //          },
           {
             text: "Cronos Testnet",
-            link: "/getting-started/croeseid-testnet"
+            link: "/getting-started/cronos-testnet"
           },
           {
             text: "Local network deployment",
@@ -100,7 +100,7 @@ module.exports = {
         "",
         "local-devnet",
         "security-checklist.md",
-        "croeseid-testnet"
+        "cronos-testnet"
       ],
       "/chain-details/": [
         "introduction",
@@ -142,7 +142,7 @@ module.exports = {
           var ordering = {
             Home: 0,
             "Getting Started": 1,
-            "Croeseid Testnet": 2,
+            "cronos Testnet": 2,
             "Devnet": 3,
             "Send Your First Transaction": 4,
             Consensus: 5,
