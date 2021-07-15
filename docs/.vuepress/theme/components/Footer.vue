@@ -6,7 +6,7 @@
           <a href="/">
             <img
               class="footer-logo"
-              :src="$withBase('/logotype-white.svg')"
+              :src="$withBase('/crypto-com-horizontal-logo-white.svg')"
               alt="logo-icon-white"
             />
           </a>

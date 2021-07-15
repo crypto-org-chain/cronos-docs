@@ -15,7 +15,7 @@
         <img
           class="logoicon wide-hide"
           v-if="$site.themeConfig.logo"
-          :src="$withBase('/logo-icon.svg')"
+          :src="$withBase('/logo-icon-white.svg')"
           :alt="$siteTitle"
         >
         <span
@@ -100,7 +100,8 @@ function css (el, property) {
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 
-$headerTextColor = #0b1426
+$headerTextColor = #f7f9fa
+$searchBoxInputColor = #0b1426
 
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
@@ -151,6 +152,7 @@ $headerTextColor = #0b1426
         border none
         border-radius 4px
         box-shadow 0 2px 10px 4px rgba(0, 0, 0, 0.05)
+        color $searchBoxInputColor
 
 @media (min-width: $MQWide)
   .navbar

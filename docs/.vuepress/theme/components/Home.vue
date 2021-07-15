@@ -7,7 +7,7 @@
           :src="$withBase('/logo-icon-white.svg')"
           alt="logo-icon-white"
         />
-        <h1 id="main-title">CRONOS</h1>
+        <h1 id="main-title" class="title">CRONOS</h1>
         <div class="description">
           The blockchain bridged with the Crypto.org chain to empower and scale decentralised applications
         </div>
@@ -32,60 +32,6 @@
           <NavLink class="subscription-button" :item="subscriptionLink" />
           <NavLink class="readdoc-button" :item="readdocLink" />
         </div>
-      </div>
-
-
-      <div class="features">
-        <h3>Why Cronos</h3>
-        <div class="row">
-          <div class="column">
-            <div class="icon">
-              <img :src="$withBase('/secure.svg')" alt="secure" />
-            </div>
-            <div class="title">EVM Compatible</div>
-            <p>
-              Built on Ethermint that supports any smart contracts, DAOs or Dapps deployed on Ethereum.
-            </p>
-          </div>
-          <div class="column">
-            <div class="icon">
-              <img :src="$withBase('/instant.svg')" alt="instant" />
-            </div>
-            <div class="title">Scalable</div>
-            <p>
-              Cronos can process more transactions per minute than Etherum, which makes it faster, cheaper and greener to execute smart contracts.
-            </p>
-          </div>
-          <div class="column">
-            <div class="icon">
-              <img :src="$withBase('/permissionless.svg')" alt="permissionless" />
-            </div>
-            <div class="title">Interoperable</div>
-            <p>
-              IBC protocol that allows blockchains to connect, interoperate and transfer value, interchange assets and services.
-            </p>
-          </div>
-          <div class="column">
-            <div class="icon">
-              <img :src="$withBase('/sustainable.svg')" />
-            </div>
-            <div class="title">Proof of authority (POA)</div>
-            <p>
-              A more streamlined and scalable consensus protocol while still maintaining security with a range of validators that are run by many different parties.
-            </p>
-          </div>
-          <div class="column">
-            <div class="icon">
-              <img :src="$withBase('/open-ecosystem.svg')" alt="Open Source" />
-            </div>
-            <div class="title">Open Source</div>
-            <p>
-              We welcome our community to work together with us and strengthen the CRONOS chain.
-            </p>
-          </div>
-
-        </div>
-
       </div>
 
 
@@ -220,15 +166,13 @@ export default {
     background url(../../public/hero-bg.svg);
     background-size cover;
 
-    logo {
-      max-width 100%;
-      z-index 1;
-      display block;
+    .logo {
+      width: 70px;
     }
 
     h1 {
       font-size 2.4rem;
-      margin 0 0 2rem;
+      margin 1rem auto 0;
       font-weight 500;
     }
 
@@ -250,6 +194,7 @@ export default {
       transition background-color 0.1s ease;
       box-sizing border-box;
       border-bottom 1px solid darken($accentColor, 10%);
+      margin-top 1rem;
 
       &:hover {
         background-color lighten($accentColor, 10%);
@@ -260,16 +205,14 @@ export default {
   .subscription-button {
     display inline-block;
     font-size 1rem;
-    border: 1px solid #fff;
     color #fff;
     background-color $accentColor;
     padding 0.6rem 2.2rem;
     border-radius 4px;
     transition background-color 0.1s ease;
     box-sizing border-box;
-    border-bottom 1px solid darken($accentColor, 10%);
     line-height: 1.7;
-    margin-right: 20px;
+    margin: 1rem 1rem;
 
     svg {
       color #fff
@@ -283,14 +226,12 @@ export default {
   .readdoc-button {
     display inline-block;
     font-size 1rem;
-    border: 1px solid $accentColor;
-    color #accentColor;
-    background-color #fff;
+    color $accentColor;
+    background-color #f7f9fa;
     padding 0.6rem 2.2rem;
     border-radius 4px;
     transition background-color 0.1s ease;
     box-sizing border-box;
-    border-bottom 1px solid darken($accentColor, 10%);
     line-height: 1.7;
 
     svg {
@@ -342,61 +283,6 @@ export default {
     }
     .down {
       padding 0 1.5rem;
-    }
-  }
-
-  .features {
-
-    margin-bottom: 28px
-
-    h3 {
-      margin-top 160px
-      font-weight 600
-      font-size 40px
-      text-align center
-    }
-    .row {
-      display flex
-      flex-wrap wrap
-      padding 48px
-      justify-content center
-
-      .column {
-        flex-basis 28%
-        padding 32px 20px
-        color #0b1426
-
-        .title {
-          margin 16px 0
-          font-weight 500
-          font-size 20px
-        }
-      }
-    }
-
-    // responsive
-    @media (max-width $MQMobileNarrow) {
-      .row {
-        .column {
-          flex-basis 50%
-        }
-      }
-    }
-
-    @media (max-width $MQMobileNarrow) {
-
-      h3 {
-        font-size 22px
-      }
-      .row {
-        padding 16px
-
-        .column {
-          flex-basis 100%
-          padding 32px 32px 32px 0
-          text-align left
-        }
-      }
     }
   }
 
