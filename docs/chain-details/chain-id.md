@@ -22,10 +22,10 @@ Crypto.org Chain uses the Bech32 address format wherever users must handle binar
 | Validator Operator | `crocncl`             |
 | Consensus Nodes    | `crocnclcons`         |
 
-We can use the `keys show` command of `chain-maind` with the flag `--bech <type> (acc|val|cons) ` to obtain the addresses and keys as mentioned above: for example,
+We can use the `keys show` command of `ethermintd` with the flag `--bech <type> (acc|val|cons) ` to obtain the addresses and keys as mentioned above: for example,
 
 ```
-$ chain-maind keys show test --bech acc
+$ ethermintd keys show test --bech acc
     - name: test0
     type: local
     address: cro1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3zwpck7
@@ -34,7 +34,7 @@ $ chain-maind keys show test --bech acc
     threshold: 0
     pubkeys: []
 
-$ chain-maind keys show test --bech val
+$ ethermintd keys show test --bech val
     - name: test0
     type: local
     address: crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z
@@ -43,7 +43,7 @@ $ chain-maind keys show test --bech val
     threshold: 0
     pubkeys: []
 
-$ chain-maind keys show test --bech cons
+$ ethermintd keys show test --bech cons
     - name: test0
     type: local
     address: crocnclcons1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s34pfmlc

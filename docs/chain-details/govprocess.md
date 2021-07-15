@@ -43,7 +43,7 @@ Submitting your proposal to the testnet also increases the likelihood that you w
 For testnet submission, please note: you'll need testnet tokens TCRO for your proposal, and the parameters for testnet proposals are different (eg. voting period timing, deposit amount, deposit denomination)
 
 - Submit Your On-chain Proposal with Initial Deposit 
-After everything is set and you are confident about the proposal, you can now submit the final proposal with chain-maind. You should have reasonable confidence that your proposal will pass before risking deposit contributions. Part of the voting community members should probably be aware of the proposal and if they see the proposal, they probably have considered it already before the proposal goes live on-chain. 
+After everything is set and you are confident about the proposal, you can now submit the final proposal with ethermintd. You should have reasonable confidence that your proposal will pass before risking deposit contributions. Part of the voting community members should probably be aware of the proposal and if they see the proposal, they probably have considered it already before the proposal goes live on-chain. 
 
 ### 6. Deposit tokens and fund an active proposal
 The deposit period lasts either 14 days or until the proposal deposit totals 20,000 CROs, whichever happens first. Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), a minimum number of CROs are deposited. 

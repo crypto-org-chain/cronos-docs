@@ -54,10 +54,10 @@ Download the Crypto.org Chain Binary for Mainnet from [release page](https://git
 
 If you are downloading the binary for other operating systems, make sure you are downloading `v1.0.0` or newer version that are targeting for mainnet.
 
-Before moving to the next step, kindly check your `chain-maind` version by
+Before moving to the next step, kindly check your `ethermintd` version by
 
 ```bash
-$ ./chain-maind version
+$ ./ethermintd version
 2.0.1
 ```
 
@@ -66,7 +66,7 @@ $ ./chain-maind version
 Run the following command to create a new address. For example, you can create a key with the name "Default" by:
 
 ```bash
-$ ./chain-maind keys add Default
+$ ./ethermintd keys add Default
 ```
 
 You can find the generated address after running the command. **Please make sure that you have safely backed up the mnemonic words that appear on the last line.**
@@ -133,7 +133,7 @@ If you are downloading the binary for other operating systems, make sure you are
 Run the following command to create a new address. For example, you can create a key with the name "Default" by:
 
 ```bash
-$ ./chain-maind keys add Ledger --ledger
+$ ./ethermintd keys add Ledger --ledger
 ```
 
 You will be prompted with the address on your Ledger device screen. Read it carefully and write it down. Afterward, confirm the address on your Ledger device.

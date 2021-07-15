@@ -1,4 +1,4 @@
-# Ledger Hardware Wallets with chain-maind
+# Ledger Hardware Wallets with ethermintd
 
 You can use your [Ledger hardware wallets](https://www.ledger.com/) to securely manage your CRO assets. Ledger devices are hardware wallets which store your private keys safely in the device and can be used in even unsafe PCs.
 
@@ -7,7 +7,7 @@ You can use your [Ledger hardware wallets](https://www.ledger.com/) to securely 
 - An initialized Ledger Nano device;
 - Install the latest firmware on your device;
 - [Ledger Live](https://www.ledger.com/ledger-live);
-- Download our latest released `chain-maind` [ binary](https://github.com/crypto-org-chain/chain-main/releases).
+- Download our latest released `ethermintd` [ binary](https://github.com/crypto-org-chain/chain-main/releases).
 
 
 ### Technical support and enquiries
@@ -40,7 +40,7 @@ First of all, you will need to install the Crypto.org Chain app on your Ledger d
 1. Open "Crypto.org Chain" app on the device
 1. Run in your terminal
     ```bash
-    $ ./chain-maind keys add [name] --ledger --keyring-backend=test
+    $ ./ethermintd keys add [name] --ledger --keyring-backend=test
     ```
 
     - `name` is an arbitrary name for your new key
@@ -65,13 +65,13 @@ First of all, you will need to install the Crypto.org Chain app on your Ledger d
 You can query its balance by running in terminal
 
 ```bash
-$ ./chain-maind query bank balances [address]
+$ ./ethermintd query bank balances [address]
 ```
 
 `address` is the address you have generated. If you didn't copy your address, you can query the address listing it in terminal:
 
 ```bash
-$ ./chain-maind keys list --keyring-backend=test
+$ ./ethermintd keys list --keyring-backend=test
 ```
 
 ## Sign a transaction
@@ -82,7 +82,7 @@ In this tutorial we will send a `MsgSend` transaction securely signed by your Le
 1. Open "Crypto.org Chain" app on the device
 1. For example, if you would like to send `1cro` in the mainnet, in your terminal, you can run:
     ```bash
-    $ ./chain-maind tx bank send [from-address] [to-address] 1cro --chain-id="crypto-org-chain-mainnet-1" --ledger --keyring-backend=test  --sign-mode=amino-json
+    $ ./ethermintd tx bank send [from-address] [to-address] 1cro --chain-id="crypto-org-chain-mainnet-1" --ledger --keyring-backend=test  --sign-mode=amino-json
     ```
 
     - `from-address` is the from address [generated](#generate-address-with-ledger-device) by your Ledger device
@@ -90,7 +90,7 @@ In this tutorial we will send a `MsgSend` transaction securely signed by your Le
     - In this command, we are sending `1tcro` from the from address, you can specify other amounts you want.
 1. You will be asked to confirm the details of transaction in your terminal, input `y` to confirm:
     ```bash
-    $ ./chain-maind tx bank send tcro1tzhdkuc328cgh2hycyfddtdpqfwwu42ywyfvkj tcro1aaah6juc9n6wvkkkr4zdn073n8gt7waha39xsv 1tcro --chain-id=testnet-cronos-3 --ledger --keyring-backend=test  --sign-mode=amino-json
+    $ ./ethermintd tx bank send tcro1tzhdkuc328cgh2hycyfddtdpqfwwu42ywyfvkj tcro1aaah6juc9n6wvkkkr4zdn073n8gt7waha39xsv 1tcro --chain-id=testnet-cronos-3 --ledger --keyring-backend=test  --sign-mode=amino-json
     {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":"tcro1tzhdkuc328cgh2hycyfddtdpqfwwu42ywyfvkj","to_address":"tcro1aaah6juc9n6wvkkkr4zdn073n8gt7waha39xsv","amount":[{"denom":"basetcro","amount":"100000000"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
 
     confirm transaction before signing and broadcasting [y/N]: y

@@ -21,7 +21,7 @@ The `bank` module maintains the state of two primary objects:
 You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 10 cro from `address_a` to `address_b` by
 
 ```bash
-$ chain-maind tx bank send <address_a> <address_b> 10cro --chain-id <chain-id>
+$ ethermintd tx bank send <address_a> <address_b> 10cro --chain-id <chain-id>
 
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
@@ -37,7 +37,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 One can check the current balance of a specified account by:
 
 ```json
-$ chain-maind query bank balances <address> --output json | jq
+$ ethermintd query bank balances <address> --output json | jq
     {
     "balances": [
         {
@@ -57,7 +57,7 @@ $ chain-maind query bank balances <address> --output json | jq
 You can also check the current total supply of the token by:
 
 ```json
-$ chain-maind query bank total --output json | jq
+$ ethermintd query bank total --output json | jq
     {
     "supply": [
         {

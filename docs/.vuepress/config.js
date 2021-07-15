@@ -99,8 +99,8 @@ module.exports = {
       "/getting-started/": [
         "",
         "local-devnet",
-        "security-checklist.md",
-        "cronos-testnet"
+        "cronos-testnet",
+        "security-checklist.md"
       ],
       "/chain-details/": [
         "introduction",

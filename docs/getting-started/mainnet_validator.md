@@ -5,7 +5,7 @@ This is a detailed documentation for setting up a **Validator** on Crypto.org ma
 
 ## Step 0 : Notes on  "Canis Major" Network upgrade 
 
-Before we start, please note that there was a "*Canis Major*" network upgrade at the block height `922,363`, which requires node operator to update their Crypto.org Chain Mainnet binary `chain-maind` from `v1.*.*` to `v2.0.1`. 
+Before we start, please note that there was a "*Canis Major*" network upgrade at the block height `922,363`, which requires node operator to update their Crypto.org Chain Mainnet binary `ethermintd` from `v1.*.*` to `v2.0.1`. 
 
 - For host who would like to build a **Validator with complete blockchain data** from scratch, one would need to:
   1. Start the node with the older binary version `v1.2.1`; 
@@ -45,11 +45,11 @@ The following is the minimal setup to join Crypto.org Chain Mainnet. Furthermore
 To simplify the following step, we will be using **Linux** for illustration. Binaries for
 [Mac](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.1/chain-main_2.0.1_Darwin_x86_64.tar.gz) and [Windows](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.1/chain-main_2.0.1_Windows_x86_64.zip) are also available. 
 
-There are two options to install `chain-maind`:
-- [Directly from Github](#option-1-install-chain-maind-released-binaries-from-github); or
-- [Homebrew](#option-2-install-chain-maind-by-homebrew)
+There are two options to install `ethermintd`:
+- [Directly from Github](#option-1-install-ethermintd-released-binaries-from-github); or
+- [Homebrew](#option-2-install-ethermintd-by-homebrew)
 
-### Option 1 - Install `chain-maind` released binaries from Github
+### Option 1 - Install `ethermintd` released binaries from Github
 
 
 - To install Crypto.org Chain binaries from Github:
@@ -59,15 +59,15 @@ There are two options to install `chain-maind`:
   $ tar -zxvf chain-main_2.0.1_Linux_x86_64.tar.gz
   ```
 
-- You can verify the installation by checking the version of the chain-maind, the current version is `2.0.1`.
+- You can verify the installation by checking the version of the ethermintd, the current version is `2.0.1`.
   ```bash
-  # check the version of chain-maind
-  $ ./chain-maind version
+  # check the version of ethermintd
+  $ ./ethermintd version
   2.0.1
   ```
 **OR**
 
-### Option 2 - Install `chain-maind` by homebrew
+### Option 2 - Install `ethermintd` by homebrew
 
 ::: tip Reminder:
 - If you plan to play around with different networks (mainnet and testnet), we suggest you to follow the `Option 1` to download the binary directly.
@@ -77,42 +77,42 @@ There are two options to install `chain-maind`:
 
 To install binaries in Homebrew for macOS X or Linux
 
-[Homebrew](https://brew.sh/) is a free and open-source package management system for macOS X. Install the official Chain-maind formula from the terminal.
+[Homebrew](https://brew.sh/) is a free and open-source package management system for macOS X. Install the official ethermintd formula from the terminal.
 
--  First, install the `crypto-org-chain` tap, a repository of our Homebrew `chain-maind` package:
+-  First, install the `crypto-org-chain` tap, a repository of our Homebrew `ethermintd` package:
 
   ```bash
     # tap the repo
-    $ brew tap crypto-org-chain/chain-maind
+    $ brew tap crypto-org-chain/ethermintd
   ```
 
-- Now, install the `chain-maind` with crypto-org-chain/chain-maind
+- Now, install the `ethermintd` with crypto-org-chain/ethermintd
 
   ```bash
-    # install the chain-maind CLI tool
-    $ brew install chain-maind
+    # install the ethermintd CLI tool
+    $ brew install ethermintd
   ```
-- You can verify the installation by checking the version of the `chain-maind`
+- You can verify the installation by checking the version of the `ethermintd`
   ```bash
-  # check the version of chain-maind
-  $ chain-maind version
+  # check the version of ethermintd
+  $ ethermintd version
   2.0.1
   ```
-## Step 2. Configure `chain-maind`
+## Step 2. Configure `ethermintd`
 
 Before kick-starting your node, we will have to configure the node so that it connects to the Crypto.org mainnet.
 
 ::: tip NOTE
 
-- Depending on your `chain-maind` home setting, the `chain-maind` configuration will be initialized to that home directory. To simply the following steps, we will use the default chain-maind home directory `~/.chain-maind/` for illustration.
-- You can also put the `chain-maind` to your binary path and run it directly by `chain-maind`
+- Depending on your `ethermintd` home setting, the `ethermintd` configuration will be initialized to that home directory. To simply the following steps, we will use the default ethermintd home directory `~/.ethermintd/` for illustration.
+- You can also put the `ethermintd` to your binary path and run it directly by `ethermintd`
 :::
-### Step 2-1. Initialize `chain-maind`
+### Step 2-1. Initialize `ethermintd`
 
-- First of all, you can initialize chain-maind by:
+- First of all, you can initialize ethermintd by:
 
   ```bash
-    $ ./chain-maind init [moniker] --chain-id crypto-org-chain-mainnet-1
+    $ ./ethermintd init [moniker] --chain-id crypto-org-chain-mainnet-1
   ```
 
   - This `moniker` will be the displayed id of your node when connected to Crypto.org Chain network.
@@ -121,18 +121,18 @@ Before kick-starting your node, we will have to configure the node so that it co
 
 
 
-### Step 2-2. Configure chain-maind
+### Step 2-2. Configure ethermintd
 
 - Download and replace the Crypto.org mainnet `genesis.json` by:
 
   ```bash
-  $ curl https://raw.githubusercontent.com/crypto-org-chain/mainnet/main/crypto-org-chain-mainnet-1/genesis.json > ~/.chain-maind/config/genesis.json
+  $ curl https://raw.githubusercontent.com/crypto-org-chain/mainnet/main/crypto-org-chain-mainnet-1/genesis.json > ~/.ethermintd/config/genesis.json
   ```
 
 - Verify sha256sum checksum of the downloaded `genesis.json`. You should see `OK!` if the sha256sum checksum matches.
 
   ```bash
-  $ if [[ $(sha256sum ~/.chain-maind/config/genesis.json | awk '{print $1}') = "d299dcfee6ae29ca280006eaa065799552b88b978e423f9ec3d8ab531873d882" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
+  $ if [[ $(sha256sum ~/.ethermintd/config/genesis.json | awk '{print $1}') = "d299dcfee6ae29ca280006eaa065799552b88b978e423f9ec3d8ab531873d882" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
 
   OK!
   ```
@@ -146,19 +146,19 @@ Before kick-starting your node, we will have to configure the node so that it co
     ```
     :::
 
-- In `~/.chain-maind/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
+- In `~/.ethermintd/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
   ```bash
-  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025aphoton"#' ~/.chain-maind/config/app.toml
+  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025aphoton"#' ~/.ethermintd/config/app.toml
   ```
 
 
 
-- For network configuration, in `~/.chain-maind/config/config.toml`, please modify the configurations of `persistent_peers` and `create_empty_blocks_interval` by:
+- For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers` and `create_empty_blocks_interval` by:
 
   ```bash
-  $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"8dc1863d1d23cf9ad7cbea215c19bcbe8bf39702@p2p.baaa7e56-cc71-4ae4-b4b3-c6a9d4a9596a.cryptodotorg.bison.run:26656,494d860a2869b90c458b07d4da890539272785c9@p2p.fabc23d9-e0a1-4ced-8cd7-eb3efd6d9ef3.cryptodotorg.bison.run:26656,8a7922f3fb3fb4cfe8cb57281b9d159ca7fd29c6@p2p.aef59b2a-d77e-4922-817a-d1eea614aef4.cryptodotorg.bison.run:26656,dc2540dabadb8302da988c95a3c872191061aed2@p2p.7d1b53c0-b86b-44c8-8c02-e3b0e88a4bf7.cryptodotorg.herd.run:26656,33b15c14f54f71a4a923ac264761eb3209784cf2@p2p.0d20d4b3-6890-4f00-b9f3-596ad3df6533.cryptodotorg.herd.run:26656,d2862ef8f86f9976daa0c6f59455b2b1452dc53b@p2p.a088961f-5dfd-4007-a15c-3a706d4be2c0.cryptodotorg.herd.run:26656,87c3adb7d8f649c51eebe0d3335d8f9e28c362f2@seed-0.crypto.org:26656,e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.crypto.org:26656,2c55809558a4e491e9995962e10c026eb9014655@seed-2.crypto.org:26656"#' ~/.chain-maind/config/config.toml
-  $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.chain-maind/config/config.toml
+  $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"8dc1863d1d23cf9ad7cbea215c19bcbe8bf39702@p2p.baaa7e56-cc71-4ae4-b4b3-c6a9d4a9596a.cryptodotorg.bison.run:26656,494d860a2869b90c458b07d4da890539272785c9@p2p.fabc23d9-e0a1-4ced-8cd7-eb3efd6d9ef3.cryptodotorg.bison.run:26656,8a7922f3fb3fb4cfe8cb57281b9d159ca7fd29c6@p2p.aef59b2a-d77e-4922-817a-d1eea614aef4.cryptodotorg.bison.run:26656,dc2540dabadb8302da988c95a3c872191061aed2@p2p.7d1b53c0-b86b-44c8-8c02-e3b0e88a4bf7.cryptodotorg.herd.run:26656,33b15c14f54f71a4a923ac264761eb3209784cf2@p2p.0d20d4b3-6890-4f00-b9f3-596ad3df6533.cryptodotorg.herd.run:26656,d2862ef8f86f9976daa0c6f59455b2b1452dc53b@p2p.a088961f-5dfd-4007-a15c-3a706d4be2c0.cryptodotorg.herd.run:26656,87c3adb7d8f649c51eebe0d3335d8f9e28c362f2@seed-0.crypto.org:26656,e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.crypto.org:26656,2c55809558a4e491e9995962e10c026eb9014655@seed-2.crypto.org:26656"#' ~/.ethermintd/config/config.toml
+  $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
   ```
 :::tip Reminder:
 The list of the `seed` is subjected to change, you can also find the latest seed to connect [here](https://github.com/crypto-org-chain/mainnet#seed-nodes)
@@ -173,11 +173,11 @@ With  [STATE-SYNC](https://docs.tendermint.com/master/tendermint-core/state-sync
 Blocks before state-sync `trust height` will **NOT** be queryable. If you want to run a **full node** or a validator with complete blockchain data; It is not suggested to use state-sync. Kindly refer to this [guide](./mainnet.html#crypto-org-mainnet-running-a-full-node) on building a node with complete data.
 :::
 Follow the below steps to enable state-sync:
-- For state-sync configuration, in `~/.chain-maind/config/config.toml`, please modify the configurations under [statesync] `enable`, `rpc_servers`, `trust_height` and `trust_hash` and add `persistent_peers` by:
+- For state-sync configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations under [statesync] `enable`, `rpc_servers`, `trust_height` and `trust_hash` and add `persistent_peers` by:
 
   ```bash
-  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"87c3adb7d8f649c51eebe0d3335d8f9e28c362f2@seed-0.crypto.org:26656,e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.crypto.org:26656,2c55809558a4e491e9995962e10c026eb9014655@seed-2.crypto.org:26656"#' ~/.chain-maind/config/config.toml
-  $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1""#' ~/.chain-maind/config/config.toml
+  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"87c3adb7d8f649c51eebe0d3335d8f9e28c362f2@seed-0.crypto.org:26656,e1d7ff02b78044795371beb1cd5fb803f9389256@seed-1.crypto.org:26656,2c55809558a4e491e9995962e10c026eb9014655@seed-2.crypto.org:26656"#' ~/.ethermintd/config/config.toml
+  $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1""#' ~/.ethermintd/config/config.toml
   $ LATEST_HEIGHT=$(curl -s https://mainnet.crypto.org:26657/block | jq -r .result.block.header.height); \
   BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
   TRUST_HASH=$(curl -s "https://mainnet.crypto.org:26657/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
@@ -186,7 +186,7 @@ Follow the below steps to enable state-sync:
   s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"https://mainnet.crypto.org:26657,https://mainnet.crypto.org:26657\"| ; \
   s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
   s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-  s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.chain-maind/config/config.toml
+  s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.ethermintd/config/config.toml
   ```
 
     ::: tip NOTE
@@ -200,38 +200,38 @@ Follow the below steps to enable state-sync:
 
 ### Step 3-1. Run everything
 
-Once the `chain-maind` has been configured, we are ready to start the node and sync the blockchain data:
+Once the `ethermintd` has been configured, we are ready to start the node and sync the blockchain data:
 
-- Start `chain-maind`, e.g.:
+- Start `ethermintd`, e.g.:
 
 ```bash
-  $ ./chain-maind start
+  $ ./ethermintd start
 ```
 **OR**
-- _(Optional for Linux)_ If you would like to have it running at the background, you can start `chain-maind` with `systemd` service, e.g.:
+- _(Optional for Linux)_ If you would like to have it running at the background, you can start `ethermintd` with `systemd` service, e.g.:
 
 ```bash
   $ git clone https://github.com/crypto-org-chain/chain-main.git && cd chain-main
   $ ./networks/create-service.sh
-  $ sudo systemctl start chain-maind
+  $ sudo systemctl start ethermintd
   # view log
-  $ journalctl -u chain-maind -f
+  $ journalctl -u ethermintd -f
 ```
 
-:::details Example: /etc/systemd/system/chain-maind.service created by script
+:::details Example: /etc/systemd/system/ethermintd.service created by script
 
 ```bash
-# /etc/systemd/system/chain-maind.service
+# /etc/systemd/system/ethermintd.service
 [Unit]
-Description=Chain-maind
-ConditionPathExists=/usr/local/bin/chain-maind
+Description=ethermintd
+ConditionPathExists=/usr/local/bin/ethermintd
 After=network.target
 
 [Service]
 Type=simple
 User=ubuntu
 WorkingDirectory=/usr/local/bin
-ExecStart=/usr/local/bin/chain-maind start --home /home/ubuntu/.chain-maind
+ExecStart=/usr/local/bin/ethermintd start --home /home/ubuntu/.ethermintd
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=4096
@@ -247,7 +247,7 @@ It should begin fetching blocks from the other peers. Please wait until it is sy
 ::: tip Remarks: 
   - You can query the node syncing status by
     ```bash
-    $ ./chain-maind status 2>&1 | jq '.SyncInfo.catching_up'
+    $ ./ethermintd status 2>&1 | jq '.SyncInfo.catching_up'
     ```
     If the above command returns `false`, it means that your node **is synced**; otherwise, it returns `true` and implies your node is still catching up.
 
@@ -261,7 +261,7 @@ It should begin fetching blocks from the other peers. Please wait until it is sy
 Once the node is synced, we are now ready to send a `create-validator` transaction and join the network, for example:
 
 ```
-$ ./chain-maind tx staking create-validator \
+$ ./ethermintd tx staking create-validator \
 --from=[name_of_your_key] \
 --amount=[amount of cro, e.g. 1000cro] \
 --pubkey=[crocnclconspub...]  \
@@ -299,9 +299,9 @@ confirm transaction before signing and broadcasting [y/N]: y
 Once the `create-validator` transaction completes, you can check if your validator has been added to the validator set:
 
 ```bash
-$ ./chain-maind tendermint show-address
+$ ./ethermintd tendermint show-address
 ## [crocnclcons... address] ##
-$ ./chain-maind query tendermint-validator-set | grep -c [crocnclcons...]
+$ ./ethermintd query tendermint-validator-set | grep -c [crocnclcons...]
 ## 1 = Yes; 0 = Not yet added ##
 ```
 
@@ -310,13 +310,13 @@ To further check if the validator is signing blocks, kindly run this [script](ht
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-org-chain/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
 --tendermint-url https://mainnet.crypto.org:26657 \
---pubkey $(cat ~/.chain-maind/config/priv_validator_key.json | jq -r '.pub_key.value')
+--pubkey $(cat ~/.ethermintd/config/priv_validator_key.json | jq -r '.pub_key.value')
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
 The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 ```
 
-Congratulations! You've successfully set up a mainnet node and performed some basic transactions! You may refer to [Wallet Management](https://crypto.org/docs/wallets/cli.html#chain-maind) for more advanced operations and transactions.
+Congratulations! You've successfully set up a mainnet node and performed some basic transactions! You may refer to [Wallet Management](https://crypto.org/docs/wallets/cli.html#ethermintd) for more advanced operations and transactions.
 
 
 ##  Basic Transactions and queries
@@ -327,7 +327,7 @@ You can check your _transferable_ balance with the `balances` command under the 
 :::details Example: Check your address balance
 
 ```bash
-$ ./chain-maind query bank balances cro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n
+$ ./ethermintd query bank balances cro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n
 
   balances:
   - amount: "10005471622381693"
@@ -348,7 +348,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 :::details Example: Send 10cro from an address to another.
 
 ```bash
-$ ./chain-maind tx bank send Default cro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10cro --chain-id="crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
+$ ./ethermintd tx bank send Default cro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10cro --chain-id="crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -368,7 +368,7 @@ Note that you can look up validators and their operator address by the validator
 ::: details Example: Delegate funds from `Default` to a validator under the operator address `crocncl16k...edcer`
 
 ```bash
-$ ./chain-maind tx staking delegate crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
+$ ./ethermintd tx staking delegate crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -385,7 +385,7 @@ On the other hand, we can create an `Unbond` transaction to unbond the delegated
 ::: details Example: Unbond funds from a validator under the address `crocncl16k...edcer`
 
 ```bash
-$ ./chain-maind tx staking unbond crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
+$ ./ethermintd tx staking unbond crocncl16kqr009ptgken6qsxnzfnyjfsq6q97g3uedcer 100cro --from Default --chain-id "crypto-org-chain-mainnet-1" --gas-prices 0.1aphoton
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -409,7 +409,7 @@ We can check distribution outstanding (un-withdrawn) rewards for a validator and
 ::: details Example: Check all outstanding rewards under the operator address `crocncl1...zrf8`
 
 ```bash
-$ ./chain-maind q distribution validator-outstanding-rewards crocncl1kkqxv3szgh099xezt7y38t5anqzue4s326zrf8 --gas-prices 0.1aphoton
+$ ./ethermintd q distribution validator-outstanding-rewards crocncl1kkqxv3szgh099xezt7y38t5anqzue4s326zrf8 --gas-prices 0.1aphoton
   rewards:
   - amount: "1920761912.927067330419141688"
     denom: aphoton
@@ -423,7 +423,7 @@ We can check distribution outstanding (un-withdrawn) rewards for a validator and
 ::: details Example: Withdraw all outstanding under a delegation address:
 
 ```bash
-$ ./chain-maind tx distribution withdraw-all-rewards --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1aphoton
+$ ./ethermintd tx distribution withdraw-all-rewards --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1aphoton
 
 {"body":{"messages":[{"@type":"/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"...}]}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -436,7 +436,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 Validator could be punished and jailed due to network misbehaviour, we can check the jailing status of a validator, for example:
 
 ```bash
-$ ./chain-maind query staking validators -o json | jq
+$ ./ethermintd query staking validators -o json | jq
 ................................
       "operator_address": "crocncl1hct8ye56gk80qjxvrx299yu9v98aqaxe0y5kvg",
       "consensus_pubkey": {
@@ -450,7 +450,7 @@ $ ./chain-maind query staking validators -o json | jq
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./chain-maind tx slashing unjail --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1aphoton
+$ ./ethermintd tx slashing unjail --from [key_name] --chain-id crypto-org-chain-mainnet-1 --gas-prices 0.1aphoton
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y

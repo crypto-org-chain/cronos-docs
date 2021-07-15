@@ -26,7 +26,7 @@ If you are downloading the binary for other operating systems, make sure you are
 Run the followings to restore from your save mnemonic words. For example, you can restore a key with the name "Default" by:
 
 ```bash
-$ ./chain-maind keys add Default --recover
+$ ./ethermintd keys add Default --recover
 > Enter your bip39 mnemonic
 elder pony lottery motion universe comfort table matrix fly close boy rival verify virus defy permit pottery summer tilt seek trip child defense success
 ```

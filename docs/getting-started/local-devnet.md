@@ -11,7 +11,7 @@ By following this tutorial, you can compile and run the latest development versi
 
 ### Install `ethermintd`
 
-Install the binded version, which install chain-maind together, and find it by the absolute path:
+Install the binded version, which install ethermintd together, and find it by the absolute path:
 
 ```
 git clone https://github.com/tharsis/ethermint
@@ -176,7 +176,7 @@ Congratulations! You've successfully transferred tokens to Bob.
 
 #### Check the current validator set
 
-Firstly, we can check the details of the current validator set by the query command of chain-maind, for example:
+Firstly, we can check the details of the current validator set by the query command of ethermintd, for example:
 
 ```
 $ ethermintd query staking validators -o json | jq 

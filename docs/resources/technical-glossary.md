@@ -30,9 +30,9 @@ For example, the Chain ID of our [testnet](https://crypto.org/docs/getting-start
 
 The **A**pplication **B**lock**C**hain **I**nterface connects Tendermint (for consensus operations) to the actual applications.
 
-**Chain-maind**
+**ethermintd**
 
-chain-maind is the all-in-one command-line interface. It supports wallet management, funds transfer, and staking operations. 
+ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer, and staking operations. 
  
 **Client-rpc**
 
