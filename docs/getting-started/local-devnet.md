@@ -14,7 +14,7 @@ By following this tutorial, you can compile and run the latest development versi
 Install the binded version, which install ethermintd together, and find it by the absolute path:
 
 ```
-git clone https://github.com/tharsis/ethermint
+git clone https://github.com/crypto-org-chain/ethermint
 cd ethermint
 make install
 ```
@@ -23,6 +23,13 @@ Afterward, you can verify that by
 
 ```bash
 $ ethermintd -h
+```
+
+and also you can check the version of the ethermintd to see if it is build with the later commit:
+
+```bash
+$ ethermintd version
+[version-g<commit_hash>]
 ```
 
 ## Customize your devnet
@@ -48,7 +55,7 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
   ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
 ```
 
-The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; 1 accounts under the name of `mykey` with some allocated funds at the genesis.
+The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
 
 ## Start the devnet
 
@@ -71,19 +78,21 @@ A key will be generated according to the configuration specified in `init.sh`. B
 ```
 $ ethermintd keys list
 ```
+
 You will be able to list the address with allocated initial funds, for example:
 
-```bash
-- name: mykey
-  type: local
-  address: eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp
-  pubkey: ethpub17weu6qepq097dfma5sqz6myzw7swhk7rdljpuxu8nf358gfr2fa5up28x6lngxlk0zu
-  mnemonic: ""
-  threshold: 0
-  pubkeys: []
+```json
+[
+  {
+    "name": "mykey",
+    "type": "local",
+    "address": "eth1cfmydxvlz0a3yeeh4an5ay94lyfv0flw5svzez",
+    "pubkey": "{\"@type\":\"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey\",\"key\":\"AssVo7smZ323alb4hq2SIJ/TZw2rJeslZlZK7EGqyC8H\"}"
+  }
+]
 ```
 
-You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity. 
+You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity.
 
 ```
 $ ethermintd keys add mykey --recover --keyring-backend test
@@ -92,7 +101,7 @@ $ ethermintd keys add mykey --recover --keyring-backend test
 ```bash
 Enter your bip39 mnemonic
 sense slim three rally device lazy slice thumb bridge general essence seven diamond broom scan tell cactus into exotic paddle ignore tape unaware also
- 
+
 - name: mykey
   type: local
   address: eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
@@ -100,8 +109,6 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
   mnemonic: ""
 
 ```
-
-
 
 ### Check account balance
 
@@ -179,7 +186,7 @@ Congratulations! You've successfully transferred tokens to Bob.
 Firstly, we can check the details of the current validator set by the query command of ethermintd, for example:
 
 ```
-$ ethermintd query staking validators -o json | jq 
+$ ethermintd query staking validators -o json | jq
 ```
 
 will result in
@@ -222,7 +229,6 @@ will result in
     "total": "0"
   }
 }
-
 ```
 
 then we can see that there are two active validator `localtestnet` at the moment.
