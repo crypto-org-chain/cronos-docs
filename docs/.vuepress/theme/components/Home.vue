@@ -7,14 +7,32 @@
           :src="$withBase('/logo-icon-white.svg')"
           alt="logo-icon-white"
         />
-        <p class="description">Welcome to</p>
-        <h1 v-if="data.heroText !== null" id="main-title">
-          Crypto.org Chain Documentation
-        </h1>
+        <h1 id="main-title" class="title">Cronos</h1>
+        <div class="description">
+          The blockchain bridged with the Crypto.org chain to empower and scale decentralised applications
+        </div>
         <p class="action" v-if="data.actionText && data.actionLink">
           <NavLink class="action-button" :item="actionLink" />
         </p>
       </header>
+
+
+      <div class="introduction">
+        <div class="introduction-headline">
+          Testnet is launching soon
+        </div>
+        <div class="signup-newsletter-text">
+          Sign up to our newsletter to get the latest updates!
+        </div>
+        <div class="introduction-text">
+          For now, you can try out our chain by following the documentation.
+        </div>
+
+        <div>
+          <NavLink class="subscription-button" :item="subscriptionLink" />
+          <NavLink class="readdoc-button" :item="readdocLink" />
+        </div>
+      </div>
 
 
       <div class="get-involved">
@@ -35,7 +53,7 @@
               <h3>Developers</h3>
               <p>View our latest chain releases and features</p>
               <a href="/releases">
-                Get involved
+                Download latest release
                 <img
                   class="action-arrow"
                   :src="$withBase('/arrow_blue.svg')"
@@ -50,7 +68,7 @@
             </div>
             <div>
               <h3>Partners</h3>
-              <p>Join the others and be part of our Chain project</p>
+              <p>Launch your project on the network or join the network as a validator </p>
               <a href="/partners">
                 Join us
                 <img
@@ -68,7 +86,7 @@
             <div>
               <h3>Community</h3>
               <p>
-                Connect with our developer community and stay tuned with our
+                Connect with our developer community on Discord and stay tuned with our
                 Chain development updates
               </p>
               <a href="/community">
@@ -84,31 +102,6 @@
         </div>
       </div>
 
-      <div class="pay-doc">
-        <div class="left">
-          <h1 class="text-header">Crypto.com Pay Documents</h1>
-          <p>
-            Crypto.com Pay Checkout is a feature of Crypto.com Pay, which
-            utilizes Crypto.org Chain as a high performing native blockchain
-            solution
-          </p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://pay-docs.crypto.com/"
-          >
-            Learn more
-            <img
-              class="action-arrow"
-              :src="$withBase('/arrow_blue.svg')"
-              alt="arrow"
-            />
-          </a>
-        </div>
-        <div class="right">
-          <img class="logo" :src="$withBase('/pay_doc.svg')" alt="pay_doc" />
-        </div>
-      </div>
 
       <!-- <Content class="theme-default-content custom" /> -->
     </main>
@@ -132,6 +125,20 @@ export default {
       return {
         link: this.data.actionLink,
         text: this.data.actionText,
+      };
+    },
+
+    subscriptionLink() {
+      return {
+        link: this.data.subscriptionLink,
+        text: this.data.subscriptionText,
+      };
+    },
+
+    readdocLink() {
+      return {
+        link: this.data.readdocLink,
+        text: this.data.readdocText,
       };
     },
   },
@@ -159,23 +166,22 @@ export default {
     background url(../../public/hero-bg.svg);
     background-size cover;
 
-    logo {
-      max-width 100%;
-      z-index 1;
-      display block;
+    .logo {
+      width: 70px;
     }
 
     h1 {
       font-size 2.4rem;
-      margin 0 0 2rem;
+      margin 1rem auto 0;
       font-weight 500;
     }
 
     .description {
       font-size 2.4rem;
       line-height 1.3;
-      margin 1rem 0 0;
+      margin 1rem auto 0;
       font-weight 300;
+      max-width: 800px;
     }
 
     .action-button {
@@ -188,10 +194,53 @@ export default {
       transition background-color 0.1s ease;
       box-sizing border-box;
       border-bottom 1px solid darken($accentColor, 10%);
+      margin-top 1rem;
 
       &:hover {
         background-color lighten($accentColor, 10%);
       }
+    }
+  }
+
+  .subscription-button {
+    display inline-block;
+    font-size 1rem;
+    color #fff;
+    background-color $accentColor;
+    padding 0.6rem 2.2rem;
+    border-radius 4px;
+    transition background-color 0.1s ease;
+    box-sizing border-box;
+    line-height: 1.7;
+    margin: 1rem 1rem;
+
+    svg {
+      color #fff
+    }
+
+    &:hover {
+      background-color lighten($accentColor, 10%);
+    }
+  }
+
+  .readdoc-button {
+    display inline-block;
+    font-size 1rem;
+    color $accentColor;
+    background-color #f7f9fa;
+    padding 0.6rem 2.2rem;
+    border-radius 4px;
+    transition background-color 0.1s ease;
+    box-sizing border-box;
+    line-height: 1.7;
+
+    svg {
+      color #fff
+    }
+
+    &:hover {
+      color #fff
+      background-color lighten($accentColor, 10%);
     }
   }
 
@@ -237,6 +286,29 @@ export default {
     }
   }
 
+  .introduction {
+    border-radius 4px
+    margin 80px auto
+    padding 34px
+    text-align center
+    font-size 1.5em
+
+    .introduction-headline {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .signup-newsletter-text {
+      margin-top 20px
+      line-height 40px
+    }
+
+    .introduction-text {
+      margin-bottom 20px
+      line-height 40px
+    }
+  }
+
   .get-involved {
     display flex
     margin 6rem 3rem
@@ -267,22 +339,6 @@ export default {
       }
     }
   }
-
-  .pay-doc {
-    display flex
-    margin 6rem 6rem 8rem
-    justify-content space-between
-    .left {
-      flex-basis 40%
-      h1 {
-        margin-top 2.5rem
-        text-align left
-      }
-    }
-    .right {
-      margin-right 3rem
-    }
-  }
 }
 
 @media (max-width $MQMobile) {
@@ -299,16 +355,6 @@ export default {
       .left {
         padding 0
         margin-bottom 3rem
-        text-align center
-      }
-    }
-    .pay-doc {
-      margin 2rem 1rem 6rem
-      flex-direction column-reverse
-      .left {
-        flex-basis 100%
-      }
-      .right {
         text-align center
       }
     }
@@ -341,6 +387,16 @@ export default {
       }
 
       .action-button {
+        font-size 1rem;
+        padding 0.6rem 1.2rem;
+      }
+
+      .subscription-button {
+        font-size 1rem;
+        padding 0.6rem 1.2rem;
+      }
+
+      .readdoc-button {
         font-size 1rem;
         padding 0.6rem 1.2rem;
       }

@@ -30,7 +30,6 @@ export default {
     display inline-block
   .nav-links
     display none
-    border-bottom 1px solid $borderColor
     padding 0.5rem 0 0.75rem 0
     a
       font-weight 600
@@ -50,7 +49,7 @@ export default {
 
 @media (max-width: $MQMobile)
   .sidebar
-    background-color white
+    background-color black
     box-shadow 0 4px 10px 3px rgba(0, 0, 0, 0.05)
     .nav-links
       display block

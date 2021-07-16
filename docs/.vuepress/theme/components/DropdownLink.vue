@@ -172,7 +172,7 @@ $accentColor = #acacac
       position absolute
       top 100%
       right 0
-      background-color white
+      background-color black
       padding .8rem .2rem .8rem .4rem
       border none
       border-bottom-color #ccc

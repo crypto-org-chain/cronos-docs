@@ -3,6 +3,10 @@ home: true
 heroImage: CRO_icon.png
 actionText: Get Started →
 actionLink: ../getting-started/
+subscriptionText: Subscribe Now
+subscriptionLink: https://cryptoorg.substack.com/p/subscribe
+readdocText: Read Documentation
+readdocLink: ../getting-started/
 footer: true
 ---
 
