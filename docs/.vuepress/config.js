@@ -100,6 +100,7 @@ module.exports = {
         "",
         "local-devnet",
         "cronos-testnet",
+        "metamask",
         "security-checklist.md"
       ],
       "/chain-details/": [

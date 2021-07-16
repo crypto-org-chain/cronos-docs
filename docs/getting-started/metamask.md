@@ -1,7 +1,7 @@
-In the following step-by-step guide, you will learn how to use the Metamask chrome extension to send/receive and interact with the Cronos testnet.
-
 
 ## Using metamask
+In the following step-by-step guide, you will learn how to use the Metamask chrome extension to send/receive and interact with the Cronos testnet.
+
 
 First of all we would need to connect the metamask with the Cronos testnet network: 
 
