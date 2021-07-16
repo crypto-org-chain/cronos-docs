@@ -7,7 +7,7 @@
           :src="$withBase('/logo-icon-white.svg')"
           alt="logo-icon-white"
         />
-        <h1 id="main-title" class="title">CRONOS</h1>
+        <h1 id="main-title" class="title">Cronos</h1>
         <div class="description">
           The blockchain bridged with the Crypto.org chain to empower and scale decentralised applications
         </div>

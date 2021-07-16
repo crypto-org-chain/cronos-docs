@@ -6,7 +6,7 @@
           <a href="/">
             <img
               class="footer-logo"
-              :src="$withBase('/crypto-com-horizontal-logo-white.svg')"
+              :src="$withBase('/cronos-horizontal-logo-white.svg')"
               alt="logo-icon-white"
             />
           </a>
@@ -88,7 +88,7 @@
         </div>
       </div>
       <p class="copyright">
-        Copyright © {{ currentYear }} Crypto.org. All rights reserved.
+        Copyright © {{ currentYear }} Cronos. All rights reserved.
       </p>
     </div>
   </footer>
@@ -130,6 +130,11 @@ $light-color = rgba(255, 255, 255, 50%)
     display flex
     justify-content space-between
     margin-bottom 3rem
+
+    .footer-logo {
+      width 110px  
+    }
+
     .navLinks {
       display flex
       .column {
