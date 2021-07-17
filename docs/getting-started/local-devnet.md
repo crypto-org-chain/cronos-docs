@@ -62,7 +62,7 @@ The default configuration will give us a single validators devnet with the chain
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
 ```sh
-$ ./init.sh
+$ init.sh
 ```
 
 Blocks are now being generated! You can verify and visit the rpc port [http://localhost:26657/](http://localhost:26657/) to view the blockchain data.
@@ -116,7 +116,6 @@ You can check the account balance by
 
 ```
 ethermintd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp
-
 ```
 
 For example:
