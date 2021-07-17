@@ -136,13 +136,13 @@ Run the followings to create a new key. For example, you can create a key with t
   $ ./ethermintd keys add Default
 ```
 
-You should obtain an address with `tcro` prefix, e.g. `tcro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n`. This will be the address for performing transactions.
+You should obtain an address with `eth` prefix, e.g. `eth10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
 
 ### Step 3-2. Obtain test token
 
-Unless you have obtained the CRO testnet token before, use the [tcro faucet](https://crypto.org/faucet) to obtain test CRO tokens.
+Unless you have obtained the Cronos testnet token before, use the faucet to obtain test tokens.
 In case you have reached the daily limit on faucet airdrop, you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel ,
-stating who you are and your `tcro.....` address.
+stating who you are and your `eth.....` address.
 
 ### Step 3-3. Obtain the validator public key
 
