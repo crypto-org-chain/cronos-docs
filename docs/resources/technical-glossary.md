@@ -1,6 +1,6 @@
 # Technical glossary
 
-A | [B](#b) | [C](#c) | [D](#d) | E | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | K | [L](#l) | [M](#m) | [N](#n) | O | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | W | X | Y | Z
+A | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | K | [L](#l) | [M](#m) | [N](#n) | O | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | W | X | Y | Z
 
 ---
 
@@ -29,10 +29,6 @@ For example, the Chain ID of our [testnet](https://crypto.org/docs/getting-start
 **Chain-abci**
 
 The **A**pplication **B**lock**C**hain **I**nterface connects Tendermint (for consensus operations) to the actual applications.
-
-**ethermintd**
-
-ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer, and staking operations. 
  
 **Client-rpc**
 
@@ -65,6 +61,16 @@ The transaction that delagate funds to a validator for staking purposes. Delegat
 
 CRO holders who do not run validator operations themselves. Users can delegate CRO to validators and obtain a part of its revenue in exchange. Because they share revenue with their validators, delegators also share responsibility. Should a validator misbehave, each of its delegators will be partially slashed in proportion to their stake. 
 
+#### E
+
+**ethermintd**
+
+ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer, and staking operations. 
+
+**EVM (Ethereum Virtual Machine)**
+
+It is a state machine that provides the necessary tools to run or create a contract on a given state.
+
 
 #### F
 
@@ -82,6 +88,11 @@ A full node is a node that participates in the network but will not help secure 
 **Genesis**
 
 The origin of a blockchain, also known as block 1. It can also be used to reference the initial state of the blockchain at origination.
+
+**Genesis State**
+
+It defines the state necessary for initializing the chain from a previous exported height.
+
 
 **Governance**
 
@@ -221,6 +232,10 @@ The penalty imposed on validators' misbehavior such as byzantine faults or liven
 **State (of a staking address)**
 
 The general state of a staking address that includes _nonce_, _bounded/unbonded_ amount, _validator metadata_, and _slashing related information_ (if any).
+
+**State DB**
+
+It represents an EVM database for full state querying of both contracts and accounts. 
 
 
 #### T
