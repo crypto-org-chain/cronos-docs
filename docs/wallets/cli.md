@@ -6,7 +6,7 @@
 
 ### Build Prerequisites
 
-- You can get the latest `ethermintd` binary here from the [release page](https://github.com/crypto-org-chain/ethermint/releases);
+- You can get the latest `ethermintd` binary here from the [release page](https://github.com/crypto-org-chain/cronos/releases);
 
 ### Using `ethermintd`
 
