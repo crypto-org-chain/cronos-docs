@@ -342,10 +342,10 @@ Transfer operation involves the transfer of tokens between two addresses.
 
 #### **Send Funds** [`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
 
-:::details Example: Send 10cro from an address to another.
+:::details Example: Send 10aphoton from an address to another.
 
 ```bash
-$ ethermintd tx bank send Default eth1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcro --chain-id crypto-org-chain-mainnet-1
+$ ethermintd tx bank send Default eth1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10aphoton --chain-id cronostestnet-338
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -364,7 +364,7 @@ To bond funds for staking, you can delegate funds to a validator by the `delegat
 ::: details Example: Delegate funds from `Default` to a validator under the address `crocncl1zd...rz35z`
 
 ```bash
-$ ethermintd tx staking delegate crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z 100cro --from Default --chain-id crypto-org-chain-mainnet-1
+$ ethermintd tx staking delegate crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z 100aphoton --from Default --chain-id cronostestnet-338
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -379,7 +379,7 @@ On the other hand, we can create a `Unbond` transaction to unbond the delegated 
 ::: details Example: Unbond funds from a validator under the address `crocncl1zdl...rz35z`
 
 ```bash
-$ ethermintd tx staking unbond crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z 100cro --from Default --chain-id crypto-org-chain-mainnet-1
+$ ethermintd tx staking unbond crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z 100aphoton --from Default --chain-id cronostestnet-338
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -401,14 +401,20 @@ You can check your _transferable_ balance with the `balances` command under the 
 :::details Example: Check your address balance
 
 ```bash
-$ ethermintd query bank balances eth1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3zwpck7
+$ ethermintd query bank balances eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --output json | jq
 
-balances:
-- amount: "10005471622381693"
-  denom: basetcro
-pagination:
-  next_key: null
-  total: "0"
+{
+  "balances": [
+    {
+      "denom": "aphoton",
+      "amount": "99999000000000000000000000"
+    }
+  ],
+  "pagination": {
+    "next_key": null,
+    "total": "0"
+  }
+}
 
 ```
 
@@ -431,7 +437,7 @@ $ ethermintd tx staking create-validator \
 --amount="100cro" \
 --pubkey="crocnclconspub1zcjduepqg0yml2l63qjnhr2cuw4tvprr72tle0twf3zymrxllmr0sj9uv3tqmpcrhs" \
 --moniker="The_new_node" \
---chain-id="cro-test" \
+--chain-id="cronostestnet-338" \
 --commission-rate="0.10" \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
@@ -466,7 +472,7 @@ $ ethermintd query staking validators -o json | jq
 After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ethermintd tx slashing unjail --from node1 --chain-id crypto-org-chain-mainnet-1
+$ ethermintd tx slashing unjail --from node1 --chain-id cronostestnet-338
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
 ```
