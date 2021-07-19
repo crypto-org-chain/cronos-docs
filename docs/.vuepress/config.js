@@ -76,7 +76,7 @@ module.exports = {
         "local-devnet",
         "cronos-testnet",
         "metamask",
-        "security-checklist.md"
+        "security-checklist.md",
         "cronos-smart-contract"
       ],
       "/chain-details/": [
