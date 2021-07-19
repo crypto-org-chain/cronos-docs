@@ -24,20 +24,19 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 The following is the minimal setup for a **validator node**.
 :::
 
-<!--TODO: Update Links-->
+
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Windows_x86_64.zip) are also available.
+**Mac** ([Intel x86](https://github.com/crypto-org-chain/ethermint/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/ethermint/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/ethermint/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Windows_x86_64.zip) are also available.
 
-<!--TODO: Update Links-->
+
 
 - To install released **Cronos testnet binaries** from github:
-  <!--TODO: Update Links-->
+
   ```bash
-  $ curl -LOJ https://github.com/crypto-org-chain/chain-main/releases/download/v2.0.0-cronos/chain-main_2.0.0-cronos_Linux_x86_64.tar.gz
-  $ tar -zxvf chain-main_2.0.0-cronos_Linux_x86_64.tar.gz
+  $ curl -LOJ https://github.com/crypto-org-chain/ethermint/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Linux_x86_64.tar.gz
+  $ tar -zxvf ethermint_0.5.0-rc0_Linux_x86_64.tar.gz
   ```
-  <!--TODO: Update Links-->
 
 ## Step 2. Configure `ethermintd`
 
@@ -46,19 +45,20 @@ Before kick-starting your node, we will have to configure your node so that it c
 ### Step 2-1 Initialize `ethermintd`
 
 - First of all, you can initialize ethermintd by:
+  <!--TODO: Update chain-id-->
 
   ```bash
     $ ./ethermintd init [moniker] --chain-id testnet-cronos-3
   ```
-
+  <!--TODO: Update chain-id-->
   This `moniker` will be the displayed id of your node when connected to Crypto.org Chain network.
   When providing the moniker value, make sure you drop the square brackets since they are not needed.
   The example below shows how to initialize a node named `pegasus-node` :
-
+  <!--TODO: Update chain-id-->
   ```bash
     $ ./ethermintd init pegasus-node --chain-id testnet-cronos-3
   ```
-
+  <!--TODO: Update chain-id-->
   ::: tip NOTE
 
   - Depending on your ethermintd home setting, the ethermintd configuration will be initialized to that home directory. To simply the following steps, we will use the default ethermintd home directory `~/.ethermintd/` for illustration.
