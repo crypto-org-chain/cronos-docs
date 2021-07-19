@@ -410,7 +410,7 @@ $ ethermintd query bank balances cro1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3zwpck7
 
 balances:
 - amount: "10005471622381693"
-  denom: aphoton
+  denom: basetcro
 pagination:
   next_key: null
   total: "0"

@@ -17,7 +17,7 @@ $ ethermintd query supply total
     {
     "supply": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -33,7 +33,7 @@ $ ethermintd query supply total
     {
     "supply": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[total_circulating_amount]"
         }
     ]

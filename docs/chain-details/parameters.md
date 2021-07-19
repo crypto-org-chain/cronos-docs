@@ -68,7 +68,7 @@ This section aims to collect and provide brief a description of all the mentione
 
 | Key                     | Type         | Description                                                              |
 | ----------------------- | ------------ | ------------------------------------------------------------------------ |
-| `evm_denom`             | string       | The token denomination used on the EVM state transitions and gas consumption for EVM messages. The default value is "aphoton"              |
+| `evm_denom`             | string       | The token denomination used on the EVM state transitions and gas consumption for EVM messages. The default value is "basetcro"              |
 | `enable_create`         | bool         | Toggles state transitions that use the `vm.Create` function, and it prevents all contract creation functionality if it is disabled.                |
 | `enable_call`           | bool         | Toggles state transitions that use the `vm.Call` function, and it prevents transfers between accounts and executing a smart contract call if it is disabled                                                |
 | `extra_eips`            | []int        | The set of activateable Ethereum Improvement Proposals (EIPs) on the Ethereum VM Config that apply custom jump tables |

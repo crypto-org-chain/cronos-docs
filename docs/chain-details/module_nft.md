@@ -41,7 +41,7 @@ $ ethermintd query bank balances <address> --output json | jq
     {
     "balances": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[token_balance]"
         }
     ],
@@ -61,7 +61,7 @@ $ ethermintd query bank total --output json | jq
     {
     "supply": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -75,5 +75,5 @@ $ ethermintd query bank total --output json | jq
 
 | Key                  | Type          | Example                              |
 | -------------------- | ------------- | ------------------------------------ |
-| `SendEnabled`        | []SendEnabled | [{denom: "aphoton", enabled: true }] |
+| `SendEnabled`        | []SendEnabled | [{denom: "basetcro", enabled: true }] |
 | `DefaultSendEnabled` | bool          | true                                 |

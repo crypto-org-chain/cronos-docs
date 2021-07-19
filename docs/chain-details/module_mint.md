@@ -32,7 +32,7 @@ We can query the current minting annual provisions value, for example:
   109573801550200370
 ```
 
-implies that the current minting annual provisions will be `109573801550200370` aphoton ( i.e. `1,095,738,015` cro)
+implies that the current minting annual provisions will be `109573801550200370` basetcro ( i.e. `1,095,738,015` cro)
 
 #### `query mint inflation` - Query the current minting inflation value
 
@@ -74,7 +74,7 @@ The following tables show overall effects on different configurations of the min
 | Higher               | More expected blocks per year      | Higher target bonding ratio          | N/A          |
 | Lower                | Less expected blocks per year      | Lower target bonding ratio           | N/A          |
 | Constraints          | Value has to be a positive integer | Value has to be less or equal to `1` | N/A          |
-| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `aphoton`    |
+| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `basetcro`    |
 
 |                      | `inflation_max`                       | `inflation_min`                      | `inflation_rate_change`                       |
 | -------------------- | ------------------------------------- | ------------------------------------ | --------------------------------------------- |

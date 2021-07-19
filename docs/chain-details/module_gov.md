@@ -132,7 +132,7 @@ $ ethermintd query gov params --output json | jq
   "deposit_params": {
     "min_deposit": [
       {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "10000000"
       }
     ],

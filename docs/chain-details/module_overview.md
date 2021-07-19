@@ -34,13 +34,13 @@ The `bank` module maintains the state of two primary objects:
 
 #### `tx bank send [from_key_or_address] [to_address] [amount] [network_id]` - **Send Funds**
 
-You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 1 aphoton from `address_a` to `address_b` by
+You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 1 basetcro from `address_a` to `address_b` by
 
 ```bash
-$ ethermintd tx bank send <address_a> <address_b> 1aphoton --keyring-backend test --chain-id <chain-id>
+$ ethermintd tx bank send <address_a> <address_b> 1basetcro --keyring-backend test --chain-id <chain-id>
 
 ## Transaction payload##
-{"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":<address a>,"to_address":<address b>,"amount":[{"denom":"aphoton","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
+{"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":<address a>,"to_address":<address b>,"amount":[{"denom":"basetcro","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
 
 confirm transaction before signing and broadcasting [y/N]: y
 
@@ -59,7 +59,7 @@ $ ethermintd query bank balances <address> --output json | jq
     {
     "balances": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[token_balance]"
         }
     ],
@@ -79,7 +79,7 @@ $ ethermintd query bank total --output json | jq
     {
     "supply": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -93,7 +93,7 @@ $ ethermintd query bank total --output json | jq
 
 | Key                  | Type          | Example                              |
 | -------------------- | ------------- | ------------------------------------ |
-| `SendEnabled`        | []SendEnabled | [{denom: "aphoton", enabled: true }] |
+| `SendEnabled`        | []SendEnabled | [{denom: "basetcro", enabled: true }] |
 | `DefaultSendEnabled` | bool          | true                                 |
 
 ## `distribution`
@@ -359,7 +359,7 @@ $ ethermintd query gov params --output json | jq
     "deposit_params": {
       "min_deposit": [
         {
-          "denom": "aphoton",
+          "denom": "basetcro",
           "amount": "10000000"
         }
       ],
@@ -425,7 +425,7 @@ We can query the current minting annual provisions value, for example:
   109573801550200370
 ```
 
-implies that the current minting annual provisions will be `109573801550200370` aphoton ( i.e. `1,095,738,015` cro)
+implies that the current minting annual provisions will be `109573801550200370` basetcro ( i.e. `1,095,738,015` cro)
 
 #### `query mint inflation` - Query the current minting inflation value
 
@@ -446,7 +446,7 @@ We can query the current query parameters by
 $ ethermintd query mint params --output json | jq
 
   {
-    "mint_denom": "aphoton",
+    "mint_denom": "basetcro",
     "inflation_rate_change": "0.013000000000000000",
     "inflation_max": "0.020000000000000000",
     "inflation_min": "0.007000000000000000",
@@ -467,7 +467,7 @@ The following tables show overall effects on different configurations of the min
 | Higher               | More expected blocks per year      | Higher target bonding ratio          | N/A          |
 | Lower                | Less expected blocks per year      | Lower target bonding ratio           | N/A          |
 | Constraints          | Value has to be a positive integer | Value has to be less or equal to `1` | N/A          |
-| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `aphoton`    |
+| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `basetcro`    |
 
 |                      | `inflation_max`                       | `inflation_min`                      | `inflation_rate_change`                       |
 | -------------------- | ------------------------------------- | ------------------------------------ | --------------------------------------------- |
@@ -740,7 +740,7 @@ $ ethermintd query ethermintd query staking delegation [delegator-addr] [validat
       "shares": "[delegator_shares]"
     },
     "balance": {
-      "denom": "aphoton",
+      "denom": "basetcro",
       "amount": "[delegator_balance]"
     }
   }
@@ -762,7 +762,7 @@ $ ethermintd query staking delegations-to [validator-addr] --output json  | jq
           "shares": "[delegator_shares]"
         },
         "balance": {
-          "denom": "aphoton",
+          "denom": "basetcro",
           "amount": "[delegator_balance_1]"
         }
       },
@@ -773,7 +773,7 @@ $ ethermintd query staking delegations-to [validator-addr] --output json  | jq
           "shares": "[delegator_shares-2]"
         },
         "balance": {
-          "denom": "aphoton",
+          "denom": "basetcro",
           "amount": "[delegator_balance_2]"
         }
       }
@@ -881,7 +881,7 @@ $ ethermintd query staking params --output json | jq
     "max_validators": 100,
     "max_entries": 7,
     "historical_entries": 100,
-    "bond_denom": "aphoton"
+    "bond_denom": "basetcro"
   }
 ```
 
@@ -897,7 +897,7 @@ The following tables show overall effects on different configurations of the sta
 | Higher               | N/A          | More historical entries to persist | More entries for either unbonding delegation or redelegation  |
 | Lower                | N/A          | Less historical entries to persist | Fewer entries for either unbonding delegation or redelegation |
 | Constraints          | N/A          | Value has to be positive           | Value has to be a positive                                    |
-| Sample configuration | `aphoton`    | `100` (50%)                        | `7`                                                           |
+| Sample configuration | `basetcro`    | `100` (50%)                        | `7`                                                           |
 
 ---
 
@@ -929,7 +929,7 @@ $ ethermintd query supply total
     {
     "supply": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[total_supply_amount]"
         }
     ]
@@ -945,7 +945,7 @@ $ ethermintd query supply total
     {
     "supply": [
         {
-        "denom": "aphoton",
+        "denom": "basetcro",
         "amount": "[total_circulating_amount]"
         }
     ]
