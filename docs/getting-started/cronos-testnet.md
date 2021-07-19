@@ -339,7 +339,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 :::details Example: Send 10tcro from an address to another.
 
 ```bash
-$ ./ethermintd tx bank send Default tcro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10tcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
+$ ./ethermintd tx bank send Default eth1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10tcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y

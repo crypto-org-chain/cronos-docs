@@ -69,7 +69,7 @@ Blocks are now being generated! You can verify and visit the rpc port [http://lo
 
 ## Interact with the chain
 
-After the chain has been started, we may open up another terminal and start interacting with the chain by `ethermind`.
+After the chain has been started, we may open up another terminal and start interacting with the chain by `ethermintd`.
 
 ### Keys management
 

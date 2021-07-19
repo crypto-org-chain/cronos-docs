@@ -6,9 +6,8 @@
 
 ### Build Prerequisites
 
-- You can get the latest `ethermintd` binary here from the [release page](https://github.com/crypto-org-chain/chain-main/releases);
+- You can get the latest `ethermintd` binary here from the [release page](https://github.com/crypto-org-chain/ethermint/releases);
 
-[**TODO**: Update the link]
 ### Using `ethermintd`
 
 `ethermintd`is bundled with the Crypto.org Chain code. After you have obtained the latest `ethermintd` binary, run
@@ -50,13 +49,13 @@ $ ethermintd config
 
 We can make changes to the default settings upon our choices, so it allows users to set the configuration beforehand all at once, so it would be ready with the same config afterward.
 
-For example, the `chain-id` is changed to “ethermint0” from a blank name.
+For example, the `chain-id` can be changed to `cronostestnet-338` from a blank name by 
 
 ```
-$ ethermintd config "chain-id" ethermint0
+$ ethermintd config "chain-id" cronostestnet-338
 $ ethermintd config
 {
-	"chain-id": "ethermint0",
+	"chain-id": "cronostestnet-338",
 	"keyring-backend": "os",
 	"output": "text",
 	"node": "tcp://localhost:26657",
@@ -74,7 +73,7 @@ Alternatively, we can directly make the changes to the config values in one plac
 ############################################################################
 
 # The network chain ID
-chain-id = "ethermint-test1"
+chain-id = "cronostestnet-338"
 # The keyring's backend, where the keys are stored (os|file|kwallet|pass|test|memory)
 keyring-backend = "os"
 # CLI output format (text|json)

@@ -60,21 +60,9 @@ module.exports = {
         text: "Wallet",
         items: [
           {
-            text: "ethermind",
-            link: "/wallets/cli.html#ethermind"
-          },
-          {
-            text: "Ledger Hardware Wallets with ethermind",
-            link: "/wallets/ledger.html#ledger-hardware-wallets"
-          },                   
-          {
-            text: "Mainnet Address Generation",
-            link: "/wallets/mainnet-address-generation.md"
-          },
-          {
-            text: "Mainnet Address Verification",
-            link: "/wallets/mainnet-address-verification.md"
-          }
+            text: "ethermintd",
+            link: "/wallets/cli.html#ethermintd"
+          }                
         ]
       },
         {
