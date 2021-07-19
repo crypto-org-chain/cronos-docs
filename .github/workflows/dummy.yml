@@ -6,7 +6,7 @@ on:
       - "**"
 jobs:
   dummy:
-    name: Scan
+    name: Dummy
     runs-on: ubuntu-18.04
     steps:
     - name: Do nothing
