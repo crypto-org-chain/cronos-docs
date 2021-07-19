@@ -2,7 +2,7 @@
 
 The latest Crypto.org Chain Testnet has been named as **Cronos**.
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `testnet-cronos-3`.
+This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet-338`.
 
 ## Pre-requisites
 
@@ -48,7 +48,7 @@ Before kick-starting your node, we will have to configure your node so that it c
   <!--TODO: Update chain-id-->
 
   ```bash
-    $ ./ethermintd init [moniker] --chain-id testnet-cronos-3
+    $ ./ethermintd init [moniker] --chain-id cronostestnet-338
   ```
   <!--TODO: Update chain-id-->
   This `moniker` will be the displayed id of your node when connected to Crypto.org Chain network.
@@ -56,7 +56,7 @@ Before kick-starting your node, we will have to configure your node so that it c
   The example below shows how to initialize a node named `pegasus-node` :
   <!--TODO: Update chain-id-->
   ```bash
-    $ ./ethermintd init pegasus-node --chain-id testnet-cronos-3
+    $ ./ethermintd init pegasus-node --chain-id cronostestnet-338
   ```
   <!--TODO: Update chain-id-->
   ::: tip NOTE
@@ -72,7 +72,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 - Download and replace the cronos Testnet `genesis.json` by:
 
   ```bash
-  $ curl https://raw.githubusercontent.com/crypto-com/testnets/main/testnet-cronos-3/genesis.json > ~/.ethermintd/config/genesis.json
+  $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/master/cronostestnet-338/genesis.json > ~/.ethermintd/config/genesis.json
   ```
 
   <!--TODO: Update Links-->
@@ -105,13 +105,13 @@ Before kick-starting your node, we will have to configure your node so that it c
   ```
 
 - For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
-
+  <!--TODO: seed nodes-->
   ```bash
   $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"b2a4c8db43b815e1ed83ab4723a6af84ccb8e3e4@13.213.110.242:26656,c76d7d28141daf037bec919268d0f38e64fd8389@3.1.240.30:26656"#' ~/.ethermintd/config/config.toml
   $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
   $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"2s"#' ~/.ethermintd/config/config.toml
   ```
-
+  <!--TODO: seed nodes-->
 **Note**: We suggest using `persistent_peers` instead of `seeds` to provide stable state-sync experience.
 
 ::: tip NOTE
@@ -234,7 +234,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 - One can check the current block height by querying the public full node by:
 
   ```bash
-  curl -s https://testnet-cronos-3.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
+  curl -s https://cronostestnet-338.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
   ```
 
   and you can check your node's progress (in terms of block height) by
@@ -250,17 +250,16 @@ Once the node is fully synced, we are now ready to send a `create-validator` tra
 ```
 $ ./ethermintd tx staking create-validator \
 --from=[name_of_your_key] \
---amount=500000tcro \
---pubkey=[tcrocnclconspub...]  \
+--amount=10000000stake \
+--pubkey='{"@type":"/cosmos.crypto.ed25519.PubKey","key":"PUBLIC_KEY"}'  \
 --moniker="[The_id_of_your_node]" \
 --security-contact="[security contact email/contact method]" \
---chain-id="testnet-cronos-3" \
+--chain-id="cronostestnet-338" \
 --commission-rate="0.10" \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
 --min-self-delegation="1" \
---gas 80000000 \
---gas-prices 0.1basetcro
+--fees=5000basetcro
 
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -288,7 +287,7 @@ To further check if the validator is signing blocks, kindly run this [script](ht
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://testnet-cronos-3.crypto.org:26657 \
+--tendermint-url https://cronostestnet-338.crypto.org:26657 \
 --pubkey $(cat ~/.ethermintd/config/priv_validator_key.json | jq -r '.pub_key.value')
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
@@ -297,7 +296,7 @@ The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://testnet-cronos-3.crypto.org:26657 \
+--tendermint-url https://cronostestnet-338.crypto.org:26657 \
 --bechpubkey [tcrocnclconspub1....]
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
@@ -318,7 +317,7 @@ You can check your _transferable_ balance with the `balances` command under the 
 :::details Example: Check your address balance
 
 ```bash
-$ ./ethermintd query bank balances tcro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n
+$ ./ethermintd query bank balances eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
 
 balances:
 - amount: "10005471622381693"
@@ -340,7 +339,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 :::details Example: Send 10tcro from an address to another.
 
 ```bash
-$ ./ethermintd tx bank send Default tcro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10tcro --chain-id "testnet-cronos-3" --gas-prices 0.1basetcro
+$ ./ethermintd tx bank send Default tcro1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10tcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -359,19 +358,19 @@ Validator could be punished and jailed due to network misbehaviour, we can check
 ```bash
 $ ./ethermintd query staking validators -o json | jq
 ................................
-      "operator_address": "tcrocncl1hct8ye56gk80qjxvrx299yu9v98aqaxe0y5kvg",
+      "operator_address": "ethvaloper1s9e3f5y4tt4fkz3jyj865qaud2cqhs66qkw5yl",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
-        "key": "P1/aHuScW5myVs+xH10R8yFT2u0wwaCKXfDKSuVTl60="
+        "key": "rXphE0lECaU4MfBL70l6tGrfaply4dp79g7ql4ijfco="
       },
-      "jailed": true,
+      "jailed": false,
 ................................
 ```
 
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./ethermintd tx slashing unjail --from [key_name] --chain-id "testnet-cronos-3" --gas-prices 0.1basetcro
+$ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
@@ -385,7 +384,7 @@ Congratulations! You've successfully set up a Testnet node and performed some ba
 
 <!--TODO: Update Links-->
 
-- You can lookup data within the `testnet-cronos-3` network by the [explorer](https://crypto.org/explorer/cronos3/);
+- You can lookup data within the `cronostestnet-338` network by the [explorer](https://crypto.org/explorer/cronos3/);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **cronos** testnet.
 

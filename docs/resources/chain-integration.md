@@ -60,10 +60,10 @@ The Ansible playbook for deploying Prometheus and some rules we are using are un
 - [Tendermint](https://mainnet.crypto.org:26657/)
 - [Cosmos RESTful gRPC](https://mainnet.crypto.org:1317/)
 
-### cronos Testnet - `testnet-cronos-3`
+### cronos Testnet - `cronostestnet-338`
 
-- [Tendermint](https://testnet-cronos-3.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://testnet-cronos-3.crypto.org:1317/)
+- [Tendermint](https://cronostestnet-338.crypto.org:26657/)
+- [Cosmos RESTful gRPC](https://cronostestnet-338.crypto.org:1317/)
 
 ## Block Explorer
 
