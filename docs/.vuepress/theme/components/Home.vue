@@ -17,7 +17,7 @@
 
       <div class="introduction">
         <div class="introduction-headline">
-          Testnet has been launched on 20 July, 2021
+          Testnet is now launched!
         </div>
         <div class="signup-newsletter-text">
           Sign up to our newsletter to get the latest updates and
