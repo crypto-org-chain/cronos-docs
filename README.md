@@ -4,7 +4,7 @@
 </p>
 <br />
 
-
+ 
 
 # Crypto.org Cronos testnet's documentation
 
@@ -17,7 +17,7 @@ The documentation in this repository site is meant to provide specifications and
 You're going to need:
 
 - **NPM**
-- **Oracle JDK** (For generating the pdf, deployment needs this)
+- **Oracle JDK** (For generating the pdf and deployment)
 
 ### Getting Set Up
 
