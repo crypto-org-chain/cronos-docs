@@ -14,7 +14,7 @@ By following this tutorial, you can compile and run the latest development versi
 Install the binded version, which install ethermintd together, and find it by the absolute path:
 
 ```
-git clone https://github.com/crypto-org-chain/ethermint
+git clone https://github.com/crypto-org-chain/cronos
 cd ethermint
 make install
 ```

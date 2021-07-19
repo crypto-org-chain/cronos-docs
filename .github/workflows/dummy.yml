@@ -1,0 +1,14 @@
+name: dummy
+
+on:
+  pull_request:
+    branches:
+      - "**"
+jobs:
+  dummy:
+    name: Dummy
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Do nothing
+      run: |
+        echo "Make sure there's always GitHub action, which is required to display the \"Update branch\" button in PR."

@@ -1,12 +1,12 @@
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/.vuepress/public/chain_doc_nav_logo.svg" alt="Crypto.org Chain" width="400">
+  <img src="./docs/.vuepress/public/cronos.svg" alt="Cronos Logo" width="300">
 </p>
 <br />
 
 
 
-# Crypto.org Cronos testnet's documentation
+# Cronos Testnet's Documentation
 
 The documentation in this repository site is meant to provide specifications and implementation details that will be useful to third party developers or contributors to the main repository.
 
@@ -22,8 +22,8 @@ You're going to need:
 ### Getting Set Up
 
 1. Fork this repository on Github
-2. Clone your forked repository (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/chain-docs.git`
-3. `cd chain-docs`
+2. Clone your forked repository (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/cronos-docs.git`
+3. `cd cronos-docs`
 4. Initialize and start chain-docs.
 
 ```bash
@@ -77,7 +77,7 @@ module.exports = {
 
 ## Generating a PDF version of the site
 
-Go to ``chain-docs/docs``, then run:
+Go to ``cronos-docs/docs``, then run:
 
 ```bash
 vuepress export

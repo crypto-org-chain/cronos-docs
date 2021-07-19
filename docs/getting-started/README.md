@@ -21,7 +21,7 @@ Thanks for your interest in Crypto.org Chain. In this technical documentation, w
  <!---TODO: UPDATE LINKS--->
 
 - [Project Website](http://crypto.org/)
-- [Project Repository](https://github.com/crypto-org-chain/ethermint)
+- [Project Repository](https://github.com/crypto-org-chain/cronos)
 - Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
 - Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da&label=Crypto.org Chain =discord =flat-square)](https://discord.gg/pahqHz26q4)
 
