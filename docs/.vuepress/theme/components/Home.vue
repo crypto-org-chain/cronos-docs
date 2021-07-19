@@ -7,10 +7,8 @@
           :src="$withBase('/logo-icon-white.svg')"
           alt="logo-icon-white"
         />
-        <h1 id="main-title" class="title">Cronos</h1>
-        <div class="description">
-          The blockchain bridged with the Crypto.org chain to empower and scale decentralised applications
-        </div>
+        <p class="description">Welcome to</p>
+        <h1 id="main-title" class="title">Cronos Documentation</h1>
         <p class="action" v-if="data.actionText && data.actionLink">
           <NavLink class="action-button" :item="actionLink" />
         </p>
@@ -19,13 +17,13 @@
 
       <div class="introduction">
         <div class="introduction-headline">
-          Testnet is launching soon
+          Testnet is now launched!
         </div>
         <div class="signup-newsletter-text">
-          Sign up to our newsletter to get the latest updates!
+          Sign up to our newsletter to get the latest updates and
         </div>
         <div class="introduction-text">
-          For now, you can try out our chain by following the documentation.
+          read the documentation to connect to our Testnet.
         </div>
 
         <div>
