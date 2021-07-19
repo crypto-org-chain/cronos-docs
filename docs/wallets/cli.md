@@ -49,7 +49,7 @@ $ ethermintd config
 
 We can make changes to the default settings upon our choices, so it allows users to set the configuration beforehand all at once, so it would be ready with the same config afterward.
 
-For example, the `chain-id` can be changed to `cronostestnet-338` from a blank name by 
+For example, the `chain-id` can be changed to `cronostestnet-338` from a blank name by
 
 ```
 $ ethermintd config "chain-id" cronostestnet-338
@@ -164,16 +164,15 @@ You can create a new key with the name `Default` as in the following example:
 $ ethermintd keys add Default
 - name: Default
   type: local
-  address: cro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n
-  pubkey: cropub1addwnpepqdct05khsxvtaaj0stuvayrpw0j8t6styr7vu05k3y63d5540ftuz8x6tsq
+  address: eth1r4erhyx6jk8nsafhlw7263upnw9hja90gdgj5d
+  pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A3EzNez+oPwDnRTY9OWdVDSjOqikiP7zYncTyxil2SgO"}'
   mnemonic: ""
-  threshold: 0
-  pubkeys: []
+
 
 **Important** write this mnemonic phrase in a safe place.
 It is the only way to recover your account if you ever forget your password.
 
-spare leopard potato hospital series salt model myself bronze print despair please mutual rival battle lumber crater brain food artwork goose west talent ritual
+farm surround surround hunt shop glory fringe bag mountain clerk arch ankle announce turtle slide brisk carbon album immense drop example speed grain dutch
 ```
 
 :::
@@ -230,14 +229,12 @@ You can retrieve key information by its name:
 ::: details Example: Retrieve key information - Account Address and its public key
 
 ```bash
-$ ethermintd keys show Default --bech acc
-- name: Default
+$ ethermintd keys show mykey --bech acc
+- name: mykey
   type: local
-  address: cro1quw5r22pxy8znjtdkgqc65atrm3x5hg6vycm5n
-  pubkey: cropub1addwnpepqdct05khsxvtaaj0stuvayrpw0j8t6styr7vu05k3y63d5540ftuz8x6tsq
+  address: eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
+  pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
-  threshold: 0
-  pubkeys: []
 ```
 
 :::
@@ -246,13 +243,12 @@ $ ethermintd keys show Default --bech acc
 
 ```bash
 $ ethermintd keys show Default --bech val
-- name: Default
+$ ethermintd keys show test --bech val
+- name: mykey
   type: local
-  address: crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z
-  pubkey: crocnclpub1addwnpepq0ua07k8p3vrv5dap4pl77n4gjyyqsqrndzu0tdrr60ddhfg6ah0ck5ad5l
+  address: ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq
+  pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
-  threshold: 0
-  pubkeys: []
 ```
 
 :::
@@ -261,13 +257,12 @@ $ ethermintd keys show Default --bech val
 
 ```bash
 $ ethermintd keys show Default --bech cons
-- name: Default
+$ ethermintd keys show test --bech cons
+- name: mykey
   type: local
-  address: crocnclcons1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s34pfmlc
-  pubkey: crocnclconspub1addwnpepq0ua07k8p3vrv5dap4pl77n4gjyyqsqrndzu0tdrr60ddhfg6ah0ch6kdrc
+  address: ethvalcons1qsklxwt77qrxur494uvw07zjynu03dq9h7rlnp
+  pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
-  threshold: 0
-  pubkeys: []
 ```
 
 :::
@@ -350,7 +345,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 :::details Example: Send 10cro from an address to another.
 
 ```bash
-$ ethermintd tx bank send Default cro17waz6n5a4c4z388rvc40n4c402njfjgqmv0qcp 10cro --chain-id crypto-org-chain-mainnet-1
+$ ethermintd tx bank send Default eth1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcro --chain-id crypto-org-chain-mainnet-1
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -406,7 +401,7 @@ You can check your _transferable_ balance with the `balances` command under the 
 :::details Example: Check your address balance
 
 ```bash
-$ ethermintd query bank balances cro1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3zwpck7
+$ ethermintd query bank balances eth1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3zwpck7
 
 balances:
 - amount: "10005471622381693"

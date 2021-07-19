@@ -65,23 +65,6 @@ module.exports = {
           }                
         ]
       },
-        {
-            text: "Resources",
-            items: [
-              {
-                text: "Integrating Crypto.org Chain ",
-                link: "/resources/chain-integration"
-            },              
-                {
-                    text: "Technical Glossary",
-                    link: "/resources/technical-glossary"
-                },
-                {
-                  text: "gRPC API",
-                  link: "/resources/cosmos-grpc-docs"
-              }               
-            ]
-        }
     ],
     sidebar: {
       "/getting-started/": [
