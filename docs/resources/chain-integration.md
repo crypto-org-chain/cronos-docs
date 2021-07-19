@@ -17,8 +17,8 @@
     - [Running a validator;](https://crypto.org/docs/getting-started/mainnet_validator.html)
     - [Mainnet Validator Security Checklist.](https://crypto.org/docs/getting-started/security-checklist.html#part-1-conduct-survey-on-general-controls-of-hosting-data-centre)    
 - **Testnet**: 
-    - [Joining the Croeseid Testnet](https://crypto.org/docs/getting-started/croeseid-testnet.html)
-    - [Deploy testnet node with nix](https://crypto.org/docs/getting-started/croeseid-testnet-nix.html#pre-requisites)
+    - [Joining the cronos Testnet](https://crypto.org/docs/getting-started/cronos-testnet.html)
+    - [Deploy testnet node with nix](https://crypto.org/docs/getting-started/cronos-testnet-nix.html#pre-requisites)
 - **Devnet**
     - [Running latest development network locally](https://crypto.org/docs/getting-started/local-devnet.html#overview)
 
@@ -31,7 +31,7 @@ There are a few ways to access to the Crypto.org Chain
   - Hosted documentation (use the latest master only): https://docs.tendermint.com/master/rpc/
   - Swagger file: https://github.com/tendermint/tendermint/blob/v0.34.3/rpc/openapi/openapi.yaml
 2. **gRPC Based**
-  - Processed chain information. Old state maybe pruned from time-to-time. To avoid state pruning, update `pruning = "nothing"` in `~/.chain-maind/config/app.toml`
+  - Processed chain information. Old state maybe pruned from time-to-time. To avoid state pruning, update `pruning = "nothing"` in `~/.ethermintd/config/app.toml`
   - There are two query methods based on gRPC:
     1. [gRPC Server](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc/README.md)
     2. [gRPC Proxy RESTful Server](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc-proxy-rest/README.md)
@@ -60,10 +60,10 @@ The Ansible playbook for deploying Prometheus and some rules we are using are un
 - [Tendermint](https://mainnet.crypto.org:26657/)
 - [Cosmos RESTful gRPC](https://mainnet.crypto.org:1317/)
 
-### Croeseid Testnet - `testnet-croeseid-3`
+### cronos Testnet - `cronostestnet-338`
 
-- [Tendermint](https://testnet-croeseid-3.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://testnet-croeseid-3.crypto.org:1317/)
+- [Tendermint](https://cronostestnet-338.crypto.org:26657/)
+- [Cosmos RESTful gRPC](https://cronostestnet-338.crypto.org:1317/)
 
 ## Block Explorer
 
@@ -71,9 +71,9 @@ The Ansible playbook for deploying Prometheus and some rules we are using are un
 
 [https://crypto.org/explorer](https://crypto.org/explorer)
 
-### Croeseid Testnet
+### cronos Testnet
 
-[https://crypto.org/explorer/croeseid3/](https://crypto.org/explorer/croeseid3/)
+[https://crypto.org/explorer/cronos3/](https://crypto.org/explorer/cronos3/)
 
 ## Community
 

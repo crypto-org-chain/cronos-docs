@@ -147,7 +147,7 @@ aws_region = '<AWS region to use for KMS>'
 
 ```toml
 address = 'unix:///home/ec2-user/sockets/validator.socket'
-chain_id = 'testnet-croeseid-3'
+chain_id = 'cronostestnet-338'
 sealed_consensus_key_path = '/home/ec2-user/.tmkms/secrets/secret.key'
 state_file_path = '/home/ec2-user/.tmkms/state/priv_validator_state.json'
 enclave_config_cid = 15 #overridden by flag
@@ -242,10 +242,10 @@ sudo systemctl enable tmkms.service
 sudo systemctl start tmkms.service
 ```
 
-### Step 8. Running chain-maind
+### Step 8. Running ethermintd
 
-One should follow the same steps in [Croeseid Testnet: Running Nodes](./croeseid-testnet.md)
+One should follow the same steps in [cronos Testnet: Running Nodes](./cronos-testnet.md)
 
-Except for one last thing one needs to further configure `~/.chain-maind/config/config.toml` to enable enclave tmkm to sign.
+Except for one last thing one needs to further configure `~/.ethermintd/config/config.toml` to enable enclave tmkm to sign.
 
-In `~/.chain-maind/config/config.toml`, `priv_validator_key_file` and `priv_validator_state_file` should be commented and uncomment `priv_validator_laddr` to value `unix://...` which should match the `address` in `tmkms.toml`. e.g. `unix:///home/ec2-user/sockets/validator.socket`
+In `~/.ethermintd/config/config.toml`, `priv_validator_key_file` and `priv_validator_state_file` should be commented and uncomment `priv_validator_laddr` to value `unix://...` which should match the `address` in `tmkms.toml`. e.g. `unix:///home/ec2-user/sockets/validator.socket`

@@ -2,14 +2,14 @@
 
 ## Node minimum setup
 
-Here we will be using a local `chain-maind` folder as the home directory. By default chain data are stored in your home directory `~/.chain-maind`. For example, when joining the testnet `testnet-croeseid-3`: 
+Here we will be using a local `ethermintd` folder as the home directory. By default chain data are stored in your home directory `~/.ethermintd`. For example, when joining the testnet `cronostestnet-338`: 
 
 ```bash
-./chain-maind init mynode --chain-id testnet-croeseid-3 --home ./chain-maind
+./ethermintd init mynode --chain-id cronostestnet-338 --home ./ethermintd
 
-sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"b2a4c8db43b815e1ed83ab4723a6af84ccb8e3e4@13.213.110.242:26656,c76d7d28141daf037bec919268d0f38e64fd8389@3.1.240.30:26656"#' ~/.chain-maind/config/config.toml
-sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.chain-maind/config/config.toml
-sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"2s"#' ~/.chain-maind/config/config.toml  
+sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"b2a4c8db43b815e1ed83ab4723a6af84ccb8e3e4@13.213.110.242:26656,c76d7d28141daf037bec919268d0f38e64fd8389@3.1.240.30:26656"#' ~/.ethermintd/config/config.toml
+sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
+sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"2s"#' ~/.ethermintd/config/config.toml  
 ```
 
 
@@ -43,9 +43,9 @@ address = "0.0.0.0:9090"
 
 Afterward, you should be able to start you node by running 
 ```bash
-./chain-maind start --home ./chain-maind/
+./ethermintd start --home ./ethermintd/
 ````
-where the blockchain data, keys will be stored at the folder `<current_path>/chain-maind/`
+where the blockchain data, keys will be stored at the folder `<current_path>/ethermintd/`
 
 ## Access RPC server
 
@@ -110,13 +110,13 @@ There are few clients our team has used before
     As discussed in the metting, sometimes the `create-valiator` may fail because of the gas. You can use the following command instead (notice we have provide `--gas` and `--gas-price`) 
 
     ```bash
-    $ ./chain-maind tx staking create-validator \
+    $ ./ethermintd tx staking create-validator \
     --from=[name_of_your_key] \
     --amount=500000tcro \
     --pubkey=[tcrocnclconspub...]  \
     --moniker="[The_id_of_your_node]" \
     --security-contact="[security contact email/contact method]" \
-    --chain-id="testnet-croeseid-3" \
+    --chain-id="cronostestnet-338" \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01" \

@@ -11,10 +11,10 @@ By following this tutorial, you can compile and run the latest development versi
 
 ### Install `ethermintd`
 
-Install the binded version, which install chain-maind together, and find it by the absolute path:
+Install the binded version, which install ethermintd together, and find it by the absolute path:
 
 ```
-git clone https://github.com/tharsis/ethermint
+git clone https://github.com/crypto-org-chain/ethermint
 cd ethermint
 make install
 ```
@@ -23,6 +23,13 @@ Afterward, you can verify that by
 
 ```bash
 $ ethermintd -h
+```
+
+and also you can check the version of the ethermintd to see if it is build with the later commit:
+
+```bash
+$ ethermintd version
+[version-g<commit_hash>]
 ```
 
 ## Customize your devnet
@@ -42,13 +49,13 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
   ethermintd config chain-id $CHAINID
 .......
 # Allocate genesis accounts (cosmos formatted addresses)
-  ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
+  ethermintd add-genesis-account $KEY 100000000000000000000000000basetcro --keyring-backend test
 
 # Sign genesis transaction
-  ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
+  ethermintd gentx $KEY 1000000000000000000000basetcro --keyring-backend test --chain-id $CHAINID
 ```
 
-The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; 1 accounts under the name of `mykey` with some allocated funds at the genesis.
+The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
 
 ## Start the devnet
 
@@ -62,7 +69,7 @@ Blocks are now being generated! You can verify and visit the rpc port [http://lo
 
 ## Interact with the chain
 
-After the chain has been started, we may open up another terminal and start interacting with the chain by `ethermind`.
+After the chain has been started, we may open up another terminal and start interacting with the chain by `ethermintd`.
 
 ### Keys management
 
@@ -71,19 +78,21 @@ A key will be generated according to the configuration specified in `init.sh`. B
 ```
 $ ethermintd keys list
 ```
+
 You will be able to list the address with allocated initial funds, for example:
 
-```bash
-- name: mykey
-  type: local
-  address: eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp
-  pubkey: ethpub17weu6qepq097dfma5sqz6myzw7swhk7rdljpuxu8nf358gfr2fa5up28x6lngxlk0zu
-  mnemonic: ""
-  threshold: 0
-  pubkeys: []
+```json
+[
+  {
+    "name": "mykey",
+    "type": "local",
+    "address": "eth1cfmydxvlz0a3yeeh4an5ay94lyfv0flw5svzez",
+    "pubkey": "{\"@type\":\"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey\",\"key\":\"AssVo7smZ323alb4hq2SIJ/TZw2rJeslZlZK7EGqyC8H\"}"
+  }
+]
 ```
 
-You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity. 
+You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity.
 
 ```
 $ ethermintd keys add mykey --recover --keyring-backend test
@@ -92,7 +101,7 @@ $ ethermintd keys add mykey --recover --keyring-backend test
 ```bash
 Enter your bip39 mnemonic
 sense slim three rally device lazy slice thumb bridge general essence seven diamond broom scan tell cactus into exotic paddle ignore tape unaware also
- 
+
 - name: mykey
   type: local
   address: eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
@@ -101,15 +110,12 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
 
 ```
 
-
-
 ### Check account balance
 
 You can check the account balance by
 
 ```
 ethermintd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp
-
 ```
 
 For example:
@@ -117,13 +123,13 @@ For example:
 ```bash
 balances:
 - amount: "99999000000000000000000000"
-  denom: aphoton
+  denom: basetcro
 pagination:
   next_key: null
   total: "0"
 ```
 
-We can see that there is `99999000000000000000000000` aphoton in this address.
+We can see that there is `99999000000000000000000000` basetcro in this address.
 
 ### Transfer token to another address
 
@@ -152,21 +158,21 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
   refuse tray sauce area battle decide slot tilt position refuse blouse sauce mimic panic combine know stem section sustain reveal clever final assume flash
   ```
 
-- Now we can transfer tokens to `Bob`, for example you can send `1aphoton` to Bob's address by
+- Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
 
   ```
-  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --fees 20aphoton
+  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1basetcro --fees 20basetcro
   ```
 
 - Lastly, check balance of Bob's address:
   ```
   $ ethermintd query bank balances eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
   ```
-  and we can see that 1 `aphoton` has already been transferred:
+  and we can see that 1 `basetcro` has already been transferred:
   ```
   balances:
   - amount: "1"
-  denom: aphoton
+  denom: basetcro
   pagination:
   next_key: null
   total: "0"
@@ -176,10 +182,10 @@ Congratulations! You've successfully transferred tokens to Bob.
 
 #### Check the current validator set
 
-Firstly, we can check the details of the current validator set by the query command of chain-maind, for example:
+Firstly, we can check the details of the current validator set by the query command of ethermintd, for example:
 
 ```
-$ ethermintd query staking validators -o json | jq 
+$ ethermintd query staking validators -o json | jq
 ```
 
 will result in
@@ -222,7 +228,6 @@ will result in
     "total": "0"
   }
 }
-
 ```
 
 then we can see that there are two active validator `localtestnet` at the moment.

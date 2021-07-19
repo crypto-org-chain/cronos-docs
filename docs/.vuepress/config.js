@@ -22,7 +22,7 @@ module.exports = {
 //          },
           {
             text: "Cronos Testnet",
-            link: "/getting-started/croeseid-testnet"
+            link: "/getting-started/cronos-testnet"
           },
           {
             text: "Local network deployment",
@@ -64,59 +64,19 @@ module.exports = {
         text: "Wallet",
         items: [
           {
-            text: "chain-maind",
-            link: "/wallets/cli.html#chain-maind"
-          },
-          {
-            text: "Ledger Hardware Wallets with chain-maind",
-            link: "/wallets/ledger.html#ledger-hardware-wallets"
-          },
-          {
-            text: "Ledger Hardware Wallets with Desktop Wallet",
-            link: "/wallets/ledger_desktop_wallet.html#ledger-hardware-wallets"
-          },
-          {
-            text: "Keplr Wallet: Using Ledger Device with Keplr",
-            link: "/wallets/keplr_ledger_guide.html#using-ledger-device-with-keplr"
-          },
-          {
-            text: "Keplr Wallet: Conducting IBC Transfer with ",
-            link: "/wallets/keplr_IBC_guide.html#conducting-ibc-transfer-with-keplr-wallet"
-          },                    
-          {
-            text: "Mainnet Address Generation",
-            link: "/wallets/mainnet-address-generation.md"
-          },
-          {
-            text: "Mainnet Address Verification",
-            link: "/wallets/mainnet-address-verification.md"
+            text: "ethermintd",
+            link: "/wallets/cli.html#ethermintd"
           }
         ]
       },
-        {
-            text: "Resources",
-            items: [
-              {
-                text: "Integrating Crypto.org Chain ",
-                link: "/resources/chain-integration"
-            },              
-                {
-                    text: "Technical Glossary",
-                    link: "/resources/technical-glossary"
-                },
-                {
-                  text: "gRPC API",
-                  link: "/resources/cosmos-grpc-docs"
-              }               
-            ]
-        }
     ],
     sidebar: {
       "/getting-started/": [
         "",
         "local-devnet",
-        "security-checklist.md",
-        "croeseid-testnet",
+        "cronos-testnet",
+        "metamask",
+        "security-checklist.md"
         "cronos-smart-contract"
       ],
       "/chain-details/": [
@@ -159,7 +119,7 @@ module.exports = {
           var ordering = {
             Home: 0,
             "Getting Started": 1,
-            "Croeseid Testnet": 2,
+            "cronos Testnet": 2,
             "Devnet": 3,
             "Send Your First Transaction": 4,
             Consensus: 5,

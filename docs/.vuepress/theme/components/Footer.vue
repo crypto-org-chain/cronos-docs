@@ -6,7 +6,7 @@
           <a href="/">
             <img
               class="footer-logo"
-              :src="$withBase('/logotype-white.svg')"
+              :src="$withBase('/cronos-horizontal-logo-white.svg')"
               alt="logo-icon-white"
             />
           </a>
@@ -56,10 +56,10 @@
           </div>
         </div>
         <div class="socials">
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/cryptocom">
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/cronos_chain">
             <img :src="$withBase('/social/twitter.svg')" alt="twitter" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/CryptoComOfficial">
+          <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/CryptoComOfficial">
             <img :src="$withBase('/social/facebook.svg')" alt="facebook" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cryptocomofficial/">
@@ -75,20 +75,20 @@
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Crypto_com/">
             <img :src="$withBase('/social/reddit.svg')" alt="reddit" />
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/pahqHz26q4">
+          </a> -->
+          <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/pahqHz26q4">
             <img :src="$withBase('/social/discord.svg')" alt="discord" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://t.me/CryptoComOfficial">
+          <a target="_blank" rel="noopener noreferrer" href="https://t.me/Cryptoorg_Chain_Announcements">
             <img :src="$withBase('/social/telegram.svg')" alt="telegram" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://open.kakao.com/o/gGH1WQM">
+          <!-- <a target="_blank" rel="noopener noreferrer" href="https://open.kakao.com/o/gGH1WQM">
             <img :src="$withBase('/social/kakaotalk.svg')" alt="kakaotalk" />
-          </a>
+          </a> -->
         </div>
       </div>
       <p class="copyright">
-        Copyright © {{ currentYear }} Crypto.org. All rights reserved.
+        Copyright © {{ currentYear }} Cronos. All rights reserved.
       </p>
     </div>
   </footer>
@@ -130,6 +130,11 @@ $light-color = rgba(255, 255, 255, 50%)
     display flex
     justify-content space-between
     margin-bottom 3rem
+
+    .footer-logo {
+      width 110px  
+    }
+
     .navLinks {
       display flex
       .column {
