@@ -40,7 +40,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
 ## Step 2. Configure `ethermintd`
 
-Before kick-starting your node, we will have to configure your node so that it connects to the cronos testnet:
+Before kick-starting your node, we will have to configure your node so that it connects to the Cronos testnet:
 
 ### Step 2-1 Initialize `ethermintd`
 
@@ -69,7 +69,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 <!--TODO: Update Links-->
 
-- Download and replace the cronos Testnet `genesis.json` by:
+- Download and replace the Cronos Testnet `genesis.json` by:
 
   ```bash
   $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/master/cronostestnet-338/genesis.json > ~/.ethermintd/config/genesis.json
@@ -267,7 +267,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 You will be required to insert the following:
 
-- `--from`: The `trco...` address that holds your funds;
+- `--from`: The `eth...` address that holds your funds;
 - `--pubkey`: The validator public key( See Step [3-3](#step-3-3-obtain-the-validator-public-key) above )
 - `--moniker`: A moniker (name) for your validator node;
 - `--security-contact`: Security contact email/contact method.
@@ -278,8 +278,8 @@ Once the `create-validator` transaction completes, you can check if your validat
 
 ```bash
 $ ./ethermintd tendermint show-address
-## [tcrocnclcons... address] ##
-$ ./ethermintd query tendermint-validator-set | grep -c [tcrocnclcons...]
+## [eth... address] ##
+$ ./ethermintd query tendermint-validator-set | grep -c [eth...]
 ## 1 = Yes; 0 = Not yet added ##
 ```
 
@@ -297,7 +297,7 @@ The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
 --tendermint-url https://cronostestnet-338.crypto.org:26657 \
---bechpubkey [tcrocnclconspub1....]
+--bechpubkey [eth....]
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
 The validator is signing @ Block#<BLOCK_HEIGHT> 👍
@@ -336,10 +336,10 @@ Transfer operation involves the transfer of tokens between two addresses.
 
 #### **Send Funds** [`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
 
-:::details Example: Send 10tcro from an address to another.
+:::details Example: Send 10basetcro from an address to another.
 
 ```bash
-$ ./ethermintd tx bank send Default eth1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10tcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
+$ ./ethermintd tx bank send Default eth1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10basetcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -380,13 +380,13 @@ $ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-33
 
 Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#ethermintd) for more advanced operations and transactions.
 
-## cronos testnet faucet and explorer
+## Cronos testnet faucet and explorer
 
 <!--TODO: Update Links-->
 
 - You can lookup data within the `cronostestnet-338` network by the [explorer](https://cronos-explorer.crypto.org/);
 
-- To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **cronos** testnet.
+- To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
   - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
 

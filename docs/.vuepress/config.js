@@ -28,6 +28,10 @@ module.exports = {
             text: "Local network deployment",
             link: "/getting-started/local-devnet"
           },
+          {
+            text: "Deploy Smart Contract at Cronos",
+            link: "/getting-started/cronos-smart-contract"
+          },
 //          {
 //              text: "Block Explorer",
 //              link: "https://crypto.org/explorer"
@@ -62,7 +66,7 @@ module.exports = {
           {
             text: "ethermintd",
             link: "/wallets/cli.html#ethermintd"
-          }                
+          }
         ]
       },
     ],
@@ -72,7 +76,8 @@ module.exports = {
         "local-devnet",
         "cronos-testnet",
         "metamask",
-        "security-checklist.md"
+        "security-checklist.md",
+        "cronos-smart-contract"
       ],
       "/chain-details/": [
         "introduction",
