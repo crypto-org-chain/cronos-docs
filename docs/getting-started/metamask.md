@@ -13,7 +13,7 @@ First of all we would need to connect the metamask with the Cronos testnet netwo
     <img src="./assets/2.png" />
 
 - Insert the network name, for example "ethermint" ; for RPC URL put
-  `http://cronos-testnet.crypto.org:8545/` and `338` for chain-id If you would like to join the Cronos testnet
+  `https://cronos-testnet.crypto.org:8545/` and `338` for chain-id If you would like to join the Cronos testnet
       <img src="./assets/3.png" />
 
 - After saving the network config, we can add use the Ethereum-formatted address to request test token from the [faucet](https://cronos.crypto.org/faucet)
