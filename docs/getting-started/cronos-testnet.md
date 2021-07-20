@@ -24,12 +24,8 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 The following is the minimal setup for a **validator node** / **full node**.
 :::
 
-
-
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Windows_x86_64.zip) are also available.
-
-
 
 - To install released **Cronos testnet binaries** from github:
 
@@ -39,6 +35,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
   ```
 
   Afterward, you can check the version of `ethermintd` by
+
   ```bash
   $ ./ethermintd version
   0.5.0-rc0
@@ -56,15 +53,20 @@ Before kick-starting your node, we will have to configure your node so that it c
   ```bash
     $ ./ethermintd init [moniker] --chain-id cronostestnet-338
   ```
+
   <!--TODO: Update chain-id-->
+
   This `moniker` will be the displayed id of your node when connected to Crypto.org Chain network.
   When providing the moniker value, make sure you drop the square brackets since they are not needed.
   The example below shows how to initialize a node named `pegasus-node` :
   <!--TODO: Update chain-id-->
+
   ```bash
     $ ./ethermintd init pegasus-node --chain-id cronostestnet-338
   ```
+
   <!--TODO: Update chain-id-->
+
   ::: tip NOTE
 
   - Depending on your ethermintd home setting, the ethermintd configuration will be initialized to that home directory. To simply the following steps, we will use the default ethermintd home directory `~/.ethermintd/` for illustration.
@@ -111,14 +113,11 @@ Before kick-starting your node, we will have to configure your node so that it c
   ```
 
 - For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
-  <!--TODO: seed nodes-->
   ```bash
-  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"b2a4c8db43b815e1ed83ab4723a6af84ccb8e3e4@13.213.110.242:26656,c76d7d28141daf037bec919268d0f38e64fd8389@3.1.240.30:26656"#' ~/.ethermintd/config/config.toml
+  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"6760167d71f53db880dd6a99e37b17db876697c5@13.213.254.205:26656,81348744600631ed3e60b1983e070ed4f190efc5@18.139.32.246:26656"#' ~/.ethermintd/config/config.toml
   $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
   $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"8s"#' ~/.ethermintd/config/config.toml
   ```
-  <!--TODO: seed nodes-->
-**Note**: We suggest using `persistent_peers` instead of `seeds` to provide stable state-sync experience.
 
 ::: tip NOTE
 
@@ -146,7 +145,8 @@ You should obtain an address with `eth` prefix, e.g. `eth10u5mgfflasrfj9s94mt8l9
 
 ### Step 3-2. Obtain test token
 
-Users can the [faucet](https://cronos.crypto.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by 
+Users can the [faucet](https://cronos.crypto.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by
+
 - [Using metamask](./metamask.md#using-metamask); or
 - Using the [address convention tool](./metamask.md#address-conventions).
 
@@ -235,10 +235,9 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
   $ ./ethermintd status 2>&1 | jq '.SyncInfo.latest_block_height'
   ```
 
-The next step only applied to the validators, in which, validator hosting is by invitation only at the early stage of the Cronos testnet. 
+The next step only applied to the validators, in which, validator hosting is by invitation only at the early stage of the Cronos testnet.
 
-----------------------------------------------------------------
-
+---
 
 ### Step 3-4. Obtain the validator public key
 
@@ -256,6 +255,7 @@ The public key should in a json format, for example:
   "key": "gvPPVShkWjuUn7cuqS3ci9fHnC+nLFxzsNWkwGJ6iMI="
 }
 ```
+
 ### Step 3-5. Send a `create-validator` transaction
 
 Once the node is fully synced, we are now ready to send a `create-validator` transaction and join the network, for example:
@@ -316,7 +316,6 @@ The validator is in the active validator set under the address  <YOUR_VALIDATOR_
 The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 ```
 
-
 ## Step 4. Perform Transactions
 
 ### Step 4-1. `query bank balances` - Check your transferable balance
@@ -354,8 +353,6 @@ confirm transaction before signing and broadcasting [y/N]: y
 ```
 
 :::
-
-
 
 ### Slashing related transaction
 
