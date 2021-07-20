@@ -181,8 +181,8 @@ $ ulimit -Sn 4096
 - _(Optional for Linux)_ Start ethermintd with systemd service, e.g.:
 
 ```bash
-  $ git clone https://github.com/crypto-org-chain/chain-main.git && cd chain-main
-  $ ./networks/create-service.sh
+  $ curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/create-service.sh -o create-service.sh && curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/ethermintd.service.template -o ethermintd.service.template
+  $ chmod +x ./create-service.sh && ./create-service.sh
   $ sudo systemctl start ethermintd
   # view log
   $ journalctl -u ethermintd -f

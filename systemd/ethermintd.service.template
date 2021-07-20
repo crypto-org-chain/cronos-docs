@@ -1,0 +1,17 @@
+# /etc/systemd/system/ethermintd.service
+[Unit]
+Description=ethermintd
+ConditionPathExists=<ETHERMINTD_BINARY>
+After=network.target
+
+[Service]
+Type=simple
+User=<ETHERMINTD_USER>
+WorkingDirectory=<ETHERMINTD_BINARY_DIR>
+ExecStart=<ETHERMINTD_BINARY> start --home <ETHERMINTD_USER_HOME>/.ethermintd
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
