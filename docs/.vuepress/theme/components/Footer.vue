@@ -29,6 +29,11 @@
                 Faucet
               </a>
             </div>
+            <div class="link">
+              <a href="/community">
+                Community
+              </a>
+            </div>
           </div>
           <div class="column">
             <h3>Wallets</h3>
@@ -47,10 +52,10 @@
             </div>
           </div>
           <div class="column">
-            <h3>Community</h3>
+            <h3>Explorer</h3>
             <div class="link">
-              <a href="/community">
-                Community
+              <a href="https://cronos-explorer.crypto.org/">
+                Explorer
               </a>
             </div>
           </div>
