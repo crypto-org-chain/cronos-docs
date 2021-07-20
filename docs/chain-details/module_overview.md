@@ -1,7 +1,7 @@
 # Modules
 
 ## Overview
-Cronos utilizes [Cosmos SDK](https://cosmos.network/sdk) and the [Tendermint](https://tendermint.com/) Core consensus engine underneath. Specifically, the Cosmos SDK is a framework that facilitates the development of secure state-machines on top of Tendermint. In particular, we utilize different SDK modules to facilitate the special features of Cronos. 
+Cronos utilizes [Ethermint](https://github.com/tharsis/ethermint) and the [Tendermint](https://tendermint.com/) Core consensus engine underneath. Specifically, the Cosmos SDK is a framework that facilitates the development of secure state-machines on top of Tendermint. In particular, we utilize different SDK modules to facilitate the special features of Cronos. 
 
 In this documentation, we will be focusing on some of the important modules we used, for example:
 
