@@ -16,7 +16,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 `Nodejs v10` is suggested 
 
 ### Sufficient fund on deployer address
-You can access to [Croeseid testnet faucet and explorer](http://localhost:8080/docs/getting-started/croeseid-testnet.html#croeseid-testnet-faucet-and-explorer) to obtain testnet TCRO.
+You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](https://cronos-explorer.crypto.org/) to obtain testnet TCRO.
 
 ### Git clone `smart-contract-example`
   ```bash
