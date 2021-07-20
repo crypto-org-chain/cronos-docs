@@ -73,8 +73,8 @@ module.exports = {
     sidebar: {
       "/getting-started/": [
         "",
-        "local-devnet",
         "cronos-testnet",
+        "local-devnet",
         "metamask",
         "security-checklist.md",
         "cronos-smart-contract"

@@ -48,24 +48,24 @@ Before kick-starting your node, we will have to configure your node so that it c
 ### Step 2-1 Initialize `ethermintd`
 
 - First of all, you can initialize ethermintd by:
-  <!--TODO: Update chain-id-->
+
 
   ```bash
     $ ./ethermintd init [moniker] --chain-id cronostestnet-338
   ```
 
-  <!--TODO: Update chain-id-->
+
 
   This `moniker` will be the displayed id of your node when connected to Crypto.org Chain network.
   When providing the moniker value, make sure you drop the square brackets since they are not needed.
   The example below shows how to initialize a node named `pegasus-node` :
-  <!--TODO: Update chain-id-->
+
 
   ```bash
     $ ./ethermintd init pegasus-node --chain-id cronostestnet-338
   ```
 
-  <!--TODO: Update chain-id-->
+
 
   ::: tip NOTE
 
@@ -75,7 +75,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 ### Step 2-2 Configure ethermintd
 
-<!--TODO: Update Links-->
+
 
 - Download and replace the Cronos Testnet `genesis.json` by:
 
@@ -83,10 +83,9 @@ Before kick-starting your node, we will have to configure your node so that it c
   $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/master/cronostestnet-338/genesis.json > ~/.ethermintd/config/genesis.json
   ```
 
-  <!--TODO: Update Links-->
 
 - Verify sha256sum checksum of the downloaded `genesis.json`. You should see `OK!` if the sha256sum checksum matches.
-  <!--TODO: Update sha256sum-->
+
 
   ```bash
   $ if [[ $(sha256sum ~/.ethermintd/config/genesis.json | awk '{print $1}') = "ce015fe82b6ef598a1bce3d28ecb09859fab0e6e765f4efc97780cfeacbfeefb" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
@@ -94,7 +93,7 @@ Before kick-starting your node, we will have to configure your node so that it c
   OK!
   ```
 
-  <!--TODO: Update sha256sum-->
+
 
   ::: tip NOTE
 
@@ -127,7 +126,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 ## Step 3. Run everything
 
 ::: warning CAUTION
-This page only shows the minimal setup for validator node.
+This page only shows the minimal setup for validator / full node.
 
 Furthermore, you may want to run full nodes
 as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
@@ -310,16 +309,6 @@ The validator is in the active validator set under the address  <YOUR_VALIDATOR_
 The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 ```
 
-```bash
-$ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
-
---tendermint-url https://cronostestnet-338.crypto.org:26657 \
---bechpubkey [eth....]
-
-
-The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
-The validator is signing @ Block#<BLOCK_HEIGHT> 👍
-```
 
 ## Step 4. Perform Transactions
 
@@ -342,22 +331,7 @@ pagination:
 
 :::
 
-### Step 4-2. `tx bank send` - Transfer operation
 
-Transfer operation involves the transfer of tokens between two addresses.
-
-#### **Send Funds** [`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
-
-:::details Example: Send 10basetcro from an address to another.
-
-```bash
-$ ./ethermintd tx bank send Default eth1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10basetcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
-  ## Transaction payload##
-  {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
-confirm transaction before signing and broadcasting [y/N]: y
-```
-
-:::
 
 ### Slashing related transaction
 
@@ -392,7 +366,7 @@ Congratulations! You've successfully set up a Testnet node and performed some ba
 
 ## Cronos testnet faucet and explorer
 
-<!--TODO: Update Links-->
+
 
 - You can lookup data within the `cronostestnet-338` network by the [explorer](https://cronos-explorer.crypto.org/);
 
@@ -400,4 +374,3 @@ Congratulations! You've successfully set up a Testnet node and performed some ba
 
   - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
 
-<!--TODO: Update Links-->
