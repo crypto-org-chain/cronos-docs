@@ -34,7 +34,7 @@ $ ethermintd version
 
 ## Customize your devnet
 
-_Note_: Yuo can skip this section and start a local devnet without customization.
+_Note_: You can skip this section and start a local devnet without customization.
 
 You can customize your devnet based on `ethermint/init.sh`, for example:
 
@@ -49,10 +49,10 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
   ethermintd config chain-id $CHAINID
 .......
 # Allocate genesis accounts (cosmos formatted addresses)
-  ethermintd add-genesis-account $KEY 100000000000000000000000000basetcro --keyring-backend test
+  ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
 
 # Sign genesis transaction
-  ethermintd gentx $KEY 1000000000000000000000basetcro --keyring-backend test --chain-id $CHAINID
+  ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
 ```
 
 The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
@@ -115,21 +115,28 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
 You can check the account balance by
 
 ```
-ethermintd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp
+ethermintd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp -o json | jq
 ```
 
 For example:
 
 ```bash
-balances:
-- amount: "99999000000000000000000000"
-  denom: basetcro
-pagination:
-  next_key: null
-  total: "0"
+{
+  "balances": [
+    {
+      "denom": "aphoton",
+      "amount": "99999000000000000000000000"
+    }
+  ],
+  "pagination": {
+    "next_key": null,
+    "total": "0"
+  }
+}
+
 ```
 
-We can see that there is `99999000000000000000000000` basetcro in this address.
+We can see that there is `99999000000000000000000000` aphoton in this address.
 
 ### Transfer token to another address
 
@@ -158,21 +165,21 @@ We can see that there is `99999000000000000000000000` basetcro in this address.
   refuse tray sauce area battle decide slot tilt position refuse blouse sauce mimic panic combine know stem section sustain reveal clever final assume flash
   ```
 
-- Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
+- Now we can transfer tokens to `Bob`, for example you can send `1aphoton` to Bob's address by
 
   ```
-  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1basetcro --fees 20basetcro
+  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
   ```
 
 - Lastly, check balance of Bob's address:
   ```
   $ ethermintd query bank balances eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
   ```
-  and we can see that 1 `basetcro` has already been transferred:
+  and we can see that 1 `aphoton` has already been transferred:
   ```
   balances:
   - amount: "1"
-  denom: basetcro
+  denom: aphoton
   pagination:
   next_key: null
   total: "0"
