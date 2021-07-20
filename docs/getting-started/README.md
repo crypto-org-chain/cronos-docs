@@ -1,6 +1,6 @@
 # Getting Started
 
-Thanks for your interest in Crypto.org Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `ethermintd`, and different SDK modules we utilized in the Crypto.org Chain.
+Thanks for your interest in Crypto.org Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `ethermintd`, and different SDK modules we utilized in the Cronos Chain.
 
 ### What's next?
 
@@ -8,7 +8,7 @@ Thanks for your interest in Crypto.org Chain. In this technical documentation, w
 
 - [Join Cronos Testnet](./cronos-testnet.md):
 
-  Try running Full Nodes or Validators connected to our cronos Testnet.
+  Try running Full Nodes or Validators connected to our Cronos Testnet.
 
 #### Devnet
 
@@ -20,9 +20,9 @@ Thanks for your interest in Crypto.org Chain. In this technical documentation, w
 
  <!---TODO: UPDATE LINKS--->
 
-- [Project Website](http://crypto.org/)
+- [Project Website](https://cronos.crypto.org)
 - [Project Repository](https://github.com/crypto-org-chain/cronos)
 - Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
-- Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da&label=Crypto.org Chain =discord =flat-square)](https://discord.gg/pahqHz26q4)
+- Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da&label=Crypto.org Chain)](https://discord.gg/pahqHz26q4)
 
  <!---TODO: UPDATE LINKS--->
