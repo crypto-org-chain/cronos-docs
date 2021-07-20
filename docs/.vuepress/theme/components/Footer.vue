@@ -82,13 +82,16 @@
           <a target="_blank" rel="noopener noreferrer" href="https://t.me/Cryptoorg_Chain_Announcements">
             <img :src="$withBase('/social/telegram.svg')" alt="telegram" />
           </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/crypto-org-chain/cronos-docs">
+            <img :src="$withBase('/social/github.svg')" alt="github" />
+          </a>
           <!-- <a target="_blank" rel="noopener noreferrer" href="https://open.kakao.com/o/gGH1WQM">
             <img :src="$withBase('/social/kakaotalk.svg')" alt="kakaotalk" />
           </a> -->
         </div>
       </div>
       <p class="copyright">
-        Copyright © {{ currentYear }} Cronos. All rights reserved.
+        Copyright © {{ currentYear }} CRO Protocol Labs. All rights reserved.
       </p>
     </div>
   </footer>
