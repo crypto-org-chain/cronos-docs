@@ -378,15 +378,15 @@ $ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-33
 
 :::
 
-Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://crypto.org/docs/wallets/cli.html#ethermintd) for more advanced operations and transactions.
+Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#ethermintd) for more advanced operations and transactions.
 
 ## Cronos testnet faucet and explorer
 
 <!--TODO: Update Links-->
 
-- You can lookup data within the `cronostestnet-338` network by the [explorer](https://crypto.org/explorer/cronos3/);
+- You can lookup data within the `cronostestnet-338` network by the [explorer](https://cronos-explorer.crypto.org/);
 
-- To interact with the blockchain, simply use the [test-token faucet](https://crypto.org/faucet) to obtain test tokens for performing transactions on the **Cronos** testnet.
+- To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
   - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
 
