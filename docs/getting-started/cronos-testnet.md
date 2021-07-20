@@ -21,7 +21,7 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 ## Step 1. Get the Cronos testnet binary
 
 ::: tip Remarks:
-The following is the minimal setup for a **validator node**.
+The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 
@@ -38,9 +38,15 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
   $ tar -zxvf ethermint_0.5.0-rc0_Linux_x86_64.tar.gz
   ```
 
+  Afterward, you can check the version of `ethermintd` by
+  ```bash
+  $ ./ethermintd version
+  0.5.0-rc0
+  ```
+
 ## Step 2. Configure `ethermintd`
 
-Before kick-starting your node, we will have to configure your node so that it connects to the cronos testnet:
+Before kick-starting your node, we will have to configure your node so that it connects to the Cronos testnet:
 
 ### Step 2-1 Initialize `ethermintd`
 
@@ -81,7 +87,7 @@ Before kick-starting your node, we will have to configure your node so that it c
   <!--TODO: Update sha256sum-->
 
   ```bash
-  $ if [[ $(sha256sum ~/.ethermintd/config/genesis.json | awk '{print $1}') = "1808aef70872b306ba1af51f49b5a3ffde24e3db8c96c51f555930879f25125f" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
+  $ if [[ $(sha256sum ~/.ethermintd/config/genesis.json | awk '{print $1}') = "ce015fe82b6ef598a1bce3d28ecb09859fab0e6e765f4efc97780cfeacbfeefb" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
 
   OK!
   ```
@@ -109,7 +115,7 @@ Before kick-starting your node, we will have to configure your node so that it c
   ```bash
   $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"b2a4c8db43b815e1ed83ab4723a6af84ccb8e3e4@13.213.110.242:26656,c76d7d28141daf037bec919268d0f38e64fd8389@3.1.240.30:26656"#' ~/.ethermintd/config/config.toml
   $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
-  $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"2s"#' ~/.ethermintd/config/config.toml
+  $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"8s"#' ~/.ethermintd/config/config.toml
   ```
   <!--TODO: seed nodes-->
 **Note**: We suggest using `persistent_peers` instead of `seeds` to provide stable state-sync experience.
@@ -140,28 +146,14 @@ You should obtain an address with `eth` prefix, e.g. `eth10u5mgfflasrfj9s94mt8l9
 
 ### Step 3-2. Obtain test token
 
-Unless you have obtained the Cronos testnet token before, use the faucet to obtain test tokens.
-In case you have reached the daily limit on faucet airdrop, you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel ,
+Users can the [faucet](https://cronos.crypto.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by 
+- [Using metamask](./metamask.md#using-metamask); or
+- Using the [address convention tool](./metamask.md#address-conventions).
+
+In case you have reached the daily limit on faucet , you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel ,
 stating who you are and your `eth.....` address.
 
-### Step 3-3. Obtain the validator public key
-
-You can obtain your validator public key by:
-
-```bash
-  $ ./ethermintd tendermint show-validator
-```
-
-The public key should in a json format, for example:
-
-```json
-{
-  "@type": "/cosmos.crypto.ed25519.PubKey",
-  "key": "gvPPVShkWjuUn7cuqS3ci9fHnC+nLFxzsNWkwGJ6iMI="
-}
-```
-
-### Step 3-4. Run everything
+### Step 3-3. Run everything
 
 Once the `ethermintd` has been configured, we are ready to start the node and sync the blockchain data:
 
@@ -234,7 +226,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 - One can check the current block height by querying the public full node by:
 
   ```bash
-  curl -s https://cronostestnet-338.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
+  curl -s https://cronos-testnet.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
   ```
 
   and you can check your node's progress (in terms of block height) by
@@ -243,6 +235,27 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
   $ ./ethermintd status 2>&1 | jq '.SyncInfo.latest_block_height'
   ```
 
+The next step only applied to the validators, in which, validator hosting is by invitation only at the early stage of the Cronos testnet. 
+
+----------------------------------------------------------------
+
+
+### Step 3-4. Obtain the validator public key
+
+You can obtain your validator public key by:
+
+```bash
+  $ ./ethermintd tendermint show-validator
+```
+
+The public key should in a json format, for example:
+
+```json
+{
+  "@type": "/cosmos.crypto.ed25519.PubKey",
+  "key": "gvPPVShkWjuUn7cuqS3ci9fHnC+nLFxzsNWkwGJ6iMI="
+}
+```
 ### Step 3-5. Send a `create-validator` transaction
 
 Once the node is fully synced, we are now ready to send a `create-validator` transaction and join the network, for example:
@@ -268,7 +281,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 You will be required to insert the following:
 
 - `--from`: The `trco...` address that holds your funds;
-- `--pubkey`: The validator public key( See Step [3-3](#step-3-3-obtain-the-validator-public-key) above )
+- `--pubkey`: The validator public key( See Step [3-4](#step-3-4-obtain-the-validator-public-key) above )
 - `--moniker`: A moniker (name) for your validator node;
 - `--security-contact`: Security contact email/contact method.
 
@@ -277,9 +290,9 @@ You will be required to insert the following:
 Once the `create-validator` transaction completes, you can check if your validator has been added to the validator set:
 
 ```bash
-$ ./ethermintd tendermint show-address
-## [tcrocnclcons... address] ##
-$ ./ethermintd query tendermint-validator-set | grep -c [tcrocnclcons...]
+$ ./ethermintd tendermint show-validator
+## [{"@type":"/cosmos.crypto.ed25519.PubKey","key":"VALIDATOR_KEY"}] ##
+$ ./ethermintd query tendermint-validator-set | grep -c [VALIDATOR_KEY]
 ## 1 = Yes; 0 = Not yet added ##
 ```
 
@@ -287,7 +300,7 @@ To further check if the validator is signing blocks, kindly run this [script](ht
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://cronostestnet-338.crypto.org:26657 \
+--tendermint-url https://cronos-testnet.crypto.org:26657 \
 --pubkey $(cat ~/.ethermintd/config/priv_validator_key.json | jq -r '.pub_key.value')
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
@@ -296,18 +309,13 @@ The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://cronostestnet-338.crypto.org:26657 \
+--tendermint-url http://cronos-testnet.crypto.org:26657 \
 --bechpubkey [tcrocnclconspub1....]
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
 The validator is signing @ Block#<BLOCK_HEIGHT> 👍
 ```
 
-Alternatively, you can run it on this [browser based IDE](https://repl.it/@allthatjazzleo/cryptocomcheckNodeJoinStatus#main.go), by specifying your validator public key in the `"YOUR_PUBKEY"` field, where this key can be obtained by running
-
-```bash
-$ cat ~/.ethermintd/config/priv_validator_key.json | jq -r '.pub_key.value'
-```
 
 ## Step 4. Perform Transactions
 
