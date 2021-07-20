@@ -101,7 +101,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 - In `~/.ethermintd/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
   ```bash
-  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025aphoton"#' ~/.ethermintd/config/app.toml
+  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+)""$#\1"0.025basetcro"#' ~/.ethermintd/config/app.toml
   ```
 
 - For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
@@ -259,7 +259,7 @@ $ ./ethermintd tx staking create-validator \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
 --min-self-delegation="1" \
---fees=5000aphoton
+--fees=5000basetcro
 
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -321,7 +321,7 @@ $ ./ethermintd query bank balances eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
 
 balances:
 - amount: "10005471622381693"
-  denom: aphoton
+  denom: basetcro
 pagination:
   next_key: null
   total: "0"
@@ -336,10 +336,10 @@ Transfer operation involves the transfer of tokens between two addresses.
 
 #### **Send Funds** [`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
 
-:::details Example: Send 10aphoton from an address to another.
+:::details Example: Send 10basetcro from an address to another.
 
 ```bash
-$ ./ethermintd tx bank send Default eth1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10aphoton --chain-id "cronostestnet-338" --gas-prices 0.1aphoton
+$ ./ethermintd tx bank send Default eth1j7pej8kplem4wt50p4hfvndhuw5jprxxn5625q 10basetcro --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -370,7 +370,7 @@ $ ./ethermintd query staking validators -o json | jq
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-338" --gas-prices 0.1aphoton
+$ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
