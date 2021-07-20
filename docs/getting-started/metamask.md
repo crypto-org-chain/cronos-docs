@@ -5,23 +5,36 @@ In the following step-by-step guide, you will learn how to use the Metamask chro
 
 First of all we would need to connect the metamask with the Cronos testnet network: 
 
-Hit the my account button in the top right corner, under **"Settings"**, select **"Networks"** 
+- Hit the my account button in the top right corner, under **"Settings"**, select **"Networks"** 
 
-<img src="./assets/1.png" />
+    <img src="./assets/1.png" />
 
-In the **"Networks"** page, click "Add Network":
+- In the **"Networks"** page, click "Add Network":
 
-<img src="./assets/2.png" />
+    <img src="./assets/2.png" />
 
-Insert the network name, for example "ethermint" ; for RPC URL put `http://localhost:8545/` and `2` for chain-id 
+- Insert the network name, for example "ethermint" ; for RPC URL put 
+`http://cronos-testnet.crypto.org:8545/` and `338` for chain-id If you would like to join the Cronos testnet 
 
-<img src="./assets/3.png" />
 
-After saving the network config, we can move to the next step and import the key
+
+    <img src="./assets/3.png" />
+
+After saving the network config, 
+
+
+
+
+
+
+
+
+
+
 
 ### Export privKey
 
-We can export the private key by using the `unsafe-export-eth-key` command, for example:
+Alternatively, We can export the private key by using the `unsafe-export-eth-key` command, for example:
 
 ```
 ethermintd keys unsafe-export-eth-key mykey --keyring-backend test
