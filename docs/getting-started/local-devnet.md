@@ -49,10 +49,10 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
   ethermintd config chain-id $CHAINID
 .......
 # Allocate genesis accounts (cosmos formatted addresses)
-  ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
+  ethermintd add-genesis-account $KEY 100000000000000000000000000basetcro --keyring-backend test
 
 # Sign genesis transaction
-  ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
+  ethermintd gentx $KEY 1000000000000000000000basetcro --keyring-backend test --chain-id $CHAINID
 ```
 
 The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
@@ -73,7 +73,7 @@ After the chain has been started, we may open up another terminal and start inte
 
 ### Keys management
 
-A key will be generated according to the configuration specified in `init.sh`. By default, the key will be stored in the `--keyring-backend test` and the name of the key will be `mykey` . In another terminal window or tab,
+A key will be generated according to the configuration specified in `init.sh`. By default, the key will be stored in the `--keyring-backend test` and the name of the key will be `mykey`. In another terminal window or tab, run
 
 ```
 $ ethermintd keys list
@@ -124,7 +124,7 @@ For example:
 {
   "balances": [
     {
-      "denom": "aphoton",
+      "denom": "basetcro",
       "amount": "99999000000000000000000000"
     }
   ],
@@ -136,7 +136,7 @@ For example:
 
 ```
 
-We can see that there is `99999000000000000000000000` aphoton in this address.
+We can see that there is `99999000000000000000000000` basetcro in this address.
 
 ### Transfer token to another address
 
@@ -165,21 +165,21 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
   refuse tray sauce area battle decide slot tilt position refuse blouse sauce mimic panic combine know stem section sustain reveal clever final assume flash
   ```
 
-- Now we can transfer tokens to `Bob`, for example you can send `1aphoton` to Bob's address by
+- Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
 
   ```
-  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
+  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1basetcro --keyring-backend test
   ```
 
 - Lastly, check balance of Bob's address:
   ```
   $ ethermintd query bank balances eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
   ```
-  and we can see that 1 `aphoton` has already been transferred:
+  and we can see that 1 `basetcro` has already been transferred:
   ```
   balances:
   - amount: "1"
-  denom: aphoton
+  denom: basetcro
   pagination:
   next_key: null
   total: "0"
