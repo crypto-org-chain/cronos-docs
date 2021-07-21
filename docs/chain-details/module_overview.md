@@ -670,7 +670,7 @@ First of all, we can create a validator with the `create-validator` transaction,
 $ ethermintd tx staking create-validator \
 --from=[name_of_your_key] \
 --amount=[staking_amount] \
---pubkey=[ethvaloper..]  \
+--pubkey='{"@type":...,"key":...}'  \
 --moniker="[moniker_id_of_your_node]" \
 --security-contact="[security contact email/contact method]" \
 --chain-id="[chain-id]" \
@@ -831,7 +831,7 @@ $ ethermintd query staking validator [validator-addr] --output json | jq
   {
     "operator_address": "[validator_address (ethvaloper...)]",
     // address of the validator's operator
-    "consensus_pubkey": "[consensus_pubkey ("@type":..."key": ...]",
+    "consensus_pubkey": "[consensus_pubkey '{"@type":...,"key":...}']",
     // the consensus public key of the validator
     "jailed": "[jailed_or_not]",
     // if it has been jailed from bonded status?
