@@ -435,7 +435,7 @@ $ ethermintd tx staking create-validator [flags]
 ```bash
 $ ethermintd tx staking create-validator \
 --amount="100cro" \
---pubkey="ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq" \
+--pubkey='{"@type":...,"key":...}' \
 --moniker="The_new_node" \
 --chain-id="cronostestnet-338" \
 --commission-rate="0.10" \
