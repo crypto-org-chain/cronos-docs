@@ -570,17 +570,20 @@ Validator could be punished and jailed due to network misbehaviour, for example 
 ```bash
 $ ethermintd query staking validators -o json | jq
 ................................
-    "operator_address": "crocncl18prgwae59zdqpwye6t4xftmq3d87vl0h0rj0qq",
-    "consensus_pubkey": "crocnclconspub1zcjduepqg0yml2l63qjnhr2cuw4tvprr72tle0twf3zymrxllmr0sj9uv3tqmpcrhs",
-    "jailed": true,
-    "status": 1,
+    "operator_address": "ethvaloper1zwm45n5r3u3xcpsd00d3arwzhz7250rtsadv65",
+    "consensus_pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "fD6cWVYv5rsNbXDw3hVIbB3nd9x57HsTyeMgwmH472U="
+    },
+    "jailed": false,
+    "status": "BOND_STATUS_BONDED",
 ................................
 ```
 
 After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ethermintd tx slashing unjail --from node1 --chain-id cro-test
+$ ethermintd tx slashing unjail --from node1 --chain-id cronostestnet-338
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
 ```
@@ -667,7 +670,7 @@ First of all, we can create a validator with the `create-validator` transaction,
 $ ethermintd tx staking create-validator \
 --from=[name_of_your_key] \
 --amount=[staking_amount] \
---pubkey=[trocnclconspub...]  \
+--pubkey=[ethvaloper..]  \
 --moniker="[moniker_id_of_your_node]" \
 --security-contact="[security contact email/contact method]" \
 --chain-id="[chain-id]" \
@@ -820,15 +823,15 @@ $ ethermintd query staking unbonding-delegation [delegator-addr] [validator-addr
 
 #### `query staking validator [validator-addr]` - Query a specific validator
 
-We can query the details of a specific validator with its validator address (crocncl...) by:
+We can query the details of a specific validator with its validator address (ethvaloper...) by:
 
 ```json
 $ ethermintd query staking validator [validator-addr] --output json | jq
 
   {
-    "operator_address": "[validator_address (crocncl...)]",
+    "operator_address": "[validator_address (ethvaloper...)]",
     // address of the validator's operator
-    "consensus_pubkey": "[consensus_pubkey (crocnclconspub...)]",
+    "consensus_pubkey": "[consensus_pubkey ("@type":..."key": ...]",
     // the consensus public key of the validator
     "jailed": "[jailed_or_not]",
     // if it has been jailed from bonded status?
