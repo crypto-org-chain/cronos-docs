@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Architecture
+  - name: "description"
+    content: Cronos is an EVM sidechain along the main Crypto.org Chain built on Ethermint with smart contract capability. It aims to empower and scale decentralised applications for the future multichain world.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Architecture
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Cronos is an EVM sidechain along the main Crypto.org Chain built on Ethermint with smart contract capability. It aims to empower and scale decentralised applications for the future multichain world.
+  - name: "og-image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Architecture
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Cronos is an EVM sidechain along the main Crypto.org Chain built on Ethermint with smart contract capability. It aims to empower and scale decentralised applications for the future multichain world.
+  - name: "twitter-image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Architecture
 
 ## Overview

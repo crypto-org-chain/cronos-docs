@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Chain ID and Address Format
+  - name: "description"
+    content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Chain ID and Address Format
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
+  - name: "og-image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Chain ID and Address Format
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
+  - name: "twitter-image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Chain ID and Address Format
 
 ## Chain ID

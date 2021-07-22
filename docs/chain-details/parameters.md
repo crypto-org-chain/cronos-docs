@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | List of parameters
+  - name: "description"
+    content: Brief description of all the mentioned network parameters
+  - name: "og:title"
+    content: Cronos | List of parameters
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Brief description of all the mentioned network parameters
+  - name: "og-image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | List of parameters
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Brief description of all the mentioned network parameters
+  - name: "twitter-image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # List of parameters
 
 This section aims to collect and provide brief a description of all the mentioned network parameters:

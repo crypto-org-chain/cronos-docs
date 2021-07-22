@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | ethermintd
+  - name: "description"
+    content: ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
+  - name: "og:title"
+    content: Cronos | ethermintd
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
+  - name: "og-image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | ethermintd
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
+  - name: "twitter-image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # ethermintd
 
 `ethermintd` is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.

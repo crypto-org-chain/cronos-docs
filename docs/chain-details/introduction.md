@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Testnet Introduction
+  - name: "description"
+    content: Cronos Testnet aims to massively scale the Chain DeFi ecosystem, by providing developers with the ability to rapidly port apps from Ethereum and EVM-compatible chains.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Testnet Introduction
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Cronos Testnet aims to massively scale the Chain DeFi ecosystem, by providing developers with the ability to rapidly port apps from Ethereum and EVM-compatible chains.
+  - name: "og-image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Testnet Introduction
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Cronos Testnet aims to massively scale the Chain DeFi ecosystem, by providing developers with the ability to rapidly port apps from Ethereum and EVM-compatible chains.
+  - name: "twitter-image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Introduction
 
 ### Cronos Testnet
