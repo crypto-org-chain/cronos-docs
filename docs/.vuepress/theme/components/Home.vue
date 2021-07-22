@@ -7,8 +7,10 @@
           :src="$withBase('/logo-icon-white.svg')"
           alt="logo-icon-white"
         />
-        <p class="description">Welcome to</p>
-        <h1 id="main-title" class="title">Cronos Documentation</h1>
+        <h1>
+          <span class="welcome">Welcome to</span>
+          <span id="main-title" class="title">Cronos Documentation</span>
+        </h1>
         <p class="action" v-if="data.actionText && data.actionLink">
           <NavLink class="action-button" :item="actionLink" />
         </p>
@@ -16,15 +18,17 @@
 
 
       <div class="introduction">
-        <div class="introduction-headline">
+        <h2 class="introduction-headline">
           Testnet is now launched!
-        </div>
-        <div class="signup-newsletter-text">
-          Sign up to our newsletter to get the latest updates and
-        </div>
-        <div class="introduction-text">
-          read the documentation to connect to our Testnet.
-        </div>
+        </h2>
+        <h3>
+          <div class="signup-newsletter-text">
+            Sign up to our newsletter to get the latest updates and
+          </div>
+          <div class="introduction-text">
+            read the documentation to connect to our Testnet.
+          </div>
+        </h3>
 
         <div>
           <NavLink class="subscription-button" :item="subscriptionLink" />
@@ -42,7 +46,7 @@
           />
         </div>
         <div class="right">
-          <h1 class="text-header">Get Involved</h1>
+          <h2 class="text-header">Get Involved</h2>
           <div class="involve-link">
             <div>
               <img :src="$withBase('/developers.svg')" alt="developers" />
@@ -174,12 +178,14 @@ export default {
       font-weight 500;
     }
 
-    .description {
+    .welcome {
       font-size 2.4rem;
       line-height 1.3;
       margin 1rem auto 0;
       font-weight 300;
       max-width: 800px;
+      display: block;
+      margin-bottom: 16px;
     }
 
     .action-button {
@@ -291,6 +297,13 @@ export default {
     text-align center
     font-size 1.5em
 
+    h2, h3 {
+      border-bottom none;
+      margin 0;
+      padding 0;
+      font-weight 400;
+    }
+
     .introduction-headline {
       font-size: 40px;
       font-weight: bold;
@@ -311,6 +324,18 @@ export default {
     display flex
     margin 6rem 3rem
     justify-content space-between
+
+    h2 {
+      border-bottom none;
+      margin 0;
+      padding 0;
+      font-weight 500;
+      text-align left;
+      margin-top 0;
+      margin-bottom 0.67em;
+      line-height 1.25;
+      font-size 2.2rem;
+    }
 
     .left {
       padding 5rem
@@ -376,11 +401,11 @@ export default {
         font-size 2rem;
       }
 
-      h1, .description, .action {
+      h1, .welcome, .action {
         margin 1.2rem auto;
       }
 
-      .description {
+      .welcome {
         font-size 1.2rem;
       }
 
