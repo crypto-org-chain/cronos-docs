@@ -26,7 +26,9 @@ meta:
 
 # Getting Started
 
-Thanks for your interest in Crypto.org Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `ethermintd`, and different SDK modules we utilized in the Cronos Chain.
+<h2 class="normal-text">
+  Thanks for your interest in Crypto.org Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface <code>ethermintd</code>, and different SDK modules we utilized in the Cronos Chain.
+</h2>
 
 ### What's next?
 
