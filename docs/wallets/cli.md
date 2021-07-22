@@ -361,10 +361,10 @@ Staking operations involve the interaction between an address and a validator. I
 
 To bond funds for staking, you can delegate funds to a validator by the `delegate` command
 
-::: details Example: Delegate funds from `Default` to a validator under the address `crocncl1zd...rz35z`
+::: details Example: Delegate funds from `mykey` to a validator under the address `ethvaloper...lq`
 
 ```bash
-$ ethermintd tx staking delegate crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z 100tcro --from Default --chain-id cronostestnet-338
+$ ethermintd tx staking delegate ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq 100tcro --from mykey --chain-id cronostestnet-338
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -376,10 +376,10 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 On the other hand, we can create a `Unbond` transaction to unbond the delegated funds
 
-::: details Example: Unbond funds from a validator under the address `crocncl1zdl...rz35z`
+::: details Example: Unbond funds from a validator under the address `ethvaloper...lq`
 
 ```bash
-$ ethermintd tx staking unbond crocncl1zdlttjrqh9jsgk2l8tgn6f0kxlfy98s3prz35z 100tcro --from Default --chain-id cronostestnet-338
+$ ethermintd tx staking unbond ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq 100tcro --from mykey --chain-id cronostestnet-338
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -435,7 +435,7 @@ $ ethermintd tx staking create-validator [flags]
 ```bash
 $ ethermintd tx staking create-validator \
 --amount="100cro" \
---pubkey="crocnclconspub1zcjduepqg0yml2l63qjnhr2cuw4tvprr72tle0twf3zymrxllmr0sj9uv3tqmpcrhs" \
+--pubkey='{"@type":...,"key":...}' \
 --moniker="The_new_node" \
 --chain-id="cronostestnet-338" \
 --commission-rate="0.10" \
