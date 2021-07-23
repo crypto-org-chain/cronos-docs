@@ -22,6 +22,7 @@ meta:
     content: Learn how to setup nodes, different SDK modules and our all-in-one command-line interface ethermintd in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/getting-started/
 ---
 
 # Getting Started

@@ -22,6 +22,7 @@ meta:
     content: Learn how to use the MetaMask chrome extension to send or receive and interact with the Cronos testnet in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/getting-started/metamask.html
 ---
 
 ## Using MetaMask

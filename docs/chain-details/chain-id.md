@@ -22,6 +22,7 @@ meta:
     content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/chain-details/chain-id.html
 ---
 
 # Chain ID and Address Format

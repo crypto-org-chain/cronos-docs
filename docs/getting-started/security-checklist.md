@@ -22,6 +22,7 @@ meta:
     content: Security Checklist of setting up a validator on Cronos
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/getting-started/security-checklist.html
 ---
 
 # Validator Security Checklist

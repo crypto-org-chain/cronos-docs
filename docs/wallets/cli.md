@@ -22,6 +22,7 @@ meta:
     content: ethermintd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/wallets/cli.html
 ---
 
 # ethermintd
