@@ -26,9 +26,13 @@ meta:
 
 # Cronos Testnet: Running Nodes
 
-The latest Crypto.org Chain Testnet has been named as **Cronos**.
+<h2 class="normal-text">
+  The latest Crypto.org Chain Testnet has been named as <b>Cronos</b>.
+</h2>
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet-338`.
+<h2 class="normal-text no-margin-top">
+  This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet <code>cronostestnet-338</code>.
+</h2>
 
 ## Pre-requisites
 
