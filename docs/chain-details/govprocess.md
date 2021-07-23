@@ -22,6 +22,7 @@ meta:
     content: Discover the governance process of Cronos and learn how to submit your proposal.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/chain-details/govprocess.html
 ---
 
 # The Proposal Process

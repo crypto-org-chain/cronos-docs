@@ -22,6 +22,7 @@ meta:
     content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/chain-details/module_overview.html
 ---
 
 # Modules

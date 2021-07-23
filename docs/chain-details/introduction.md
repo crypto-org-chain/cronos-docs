@@ -22,6 +22,7 @@ meta:
     content: Cronos Testnet aims to massively scale the Chain DeFi ecosystem, by providing developers with the ability to rapidly port apps from Ethereum and EVM-compatible chains.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/chain-details/introduction.html
 ---
 
 # Introduction

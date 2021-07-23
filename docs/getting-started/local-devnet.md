@@ -22,6 +22,7 @@ meta:
     content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/getting-started/local-devnet.html
 ---
 
 # Devnet: Running Latest Development Node

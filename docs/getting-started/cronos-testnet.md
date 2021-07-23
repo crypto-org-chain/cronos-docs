@@ -22,6 +22,7 @@ meta:
     content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
+canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
 ---
 
 # Cronos Testnet: Running Nodes
