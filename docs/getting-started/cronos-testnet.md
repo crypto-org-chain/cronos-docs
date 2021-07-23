@@ -10,7 +10,7 @@ meta:
     content: Website
   - name: "og:description"
     content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
-  - name: "og-image"
+  - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
@@ -20,7 +20,7 @@ meta:
     content: summary_large_image
   - name: "twitter:description"
     content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
-  - name: "twitter-image"
+  - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 ---
 

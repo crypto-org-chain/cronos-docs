@@ -10,7 +10,7 @@ meta:
     content: Website
   - name: "og:description"
     content: Brief description of all the mentioned network parameters
-  - name: "og-image"
+  - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
     content: Cronos | List of parameters
@@ -20,7 +20,7 @@ meta:
     content: summary_large_image
   - name: "twitter:description"
     content: Brief description of all the mentioned network parameters
-  - name: "twitter-image"
+  - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 ---
 

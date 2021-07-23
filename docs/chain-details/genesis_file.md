@@ -10,7 +10,7 @@ meta:
     content: Website
   - name: "og:description"
     content: The genesis.json file defines the initial state of the Crypto.org Chain. Find out more about genesis file in this documentation.
-  - name: "og-image"
+  - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Genesis
@@ -20,7 +20,7 @@ meta:
     content: summary_large_image
   - name: "twitter:description"
     content: The genesis.json file defines the initial state of the Crypto.org Chain. Find out more about genesis file in this documentation.
-  - name: "twitter-image"
+  - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 ---
 

@@ -10,7 +10,7 @@ meta:
     content: Website
   - name: "og:description"
     content: Security Checklist of setting up a validator on Cronos
-  - name: "og-image"
+  - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Validator Security Checklist
@@ -20,7 +20,7 @@ meta:
     content: summary_large_image
   - name: "twitter:description"
     content: Security Checklist of setting up a validator on Cronos
-  - name: "twitter-image"
+  - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 ---
 

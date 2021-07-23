@@ -10,7 +10,7 @@ meta:
     content: Website
   - name: "og:description"
     content: Learn how to setup nodes, different SDK modules and our all-in-one command-line interface ethermintd in this technical documentation.
-  - name: "og-image"
+  - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Getting Started
@@ -20,7 +20,7 @@ meta:
     content: summary_large_image
   - name: "twitter:description"
     content: Learn how to setup nodes, different SDK modules and our all-in-one command-line interface ethermintd in this technical documentation.
-  - name: "twitter-image"
+  - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 ---
 
