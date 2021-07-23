@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Modules
+  - name: "description"
+    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
+  - name: "og:title"
+    content: Cronos | Modules
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Modules
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Modules
 
 ## Overview

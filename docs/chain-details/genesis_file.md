@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Genesis
+  - name: "description"
+    content: The genesis.json file defines the initial state of the Crypto.org Chain. Find out more about genesis file in this documentation.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Genesis
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: The genesis.json file defines the initial state of the Crypto.org Chain. Find out more about genesis file in this documentation.
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Genesis
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: The genesis.json file defines the initial state of the Crypto.org Chain. Find out more about genesis file in this documentation.
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Genesis
 
 The `genesis.json` file defines the initial state of the Crypto.org Chain. On top of the standard [tendermint genesis](https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#genesis) format, we customize our own genesis file that includes different [modules](#module_overview) and facilitates the special features of the Crypto.org Chain. Sample genesis file can be found [here](https://github.com/crypto-com/testnets/blob/main/testnet-cronos-2/genesis.json).

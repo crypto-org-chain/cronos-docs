@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Cronos Testnet",
-  description: "Welcome to Cronos Testnet documentation!",
+  title: "Cronos | Crypto.org EVM Chain",
+  description: "View our latest chain documentation on Cronos. Sign up to our newsletter to get the latest updates and read the documentation to connect to our Testnet.",
   themeConfig: {
     navbar: true,
     logo: '/chain_doc_nav_logo.svg',

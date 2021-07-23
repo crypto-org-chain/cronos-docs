@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Local Network Deployment
+  - name: "description"
+    content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Local Network Deployment
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Local Network Deployment
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Devnet: Running Latest Development Node
 
 ::: warning caution

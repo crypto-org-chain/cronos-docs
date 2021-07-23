@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | The Proposal Process
+  - name: "description"
+    content: Discover the governance process of Cronos and learn how to submit your proposal.
+  - name: "og:title"
+    content: Cronos | The Proposal Process
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Discover the governance process of Cronos and learn how to submit your proposal.
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | The Proposal Process
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Discover the governance process of Cronos and learn how to submit your proposal.
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # The Proposal Process
 
 *The governance process is divided into a few steps that are outlined below*:

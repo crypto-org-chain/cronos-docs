@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Validator Security Checklist
+  - name: "description"
+    content: Security Checklist of setting up a validator on Cronos
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Validator Security Checklist
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Security Checklist of setting up a validator on Cronos
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Validator Security Checklist
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Security Checklist of setting up a validator on Cronos
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Validator Security Checklist
 
 ## Part 1 - Conduct Survey on General Controls of Hosting Data Centre

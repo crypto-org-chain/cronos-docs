@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Deploy Smart Contract
+  - name: "description"
+    content: Learn how to deploy a smart contract to Cronos using Solidity, both Truffle and Hardhat are included in this technical documentation.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Deploy Smart Contract
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Learn how to deploy a smart contract to Cronos using Solidity, both Truffle and Hardhat are included in this technical documentation.
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Deploy Smart Contract
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Learn how to deploy a smart contract to Cronos using Solidity, both Truffle and Hardhat are included in this technical documentation.
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Cronos: Deploy Smart Contract
 
 This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo sodlity script.

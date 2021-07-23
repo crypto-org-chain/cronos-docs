@@ -1,3 +1,29 @@
+---
+meta:
+  - name: "title"
+    content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
+  - name: "description"
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
+  - name: "og:title"
+    content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
+  - name: "og:type"
+    content: Website
+  - name: "og:description"
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
+  - name: "og:image"
+    content: https://cronos.crypto.org/og-image.png
+  - name: "twitter:title"
+    content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
+  - name: "twitter:site"
+    content: "@cryptocom"
+  - name: "twitter:card"
+    content: summary_large_image
+  - name: "twitter:description"
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
+  - name: "twitter:image"
+    content: https://cronos.crypto.org/og-image.png
+---
+
 # Cronos Testnet: Running Nodes
 
 The latest Crypto.org Chain Testnet has been named as **Cronos**.
