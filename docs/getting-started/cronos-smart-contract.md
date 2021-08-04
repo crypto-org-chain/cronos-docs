@@ -54,7 +54,7 @@ You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](http
 
 ### Step 1. Enter `smart-contract-example/truffle` folder
   ```bash
-  $ cd smart-contract-example/truffle
+  $ cd cronos-smart-contract-example/truffle
   ```
 
 ### Step 2. Run `npm install` inside the folder
