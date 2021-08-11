@@ -3,13 +3,13 @@ meta:
   - name: "title"
     content: Cronos | Crypto.org EVM Chain | Validator Security Checklist
   - name: "description"
-    content: Security Checklist of setting up a validator on Cronos
+    content: Learn how to perform a survey on your hosting data centre and node setup in this technical documentation.
   - name: "og:title"
     content: Cronos | Crypto.org EVM Chain | Validator Security Checklist
   - name: "og:type"
     content: Website
   - name: "og:description"
-    content: Security Checklist of setting up a validator on Cronos
+    content: Learn how to perform a survey on your hosting data centre and node setup in this technical documentation.
   - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
@@ -19,7 +19,7 @@ meta:
   - name: "twitter:card"
     content: summary_large_image
   - name: "twitter:description"
-    content: Security Checklist of setting up a validator on Cronos
+    content: Learn how to perform a survey on your hosting data centre and node setup in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 canonicalUrl: https://cronos.crypto.org/docs/getting-started/security-checklist.html
