@@ -64,7 +64,7 @@ The `bank` module maintains the state of two primary objects:
 You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 1 basetcro from `address_a` to `address_b` by
 
 ```bash
-$ ethermintd tx bank send <address_a> <address_b> 1basetcro --keyring-backend test --chain-id <chain-id>
+$ cronosd tx bank send <address_a> <address_b> 1basetcro --keyring-backend test --chain-id <chain-id>
 
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":<address a>,"to_address":<address b>,"amount":[{"denom":"basetcro","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
@@ -82,7 +82,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 One can check the current balance of a specified account by:
 
 ```json
-$ ethermintd query bank balances <address> --output json | jq
+$ cronosd query bank balances <address> --output json | jq
     {
     "balances": [
         {
@@ -102,7 +102,7 @@ $ ethermintd query bank balances <address> --output json | jq
 You can also check the current total supply of the token by:
 
 ```json
-$ ethermintd query bank total --output json | jq
+$ cronosd query bank total --output json | jq
     {
     "supply": [
         {
@@ -225,7 +225,7 @@ We can check distribution outstanding (un-withdrawn) rewards for a validator and
 We can query the current distribution parameters by
 
 ```json
-$ ethermintd query distribution params --output json | jq
+$ cronosd query distribution params --output json | jq
 
   {
     "community_tax": "0.000000000000000000",
@@ -354,7 +354,7 @@ Users can vote for an active proposal. Valid value of `"option"` field can be `"
 We can check the proposal with optional filters by:
 
 ```json
-$ ethermintd query gov proposals -o json | jq
+$ cronosd query gov proposals -o json | jq
 ```
 
 In the above example, there is only one proposal with `"proposal_id": "1"`, with the title: `"Staking Param Change"` that change the `MaxValidators` parameter of the `staking` module to `151`. We can also see that the status of the proposal is `"PROPOSAL_STATUS_PASSED"`, which means that this proposal has bee passed.
@@ -372,7 +372,7 @@ We can also the tally of a proposal with a given `"proposal_id"`.
 We can query the current gov parameters by
 
 ```json
-$ ethermintd query gov params --output json | jq
+$ cronosd query gov params --output json | jq
 
   {
     "voting_params": {
@@ -448,7 +448,7 @@ The target annual inflation rate is recalculated for each previsions cycle. The 
 We can query the current minting annual provisions value, for example:
 
 ```json
-  $ ethermintd query mint annual-provisions
+  $ cronosd query mint annual-provisions
   109573801550200370
 ```
 
@@ -459,7 +459,7 @@ implies that the current minting annual provisions will be `109573801550200370` 
 We can query the current minting inflation value, for example:
 
 ```json
-  $ ethermintd query mint inflation
+  $ cronosd query mint inflation
   0.013687008526984104
 ```
 
@@ -470,7 +470,7 @@ implies that the current minting annual provisions will be `0.013687008526984104
 We can query the current query parameters by
 
 ```json
-$ ethermintd query mint params --output json | jq
+$ cronosd query mint params --output json | jq
 
   {
     "mint_denom": "basetcro",
@@ -595,7 +595,7 @@ When there is byzantine fault detected, they are immediately slashed other than 
 Validator could be punished and jailed due to network misbehaviour, for example if we check the validator set:
 
 ```bash
-$ ethermintd query staking validators -o json | jq
+$ cronosd query staking validators -o json | jq
 ................................
     "operator_address": "ethvaloper1zwm45n5r3u3xcpsd00d3arwzhz7250rtsadv65",
     "consensus_pubkey": {
@@ -610,7 +610,7 @@ $ ethermintd query staking validators -o json | jq
 After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ethermintd tx slashing unjail --from node1 --chain-id cronostestnet-338
+$ cronosd tx slashing unjail --from node1 --chain-id cronostestnet_338-1
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
 ```
@@ -622,7 +622,7 @@ $ ethermintd tx slashing unjail --from node1 --chain-id cronostestnet-338
 We can query the current slashing parameters by
 
 ```json
-$ ethermintd query slashing params --output json | jq
+$ cronosd query slashing params --output json | jq
 
   {
     "signed_blocks_window": "2000",
@@ -694,7 +694,7 @@ It is important to point out that the delegator and the validator are on the sam
 First of all, we can create a validator with the `create-validator` transaction, for example:
 
 ```bash
-$ ethermintd tx staking create-validator \
+$ cronosd tx staking create-validator \
 --from=[name_of_your_key] \
 --amount=[staking_amount] \
 --pubkey='{"@type":...,"key":...}'  \
@@ -716,7 +716,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 As discussed in the delegator section, one can delegate their tokens to an active validators by:
 
 ```bash
-$ ethermintd tx staking delegate [validator-addr] [amount]
+$ cronosd tx staking delegate [validator-addr] [amount]
 
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"...}
@@ -727,7 +727,7 @@ $ ethermintd tx staking delegate [validator-addr] [amount]
 Delegator can unbond their staked tokens by
 
 ```bash
-$ ethermintd tx staking unbond [validator-addr] [amount]
+$ cronosd tx staking unbond [validator-addr] [amount]
 
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
@@ -740,7 +740,7 @@ _Remark:_ Note that funds will only be available after the `unbonding_time` has 
 We can also move our staked tokens from one validator to another by:
 
 ```bash
-$ ethermintd tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount]
+$ cronosd tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount]
 
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgBeginRedelegate"...}
@@ -751,7 +751,7 @@ $ ethermintd tx staking redelegate [src-validator-addr] [dst-validator-addr] [am
 We will be covering most of the commonly used queries here. Meanwhile, you can use
 
 ```
-ethermintd query staking -h
+cronosd query staking -h
 ```
 
 to check all the supported sub-commands.
@@ -761,7 +761,7 @@ to check all the supported sub-commands.
 With a given delegator address and the validator account that it is associated with, we can check the by:
 
 ```json
-$ ethermintd query ethermintd query staking delegation [delegator-addr] [validator-addr] --output json | jq
+$ cronosd query cronosd query staking delegation [delegator-addr] [validator-addr] --output json | jq
 
   {
     "delegation": {
@@ -781,7 +781,7 @@ $ ethermintd query ethermintd query staking delegation [delegator-addr] [validat
 We can check all the delegations made to a specific validator:
 
 ```json
-$ ethermintd query staking delegations-to [validator-addr] --output json  | jq
+$ cronosd query staking delegations-to [validator-addr] --output json  | jq
 
   {
     "delegation_responses": [
@@ -821,7 +821,7 @@ $ ethermintd query staking delegations-to [validator-addr] --output json  | jq
 We can check the amount of bonded and unbonded amount in the staking pool:
 
 ```json
-$ ethermintd query staking pool --output json | jq
+$ cronosd query staking pool --output json | jq
 
   {
     "not_bonded_tokens": "[not_bonded_amount]",
@@ -832,7 +832,7 @@ $ ethermintd query staking pool --output json | jq
 #### `query staking unbonding-delegation [delegator-addr] [validator-addr]` - Query an unbonding-delegation record based on delegator and validator address
 
 ```json
-$ ethermintd query staking unbonding-delegation [delegator-addr] [validator-addr] --output json | jq
+$ cronosd query staking unbonding-delegation [delegator-addr] [validator-addr] --output json | jq
 
   {
     "delegator_address": "[delegator-addr]",
@@ -853,7 +853,7 @@ $ ethermintd query staking unbonding-delegation [delegator-addr] [validator-addr
 We can query the details of a specific validator with its validator address (ethvaloper...) by:
 
 ```json
-$ ethermintd query staking validator [validator-addr] --output json | jq
+$ cronosd query staking validator [validator-addr] --output json | jq
 
   {
     "operator_address": "[validator_address (ethvaloper...)]",
@@ -904,7 +904,7 @@ A full list of validators and their details can be found by this query.
 Finally, we can query the current staking parameters by
 
 ```json
-$ ethermintd query staking params --output json | jq
+$ cronosd query staking params --output json | jq
 
   {
     "unbonding_time": "1814400s",
@@ -955,7 +955,7 @@ The `supply` module is responsible for retrieve total and liquid supply.
 We can also use  `query` command of the `supply` module to check the current total supply:
 
 ```json
-$ ethermintd query supply total
+$ cronosd query supply total
     {
     "supply": [
         {
@@ -971,7 +971,7 @@ $ ethermintd query supply total
 We can also query the liquid supply, which is the total supply bonded subtracted by the non-circulating supply such as bonded amount, unvested amounts, and uncollected reward etc.
 
 ```json
-$ ethermintd query supply total
+$ cronosd query supply total
     {
     "supply": [
         {

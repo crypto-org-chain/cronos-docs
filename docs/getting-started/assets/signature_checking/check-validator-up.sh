@@ -18,7 +18,7 @@ check_jq() {
 }
 check_chain_maind() {
     set +e
-    command -v ethermintd > /dev/null
+    command -v cronosd > /dev/null
     RET_VALUE=$?
     set -e
 }
@@ -27,7 +27,7 @@ helpFunction() {
 Flags:
     --help                help for the script
     --tendermint-url      tendermint rpc interface for this chain (default "http://127.0.0.1:26657" if omitted)
-    --pubkey              tendermint Ed25519 PubKey; can be found in ".ethermintd/config/priv_validator_key.json"
+    --pubkey              tendermint Ed25519 PubKey; can be found in ".cronos/config/priv_validator_key.json"
     --bechpubkey          bech32 consensus PubKey; converted to tendermint Ed25519 PubKey automatically; useful for node using tmkms.
 EOF
     exit 1 # Exit script after printing help
@@ -70,9 +70,9 @@ set +u
 if [[ ! -z "${BECH_PUBKEY}" ]]; then
     check_chain_maind
     if [[ "${RET_VALUE}" != 0 ]]; then
-        echoerr "ethermintd is not installed or not in PATH. Please install it first or check ethermintd is added to PATH for pubkey key conversion."
+        echoerr "cronosd is not installed or not in PATH. Please install it first or check cronosd is added to PATH for pubkey key conversion."
     fi
-    PUBKEY=$(ethermintd debug pubkey ${BECH_PUBKEY} 2>&1 | grep "tendermint/PubKeyEd25519" | cut -d : -f2- | jq -r .value || echoerr "Decode Pubkey Failed ❌")
+    PUBKEY=$(cronosd debug pubkey ${BECH_PUBKEY} 2>&1 | grep "tendermint/PubKeyEd25519" | cut -d : -f2- | jq -r .value || echoerr "Decode Pubkey Failed ❌")
 fi
 if [[ -z "${PUBKEY}" ]]; then
 	echoerr "Missing --pubkey {base64 encoded Tendermint public key}"

@@ -64,8 +64,8 @@ module.exports = {
         text: "Wallet",
         items: [
           {
-            text: "ethermintd",
-            link: "/wallets/cli.html#ethermintd"
+            text: "cronosd",
+            link: "/wallets/cli.html#cronosd"
           }
         ]
       },
