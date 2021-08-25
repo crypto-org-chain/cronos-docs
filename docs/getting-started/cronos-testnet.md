@@ -149,7 +149,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 - In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
   ```bash
-  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"0.025basetcro"#' ~/.cronos/config/app.toml
+  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"0.025ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865"#' ~/.cronos/config/app.toml
   ```
 
 - For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
@@ -312,7 +312,7 @@ $ ./cronosd tx staking create-validator \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
 --min-self-delegation="1" \
---fees=5000basetcro
+--fees=5000ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865
 
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -363,7 +363,7 @@ $ ./cronosd query bank balances eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
 
 balances:
 - amount: "10005471622381693"
-  denom: basetcro
+  denom: ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865
 pagination:
   next_key: null
   total: "0"
@@ -395,7 +395,7 @@ $ ./cronosd query staking validators -o json | jq
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-1" --gas-prices 0.1basetcro
+$ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-1" --fees=5000ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
