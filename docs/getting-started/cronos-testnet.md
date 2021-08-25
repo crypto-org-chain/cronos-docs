@@ -3,13 +3,13 @@ meta:
   - name: "title"
     content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
   - name: "description"
-    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-1 in this technical documentation.
   - name: "og:title"
     content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
   - name: "og:type"
     content: Website
   - name: "og:description"
-    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-1 in this technical documentation.
   - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
@@ -19,7 +19,7 @@ meta:
   - name: "twitter:card"
     content: summary_large_image
   - name: "twitter:description"
-    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet-338 in this technical documentation.
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-1 in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
@@ -29,7 +29,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
 
 The latest Crypto.org Chain Testnet has been named as **Cronos**.
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet-338`.
+This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-1`.
 
 ## Pre-requisites
 
@@ -52,33 +52,47 @@ The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Windows_x86_64.zip) are also available.
+**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.2/cronos_0.5.2_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.2/cronos_0.5.2_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.2/cronos_0.5.2_Windows_x86_64.zip) are also available.
 
 - To install released **Cronos testnet binaries** from github:
 
   ```bash
-  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.5.0-rc0/ethermint_0.5.0-rc0_Linux_x86_64.tar.gz
-  $ tar -zxvf ethermint_0.5.0-rc0_Linux_x86_64.tar.gz
+  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.5.2/cronos_0.5.2_Linux_x86_64.tar.gz
+  $ tar -zxvf cronos_0.5.2_Linux_x86_64.tar.gz
   ```
 
-  Afterward, you can check the version of `ethermintd` by
+  Afterward, you can check the version of `cronosd` by
 
   ```bash
-  $ ./ethermintd version
-  0.5.0-rc0
+  $ ./cronosd version
+  0.5.2
   ```
 
-## Step 2. Configure `ethermintd`
+## Step 2. Configure `cronosd`
+
+
+### Step 2-0 (Optional) Clean up the old blockchain data
+
+- If you have joined `cronostestnet-338` before, you would have to clean up the old blockchain data and start over again, it can be done by running:
+
+  ```bash
+  $ ./cronosd unsafe-reset-all
+  ```
+  and remove the old genesis file by
+
+  ```bash
+  $ rm ~/.cronos/config/genesis.json
+  ```
 
 Before kick-starting your node, we will have to configure your node so that it connects to the Cronos testnet:
 
-### Step 2-1 Initialize `ethermintd`
+### Step 2-1 Initialize `cronosd`
 
-- First of all, you can initialize ethermintd by:
+- First of all, you can initialize cronosd by:
 
 
   ```bash
-    $ ./ethermintd init [moniker] --chain-id cronostestnet-338
+    $ ./cronosd init [moniker] --chain-id cronostestnet_338-1
   ```
 
 
@@ -89,25 +103,25 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 
   ```bash
-    $ ./ethermintd init pegasus-node --chain-id cronostestnet-338
+    $ ./cronosd init pegasus-node --chain-id cronostestnet_338-1
   ```
 
 
 
   ::: tip NOTE
 
-  - Depending on your ethermintd home setting, the ethermintd configuration will be initialized to that home directory. To simply the following steps, we will use the default ethermintd home directory `~/.ethermintd/` for illustration.
-  - You can also put the `ethermintd` to your binary path and run it by `ethermintd`
+  - Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
+  - You can also put the `cronosd` to your binary path and run it by `cronosd`
     :::
 
-### Step 2-2 Configure ethermintd
+### Step 2-2 Configure cronosd
 
 
 
 - Download and replace the Cronos Testnet `genesis.json` by:
 
   ```bash
-  $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/master/cronostestnet-338/genesis.json > ~/.ethermintd/config/genesis.json
+  $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-1/genesis.json > ~/.cronos/config/genesis.json
   ```
 
 
@@ -115,7 +129,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 
   ```bash
-  $ if [[ $(sha256sum ~/.ethermintd/config/genesis.json | awk '{print $1}') = "ce015fe82b6ef598a1bce3d28ecb09859fab0e6e765f4efc97780cfeacbfeefb" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
+  $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "c0e279664cc8204135498fbb3f33e4f45c9ebafeadb4ac1b514a1c84b7b3a7d8" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
 
   OK!
   ```
@@ -132,17 +146,17 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     :::
 
-- In `~/.ethermintd/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
+- In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
   ```bash
-  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"0.025basetcro"#' ~/.ethermintd/config/app.toml
+  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"0.025ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865"#' ~/.cronos/config/app.toml
   ```
 
-- For network configuration, in `~/.ethermintd/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
+- For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
   ```bash
-  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"6760167d71f53db880dd6a99e37b17db876697c5@13.213.254.205:26656,81348744600631ed3e60b1983e070ed4f190efc5@18.139.32.246:26656"#' ~/.ethermintd/config/config.toml
-  $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.ethermintd/config/config.toml
-  $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"8s"#' ~/.ethermintd/config/config.toml
+  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"f34965195bf7e007c5694c8f5dbc902fce817852@13.213.254.205:26656,73fade66fc0870a073694588170407b513af6439@18.139.32.246:26656"#' ~/.cronos/config/config.toml
+  $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
+  $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"8s"#' ~/.cronos/config/config.toml
   ```
 
 ::: tip NOTE
@@ -164,7 +178,7 @@ as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core
 Run the followings to create a new key. For example, you can create a key with the name `Default` by:
 
 ```bash
-  $ ./ethermintd keys add Default
+  $ ./cronosd keys add Default
 ```
 
 You should obtain an address with `eth` prefix, e.g. `eth10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
@@ -181,12 +195,12 @@ stating who you are and your `eth.....` address.
 
 ### Step 3-3. Run everything
 
-Once the `ethermintd` has been configured, we are ready to start the node and sync the blockchain data:
+Once the `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
 
-- Start ethermintd, e.g.:
+- Start cronosd, e.g.:
 
 ```bash
-  $ ./ethermintd start
+  $ ./cronosd start
 ```
 
 ::: tip Remarks:
@@ -205,30 +219,30 @@ $ ulimit -Sn 4096
 
 :::
 
-- _(Optional for Linux)_ Start ethermintd with systemd service, e.g.:
+- _(Optional for Linux)_ Start cronosd with systemd service, e.g.:
 
 ```bash
-  $ curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/create-service.sh -o create-service.sh && curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/ethermintd.service.template -o ethermintd.service.template
+  $ curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/create-service.sh -o create-service.sh && curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/cronosd.service.template -o cronosd.service.template
   $ chmod +x ./create-service.sh && ./create-service.sh
-  $ sudo systemctl start ethermintd
+  $ sudo systemctl start cronosd
   # view log
-  $ journalctl -u ethermintd -f
+  $ journalctl -u cronosd -f
 ```
 
-:::details Example: /etc/systemd/system/ethermintd.service created by script
+:::details Example: /etc/systemd/system/cronosd.service created by script
 
 ```bash
-# /etc/systemd/system/ethermintd.service
+# /etc/systemd/system/cronosd.service
 [Unit]
-Description=ethermintd
-ConditionPathExists=/usr/local/bin/ethermintd
+Description=cronosd
+ConditionPathExists=/usr/local/bin/cronosd
 After=network.target
 
 [Service]
 Type=simple
 User=ubuntu
 WorkingDirectory=/usr/local/bin
-ExecStart=/usr/local/bin/ethermintd start --home /home/ubuntu/.ethermintd
+ExecStart=/usr/local/bin/cronosd start --home /home/ubuntu/.cronos
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=4096
@@ -244,7 +258,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 - You can query the node syncing status by
 
   ```bash
-  $ ./ethermintd status 2>&1 | jq '.SyncInfo.catching_up'
+  $ ./cronosd status 2>&1 | jq '.SyncInfo.catching_up'
   ```
 
   If the above command returns `false`, It means that your node **is fully synced**; otherwise, it returns `true` and implies your node is still catching up.
@@ -258,7 +272,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
   and you can check your node's progress (in terms of block height) by
 
   ```bash
-  $ ./ethermintd status 2>&1 | jq '.SyncInfo.latest_block_height'
+  $ ./cronosd status 2>&1 | jq '.SyncInfo.latest_block_height'
   ```
 
 The next step only applied to the validators, in which, validator hosting is by invitation only at the early stage of the Cronos testnet.
@@ -270,7 +284,7 @@ The next step only applied to the validators, in which, validator hosting is by 
 You can obtain your validator public key by:
 
 ```bash
-  $ ./ethermintd tendermint show-validator
+  $ ./cronosd tendermint show-validator
 ```
 
 The public key should in a json format, for example:
@@ -287,18 +301,18 @@ The public key should in a json format, for example:
 Once the node is fully synced, we are now ready to send a `create-validator` transaction and join the network, for example:
 
 ```
-$ ./ethermintd tx staking create-validator \
+$ ./cronosd tx staking create-validator \
 --from=[name_of_your_key] \
 --amount=10000000stake \
 --pubkey='{"@type":"/cosmos.crypto.ed25519.PubKey","key":"PUBLIC_KEY"}'  \
 --moniker="[The_id_of_your_node]" \
 --security-contact="[security contact email/contact method]" \
---chain-id="cronostestnet-338" \
+--chain-id="cronostestnet_338-1" \
 --commission-rate="0.10" \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
 --min-self-delegation="1" \
---fees=5000basetcro
+--fees=5000ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865
 
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -318,9 +332,9 @@ Once the `create-validator` transaction completes, you can check if your validat
 
 ```bash
 
-$ ./ethermintd tendermint show-validator
+$ ./cronosd tendermint show-validator
 ## [{"@type":"/cosmos.crypto.ed25519.PubKey","key":"VALIDATOR_KEY"}] ##
-$ ./ethermintd query tendermint-validator-set | grep -c [VALIDATOR_KEY]
+$ ./cronosd query tendermint-validator-set | grep -c [VALIDATOR_KEY]
 
 ## 1 = Yes; 0 = Not yet added ##
 ```
@@ -330,7 +344,7 @@ To further check if the validator is signing blocks, kindly run this [script](ht
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
 --tendermint-url https://cronos-testnet.crypto.org:26657 \
---pubkey $(cat ~/.ethermintd/config/priv_validator_key.json | jq -r '.pub_key.value')
+--pubkey $(cat ~/.cronos/config/priv_validator_key.json | jq -r '.pub_key.value')
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
 The validator is signing @ Block#<BLOCK_HEIGHT> 👍
@@ -345,11 +359,11 @@ You can check your _transferable_ balance with the `balances` command under the 
 :::details Example: Check your address balance
 
 ```bash
-$ ./ethermintd query bank balances eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
+$ ./cronosd query bank balances eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
 
 balances:
 - amount: "10005471622381693"
-  denom: basetcro
+  denom: ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865
 pagination:
   next_key: null
   total: "0"
@@ -367,7 +381,7 @@ pagination:
 Validator could be punished and jailed due to network misbehaviour, we can check the jailing status of a validator, for example:
 
 ```bash
-$ ./ethermintd query staking validators -o json | jq
+$ ./cronosd query staking validators -o json | jq
 ................................
       "operator_address": "ethvaloper1s9e3f5y4tt4fkz3jyj865qaud2cqhs66qkw5yl",
       "consensus_pubkey": {
@@ -381,7 +395,7 @@ $ ./ethermintd query staking validators -o json | jq
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-338" --gas-prices 0.1basetcro
+$ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-1" --fees=5000ibc/6B5A664BF0AF4F71B2F0BAA33141E2F1321242FBD5D19762F541EC971ACB0865
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
@@ -389,13 +403,13 @@ $ ./ethermintd tx slashing unjail --from [key_name] --chain-id "cronostestnet-33
 
 :::
 
-Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#ethermintd) for more advanced operations and transactions.
+Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#cronosd) for more advanced operations and transactions.
 
 ## Cronos testnet faucet and explorer
 
 
 
-- You can lookup data within the `cronostestnet-338` network by the [explorer](https://cronos-explorer.crypto.org/);
+- You can lookup data within the `cronostestnet_338-1` network by the [explorer](https://cronos-explorer.crypto.org/);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 

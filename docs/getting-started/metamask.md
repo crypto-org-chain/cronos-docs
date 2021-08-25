@@ -59,7 +59,7 @@ First of all we would need to connect the MetaMask with the Cronos testnet netwo
 Alternatively, We can export the private key by using the `unsafe-export-eth-key` command, for example:
 
 ```
-ethermintd keys unsafe-export-eth-key mykey --keyring-backend test
+cronosd keys unsafe-export-eth-key mykey --keyring-backend test
 ```
 
 It will show your private, we can copy it for the next step.
@@ -80,23 +80,23 @@ Once it has been connect, you should see the balance and may start performing tr
 
 ## Address conventions
 
-Note that the address format in ethermint is in there form of bech32 `eth...` , we can use `ethermintd debug addr` to convert an address between hex and bech32, for example:
+Note that the address format in ethermint is in there form of bech32 `eth...` , we can use `cronosd debug addr` to convert an address between hex and bech32, for example:
 
 ```
-$ ethermintd keys list --keyring-backend test
+$ cronosd keys list --keyring-backend test
   - name: mykey
     type: local
     address: eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
     pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"Azy1tg0wZKRdQ7sd9mICzteCstGThiodZtQqlVT9Amlc"}'
     mnemonic: ""
 
-$ ethermintd debug addr eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
+$ cronosd debug addr eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
     Address: [87 1 138 168 146 247 175 109 87 13 28 89 9 134 201 134 172 240 255 255]
     Address (hex): 57018AA892F7AF6D570D1C590986C986ACF0FFFF
     Bech32 Acc: eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
     Bech32 Val: ethvaloper12uqc42yj77hk64cdr3vsnpkfs6k0pllldvagr4
 
-$ ethermintd debug addr 57018AA892F7af6D570D1c590986c986aCf0fFff
+$ cronosd debug addr 57018AA892F7af6D570D1c590986c986aCf0fFff
     Address: [87 1 138 168 146 247 175 109 87 13 28 89 9 134 201 134 172 240 255 255]
     Address (hex): 57018AA892F7AF6D570D1C590986C986ACF0FFFF
     Bech32 Acc: eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt

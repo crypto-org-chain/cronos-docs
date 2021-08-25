@@ -89,7 +89,7 @@ When there is byzantine fault detected, they are immediately slashed other than 
 Validator could be punished and jailed due to network misbehaviour, for example if we check the validator set:
 
 ```bash
-$ ethermintd query staking validators -o json | jq
+$ cronosd query staking validators -o json | jq
 ................................
     "operator_address": "crocncl18prgwae59zdqpwye6t4xftmq3d87vl0h0rj0qq",
     "consensus_pubkey": "crocnclconspub1zcjduepqg0yml2l63qjnhr2cuw4tvprr72tle0twf3zymrxllmr0sj9uv3tqmpcrhs",
@@ -101,7 +101,7 @@ $ ethermintd query staking validators -o json | jq
 After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ethermintd tx slashing unjail --from node1 --chain-id cro-test
+$ cronosd tx slashing unjail --from node1 --chain-id cro-test
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
 ```
@@ -113,7 +113,7 @@ $ ethermintd tx slashing unjail --from node1 --chain-id cro-test
 We can query the current slashing parameters by
 
 ```json
-$ ethermintd query slashing params --output json | jq
+$ cronosd query slashing params --output json | jq
 
   {
     "signed_blocks_window": "2000",

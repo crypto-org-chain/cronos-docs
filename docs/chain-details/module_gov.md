@@ -102,7 +102,7 @@ Users can vote for an active proposal. Valid value of `"option"` field can be `"
 We can check the proposal with optional filters by:
 
 ```json
-$ ethermintd query gov proposals -o json | jq
+$ cronosd query gov proposals -o json | jq
 ```
 
 #### `query gov proposal [proposal-id]` Query details of a single proposal
@@ -118,7 +118,7 @@ We can also the tally of a proposal with a given `"proposal_id"`.
 We can query the current gov parameters by
 
 ```json
-$ ethermintd query gov params --output json | jq
+$ cronosd query gov params --output json | jq
 
 {
   "voting_params": {

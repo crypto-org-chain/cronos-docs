@@ -100,7 +100,7 @@ We can check distribution outstanding (un-withdrawn) rewards for a validator and
 We can query the current distribution parameters by
 
 ```json
-$ ethermintd query distribution params --output json | jq
+$ cronosd query distribution params --output json | jq
 
   {
     "community_tax": "0.000000000000000000",

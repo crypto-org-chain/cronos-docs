@@ -36,9 +36,9 @@ please refer to our public testnet documentation which will be released shortly.
 
 By following this tutorial, you can compile and run the latest development version of Cronos testnet from scratch. It is intended for testing purpose only.
 
-### Install `ethermintd`
+### Install `cronosd`
 
-Install the binded version, which install ethermintd together, and find it by the absolute path:
+Install the binded version, which install cronosd together, and find it by the absolute path:
 
 ```
 git clone https://github.com/crypto-org-chain/cronos
@@ -49,13 +49,13 @@ make install
 Afterward, you can verify that by
 
 ```bash
-$ ethermintd -h
+$ cronosd -h
 ```
 
-and also you can check the version of the ethermintd to see if it is build with the later commit:
+and also you can check the version of the cronosd to see if it is build with the later commit:
 
 ```bash
-$ ethermintd version
+$ cronosd version
 [version-g<commit_hash>]
 ```
 
@@ -72,14 +72,14 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
   MONIKER="localtestnet"
 .......
 ### specify the default keyring back-backend to be 'test' for convenience ###
-  ethermintd config keyring-backend test
-  ethermintd config chain-id $CHAINID
+  cronosd config keyring-backend test
+  cronosd config chain-id $CHAINID
 .......
 # Allocate genesis accounts (cosmos formatted addresses)
-  ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
+  cronosd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
 
 # Sign genesis transaction
-  ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
+  cronosd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
 ```
 
 The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
@@ -96,14 +96,14 @@ Blocks are now being generated! You can verify and visit the rpc port [http://lo
 
 ## Interact with the chain
 
-After the chain has been started, we may open up another terminal and start interacting with the chain by `ethermintd`.
+After the chain has been started, we may open up another terminal and start interacting with the chain by `cronosd`.
 
 ### Keys management
 
 A key will be generated according to the configuration specified in `init.sh`. By default, the key will be stored in the `--keyring-backend test` and the name of the key will be `mykey` . In another terminal window or tab,
 
 ```
-$ ethermintd keys list
+$ cronosd keys list
 ```
 
 You will be able to list the address with allocated initial funds, for example:
@@ -122,7 +122,7 @@ You will be able to list the address with allocated initial funds, for example:
 You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity.
 
 ```
-$ ethermintd keys add mykey --recover --keyring-backend test
+$ cronosd keys add mykey --recover --keyring-backend test
 ```
 
 ```bash
@@ -142,7 +142,7 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
 You can check the account balance by
 
 ```
-ethermintd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp -o json | jq
+cronosd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp -o json | jq
 ```
 
 For example:
@@ -170,7 +170,7 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
 - We are now ready to transfer token between different addresses; we can create another address with the key name `Bob`:
 
   ```
-  $ ethermintd keys add Bob --keyring-backend test
+  $ cronosd keys add Bob --keyring-backend test
   ```
 
   which gives, for example:
@@ -195,12 +195,12 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
 - Now we can transfer tokens to `Bob`, for example you can send `1aphoton` to Bob's address by
 
   ```
-  $ ethermintd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
+  $ cronosd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
   ```
 
 - Lastly, check balance of Bob's address:
   ```
-  $ ethermintd query bank balances eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
+  $ cronosd query bank balances eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
   ```
   and we can see that 1 `aphoton` has already been transferred:
   ```
@@ -216,10 +216,10 @@ Congratulations! You've successfully transferred tokens to Bob.
 
 #### Check the current validator set
 
-Firstly, we can check the details of the current validator set by the query command of ethermintd, for example:
+Firstly, we can check the details of the current validator set by the query command of cronosd, for example:
 
 ```
-$ ethermintd query staking validators -o json | jq
+$ cronosd query staking validators -o json | jq
 ```
 
 will result in

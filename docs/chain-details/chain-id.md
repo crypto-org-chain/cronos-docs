@@ -31,7 +31,7 @@ canonicalUrl: https://cronos.crypto.org/docs/chain-details/chain-id.html
 
 Cronos has different Chain ID to distinguish between _devnet_, _testnet_ and _mainnet_. When running the Cronos in your local environment, you will also need to decide your own Chain ID.
 
-For example, our testnet Chain ID is `cronostestnet-338`.
+For example, our testnet Chain ID is `cronostestnet_338-1`.
 
 ## Address prefix
 
@@ -49,24 +49,24 @@ Cronos uses the Bech32 address format wherever users must handle binary data. Be
 | Validator Operator | `ethvaloper`          |
 | Consensus Nodes    | `ethvalcons`          |
 
-We can use the `keys show` command of `ethermintd` with the flag `--bech <type> (acc|val|cons) ` to obtain the addresses and keys as mentioned above: for example,
+We can use the `keys show` command of `cronosd` with the flag `--bech <type> (acc|val|cons) ` to obtain the addresses and keys as mentioned above: for example,
 
 ```
-$ ethermintd keys show mykey --bech acc
+$ cronosd keys show mykey --bech acc
 - name: mykey
   type: local
   address: eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 
-$ ethermintd keys show test --bech val
+$ cronosd keys show test --bech val
 - name: mykey
   type: local
   address: ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 
-$ ethermintd keys show test --bech cons
+$ cronosd keys show test --bech cons
 - name: mykey
   type: local
   address: ethvalcons1qsklxwt77qrxur494uvw07zjynu03dq9h7rlnp

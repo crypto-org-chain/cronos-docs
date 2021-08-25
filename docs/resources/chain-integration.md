@@ -31,7 +31,7 @@ There are a few ways to access to the Crypto.org Chain
   - Hosted documentation (use the latest master only): https://docs.tendermint.com/master/rpc/
   - Swagger file: https://github.com/tendermint/tendermint/blob/v0.34.3/rpc/openapi/openapi.yaml
 2. **gRPC Based**
-  - Processed chain information. Old state maybe pruned from time-to-time. To avoid state pruning, update `pruning = "nothing"` in `~/.ethermintd/config/app.toml`
+  - Processed chain information. Old state maybe pruned from time-to-time. To avoid state pruning, update `pruning = "nothing"` in `~/.cronos/config/app.toml`
   - There are two query methods based on gRPC:
     1. [gRPC Server](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc/README.md)
     2. [gRPC Proxy RESTful Server](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc-proxy-rest/README.md)
@@ -60,10 +60,10 @@ The Ansible playbook for deploying Prometheus and some rules we are using are un
 - [Tendermint](https://mainnet.crypto.org:26657/)
 - [Cosmos RESTful gRPC](https://mainnet.crypto.org:1317/)
 
-### cronos Testnet - `cronostestnet-338`
+### cronos Testnet - `cronostestnet_338-1`
 
-- [Tendermint](https://cronostestnet-338.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://cronostestnet-338.crypto.org:1317/)
+- [Tendermint](https://cronostestnet_338-1.crypto.org:26657/)
+- [Cosmos RESTful gRPC](https://cronostestnet_338-1.crypto.org:1317/)
 
 ## Block Explorer
 

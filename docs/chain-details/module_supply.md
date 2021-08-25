@@ -13,7 +13,7 @@ The `supply` module is responsible for retrieve total and liquid supply.
 We can also use  `query` command of the `supply` module to check the current total supply:
 
 ```json
-$ ethermintd query supply total
+$ cronosd query supply total
     {
     "supply": [
         {
@@ -29,7 +29,7 @@ $ ethermintd query supply total
 We can also query the liquid supply, which is the total supply bonded subtracted by the non-circulating supply such as bonded amount, unvested amounts, and uncollected reward etc.
 
 ```json
-$ ethermintd query supply total
+$ cronosd query supply total
     {
     "supply": [
         {

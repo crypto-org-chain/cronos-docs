@@ -33,7 +33,7 @@ It is important to point out that the delegator and the validator are on the sam
 First of all, we can create a validator with the `create-validator` transaction, for example:
 
 ```bash
-$ ethermintd tx staking create-validator \
+$ cronosd tx staking create-validator \
 --from=[name_of_your_key] \
 --amount=[staking_amount] \
 --pubkey=[trocnclconspub...]  \
@@ -66,7 +66,7 @@ $ tx staking delegate [validator-addr] [amount]
 Delegator can unbond their staked tokens by
 
 ```bash
-$ ethermintd tx staking unbond [validator-addr] [amount]
+$ cronosd tx staking unbond [validator-addr] [amount]
 
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
@@ -79,7 +79,7 @@ _Remark:_ Note that funds will only be available after the `unbonding_time` has 
 We can also move our staked tokens from one validator to another by:
 
 ```bash
-$ ethermintd tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount]
+$ cronosd tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount]
 
 ## Transactions payload##
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgBeginRedelegate"...}
@@ -90,7 +90,7 @@ $ ethermintd tx staking redelegate [src-validator-addr] [dst-validator-addr] [am
 We will be covering most of the commonly used queries here. Meanwhile, you can use
 
 ```
-ethermintd query staking -h
+cronosd query staking -h
 ```
 
 to check all the supported sub-commands.
@@ -100,7 +100,7 @@ to check all the supported sub-commands.
 With a given delegator address and the validator account that it is associated with, we can check the by:
 
 ```json
-$ ethermintd query staking delegation [delegator-addr] [validator-addr] --output json | jq
+$ cronosd query staking delegation [delegator-addr] [validator-addr] --output json | jq
 
   {
     "delegation": {
@@ -120,7 +120,7 @@ $ ethermintd query staking delegation [delegator-addr] [validator-addr] --output
 We can check all the delegations made to a specific validator:
 
 ```json
-$ ethermintd query staking delegations-to [validator-addr] --output json  | jq
+$ cronosd query staking delegations-to [validator-addr] --output json  | jq
 
   {
     "delegation_responses": [
@@ -160,7 +160,7 @@ $ ethermintd query staking delegations-to [validator-addr] --output json  | jq
 We can check the amount of bonded and unbonded amount in the staking pool:
 
 ```json
-$ ethermintd query staking pool --output json | jq
+$ cronosd query staking pool --output json | jq
 
   {
     "not_bonded_tokens": "[not_bonded_amount]",
@@ -171,7 +171,7 @@ $ ethermintd query staking pool --output json | jq
 #### `query staking unbonding-delegation [delegator-addr] [validator-addr]` - Query an unbonding-delegation record based on delegator and validator address
 
 ```json
-$ ethermintd query staking unbonding-delegation [delegator-addr] [validator-addr] --output json | jq
+$ cronosd query staking unbonding-delegation [delegator-addr] [validator-addr] --output json | jq
 
   {
     "delegator_address": "[delegator-addr]",
@@ -192,7 +192,7 @@ $ ethermintd query staking unbonding-delegation [delegator-addr] [validator-addr
 We can query the details of a specific validator with its validator address (crocncl...) by:
 
 ```json
-$ ethermintd query staking validator [validator-addr] --output json | jq
+$ cronosd query staking validator [validator-addr] --output json | jq
 
   {
     "operator_address": "[validator_address (crocncl...)]",
@@ -243,7 +243,7 @@ A full list of validators and their details can be found by this query.
 Finally, we can query the current staking parameters by
 
 ```json
-$ ethermintd query staking params --output json | jq
+$ cronosd query staking params --output json | jq
 
   {
     "unbonding_time": "1814400s",
