@@ -111,7 +111,7 @@ One would have to add the `0x` at the beginning when using the Ethereum HEX addr
 
 ## Resetting your account on Metamask
 
-If you come across any issues with your account or you have used the imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function on the MetaMask. 
+If you come across any issue with your account or you have used the imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function on the MetaMask. 
 
 Simply go to `Setting/Advance` and click `Reset Account` as shown below:
 
