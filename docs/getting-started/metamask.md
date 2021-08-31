@@ -107,3 +107,12 @@ $ cronosd debug addr 57018AA892F7af6D570D1c590986c986aCf0fFff
 One would have to add the `0x` at the beginning when using the Ethereum HEX address shown as above: for example:
 `Address (hex): 57018AA892F7AF6D570D1C590986C986ACF0FFFF` implies that `0x57018AA892F7AF6D570D1C590986C986ACF0FFFF` will be the address in the Ethereum manner.
 :::
+
+
+## Resetting your account on Metamask
+
+If you come across any issue with your account or you have used the imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function on the MetaMask. 
+
+Simply go to `Setting/Advance` and click `Reset Account` as shown below:
+
+<img src="./assets/10.png" />
