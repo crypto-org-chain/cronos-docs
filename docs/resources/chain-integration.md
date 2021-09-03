@@ -8,7 +8,7 @@
 - [Faucet](https://cronos.crypto.org/faucet/) (Note that the faucet only takes eth-type `0x...`  addr)
 - [Binaries](https://github.com/crypto-org-chain/cronos/releases)
 - [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L2)
-- [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet-338/genesis.json)
+- [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-1/genesis.json)
 
 
 ## Setup Guide
