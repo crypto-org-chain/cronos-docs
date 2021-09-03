@@ -1,42 +1,53 @@
-# Crypto.org Chain Integration documentation
+# Cronos Integration documentation 
 
 ## Useful Links
 
-- [Crypto.org Chain website](https://crypto.org/)
-- [GitHub Repository](https://github.com/crypto-org-chain/chain-main)
-- [Official Documentation](https://crypto.org/docs/)
+- [Cronos website](https://cronos.crypto.org/)
+- [GitHub Repository](https://github.com/crypto-org-chain/cronos)
+- [Official Documentation](https://cronos.crypto.org/docs/)
+- [Faucet](https://cronos.crypto.org/faucet/) (Note that the faucet only takes eth-type `0x...`  addr)
+- [Binaries](https://github.com/crypto-org-chain/cronos/releases)
+- [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L2)
+- [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet-338/genesis.json)
 
-## Node and RPC setup notes
-
-[Node Setup and RPC note](./node-and-rpc-setup-notes.md)
 
 ## Setup Guide
+
+- **Cronos Testnet**:
+    - [Joining the Cronos Testnet](https://cronos.crypto.org/docs/getting-started/)
+    - [Using MetaMask](https://cronos.crypto.org/docs/getting-started/metamask.html)
+    - [Deploying Smart Contract](https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html)
 
 - **Mainnet**:
     - [Running a full node;](https://crypto.org/docs/getting-started/mainnet.html)
     - [Running a validator;](https://crypto.org/docs/getting-started/mainnet_validator.html)
     - [Mainnet Validator Security Checklist.](https://crypto.org/docs/getting-started/security-checklist.html#part-1-conduct-survey-on-general-controls-of-hosting-data-centre)    
-- **Testnet**: 
-    - [Joining the cronos Testnet](https://crypto.org/docs/getting-started/cronos-testnet.html)
-    - [Deploy testnet node with nix](https://crypto.org/docs/getting-started/cronos-testnet-nix.html#pre-requisites)
+
+- **Croeseid Testnet**: 
+    - [Joining the Croeseid Testnet](https://crypto.org/docs/getting-started/croeseid-testnet.html)
+    - [Deploy testnet node with nix](https://crypto.org/docs/getting-started/croeseid-testnet-nix.html#pre-requisites)
+
 - **Devnet**
     - [Running latest development network locally](https://crypto.org/docs/getting-started/local-devnet.html#overview)
 
-## API Documentation
-
-There are a few ways to access to the Crypto.org Chain
+## RPCs for Cronos Testnet
 
 1. **Tendermint RPC**
-  - Raw but most-completed data
-  - Hosted documentation (use the latest master only): https://docs.tendermint.com/master/rpc/
-  - Swagger file: https://github.com/tendermint/tendermint/blob/v0.34.3/rpc/openapi/openapi.yaml
-2. **gRPC Based**
-  - Processed chain information. Old state maybe pruned from time-to-time. To avoid state pruning, update `pruning = "nothing"` in `~/.cronos/config/app.toml`
-  - There are two query methods based on gRPC:
-    1. [gRPC Server](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc/README.md)
-    2. [gRPC Proxy RESTful Server](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc-proxy-rest/README.md)
-       - [Swagger UI](https://v1.cosmos.network/rpc/v0.41.4)
-       - [Swagger file](https://github.com/crypto-org-chain/chain-integration/blob/master/grpc-proxy-rest/swagger.yml)
+ - https://cronos-testnet.crypto.org/ 
+ - http://cronos-testnet.crypto.org:26657/
+
+2. **Cosmos RPC**
+ - https://cronos-testnet.crypto.org:1317/
+
+3. **gRPC Based**
+ - https://cronos-testnet.crypto.org:9090/
+
+4. **EVM HTTP JSON RPC** 
+ - https://cronos-testnet.crypto.org:8545/
+
+5. **EVM WS JSON RPC**
+ - https://cronos-testnet.crypto.org:8546/
+
 
 ## API Clients and libraries
 
@@ -45,36 +56,30 @@ There are a few ways to access to the Crypto.org Chain
 - [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
 - [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
 
-## Indexing
 
-- [chain-indexing](https://github.com/crypto-com/chain-indexing) (indexing on-chain data): 
-
-## Node Monitoring (Prometheus)
-
-The Ansible playbook for deploying Prometheus and some rules we are using are under [chain-integration/monitoring](https://github.com/crypto-org-chain/chain-integration/tree/master/monitoring).
-
-## Public Nodes
+## Public Nodes for Mainnet and Croeseid Testnet 
 
 ### Mainnet - `crypto-org-chain-mainnet-1`
 
 - [Tendermint](https://mainnet.crypto.org:26657/)
 - [Cosmos RESTful gRPC](https://mainnet.crypto.org:1317/)
 
-### cronos Testnet - `cronostestnet_338-1`
+### Croeseid Testnet - `testnet-croeseid-4`
 
-- [Tendermint](https://cronostestnet_338-1.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://cronostestnet_338-1.crypto.org:1317/)
+- [Tendermint](https://testnet-croeseid-4.crypto.org:26657/)
+- [Cosmos RESTful gRPC](https://testnet-croeseid-4.crypto.org:1317/)
 
-## Block Explorer
+
+## Block Explorer 
+
+### Cronos
+[https://cronos-explorer.crypto.org/](https://cronos-explorer.crypto.org)
 
 ### Mainnet
-
 [https://crypto.org/explorer](https://crypto.org/explorer)
 
-### cronos Testnet
-
-[https://crypto.org/explorer/cronos3/](https://crypto.org/explorer/cronos3/)
+### Croeseid Testnet
+[https://crypto.org/explorer/croeseid4/](https://crypto.org/explorer/croeseid4)
 
 ## Community
-
-[Discord](https://discord.gg/5JTk2ppsY3)
+[Discord](https://discord.gg/cGtxgVfGMZ)
