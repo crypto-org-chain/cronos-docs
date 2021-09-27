@@ -181,7 +181,7 @@ Run the followings to create a new key. For example, you can create a key with t
   $ ./cronosd keys add Default
 ```
 
-You should obtain an address with `eth` prefix, e.g. `tcrc10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
+You should obtain an address with `tcrc` prefix, e.g. `tcrc10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
 
 ### Step 3-2. Obtain test token
 
@@ -321,7 +321,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 You will be required to insert the following:
 
 
-- `--from`: The `eth...` address that holds your funds;
+- `--from`: The `tcrc...` address that holds your `stake` token;
 - `--pubkey`: The validator public key( See Step [3-4](#step-3-4-obtain-the-validator-public-key) above )
 - `--moniker`: A moniker (name) for your validator node;
 - `--security-contact`: Security contact email/contact method.
@@ -383,7 +383,7 @@ Validator could be punished and jailed due to network misbehaviour, we can check
 ```bash
 $ ./cronosd query staking validators -o json | jq
 ................................
-      "operator_address": "ethvaloper1s9e3f5y4tt4fkz3jyj865qaud2cqhs66qkw5yl",
+      "operator_address": "tcrcvaloper1hhskvvt87ngxjgl4fkcrn3ts09u63pnh47t06u",
       "consensus_pubkey": {
         "@type": "/cosmos.crypto.ed25519.PubKey",
         "key": "rXphE0lECaU4MfBL70l6tGrfaply4dp79g7ql4ijfco="
