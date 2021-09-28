@@ -191,7 +191,7 @@ You can create a new key with the name `Default` as in the following example:
 $ cronosd keys add Default
 - name: Default
   type: local
-  address: eth1r4erhyx6jk8nsafhlw7263upnw9hja90gdgj5d
+  address: tcrc1r4erhyx6jk8nsafhlw7263upnw9hja90gdgj5d
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A3EzNez+oPwDnRTY9OWdVDSjOqikiP7zYncTyxil2SgO"}'
   mnemonic: ""
 
@@ -259,7 +259,7 @@ You can retrieve key information by its name:
 $ cronosd keys show mykey --bech acc
 - name: mykey
   type: local
-  address: eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
+  address: tcrc1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 ```
@@ -372,7 +372,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 :::details Example: Send 10tcro  from an address to another.
 
 ```bash
-$ cronosd tx bank send Default eth1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcro  --chain-id cronostestnet_338-1
+$ cronosd tx bank send Default tcrc1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcro  --chain-id cronostestnet_338-1
   ## Transaction payload##
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
@@ -428,7 +428,7 @@ You can check your _transferable_ balance with the `balances` command under the 
 :::details Example: Check your address balance
 
 ```bash
-$ cronosd query bank balances eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --output json | jq
+$ cronosd query bank balances tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --output json | jq
 
 {
   "balances": [

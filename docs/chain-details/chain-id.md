@@ -39,15 +39,15 @@ For example, our testnet Chain ID is `cronostestnet_338-1`.
 
 | Testnet |
 | ------- |
-| `eth`   |
+| `tcrc`   |
 
 Cronos uses the Bech32 address format wherever users must handle binary data. Bech32 encoding provides robust integrity checks on data and the human readable part(HRP) that provides contextual hints that can assist UI developers with providing informative error messages. Specifically, we have the following HRP prefix for different addresses types in the mainnet:
 
 |                    | Address bech32 Prefix |
 | ------------------ | --------------------- |
-| Account            | `eth`                 |
-| Validator Operator | `ethvaloper`          |
-| Consensus Nodes    | `ethvalcons`          |
+| Account            | `tcrc`                 |
+| Validator Operator | `tcrcvaloper`          |
+| Consensus Nodes    | `tcrcvalcons`          |
 
 We can use the `keys show` command of `cronosd` with the flag `--bech <type> (acc|val|cons) ` to obtain the addresses and keys as mentioned above: for example,
 
@@ -55,21 +55,21 @@ We can use the `keys show` command of `cronosd` with the flag `--bech <type> (ac
 $ cronosd keys show mykey --bech acc
 - name: mykey
   type: local
-  address: eth1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
+  address: tcrc1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 
 $ cronosd keys show test --bech val
 - name: mykey
   type: local
-  address: ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq
+  address: tcrcvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 
 $ cronosd keys show test --bech cons
 - name: mykey
   type: local
-  address: ethvalcons1qsklxwt77qrxur494uvw07zjynu03dq9h7rlnp
+  address: tcrcvalcons1qsklxwt77qrxur494uvw07zjynu03dq9h7rlnp
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 ```

@@ -82,32 +82,32 @@ Once it has been connect, you should see the balance and may start performing tr
 
 ## Address conventions
 
-Note that the address format in ethermint is in there form of bech32 `eth...` , we can use `cronosd debug addr` to convert an address between hex and bech32, for example:
+Note that the address format in Cronos is in there form of bech32 `tcrc...` , we can use `cronosd debug addr` to convert an address between hex and bech32, for example:
 
 ```
 $ cronosd keys list --keyring-backend test
   - name: mykey
     type: local
-    address: eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
+    address: tcrc19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2c9265n
     pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"Azy1tg0wZKRdQ7sd9mICzteCstGThiodZtQqlVT9Amlc"}'
     mnemonic: ""
 
-$ cronosd debug addr eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
-    Address: [87 1 138 168 146 247 175 109 87 13 28 89 9 134 201 134 172 240 255 255]
-    Address (hex): 57018AA892F7AF6D570D1C590986C986ACF0FFFF
-    Bech32 Acc: eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
-    Bech32 Val: ethvaloper12uqc42yj77hk64cdr3vsnpkfs6k0pllldvagr4
+$ cronosd debug addr tcrc19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2c9265n
+    Address: [47 116 63 85 172 73 164 70 72 73 136 80 82 68 148 29 237 161 182 10]
+    Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A
+    Bech32 Acc: tcrc19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2c9265n
+    Bech32 Val: tcrcvaloper19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2ph398y
 
-$ cronosd debug addr 57018AA892F7af6D570D1c590986c986aCf0fFff
-    Address: [87 1 138 168 146 247 175 109 87 13 28 89 9 134 201 134 172 240 255 255]
-    Address (hex): 57018AA892F7AF6D570D1C590986C986ACF0FFFF
-    Bech32 Acc: eth12uqc42yj77hk64cdr3vsnpkfs6k0pllln7rudt
-    Bech32 Val: ethvaloper12uqc42yj77hk64cdr3vsnpkfs6k0pllldvagr4
+$ cronosd debug addr 2F743F55AC49A446484988505244941DEDA1B60A
+  Address: [47 116 63 85 172 73 164 70 72 73 136 80 82 68 148 29 237 161 182 10]
+  Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A
+  Bech32 Acc: tcrc19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2c9265n
+  Bech32 Val: tcrcvaloper19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2ph398y
 ```
 
 ::: tip Remarks:
 One would have to add the `0x` at the beginning when using the Ethereum HEX address shown as above: for example:
-`Address (hex): 57018AA892F7AF6D570D1C590986C986ACF0FFFF` implies that `0x57018AA892F7AF6D570D1C590986C986ACF0FFFF` will be the address in the Ethereum manner.
+`Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A` implies that `0x2F743F55AC49A446484988505244941DEDA1B60A` will be the address in the Ethereum manner.
 :::
 
 

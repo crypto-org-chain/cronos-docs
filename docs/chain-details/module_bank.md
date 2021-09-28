@@ -21,7 +21,7 @@ The `bank` module maintains the state of two primary objects:
 You can transfer of tokens between to a designated address by the `tx bank send` command. For example, we can send 1 basetcro to Bob's address by
 
 ```bash
-$ cronosd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1basetcro --keyring-backend test --chain-id ethermint-2
+$ cronosd tx bank send mykey tcrc1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1basetcro --keyring-backend test --chain-id ethermint-2
 
 ## Transaction payload##
 {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":<address a>,"to_address":<address b>,"amount":[{"denom":"basetcro","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
@@ -39,7 +39,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 One can check the current balance of a specified account by:
 
 ```json
-$ cronosd query bank balances eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --output json | jq
+$ cronosd query bank balances tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --output json | jq
 {
   "balances": [
     {

@@ -113,7 +113,7 @@ You will be able to list the address with allocated initial funds, for example:
   {
     "name": "mykey",
     "type": "local",
-    "address": "eth1cfmydxvlz0a3yeeh4an5ay94lyfv0flw5svzez",
+    "address": "tcrc1cfmydxvlz0a3yeeh4an5ay94lyfv0flw5svzez",
     "pubkey": "{\"@type\":\"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey\",\"key\":\"AssVo7smZ323alb4hq2SIJ/TZw2rJeslZlZK7EGqyC8H\"}"
   }
 ]
@@ -131,7 +131,7 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
 
 - name: mykey
   type: local
-  address: eth1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
+  address: tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A9J4ELPAqyyrmypT9CtOVyWrO66eEXum3d8Z2mV7MS6O"}'
   mnemonic: ""
 
@@ -142,7 +142,7 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
 You can check the account balance by
 
 ```
-cronosd q bank balances eth14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp -o json | jq
+cronosd q bank balances tcrc14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp -o json | jq
 ```
 
 For example:
@@ -179,8 +179,8 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
 
   - name: Bob
   type: local
-  address: eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
-  pubkey: ethpub17weu6qepqwaqek0we9a6ujsnmc3ke3xwkpl68qylcfkazv5tm04y80x004gy2uy3g8p
+  address: tcrcxwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
+  pubkey: tcrcpub17weu6qepqwaqek0we9a6ujsnmc3ke3xwkpl68qylcfkazv5tm04y80x004gy2uy3g8p
   mnemonic: ""
   threshold: 0
   pubkeys: []
@@ -195,12 +195,12 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
 - Now we can transfer tokens to `Bob`, for example you can send `1aphoton` to Bob's address by
 
   ```
-  $ cronosd tx bank send mykey eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
+  $ cronosd tx bank send mykey tcrc1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
   ```
 
 - Lastly, check balance of Bob's address:
   ```
-  $ cronosd query bank balances eth1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
+  $ cronosd query bank balances tcrc1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
   ```
   and we can see that 1 `aphoton` has already been transferred:
   ```
