@@ -40,8 +40,10 @@ First of all we would need to connect the MetaMask with the Cronos testnet netwo
     <img src="./assets/2.png" />
 
 - Insert the network name, for example "ethermint" and put 
-  - `https://cronos-testnet.crypto.org:8545/` for **New RPC URL**; and 
-  - `338` for **Chain ID** as below:
+  - `https://cronos-testnet－2.crypto.org:8545/` for **New RPC URL**; and 
+  - `338` for **Chain ID**, 
+  - tcro for the symble
+  - `https://cronos.crypto.org/explorer/` for the Block explorer URL as below:
 
     <img src="./assets/3.png" />
 
