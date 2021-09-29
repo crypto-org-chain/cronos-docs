@@ -82,12 +82,31 @@ You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](http
     };
   ```
   
-### Step 6. Deploy Contract
+
+### Step 6. Endpoints setting
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-2.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+
+```json
+  networks: {
+    development: {
+     host: "https://cronos-testnet-2.crypto.org",     
+     port: 8545,            
+     network_id: "*",       
+    },
+    cronos: {
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-2.crypto.org:8545"), 
+      network_id: "*",
+      skipDryRun: true
+    },
+  },
+```
+
+### Step 7. Deploy Contract
   ```bash
   npm run deploy-contract-cronos
   ```
 
-### Step 7. Obtain Contract address from console and input to Metamask
+### Step 8. Obtain Contract address from console and input to Metamask
 Correct balance will be shown on Metamask page
 <img src="./assets/cronos-smart-contract/truffle_deploy_contract_address.png" />
 <img src="./assets/cronos-smart-contract/metamask_add_tokens.png" />
@@ -127,12 +146,29 @@ Correct balance will be shown on Metamask page
     }
   ```
 
-### Step 6. Deploy Contract
+### Step 6. Endpoints setting
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-2.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+
+```json
+  networks: {
+    development: {
+     host: "https://cronos-testnet-2.crypto.org",     
+     port: 8545,            
+     network_id: "*",       
+    },
+    cronos: {
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-2.crypto.org:8545"), 
+      network_id: "*",
+      skipDryRun: true
+    },
+  },
+```
+### Step 7. Deploy Contract
   ```bash
   npm run deploy-contract-cronos
   ```
 
-### Step 7. Obtain Contract address from console and input to Metamask
+### Step 8. Obtain Contract address from console and input to Metamask
 Correct balance will be shown on Metamask page
   ```bash
   CronosToken deployed to: 0x5F803c894a0A16B46fe5982fB5D89eb334eAF68
