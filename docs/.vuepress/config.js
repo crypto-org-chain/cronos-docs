@@ -69,6 +69,28 @@ module.exports = {
           }
         ]
       },
+ 
+       {
+         text: "Resources",
+         items: [
+          {
+            text: "Integrating Crypto.org Chain",
+            link: "/resources/chain-integration"
+          },              
+          {
+            text: "Node Setup and RPC note",
+            link: "/resources/node-and-rpc-setup-notes"
+          },
+          {
+            text: "gRPC API",
+            link: "/resources/cosmos-grpc-docs"
+           },
+           {
+            text: "Technical Glossary",
+            link: "/resources/technical-glossary"
+           }
+         ]
+       }        
     ],
     sidebar: {
       "/getting-started/": [
@@ -94,7 +116,9 @@ module.exports = {
       "/resources/": [
         "chain-integration",
         "node-and-rpc-setup-notes",
-        "blocks-and-transactions",
+//      "blocks-and-transactions",
+        "cosmos-grpc-docs",
+        "technical-glossary"
       ],
       "/api/" : "auto"
     },
