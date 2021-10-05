@@ -84,17 +84,17 @@ You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](http
   
 
 ### Step 6. Endpoints setting
-By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-2.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-3.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
 
 ```json
   networks: {
     development: {
-     host: "https://cronos-testnet-2.crypto.org",     
+     host: "https://cronos-testnet-3.crypto.org",     
      port: 8545,            
      network_id: "*",       
     },
     cronos: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-2.crypto.org:8545"), 
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), 
       network_id: "*",
       skipDryRun: true
     },
@@ -147,17 +147,17 @@ Correct balance will be shown on Metamask page
   ```
 
 ### Step 6. Endpoints setting
-By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-2.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-3.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
 
 ```json
   networks: {
     development: {
-     host: "https://cronos-testnet-2.crypto.org",     
+     host: "https://cronos-testnet-3.crypto.org",     
      port: 8545,            
      network_id: "*",       
     },
     cronos: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-2.crypto.org:8545"), 
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), 
       network_id: "*",
       skipDryRun: true
     },
