@@ -3,13 +3,13 @@ meta:
   - name: "title"
     content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
   - name: "description"
-    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-2 in this technical documentation.
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-3 in this technical documentation.
   - name: "og:title"
     content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
   - name: "og:type"
     content: Website
   - name: "og:description"
-    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-2 in this technical documentation.
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-3 in this technical documentation.
   - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
@@ -19,7 +19,7 @@ meta:
   - name: "twitter:card"
     content: summary_large_image
   - name: "twitter:description"
-    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-2 in this technical documentation.
+    content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-3 in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
@@ -29,7 +29,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
 
 The latest Crypto.org Chain Testnet has been named as **Cronos**.
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-2`.
+This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
 ## Pre-requisites
 
@@ -52,20 +52,20 @@ The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.4-testnet/cronos_0.5.4-testnet_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.4-testnet/cronos_0.5.4-testnet_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.4-testnet/cronos_0.5.4-testnet_Windows_x86_64.zip) are also available.
+**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Windows_x86_64.zip) are also available.
 
 - To install released **Cronos testnet binaries** from github:
 
   ```bash
-  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.5.4-testnet/cronos_0.5.4-testnet_Linux_x86_64.tar.gz
-  $ tar -zxvf cronos_0.5.4-testnet_Linux_x86_64.tar.gz
+  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Linux_x86_64.tar.gz
+  $ tar -zxvf cronos_0.5.5-testnet_Linux_x86_64.tar.gz
   ```
 
   Afterward, you can check the version of `cronosd` by
 
   ```bash
   $ ./cronosd version
-  0.5.4-testnet
+  0.5.5-testnet
   ```
 
 ## Step 2. Configure `cronosd`
@@ -73,7 +73,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
 ### Step 2-0 (Optional) Clean up the old blockchain data
 
-- If you have joined `cronostestnet_338-1` before, you would have to clean up the old blockchain data and start over again, it can be done by running:
+- If you have joined `cronostestnet_338-2` before, you would have to clean up the old blockchain data and start over again, it can be done by running:
 
   ```bash
   $ ./cronosd unsafe-reset-all
@@ -92,7 +92,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 
   ```bash
-    $ ./cronosd init [moniker] --chain-id cronostestnet_338-2
+    $ ./cronosd init [moniker] --chain-id cronostestnet_338-3
   ```
 
 
@@ -103,7 +103,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 
   ```bash
-    $ ./cronosd init pegasus-node --chain-id cronostestnet_338-2
+    $ ./cronosd init pegasus-node --chain-id cronostestnet_338-3
   ```
 
 
@@ -121,7 +121,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 - Download and replace the Cronos Testnet `genesis.json` by:
 
   ```bash
-  $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-2/genesis.json > ~/.cronos/config/genesis.json
+  $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/genesis.json > ~/.cronos/config/genesis.json
   ```
 
 
@@ -129,7 +129,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 
   ```bash
-  $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "61615ebfab5cb7bea3086d0743d01d558d5f54ab46cb812cb77615bbe174db95" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
+  $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "cd42ea2c6aea7621c2bea15b32d65a462626452f3e0a55e737d1c61bcebf6b59" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
 
   OK!
   ```
@@ -154,7 +154,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 - For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
   ```bash
-  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"34b29d2db107518cb2a3aa13954bd73bb5ecebdb@52.77.30.18:26656,c0489b5d402a3f4b270703fb1acbd57fcbbc45f2@54.251.209.254:26656"#' ~/.cronos/config/config.toml
+  $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"8fcba3485c67a2a00a383b6f45660a4ac529c6ca@52.77.30.18:26656,e65199bc579ffd89d7c021c5611f9f1c97f7ff13@54.251.209.254:26656"#' ~/.cronos/config/config.toml
   $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
   $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
   ```
@@ -307,7 +307,7 @@ $ ./cronosd tx staking create-validator \
 --pubkey='{"@type":"/cosmos.crypto.ed25519.PubKey","key":"PUBLIC_KEY"}'  \
 --moniker="[The_id_of_your_node]" \
 --security-contact="[security contact email/contact method]" \
---chain-id="cronostestnet_338-2" \
+--chain-id="cronostestnet_338-3" \
 --commission-rate="0.10" \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
@@ -395,7 +395,7 @@ $ ./cronosd query staking validators -o json | jq
 Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
 
 ```bash
-$ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-2" --fees=1000000000000000000basetcro
+$ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-3" --fees=1000000000000000000basetcro
 
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
@@ -409,7 +409,7 @@ Congratulations! You've successfully set up a Testnet node and performed some ba
 
 
 
-- You can lookup data within the `cronostestnet_338-2` network by the [explorer](https://cronos-explorer.crypto.org/);
+- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos-explorer.crypto.org/);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
