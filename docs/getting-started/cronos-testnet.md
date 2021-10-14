@@ -266,7 +266,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 - One can check the current block height by querying the public full node by:
 
   ```bash
-  curl -s https://cronos-testnet-2.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
+  curl -s https://cronos-testnet-3.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
   ```
 
   and you can check your node's progress (in terms of block height) by
@@ -343,7 +343,7 @@ To further check if the validator is signing blocks, kindly run this [script](ht
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://cronos-testnet-2.crypto.org:26657 \
+--tendermint-url https://cronos-testnet-3.crypto.org:26657 \
 --pubkey $(cat ~/.cronos/config/priv_validator_key.json | jq -r '.pub_key.value')
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
