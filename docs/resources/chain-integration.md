@@ -22,20 +22,20 @@
 ## RPCs for Cronos Testnet
 
 1. **Tendermint RPC**
- - https://cronos-testnet-2.crypto.org/ 
- - http://cronos-testnet-2.crypto.org:26657/
+ - https://cronos-testnet-3.crypto.org/  or 
+ - https://cronos-testnet-3.crypto.org:26657/
 
 2. **Cosmos RPC**
- - https://cronos-testnet-2.crypto.org:1317/
+ - https://cronos-testnet-3.crypto.org:1317/
 
 3. **gRPC Based**
- - https://cronos-testnet-2.crypto.org:9090/
+ - https://cronos-testnet-3.crypto.org:9090/
 
 4. **EVM HTTP JSON RPC** 
- - https://cronos-testnet-2.crypto.org:8545/
+ - https://cronos-testnet-3.crypto.org:8545/
 
 5. **EVM WS JSON RPC**
- - https://cronos-testnet-2.crypto.org:8546/
+ - https://cronos-testnet-3.crypto.org:8546/
 
 
 ## API Clients and libraries
