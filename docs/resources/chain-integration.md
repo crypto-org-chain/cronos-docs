@@ -103,7 +103,9 @@
 | [`eth_unsubscribe`](#eth-unsubscribe)                                             | Websocket | ✔           |        |                    
 
 :::tip
-Block Number can be entered as a Hex string, `"earliest"`, ``"latest"`` or `"pending"`.
+- Block Number can be entered as a Hex string, `"earliest"`, ``"latest"`` or `"pending"`.
+- While the examples below make use of local node http://localhost:8545, users may also use our public full node:
+https://cronos-testnet-3.crypto.org:8545
 :::
 
 Below is a list of the RPC methods, the parameters and an example response from the namespaces.
@@ -208,7 +210,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1
 
 ### `eth_accounts`
 
-Returns array of all eth accounts.
+Returns array of all accounts owned by the client.
 
 ```json
 // Request
