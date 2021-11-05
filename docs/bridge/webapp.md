@@ -150,7 +150,7 @@ For any bug reports, please contact product.bridge@crypto.org.
 ### How do I find my missing funds?
 
 - Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all.
-If you believe you still have missing funds, please contact us at support.bridge@crypto.org.
+If you believe you still have missing funds, please contact us at product.bridge@crypto.org.
 
 ### Is transferring tokens across blockchains safe?
 
