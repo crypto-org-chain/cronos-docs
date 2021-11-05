@@ -61,27 +61,27 @@ module.exports = {
         ]
       }, 
       {
-        text: "Bridging",
+        text: "Bridge",
         items: [
           {
             text: "From Crypto.com App",
-            link: "/bridging/cdcapp.md"
+            link: "/bridge/cdcapp.md"
           },
           {
             text: "From Crypto.com Exchange",
-            link: "/bridging/cdcex.md"
+            link: "/bridge/cdcex.md"
           },
           {
             text: "From Crypto.org Chain (Cronos Bridge WebApp)",
-            link: "/bridging/webapp.md"
+            link: "/bridge/webapp.md"
           }, 
           {
             text: "From Crypto.org Chain (Crypto.com DeFi Wallet)",
-            link: "/bridging/defiwallet.md"
+            link: "/bridge/defiwallet.md"
           },      
           {
             text: "From Crypto.org Chain (Crypto.org Chain Desktop Wallet)",
-            link: "/bridging/desktop.md"
+            link: "/bridge/desktop.md"
           }           
         ]
       },     
@@ -138,7 +138,7 @@ module.exports = {
       "/wallets/": [
         "cli"
       ],
-      "/bridging/": [
+      "/bridge/": [
         "cdcapp",
         "cdcex",
         "webapp",

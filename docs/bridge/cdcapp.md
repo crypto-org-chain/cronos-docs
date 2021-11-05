@@ -6,11 +6,13 @@ The Crypto.com App will be able to seamlessly transfer selected assets over to C
 
 **Supported assets on Day 1**: CRO, USDT, USDC, DAI, ETH, WBTC
 
+Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet.
+
 ### Step-by-step Walkthrough
 
 **Step 1**:
 Select the token that you want to withdraw from your Crypto Wallet
-Only selected tokens mentioned at the top of this article will be available for withdrawal intro Cronos.
+Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet.
 <img src="./assets/cdcapp1.png" width="300" alt="centered image" />
 
 **Step 2**: Click on “Transfer” and “Withdraw”
@@ -23,6 +25,7 @@ Only selected tokens mentioned at the top of this article will be available for 
 <img src="./assets/cdcapp3-2.png" width="300" alt="centered image" />
 
 **Step 4**: Select Cronos Network and paste in your Cronos wallet address
+
 You should have a Cronos wallet address ready at this point (Either on Metamask, Crypto.com DeFi Wallet or any other wallet supporting the Cronos chain). No memo is required to withdraw your funds to Cronos. Once you have confirmed that your Cronos wallet address is accurate, click “Continue”
 <img src="./assets/cdcapp4.png" width="300" alt="centered image" />
 
