@@ -25,7 +25,7 @@ meta:
 canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-mainnet.html
 ---
 
-# Cronos Testnet: Running Nodes
+# Cronos Mainnet: Running Nodes
 
 The latest Crypto.org Chain mainnet has been named as **Cronos**.
 
@@ -54,7 +54,7 @@ The following is the minimal setup for a **validator node** / **full node**.
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Windows_x86_64.zip) are also available.
 
-- To install released **Cronos testnet binaries** from github:
+- To install released **Cronos mainnet binaries** from github:
 
   ```bash
   $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.1/cronos_0.6.1_Linux_x86_64.tar.gz
@@ -330,15 +330,11 @@ $ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-3
 
 :::
 
-Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#cronosd) for more advanced operations and transactions.
+Congratulations! You've successfully set up a Cronos mainnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#cronosd) for more advanced operations and transactions.
 
-## Cronos testnet faucet and explorer
-
+## Cronos mainnet explorer
 
 
 - You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos-explorer.crypto.org/);
 
-- To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
-
-  - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
 
