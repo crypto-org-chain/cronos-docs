@@ -73,7 +73,7 @@ Once all transfer settings have been confirmed, a transaction confirmation page 
 
 This will send a transaction request to your wallet; please confirm on your wallet screen to ultimately authorize the transfer.
 
-Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. [FAQ link]
+Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. See [FAQ](./faq.md) for more information
 
 <img src="./assets/webapp_confirmation_screen.png"  alt="centered image" />
 
