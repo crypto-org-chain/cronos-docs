@@ -77,7 +77,6 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
 .......
 # Allocate genesis accounts (cosmos formatted addresses)
   cronosd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
-
 # Sign genesis transaction
   cronosd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
 ```
@@ -128,13 +127,11 @@ $ cronosd keys add mykey --recover --keyring-backend test
 ```bash
 Enter your bip39 mnemonic
 sense slim three rally device lazy slice thumb bridge general essence seven diamond broom scan tell cactus into exotic paddle ignore tape unaware also
-
 - name: mykey
   type: local
   address: tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A9J4ELPAqyyrmypT9CtOVyWrO66eEXum3d8Z2mV7MS6O"}'
   mnemonic: ""
-
 ```
 
 ### Check account balance
@@ -160,7 +157,6 @@ For example:
     "total": "0"
   }
 }
-
 ```
 
 We can see that there is `99999000000000000000000000` aphoton in this address.
@@ -176,7 +172,6 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
   which gives, for example:
 
   ```
-
   - name: Bob
   type: local
   address: tcrcxwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
@@ -184,11 +179,8 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
   mnemonic: ""
   threshold: 0
   pubkeys: []
-
-
   **Important** write this mnemonic phrase in a safe place.
   It is the only way to recover your account if you ever forget your password.
-
   refuse tray sauce area battle decide slot tilt position refuse blouse sauce mimic panic combine know stem section sustain reveal clever final assume flash
   ```
 
