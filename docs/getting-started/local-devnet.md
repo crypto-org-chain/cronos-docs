@@ -42,7 +42,7 @@ Install the binded version, which install cronosd together, and find it by the a
 
 ```
 git clone https://github.com/crypto-org-chain/cronos
-cd ethermint
+cd cronos
 make install
 ```
 
@@ -84,15 +84,64 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
 
 The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
 
+## Install with Nix
+
+### Install nix
+
+Follow official instructions: https://nixos.org/download.html
+
+### Use binary cache
+
+If you are using linux, enable the cachix binary cache:
+
+```
+$ nix-env -iA cachix -f https://cachix.org/api/v1/install
+$ cachix use crypto-com
+```
+
+## Install pystarport 
+
+### Pre-requisites
+
+- Python > 3.7.3
+- [cronosd](https://github.com/crypto-org-chain/cronos)
+
+To install pystarport manually, run:
+
+```
+$ pip3 install pystarport
+```
+
 ## Start the devnet
 
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
 ```sh
-$ ./init.sh
+$ ./pystarport serve --config ./scripts/cronos-devnet.yaml
 ```
 
+Afterwards, keys will be generated according to the configuration specified, the accounts' information is generated in `data/cronos-777-1/accounts.json`, for example:
+
+```json
+[
+  {"name": "validator", "type": "local", "address": "cro1u6w6hurleq6nxxdhn4p3avunkak6rm8t5dvk2q", "pubkey": "cropub1addwnpepqgn4qt0h0zvu6t9t05jwh7vedxwe4s8p5rv3jmq36v6l0c44falusftpgqm", "mnemonic": "off giggle census three heavy below balance vehicle useless reflect safe gym vivid fault fee connect miracle release material volume note coast laundry federal"},
+  {"name": "validator", "type": "local", "address": "cro1yjvw6pwj7vvhg2j4rrxawcjevdqeqn5p4ujfds", "pubkey": "cropub1addwnpepqvc9kw0ntnny6u57g72pmecuvzy2k07y3xf9r0w4vjxhseg6ujwjuqq780g", "mnemonic": "fork security naive turtle bring pill imitate suffer clerk final century shock account pulp suffer gas runway punch extra spatial else solar mango explain"},
+  {"name": "community", "type": "local", "address": "cro1f8hjnj8wv9rf2vy57gx80fs5f00nyczxuuelwj", "pubkey": "cropub1addwnpepqfr8zzx85yjw83uh33uhjajm8v3rr5lww6er6ysu7g6e3xendwsy7zadp4e", "mnemonic": "kangaroo session warrior echo make amount pear series random gas pizza cheap artefact senior lumber unknown beef rigid lemon dignity boss lesson cash innocent"},
+  {"name": "ecosystem", "type": "local", "address": "cro1vfwelxg7yvgu0dhl3mcd9d8qf8g3q4zvknyhzk", "pubkey": "cropub1addwnpepqvz3hnk30qxx8z5n00zsq28ax0fhv057unqgnetunaxsdrj3y735qff30tn", "mnemonic": "result unable ball shove city high cook ignore rally student jaguar sound tiny duck nest yellow neglect people noodle crazy lazy evolve wheel machine"},
+  {"name": "reserve", "type": "local", "address": "cro1krckx5esmlz3ga7gq9vkha92nqcw8u6w382s0u", "pubkey": "cropub1addwnpepqt4exeghsgsl2wrxp4atk63xj5ylnm95z3dkxevp8jrldvgy824duchdwky", "mnemonic": "bird best thank chalk agree buzz apple lens strike help eyebrow valley winner section protect panther april bright keen reunion burst episode obtain hockey"},
+  {"name": "launch", "type": "local", "address": "cro1tgjt434qqr9y3ugmumwez5rule0ak86f2vdceg", "pubkey": "cropub1addwnpepqwn06cqy4895k5yhp0v5nx897c3s2psu4kzx4qq2r5eck2ljw557jx9e4pr", "mnemonic": "picture walnut banner glide once refuse cradle engage bike follow mistake clutch powder pencil ring walnut pigeon kind decade dutch tank immune coconut notable"}
+]
+```
+
+Kindly save these mnemonics for key recovery later.
+
 Blocks are now being generated! You can verify and visit the rpc port [http://localhost:26657/](http://localhost:26657/) to view the blockchain data.
+
+It is worth mentioning that the `serve` command would truncate all the blocks previously generated and regenerate a new genesis block, which means you'll also lose all of your transaction records. If you wish to restart the chain with the existing blocks, please run `pystarport` with `start` command:
+
+```sh
+$ pystarport start
+```
 
 ## Interact with the chain
 
