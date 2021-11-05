@@ -82,11 +82,7 @@ module.exports = {
           {
             text: "From Crypto.org Chain (Crypto.org Chain Desktop Wallet)",
             link: "/bridge/desktop.md"
-          },
-          {
-            text: "FAQ",
-            link: "/bridge/faq.md"
-          }                     
+          }                   
         ]
       },     
       {
@@ -147,8 +143,7 @@ module.exports = {
         "cdcex",
         "webapp",
         "defiwallet",
-        "desktop",
-        "faq"
+        "desktop"
       ],
       "/resources/": [
         "chain-integration",
