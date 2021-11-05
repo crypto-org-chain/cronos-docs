@@ -8,7 +8,7 @@
 
 The Cronos bridge’s goal is to support a seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best Dapps and earnings no matter the chain.
 
-Our bridge is a fully decentralized protocol built on the open-source projects of [IBC](https://ibcprotocol.org/) and [Gravity Bridge](https://github.com/cosmos/gravity-bridge). Our project repository can be found here.
+Our bridge is a fully decentralized protocol built on the open-source projects of [IBC](https://ibcprotocol.org/) and [Gravity Bridge](https://github.com/cosmos/gravity-bridge).
 
 Please read the guide carefully and review the project documentation as misuse may cause incorrect transfer or even loss of assets. We recommend transferring a small amount first to get yourself acquainted with the bridge before moving significant amounts.
 
@@ -27,11 +27,11 @@ Please read the guide carefully and review the project documentation as misuse m
 #### Coming Soon:
 
 - Ethereum <=> Cronos [Coming Soon]
-- ETH, WETH, WBTC, USDC, TCT, USDT, DAI
+- ETH, WETH, WBTC, USDC, USDT, DAI
 
-We are constantly working on adding new tokens and chain support. If you have any feedback and issues, please drop us an email at bridge@cronos.org.
+We are constantly working on adding new tokens and chain support. If you have any feedback and issues, please drop us an email at product.bridge@crypto.org.
 
-## How to use the Cronos Bridge [Web Dapp]
+### How to use the Cronos Bridge [Web Dapp]
 
 ### 1. Connect your wallet
 
@@ -59,7 +59,7 @@ Once the network and asset have been chosen, insert and confirm the amount you w
 Our decentralized bridge protocol does not impose a minimum and maximum amount.
 However, bridging a very small amount may have a high gas fee in proportion to the amount transferred. 
 
-After the amount is entered, the bridge network fees will be calculated accordingly. The bridge itself and Crypto.org do not charge an additional fee. However, we pass on network gas fees incurred.
+After the amount is entered, the bridge network fees will be calculated accordingly. The bridge itself and Crypto.org do not charge an additional fee.
 
 During the promotional launch period, the network fee incurred by the bridge will be waived. You will still be liable to pay a gas fee directly on your preferred wallet charged by the source network.
 
@@ -73,13 +73,13 @@ Once all transfer settings have been confirmed, a transaction confirmation page 
 
 This will send a transaction request to your wallet; please confirm on your wallet screen to ultimately authorize the transfer.
 
-Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. See [FAQ](./faq.md) for more information
+Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. See [FAQ](#faq) for more information
 
 <img src="./assets/webapp_confirmation_screen.png"  alt="centered image" />
 
-<img src="./assets/4a_confirm_wallet_txn.png"  alt="centered image" width="280"/>
-<img src="./assets/4b_confirm_wallet_txn.png"  alt="centered image" width="280"/>
-<img src="./assets/4c_confirm_wallet_txn.png"  alt="centered image" width="280"/>
+<img src="./assets/4a_confirm_wallet_txn.png"  alt="centered image" width="220"/>
+<img src="./assets/4b_confirm_wallet_txn.png"  alt="centered image" width="220"/>
+<img src="./assets/4c_confirm_wallet_txn.png"  alt="centered image" width="220"/>
 
 #### 5. Bridging assets
 
@@ -95,3 +95,64 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 
 <img src="./assets/5_txn_complete.png"  alt="centered image" />
 <img src="./assets/5_history_table.png"  alt="centered image" />
+
+
+
+## FAQ
+
+### What are the fees involved?
+
+-The bridge service itself is free and does not charge any additional service fees. The fees displayed are network gas fees which the blockchain infrastructure charges itself to process the transactions and vary depending on the network.
+
+- For any bridge transaction, network gas fees are incurred on two chains: origin and destination.
+  - For the origin chain gas fee, this will be displayed and settled directly on your wallet extension.
+  - For the destination chain gas fee (“Bridge network fee”), our decentralized bridge is tasked to collect the appropriate gas fee and pay the network.
+
+### How does the Bridge network fee waiver work?
+
+- The following transactions are eligible for a fee waiver:
+  - Crypto.org => Cronos
+  - Cronos => Crypto.org
+- The fee waived is the bridge network transaction fee on the destination chain. However, you are still liable to pay for the origin chain gas fee directly on your wallet extension.
+- This is a promotional waiver; we reserve the right to modify and terminate the promotion at any time
+
+### How fast is the transfer?
+
+- IBC Transfers will generally take around 1 minute to complete.
+
+### Can I transfer assets to a different wallet than my own?
+
+- For transfers between Cronos and Crypto.org, we support either connecting a second compatible wallet or inputting the wallet address string.
+  - If possible, we recommend connecting the second wallet to avoid manual typing and potential malware risks such as clipboard attacks.
+
+### What are the support blockchains and tokens?
+
+- The networks supported are:
+  - Crypto.org
+  - Cronos
+  - Coming Soon: Cosmos and Ethereum
+
+### What are the supported wallets?
+
+- The initially supported wallets will be Crypto.com DeFi Wallet, Metamask, and Keplr.
+- Please ensure to set the correct active network on your Wallet if it is supported.
+
+### Can I complete multiple transfers in one go?
+
+- While it is possible to have multiple ongoing transactions, we recommend having one transaction at a time, even if there is some waiting time to avoid issues and duplication.
+Where can I receive support and troubleshooting?
+For any product troubleshooting or general questions, please contact support.bridge@crypto.org.
+
+### Where can I report bugs and provide product feedback?
+
+For any bug reports, please contact product.bridge@crypto.org.
+
+### How do I find my missing funds?
+
+- Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all.
+If you believe you still have missing funds, please contact us at support.bridge@crypto.org.
+
+### Is transferring tokens across blockchains safe?
+
+- As with any decentralized application, there is a degree of risk related to code exploits and hacking.
+- Our bridge code is publicly available. We leverage open-source code from the [IBC protocol](https://ibcprotocol.org/)  and [Gravity Bridge](https://github.com/cosmos/gravity-bridge) projects.
