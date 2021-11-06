@@ -103,10 +103,13 @@
 | [`eth_unsubscribe`](#eth-unsubscribe)                                             | Websocket | ✔           |        |                    
 
 :::tip
-- Block Number can be entered as a Hex string, `"earliest"`, ``"latest"`` or `"pending"`.
-- While the examples below make use of local node http://localhost:8545, users may also use our public full node:
+Block Number can be entered as a Hex string, `"earliest"`, ``"latest"`` or `"pending"`.
+:::
+:::tip
+While the examples below make use of local node http://localhost:8545, users may also use our public full node:
 https://cronos-testnet-3.crypto.org:8545
 :::
+
 
 Below is a list of the RPC methods, the parameters and an example response from the namespaces.
 
@@ -233,13 +236,13 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ### JSON-RPC Support
 
-Ethermint supports all standard web3 JSON-RPC APIs. You can find documentation for these APIs on the [`JSON-RPC Methods`](./endpoints.md) page.
+Ethermint supports all standard web3 JSON-RPC APIs. You can find documentation for these APIs in the [`JSON-RPC Methods`](#json-rpc-methods) section.
 
 JSON-RPC is provided on multiple transports. Ethermint supports JSON-RPC over HTTP and WebSocket. Transports must be enabled through command-line flags or through the `app.toml` configuration file. For more details see the []
 
 Ethereum JSON-RPC APIs use a name-space system. RPC methods are grouped into several categories depending on their purpose. All method names are composed of the namespace, an underscore, and the actual method name within the namespace. For example, the eth_call method resides in the eth namespace.
 
-Access to RPC methods can be enabled on a per-namespace basis. Find documentation for individual namespaces in the [Namespaces](./namespaces.md) page.
+Access to RPC methods can be enabled on a per-namespace basis. Find documentation for individual namespaces in the [Namespaces](#json-rpc-namespaces) page.
 
 ### HEX value encoding
 
