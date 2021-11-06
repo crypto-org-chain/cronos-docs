@@ -14,12 +14,12 @@ module.exports = {
       },
 
       {
-        text: "Cronos Testnet",
+        text: "Cronos Chain",
         items: [
-//          {
-//            text: "Mainnet",
-//            link: "/getting-started/mainnet"
-//          },
+          {
+           text: "Cronos Mainnet",
+           link: "/getting-started/cronos_mainnet"
+          },
           {
             text: "Cronos Testnet",
             link: "/getting-started/cronos-testnet"
@@ -32,15 +32,15 @@ module.exports = {
             text: "Deploy Smart Contract at Cronos",
             link: "/getting-started/cronos-smart-contract"
           },
-//          {
-//              text: "Block Explorer",
-//              link: "https://crypto.org/explorer"
-//          },
+          {
+              text: "Block Explorer",
+              link: "https://cronos.crypto.org/explorer"
+          },
 
-//          {
-//            text: "Cronos Testnet Faucet",
-//              link: "https://crypto.org/faucet"
-//            text}
+          {
+            text: "Cronos Testnet Faucet",
+              link: "https://cronos.crypto.org/faucet"
+            text}
         ]
       },
       {
@@ -120,6 +120,7 @@ module.exports = {
     sidebar: {
       "/getting-started/": [
         "",
+        "cronos_mainnet",
         "cronos-testnet",
         "local-devnet",
         "metamask",
