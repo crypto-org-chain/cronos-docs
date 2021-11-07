@@ -5,10 +5,14 @@
 - [Cronos website](https://cronos.crypto.org/)
 - [GitHub Repository](https://github.com/crypto-org-chain/cronos)
 - [Official Documentation](https://cronos.crypto.org/docs/)
-- [Faucet](https://cronos.crypto.org/faucet/) (Note that the faucet only takes eth-type `0x...`  addr)
+- [Testnet Faucet](https://cronos.crypto.org/faucet/) 
+    - Note that the faucet only takes eth-type `0x...`  addr
 - [Binaries](https://github.com/crypto-org-chain/cronos/releases)
+
 - [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
-- [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-1/genesis.json)
+- Genesis files 
+    - [Mainnet genesis](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json)
+    - [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-1/genesis.json)
 
 
 ## Setup Guide
@@ -19,23 +23,41 @@
     - [Deploying Smart Contract](https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html)
 
 
-## RPCs for Cronos Testnet
+## RPC URLs:
+
+### For Cronos mainnet Beta
 
 1. **Tendermint RPC**
- - https://cronos-testnet-3.crypto.org/  or 
- - https://cronos-testnet-3.crypto.org:26657/
+    - https://rpc-cronos.crypto.org
+
+2. **Cosmos RESTful** 
+    - https://rest-cronos.crypto.org
+
+3. **Cosmos gRPC Based**
+    - https://grpc-cronos.crypto.org
+
+4. **EVM HTTP JSON RPC (Web3 compatible)** 
+    - https://evm-cronos.crypto.org
+
+
+
+### For Cronos testnet
+
+1. **Tendermint RPC**
+    - https://cronos-testnet-3.crypto.org/  or 
+    - https://cronos-testnet-3.crypto.org:26657/
 
 2. **Cosmos RPC**
- - https://cronos-testnet-3.crypto.org:1317/
+    - https://cronos-testnet-3.crypto.org:1317/
 
 3. **gRPC Based**
- - https://cronos-testnet-3.crypto.org:9090/
+    - https://cronos-testnet-3.crypto.org:9090/
 
 4. **EVM HTTP JSON RPC** 
- - https://cronos-testnet-3.crypto.org:8545/
+    - https://cronos-testnet-3.crypto.org:8545/
 
 5. **EVM WS JSON RPC**
- - https://cronos-testnet-3.crypto.org:8546/
+    - https://cronos-testnet-3.crypto.org:8546/
 
 
 ## API Clients and libraries
@@ -46,7 +68,7 @@
 - [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
 
 
-## JSON-RPC Methods
+# Ethereum type JSON-RPC Methods
 
 ### Pre-requisite Readings
 
@@ -311,29 +333,12 @@ The examples also do not include the URL/IP & port combination which must be the
 | `admin`                                    | The `admin` API gives you access to several non-standard RPC methods, which will allow you to have a fine grained control over your nodeinstance, including but not limited to network peer and RPC endpoint management.     | ❌         |                    |
 | [`personal`](./endpoints.md#personal-methods) | The `personal` API manages private keys in the key store.                                                                                                                                                                    | ✔         | ❌                  |
 
-## Public Nodes for Mainnet and Croeseid Testnet 
-
-### Mainnet - `crypto-org-chain-mainnet-1`
-
-- [Tendermint](https://mainnet.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://mainnet.crypto.org:1317/)
-
-### Croeseid Testnet - `testnet-croeseid-4`
-
-- [Tendermint](https://testnet-croeseid-4.crypto.org:26657/)
-- [Cosmos RESTful gRPC](https://testnet-croeseid-4.crypto.org:1317/)
-
 
 ## Block Explorer 
-
-### Cronos
+- Cronos Mainnet Beta: 
 [https://cronos-explorer.crypto.org/](https://cronos-explorer.crypto.org)
-
-### Mainnet
-[https://crypto.org/explorer](https://crypto.org/explorer)
-
-### Croeseid Testnet
-[https://crypto.org/explorer/croeseid4/](https://crypto.org/explorer/croeseid4)
+- Cronos Testnet: 
+[https://cronos.crypto.org/explorer/testnet3](https://cronos.crypto.org/explorer/testnet3)
 
 ## Community
 [Discord](https://discord.gg/cGtxgVfGMZ)

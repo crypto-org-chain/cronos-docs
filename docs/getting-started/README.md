@@ -27,9 +27,19 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/
 
 # Getting Started
 
-Thanks for your interest in Crypto.org Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `cronosd`, and different SDK modules we utilized in the Cronos Chain.
+Thanks for your interest in Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `cronosd`, and different SDK modules we utilized in the Cronos Chain.
 
 ### What's next?
+
+#### Crypto.org Cronos Chain
+
+- [Join Cronos Mainnet Beta](./cronos-mainnet.md):
+
+  Try running Full Node connected Cronos Mainnet Beta.
+  
+- [Setup your Metamask](./metamask.md):
+
+  Setup Metamask and connect to Cronos Mainnet Beta.
 
 #### Crypto.org Cronos Testnet
 
