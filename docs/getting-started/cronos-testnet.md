@@ -409,7 +409,7 @@ Congratulations! You've successfully set up a Testnet node and performed some ba
 
 
 
-- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos-explorer.crypto.org/);
+- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos.crypto.org/explorer/testnet3);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
