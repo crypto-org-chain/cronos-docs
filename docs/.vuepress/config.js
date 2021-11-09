@@ -36,6 +36,10 @@ module.exports = {
             text: "Deploy Smart Contract at Cronos",
             link: "/getting-started/cronos-smart-contract"
           },
+          {
+            text: "Best Practices for DeFi Project in Cronos",
+            link: "/getting-started/defi-practice"
+          },
          {
               text: "Block Explorer",
               link: "https://cronos-explorer.crypto.org"
@@ -128,6 +132,7 @@ module.exports = {
         "cronos-testnet",
         "local-devnet",
         "security-checklist.md",
+        "defi-practice",
         "cronos-smart-contract"
       ],
       "/chain-details/": [
@@ -152,7 +157,6 @@ module.exports = {
       "/resources/": [
         "chain-integration",
         "node-and-rpc-setup-notes",
-//      "blocks-and-transactions",
         "cosmos-grpc-docs",
         "technical-glossary"
       ],
