@@ -15,7 +15,7 @@ $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cro
 
 ### Enable API and gRPC server
 
-Edit ` ~/.cronos/config/config.toml` and update the following section
+Edit ` ~/.cronos/config/app.toml` and update the following section
 ```toml
 [api]
 
