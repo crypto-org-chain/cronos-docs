@@ -48,8 +48,6 @@
 | USDC       | `0xc21223249CA28397B4B6541dfFaEcC539BfF0c59` | 6       |
 | USDT       | `0x66e428c3f67a68878562e79A0234c1F83c208770` | 6       |
 | DAI        | `0xF2001B145b43032AAF5Ee2884e456CCd805F677D` | 18      |
-| SHIB       | `0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee` | 18      |
-| DOGE       | `0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396` | 8       |
 
 ## API Clients and libraries
 
