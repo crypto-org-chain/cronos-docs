@@ -1,64 +1,55 @@
-# Cronos Integration documentation 
+# Cronos Integration documentation
 
 ## Useful Links
 
 - [Cronos website](https://cronos.crypto.org/)
 - [GitHub Repository](https://github.com/crypto-org-chain/cronos)
 - [Official Documentation](https://cronos.crypto.org/docs/)
-- [Testnet Faucet](https://cronos.crypto.org/faucet/) 
-    - Note that the faucet only takes eth-type `0x...`  addr
+- [Testnet Faucet](https://cronos.crypto.org/faucet/)
+  - Note that the faucet only takes eth-type `0x...` addr
 - [Binaries](https://github.com/crypto-org-chain/cronos/releases)
 
 - [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
-- Genesis files 
-    - [Mainnet genesis](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json)
-    - [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-1/genesis.json)
-
+- Genesis files
+  - [Mainnet genesis](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json)
+  - [Testnet genesis](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-1/genesis.json)
 
 ## Setup Guide
 
 - **Cronos Testnet**:
-    - [Joining the Cronos Testnet](https://cronos.crypto.org/docs/getting-started/)
-    - [Using MetaMask](https://cronos.crypto.org/docs/getting-started/metamask.html)
-    - [Deploying Smart Contract](https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html)
+  - [Joining the Cronos Testnet](https://cronos.crypto.org/docs/getting-started/)
+  - [Using MetaMask](https://cronos.crypto.org/docs/getting-started/metamask.html)
+  - [Deploying Smart Contract](https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html)
 
-
-## RPC URLs:
-
-### For Cronos mainnet Beta
+## RPC URLs for Cronos mainnet Beta
 
 1. **Tendermint RPC**
-    - https://rpc-cronos.crypto.org
 
-2. **Cosmos RESTful** 
-    - https://rest-cronos.crypto.org
+   - https://rpc-cronos.crypto.org
+
+2. **Cosmos RESTful**
+
+   - https://rest-cronos.crypto.org
 
 3. **Cosmos gRPC Based**
-    - https://grpc-cronos.crypto.org
 
-4. **EVM HTTP JSON RPC (Web3 compatible)** 
-    - https://evm-cronos.crypto.org
+   - https://grpc-cronos.crypto.org
 
+4. **EVM HTTP JSON RPC (Web3 compatible)**
+   - https://evm-cronos.crypto.org
 
+## Official token contract addresses for Cronos mainnet Beta
 
-### For Cronos testnet
-
-1. **Tendermint RPC**
-    - https://cronos-testnet-3.crypto.org/  or 
-    - https://cronos-testnet-3.crypto.org:26657/
-
-2. **Cosmos RPC**
-    - https://cronos-testnet-3.crypto.org:1317/
-
-3. **gRPC Based**
-    - https://cronos-testnet-3.crypto.org:9090/
-
-4. **EVM HTTP JSON RPC** 
-    - https://cronos-testnet-3.crypto.org:8545/
-
-5. **EVM WS JSON RPC**
-    - https://cronos-testnet-3.crypto.org:8546/
-
+| Token name | address                                      | decimal |
+| ---------- | -------------------------------------------- | ------- |
+| WCRO       | `0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23` | 18      |
+| WETH       | `0xe44Fd7fCb2b1581822D0c862B68222998a0c299a` | 18       |
+| WBTC       | `0x062E66477Faf219F25D27dCED647BF57C3107d52` | 8       |
+| USDC       | `0xc21223249CA28397B4B6541dfFaEcC539BfF0c59` | 6       |
+| USDT       | `0x66e428c3f67a68878562e79A0234c1F83c208770` | 6       |
+| DAI        | `0xF2001B145b43032AAF5Ee2884e456CCd805F677D` | 18      |
+| SHIB       | `0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee` | 18      |
+| DOGE       | `0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396` | 8       |
 
 ## API Clients and libraries
 
@@ -67,6 +58,27 @@
 - [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
 - [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
 
+### RPC URLs for For Cronos testnet
+
+1. **Tendermint RPC**
+
+   - https://cronos-testnet-3.crypto.org/ or
+   - https://cronos-testnet-3.crypto.org:26657/
+
+2. **Cosmos RPC**
+
+   - https://cronos-testnet-3.crypto.org:1317/
+
+3. **gRPC Based**
+
+   - https://cronos-testnet-3.crypto.org:9090/
+
+4. **EVM HTTP JSON RPC**
+
+   - https://cronos-testnet-3.crypto.org:8545/
+
+5. **EVM WS JSON RPC**
+   - https://cronos-testnet-3.crypto.org:8546/
 
 # Ethereum type JSON-RPC Methods
 
@@ -77,61 +89,60 @@
 
 ### Endpoints
 
-| Method                                                                            | Namespace | Implemented | Public | 
-|-----------------------------------------------------------------------------------|-----------|-------------|--------|
-| [`web3_clientVersion`](#web3-clientversion)                                       | Web3      | ✔           | ✔      |                    
-| [`web3_sha3`](#web3-sha3)                                                         | Web3      | ✔           | ✔      |                    
-| [`net_version`](#net-version)                                                     | Net       | ✔           | ✔      |                    
-| [`net_peerCount`](#net-peerCount)                                                 | Net       | ✔           | ✔      |                    
-| [`net_listening`](#net-listening)                                                 | Net       | ✔           | ✔      |                    
-| [`eth_protocolVersion`](#eth-protocolversion)                                     | Eth       | ✔           | ✔      |                    
-| [`eth_syncing`](#eth-syncing)                                                     | Eth       | ✔           | ✔      |                    
-| [`eth_gasPrice`](#eth-gasprice)                                                   | Eth       | ✔           | ✔      |                    
-| [`eth_accounts`](#eth-accounts)                                                   | Eth       | ✔           | ✔      |                    
-| [`eth_blockNumber`](#eth-blocknumber)                                             | Eth       | ✔           | ✔      |                    
-| [`eth_getBalance`](#eth-getbalance)                                               | Eth       | ✔           | ✔      |                    
-| [`eth_getStorageAt`](#eth-getstorageat)                                           | Eth       | ✔           | ✔      |                    
-| [`eth_getTransactionCount`](#eth-gettransactioncount)                             | Eth       | ✔           | ✔      |                    
-| [`eth_getBlockTransactionCountByNumber`](#eth-getblocktransactioncountbynumber)   | Eth       | ✔           | ✔      |                    
-| [`eth_getBlockTransactionCountByHash`](#eth-getblocktransactioncountbyhash)       | Eth       | ✔           | ✔      |                    
-| [`eth_getCode`](#eth-getcode)                                                     | Eth       | ✔           | ✔      |                    
-| [`eth_sign`](#eth-sign)                                                           | Eth       | ✔           | ✔      |                    
-| [`eth_sendTransaction`](#eth-sendtransaction)                                     | Eth       | ✔           | ✔      |                    
-| [`eth_sendRawTransaction`](#eth-sendrawtransaction)                               | Eth       | ✔           | ✔      |                    
-| [`eth_call`](#eth-call)                                                           | Eth       | ✔           | ✔      |                    
-| [`eth_estimateGas`](#eth-estimategas)                                             | Eth       | ✔           | ✔      |                    
-| [`eth_getBlockByNumber`](#eth-getblockbynumber)                                   | Eth       | ✔           | ✔      |                    
-| [`eth_getBlockByHash`](#eth-getblockbyhash)                                       | Eth       | ✔           | ✔      |                    
-| [`eth_getTransactionByHash`](#eth-gettransactionbyhash)                           | Eth       | ✔           | ✔      |                    
-| [`eth_getTransactionByBlockHashAndIndex`](#eth-gettransactionbyblockhashandindex) | Eth       | ✔           | ✔      |                    
-| [`eth_getTransactionReceipt`](#eth-gettransactionreceipt)                         | Eth       | ✔           | ✔      |                    
-| [`eth_newFilter`](#eth-newfilter)                                                 | Eth       | ✔           | ✔      |                    
-| [`eth_newBlockFilter`](#eth-newblockfilter)                                       | Eth       | ✔           | ✔      |                    
-| [`eth_newPendingTransactionFilter`](#eth-newpendingtransactionfilter)             | Eth       | ✔           | ✔      |                    
-| [`eth_uninstallFilter`](#eth-uninstallfilter)                                     | Eth       | ✔           | ✔      |                    
-| [`eth_getFilterChanges`](#eth-getfilterchanges)                                   | Eth       | ✔           | ✔      |                    
-| [`eth_getFilterLogs`](#eth-getfilterlogs)                                         | Eth       | ✔           | ✔      |                    
-| [`eth_getLogs`](#eth-getlogs)                                                     | Eth       | ✔           | ✔      |                    
-| `eth_getTransactionbyBlockNumberAndIndex`                                         | Eth       |             | ✔      |                    
-| `eth_submitHashrate`                                                              | Eth       |             |        |                    
-| `eth_getCompilers`                                                                | Eth       |             |        |                    
-| `eth_compileLLL`                                                                  | Eth       |             |        |                    
-| `eth_compileSolidity`                                                             | Eth       |             |        |                    
-| `eth_compileSerpent`                                                              | Eth       |             |        |                    
-| `eth_signTransaction`                                                             | Eth       |             |        |                    
-| [`eth_coinbase`](#eth-coinbase)                                                   | Eth       | ✔           |        |                    
-| [`eth_getProof`](#eth-getProof)                                                   | Eth       | ✔           |        |                    
-| [`eth_subscribe`](#eth-subscribe)                                                 | Websocket | ✔           |        |                    
-| [`eth_unsubscribe`](#eth-unsubscribe)                                             | Websocket | ✔           |        |                    
+| Method                                                                            | Namespace | Implemented | Public |
+| --------------------------------------------------------------------------------- | --------- | ----------- | ------ |
+| [`web3_clientVersion`](#web3-clientversion)                                       | Web3      | ✔           | ✔      |
+| [`web3_sha3`](#web3-sha3)                                                         | Web3      | ✔           | ✔      |
+| [`net_version`](#net-version)                                                     | Net       | ✔           | ✔      |
+| [`net_peerCount`](#net-peerCount)                                                 | Net       | ✔           | ✔      |
+| [`net_listening`](#net-listening)                                                 | Net       | ✔           | ✔      |
+| [`eth_protocolVersion`](#eth-protocolversion)                                     | Eth       | ✔           | ✔      |
+| [`eth_syncing`](#eth-syncing)                                                     | Eth       | ✔           | ✔      |
+| [`eth_gasPrice`](#eth-gasprice)                                                   | Eth       | ✔           | ✔      |
+| [`eth_accounts`](#eth-accounts)                                                   | Eth       | ✔           | ✔      |
+| [`eth_blockNumber`](#eth-blocknumber)                                             | Eth       | ✔           | ✔      |
+| [`eth_getBalance`](#eth-getbalance)                                               | Eth       | ✔           | ✔      |
+| [`eth_getStorageAt`](#eth-getstorageat)                                           | Eth       | ✔           | ✔      |
+| [`eth_getTransactionCount`](#eth-gettransactioncount)                             | Eth       | ✔           | ✔      |
+| [`eth_getBlockTransactionCountByNumber`](#eth-getblocktransactioncountbynumber)   | Eth       | ✔           | ✔      |
+| [`eth_getBlockTransactionCountByHash`](#eth-getblocktransactioncountbyhash)       | Eth       | ✔           | ✔      |
+| [`eth_getCode`](#eth-getcode)                                                     | Eth       | ✔           | ✔      |
+| [`eth_sign`](#eth-sign)                                                           | Eth       | ✔           | ✔      |
+| [`eth_sendTransaction`](#eth-sendtransaction)                                     | Eth       | ✔           | ✔      |
+| [`eth_sendRawTransaction`](#eth-sendrawtransaction)                               | Eth       | ✔           | ✔      |
+| [`eth_call`](#eth-call)                                                           | Eth       | ✔           | ✔      |
+| [`eth_estimateGas`](#eth-estimategas)                                             | Eth       | ✔           | ✔      |
+| [`eth_getBlockByNumber`](#eth-getblockbynumber)                                   | Eth       | ✔           | ✔      |
+| [`eth_getBlockByHash`](#eth-getblockbyhash)                                       | Eth       | ✔           | ✔      |
+| [`eth_getTransactionByHash`](#eth-gettransactionbyhash)                           | Eth       | ✔           | ✔      |
+| [`eth_getTransactionByBlockHashAndIndex`](#eth-gettransactionbyblockhashandindex) | Eth       | ✔           | ✔      |
+| [`eth_getTransactionReceipt`](#eth-gettransactionreceipt)                         | Eth       | ✔           | ✔      |
+| [`eth_newFilter`](#eth-newfilter)                                                 | Eth       | ✔           | ✔      |
+| [`eth_newBlockFilter`](#eth-newblockfilter)                                       | Eth       | ✔           | ✔      |
+| [`eth_newPendingTransactionFilter`](#eth-newpendingtransactionfilter)             | Eth       | ✔           | ✔      |
+| [`eth_uninstallFilter`](#eth-uninstallfilter)                                     | Eth       | ✔           | ✔      |
+| [`eth_getFilterChanges`](#eth-getfilterchanges)                                   | Eth       | ✔           | ✔      |
+| [`eth_getFilterLogs`](#eth-getfilterlogs)                                         | Eth       | ✔           | ✔      |
+| [`eth_getLogs`](#eth-getlogs)                                                     | Eth       | ✔           | ✔      |
+| `eth_getTransactionbyBlockNumberAndIndex`                                         | Eth       |             | ✔      |
+| `eth_submitHashrate`                                                              | Eth       |             |        |
+| `eth_getCompilers`                                                                | Eth       |             |        |
+| `eth_compileLLL`                                                                  | Eth       |             |        |
+| `eth_compileSolidity`                                                             | Eth       |             |        |
+| `eth_compileSerpent`                                                              | Eth       |             |        |
+| `eth_signTransaction`                                                             | Eth       |             |        |
+| [`eth_coinbase`](#eth-coinbase)                                                   | Eth       | ✔           |        |
+| [`eth_getProof`](#eth-getProof)                                                   | Eth       | ✔           |        |
+| [`eth_subscribe`](#eth-subscribe)                                                 | Websocket | ✔           |        |
+| [`eth_unsubscribe`](#eth-unsubscribe)                                             | Websocket | ✔           |        |
 
 :::tip
-Block Number can be entered as a Hex string, `"earliest"`, ``"latest"`` or `"pending"`.
+Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pending"`.
 :::
 :::tip
 While the examples below make use of local node http://localhost:8545, users may also use our public full node:
 https://cronos-testnet-3.crypto.org:8545
 :::
-
 
 Below is a list of the RPC methods, the parameters and an example response from the namespaces.
 
@@ -192,7 +203,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 Returns if client is actively listening for network connections.
 
 ```json
-// Request 
+// Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"net_listening","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545
 // Result
 {"jsonrpc":"2.0","id":1,"result":true}
@@ -245,6 +256,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 ```
 
 ## JSON-RPC Server
+
 ### Pre-requisite Readings
 
 - [EthWiki JSON-RPC API](https://eth.wiki/json-rpc/API) {prereq}
@@ -307,10 +319,9 @@ The following options are possible for the `defaultBlock` parameter:
 
 ### Curl Examples Explained
 
-The curl options below might return a response where the node complains about the content type, this is because the `--data` option sets the content type to `application/x-www-form-urlencoded`. If your node does complain, manually set the header by placing `-H "Content-Type: application/json"` at the start of the call. 
+The curl options below might return a response where the node complains about the content type, this is because the `--data` option sets the content type to `application/x-www-form-urlencoded`. If your node does complain, manually set the header by placing `-H "Content-Type: application/json"` at the start of the call.
 
 The examples also do not include the URL/IP & port combination which must be the last argument given to curl e.x. `127.0.0.1:8545`
-
 
 ## JSON-RPC namespaces
 
@@ -320,25 +331,26 @@ The examples also do not include the URL/IP & port combination which must be the
 
 ### Ethereum Namespaces
 
-| Namespace                                  | Description                                                                                                                                                                                                                  | Supported | Enabled by Default |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------------|
-| [`eth`](./endpoints.md#eth-methods)           | Cronos provides several extensions to the standard `eth` JSON-RPC namespace.                                                                                                                                              | ✔         | ✔                  |
+| Namespace                                     | Description                                                                                                                                                                                                                  | Supported | Enabled by Default |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------ |
+| [`eth`](./endpoints.md#eth-methods)           | Cronos provides several extensions to the standard `eth` JSON-RPC namespace.                                                                                                                                                 | ✔         | ✔                  |
 | [`web3`](./endpoints.md#web3-methods)         | The `web3` API provides utility functions for the web3 client.                                                                                                                                                               | ✔         | ✔                  |
 | [`net`](./endpoints.md#net-methods)           | The `net` API provides access to network information of the node                                                                                                                                                             | ✔         | ✔                  |
-| `clique`                                   | The `clique` API provides access to the state of the clique consensus engine. You can use this API to manage signer votes and to check the health of a private network.                                                      | ❌         |                    |
-| `debug`                                    | The `debug` API gives you access to several non-standard RPC methods, which will allow you to inspect, debug and set certain debugging flags during runtime.                                                                 | ✔         |                    |
-| `les`                                      | The `les` API allows you to manage LES server settings, including client parameters and payment settings for prioritized clients. It also provides functions to query checkpoint information in both server and client mode. | ❌         |                    |
-| [`miner`](./endpoints.md#miner-methods)       | The `miner` API allows you to remote control the node’s mining operation and set various mining specific settings.                                                                                                           | ✔         | ❌                  |
-| [`txpool`](./endpoints.md#txpool-methods)     | The `txpool` API gives you access to several non-standard RPC methods to inspect the contents of the transaction pool containing all the currently pending transactions as well as the ones queued for future processing.    | ✔         | ❌                  |
-| `admin`                                    | The `admin` API gives you access to several non-standard RPC methods, which will allow you to have a fine grained control over your nodeinstance, including but not limited to network peer and RPC endpoint management.     | ❌         |                    |
-| [`personal`](./endpoints.md#personal-methods) | The `personal` API manages private keys in the key store.                                                                                                                                                                    | ✔         | ❌                  |
+| `clique`                                      | The `clique` API provides access to the state of the clique consensus engine. You can use this API to manage signer votes and to check the health of a private network.                                                      | ❌        |                    |
+| `debug`                                       | The `debug` API gives you access to several non-standard RPC methods, which will allow you to inspect, debug and set certain debugging flags during runtime.                                                                 | ✔         |                    |
+| `les`                                         | The `les` API allows you to manage LES server settings, including client parameters and payment settings for prioritized clients. It also provides functions to query checkpoint information in both server and client mode. | ❌        |                    |
+| [`miner`](./endpoints.md#miner-methods)       | The `miner` API allows you to remote control the node’s mining operation and set various mining specific settings.                                                                                                           | ✔         | ❌                 |
+| [`txpool`](./endpoints.md#txpool-methods)     | The `txpool` API gives you access to several non-standard RPC methods to inspect the contents of the transaction pool containing all the currently pending transactions as well as the ones queued for future processing.    | ✔         | ❌                 |
+| `admin`                                       | The `admin` API gives you access to several non-standard RPC methods, which will allow you to have a fine grained control over your nodeinstance, including but not limited to network peer and RPC endpoint management.     | ❌        |                    |
+| [`personal`](./endpoints.md#personal-methods) | The `personal` API manages private keys in the key store.                                                                                                                                                                    | ✔         | ❌                 |
 
+## Block Explorer
 
-## Block Explorer 
-- Cronos Mainnet Beta: 
-[https://cronos-explorer.crypto.org/](https://cronos-explorer.crypto.org)
-- Cronos Testnet: 
-[https://cronos.crypto.org/explorer/testnet3](https://cronos.crypto.org/explorer/testnet3)
+- Cronos Mainnet Beta:
+  [https://cronos-explorer.crypto.org/](https://cronos-explorer.crypto.org)
+- Cronos Testnet:
+  [https://cronos.crypto.org/explorer/testnet3](https://cronos.crypto.org/explorer/testnet3)
 
 ## Community
+
 [Discord](https://discord.gg/cGtxgVfGMZ)
