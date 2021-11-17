@@ -5,7 +5,7 @@
 Here we will be using a local `cronosd` folder as the home directory. By default chain data are stored in your home directory `~/.cronos`. For example, when joining the testnet `cronostestnet_338-1`: 
 
 ```bash
-./cronosd init mynode --chain-id cronostestnet_338-1 --home ./cronos
+./cronosd init mynode --chain-id cronostestnet_338-1 
 
 $ sed -i.bak -E 's#^(persistent_peers[[:space:]]+=[[:space:]]+).*$#\1"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656"#' ~/.cronos/config/config.toml
 $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
@@ -15,7 +15,7 @@ $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cro
 
 ### Enable API and gRPC server
 
-Edit ` .cronos/config/app.toml` and update the following section
+Edit `~/.cronos/config/app.toml` and update the following section
 ```toml
 [api]
 
@@ -43,9 +43,9 @@ address = "0.0.0.0:9090"
 
 Afterward, you should be able to start you node by running 
 ```bash
-./cronosd start --home ./cronos
+./cronosd start 
 ````
-where the blockchain data, keys will be stored at the folder `<current_path>/cronos/`
+where the blockchain data, keys will be stored at the folder `~/.cronos`
 
 ## Access RPC server
 
