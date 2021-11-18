@@ -107,7 +107,7 @@ module.exports = {
          text: "Resources",
          items: [
           {
-            text: "Integrating Crypto.org Chain",
+            text: "Integrating with Cronos Chain",
             link: "/resources/chain-integration"
           },              
           {
