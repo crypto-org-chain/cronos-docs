@@ -13,7 +13,7 @@ $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cro
 ```
 
 
-### Enable API and gRPC server
+### Enable API server
 
 Edit `~/.cronos/config/app.toml` and update the following section
 ```toml
@@ -29,14 +29,19 @@ swagger = true
 address = "tcp://0.0.0.0:1317"
 
 ...
+```
 
+### Disable gRPC server
+\:::warning Important:
+We recommend to disable gRPC server on public nodes to reduce the attack vector
+:::
+```
+
+Edit `~/.cronos/config/app.toml` and update the following section
 [grpc]
 
 # Enable defines if the gRPC server should be enabled.
-enable = true
-
-# Address defines the gRPC server address to bind to.
-address = "0.0.0.0:9090"
+enable = false
 ```
 
 ### Start the node
