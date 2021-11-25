@@ -52,20 +52,20 @@ The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
-**Mac** Intel x86 as `Darwin_x86_64`, **Mac** M1 as `arm64` and **Windows** as `Windows_x86_64` are also available [here](https://github.com/crypto-org-chain/cronos/releases).
+**Mac** Intel x86 as `Darwin_x86_64`, **Mac** M1 as `arm64` and **Windows** as `Windows_x86_64` are also available [here](https://github.com/crypto-org-chain/cronos/releases). Please check the required node version [here](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json).
 
 - To install released **Cronos testnet binaries** from github:
 
   ```bash
-  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.2-testnet/cronos_0.6.2-testnet_Linux_x86_64.tar.gz
-  $ tar -zxvf cronos_0.6.2-testnet_Linux_x86_64.tar.gz
+  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.0-testnet/cronos_0.6.0-testnet_Linux_x86_64.tar.gz
+  $ tar -zxvf cronos_0.6.0-testnet_Linux_x86_64.tar.gz
   ```
 
   Afterward, you can check the version of `cronosd` by
 
   ```bash
   $ ./cronosd version
-  0.6.2-testnet
+  0.6.0-testnet
   ```
 
 ## Step 2. Configure `cronosd`
