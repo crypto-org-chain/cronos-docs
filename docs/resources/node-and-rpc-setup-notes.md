@@ -31,7 +31,7 @@ address = "tcp://0.0.0.0:1317"
 
 ### Disable gRPC server on public nodes
 
-\:::warning Recommendation:
+:::warning Recommendation:
 We recommend to disable gRPC server on public nodes to reduce the attack vector
 :::
 
