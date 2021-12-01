@@ -141,12 +141,9 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 
 - While it is possible to have multiple ongoing transactions, we recommend having one transaction at a time, even if there is some waiting time to avoid issues and duplication.
 
-- Where can I receive support and troubleshooting?
-  For any product troubleshooting or general questions, please contact support.bridge@crypto.org.
-
 ### Where can I report bugs and provide product feedback?
 
-For any bug reports, please contact product.bridge@crypto.org.
+For any bug reports, or feedback please contact contact.bridge@crypto.org. This is for the web Cronos bridge only. For Crypto.com app, exchange, and DeFi wallet, contact directly https://help.crypto.com/en/
 
 ### How do I find my missing funds?
 

@@ -18,7 +18,7 @@
 
 ### How fast is the transfer?
 
-- IBC Transfers will generally take around 1 minute to complete.
+- IBC Transfers will take between 1 min to 1 hour, depending on transfer congestion. After an hour, the transaction will either go through or revert with the funds sent back to your origin wallet.
 
 ### Can I transfer assets to a different wallet than my own?
 
@@ -40,17 +40,15 @@
 ### Can I complete multiple transfers in one go?
 
 - While it is possible to have multiple ongoing transactions, we recommend having one transaction at a time, even if there is some waiting time to avoid issues and duplication.
-Where can I receive support and troubleshooting?
-For any product troubleshooting or general questions, please contact support.bridge@crypto.org.
 
 ### Where can I report bugs and provide product feedback?
 
-For any bug reports, please contact product.bridge@crypto.org.
+For any bug reports, or feedback please contact contact.bridge@crypto.org. This is for the web Cronos bridge only. For Crypto.com app, exchange, and DeFi wallet, contact directly https://help.crypto.com/en/
 
 ### How do I find my missing funds?
 
 - Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all.
-If you believe you still have missing funds, please contact us at product@cronos.org.
+  If you believe you still have missing funds, please contact us at product@cronos.org.
 
 ### Is transferring tokens across blockchains safe?
 
