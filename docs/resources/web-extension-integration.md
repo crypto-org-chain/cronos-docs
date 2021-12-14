@@ -28,16 +28,17 @@ Integrations with additional chains are planned for the near future.
 ## Integrating with Wallet Extension
 Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and native experience for your end users to sign transactions.
 
-DApp Listing Form
+## DApp Listing Form
 Complete the form below to be featured on our DeFi Wallet DApp listing:
-https://crypto-com.typeform.com/to/bRvudlYV
 
-## Web SDK
+[DApp Listing Form](https://crypto-com.typeform.com/to/bRvudlYV)
+
+### Web SDK
 Learn more about how to integrate with Wallet Extension here.
 
 ### deficonnect
 
-##### Installation
+#### Installation
 
 ```bash
 yarn add "deficonnect"
