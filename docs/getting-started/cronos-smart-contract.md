@@ -89,12 +89,11 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
 ```json
   networks: {
     development: {
-     host: "https://cronos-testnet-3.crypto.org",     
-     port: 8545,            
-     network_id: "*",       
+      provider: new HDWalletProvider(getHDWallet(), "http://127.0.0.1:8545"), // TODO
+      network_id: "*",       // Any network (default: none)
     },
-    cronos: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), 
+    testnet: {
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), // TODO
       network_id: "*",
       skipDryRun: true
     },
@@ -152,14 +151,12 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
 ```json
   networks: {
     development: {
-     host: "https://cronos-testnet-3.crypto.org",     
-     port: 8545,            
-     network_id: "*",       
-    },
-    cronos: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), 
-      network_id: "*",
-      skipDryRun: true
+      url: "http://localhost:8545",
+      accounts: getHDWallet(),
+     },
+    testnet: {
+      url: "https://cronos-testnet-3.crypto.org:8545",
+      accounts: getHDWallet(),
     },
   },
 ```
