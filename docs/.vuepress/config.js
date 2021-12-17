@@ -109,6 +109,10 @@ module.exports = {
           {
             text: "Integrating with Cronos Chain",
             link: "/resources/chain-integration"
+          },
+          {
+            text:"Web extension integration",
+            link: "/resources/web-extension-integration"
           },              
           {
             text: "Node Setup and RPC note",
@@ -156,6 +160,7 @@ module.exports = {
       ],
       "/resources/": [
         "chain-integration",
+        "web-extension-integration",
         "node-and-rpc-setup-notes",
         "cosmos-grpc-docs",
         "technical-glossary"
