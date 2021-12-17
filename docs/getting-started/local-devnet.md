@@ -84,7 +84,7 @@ The default configuration will give us a single validators devnet with the chain
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
 ```sh
-$ pystarport serve --config examples/devnet.yaml
+$ pystarport serve --config scripts/cronos-devnet.yaml
 ```
 
 Afterwards, keys will be generated according to the configuration specified, the accounts' information is generated in `data/cronos_777-1/accounts.json`, for example:
