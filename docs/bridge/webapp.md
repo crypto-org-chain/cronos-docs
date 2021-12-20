@@ -16,11 +16,13 @@ Please read the guide carefully and review the project documentation as misuse m
 
 #### Currently supported networks:
 
-- Crypto.org <=> Cronos.
+- Crypto.org <=> Cronos;
+- Cosmos <=> Cronos.
 
 #### Currently supported tokens:
 
-- CRO
+- CRO;
+- ATOM
 
 #### Currently supported wallets:
 
