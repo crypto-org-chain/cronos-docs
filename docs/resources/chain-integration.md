@@ -23,6 +23,10 @@
 
 ## RPC URLs for Cronos mainnet Beta
 
+:::tip Request Limits on Public RPCs:
+To provide a stable experience to users, there is a request rate limit on the public RPCs to ensure fair usage. If your application requires a higher usage, please consider setting up your own nodes. You can also reach out to us on [Discord](https://discord.gg/cGtxgVfGMZ) for assistance.
+:::
+
 1. **Tendermint RPC**
 
    - https://rpc-cronos.crypto.org
