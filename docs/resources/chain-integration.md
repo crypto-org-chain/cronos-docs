@@ -55,6 +55,8 @@ To provide a stable experience to users, there is a request rate limit on the pu
 | SHIB       | [0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee](https://cronos.crypto.org/explorer/tokens/0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee/token-transfers) | 18      |
 | DOGE       | [0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396](https://cronos.crypto.org/explorer/tokens/0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396/token-transfers) | 8       |
 | ATOM       | [0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93](https://cronos.crypto.org/explorer/address/0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93/transactions)   | 6       |
+| LINK       | [0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9](https://cronos.crypto.org/explorer/address/0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9/transactions)   | 18      |
+| ENJ        | [0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7](https://cronos.crypto.org/explorer/address/0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7/transactions)   | 18      |
 
 ## API Clients and libraries
 
