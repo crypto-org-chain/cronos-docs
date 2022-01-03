@@ -1,6 +1,7 @@
 # Web Extension Integration
 
 ## Introduction
+
 Crypto.com | Wallet Extension - A non-custodial wallet to store, earn, and grow your crypto
 
 Crypto.com | Wallet Extension provides a simple and secure way for users to connect their Crypto.com DeFi Wallet with Ethereum-compatible DApps via their browser.
@@ -14,11 +15,13 @@ Crypto.com DeFi Wallet is a non-custodial wallet that gives users full control o
 The Crypto.com Wallet Extension currently supports the following networks:
 
 **Mainnet**:
+
 - Cronos Mainnet Beta;
 - Ethereum Mainnet;
 - Crypto.org Chain.
 
 **Testnet**:
+
 - Cronos Testnet;
 - Croeseid Testnet;
 - Ethereum Testnet (Ropsten, Kovan, Ribkeby, Goerli);
@@ -26,9 +29,11 @@ The Crypto.com Wallet Extension currently supports the following networks:
 Integrations with additional chains are planned for the near future.
 
 ## Integrating with Wallet Extension
+
 Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and native experience for your end users to sign transactions.
 
 ### Web SDK
+
 Learn more about how to integrate with Wallet Extension here.
 
 ### deficonnect
@@ -41,28 +46,25 @@ yarn add "deficonnect"
 
 #### Usage
 
-
 ```tsx
-import { DeFiWeb3Connector } from 'deficonnect'
-import Web3 from "web3"
+import { DeFiWeb3Connector } from "deficonnect";
+import Web3 from "web3";
 
 const connector = new DeFiWeb3Connector({
   supportedChainIds: [1],
-  rpc: [
-1: 'https://mainnet.infura.io/v3/INFURA_API_KEY',
-25: 'https://evm-cronos.crypto.org/', // cronos mainet
-  ],
+  rpc: {
+    1: "https://mainnet.infura.io/v3/INFURA_API_KEY",
+    25: "https://evm-cronos.crypto.org/", // cronos mainet
+  },
   pollingInterval: 15000,
-})
-connector.activate()
-const provider = await connector.getProvider()
-const web3 = new Web3(provider)
+});
+connector.activate();
+const provider = await connector.getProvider();
+const web3 = new Web3(provider);
 ```
 
-
-
-
 ## DApp Listing Form
+
 Complete the form below to be featured on our DeFi Wallet DApp listing:
 
 [DApp Listing Form](https://crypto-com.typeform.com/to/bRvudlYV)
