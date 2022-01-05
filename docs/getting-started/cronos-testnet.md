@@ -185,7 +185,7 @@ You should obtain an address with `tcrc` prefix, e.g. `tcrc10u5mgfflasrfj9s94mt8
 
 ### Step 3-2. Obtain test token
 
-Users can the [faucet](https://cronos.crypto.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by
+Users can use the [faucet](https://cronos.crypto.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by
 
 - [Using metamask](./metamask.md#using-metamask); or
 - Using the [address convention tool](./metamask.md#address-conventions).
