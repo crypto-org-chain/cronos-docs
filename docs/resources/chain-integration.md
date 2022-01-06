@@ -57,6 +57,8 @@ To provide a stable experience to users, there is a request rate limit on the pu
 | ATOM       | [0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93](https://cronos.crypto.org/explorer/address/0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93/transactions)   | 6       |
 | LINK       | [0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9](https://cronos.crypto.org/explorer/address/0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9/transactions)   | 18      |
 | ENJ        | [0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7](https://cronos.crypto.org/explorer/address/0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7/transactions)   | 18      |
+| ELON       | [0x02DCcaf514C98451320a9365C5b46C61d3246ff3](https://cronos.crypto.org/explorer/address/0x02DCcaf514C98451320a9365C5b46C61d3246ff3/transactions)   | 18      |
+| TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronos.crypto.org/explorer/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
 
 ## API Clients and libraries
 
