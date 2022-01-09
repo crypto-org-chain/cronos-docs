@@ -193,7 +193,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
   ```
 
-- For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
+- For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `seed`, `create_empty_blocks_interval` and `timeout_commit` by:
 
   ```bash
 
