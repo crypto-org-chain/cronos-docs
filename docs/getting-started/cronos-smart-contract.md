@@ -43,7 +43,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 `Nodejs v10` is suggested 
 
 ### Sufficient fund on deployer address
-You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](https://cronos-explorer.crypto.org/) to obtain testnet TCRO.
+You can access to [faucet](https://cronos.crypto.org/faucet) to obtain testnet TCRO and [explorer](https://cronos.crypto.org/explorer/testnet3/) to view the address details.
 
 ### Git clone `smart-contract-example`
   ```bash
