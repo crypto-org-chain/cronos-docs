@@ -354,7 +354,8 @@ The examples also do not include the URL/IP & port combination which must be the
 | [`personal`](./endpoints.md#personal-methods) | The `personal` API manages private keys in the key store.                                                                                                                                                                    | ✔         | ❌                 |
 
 ## Block Explorer
-
+- CronoScan:
+  [https://cronoscan.com/](https://cronoscan.com/)
 - Cronos Mainnet Beta:
   [https://cronos-explorer.crypto.org/](https://cronos-explorer.crypto.org)
 - Cronos Testnet:
