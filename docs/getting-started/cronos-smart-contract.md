@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-smart-contra
 
 # Cronos: Deploy Smart Contract
 
-This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo sodlity script.
+This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo Solidity script.
 
 Both Truffle and Hardhat are included in this documentation, feel free to choose one of them.
 
