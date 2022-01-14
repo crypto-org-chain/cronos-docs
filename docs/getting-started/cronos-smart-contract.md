@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-smart-contra
 
 # Cronos: Deploy Smart Contract
 
-This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo sodlity script.
+This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo Solidity script.
 
 Both Truffle and Hardhat are included in this documentation, feel free to choose one of them.
 
@@ -43,7 +43,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 `Nodejs v10` is suggested 
 
 ### Sufficient fund on deployer address
-You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](https://cronos-explorer.crypto.org/) to obtain testnet TCRO.
+You can access to [faucet](https://cronos.crypto.org/faucet) to obtain testnet TCRO and [explorer](https://cronos.crypto.org/explorer/testnet3/) to view the address details.
 
 ### Git clone `smart-contract-example`
   ```bash

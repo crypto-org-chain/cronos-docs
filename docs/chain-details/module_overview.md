@@ -3,13 +3,13 @@ meta:
   - name: "title"
     content: Cronos | Modules
   - name: "description"
-    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
+    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking and more.
   - name: "og:title"
     content: Cronos | Modules
   - name: "og:type"
     content: Website
   - name: "og:description"
-    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
+    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking and more.
   - name: "og:image"
     content: https://cronos.crypto.org/og-image.png
   - name: "twitter:title"
@@ -19,7 +19,7 @@ meta:
   - name: "twitter:card"
     content: summary_large_image
   - name: "twitter:description"
-    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking, Supply and more.
+    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking and more.
   - name: "twitter:image"
     content: https://cronos.crypto.org/og-image.png
 canonicalUrl: https://cronos.crypto.org/docs/chain-details/module_overview.html
@@ -38,7 +38,7 @@ In this documentation, we will be focusing on some of the important modules we u
 - [Mint](#mint) - Creation of new units of staking token;
 - [Slashing](#slashing) - Validator punishment mechanisms;
 - [Staking](#staking) - Proof-of-Stake layer for public blockchains;
-- [Supply](#supply) - Retrieve total and liquid supply.
+
 
 
 ## `bank` 
@@ -940,44 +940,3 @@ The following tables show overall effects on different configurations of the sta
 | Sample configuration | `100` (maximum 100 active validator) | `"1814400s"` (3 weeks)               |
 
 
-## `supply`
-
-### Introduction
-
-The `supply` module is responsible for retrieve total and liquid supply. 
-
-
-
-### Queries
-
-#### `query supply liquid` - Check the total supply of coins of the chain
-
-We can also use  `query` command of the `supply` module to check the current total supply:
-
-```json
-$ cronosd query supply total
-    {
-    "supply": [
-        {
-        "denom": "basetcro",
-        "amount": "[total_supply_amount]"
-        }
-    ]
-    }
-```
-
-#### `query supply liquid` - Check the liquid supply of coins of the chain
-
-We can also query the liquid supply, which is the total supply bonded subtracted by the non-circulating supply such as bonded amount, unvested amounts, and uncollected reward etc.
-
-```json
-$ cronosd query supply total
-    {
-    "supply": [
-        {
-        "denom": "basetcro",
-        "amount": "[total_circulating_amount]"
-        }
-    ]
-    }
-```
