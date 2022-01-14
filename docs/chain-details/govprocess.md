@@ -57,7 +57,7 @@ It unlocks the potential for token-holders to vote to approve spending from the 
 You can also choose to submit the proposal in plaintext format.
 
 ### 3. Collect feedback from the community 
-After the proposal is ready, you can post a thread to begin a discussion on the [Crypto.org Chain Github Discussions page](https://github.com/crypto-org-chain/chain-main/discussions) to gain initial feedback.
+After the proposal is ready, you can post a thread to begin a discussion on the [Cronos Github Discussions page](https://github.com/crypto-org-chain/cronos/discussions) to gain initial feedback.
 Engagement is critical to the success of a proposal. The ideal strategy is to engage with experienced people in the community about your idea, to confirm the key points, such as if it makes sense, or if critical flaws exist, etc. You may also plan for a few stages of engagement to get as much as feedback possible before and after submitting a proposal on-chain. Let people in the [Discord community](https://discord.gg/5JTk2ppsY3) know about your draft proposal.
 
 ### 4. Revise your proposal
@@ -70,7 +70,7 @@ Submitting your proposal to the testnet also increases the likelihood that you w
 For testnet submission, please note: you'll need testnet tokens TCRO for your proposal, and the parameters for testnet proposals are different (eg. voting period timing, deposit amount, deposit denomination)
 
 - Submit Your On-chain Proposal with Initial Deposit 
-After everything is set and you are confident about the proposal, you can now submit the final proposal with cronosd. You should have reasonable confidence that your proposal will pass before risking deposit contributions. Part of the voting community members should probably be aware of the proposal and if they see the proposal, they probably have considered it already before the proposal goes live on-chain. 
+After everything is set and you are confident about the proposal, you can now submit the final proposal with `cronosd`. You should have reasonable confidence that your proposal will pass before risking deposit contributions. Part of the voting community members should probably be aware of the proposal and if they see the proposal, they probably have considered it already before the proposal goes live on-chain. 
 
 ### 6. Deposit tokens and fund an active proposal
 The deposit period lasts either 14 days or until the proposal deposit totals 20,000 CROs, whichever happens first. Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), a minimum number of CROs are deposited. 
@@ -95,4 +95,4 @@ The voting period is currently 14 days, and the vote can be changed anytime befo
 
 Please note that it is a WIP. The governance will further be explored down the line and some parts in this documentation are in development, so please use this document as a reference and seek feedback when using this information.
 
-For more details about governance transaction, queries, and relevant network parameters, please visit the [gov section](https://crypto.org/docs/chain-details/module_overview.html#gov).
+For more details about governance transaction, queries, and relevant network parameters, please visit the [gov section](https://cronos.crypto.org/docs/chain-details/module_overview.html#gov).
