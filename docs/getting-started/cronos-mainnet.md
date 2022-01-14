@@ -77,15 +77,15 @@ The following is the minimal setup for a **validator node** / **full node**.
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.1/cronos_0.6.1_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.1/cronos_0.6.1_Darwin_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.1/cronos_0.6.1_Windows_x86_64.zip) are also available.
+**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Darwin_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Windows_x86_64.zip) are also available.
 
 - To install released **Cronos mainnet Beta binaries** from github:
 
   ```bash
 
-  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.1/cronos_0.6.1_Linux_x86_64.tar.gz
+  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Linux_x86_64.tar.gz
 
-  $ tar -zxvf cronos_0.6.1_Linux_x86_64.tar.gz
+  $ tar -zxvf cronos_0.6.5_Linux_x86_64.tar.gz
 
   ```
 
@@ -95,7 +95,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
   $ ./cronosd version
 
-  0.6.1
+  0.6.5
 
   ```
 
@@ -362,6 +362,6 @@ It should begin fetching blocks from the other peers.
 
 
 
-## Cronos mainnet Beta explorer
+## Cronos mainnet explorer: CronoScan
 
-- You can lookup data within the `cronosmainnet_25-1` network by the [explorer](https://cronos-explorer.crypto.org/);
+- You can lookup data within the `cronosmainnet_25-1` network by the [explorer](https://cronoscan.com/);
