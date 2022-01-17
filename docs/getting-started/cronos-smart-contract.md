@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-smart-contra
 
 # Cronos: Deploy Smart Contract
 
-This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo sodlity script.
+This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo Solidity script.
 
 Both Truffle and Hardhat are included in this documentation, feel free to choose one of them.
 
@@ -43,7 +43,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 `Nodejs v10` is suggested 
 
 ### Sufficient fund on deployer address
-You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](https://cronos-explorer.crypto.org/) to obtain testnet TCRO.
+You can access to [faucet](https://cronos.crypto.org/faucet) to obtain testnet TCRO and [explorer](https://cronos.crypto.org/explorer/testnet3/) to view the address details.
 
 ### Git clone `smart-contract-example`
   ```bash
@@ -89,12 +89,11 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
 ```json
   networks: {
     development: {
-     host: "https://cronos-testnet-3.crypto.org",     
-     port: 8545,            
-     network_id: "*",       
+      provider: new HDWalletProvider(getHDWallet(), "http://127.0.0.1:8545"), // TODO
+      network_id: "*",       // Any network (default: none)
     },
-    cronos: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), 
+    testnet: {
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), // TODO
       network_id: "*",
       skipDryRun: true
     },
@@ -152,14 +151,12 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
 ```json
   networks: {
     development: {
-     host: "https://cronos-testnet-3.crypto.org",     
-     port: 8545,            
-     network_id: "*",       
-    },
-    cronos: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), 
-      network_id: "*",
-      skipDryRun: true
+      url: "http://localhost:8545",
+      accounts: getHDWallet(),
+     },
+    testnet: {
+      url: "https://cronos-testnet-3.crypto.org:8545",
+      accounts: getHDWallet(),
     },
   },
 ```
