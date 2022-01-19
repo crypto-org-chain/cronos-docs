@@ -7,7 +7,7 @@
 - [Official Documentation](https://cronos.crypto.org/docs/)
 - [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)
 
-## Integration guide for **Cronos Mainnet**
+## Integration guide for **Cronos Mainnet Beta**
 
 ### Setup Guide
 - [Joining the Cronos Mainnet](https://cronos.crypto.org/docs/getting-started/cronos-mainnet.html)
