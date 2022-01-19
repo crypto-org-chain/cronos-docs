@@ -63,7 +63,7 @@ To provide a stable experience to users, there is a request rate limit on the pu
 - [Testnet Faucet](https://cronos.crypto.org/faucet/)
   - Note that the faucet only takes eth-type `0x...` addr
 - [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
-- [Genesis files](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-1/genesis.json)
+- [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-1/genesis.json)
 - [JSON-RPC Swagger Playground](https://cronos.crypto.org/docs/swagger)
 - Using Metamask for testnet
   - Network Name: **Cronos Testnet**
