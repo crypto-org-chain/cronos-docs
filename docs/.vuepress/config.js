@@ -5,129 +5,133 @@ module.exports = {
     navbar: true,
     logo: '/chain_doc_nav_logo.svg',
     nav: [{
-        text: "Home",
-        link: "/"
-      },
-      {
-        text: "Getting Started",
-        link: "/getting-started/"
-      },
+      text: "Home",
+      link: "/"
+    },
+    {
+      text: "Getting Started",
+      link: "/getting-started/"
+    },
 
-      {
-        text: "Cronos Chain",
-        items: [
-          {
+    {
+      text: "Cronos Chain",
+      items: [
+        {
           text: "Cronos Mainnet Beta",
-            link: "/getting-started/cronos-mainnet"
-          },
-          {
+          link: "/getting-started/cronos-mainnet"
+        },
+        {
           text: "Using Metamask",
-            link: "/getting-started/metamask"
-          },          
-          {
-            text: "Cronos Testnet",
-            link: "/getting-started/cronos-testnet"
-          },
-          {
-            text: "Local network deployment",
-            link: "/getting-started/local-devnet"
-          },
-          {
-            text: "Deploy Smart Contract at Cronos",
-            link: "/getting-started/cronos-smart-contract"
-          },
-          {
-            text: "Best Practices for DeFi Project in Cronos",
-            link: "/getting-started/defi-practice"
-          },
-         {
-              text: "Block Explorer",
-              link: "https://cronos-explorer.crypto.org"
-          }
+          link: "/getting-started/metamask"
+        },
+        {
+          text: "Cronos Testnet",
+          link: "/getting-started/cronos-testnet"
+        },
+        {
+          text: "Local network deployment",
+          link: "/getting-started/local-devnet"
+        },
+        {
+          text: "Deploy Smart Contract at Cronos",
+          link: "/getting-started/cronos-smart-contract"
+        },
+        {
+          text: "GameFi SDK",
+          link: "/getting-started/gamefi-sdk"
+        },
+        {
+          text: "Best Practices for DeFi Project in Cronos",
+          link: "/getting-started/defi-practice"
+        },
+        {
+          text: "Block Explorer",
+          link: "https://cronos-explorer.crypto.org"
+        }
 
-//          {
-//            text: "Cronos Testnet Faucet",
-//              link: "https://crypto.org/faucet"
-//            text}
-        ]
-      },
-      {
-        text: "Design",
-        items: [
-          {
-            text: "Introduction",
-            link: "/chain-details/introduction.md"
-          },
-          {
-            text: "Design Goals",
-            link: "/chain-details/architecture.md"
-          },
-          {
-            text: "Modules",
-            link: "/chain-details/module_overview.md"
-          }
-        ]
-      }, 
-      {
-        text: "Bridge",
-        items: [
-          {
-            text: "From Crypto.com App",
-            link: "/bridge/cdcapp.md"
-          },
-          {
-            text: "From Crypto.com Exchange",
-            link: "/bridge/cdcex.md"
-          },
-          {
-            text: "From Crypto.org Chain (Cronos Bridge WebApp)",
-            link: "/bridge/webapp.md"
-          }, 
-          {
-            text: "From Crypto.org Chain (Crypto.com DeFi Wallet)",
-            link: "/bridge/defiwallet.md"
-          },      
-          {
-            text: "From Crypto.org Chain (Crypto.org Chain Desktop Wallet)",
-            link: "/bridge/desktop.md"
-          }                   
-        ]
-      },     
-      {
-        text: "Wallet",
-        items: [
-          {
-            text: "cronosd",
-            link: "/wallets/cli.html#cronosd"
-          }
-        ]
-      },
- 
-       {
-         text: "Resources",
-         items: [
-          {
-            text: "Integrating with Cronos Chain",
-            link: "/resources/chain-integration"
-          },
-          {
-            text:"Web extension integration",
-            link: "/resources/web-extension-integration"
-          },              
-          {
-            text: "Node Setup and RPC note",
-            link: "/resources/node-and-rpc-setup-notes"
-          },
-          {
-            text: "gRPC API",
-            link: "/resources/cosmos-grpc-docs"
-           },
-           {
-            text: "Technical Glossary",
-            link: "/resources/technical-glossary"
-           }
-         ]
-       }        
+        //          {
+        //            text: "Cronos Testnet Faucet",
+        //              link: "https://crypto.org/faucet"
+        //            text}
+      ]
+    },
+    {
+      text: "Design",
+      items: [
+        {
+          text: "Introduction",
+          link: "/chain-details/introduction.md"
+        },
+        {
+          text: "Design Goals",
+          link: "/chain-details/architecture.md"
+        },
+        {
+          text: "Modules",
+          link: "/chain-details/module_overview.md"
+        }
+      ]
+    },
+    {
+      text: "Bridge",
+      items: [
+        {
+          text: "From Crypto.com App",
+          link: "/bridge/cdcapp.md"
+        },
+        {
+          text: "From Crypto.com Exchange",
+          link: "/bridge/cdcex.md"
+        },
+        {
+          text: "From Crypto.org Chain (Cronos Bridge WebApp)",
+          link: "/bridge/webapp.md"
+        },
+        {
+          text: "From Crypto.org Chain (Crypto.com DeFi Wallet)",
+          link: "/bridge/defiwallet.md"
+        },
+        {
+          text: "From Crypto.org Chain (Crypto.org Chain Desktop Wallet)",
+          link: "/bridge/desktop.md"
+        }
+      ]
+    },
+    {
+      text: "Wallet",
+      items: [
+        {
+          text: "cronosd",
+          link: "/wallets/cli.html#cronosd"
+        }
+      ]
+    },
+
+    {
+      text: "Resources",
+      items: [
+        {
+          text: "Integrating with Cronos Chain",
+          link: "/resources/chain-integration"
+        },
+        {
+          text: "Web extension integration",
+          link: "/resources/web-extension-integration"
+        },
+        {
+          text: "Node Setup and RPC note",
+          link: "/resources/node-and-rpc-setup-notes"
+        },
+        {
+          text: "gRPC API",
+          link: "/resources/cosmos-grpc-docs"
+        },
+        {
+          text: "Technical Glossary",
+          link: "/resources/technical-glossary"
+        }
+      ]
+    }
     ],
     sidebar: {
       "/getting-started/": [
@@ -137,7 +141,8 @@ module.exports = {
         "local-devnet",
         "security-checklist.md",
         "defi-practice",
-        "cronos-smart-contract"
+        "cronos-smart-contract",
+        "gamefi-sdk",
       ],
       "/chain-details/": [
         "introduction",
@@ -165,7 +170,7 @@ module.exports = {
         "cosmos-grpc-docs",
         "technical-glossary"
       ],
-      "/api/" : "auto"
+      "/api/": "auto"
     },
     displayAllHeaders: true
   },
@@ -208,7 +213,7 @@ module.exports = {
             "Notes on Production Deployment": 19,
             "Threat Model": 20,
             "technical_glossary": 21
-            
+
           };
           return ordering[a["title"]] - ordering[b["title"]];
         }
