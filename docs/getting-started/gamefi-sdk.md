@@ -92,7 +92,7 @@ public class BalanceOfCronos : MonoBehaviour
     {
         string chain = "cronos";
         string network = "mainnet"; 
-        string account = "account_address";
+        string account = "ACCOUNT_ADDRESS";
         string rpc = "https://evm-cronos.crypto.org";
 
         string balance = await EVM.BalanceOf(chain, network, account, rpc);
@@ -118,8 +118,8 @@ public class ERC721BalanceOfCronos : MonoBehaviour
     {
         string chain = "cronos";
         string network = "Cronos Mainnet";
-        string contract = "contract_address";
-        string account = "account_address";
+        string contract = "CONTRACT_ADDRESS";
+        string account = "ACCOUNT_ADDRESS";
         string rpc = "https://evm-cronos.crypto.org";
 
         int balance = await ERC721.BalanceOf(chain, network, contract, account, rpc);
@@ -144,8 +144,8 @@ public class ERC721OwnerOfCronos : MonoBehaviour
     {
         string chain = "cronos";
         string network = "mainnet"; 
-        string contract = "contract_address";
-        string tokenId = "token_id";
+        string contract = "CONTRACT_ADDRESS";
+        string tokenId = "TOKEN_ID";
         string rpc = "https://evm-cronos.crypto.org";
 
         string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
@@ -178,8 +178,8 @@ public class ImportNFTTextureCronos : MonoBehaviour
     {
         string chain = "cronos";
         string network = "mainnet"; 
-        string contract = "contract_address";
-        string tokenId = "token_id";
+        string contract = "CONTRACT_ADDRESS";
+        string tokenId = "TOKEN_ID";
         string rpc = "https://evm-cronos.crypto.org";
 
         // fetch uri from chain
@@ -234,8 +234,8 @@ public class LoadPlayerAssets : MonoBehaviour
         string chain = "cronos";
         string network = "mainnet"; 
         string account = PlayerPrefs.GetString("Account");
-        string contract = "contract_address";
-        string tokenId = "token_id";
+        string contract = "CONTRACT_ADDRESS";
+        string tokenId = "TOKEN_ID";
         string rpc = "https://evm-cronos.crypto.org";
 
         string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
@@ -305,7 +305,7 @@ Get the balance of the native blockchain
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
-string account = "account_address";
+string account = "ACCOUNT_ADDRESS";
 string rpc = "https://evm-cronos.crypto.org";
 
 string balance = await EVM.BalanceOf(chain, network, account, rpc);
@@ -315,7 +315,7 @@ print(balance);
 Verify a signed message.
 ```csharp
 string message = "YOUR_MESSAGE";
-string signature = "0x94bdbebbd0180195b89721a55c3a436a194358c9b3c4eafd22484085563ff55e49a4552904266a5b56662b280757f6aad3b2ab91509daceef4e5b3016afd34781b";
+string signature = "YOUR_SIGNATURE";
 
 string address = await EVM.Verify(message, signature);
 print(address);
@@ -326,7 +326,7 @@ Print Nonce.
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
-string account = "account_address";
+string account = "ACCOUNT_ADDRESS";
 string rpc = "https://evm-cronos.crypto.org";
 
 string nonce = await EVM.Nonce(chain, network, account, rpc);
@@ -339,8 +339,8 @@ Counts all NFTs assigned to an owner
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
-string contract = "contract_address";
-string account = "account_address";
+string contract = "CONTRACT_ADDRESS";
+string account = "ACCOUNT_ADDRESS";
 string rpc = "https://evm-cronos.crypto.org";
 
 int balance = await ERC721.BalanceOf(chain, network, contract, account, rpc);
@@ -351,8 +351,8 @@ Find the owner of a NFT.
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
-string contract = "contract_address";
-string tokenId = "token_id";
+string contract = "CONTRACT_ADDRESS";
+string tokenId = "TOKEN_ID";
 string rpc = "https://evm-cronos.crypto.org";
 
 string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
@@ -363,8 +363,8 @@ Print URI.
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
-string contract = "contract_address";
-string tokenId = "token_id";
+string contract = "CONTRACT_ADDRESS";
+string tokenId = "TOKEN_ID";
 
 string uri = await ERC721.URI(chain, network, contract, tokenId);
 print(uri)
