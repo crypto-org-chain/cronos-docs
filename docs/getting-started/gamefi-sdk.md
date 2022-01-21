@@ -34,7 +34,7 @@ This SDK assumes that you have a basic understanding of Unity, ERC721 and EVM pr
 
 ### Supported OS
 
-This documentation currently support WebGL, IOS and Android builds. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
+This documentation currently supports WebGL, IOS and Android builds. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Other Requirements
 - **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode. 
