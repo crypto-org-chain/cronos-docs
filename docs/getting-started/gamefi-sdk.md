@@ -37,7 +37,7 @@ This SDK assumes that you have a basic understanding of Unity, ERC721 and EVM pr
 This documentation currently support WebGL, IOS and Android builds. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Other Requirements
-- Mobile IDE: If you want test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode. 
+- **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode. 
 - Metamask: Metamask is required for the Login Example below.
 - Assets: Some of the scenes require assets to work properly. If you do not have any assets you can always use the Cronos Testnet and generate some ERC721 test assets. You can read more around integration methods [here](https://cronos.crypto.org/docs/resources/chain-integration.html#useful-links]).
 
