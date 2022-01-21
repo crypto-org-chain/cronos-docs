@@ -73,7 +73,7 @@ Now you have to import the content of the cloned repository (web3.unity) directl
 :::
 
 ## Step 2. Connect to Cronos Assets
-To connect your Cronos Assets to your Unity project, you can add the following scripts to your assets. For your scripts to work, you will need th create as well a prefab and link it to the asset as seen in the following image.
+To connect your Cronos Assets to your Unity project, you can add the following scripts to your assets. For your scripts to work, you will need the create as well a prefab and link it to the asset as seen in the following image.
 
 <img src="./assets/gameFi/prefab_scripts.png" />
 
