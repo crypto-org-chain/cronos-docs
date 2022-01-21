@@ -38,7 +38,7 @@ This documentation currently support WebGL, IOS and Android builds. Other platfo
 
 ### Other Requirements
 - **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode. 
-- Metamask: Metamask is required for the Login Example below.
+- **Metamask**: Metamask is required for the Login Example below.
 - Assets: Some of the scenes require assets to work properly. If you do not have any assets you can always use the Cronos Testnet and generate some ERC721 test assets. You can read more around integration methods [here](https://cronos.crypto.org/docs/resources/chain-integration.html#useful-links]).
 
 ### Download and install Unity
