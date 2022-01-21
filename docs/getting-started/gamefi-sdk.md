@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/GameFi-sdk.html
 
 # GameFi Unity SDK
 
-This documentation demostrate how to Bridge games to the Cronos EVM Chain, using Unity. The [ChainSafe Gaming SDK](https://github.com/ChainSafe/web3.unity/releases) assets are used for the Unity build.
+This documentation demonstrates how to Bridge games to the Cronos EVM Chain, using Unity. The [ChainSafe Gaming SDK](https://github.com/ChainSafe/web3.unity/releases) assets are used for the Unity build.
 
 ## Pre-requisites
 This SDK assumes that you have a basic understanding of Unity, ERC721 and EVM practices.
