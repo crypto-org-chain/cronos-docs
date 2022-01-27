@@ -105,7 +105,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 <img src="./assets/5_history_table.png"  alt="centered image" />
 
 
-### Add your Terra station wallet to Keplr wallet
+## Add your Terra station wallet to Keplr wallet
 
 1. Create and log in to your Keplr wallet
 
@@ -171,7 +171,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
   - Cronos;
   - Cosmos;
   - Terra;
-  - Coming Soon: Cosmos and Ethereum
+  - Coming Soon: Ethereum
 
 ### What are the supported wallets?
 
