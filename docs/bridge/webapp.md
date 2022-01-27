@@ -17,12 +17,14 @@ Please read the guide carefully and review the project documentation as misuse m
 #### Currently supported networks:
 
 - Crypto.org <=> Cronos;
-- Cosmos <=> Cronos.
+- Cosmos <=> Cronos;
+- Terra <=> Cronos.
 
 #### Currently supported tokens:
 
 - CRO;
-- ATOM
+- ATOM;
+- LUNA.
 
 #### Currently supported wallets:
 
@@ -42,7 +44,9 @@ We are constantly working on adding new tokens and chain support. If you have an
 Click the “Connect Wallet’ button to connect your desktop or browser extension wallet. We currently support browser-compatible versions of the Metamask, Keplr, and Crypto.com DeFi Wallet.
 Once a connection request is sent, look for a popup from your wallet interface or click into the wallet extension to give consent.
 
-Note: If you are bridging assets from or to Crypto.org, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
+Note 1: If you are bridging assets from or to Crypto.org, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
+
+Note 2: Currently, Terra ⇔ Cronos only support Keplr wallet. Learn how to add your Terra station wallet to Keplr wallet, please click [here](#add-your-terra-station-wallet-to-keplr-wallet).
 
 <img src="./assets/webapp_connect_wallet.png"  alt="centered image" />
 
@@ -100,6 +104,37 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 <img src="./assets/5_txn_complete.png"  alt="centered image" />
 <img src="./assets/5_history_table.png"  alt="centered image" />
 
+
+## Add your Terra station wallet to Keplr wallet
+
+1. Create and log in to your Keplr wallet
+
+<img src="./assets/terra1.png"  alt="centered image" />
+
+2. Click the button on the top right corner. Then, click “+ Add Account”
+
+<img src="./assets/terra2.png"  alt="centered image" />
+
+3. Select “import existing account”
+
+<img src="./assets/terra3.png"  alt="centered image" />
+
+4. Input the Mnemonic of your Terra station wallet and name your account, then click "Next"
+
+<img src="./assets/terra4.png"  alt="centered image" />
+
+5. Go back to your Keplr account, click the button on the top right again. You will see your imported Terra station account here.
+
+<img src="./assets/terra5.png"  alt="centered image" />
+
+6. Select your imported Terra station account. Then, click the arrow on the top, and select "Terra".
+
+<img src="./assets/terra6.png"  alt="centered image" />
+
+7.  You can now use your Terra station wallet on Keplr!
+
+<img src="./assets/terra7.png"  alt="centered image" />
+
 ## FAQ
 
 ### What are the fees involved?
@@ -113,8 +148,10 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 ### How does the Bridge network fee waiver work?
 
 - The following transactions are eligible for a fee waiver:
-  - Crypto.org => Cronos
-  - Cronos => Crypto.org
+  - Crypto.org => Cronos;
+  - Cronos => Crypto.org;
+  - Cosmos => Cronos;
+  - Terra => Cronos.
 - The fee waived is the bridge network transaction fee on the destination chain. However, you are still liable to pay for the origin chain gas fee directly on your wallet extension.
 - This is a promotional waiver; we reserve the right to modify and terminate the promotion at any time
 
@@ -130,9 +167,11 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 ### What are the support blockchains and tokens?
 
 - The networks supported are:
-  - Crypto.org
-  - Cronos
-  - Coming Soon: Cosmos and Ethereum
+  - Crypto.org;
+  - Cronos;
+  - Cosmos;
+  - Terra;
+  - Coming Soon: Ethereum
 
 ### What are the supported wallets?
 
