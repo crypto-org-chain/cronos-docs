@@ -10,6 +10,7 @@
 ## Integration guide for **Cronos Mainnet Beta**
 
 ### Setup Guide
+
 - [Joining the Cronos Mainnet](https://cronos.crypto.org/docs/getting-started/cronos-mainnet.html)
 - [Deploying Smart Contract](https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html)
 - [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
@@ -40,8 +41,8 @@ To provide a stable experience to users, there is a request rate limit on the pu
 
 ### Official token contract addresses for Cronos mainnet Beta
 
-| Token name | Address                                                                                                                                            | Decimal |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Token name | Address                                                                                                                               | Decimal |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | WCRO       | [0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23](https://cronoscan.com/tokens/0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23/token-transfers) | 18      |
 | WETH       | [0xe44Fd7fCb2b1581822D0c862B68222998a0c299a](https://cronoscan.com/tokens/0xe44Fd7fCb2b1581822D0c862B68222998a0c299a/token-transfers) | 18      |
 | WBTC       | [0x062E66477Faf219F25D27dCED647BF57C3107d52](https://cronoscan.com/tokens/0x062E66477Faf219F25D27dCED647BF57C3107d52/token-transfers) | 8       |
@@ -55,8 +56,10 @@ To provide a stable experience to users, there is a request rate limit on the pu
 | ENJ        | [0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7](https://cronoscan.com/address/0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7/transactions)   | 18      |
 | ELON       | [0x02DCcaf514C98451320a9365C5b46C61d3246ff3](https://cronoscan.com/address/0x02DCcaf514C98451320a9365C5b46C61d3246ff3/transactions)   | 18      |
 | TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronoscan.com/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
+| LUNA       | [0x9278C8693e7328bef49804BacbFb63253565dffD](https://cronoscan.com/address/0x9278C8693e7328bef49804BacbFb63253565dffD/transactions)   | 6       |
 
 ## Integration guide for **Cronos Testnet**
+
 ### Setup Guide
 
 - [Joining the Cronos Testnet](https://cronos.crypto.org/docs/getting-started/cronos-testnet.html)
@@ -112,7 +115,6 @@ To provide a stable experience to users, there is a request rate limit on the pu
 - [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
 - [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
 
-
 # Ethereum type JSON-RPC Methods
 
 ### Pre-requisite Readings
@@ -121,8 +123,9 @@ To provide a stable experience to users, there is a request rate limit on the pu
 - [Geth JSON-RPC APIs](https://geth.ethereum.org/docs/rpc/server) {prereq}
 
 Below is a list of Ethereum type JSON-RPC Methods where users can curl via local node. While you can also surf to our swagger playground for a better understanding.
-   - [Mainnet swagger playground](https://cronos.crypto.org/docs/swagger?network=mainnet)
-   - [Testnet swagger playground](https://cronos.crypto.org/docs/swagger)
+
+- [Mainnet swagger playground](https://cronos.crypto.org/docs/swagger?network=mainnet)
+- [Testnet swagger playground](https://cronos.crypto.org/docs/swagger)
 
 ### JSON-RPC Methods
 
@@ -203,6 +206,7 @@ https://cronos-testnet-3.crypto.org:8545
 | [`personal`](./endpoints.md#personal-methods) | The `personal` API manages private keys in the key store.                                                                                                                                                                    | ✔         | ❌                 |
 
 ## Block Explorer
+
 - Cronos Mainnet Beta:
   [https://cronoscan.com/](https://cronoscan.com)
 - Cronos Testnet:
