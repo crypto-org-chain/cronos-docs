@@ -57,6 +57,7 @@ To provide a stable experience to users, there is a request rate limit on the pu
 | ELON       | [0x02DCcaf514C98451320a9365C5b46C61d3246ff3](https://cronoscan.com/address/0x02DCcaf514C98451320a9365C5b46C61d3246ff3/transactions)   | 18      |
 | TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronoscan.com/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
 | LUNA       | [0x9278C8693e7328bef49804BacbFb63253565dffD](https://cronoscan.com/address/0x9278C8693e7328bef49804BacbFb63253565dffD/transactions)   | 6       |
+| DOT        | [0x994047FE66406CbD646cd85B990E11D7F5dB8fC7](https://cronoscan.com/address/0x994047FE66406CbD646cd85B990E11D7F5dB8fC7/transactions)   | 10      |
 
 ## Integration guide for **Cronos Testnet**
 
