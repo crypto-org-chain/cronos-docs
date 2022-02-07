@@ -9,7 +9,7 @@ A | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i
 
 **Block Explorer**
 
-An application that allows a user to explore the different blocks on a blockchain. It has a record of all the transactions in each block and is often made public to increase blockchain visibility and transparency. Here are our explorers: [Crypto.org Chain Explorer](https://crypto.org/explorer/), [Cronos Explorer](https://cronos-explorer.crypto.org/) and [Cronos Testnet Explorer](https://cronos-explorer.crypto.org/testnet3).
+An application that allows a user to explore the different blocks on a blockchain. It has a record of all the transactions in each block and is often made public to increase blockchain visibility and transparency. Here are our explorers: [Crypto.org Chain Explorer](https://crypto.org/explorer/), [Cronos Explorer](https://cronoscan.com/) and [Cronos Testnet Explorer](https://cronos-explorer.crypto.org/testnet3).
 
 **Bonded (staking state)**
 
