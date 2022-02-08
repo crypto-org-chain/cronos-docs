@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
 
 # Cronos Testnet: Running Nodes
 
-The latest Crypto.org Chain Testnet has been named as **Cronos**.
+The latest Crypto.org EVM Chain Testnet has been named as **Cronos**.
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
@@ -52,7 +52,7 @@ The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.5.5-testnet/cronos_0.5.5-testnet_Windows_x86_64.zip) are also available.
+**Mac** Intel x86 as `Darwin_x86_64`, **Mac** M1 as `arm64` and **Windows** as `Windows_x86_64` are also available [here](https://github.com/crypto-org-chain/cronos/releases). Please check the required node version [here](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json).
 
 - To install released **Cronos testnet binaries** from github:
 
@@ -97,7 +97,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 
 
-  This `moniker` will be the displayed id of your node when connected to Crypto.org Chain network.
+  This `moniker` will be the displayed id of your node when connected to the Cronos network.
   When providing the moniker value, make sure you drop the square brackets since they are not needed.
   The example below shows how to initialize a node named `pegasus-node` :
 
