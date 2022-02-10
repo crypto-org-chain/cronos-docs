@@ -34,13 +34,15 @@ This is a detailed documentation for setting up a Validator or a full node on Cr
 
 Before we start, please note that there was new binary upgrade:
 
-- Start the node with the older binary version v0.6.0;
+- Start the node with the older binary version `v0.6.0`;
 - Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
-- Update the binary to 0.7.0-rc1-testnet and update `~/.cronos/config/app.toml` [file link](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-3/app.toml) (the best way to do so is to directly download the new [app.toml](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-3/app.toml) and replace the whole local app.toml;
+  - *Please note that ```panic: UPGRADE "v0.7.0" NEEDED at height: 1553700``` is the expected error messages when we hit that block.*
+- Update the binary to `0.7.0-rc1-testnet`;
+- Given there are some new parameter introduced in the upgrade, please manually update `~/.cronos/config/app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml);
+  - It is recommanded to download the new [app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml) and replace the whole local `app.toml` directly;
 - Resume to sync from block `1553700`;
-- Start the node again.
+- Start the node again
 
-All of these steps will be covered in this guide.
 
 #
 
@@ -65,20 +67,20 @@ The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0-rc1/cronos_0.7.0-rc1-testnet_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0-rc1/cronos_0.7.0-rc1-testnet_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0-rc1/cronos_0.7.0-rc1-testnet_Windows_x86_64.zip) are also available.
+**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.0-testnet/cronos_0.6.0-testnet_Darwin_x86_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.0-testnet/cronos_0.6.0-testnet_Darwin_arm64.tar.gz))and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.0-testnet/cronos_0.6.0-testnet_Windows_x86_64.zip) are also available.
 
 - To install released **Cronos testnet binaries** from github:
 
   ```bash
-  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0-rc1/cronos_0.7.0-rc1-testnet_Linux_x86_64.tar.gz
-  $ tar -zxvf cronos_0.7.0-rc1-testnet_Linux_x86_64.tar.gz
+  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.0-testnet/cronos_0.6.0-testnet_Linux_x86_64.tar.gz
+  $ tar -zxvf cronos_0.6.0-testnet_Linux_x86_64.tar.gz
   ```
 
   Afterward, you can check the version of `cronosd` by
 
   ```bash
   $ ./cronosd version
-  v0.7.0-rc1-testnet
+  v0.6.0-testnet
   ```
 
 ## Step 2. Configure `cronosd`
@@ -159,7 +161,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     :::
 
-- In `~/.cronos/config/app.toml`, please download the new [app.toml](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-3/app.toml) and update the whole `app.toml` content to the new one, as there are quite a few new parameters were introduced in the new version. 
+- In `~/.cronos/config/app.toml`, download the new [app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml) and replace the local `app.toml` with this newly downloaded version.
 
 - For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
   ```bash
