@@ -31,6 +31,19 @@ The latest Crypto.org Chain Testnet has been named as **Cronos**.
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
+
+Before we start, please note that there was new binary upgrade:
+
+- Start the node with the older binary version v0.6.0;
+- Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
+- Update the binary to 0.7.0-rc1-testnet and update `~/.cronos/config/app.toml` [file link](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-3/app.toml) (the best way to do so is to directly download the new [app.toml](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-3/app.toml) and replace the whole local app.toml;
+- Resume to sync from block `1553700`;
+- Start the node again.
+
+All of these steps will be covered in this guide.
+
+#
+
 ## Pre-requisites
 
 ### Supported OS
@@ -146,11 +159,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     :::
 
-- In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
-
-  ```bash
-  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"5000000000000basetcro"#' ~/.cronos/config/app.toml
-  ```
+- In `~/.cronos/config/app.toml`, please download the new [app.toml](https://github.com/crypto-org-chain/cronos-testnets/blob/main/cronostestnet_338-3/app.toml) and update the whole `app.toml` content to the new one, as there are quite a few new parameters were introduced in the new version. 
 
 - For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
   ```bash
