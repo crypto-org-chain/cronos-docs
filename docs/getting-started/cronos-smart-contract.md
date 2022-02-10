@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-smart-contra
 
 # Cronos: Deploy Smart Contract
 
-This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo sodlity script.
+This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo Solidity script.
 
 Both Truffle and Hardhat are included in this documentation, feel free to choose one of them.
 
@@ -43,7 +43,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 `Nodejs v10` is suggested 
 
 ### Sufficient fund on deployer address
-You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](https://cronos-explorer.crypto.org/) to obtain testnet TCRO.
+You can access to [faucet](https://cronos.crypto.org/faucet) to obtain testnet TCRO and [explorer](https://cronos.crypto.org/explorer/testnet3/) to view the address details.
 
 ### Git clone `smart-contract-example`
   ```bash
@@ -82,12 +82,30 @@ You can access to [faucet](https://cronos.crypto.org/faucet) and [explorer](http
     };
   ```
   
-### Step 6. Deploy Contract
+
+### Step 6. Endpoints setting
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-3.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+
+```json
+  networks: {
+    development: {
+      provider: new HDWalletProvider(getHDWallet(), "http://127.0.0.1:8545"), // TODO
+      network_id: "*",       // Any network (default: none)
+    },
+    testnet: {
+      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), // TODO
+      network_id: "*",
+      skipDryRun: true
+    },
+  },
+```
+
+### Step 7. Deploy Contract
   ```bash
   npm run deploy-contract-cronos
   ```
 
-### Step 7. Obtain Contract address from console and input to Metamask
+### Step 8. Obtain Contract address from console and input to Metamask
 Correct balance will be shown on Metamask page
 <img src="./assets/cronos-smart-contract/truffle_deploy_contract_address.png" />
 <img src="./assets/cronos-smart-contract/metamask_add_tokens.png" />
@@ -127,12 +145,27 @@ Correct balance will be shown on Metamask page
     }
   ```
 
-### Step 6. Deploy Contract
+### Step 6. Endpoints setting
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-3.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+
+```json
+  networks: {
+    development: {
+      url: "http://localhost:8545",
+      accounts: getHDWallet(),
+     },
+    testnet: {
+      url: "https://cronos-testnet-3.crypto.org:8545",
+      accounts: getHDWallet(),
+    },
+  },
+```
+### Step 7. Deploy Contract
   ```bash
   npm run deploy-contract-cronos
   ```
 
-### Step 7. Obtain Contract address from console and input to Metamask
+### Step 8. Obtain Contract address from console and input to Metamask
 Correct balance will be shown on Metamask page
   ```bash
   CronosToken deployed to: 0x5F803c894a0A16B46fe5982fB5D89eb334eAF68
