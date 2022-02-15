@@ -37,8 +37,8 @@ Before we start, please note that there was new binary upgrade:
 - Start the node with the older binary version `v0.6.0`;
 - Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
   - *Please note that ```panic: UPGRADE "v0.7.0" NEEDED at height: 1553700``` is the expected error messages when we hit that block.*
-- Update the binary to `0.7.0-rc1-testnet`;
-- Given there are some new parameter introduced in the upgrade, please manually update `~/.cronos/config/app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml);
+- After it reached the block height `1553700`, update the binary to `0.7.0-rc1-testnet`;
+- Also manually replace the default `~/.cronos/config/app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml), given there are some new parameter introduced in the upgrade;
   - It is recommanded to download the new [app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml) and replace the whole local `app.toml` directly;
 - Resume to sync from block `1553700`;
 - Start the node again
@@ -161,7 +161,11 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     :::
 
-- In `~/.cronos/config/app.toml`, download the new [app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml) and replace the local `app.toml` with this newly downloaded version.
+- In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
+
+  ```bash
+  $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"5000000000000basetcro"#' ~/.cronos/config/app.toml
+  ```
 
 - For network configuration, in `~/.cronos/config/config.toml`, please modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit` by:
   ```bash
