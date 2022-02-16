@@ -31,6 +31,21 @@ The latest Crypto.org EVM Chain Testnet has been named as **Cronos**.
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
+
+Before we start, please note that there was new binary upgrade:
+
+- Start the node with the older binary version `v0.6.0`;
+- Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
+  - *Please note that ```panic: UPGRADE "v0.7.0" NEEDED at height: 1553700``` is the expected error message when we hit that block.*
+- After it reaches the block height `1553700`, update the binary to `0.7.0-rc1-testnet`;
+- Then manually replace the default `~/.cronos/config/app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml), given there are some new parameter introduced in the upgrade;
+  - It is recommanded to download the new [app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml) and replace the whole local `app.toml` directly;
+- Resume to sync from block `1553700`;
+- Start the node again
+
+
+#
+
 ## Pre-requisites
 
 ### Supported OS
@@ -52,6 +67,7 @@ The following is the minimal setup for a **validator node** / **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
+
 **Mac** Intel x86 as `Darwin_x86_64`, **Mac** M1 as `arm64` and **Windows** as `Windows_x86_64` are also available [here](https://github.com/crypto-org-chain/cronos/releases). Please check the required node version [here](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json).
 
 - To install released **Cronos testnet binaries** from github:
@@ -65,7 +81,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
   ```bash
   $ ./cronosd version
-  0.6.0-testnet
+  v0.6.0-testnet
   ```
 
 ## Step 2. Configure `cronosd`
