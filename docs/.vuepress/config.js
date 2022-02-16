@@ -113,7 +113,11 @@ module.exports = {
           {
             text:"Web extension integration",
             link: "/resources/web-extension-integration"
-          },              
+          },
+          {
+            text:"Desktop wallet integration",
+            link: "/resources/desktop-wallet-integration"
+          },
           {
             text: "Node Setup and RPC note",
             link: "/resources/node-and-rpc-setup-notes"
@@ -161,6 +165,7 @@ module.exports = {
       "/resources/": [
         "chain-integration",
         "web-extension-integration",
+        "desktop-wallet-integration",
         "node-and-rpc-setup-notes",
         "cosmos-grpc-docs",
         "technical-glossary"
