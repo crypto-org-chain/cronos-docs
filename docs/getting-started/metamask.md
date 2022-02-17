@@ -139,7 +139,7 @@ Take the wallet on Metamask as an example, if you log into the same wallet on Me
  
 ### Q3: I would like to send ERC20-CRO from Crypto.com App or Defi Wallet to the other CEXs directly. Is it possible?
  
-Please make sure both sender and receiver accounts support ERC20 format. Only if the other CEXs support ERC20-CRO can you send it. Users may refer to this guide for more details: 
+**A** : Please make sure both sender and receiver accounts support ERC20 format. Only if the other CEXs support ERC20-CRO can you send it. Users may refer to this guide for more details: 
 - https://help.crypto.com/en/articles/5019195-send-and-receive-cro-the-difference-between-native-cro-and-erc20-cro
 - https://help.crypto.com/en/articles/4970776-cro-deposit-withdrawal-information-in-crypto-com-app
 
