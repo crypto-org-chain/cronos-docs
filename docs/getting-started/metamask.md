@@ -124,7 +124,7 @@ It is highly recommended that all users check the networks before making the wit
 
 ### Q2: I’ve already made the transfer from the centralized exchange that does not support Cronos Beta Chain to my Crypto.org Desktop wallet. What should I do to retrieve my funds?
 
-Here's what you could do:  
+**A** : Here's what you could do:  
 1. Send some ETH (around 0.03 ETH) to your `0x..` address for paying the transaction gas fee on Ethereum
 2. Download our Crypto.com App, and register an account (skip this if you're already a user)
 3. Send your ERC20-CRO to the Crypto.com App ERC20-CRO deposit address*
