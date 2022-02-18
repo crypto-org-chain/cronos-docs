@@ -42,7 +42,7 @@ module.exports = {
           },
          {
               text: "Block Explorer",
-              link: "https://cronos-explorer.org"
+              link: "https://cronoscan.com"
           }
 
 //          {
