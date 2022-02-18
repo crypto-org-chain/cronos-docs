@@ -72,7 +72,7 @@ Note: The Cronos RPC endpoints have been lately updated(shown as below) and it i
 - [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger)
 - Using Metamask for testnet
   - Network Name: **Cronos Testnet**
-  - New RPC URL: **https://evm-t3.cronos.org/:8545**
+  - New RPC URL: **https://evm-t3.cronos.org/**
   - Chain ID: **338**
   - Currency Symbol: **TCRO**
   - Block Explorer URL: **https://cronos.org/explorer/testnet3**
