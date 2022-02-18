@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-3 in this technical documentation.
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Running Nodes On Testnet
   - name: "twitter:site"
@@ -21,8 +21,8 @@ meta:
   - name: "twitter:description"
     content: Learn how to setup a Validator or a full node on Crypto.org Cronos testnet cronostestnet_338-3 in this technical documentation.
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-testnet.html
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/getting-started/cronos-testnet.html
 ---
 
 # Cronos Testnet: Running Nodes
@@ -201,7 +201,7 @@ You should obtain an address with `tcrc` prefix, e.g. `tcrc10u5mgfflasrfj9s94mt8
 
 ### Step 3-2. Obtain test token
 
-Users can use the [faucet](https://cronos.crypto.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by
+Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by
 
 - [Using metamask](./metamask.md#using-metamask); or
 - Using the [address convention tool](./metamask.md#address-conventions).
@@ -282,7 +282,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 - One can check the current block height by querying the public full node by:
 
   ```bash
-  curl -s https://cronos-testnet-3.crypto.org:26657/commit | jq "{height: .result.signed_header.header.height}"
+  curl -s https://evm-t3.cronos.org/:26657/commit | jq "{height: .result.signed_header.header.height}"
   ```
 
   and you can check your node's progress (in terms of block height) by
@@ -359,7 +359,7 @@ To further check if the validator is signing blocks, kindly run this [script](ht
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://cronos-testnet-3.crypto.org:26657 \
+--tendermint-url https://evm-t3.cronos.org/:26657 \
 --pubkey $(cat ~/.cronos/config/priv_validator_key.json | jq -r '.pub_key.value')
 
 The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
@@ -419,15 +419,15 @@ $ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-3
 
 :::
 
-Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.crypto.org/docs/wallets/cli.html#cronosd) for more advanced operations and transactions.
+Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.org/docs/wallets/cli.html#cronosd) for more advanced operations and transactions.
 
 ## Cronos testnet faucet and explorer
 
 
 
-- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos.crypto.org/explorer/testnet3);
+- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos.org/explorer/testnet3);
 
-- To interact with the blockchain, simply use the [test-token faucet](https://cronos.crypto.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
+- To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
   - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
 

@@ -174,7 +174,7 @@ Multisig (multi-signature) is a digital signature that makes it possible for mul
 
 **Network ID**
 
-The last two hex characters of the Chain ID. Using our testnet Chain ID `testnet-cronos-2` as an example, the network ID would be `2`.
+The last two hex characters of the Chain ID. Using our testnet Chain ID `cronostestnet_338-3` as an example, the network ID would be `338`.
 
 **Non-fungible Token (NFT)**
 

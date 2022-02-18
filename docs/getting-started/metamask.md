@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: Learn how to use the MetaMask chrome extension to send or receive and interact with the Cronos testnet in this technical documentation.
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Using MetaMask
   - name: "twitter:site"
@@ -21,8 +21,8 @@ meta:
   - name: "twitter:description"
     content: Learn how to use the MetaMask chrome extension to send or receive and interact with the Cronos testnet in this technical documentation.
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/getting-started/metamask.html
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/getting-started/metamask.html
 ---
 
 # Using MetaMask on Cronos mainnet Beta
@@ -42,10 +42,10 @@ First of all we would need to connect the MetaMask with the Cronos chain network
     <img src="./assets/2.png" />
 
 - Insert the network name, for example "Cronos" and put 
-  - `https://evm-cronos.crypto.org` for **New RPC URL**; and 
+  - `https://evm-cronos.org` for **New RPC URL**; and 
   - `25` for **Chain ID**, 
   - `CRO` for the symbol, and
-  - `https://cronos.crypto.org/explorer/` for the **Block explorer URL** as below:
+  - `https://cronos.org/explorer/` for the **Block explorer URL** as below:
 
     <img src="./assets/3.png" width="350" />
 

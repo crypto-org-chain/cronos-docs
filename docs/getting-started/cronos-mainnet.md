@@ -22,7 +22,7 @@ meta:
 
   - name: "og:image"
 
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
 
   - name: "twitter:title"
 
@@ -42,9 +42,9 @@ meta:
 
   - name: "twitter:image"
 
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
 
-canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-mainnet.html
+canonicalUrl: https://cronos.org/docs/getting-started/cronos-mainnet.html
 ---
 
 # Cronos Mainnet: Running Nodes
@@ -235,7 +235,6 @@ Run the followings to create a new key. For example, you can create a key with t
 
 You should obtain an address with `crc` prefix, e.g. `crc10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
 
-
 ### Step 3-2. Run everything
 
 Once the `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
@@ -330,7 +329,7 @@ WantedBy=multi-user.target
 
 :::
 
-It should begin fetching blocks from the other peers. 
+It should begin fetching blocks from the other peers.
 
 - You can query the node syncing status by
 
@@ -346,7 +345,7 @@ It should begin fetching blocks from the other peers.
 
   ```bash
 
-  curl -s https://rpc-cronos.crypto.org/commit | jq "{height: .result.signed_header.header.height}"
+  curl -s https://rpc.cronos.org/commit | jq "{height: .result.signed_header.header.height}"
 
   ```
 
@@ -359,8 +358,6 @@ It should begin fetching blocks from the other peers.
   ```
 
 ---
-
-
 
 ## Cronos mainnet explorer: CronoScan
 
