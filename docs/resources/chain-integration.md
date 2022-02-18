@@ -2,42 +2,43 @@
 
 ## Useful Links
 
-- [Cronos website](https://cronos.crypto.org/)
+- [Cronos website](https://cronos.org/)
 - [GitHub Repository](https://github.com/crypto-org-chain/cronos)
-- [Official Documentation](https://cronos.crypto.org/docs/)
+- [Official Documentation](https://cronos.org/docs/)
 - [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)
 
 ## Integration guide for **Cronos Mainnet Beta**
 
 ### Setup Guide
 
-- [Joining the Cronos Mainnet](https://cronos.crypto.org/docs/getting-started/cronos-mainnet.html)
-- [Deploying Smart Contract](https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html)
+- [Joining the Cronos Mainnet](https://cronos.org/docs/getting-started/cronos-mainnet.html)
+- [Deploying Smart Contract](https://cronos.org/docs/getting-started/cronos-smart-contract.html)
 - [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 - [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json)
-- [JSON-RPC Swagger Playground](https://cronos.crypto.org/docs/swagger?network=mainnet)
-- [Using MetaMask](https://cronos.crypto.org/docs/getting-started/metamask.html)
+- [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)
+- [Using MetaMask](https://cronos.org/docs/getting-started/metamask.html)
 
 ### RPC URLs for Cronos mainnet Beta
 
 :::tip Request Limits on Public RPCs:
 To provide a stable experience to users, there is a request rate limit on the public RPCs to ensure fair usage. If your application requires a higher usage, please consider setting up your own nodes. You can also reach out to us on [Discord](https://discord.gg/cGtxgVfGMZ) for assistance.
+Note: The Cronos RPC endpoints have been lately updated(shown as below) and it is recommanded for users to update the endpoints, while the old endpoints will still be compatible.
 :::
 
 1. **Tendermint RPC**
 
-   - https://rpc-cronos.crypto.org
+   - [https://rpc.cronos.org/](https://rpc.cronos.org/)
 
 2. **Cosmos RESTful**
 
-   - https://rest-cronos.crypto.org
+   - [https://rest.cronos.org/](https://rest.cronos.org/)
 
 3. **Cosmos gRPC Based**
 
-   - https://grpc-cronos.crypto.org
+   - [http://grpc.cronos.org/](http://grpc.cronos.org/)
 
 4. **EVM HTTP JSON RPC (Web3 compatible)**
-   - https://evm-cronos.crypto.org
+   - [https://evm-cronos.org/](https://evm-cronos.org/)
 
 ### Official token contract addresses for Cronos mainnet Beta
 
@@ -63,40 +64,43 @@ To provide a stable experience to users, there is a request rate limit on the pu
 
 ### Setup Guide
 
-- [Joining the Cronos Testnet](https://cronos.crypto.org/docs/getting-started/cronos-testnet.html)
-- [Testnet Faucet](https://cronos.crypto.org/faucet/)
+- [Joining the Cronos Testnet](https://cronos.org/docs/getting-started/cronos-testnet.html)
+- [Testnet Faucet](https://cronos.org/faucet/)
   - Note that the faucet only takes eth-type `0x...` addr
 - [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
 - [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-1/genesis.json)
-- [JSON-RPC Swagger Playground](https://cronos.crypto.org/docs/swagger)
+- [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger)
 - Using Metamask for testnet
   - Network Name: **Cronos Testnet**
-  - New RPC URL: **https://cronos-testnet-3.crypto.org:8545**
+  - New RPC URL: **https://evm-t3.cronos.org/**
   - Chain ID: **338**
   - Currency Symbol: **TCRO**
-  - Block Explorer URL: **https://cronos.crypto.org/explorer/testnet3**
+  - Block Explorer URL: **https://cronos.org/explorer/testnet3**
 
 ### RPC URLs for For Cronos testnet
 
-1. **Tendermint RPC**
+:::tip 
+The Cronos Testnet RPC endpoints have been lately updated shown as below and it is recommanded for users to update the endpoints, while the old endpoints will still be compatible.
+:::
 
-   - https://cronos-testnet-3.crypto.org/ or
-   - https://cronos-testnet-3.crypto.org:26657/
+1. **Cosmos RPC**
 
-2. **Cosmos RPC**
+   - http://rpc-t3.cronos.org/
 
-   - https://cronos-testnet-3.crypto.org:1317/
+2. **gRPC Based**
 
-3. **gRPC Based**
+   - http://grpc-t3.cronos.org/
 
-   - https://cronos-testnet-3.crypto.org:9090/
+3. **Cosmos RESTful**
+   
+   - http://rest-t3.cronos.org/
 
 4. **EVM HTTP JSON RPC**
 
-   - https://cronos-testnet-3.crypto.org:8545/
+   - http://evm-t3.cronos.org/
 
-5. **EVM WS JSON RPC**
-   - https://cronos-testnet-3.crypto.org:8546/
+
+
 
 ### Mock token contract addresses for Cronos testnet
 
@@ -125,8 +129,8 @@ To provide a stable experience to users, there is a request rate limit on the pu
 
 Below is a list of Ethereum type JSON-RPC Methods where users can curl via local node. While you can also surf to our swagger playground for a better understanding.
 
-- [Mainnet swagger playground](https://cronos.crypto.org/docs/swagger?network=mainnet)
-- [Testnet swagger playground](https://cronos.crypto.org/docs/swagger)
+- [Mainnet swagger playground](https://cronos.org/docs/swagger?network=mainnet)
+- [Testnet swagger playground](https://cronos.org/docs/swagger)
 
 ### JSON-RPC Methods
 
@@ -182,7 +186,7 @@ Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pendi
 :::
 :::tip
 While the examples below make use of local node http://localhost:8545, users may also use our public full node:
-https://cronos-testnet-3.crypto.org:8545
+https://evm-t3.cronos.org/:8545
 :::
 
 ## JSON-RPC namespaces
@@ -211,7 +215,7 @@ https://cronos-testnet-3.crypto.org:8545
 - Cronos Mainnet Beta:
   [https://cronoscan.com/](https://cronoscan.com)
 - Cronos Testnet:
-  [https://cronos.crypto.org/explorer/testnet3](https://cronos.crypto.org/explorer/testnet3)
+  [https://cronos.org/explorer/testnet3](https://cronos.org/explorer/testnet3)
 
 ## Community
 

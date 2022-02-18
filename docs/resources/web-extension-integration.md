@@ -54,7 +54,7 @@ const connector = new DeFiWeb3Connector({
   supportedChainIds: [1],
   rpc: {
     1: "https://mainnet.infura.io/v3/INFURA_API_KEY",
-    25: "https://evm-cronos.crypto.org/", // cronos mainet
+    25: "https://evm-cronos.org/", // cronos mainet
   },
   pollingInterval: 15000,
 });
