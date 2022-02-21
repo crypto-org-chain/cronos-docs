@@ -35,7 +35,7 @@ Note: The Cronos RPC endpoints have been lately updated(shown as below) and it i
 
 3. **Cosmos gRPC Based**
 
-   - [http://grpc.cronos.org/](http://grpc.cronos.org/)
+   - [https://grpc.cronos.org/](http://grpc.cronos.org/)
 
 4. **EVM HTTP JSON RPC (Web3 compatible)**
    - [https://evm-cronos.org/](https://evm-cronos.org/)
@@ -85,19 +85,19 @@ The Cronos Testnet RPC endpoints have been lately updated shown as below and it 
 
 1. **Cosmos RPC**
 
-   - http://rpc-t3.cronos.org/
+   - https://rpc-t3.cronos.org/
 
 2. **gRPC Based**
 
-   - http://grpc-t3.cronos.org/
+   - https://grpc-t3.cronos.org/
 
 3. **Cosmos RESTful**
    
-   - http://rest-t3.cronos.org/
+   - https://rest-t3.cronos.org/
 
 4. **EVM HTTP JSON RPC**
 
-   - http://evm-t3.cronos.org/
+   - https://evm-t3.cronos.org/
 
 
 
