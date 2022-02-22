@@ -186,7 +186,7 @@ Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pendi
 :::
 :::tip
 While the examples below make use of local node http://localhost:8545, users may also use our public full node:
-https://evm-t3.cronos.org/:8545
+https://evm-t3.cronos.org:8545/
 :::
 
 ## JSON-RPC namespaces
