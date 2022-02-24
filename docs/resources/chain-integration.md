@@ -38,7 +38,7 @@ Note: The Cronos RPC endpoints have been lately updated(shown as below) and it i
    - [https://grpc.cronos.org/](http://grpc.cronos.org/)
 
 4. **EVM HTTP JSON RPC (Web3 compatible)**
-   - [https://evm-cronos.org/](https://evm-cronos.org/)
+   - [https://evm.cronos.org/](https://evm.cronos.org/)
 
 ### Official token contract addresses for Cronos mainnet Beta
 
