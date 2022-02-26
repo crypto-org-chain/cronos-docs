@@ -59,6 +59,10 @@ Note: The Cronos RPC endpoints have been lately updated(shown as below) and it i
 | TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronoscan.com/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
 | LUNA       | [0x9278C8693e7328bef49804BacbFb63253565dffD](https://cronoscan.com/address/0x9278C8693e7328bef49804BacbFb63253565dffD/transactions)   | 6       |
 | DOT        | [0x994047FE66406CbD646cd85B990E11D7F5dB8fC7](https://cronoscan.com/address/0x994047FE66406CbD646cd85B990E11D7F5dB8fC7/transactions)   | 10      |
+| ADA        | [0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0](https://cronoscan.com/address/0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0/transactions)   | 6       |
+| RADAR      | [0xa58e3AeAeA3292c3E260378e55E9684C59E7A27a](https://cronoscan.com/address/0xa58e3AeAeA3292c3E260378e55E9684C59E7A27a/transactions)   | 18      |
+| DERC       | [0x98616a1427a1734DaEbA1E1894db48051244A065](https://cronoscan.com/address/0x98616a1427a1734DaEbA1E1894db48051244A065/transactions)   | 18      |
+| PENDLE     | [0x49c3bBB239f4FB44327073510f4bA72D207a81D6](https://cronoscan.com/address/0x49c3bBB239f4FB44327073510f4bA72D207a81D6/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
@@ -79,7 +83,7 @@ Note: The Cronos RPC endpoints have been lately updated(shown as below) and it i
 
 ### RPC URLs for For Cronos testnet
 
-:::tip 
+:::tip
 The Cronos Testnet RPC endpoints have been lately updated shown as below and it is recommanded for users to update the endpoints, while the old endpoints will still be compatible.
 :::
 
@@ -92,15 +96,12 @@ The Cronos Testnet RPC endpoints have been lately updated shown as below and it 
    - https://grpc-t3.cronos.org/
 
 3. **Cosmos RESTful**
-   
+
    - https://rest-t3.cronos.org/
 
 4. **EVM HTTP JSON RPC**
 
    - https://evm-t3.cronos.org/
-
-
-
 
 ### Mock token contract addresses for Cronos testnet
 
