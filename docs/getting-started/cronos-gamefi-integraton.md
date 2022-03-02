@@ -53,7 +53,7 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 <img src="./assets/cronos-gamefi-integration-step3b.png" />
 
-#### Step 3c. [Unity] You will see the script variables under Inspector when you click the Transfer20Script. You have to update the corresponding address after deploying the contract. [See Step 6]
+#### Step 3c. [Unity] You will see the script variables under Inspector when you click the Transfer20Script. You have to update the corresponding address after deploying the contract [See Step 6]
 
 <img src="./assets/cronos-gamefi-integration-step3c.png" />
 
