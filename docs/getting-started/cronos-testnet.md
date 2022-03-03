@@ -37,10 +37,13 @@ Before we start, please note that there was new binary upgrade:
 - Start the node with the older binary version `v0.6.0`;
 - Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
   - *Please note that ```panic: UPGRADE "v0.7.0" NEEDED at height: 1553700``` is the expected error message when we hit that block.*
-- After it reaches the block height `1553700`, update the binary to `0.7.0-rc1-testnet`;
-- Then manually replace the default `~/.cronos/config/app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml), given there are some new parameter introduced in the upgrade;
-  - It is recommanded to download the new [app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml) and replace the whole local `app.toml` directly;
-- Resume to sync from block `1553700`;
+- After it reaches the block height `1553700`, update the binary to [cronos_0.7.0-rc1-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc1);
+- Then update the default `~/.cronos/config/app.toml`(given there are some new parameter introduced in the upgrade), either by manually replace the local `app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml), or by:
+ ```bash 
+$ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml > ~/.cronos/config/app.toml
+  ``` 
+- Continue to sync from block `1553700`;
+- After it reaches the block height `1869000`, update the binary to [cronos_0.7.0-rc2-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc2);
 - Start the node again
 
 
