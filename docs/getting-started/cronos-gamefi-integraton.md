@@ -34,8 +34,27 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 ### Step 2. [Unity] Create a new project or open an existing project in Unity
 
-- You can also download the tutorial bolt kit from [Unity](https://assetstore.unity.com/packages/essentials/tutorial-projects/bolt-kit-platformer-tutorial-assets-168067) and import into the blank new project
-  <img src="./assets/cronos-gamefi-integration-step2.png" />
+You can also download the tutorial bolt kit from [Unity](https://assetstore.unity.com/packages/essentials/tutorial-projects/bolt-kit-platformer-tutorial-assets-168067) and import into the blank new project. Below are the steps of importing Tutorial Projects - Bolt Kit from Unity.
+
+#### Step 2a. [Unity Asset Store] Search for `Bolt Kit: Platformer Tutorial Assets`
+
+<img src="./assets/cronos-gamefi-integration-step2a.png" />
+
+#### Step 2b. [Unity Asset Store] Click to add the asset and sign in to your Unity account
+
+<img src="./assets/cronos-gamefi-integration-step2b.png" />
+
+#### Step 2c. [Unity] Create a new project in Unity
+
+<img src="./assets/cronos-gamefi-integration-step2.png" />
+
+#### Step 2d. [Unity] Open the Package Manager window in Unity and select My Assets
+
+<img src="./assets/cronos-gamefi-integration-step2d.png" />
+
+#### Step 2e. [Unity] Select `Bolt Kit: Platformer Tutorial Assets` and click Import
+
+<img src="./assets/cronos-gamefi-integration-step2e.png" />
 
 ### Step 3. [Unity] Drag and drop the ChainSafe SDK unity package into the root directory
 
@@ -183,7 +202,7 @@ contract My1155Token is ERC1155, Ownable {
 // window.infuraKey = "2d0062a43e9e4086829df115488b45a8"
 window.web3NetworkId = 25;
 window.rpc = {
-  25: "https://evm-cronos.crypto.org"
+  25: "https://evm.cronos.org"
 }
 ```
 
@@ -192,7 +211,7 @@ window.rpc = {
 // window.infuraKey = "2d0062a43e9e4086829df115488b45a8"
 window.web3NetworkId = 338;
 window.rpc = {
-  338: "https://cronos-testnet-3.crypto.org:8545"
+  338: "https://evm-t3.cronos.org"
 }
 ```
 
