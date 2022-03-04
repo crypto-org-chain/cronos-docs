@@ -91,7 +91,7 @@ Please note that after bridging the tokens, they will be converted into the dest
 <img src="./assets/4b_confirm_wallet_txn.png"  alt="centered image" width="220"/>
 <img src="./assets/4c_confirm_wallet_txn.png"  alt="centered image" width="220"/>
 
-#### 5. Bridging assets
+### 5. Bridging assets
 
 After the transaction is confirmed from the wallet, the bridge operation will commence.
 First, we will initiate and wait for the deposit of the assets on the origin chain.
