@@ -63,6 +63,8 @@ Note: The Cronos RPC endpoints have been lately updated(shown as below) and it i
 | RADAR      | [0xa58e3AeAeA3292c3E260378e55E9684C59E7A27a](https://cronoscan.com/address/0xa58e3AeAeA3292c3E260378e55E9684C59E7A27a/transactions)   | 18      |
 | DERC       | [0x98616a1427a1734DaEbA1E1894db48051244A065](https://cronoscan.com/address/0x98616a1427a1734DaEbA1E1894db48051244A065/transactions)   | 18      |
 | PENDLE     | [0x49c3bBB239f4FB44327073510f4bA72D207a81D6](https://cronoscan.com/address/0x49c3bBB239f4FB44327073510f4bA72D207a81D6/transactions)   | 18      |
+| TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronoscan.com/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
+| XLM        | [0x747d6C858168B8cD6e537160320b5dE58FD3367C](https://cronoscan.com/address/0x747d6C858168B8cD6e537160320b5dE58FD3367C/transactions)   | 7       |
 
 ## Integration guide for **Cronos Testnet**
 
