@@ -21,7 +21,7 @@
 ### RPC URLs for Cronos mainnet Beta
 
 :::danger Public RPCs URL Updates:
-The Cronos RPC endpoints have been lately updated (shown as below) and it is recommended for users to update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later..
+The Cronos RPC endpoints have been lately updated (shown as below) and it is recommended for users to update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later.
 :::
 
 :::tip Request Limits on Public RPCs:
