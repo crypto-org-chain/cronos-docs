@@ -20,9 +20,18 @@
 
 ### RPC URLs for Cronos mainnet Beta
 
+:::danger Public RPCs URL Updates:
+The Cronos RPC endpoints have been lately updated (shown as below) and it is recommended for users to update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later.
+:::
+
 :::tip Request Limits on Public RPCs:
 To provide a stable experience to users, there is a request rate limit on the public RPCs to ensure fair usage. If your application requires a higher usage, please consider setting up your own nodes. You can also reach out to us on [Discord](https://discord.gg/cGtxgVfGMZ) for assistance.
-Note: The Cronos RPC endpoints have been lately updated(shown as below) and it is recommanded for users to update the endpoints, while the old endpoints will still be compatible.
+:::
+
+:::tip Public RPCs Integration Tips:
+There are more than one machines serving the public RPC services. There is no guarantee that you are served by the same machine every time. This could break the assumptions of some applications. For example when you want to broadcast multiple transactions in sequential account nonce at once, each transactions may arrive on different machines if you are not broadcasting them in a batch.
+
+If this assumption is important in your application, please consider setting up your own nodes.
 :::
 
 1. **Tendermint RPC**
