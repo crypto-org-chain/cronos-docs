@@ -193,7 +193,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
   ```
 
--  For network configuration, in `~/.cronos/config/config.toml`, validator node need to modify the configurations of `seed`, `create_empty_blocks_interval` and `timeout_commit`. For non-validator full node, only `seed` modification is required:
+-  For network configuration, in `~/.cronos/config/config.toml`, validator nodes need to modify the configurations of `seed`, `create_empty_blocks_interval` and `timeout_commit`. For non-validator full nodes, only `seed` modification is required:
 
   ```bash
 
