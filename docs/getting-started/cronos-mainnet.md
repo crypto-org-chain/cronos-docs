@@ -389,7 +389,7 @@ To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a
 #### There are three versions for Cronos Network:
 
 **Cronosmainnet_25-1-pruned**
-- Pruned snapshot is the quickest way to get a node running. If you only want to give a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when your startup your node. But you will not be able to query anything earlier than that.
+- Pruned snapshot is the quickest way to get a node running. If you just would like to give a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when your startup your node. But you will not be able to query anything earlier than that.
 
 **Cronosmainnet_25-1-default**
 - Default is a good middle choice between everything. It will work in most use cases, validator, sentry node, API nodes. It has tx index enabled, so you can query block back in time. The only thing that default nodes do not have is the full history from the start of the chain or chain upgrade.
@@ -401,16 +401,31 @@ To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a
 
 In the following steps, we will take the version `cronosmainnet_25-1-pruned.20220309.2010.tar.lz4` as an example. 
 
-(Optional) you can [download an addressbook](https://quicksync.io/addrbook.cronos.json) to get connected to peers faster. After downloading it, place `addrbook.json` under `.cronos/config` folder and restart your node to take effect.
+(Optional) you can [download an addressbook](https://quicksync.io/addrbook.cronos.json) to get connected to peers faster. After downloading it, place the new `addrbook.json` under `.cronos/config` folder and restart your node to take effect.
 
 Now add the `cronosmainnet_25-1-pruned.20220309.2010.tar.lz4` inside `.cronos`
 
-Then please perform the following steps:
+Then perform the following steps:
 - Change the path under  `.cronos` with `cd .cronos`
-- Decompress with `lz4` first then decompress with `tar` by `lz4 -d /Users/<username>/download/cronosmainnet_25-1-pruned.20220308.2010.tar.lz4 | tar -xv` The original data folder under `.cronos` is overwritten with the step above. (It takes around 10 mins to decompress the pruned version - 43GB)
+- Decompress with `lz4` and `tar` by `lz4 -d /Users/<username>/.cronos/cronosmainnet_25-1-pruned.20220308.2010.tar.lz4 | tar -xv`, as below:
+
+```bash
+
+  x data/
+  x data/application.db/
+  x data/application.db/84856034.ldb
+  x data/application.db/83264153.ldb
+  ...
+  x data/snapshots/metadata.db/CURRENT.bak
+  x data/snapshots/metadata.db/MANIFEST-000107
+  x data/snapshots/metadata.db/LOG
+
+```
+
+The original data folder under `.cronos` is overwritten with this step (it takes around 5-7 mins to decompress the pruned version ~50GB).
 
 ### Step 4-3 Sync with Quicksync
-Run Cronos again with `./cronosd` start, and it starts the node and syncs the blockchain data from the height of `1814083`. 
+Direct back to the parent directory of current directory(`/Users/<username>/` in this case) by `cd..`. Then run Cronos again with `./cronosd start` and now it suppose to start the node and sync the blockchain data from the height of `1813707`. 
 
 ```bash
 
@@ -420,8 +435,7 @@ Run Cronos again with `./cronosd` start, and it starts the node and syncs the bl
   6:59PM INF Starting multiAppConn service impl=multiAppConn module=proxy server=node
   6:59PM INF Starting localClient service connection=query impl=localClient module=abci-client server=node
   ...
-  6:59PM INF ABCI Replay Blocks appHeight=1814083 module=consensus server=node stateHeight=1814083 storeHeight=1814084
-  6:59PM INF Replay last block using real app module=consensus server=node
+  6:59PM INF ABCI Replay Blocks appHeight=1813707 module=consensus server=node stateHeight=1813707 storeHeight=1813707
 
 ```
 
