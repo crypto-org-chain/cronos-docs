@@ -74,6 +74,7 @@ If this assumption is important in your application, please consider setting up 
 | PENDLE     | [0x49c3bBB239f4FB44327073510f4bA72D207a81D6](https://cronoscan.com/address/0x49c3bBB239f4FB44327073510f4bA72D207a81D6/transactions)   | 18      |
 | TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronoscan.com/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
 | XLM        | [0x747d6C858168B8cD6e537160320b5dE58FD3367C](https://cronoscan.com/address/0x747d6C858168B8cD6e537160320b5dE58FD3367C/transactions)   | 7       |
+| EOS        | [0xA37caA841072a305a0799718aFA16cd504C52118](https://cronoscan.com/address/0xA37caA841072a305a0799718aFA16cd504C52118/transactions)   | 4       |
 | QRDO       | [0x70BB395F1A824D9a3F9D510C25e699cEaf603dEc](https://cronoscan.com/address/0x70BB395F1A824D9a3F9D510C25e699cEaf603dEc/transactions)   | 8       |
 
 ## Integration guide for **Cronos Testnet**
