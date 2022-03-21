@@ -27,7 +27,7 @@ canonicalUrl: https://cronos.org/docs/getting-started/local-devnet.html
 
 # Devnet: Running Latest Development Node
 
-::: warning caution
+::: warning CAUTION
 this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
 
 For anyone interested in joining the Cronos testnet,
@@ -42,7 +42,7 @@ Install the binded version, which install cronosd together, and find it by the a
 
 ```
 git clone https://github.com/crypto-org-chain/cronos
-cd ethermint
+cd cronos
 make install
 ```
 
@@ -52,23 +52,29 @@ Afterward, you can verify that by
 $ cronosd -h
 ```
 
-and also you can check the version of the cronosd to see if it is build with the later commit:
+and also you can check the version of the cronosd to see if it is built with the later commit:
 
 ```bash
 $ cronosd version
 [version-g<commit_hash>]
 ```
 
-## Customize your devnet
+for using Pystarport only (Optional)
+```bash
+$ python3 -m pip install pystarport
+```
+
+## Step 1. Customize your devnet 
 
 _Note_: You can skip this section and start a local devnet without customization.
 
-You can customize your devnet based on `ethermint/init.sh`, for example:
+### Option 1. using Shell script
+You can customize your devnet based on `cronos/init.sh`, for example:
 
 ```yaml
 ### customize the name of your key, the chain-id and moniker of the node ###
   KEY="mykey"
-  CHAINID="ethermint-2"
+  CHAINID="cronos_777-1"
   MONIKER="localtestnet"
 .......
 ### specify the default keyring back-backend to be 'test' for convenience ###
@@ -81,19 +87,62 @@ You can customize your devnet based on `ethermint/init.sh`, for example:
   cronosd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
 ```
 
-The default configuration will give us a single validators devnet with the chain-id `ethermint-2`; one account under the name of `mykey` with some allocated funds at the genesis.
+The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
 
-## Start the devnet
+### Option 2. using Pystarport
+
+You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for example:
+
+```yaml
+  cronos_777-1:                   # change the chain-id
+      json-rpc:
+      address: "0.0.0.0:8545"     # change the JSON-RPC address and port
+      ws-address: "0.0.0.0:8546"  # change the JSON-RPC websocket address and port
+      api: "eth,net,web3,debug"
+.......
+  accounts:
+    - name: community
+      coins: 10000000000000000000000basetcro
+      mnemonic: ${COMMUNITY_MNEMONIC}
+    - name: signer1
+      coins: 20000000000000000000000basetcro
+      mnemonic: ${SIGNER1_MNEMONIC}
+    - name: signer2
+      coins: 30000000000000000000000basetcro
+      mnemonic: ${SIGNER2_MNEMONIC}
+```
+The default configuration will give us two devnet validators with the chain-id `cronos_777-1`; three accounts `community`, `signer1` and `signer2` with some allocated funds at the genesis.
+
+## Step 2. Start the devnet
 
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
+### Option 1. using Shell script
+Start a devnet node
 ```sh
 $ ./init.sh
 ```
 
+### Option 2. using Pystarport
+
+Start two devnet nodes
+```bash
+$ pystarport serve --config ./scripts/cronos-devnet.yaml
+```
+
+Get node status (Optional)
+```bash
+$ pystarport supervisorctl status
+```
+
+Stop all nodes (Optional)
+```bash
+$ pystarport supervisorctl stop all
+```
+
 Blocks are now being generated! You can verify and visit the rpc port [http://localhost:26657/](http://localhost:26657/) to view the blockchain data.
 
-## Interact with the chain
+## Step 3. Interact with the chain
 
 After the chain has been started, we may open up another terminal and start interacting with the chain by `cronosd`.
 
@@ -118,6 +167,11 @@ You will be able to list the address with allocated initial funds, for example:
 ]
 ```
 
+or get the account info from accounts.json file
+```
+/cronos/data/cronos_777-1/accounts.json
+```
+
 You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity.
 
 ```
@@ -133,6 +187,7 @@ sense slim three rally device lazy slice thumb bridge general essence seven diam
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A9J4ELPAqyyrmypT9CtOVyWrO66eEXum3d8Z2mV7MS6O"}'
   mnemonic: ""
 ```
+
 
 ### Check account balance
 
@@ -189,6 +244,12 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
   ```
   $ cronosd tx bank send mykey tcrc1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
   ```
+
+- Check the transaction detail by hash
+  ```
+  $ cronosd query tx --type=hash 41D23A35EAB0BE5879D25E761F906B2FAD7349F34BFFC96E9D1DE8EEE6B82D9F
+  ```
+
 
 - Lastly, check balance of Bob's address:
   ```
