@@ -76,6 +76,7 @@ If this assumption is important in your application, please consider setting up 
 | XLM        | [0x747d6C858168B8cD6e537160320b5dE58FD3367C](https://cronoscan.com/address/0x747d6C858168B8cD6e537160320b5dE58FD3367C/transactions)   | 7       |
 | EOS        | [0xA37caA841072a305a0799718aFA16cd504C52118](https://cronoscan.com/address/0xA37caA841072a305a0799718aFA16cd504C52118/transactions)   | 4       |
 | QRDO       | [0x70BB395F1A824D9a3F9D510C25e699cEaf603dEc](https://cronoscan.com/address/0x70BB395F1A824D9a3F9D510C25e699cEaf603dEc/transactions)   | 8       |
+| APE        | [0x9C62F89a8C9907582f21205Ce90443730361EA05](https://cronoscan.com/address/0x9C62F89a8C9907582f21205Ce90443730361EA05/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
