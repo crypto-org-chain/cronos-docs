@@ -68,7 +68,7 @@ $ python3 -m pip install pystarport
 
 _Note_: You can skip this section and start a local devnet without customization.
 
-### Option 1. using Shell script
+### Option 1. Using Shell script
 You can customize your devnet based on `cronos/init.sh`, for example:
 
 ```yaml
@@ -89,7 +89,7 @@ You can customize your devnet based on `cronos/init.sh`, for example:
 
 The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
 
-### Option 2. using Pystarport
+### Option 2. Using Pystarport
 
 You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for example:
 
@@ -117,17 +117,25 @@ The default configuration will give us two devnet validators with the chain-id `
 
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
-### Option 1. using Shell script
+### Option 1. Using Shell script
 Start a devnet node
 ```sh
 $ ./init.sh
 ```
 
-### Option 2. using Pystarport
+### Option 2. Using Pystarport
 
-Start two devnet nodes
+To start devnet node with Pystarport, you can choose either one of the commands:
+
+"pystarport serve" is erasing the existing data (e.g. tx history, account balance, node config).
+
 ```bash
 $ pystarport serve --config ./scripts/cronos-devnet.yaml
+```
+or "pystarport start" is preserving and start with the existing data
+
+```bash
+$ pystarport start --config ./scripts/cronos-devnet.yaml
 ```
 
 Get node status (Optional)
@@ -167,7 +175,7 @@ You will be able to list the address with allocated initial funds, for example:
 ]
 ```
 
-or get the account info from accounts.json file
+or get the info for recovery from accounts.json file
 ```
 /cronos/data/cronos_777-1/accounts.json
 ```
