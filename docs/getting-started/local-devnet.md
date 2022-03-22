@@ -89,7 +89,8 @@ You can customize your devnet based on `cronos/init.sh`, for example:
 
 The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
 
-### Option 2. Using Pystarport
+### Option 2. Using `pystarport`
+[Pystarport](https://github.com/crypto-com/pystarport) is like a cosmos starport without the scaffolding feature. it's mainly used for development and testing. It's developed for the Crypto.org Chain, but it can also be used for any cosmos-sdk based projects.
 
 You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for example:
 
@@ -123,16 +124,16 @@ Start a devnet node
 $ ./init.sh
 ```
 
-### Option 2. Using Pystarport
+### Option 2. Using `pystarport`
 
-To start devnet node with Pystarport, you can choose either one of the commands:
+To start devnet node with `pystarport`, you can choose either one of the commands:
 
-"pystarport serve" is erasing the existing data (e.g. tx history, account balance, node config).
+`pystarport serve` is replacing the existing data with the new one (e.g. tx history, account balance, node config).
 
 ```bash
 $ pystarport serve --config ./scripts/cronos-devnet.yaml
 ```
-or "pystarport start" is preserving and start with the existing data
+or `pystarport start` is preserving and starting with the existing data
 
 ```bash
 $ pystarport start --config ./scripts/cronos-devnet.yaml
