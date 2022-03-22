@@ -69,7 +69,7 @@ $ python3 -m pip install pystarport
 _Note_: You can skip this section and start a local devnet without customization.
 
 ### Option 1. Using Shell script
-You can customize your devnet based on `cronos/init.sh`, for example:
+You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init_cronos_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
 
 ```yaml
 ### customize the name of your key, the chain-id and moniker of the node ###
