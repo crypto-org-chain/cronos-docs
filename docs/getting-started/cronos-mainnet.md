@@ -223,7 +223,7 @@ as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core
 
 :::
 
-### Step 3-1. Create a new key and address
+### Step 3-1. Create a new key and address (Validator node only)
 
 Run the followings to create a new key. For example, you can create a key with the name `Default` by:
 
@@ -358,7 +358,7 @@ It should begin fetching blocks from the other peers.
   ```
 
 
-## (Optional) Step 4 Quicksync
+## Step 4 Quicksync (Optional) 
 
 Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “Quicksync” service to make the process more efficient for our users. 
 
