@@ -45,7 +45,7 @@ First of all we would need to connect the MetaMask with the Cronos chain network
   - `https://evm.cronos.org` for **New RPC URL**; and 
   - `25` for **Chain ID**, 
   - `CRO` for the symbol, and
-  - `https://cronos.org/explorer/` for the **Block explorer URL** as below:
+  - `https://cronoscan.com/` for the **Block explorer URL** as below:
 
     <img src="./assets/3.png" width="350" />
 
