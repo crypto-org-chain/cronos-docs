@@ -358,7 +358,7 @@ It should begin fetching blocks from the other peers.
   ```
 
 
-## (Optional) Step 4 Quicksync: 
+## (Optional) Step 4 Quicksync
 
 Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “Quicksync” service to make the process more efficient for our users. 
 
