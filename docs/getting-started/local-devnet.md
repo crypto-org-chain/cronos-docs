@@ -36,7 +36,28 @@ please refer to our public testnet documentation which will be released shortly.
 
 By following this tutorial, you can compile and run the latest development version of Cronos testnet from scratch. It is intended for testing purpose only.
 
-### Install `cronosd`
+
+## Overview
+
+We will be using [pystarport](https://github.com/crypto-org-chain/chain-main/tree/master/pystarport), a dedicated script similar to [cosmos starport](https://github.com/tendermint/starport) without the scaffolding feature to build a local development network with multiple validators. Or using a shell script init.sh to build a local development network with a single validator.
+
+
+## Pre-requisites
+
+### Option 1. Using `pystarport`
+
+- Python > 3.7.3
+- [cronosd](https://github.com/crypto-org-chain/cronos)
+
+To install pystarport, run:
+
+```
+$ git clone https://github.com/crypto-org-chain/cronos.git
+$ cd cronos
+$ pip3 install pystarport
+```
+
+### Option 2. Using Shell script
 
 Install the binded version, which install cronosd together, and find it by the absolute path:
 
@@ -59,38 +80,15 @@ $ cronosd version
 [version-g<commit_hash>]
 ```
 
-for using Pystarport only (Optional)
-```bash
-$ python3 -m pip install pystarport
-```
+
+
 
 ## Step 1. Customize your devnet 
 
 _Note_: You can skip this section and start a local devnet without customization.
 
-### Option 1. Using Shell script
-You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init_cronos_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
 
-```yaml
-### customize the name of your key, the chain-id and moniker of the node ###
-  KEY="mykey"
-  CHAINID="cronos_777-1"
-  MONIKER="localtestnet"
-.......
-### specify the default keyring back-backend to be 'test' for convenience ###
-  cronosd config keyring-backend test
-  cronosd config chain-id $CHAINID
-.......
-# Allocate genesis accounts (cosmos formatted addresses)
-  cronosd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
-# Sign genesis transaction
-  cronosd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
-```
-
-The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
-
-### Option 2. Using `pystarport`
-[Pystarport](https://github.com/crypto-com/pystarport) is like a cosmos starport without the scaffolding feature. it's mainly used for development and testing. It's developed for the Crypto.org Chain, but it can also be used for any cosmos-sdk based projects.
+### Option 1. Using `pystarport`
 
 You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for example:
 
@@ -114,42 +112,63 @@ You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for 
 ```
 The default configuration will give us two devnet validators with the chain-id `cronos_777-1`; three accounts `community`, `signer1` and `signer2` with some allocated funds at the genesis.
 
+### Option 2. Using Shell script
+You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init_cronos_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
+
+```yaml
+### customize the name of your key, the chain-id and moniker of the node ###
+  KEY="mykey"
+  CHAINID="cronos_777-1"
+  MONIKER="localtestnet"
+.......
+### specify the default keyring back-backend to be 'test' for convenience ###
+  cronosd config keyring-backend test
+  cronosd config chain-id $CHAINID
+.......
+# Allocate genesis accounts (cosmos formatted addresses)
+  cronosd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend test
+# Sign genesis transaction
+  cronosd gentx $KEY 1000000000000000000000aphoton --keyring-backend test --chain-id $CHAINID
+```
+
+The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
+
+
 ## Step 2. Start the devnet
 
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
-### Option 1. Using Shell script
-Start a devnet node
+### Option 1. Using `pystarport`
+
 ```sh
-$ ./init.sh
-```
-
-### Option 2. Using `pystarport`
-
-To start devnet node with `pystarport`, you can choose either one of the commands:
-
-`pystarport serve` is replacing the existing data with the new one (e.g. tx history, account balance, node config).
-
-```bash
 $ pystarport serve --config ./scripts/cronos-devnet.yaml
 ```
-or `pystarport start` is preserving and starting with the existing data
+
+Afterwards, keys will be generated according to the configuration specified, the accounts' information is generated in `data/cronos_777-1/accounts.json`, for example:
+
+```json
+[
+  {"name": "validator", "type": "local", "address": "crc12luku6uxehhak02py4rcz65zu0swh7wjsrw0pp", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"Am5xCmKjQt4O1NfEUy3Ly7r78ZZS7WeyN++rcOiyB++s\"}"}, 
+  {"name": "validator", "type": "local", "address": "crc18z6q38mhvtsvyr5mak8fj8s8g4gw7kjjtsgrn7", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"AkJ4WnUHRFLWKmrCInD/uPsByTddC6coh66ADcYZMV0b\"}"}, 
+  {"name": "community", "type": "local", "address": "crc1czp5lh3ke85rruvg0vawec02perp2ul678x46r", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"ApQozcgkbLxyWF5VYXBG7EY+R9p0IcyqngqaOz7FPJib\"}", "mnemonic": "figure outdoor option kitten force avocado hair rug shoulder win engage coconut record lounge insane royal crime powder dwarf monster car thing bench bamboo"}, 
+  {"name": "signer1", "type": "local", "address": "crc1gt7cfua508jfexuf9ea4536sdqkv62dsxxalc2", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"A/93qfsXgEexTmtrkcq+LtFfclUU3FjyJuOVeCR+qi/1\"}", "mnemonic": "pencil shrug wire extra bonus deny ride trap science clarify lonely profit rural quote hamster fuel pig speak total lumber bench canyon possible execute"}, 
+  {"name": "signer2", "type": "local", "address": "crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk", "pubkey": "{\"@type\":\"/ethermint.crypto.v1.ethsecp256k1.PubKey\",\"key\":\"AkcixU8yAi547Oe9lUUMaQU4baQGCZU5ju2YeIZdaSOD\"}", "mnemonic": "cruel install century disease tired glass lesson mushroom donor usual uncover fly post stamp busy utility certain obscure whisper scene order want sentence reduce"}
+]
+```
+
+Kindly save these mnemonics for key recovery later.
+
+Blocks are now being generated! You can view the blockchain data by the rpc port of the `awesome0` (first node): [http://localhost:26657/](http://localhost:26657/).
+Furthermore, you can also use the swagger doc of `awesome0` at [http://localhost:26654/swagger/](http://localhost:26654/swagger/).
+
+It is worth mentioning that the `serve` command would truncate all the blocks previously generated and regenerate a new genesis block, which means you'll also lose all of your transaction records. If you wish to restart the chain with the existing blocks, please run `pystarport` with `start` command:
 
 ```bash
 $ pystarport start --config ./scripts/cronos-devnet.yaml
 ```
 
-Get node status (Optional)
-```bash
-$ pystarport supervisorctl status
-```
 
-Stop all nodes (Optional)
-```bash
-$ pystarport supervisorctl stop all
-```
 
-Blocks are now being generated! You can verify and visit the rpc port [http://localhost:26657/](http://localhost:26657/) to view the blockchain data.
 
 ## Step 3. Interact with the chain
 
@@ -157,63 +176,49 @@ After the chain has been started, we may open up another terminal and start inte
 
 ### Keys management
 
-A key will be generated according to the configuration specified in `init.sh`. By default, the key will be stored in the `--keyring-backend test` and the name of the key will be `mykey` . In another terminal window or tab,
+#### Restore the key
 
-```
-$ cronosd keys list
-```
+For Pystarport:
 
-You will be able to list the address with allocated initial funds, for example:
+As in the last section, pre-created Hierarchical Deterministic (HD) mnemonic with genesis funds inside are prepared for you in the Devnet. To gain access to the funds, kindly restore the key by using the mnemonic before moving on to the next step.
 
-```json
-[
-  {
-    "name": "mykey",
-    "type": "local",
-    "address": "tcrc1cfmydxvlz0a3yeeh4an5ay94lyfv0flw5svzez",
-    "pubkey": "{\"@type\":\"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey\",\"key\":\"AssVo7smZ323alb4hq2SIJ/TZw2rJeslZlZK7EGqyC8H\"}"
-  }
-]
-```
+**Note**: The keys are stored in your operating system by default, we will use `--keyring-backend test` for simplicity. You may refer to a more detailed explanation [here](../wallets/cli.md#the-keyring-keyring-backend-option). 
 
-or get the info for recovery from accounts.json file
-```
-/cronos/data/cronos_777-1/accounts.json
-```
+- Firstly, restore the key name as `signer2`:
 
-You will also be able to restore the key by using the mnemonic. The keys are stored in the operating system by default, we use `--keyring-backend` test for simplicity.
 
-```
-$ cronosd keys add mykey --recover --keyring-backend test
+```sh
+$ cronosd keys add signer2 --recover --keyring-backend test
 ```
 
 ```bash
 Enter your bip39 mnemonic
-sense slim three rally device lazy slice thumb bridge general essence seven diamond broom scan tell cactus into exotic paddle ignore tape unaware also
-- name: mykey
+cruel install century disease tired glass lesson mushroom donor usual uncover fly post stamp busy utility certain obscure whisper scene order want sentence reduce
+- name: signer2
   type: local
-  address: tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl
+  address: crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A9J4ELPAqyyrmypT9CtOVyWrO66eEXum3d8Z2mV7MS6O"}'
   mnemonic: ""
 ```
+
 
 
 ### Check account balance
 
 You can check the account balance by
 
-```
-cronosd q bank balances tcrc14r2pnjm3v8sng8f9y9can4luykrltz36y6vcsp -o json | jq
+```sh
+cronosd q bank balances crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk -o json | jq
 ```
 
 For example:
 
-```bash
+```json
 {
   "balances": [
     {
-      "denom": "aphoton",
-      "amount": "99999000000000000000000000"
+      "denom": "basetcro",
+      "amount": "30000000000000000000000"
     }
   ],
   "pagination": {
@@ -223,7 +228,7 @@ For example:
 }
 ```
 
-We can see that there is `99999000000000000000000000` aphoton in this address.
+We can see that there is `30000000000000000000000` basetcro in this address.
 
 ### Transfer token to another address
 
@@ -235,40 +240,31 @@ We can see that there is `99999000000000000000000000` aphoton in this address.
 
   which gives, for example:
 
-  ```
+ ```bash
   - name: Bob
   type: local
-  address: tcrcxwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
-  pubkey: tcrcpub17weu6qepqwaqek0we9a6ujsnmc3ke3xwkpl68qylcfkazv5tm04y80x004gy2uy3g8p
+  address: crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
+  pubkey: '{"@type":"/ethermint.crypto.v1.ethsecp256k1.PubKey","key":"AsR5N3GJpk6TiN4EDYv7SsW/eKPvaLBkiEh/FFwcNvUoG"}'
   mnemonic: ""
   threshold: 0
   pubkeys: []
-  **Important** write this mnemonic phrase in a safe place.
-  It is the only way to recover your account if you ever forget your password.
-  refuse tray sauce area battle decide slot tilt position refuse blouse sauce mimic panic combine know stem section sustain reveal clever final assume flash
   ```
 
-- Now we can transfer tokens to `Bob`, for example you can send `1aphoton` to Bob's address by
+- Now we can transfer tokens to `Bob`, for example you can send `1cro` to Bob's address by
 
+```sh
+  $ cronosd tx bank send signer1 crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt 1cro --keyring-backend test --chain-id cronosd
   ```
-  $ cronosd tx bank send mykey tcrc1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26 1aphoton --keyring-backend test
-  ```
-
-- Check the transaction detail by hash
-  ```
-  $ cronosd query tx --type=hash 41D23A35EAB0BE5879D25E761F906B2FAD7349F34BFFC96E9D1DE8EEE6B82D9F
-  ```
-
 
 - Lastly, check balance of Bob's address:
+  ```sh
+  $ cronosd query bank balances crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
   ```
-  $ cronosd query bank balances tcrc1xwxk09wds0u2k6l39sp0e8ajx3jkw6dm0z5c26
-  ```
-  and we can see that 1 `aphoton` has already been transferred:
-  ```
+  and we can see that 1 `basetcro` has already been transferred:
+  ```bash
   balances:
   - amount: "1"
-  denom: aphoton
+  denom: basetcro
   pagination:
   next_key: null
   total: "0"
