@@ -261,9 +261,8 @@ public class LoadPlayerAssets : MonoBehaviour
   We are using `PlayerPrefs.GetString("Account")` to dynamically fetch the address when connecting to DefiConnect. You can replace this with the actual account address for testing purposes like so: `string account = "account_address"`
 :::
 
-### Enable DefiConnect
-To ensure that the Unity Game connects to the DefiConnect wallet, we'll have to replace the code in `assets/webGLTemplates/Web3GL-2020x/web3/index.js` with the content available here.
-To ensure that the Unity Game connects to the DefiConnect wallet, we'll have to replace the code in `assets/webGLTemplates/Web3GL-2020x/web3/index.js` with the content available [here](https://github.com/crypto-org-chain/dev-utils/blob/main/defi-connect-unity-web3/index.js).
+### Enable DefiConnect and WalletConnect
+To ensure that the Unity Game connects to DefiConnect or WalletConnect, we'll have to replace the code in `assets/webGLTemplates/Web3GL-2020x/web3/index.js` with the content available [here](https://github.com/crypto-org-chain/dev-utils/blob/main/defi-connect-unity-web3/index.js).
 
 :::tip Note
 You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://infura.io/) 
