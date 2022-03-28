@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: Discover the governance process of Cronos and learn how to submit your proposal.
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | The Proposal Process
   - name: "twitter:site"
@@ -21,8 +21,8 @@ meta:
   - name: "twitter:description"
     content: Discover the governance process of Cronos and learn how to submit your proposal.
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/chain-details/govprocess.html
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/chain-details/govprocess.html
 ---
 
 # The Proposal Process
@@ -95,4 +95,4 @@ The voting period is currently 14 days, and the vote can be changed anytime befo
 
 Please note that it is a WIP. The governance will further be explored down the line and some parts in this documentation are in development, so please use this document as a reference and seek feedback when using this information.
 
-For more details about governance transaction, queries, and relevant network parameters, please visit the [gov section](https://cronos.crypto.org/docs/chain-details/module_overview.html#gov).
+For more details about governance transaction, queries, and relevant network parameters, please visit the [gov section](https://cronos.org/docs/chain-details/module_overview.html#gov).

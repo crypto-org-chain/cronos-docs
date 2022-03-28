@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: cronosd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | cronosd
   - name: "twitter:site"
@@ -21,8 +21,8 @@ meta:
   - name: "twitter:description"
     content: cronosd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/wallets/cli.html
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/wallets/cli.html
 ---
 
 # cronosd

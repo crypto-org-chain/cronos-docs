@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: Learn how to setup nodes, different SDK modules and our all-in-one command-line interface cronosd in this technical documentation.
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Getting Started
   - name: "twitter:site"
@@ -21,27 +21,29 @@ meta:
   - name: "twitter:description"
     content: Learn how to setup nodes, different SDK modules and our all-in-one command-line interface cronosd in this technical documentation.
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/getting-started/
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/getting-started/
 ---
 
 # Getting Started
 
 Thanks for your interest in Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `cronosd`, and different SDK modules we utilized in the Cronos Chain.
 
-### What's next?
+### What is Cronos Chain?
 
-#### Crypto.org Cronos Chain
+Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. An open-source and permission-less Layer 1 chain, Cronos aims to massively scale the DeFi, GameFi, and overall Web3 user community by providing builders with the ability to instantly port apps and crypto assets from other chains while benefiting from low transaction fees, high throughput, and fast finality.
+
+#### Cronos Chain Mainnet Beta
 
 - [Join Cronos Mainnet Beta](./cronos-mainnet.md):
 
   Try running Full Node connected Cronos Mainnet Beta.
-  
+
 - [Setup your Metamask](./metamask.md):
 
   Setup Metamask and connect to Cronos Mainnet Beta.
 
-#### Crypto.org Cronos Testnet
+#### Cronos Testnet
 
 - [Join Cronos Testnet](./cronos-testnet.md):
 
@@ -51,13 +53,13 @@ Thanks for your interest in Cronos Chain. In this technical documentation, we ha
 
 - **Devnet** - [Build latest development version](./local-devnet.md):
 
-  Try running the latest development network (*Devnet*)
+  Try running the latest development network (_Devnet_)
 
 ### Useful links
 
  <!---TODO: UPDATE LINKS--->
 
-- [Project Website](https://cronos.crypto.org)
+- [Project Website](https://cronos.org)
 - [Project Repository](https://github.com/crypto-org-chain/cronos)
 - Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
 - Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da&label=Crypto.org Chain)](https://discord.gg/pahqHz26q4)
