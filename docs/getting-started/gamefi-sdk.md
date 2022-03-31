@@ -72,15 +72,15 @@ To connect your Cronos Assets to your Unity project, you can add the following s
 <img src="./assets/gameFi/prefab_scripts.png" />
 
 ### Get Cronos Balance
-- Script Path: `Assets/Web3Unity/Scripts/Prefabs/EVM/BalanceOfCronos.cs`
-- Prefab Path: `Assets/Web3Unity/Prefabs/EVM/BalanceOfCronos.prefab`
+- Script Path: `Assets/Web3Unity/Scripts/Prefabs/EVM/EVMBalanceOfCronos.cs`
+- Prefab Path: `Assets/Web3Unity/Prefabs/EVM/EVMBalanceOfCronos.prefab`
 
 ```csharp
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BalanceOfCronos : MonoBehaviour
+public class EVMBalanceOfCronos : MonoBehaviour
 {
     async void Start()
     {
@@ -111,7 +111,7 @@ public class ERC721BalanceOfCronos : MonoBehaviour
     async void Start()
     {
         string chain = "cronos";
-        string network = "Cronos Mainnet";
+        string network = "mainnet";
         string contract = "CONTRACT_ADDRESS";
         string account = "ACCOUNT_ADDRESS";
         string rpc = "https://evm-cronos.crypto.org";
@@ -124,8 +124,8 @@ public class ERC721BalanceOfCronos : MonoBehaviour
 Drag the prefab into the sample scene and play in order to run the script. The balance should be printed below in the Unity output.
 
 ### Get NFT Owner
-- Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/BalanceOfCronos.cs`
-- Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/BalanceOfCronos.prefab`
+- Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ERC721OwnerOfCronos.cs`
+- Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ERC721OwnerOfCronos.prefab`
 
 ```csharp
 using System.Collections;
@@ -202,11 +202,11 @@ Drag the prefab into the sample scene and play in order to run the script. The Q
 This section will illustrate how to build the scenes to login and load a player's NFT assets.
 
 ::: tip NOTE
-  In order to use the Cronos Network, you will have to add the Network ID and Name in the network.js file in the `Assets/WebGLTemplates/Web3GL-2020/` folder.
+  In order to use the Cronos Network, you will have to add the Network ID and Name in the network.js file in the `Assets/WebGLTemplates/Web3GL-2020x/` folder.
 :::
 
 ### Load NFT on Login 
-Firstly, lets create a new script. Instead of the prefab, we will create a Quad 3D object in the sample scene and add the script as a component to the Quad object.  
+To ensure that the NFT loads conditionally after successfully connecting to a wallet, you can update the `ImportNFTTextureCronos.cs` file with the content below. 
 
 - Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ImportNFTTextureCronos.cs`
 
@@ -217,7 +217,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class LoadPlayerAssets : MonoBehaviour
+public class ImportNFTTextureCronos : MonoBehaviour
 {
     public class Response {
         public string image;
