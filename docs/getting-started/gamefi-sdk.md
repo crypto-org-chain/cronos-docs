@@ -39,7 +39,7 @@ This documentation currently supports WebGL, IOS and Android builds. Other platf
 ### Other Requirements
 - **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode. 
 - **DefiConnect**: [DefiConnect](https://chrome.google.com/webstore/detail/cryptocom-wallet-extensio/hifafgmccdpekplomjjkcfgodnhcellj) is required for the Login Example below.
-- Assets: Some of the scenes require assets to work properly. If you do not have any assets you can always use the Cronos Testnet and generate some ERC721 test assets. You can read more around integration methods [here](https://cronos.crypto.org/docs/resources/chain-integration.html#useful-links]).
+- **Assets**: Some of the scenes require assets to work properly. If you do not have any assets you can always use the Cronos Testnet and generate some ERC721 test assets. You can read more around integration methods [here](https://cronos.crypto.org/docs/resources/chain-integration.html#useful-links]).
 
 ### Download and install Unity
 
@@ -259,13 +259,6 @@ public class LoadPlayerAssets : MonoBehaviour
 ```
 ::: tip NOTE
   We are using `PlayerPrefs.GetString("Account")` to dynamically fetch the address when connecting to DefiConnect. You can replace this with the actual account address for testing purposes like so: `string account = "account_address"`
-:::
-
-### Enable DefiConnect and WalletConnect
-To ensure that the Unity Game connects to DefiConnect or WalletConnect, we'll have to replace the code in `assets/webGLTemplates/Web3GL-2020x/web3/index.js` with the content available [here](https://github.com/crypto-org-chain/dev-utils/blob/main/defi-connect-unity-web3/index.js).
-
-:::tip Note
-You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://infura.io/) 
 :::
 
 ### Build the Scenes
