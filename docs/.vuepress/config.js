@@ -42,7 +42,7 @@ module.exports = {
           },
          {
               text: "Block Explorer",
-              link: "https://cronos-explorer.crypto.org"
+              link: "https://cronoscan.com"
           }
 
 //          {
@@ -72,24 +72,20 @@ module.exports = {
         text: "Bridge",
         items: [
           {
-            text: "From Crypto.com App",
-            link: "/bridge/cdcapp.md"
+            text: "Via Crypto.com App and Exchange",
+            link: "/bridge/app_n_ex.md"
           },
           {
-            text: "From Crypto.com Exchange",
-            link: "/bridge/cdcex.md"
-          },
-          {
-            text: "From Crypto.org Chain (Cronos Bridge WebApp)",
-            link: "/bridge/webapp.md"
+            text: "From other chains (Cronos Bridge WebApp)",
+            link: "/bridge/other_chain#via-cronos-bridge-web-app"
           }, 
           {
-            text: "From Crypto.org Chain (Crypto.com DeFi Wallet)",
-            link: "/bridge/defiwallet.md"
+            text: "From other chains (Crypto.com DeFi Wallet)",
+            link: "/bridge/other_chain#via-crypto-com-defi-wallet"
           },      
           {
-            text: "From Crypto.org Chain (Crypto.org Chain Desktop Wallet)",
-            link: "/bridge/desktop.md"
+            text: "From other chains (Crypto.org Chain Desktop Wallet)",
+            link: "/bridge/other_chain#via-crypto-org-chain-desktop-wallet"
           }                   
         ]
       },     
@@ -113,7 +109,11 @@ module.exports = {
           {
             text:"Web extension integration",
             link: "/resources/web-extension-integration"
-          },              
+          },
+          {
+            text:"Desktop wallet integration",
+            link: "/resources/desktop-wallet-integration"
+          },
           {
             text: "Node Setup and RPC note",
             link: "/resources/node-and-rpc-setup-notes"
@@ -152,15 +152,13 @@ module.exports = {
         "cli"
       ],
       "/bridge/": [
-        "cdcapp",
-        "cdcex",
-        "webapp",
-        "defiwallet",
-        "desktop"
+        "app_n_ex",
+        "other_chain"
       ],
       "/resources/": [
         "chain-integration",
         "web-extension-integration",
+        "desktop-wallet-integration",
         "node-and-rpc-setup-notes",
         "cosmos-grpc-docs",
         "technical-glossary"

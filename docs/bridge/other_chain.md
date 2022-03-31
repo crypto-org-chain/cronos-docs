@@ -1,6 +1,8 @@
-# From Crypto.org Chain (Cronos Bridge Web App)
+# From other chains
 
-## Transfer assets from Crypto.org Chain using Cronos Bridge Web App
+## Via Cronos Bridge Web App
+
+### Transfer assets from Crypto.org Chain using Cronos Bridge Web App
 
 ### Introduction
 
@@ -105,7 +107,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 <img src="./assets/5_history_table.png"  alt="centered image" />
 
 
-## Add your Terra station wallet to Keplr wallet
+### Add your Terra station wallet to Keplr wallet
 
 1. Create and log in to your Keplr wallet
 
@@ -135,7 +137,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 
 <img src="./assets/terra7.png"  alt="centered image" />
 
-## FAQ
+### FAQ
 
 ### What are the fees involved?
 
@@ -195,3 +197,100 @@ For any bug reports, or feedback please contact contact.bridge@crypto.org. This 
 
 - As with any decentralized application, there is a degree of risk related to code exploits and hacking.
 - Our bridge code is publicly available. We leverage open-source code from the [IBC protocol](https://ibcprotocol.org/) and [Gravity Bridge](https://github.com/cosmos/gravity-bridge) projects.
+
+
+## Via Crypto.com DeFi Wallet
+
+### Transfer assets from Crypto.org Chain using Crypto.com DeFi Wallet in-built Cronos bridge UI 
+
+Crypto.com DeFi Wallet has integrated with the Cronos Bridge and has provided a front-end UI to allow all of its wallet users to seamlessly transfer assets over to Cronos straight from the DeFi Wallet. Here’s how you can do so:
+
+
+### Step-by-step Walkthrough
+
+**Step 1**:  Accessing the Cronos Bridge on the DeFi Wallet
+
+You can access the Cronos Bridge either on the DeFi Wallet homepage or directly in your CRO balance page
+
+<img src="./assets/defiwallet1-1.png" width="300" alt="centered image" />
+<img src="./assets/defiwallet1-2.png" width="300" alt="centered image" />
+
+**Step 2**: Select “From” Crypto.org Chain as the origination chain and “To” Cronos as the destination chain
+
+Only the `Crypto.org Chain <=> Cronos bridge` will be available on Day 1. The `Ethereum <=> Cronos` bridge will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.com DeFi wallet, you will automatically have a Crypto.org Chain wallet address and Cronos chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.  
+
+
+<img src="./assets/defiwallet2-1.png" width="300" alt="centered image" />
+<img src="./assets/defiwallet2-2.png" width="300" alt="centered image" />
+
+**Step 3**: Enter the amount of asset you want to transfer
+
+Once you have selected the token you want to transfer (CRO), you will have to enter the amount you want to transfer. The balance of CRO tokens you have on the Crypto.org Chain will automatically be detected. 
+
+During the promotional launch period, the network fee incurred by the bridge will be waived. You will still be liable to pay a gas fee directly on your preferred wallet charged by the source network.
+
+<img src="./assets/defiwallet3.png" width="300" alt="centered image" />
+
+**Step 4**: Confirm the transaction
+
+Upon clicking “Transfer CRO”, a confirmation page will appear showcasing the Network Fee and Bridge Fee. Click “Confirm to Transfer” to proceed with the transfer.
+
+<img src="./assets/defiwallet4.png" width="300" alt="centered image" />
+
+**Step 5**: Await for Bridge confirmation 
+
+Once you click confirm, you will be taken to an overview page showcasing the status of your bridge transfer. The bridging process typically takes around 1 minute to complete. 
+
+<img src="./assets/defiwallet5.png" width="300" alt="centered image" />
+
+**Step 6**: Bridge transfer completed!
+
+A “Completed” message will be displayed confirming that the transaction has been completed successfully. You should now see the corresponding value of CRO that you transferred from your Crypto.org Chain wallet on your Cronos wallet. You may click on the transaction IDs which will link you to the explorer for more information regarding the transfer. 
+ 
+Alternatively, you may view your transaction history on the upper right hand corner of the DeFi Wallet’s Cronos Bridge landing page to check the status of any pending transactions or details of past transactions.
+
+<img src="./assets/defiwallet6.png" width="300" alt="centered image" />
+
+
+## Via Crypto.org Chain Desktop Wallet
+
+### Transfer assets from Crypto.org Chain using Crypto.org Chain Desktop Wallet
+
+Crypto.org Chain Desktop Wallet has integrated with the Cronos Bridge to allow all of its wallet users to seamlessly transfer assets over to Cronos straight from the Crypto.org Chain Desktop Wallet. Here’s how you can do so:
+
+
+### Step-by-step Walkthrough
+
+**Step 1**: Select the Cronos Bridge option on the left hand panel
+<img src="./assets/desktop1.png"  alt="centered image" />
+
+**Step 2**: Select “From” Crypto.org Chain as the origination chain and “To” Cronos Chain as the destination chain
+
+Only the `Crypto.org Chain <=> Cronos` route will be available on Day 1. The `Ethereum <=> Cronos` route will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.org Chain Desktop Wallet, you will automatically have a Crypto.org Chain wallet address and Cronos Chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.
+
+
+**Step 3**: Enter the amount of CRO you want to transfer and click “Transfer Asset”
+
+You will be able to verify the amount that you will receive and your Cronos address after entering the amount of CRO that you want to transfer. Click “Transfer Asset” and enter your Password to proceed.
+ 
+<img src="./assets/desktop3.png"  alt="centered image" />
+
+
+**Step 4**: Confirm the transaction
+
+You will be given an overview of the bridge transaction, including the network fees that you will have to pay for the transaction.Once you have confirmed the CRO amount and the destination address, click “Confirm” to proceed.
+
+Please note that once you’ve clicked the “Confirm” button, there will be no going back.
+
+<img src="./assets/desktop4.png"  alt="centered image" />
+
+**Step 5**: Await for Bridge confirmation 
+
+After the transfer is initiated, the CRO will be bridged from the Crypto.org Chain to the Cronos Chain. The bridging process typically takes about a few minutes to complete. Once it’s done, you will see an updated balance in your receiving Cronos address.
+
+Additionally, you will be able to view the Transaction in further details by clicking the transaction hash which directs you to the Crypto.org Chain explorer.And you can always review your latest bridge transfer history by clicking the icon at the top-right corner. 
+
+<img src="./assets/desktop5-1.png"  alt="centered image" />
+<img src="./assets/desktop5-2.png"  alt="centered image" />
+
+

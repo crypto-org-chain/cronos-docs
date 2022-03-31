@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: Brief description of all the mentioned network parameters
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | List of parameters
   - name: "twitter:site"
@@ -21,8 +21,8 @@ meta:
   - name: "twitter:description"
     content: Brief description of all the mentioned network parameters
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/chain-details/parameters.html
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/chain-details/parameters.html
 ---
 
 # List of parameters

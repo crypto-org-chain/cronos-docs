@@ -20,7 +20,7 @@ meta:
   - name: "og:description"
     content: View our latest chain documentation on Cronos. Sign up to our newsletter to get the latest updates and read the documentation to connect to our Testnet. 
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Documentation
   - name: "twitter:site"
@@ -30,8 +30,8 @@ meta:
   - name: "twitter:description"
     content: View our latest chain documentation on Cronos. Sign up to our newsletter to get the latest updates and read the documentation to connect to our Testnet. 
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/
 ---
 
 The documentation in this repository site is meant to provide specifications and implementation details that will be useful to third party developers or contributors to the main [repository](https://github.com/crypto-com/chain-docs-nextgen).

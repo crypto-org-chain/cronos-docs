@@ -11,7 +11,7 @@ meta:
   - name: "og:description"
     content: Learn how to deploy a smart contract to Cronos using Solidity, both Truffle and Hardhat are included in this technical documentation.
   - name: "og:image"
-    content: https://cronos.crypto.org/og-image.png
+    content: https://cronos.org/og-image.png
   - name: "twitter:title"
     content: Cronos | Crypto.org EVM Chain | Deploy Smart Contract
   - name: "twitter:site"
@@ -21,8 +21,8 @@ meta:
   - name: "twitter:description"
     content: Learn how to deploy a smart contract to Cronos using Solidity, both Truffle and Hardhat are included in this technical documentation.
   - name: "twitter:image"
-    content: https://cronos.crypto.org/og-image.png
-canonicalUrl: https://cronos.crypto.org/docs/getting-started/cronos-smart-contract.html
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/getting-started/cronos-smart-contract.html
 ---
 
 # Cronos: Deploy Smart Contract
@@ -43,7 +43,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 `Nodejs v10` is suggested 
 
 ### Sufficient fund on deployer address
-You can access to [faucet](https://cronos.crypto.org/faucet) to obtain testnet TCRO and [explorer](https://cronos.crypto.org/explorer/testnet3/) to view the address details.
+You can access to [faucet](https://cronos.org/faucet) to obtain testnet TCRO and [explorer](https://cronos.org/explorer/testnet3/) to view the address details.
 
 ### Git clone `smart-contract-example`
   ```bash
@@ -84,7 +84,7 @@ You can access to [faucet](https://cronos.crypto.org/faucet) to obtain testnet T
   
 
 ### Step 6. Endpoints setting
-By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-3.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.org/` by making changes to `networks` in `truffle-config.js`, for example:
 
 ```json
   networks: {
@@ -93,7 +93,7 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
       network_id: "*",       // Any network (default: none)
     },
     testnet: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), // TODO
+      provider: new HDWalletProvider(getHDWallet(), "https://evm-t3.cronos.org/:8545"), // TODO
       network_id: "*",
       skipDryRun: true
     },
@@ -146,7 +146,7 @@ Correct balance will be shown on Metamask page
   ```
 
 ### Step 6. Endpoints setting
-By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://cronos-testnet-3.crypto.org` by making changes to `networks` in `truffle-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"`  - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.org/` by making changes to `networks` in `truffle-config.js`, for example:
 
 ```json
   networks: {
@@ -155,7 +155,7 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
       accounts: getHDWallet(),
      },
     testnet: {
-      url: "https://cronos-testnet-3.crypto.org:8545",
+      url: "https://evm-t3.cronos.org/:8545",
       accounts: getHDWallet(),
     },
   },
