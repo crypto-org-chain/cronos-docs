@@ -269,12 +269,12 @@ public class ImportNFTTextureCronos : MonoBehaviour
 :::
 
 ### Build the Scenes
-To build the Game Login example, you need to go to `File/Build Settings` and select your WebGL, IOS or Androi Build Settings. In this example, we will build using the WebGL method.
+To build the Game Login example, you need to go to `File/Build Settings` and select your WebGL, IOS or Androi Build Settings. In this example, we will build using the WebGL method. To build with the DefiWallet option, you will have to select the Cronos DefiWallet Template in the Player -> Resolution and Presentation settings
 
 <img src="./assets/gameFi/build_settings.png" />
 
 ::: tip NOTE
-  Make sure to select the right WebGL Template in the Player -> Resolution and Presentation settings.
+  Make sure to select the DefiWallet Template in the Player -> Resolution and Presentation settings.
 :::
 
 On successfull completion, you will be able to login to your DefiConnect wallet. On succesfull login, the scene will load any textures from NFT assets you own. 
