@@ -48,6 +48,13 @@ You can refer to the [Unity Download Section](https://unity.com/download)
 ### Unity Build Modules
 Depending on your preferred build settings we recommend to install platform packages for `WebGL`, `IOS` and `Android` from your Unity build settings.
 
+### RPC Method
+You can use the following RPC methods. By default, we use the mainnet rpc method.
+
+- **Mainnet**: `https://evm-dev.cronos.org`
+
+- **Testnet**: `https://evm-dev-t3.cronos.org`
+
 ## Step 1. Import web3.unity Assets
 
 ### Git clone `web3.unity.git`
@@ -87,8 +94,8 @@ public class EVMBalanceOfCronos : MonoBehaviour
         string chain = "cronos";
         string network = "mainnet"; 
         string account = "ACCOUNT_ADDRESS";
-        string rpc = "https://evm-cronos.crypto.org";
-
+        string rpc = "https://evm-dev.cronos.org";
+        
         string balance = await EVM.BalanceOf(chain, network, account, rpc);
         print(balance);
     }
@@ -114,7 +121,7 @@ public class ERC721BalanceOfCronos : MonoBehaviour
         string network = "mainnet";
         string contract = "CONTRACT_ADDRESS";
         string account = "ACCOUNT_ADDRESS";
-        string rpc = "https://evm-cronos.crypto.org";
+        string rpc = "https://evm-dev.cronos.org";
 
         int balance = await ERC721.BalanceOf(chain, network, contract, account, rpc);
         print(balance);
@@ -140,7 +147,7 @@ public class ERC721OwnerOfCronos : MonoBehaviour
         string network = "mainnet"; 
         string contract = "CONTRACT_ADDRESS";
         string tokenId = "TOKEN_ID";
-        string rpc = "https://evm-cronos.crypto.org";
+        string rpc = "https://evm-dev.cronos.org";
 
         string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
         print(ownerOf);
@@ -174,7 +181,7 @@ public class ImportNFTTextureCronos : MonoBehaviour
         string network = "mainnet"; 
         string contract = "CONTRACT_ADDRESS";
         string tokenId = "TOKEN_ID";
-        string rpc = "https://evm-cronos.crypto.org";
+        string rpc = "https://evm-dev.cronos.org";
 
         // fetch uri from chain
         string uri = await ERC721.URI(chain, network, contract, tokenId, rpc);
@@ -230,7 +237,7 @@ public class ImportNFTTextureCronos : MonoBehaviour
         string account = PlayerPrefs.GetString("Account");
         string contract = "CONTRACT_ADDRESS";
         string tokenId = "TOKEN_ID";
-        string rpc = "https://evm-cronos.crypto.org";
+        string rpc = "https://evm-dev.cronos.org";
 
         string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
 
@@ -289,7 +296,7 @@ Get the current latest block number
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
-string rpc = "https://evm-cronos.crypto.org";
+string rpc = "https://evm-dev.cronos.org";
 
 int blockNumber = await EVM.BlockNumber(chain, network, rpc);
 print(blockNumber);
@@ -300,7 +307,7 @@ Get the balance of the native blockchain
 string chain = "cronos";
 string network = "mainnet";
 string account = "ACCOUNT_ADDRESS";
-string rpc = "https://evm-cronos.crypto.org";
+string rpc = "https://evm-dev.cronos.org";
 
 string balance = await EVM.BalanceOf(chain, network, account, rpc);
 print(balance);
@@ -321,7 +328,7 @@ Print Nonce.
 string chain = "cronos";
 string network = "mainnet";
 string account = "ACCOUNT_ADDRESS";
-string rpc = "https://evm-cronos.crypto.org";
+string rpc = "https://evm-dev.cronos.org";
 
 string nonce = await EVM.Nonce(chain, network, account, rpc);
 print(nonce);
@@ -335,7 +342,7 @@ string chain = "cronos";
 string network = "mainnet";
 string contract = "CONTRACT_ADDRESS";
 string account = "ACCOUNT_ADDRESS";
-string rpc = "https://evm-cronos.crypto.org";
+string rpc = "https://evm-dev.cronos.org";
 
 int balance = await ERC721.BalanceOf(chain, network, contract, account, rpc);
 print(balance);
@@ -347,7 +354,7 @@ string chain = "cronos";
 string network = "mainnet";
 string contract = "CONTRACT_ADDRESS";
 string tokenId = "TOKEN_ID";
-string rpc = "https://evm-cronos.crypto.org";
+string rpc = "https://evm-dev.cronos.org";
 
 string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
 print(ownerOf);
