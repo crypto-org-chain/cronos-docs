@@ -1,6 +1,6 @@
 # Unity Integration Documentation
 
-This section showcase the Chainsafe integration with Cronos chain, aiming to bring Unity games into the blockchain. Create your in game NFTs.
+This section showcase the Chainsafe integration with Cronos chain, aiming to bring Unity games into the Cronos ecosystem.
 
 ## Useful Links
 
@@ -15,68 +15,114 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 ## Pre-requisites
 
-1. Unity (Version 2020.3.25f1 or later)
-   - You may refer to [Unity official site](https://unity3d.com/get-unity/download)
-2. [Metamask browser extension](https://metamask.io/download/)
-   - For Cronos mainnet, you may refer to our [metamask integration documentation](https://cronos.crypto.org/docs/getting-started/metamask.html#connecting-to-the-cronos-mainnet-beta)
-   - Below is the configuration for Cronos Testnet
-     - Network Name: **Cronos Testnet**
-     - New RPC URL: **https://cronos-testnet-3.crypto.org:8545**
-     - Chain ID: **338**
-     - Currency Symbol: **TCRO**
-     - Block Explorer URL: **https://cronos.crypto.org/explorer/testnet3**
-   - Sufficient fund on deployer address
-     - [Testnet Faucet](https://cronos.crypto.org/faucet/)
+1. [Unity](https://unity3d.com/get-unity/download) (Version 2020.3.25f1 or later)
+2. [ChainSafe SDK](https://github.com/ChainSafe/web3.unity/releases)
+
+3. [Metamask browser extension](https://metamask.io/download/)
+
+- Below is the configuration of adding Cronos Network
+  - Network Name: **Cronos Mainnet**
+    - New RPC URL: **https://evm-dev.cronos.org/**
+    - Chain ID: **25**
+    - Currency Symbol: **CRO**
+    - Block Explorer URL: **https://cronoscan.com/**
+  ***
+  - Network Name: **Cronos Testnet**
+    - New RPC URL: **https://evm-dev-t3.cronos.org/**
+    - Chain ID: **338**
+    - Currency Symbol: **TCRO**
+    - Block Explorer URL: **https://cronos.org/explorer/testnet3**
+  - Sufficient fund on deployer address
+    - [Testnet Faucet](https://cronos.crypto.org/faucet/)
+
+---
+
+- For Crypto.com DeFi Wallet integration, please refer to our [documentation](https://cronos.org/docs/getting-started/gamefi-sdk.md#enable-deficonnect-and-walletconnect).
+
+---
 
 ## Get Started
 
-### Step 1. [Download the ChainSafe SDK (v1.0.14 release)](https://github.com/ChainSafe/web3.unity/releases/tag/v1.0.14)
+### Step 1. [Unity] Create a new project or open an existing project in Unity
 
-### Step 2. [Unity] Create a new project or open an existing project in Unity
+- You can also download the tutorial bolt kit from [Unity](https://assetstore.unity.com/packages/essentials/tutorial-projects/bolt-kit-platformer-tutorial-assets-168067) and import into the blank new project. Below are the steps of importing Tutorial Projects - Bolt Kit from Unity. See [Reference #1](#reference).
 
-You can also download the tutorial bolt kit from [Unity](https://assetstore.unity.com/packages/essentials/tutorial-projects/bolt-kit-platformer-tutorial-assets-168067) and import into the blank new project. Below are the steps of importing Tutorial Projects - Bolt Kit from Unity.
+### Step 2. [Unity] Download the latest ChainSafe SDK and import into the project.
 
-#### Step 2a. [Unity Asset Store] Search for `Bolt Kit: Platformer Tutorial Assets`
+- For a detailed explanation, please refer to [ChainSafe official documentation](https://docs.gaming.chainsafe.io/installation)
 
-<img src="./assets/cronos-gamefi-integration-step2a.png" />
+### Step 3. [Unity] Prefabs interaction
 
-#### Step 2b. [Unity Asset Store] Click to add the asset and sign in to your Unity account
-
-<img src="./assets/cronos-gamefi-integration-step2b.png" />
-
-#### Step 2c. [Unity] Create a new project in Unity
-
-<img src="./assets/cronos-gamefi-integration-step2.png" />
-
-#### Step 2d. [Unity] Open the Package Manager window in Unity and select My Assets
-
-<img src="./assets/cronos-gamefi-integration-step2d.png" />
-
-#### Step 2e. [Unity] Select `Bolt Kit: Platformer Tutorial Assets` and click Import
-
-<img src="./assets/cronos-gamefi-integration-step2e.png" />
-
-### Step 3. [Unity] Drag and drop the ChainSafe SDK unity package into the root directory
-
-<img src="./assets/cronos-gamefi-integration-step3.png" />
-
-\* Remove the `Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll` if encountering the below error
-
-`Error: Multiple precompiled assemblies with the same name Newtonsoft.Json.dll included or the current platform. Only one assembly with the same name is allowed per platform. (Assets/Plugins/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll)`
-
-#### Step 3a. [Unity] Double click the `Level1` scene under `Assets/Scenes` directory
+- Step 3a. [Unity] Double click the `Level1` scene under `Assets/Scenes` directory
 
 <img src="./assets/cronos-gamefi-integration-step3a.png" />
 
-#### Step 3b. [Unity] Drag and drop the `Transfer20` prefab under `Assets/Web3Unity/Prefabs/WebGL` directory into Hierarchy column
+#### [Unity] Transfer721 Example
 
-<img src="./assets/cronos-gamefi-integration-step3b.png" />
+- Drag the `Transfer721` prefab under `Assets/Web3Unity/Prefabs/WebGL` dir into the scene.
 
-#### Step 3c. [Unity] You will see the script variables under Inspector when you click the Transfer20Script. You have to update the corresponding address after deploying the contract [See Step 6]
+  <img src="./assets/cronos-gamefi-integration-step6-1.png" />
 
-<img src="./assets/cronos-gamefi-integration-step3c.png" />
+- Update the `Contract` address under `Transfer721Script` object inspector
+- Update the `To Account` address to your desired wallet address
 
-### Step 4. [IDE] Create an ERC standard smart contract
+  <img src="./assets/cronos-gamefi-integration-step6-2.png" />
+
+---
+
+\* For acquiring the NFT, you can create your own (see [Reference #2](#2-smart-contract)), or mint an ERC721 NFT at our [Cronos NFT faucet](https://cronos.org/nft-faucet) (see [Reference #3](#3-nft-faucet)).
+
+---
+
+### Step 4. [Unity] Build and Run
+
+1. Switch to WebGL platform
+   <img src="./assets/cronos-gamefi-integration-step8-1.png" />
+
+2. Click the `Player Setting` button
+
+3. Select `Web3GL-2020` under `Resolution and Presentation` tab
+   <img src="./assets/cronos-gamefi-integration-step8-2.png" />
+
+4. Set `Compression Format` to `Disabled` under `Publishing Settings` tab
+   <img src="./assets/cronos-gamefi-integration-step8-3.png" />
+
+5. After that, click `Build and Run` button and you are ready to play.
+   <img src="./assets/cronos-gamefi-integration-step8-4.png" />
+
+## What's next
+
+The above guideline documentation only highlights the basic integration between ChainSafe and Cronos chain. You can download the full source code of the above sample game [here](./assets/cronos-chainsafe-unity-sample.unitypackage.zip). For other ERC protocol methods, please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
+
+## Reference
+
+### 1. Import Sample pacakge from Unity Asset Store
+
+#### Step 1a. [Unity Asset Store] Search for `Bolt Kit: Platformer Tutorial Assets`
+
+<img src="./assets/cronos-gamefi-integration-step2a.png" />
+
+#### Step 1b. [Unity Asset Store] Click to add the asset and sign in to your Unity account
+
+<img src="./assets/cronos-gamefi-integration-step2b.png" />
+
+#### Step 1c. [Unity] Create a new project in Unity
+
+<img src="./assets/cronos-gamefi-integration-step2.png" />
+
+#### Step 1d. [Unity] Open the Package Manager window in Unity and select My Assets
+
+<img src="./assets/cronos-gamefi-integration-step2d.png" />
+
+#### Step 1e. [Unity] Select `Bolt Kit: Platformer Tutorial Assets` and click Import
+
+<img src="./assets/cronos-gamefi-integration-step2e.png" />
+
+---
+
+### 2. Smart contract
+
+#### 2a. Create an ERC standard smart contract
 
 - ERC20 example
 
@@ -163,77 +209,53 @@ contract My1155Token is ERC1155, Ownable {
 
 ```
 
-### Step 5. [Browser] Deploy Smart Contract via [Remix IDE](https://remix.ethereum.org/)
+#### 2b. Deploy Smart Contract via [Remix IDE](https://remix.ethereum.org/)
 
-1. Switch the chain network to Cronos Testnet via Metamask extension or other similar provider
-2. Select the `Injected Web3` under ENVIRONMENT tab
+    -  Switch the chain network to Cronos Testnet via Metamask extension or other similar provider
+    -  Select the `Injected Web3` under ENVIRONMENT tab
+
    <img src="./assets/cronos-gamefi-integration-step5-1.png" />
 
-3. Approve the connection
+    -  Approve the connection
+
    <img src="./assets/cronos-gamefi-integration-step5-2.png" />
 
-4. Select your contract name under CONTRACT tab
+    -  Select your contract name under CONTRACT tab
+
    <img src="./assets/cronos-gamefi-integration-step5-3.png" />
 
-5. Approve the transaction after clicking `Deploy` button
+    -  Approve the transaction after clicking `Deploy` button
+
    <img src="./assets/cronos-gamefi-integration-step5-4.png" />
 
-6. Copy the contract address
+    -  Copy the contract address
 
-### Step 6. [Unity] Drag and drop the corresponding prefabs into the game scene
+---
 
-- ### ERC721
+### 3. NFT Faucet
 
-  - For example: The transfer method of ERC721 protocol. `Assets/Web3Unity/Prefabs/WebGL/Transfer721.prefab`
-    <img src="./assets/cronos-gamefi-integration-step6-1.png" />
+- Step 1. Connect your wallet via metamask or walletconnect
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-1.png" />
 
-  - Update the `Contract` address under `Transfer721Script` object inspector
-  - Update the `To Account` address to your desired wallet address
-    <img src="./assets/cronos-gamefi-integration-step6-2.png" />
+- Step 2. Click `Create NFT` under `YOUR COLLECTION` tab
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-2.png" />
 
-### Step 7. [Unity] Update script to connect Cronos
+- Step 3. Create and sign the transaction after uploading the image
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-3.png" />
 
-1. Update `network.js`
-   - Comment out `window.infuraKey`
-   - Add `window.web3NetworkId` and `window.rpc`, point to corresponding network
+- Step 4. Copy the contract address from the NFT modal
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-4.png" />
 
-```
-/* Mainnet */
-// window.infuraKey = "2d0062a43e9e4086829df115488b45a8"
-window.web3NetworkId = 25;
-window.rpc = {
-  25: "https://evm.cronos.org"
-}
-```
+---
 
-```
-/* Testnet */
-// window.infuraKey = "2d0062a43e9e4086829df115488b45a8"
-window.web3NetworkId = 338;
-window.rpc = {
-  338: "https://evm-t3.cronos.org"
-}
-```
+### (Optional) List NFT for sale in marketplace faucet
 
-2. Update `main.xxxx.chunck.js` file under `Assets/WebGLTemplates/Web3GL-2020/static/js` directory
-   - Change all `infuraKey:window.infuraKey` to `rpc:window.rpc`
+- Step 1. Fill in the price at list item modal and confirm
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-5.png" />
 
-### Step 8. [Unity] Build and Run
+- Step 2. Sign approval and create item transaction
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-6.png" />
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-7.png" />
 
-1. Switch to WebGL platform
-   <img src="./assets/cronos-gamefi-integration-step8-1.png" />
-
-2. Click the `Player Setting` button
-
-3. Select `Web3GL-2020` under `Resolution and Presentation` tab
-   <img src="./assets/cronos-gamefi-integration-step8-2.png" />
-
-4. Set `Compression Format` to `Disabled` under `Publishing Settings` tab
-   <img src="./assets/cronos-gamefi-integration-step8-3.png" />
-
-5. After that, click `Build and Run` button and you are ready to play
-   <img src="./assets/cronos-gamefi-integration-step8-4.png" />
-
-## What's next
-
-The above guideline documentation only highlights the basic integration between ChainSafe and Cronos chain. You can download the full source code of the above sample game [here](./assets/cronos-chainsafe-unity-sample.unitypackage.zip). For other ERC protocol methods, please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
+- Step 3. View the listed item in Marketplace tab
+  <img src="./assets/cronos-gamefi-integration-nft-fauct-8.png" />
