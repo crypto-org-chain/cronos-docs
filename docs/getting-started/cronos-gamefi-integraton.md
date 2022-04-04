@@ -243,8 +243,11 @@ contract My1155Token is ERC1155, Ownable {
 - Step 3. Create and sign the transaction after uploading the image
   <img src="./assets/cronos-gamefi-integration-nft-fauct-3.png" />
 
-- Step 4. Copy the contract address from the NFT modal
+- Step 4. Copy the contract address and image URL from the NFT modal
   <img src="./assets/cronos-gamefi-integration-nft-fauct-4.png" />
+
+- Step 5. Paste into the corresponding input box inside Unity inspector
+  <img src="./assets/cronos-gamefi-integration-step6-2.png" />
 
 ---
 
