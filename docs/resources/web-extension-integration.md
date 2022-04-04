@@ -28,24 +28,41 @@ The Crypto.com Wallet Extension currently supports the following networks:
 
 Integrations with additional chains are planned for the near future.
 
-## Integrating with Wallet Extension
+## Integrating with Defi Connect
 
-Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and native experience for your end users to sign transactions.
+Integrate your DApp with Defi Connect to provide a seamless and native experience for your end users to sign transactions.
 
-### Web SDK
+### Install
 
-Learn more about how to integrate with Wallet Extension here.
-
-### deficonnect
-
-#### Installation
-
+#### Via yarn
 ```bash
 yarn add "deficonnect"
 ```
 
-#### Usage
+#### Via npm
+```bash
+npm install "deficonnect"
+```
 
+### Usage
+:::tip Note
+` DeFiWeb3Connector`  has implement ` AbstractConnector`  from ` web3-react` 
+:::
+
+#### For `web3-react` 
+if you use web3-react, it is easy to integrate:
+```tsx
+import { DeFiWeb3Connector } from 'deficonnect'
+
+const connector = new DeFiWeb3Connector({
+  supportedChainIds: [1],
+  rpc: { 1: 'https://mainnet.infura.io/v3/INFURA_API_KEY' },
+  pollingInterval: 15000,
+})
+connector.activate()
+```
+
+#### Normally
 ```tsx
 import { DeFiWeb3Connector } from "deficonnect";
 import Web3 from "web3";
@@ -62,6 +79,16 @@ connector.activate();
 const provider = await connector.getProvider();
 const web3 = new Web3(provider);
 ```
+## Example Apps
+The following git folder will provide you with some basic deficonnect integrations via react and web3modal. 
+:::tip Note
+You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://infura.io/) 
+:::
+
+### Git clone `deficonnect-examples`
+  ```bash
+  $ git clone git@github.com:crypto-org-chain/dev-utils.git
+  ```
 
 ## DApp Listing Form
 
