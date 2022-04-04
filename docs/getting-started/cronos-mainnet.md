@@ -223,7 +223,7 @@ as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core
 
 :::
 
-### Step 3-1. Create a new key and address
+### Step 3-1. Create a new key and address (Validator node only)
 
 Run the followings to create a new key. For example, you can create a key with the name `Default` by:
 
@@ -358,7 +358,7 @@ It should begin fetching blocks from the other peers.
   ```
 
 
-## (Optional) Step 4 Quicksync: 
+## *(Optional)* Step 4. QuickSync
 
 Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “Quicksync” service to make the process more efficient for our users. 
 
@@ -368,6 +368,7 @@ Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/netw
 ### Step 4-1 Quicksync Download 
 After executing the command `./cronosd` start at Step 3-2 Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal. 
 
+:::details Example: `chain-maind start` with 0 height originally
 
 ```bash
 
@@ -382,6 +383,7 @@ After executing the command `./cronosd` start at Step 3-2 Run everything, it sta
 
 ```
 
+:::
 
 To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from https://quicksync.io/networks/crypto.html. 
 
@@ -409,6 +411,8 @@ Then perform the following steps:
 - Change the path under  `.cronos` with `cd .cronos`
 - Decompress with `lz4` and `tar` by `lz4 -d /Users/<username>/.cronos/cronosmainnet_25-1-pruned.20220308.2010.tar.lz4 | tar -xv`, as below:
 
+:::details Example: Decompress the QuickSync pack with `lz4`
+
 ```bash
 
   x data/
@@ -422,10 +426,14 @@ Then perform the following steps:
 
 ```
 
+:::
+
 The original data folder under `.cronos` is overwritten with this step (it takes around 5-7 mins to decompress the pruned version ~50GB).
 
 ### Step 4-3 Sync with Quicksync
 Direct back to the parent directory of current directory(`/Users/<username>/` in this case) by `cd..`. Then run Cronos again with `./cronosd start` and now it suppose to start the node and sync the blockchain data from the height of `1813707`. 
+
+:::details Example: Restart `chain-maind start` with QuickSync
 
 ```bash
 
@@ -439,6 +447,7 @@ Direct back to the parent directory of current directory(`/Users/<username>/` in
 
 ```
 
+:::
 
 ---
 ## Cronos mainnet explorer: CronoScan

@@ -31,21 +31,25 @@ The latest Crypto.org EVM Chain Testnet has been named as **Cronos**.
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
+Before we start, please note that there are 3 binary upgrade along with the testnet:
 
-Before we start, please note that there was new binary upgrade:
-
-- Start the node with the older binary version `v0.6.0`;
-- Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
-  - *Please note that ```panic: UPGRADE "v0.7.0" NEEDED at height: 1553700``` is the expected error message when we hit that block.*
-- After it reaches the block height `1553700`, update the binary to [cronos_0.7.0-rc1-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc1);
-- Then update the default `~/.cronos/config/app.toml`(given there are some new parameter introduced in the upgrade), either by manually replace the local `app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml), or by:
- ```bash 
-$ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml > ~/.cronos/config/app.toml
-  ``` 
-- Continue to sync from block `1553700`;
-- After it reaches the block height `1869000`, update the binary to [cronos_0.7.0-rc2-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc2);
-- Start the node again
-
+1. Follow [Step 1](#step-1-get-the-cronos-testnet-binary) to [Step 3](#step-3-run-everything) and start the node with the older binary version `v0.6.0`;
+   - Sync-up with the blockchain until it reaches the target upgrade block height `1553700`;
+   - _Please note that `panic: UPGRADE "v0.7.0" NEEDED at height: 1553700` is the expected error message when we hit that block._
+2. `cronos_0.7.0-rc1` upgrade:
+   - After it reaches the block height `1553700`, update the binary to [cronos_0.7.0-rc1-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc1);
+   - Then update the default `~/.cronos/config/app.toml`(given there are some new parameter introduced in the upgrade), either by manually replace the local `app.toml` with [this new app.toml](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml), or by:
+   ```bash
+   $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/app.toml > ~/.cronos/config/app.toml
+   ```
+   - Continue to sync from block `1553700`;
+3. `cronos_0.7.0-rc2` upgrade:
+   - After it reaches the block height `1869000`, update the binary to [cronos_0.7.0-rc2-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc2);
+   - Start the node again
+   - Continue to sync from block `1869000`;
+4. `cronos_0.7.0-rc3` upgrade:
+   - After it reaches the block height `2483600`, update the binary to [cronos_0.7.0-rc3-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc3);
+   - Start the node again
 
 #
 
@@ -66,7 +70,7 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 ## Step 1. Get the Cronos testnet binary
 
 ::: tip Remarks:
-The following is the minimal setup for a **validator node** / **full node**.
+The following is the minimal setup for a **full node**.
 :::
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
@@ -89,7 +93,6 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
 ## Step 2. Configure `cronosd`
 
-
 ### Step 2-0 (Optional) Clean up the old blockchain data
 
 - If you have joined `cronostestnet_338-2` before, you would have to clean up the old blockchain data and start over again, it can be done by running:
@@ -97,6 +100,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
   ```bash
   $ ./cronosd unsafe-reset-all
   ```
+
   and remove the old genesis file by
 
   ```bash
@@ -109,23 +113,17 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 - First of all, you can initialize cronosd by:
 
-
   ```bash
     $ ./cronosd init [moniker] --chain-id cronostestnet_338-3
   ```
-
-
 
   This `moniker` will be the displayed id of your node when connected to the Cronos network.
   When providing the moniker value, make sure you drop the square brackets since they are not needed.
   The example below shows how to initialize a node named `pegasus-node` :
 
-
   ```bash
     $ ./cronosd init pegasus-node --chain-id cronostestnet_338-3
   ```
-
-
 
   ::: tip NOTE
 
@@ -135,25 +133,19 @@ Before kick-starting your node, we will have to configure your node so that it c
 
 ### Step 2-2 Configure cronosd
 
-
-
 - Download and replace the Cronos Testnet `genesis.json` by:
 
   ```bash
   $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet_338-3/genesis.json > ~/.cronos/config/genesis.json
   ```
 
-
 - Verify sha256sum checksum of the downloaded `genesis.json`. You should see `OK!` if the sha256sum checksum matches.
-
 
   ```bash
   $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "7d898ad75b3e2e1fa182d928ca10a284c1dd252e12d17ad6dab76551b29d1a59" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
 
   OK!
   ```
-
-
 
   ::: tip NOTE
 
@@ -191,28 +183,6 @@ This page only shows the minimal setup for validator / full node.
 Furthermore, you may want to run full nodes
 as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
 :::
-
-### Step 3-1. Create a new key and address
-
-Run the followings to create a new key. For example, you can create a key with the name `Default` by:
-
-```bash
-  $ ./cronosd keys add Default
-```
-
-You should obtain an address with `tcrc` prefix, e.g. `tcrc10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
-
-### Step 3-2. Obtain test token
-
-Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by
-
-- [Using metamask](./metamask.md#using-metamask); or
-- Using the [address convention tool](./metamask.md#address-conventions).
-
-In case you have reached the daily limit on faucet , you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel ,
-stating who you are and your `0x...` address.
-
-### Step 3-3. Run everything
 
 Once the `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
 
@@ -294,143 +264,13 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
   $ ./cronosd status 2>&1 | jq '.SyncInfo.latest_block_height'
   ```
 
-The next step only applied to the validators, in which, validator hosting is by invitation only at the early stage of the Cronos testnet.
-
----
-
-### Step 3-4. Obtain the validator public key
-
-You can obtain your validator public key by:
-
-```bash
-  $ ./cronosd tendermint show-validator
-```
-
-The public key should in a json format, for example:
-
-```json
-{
-  "@type": "/cosmos.crypto.ed25519.PubKey",
-  "key": "gvPPVShkWjuUn7cuqS3ci9fHnC+nLFxzsNWkwGJ6iMI="
-}
-```
-
-### Step 3-5. Send a `create-validator` transaction
-
-Once the node is fully synced, we are now ready to send a `create-validator` transaction and join the network, for example:
-
-```
-$ ./cronosd tx staking create-validator \
---from=[name_of_your_key] \
---amount=10000000stake \
---pubkey='{"@type":"/cosmos.crypto.ed25519.PubKey","key":"PUBLIC_KEY"}'  \
---moniker="[The_id_of_your_node]" \
---security-contact="[security contact email/contact method]" \
---chain-id="cronostestnet_338-3" \
---commission-rate="0.10" \
---commission-max-rate="0.20" \
---commission-max-change-rate="0.01" \
---min-self-delegation="1" \
---fees=1000000000000000000basetcro
-
-{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
-confirm transaction before signing and broadcasting [y/N]: y
-```
-
-You will be required to insert the following:
-
-
-- `--from`: The `tcrc...` address that holds your `stake` token;
-- `--pubkey`: The validator public key( See Step [3-4](#step-3-4-obtain-the-validator-public-key) above )
-- `--moniker`: A moniker (name) for your validator node;
-- `--security-contact`: Security contact email/contact method.
-
-### Step 3-6. Check your validator status
-
-Once the `create-validator` transaction completes, you can check if your validator has been added to the validator set:
-
-```bash
-
-$ ./cronosd tendermint show-validator
-## [{"@type":"/cosmos.crypto.ed25519.PubKey","key":"VALIDATOR_KEY"}] ##
-$ ./cronosd query tendermint-validator-set | grep -c [VALIDATOR_KEY]
-
-## 1 = Yes; 0 = Not yet added ##
-```
-
-To further check if the validator is signing blocks, kindly run this [script](https://github.com/crypto-com/chain-docs/blob/master/docs/getting-started/assets/signature_checking/check-validator-up.sh), for example:
-
-```bash
-$ curl -sSL https://raw.githubusercontent.com/crypto-com/chain-docs/master/docs/getting-started/assets/signature_checking/check-validator-up.sh | bash -s -- \
---tendermint-url https://evm-t3.cronos.org/:26657 \
---pubkey $(cat ~/.cronos/config/priv_validator_key.json | jq -r '.pub_key.value')
-
-The validator is in the active validator set under the address  <YOUR_VALIDATOR_ADDRESS>
-The validator is signing @ Block#<BLOCK_HEIGHT> 👍
-```
-
-
-## Step 4. Perform Transactions
-
-### Step 4-1. `query bank balances` - Check your transferable balance
-
-You can check your _transferable_ balance with the `balances` command under the bank module.
-:::details Example: Check your address balance
-
-```bash
-$ ./cronosd query bank balances tcrc1qsklxwt77qrxur494uvw07zjynu03dq9alwh37
-
-balances:
-- amount: "10005471622381693"
-  denom: basetcro
-pagination:
-  next_key: null
-  total: "0"
-
-```
-
-:::
-
-
-
-### Slashing related transaction
-
-### `tx slashing unjail` - Unjail a validator
-
-Validator could be punished and jailed due to network misbehaviour, we can check the jailing status of a validator, for example:
-
-```bash
-$ ./cronosd query staking validators -o json | jq
-................................
-      "operator_address": "tcrcvaloper1hhskvvt87ngxjgl4fkcrn3ts09u63pnh47t06u",
-      "consensus_pubkey": {
-        "@type": "/cosmos.crypto.ed25519.PubKey",
-        "key": "rXphE0lECaU4MfBL70l6tGrfaply4dp79g7ql4ijfco="
-      },
-      "jailed": false,
-................................
-```
-
-Where `"jailed": true` implies that the validator has been jailed. After the jailing period has passed, one can broadcast a `unjail` transaction to unjail the validator and resume its normal operations by
-
-```bash
-$ ./cronosd tx slashing unjail --from [key_name] --chain-id "cronostestnet_338-3" --fees=1000000000000000000basetcro
-
-  {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
-  confirm transaction before signing and broadcasting [y/N]: y
-```
-
-:::
-
-Congratulations! You've successfully set up a Testnet node and performed some basic transactions! You may refer to [Wallet Management](https://cronos.org/docs/wallets/cli.html#cronosd) for more advanced operations and transactions.
-
 ## Cronos testnet faucet and explorer
-
-
 
 - You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos.org/explorer/testnet3);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
-  - Note that you will need to create an [address](#step-3-1-create-a-new-key-and-address) before using the faucet.
+  - Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](./metamask.md#using-metamask-on-cronos-testnet).
 
+In case you have reached the daily limit on faucet , you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel ,
+stating who you are and your `0x...` address.
