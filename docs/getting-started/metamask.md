@@ -51,6 +51,13 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
 - After saving the network config, we should be able to see the token in your address!
 
+### Using MetaMask on Cronos testnet
+
+Similarly, for Cronos testnet, insert the network name, for example "Cronos testnet" and put 
+  - `https://evm-t3.cronos.org` for **New RPC URL**; and 
+  - `338` for **Chain ID**, 
+  - `tCRO` for the symbol, and
+  - `https://cronos.org/explorer/testnet3` for the **Block explorer URL** as below:
 
 
 ## Importing private key to MetaMask
