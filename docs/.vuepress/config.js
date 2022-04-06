@@ -5,25 +5,25 @@ module.exports = {
     navbar: true,
     logo: '/chain_doc_nav_logo.svg',
     nav: [{
-        text: "Home",
-        link: "/"
-      },
-      {
-        text: "Getting Started",
-        link: "/getting-started/"
-      },
+      text: "Home",
+      link: "/"
+    },
+    {
+      text: "Getting Started",
+      link: "/getting-started/"
+    },
 
       {
         text: "Cronos Chain",
         items: [
           {
-          text: "Cronos Mainnet Beta",
+            text: "Cronos Mainnet Beta",
             link: "/getting-started/cronos-mainnet"
           },
           {
-          text: "Using Metamask",
+            text: "Using Metamask",
             link: "/getting-started/metamask"
-          },          
+          },
           {
             text: "Cronos Testnet",
             link: "/getting-started/cronos-testnet"
@@ -37,12 +37,16 @@ module.exports = {
             link: "/getting-started/cronos-smart-contract"
           },
           {
+            text: "GameFi SDK",
+            link: "/getting-started/gamefi-sdk"
+          },
+          {
             text: "Best Practices for DeFi Project in Cronos",
             link: "/getting-started/defi-practice"
           },
-         {
-              text: "Block Explorer",
-              link: "https://cronoscan.com"
+          {
+            text: "Block Explorer",
+            link: "https://cronos-explorer.crypto.org"
           }
 
 //          {
@@ -67,7 +71,7 @@ module.exports = {
             link: "/chain-details/module_overview.md"
           }
         ]
-      }, 
+      },
       {
         text: "Bridge",
         items: [
@@ -88,7 +92,7 @@ module.exports = {
             link: "/bridge/other_chain#via-crypto-org-chain-desktop-wallet"
           }                   
         ]
-      },     
+      },   
       {
         text: "Wallet",
         items: [
@@ -98,21 +102,17 @@ module.exports = {
           }
         ]
       },
- 
-       {
-         text: "Resources",
-         items: [
+
+      {
+        text: "Resources",
+        items: [
           {
             text: "Integrating with Cronos Chain",
             link: "/resources/chain-integration"
           },
           {
-            text:"Web extension integration",
+            text: "Web extension integration",
             link: "/resources/web-extension-integration"
-          },
-          {
-            text:"Desktop wallet integration",
-            link: "/resources/desktop-wallet-integration"
           },
           {
             text: "Node Setup and RPC note",
@@ -121,13 +121,13 @@ module.exports = {
           {
             text: "gRPC API",
             link: "/resources/cosmos-grpc-docs"
-           },
-           {
+          },
+          {
             text: "Technical Glossary",
             link: "/resources/technical-glossary"
-           }
-         ]
-       }        
+          }
+        ]
+      }
     ],
     sidebar: {
       "/getting-started/": [
@@ -137,7 +137,8 @@ module.exports = {
         "local-devnet",
         "security-checklist.md",
         "defi-practice",
-        "cronos-smart-contract"
+        "cronos-smart-contract",
+        "gamefi-sdk",
       ],
       "/chain-details/": [
         "introduction",
@@ -163,7 +164,7 @@ module.exports = {
         "cosmos-grpc-docs",
         "technical-glossary"
       ],
-      "/api/" : "auto"
+      "/api/": "auto"
     },
     displayAllHeaders: true
   },
@@ -206,7 +207,7 @@ module.exports = {
             "Notes on Production Deployment": 19,
             "Threat Model": 20,
             "technical_glossary": 21
-            
+
           };
           return ordering[a["title"]] - ordering[b["title"]];
         }
