@@ -9,7 +9,7 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 - [Unity official website](https://unity.com/)
 - [Openzeppelin](https://docs.openzeppelin.com/)
 - [Remix IDE](https://remix.ethereum.org/)
-- [Cronos-ChainSafe-Unity-sample](./assets/cronos-chainsafe-unity-sample.unitypackage.zip)
+- [Cronos-ChainSafe-Unity-sample](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/play/assets/cronos-chainsafe-unity-sample.unitypackage.zip)
 
 ## Integration guide for Cronos
 
@@ -92,7 +92,7 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 ## What's next
 
-The above guideline documentation only highlights the basic integration between ChainSafe and Cronos chain. You can download the full source code of the above sample game [here](./assets/cronos-chainsafe-unity-sample.unitypackage.zip). For other ERC protocol methods, please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
+The above guideline documentation only highlights the basic integration between ChainSafe and Cronos chain. You can download the full source code of the above sample game [here](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/play/assets/cronos-chainsafe-unity-sample.unitypackage.zip). For other ERC protocol methods, please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
 
 ## Reference
 
