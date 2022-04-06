@@ -1,11 +1,29 @@
+# Overview
+
+Cronos Play Gaming SDK opens up the opportunity for connecting the gaming world with Cronos! It allows you to integrate your gaming platform with Cronos, and to create a seamless experience for your players, for example we can
+
+- Connect and interact with Cronos networks;
+- Provide in-game NFTs functionality;
+- Authenticate by using different crypto wallets;
+
+... and many more!
+
+Currently, Cronos Play supports the Unity game engine as a starting point, and it will be extended to support other game engines in the future.
+
 # Cronos Play Integration Documentation
 
-This section showcase the Chainsafe integration with Cronos chain, aiming to bring Unity games into the Cronos ecosystem.
+This section showcase the Cronos play Gaming SDK integration with the Cronos chain, aiming to bring Unity games into the Cronos ecosystem. In particular, we will show how to do a basic integration of the Cronos play with the Cronos chain including:
+
+- Connecting to Cronos networks;
+- Installaiton of the SDK;
+- Obtaining a sample NFT and;
+- Import Sample package from Unity Asset Store
+
 
 ## Useful Links
 
 - [Cronos official website](https://cronos.crypto.org/)
-- [ChainSafe official website](https://chainsafe.github.io/)
+- [ChainSafe official website](https://gaming.chainsafe.io/)
 - [Unity official website](https://unity.com/)
 - [Openzeppelin](https://docs.openzeppelin.com/)
 - [Remix IDE](https://remix.ethereum.org/)
@@ -96,7 +114,7 @@ The above guideline documentation only highlights the basic integration between 
 
 ## Reference
 
-### 1. Import Sample pacakge from Unity Asset Store
+### 1. Import Sample package from Unity Asset Store
 
 #### Step 1a. [Unity Asset Store] Search for `Bolt Kit: Platformer Tutorial Assets`
 
