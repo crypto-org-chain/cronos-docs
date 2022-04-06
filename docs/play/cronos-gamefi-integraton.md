@@ -1,4 +1,4 @@
-# Unity Integration Documentation
+# Cronos Play Integration Documentation
 
 This section showcase the Chainsafe integration with Cronos chain, aiming to bring Unity games into the Cronos ecosystem.
 
@@ -37,7 +37,7 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 ---
 
-- For Crypto.com DeFi Wallet integration, please refer to our [documentation](https://cronos.org/docs/getting-started/gamefi-sdk.md#enable-deficonnect-and-walletconnect).
+- For Crypto.com DeFi Wallet integration, please refer to our [documentation](./gamefi-sdk.html#step-3-game-login-example).
 
 ---
 
