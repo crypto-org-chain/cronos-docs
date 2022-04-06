@@ -94,11 +94,15 @@ module.exports = {
         ]
       },   
       {
-        text: "Wallet",
+        text: "Cronos Play",
         items: [
           {
-            text: "cronosd",
-            link: "/wallets/cli.html#cronosd"
+            text: "Intergrating with Cronos Play",
+            link: "/play/cronos-gamefi-integraton.html",           
+          },
+          {
+            text: "Intergration Demo",
+            link: "/play/gamefi-sdk.html",            
           }
         ]
       },
@@ -137,8 +141,7 @@ module.exports = {
         "local-devnet",
         "security-checklist.md",
         "defi-practice",
-        "cronos-smart-contract",
-        "gamefi-sdk",
+        "cronos-smart-contract"
       ],
       "/chain-details/": [
         "introduction",
@@ -155,6 +158,10 @@ module.exports = {
       "/bridge/": [
         "app_n_ex",
         "other_chain"
+      ],
+      "/play/": [
+        "cronos-gamefi-integraton",
+        "gamefi-sdk"
       ],
       "/resources/": [
         "chain-integration",
