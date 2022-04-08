@@ -18,13 +18,15 @@ Please read the guide carefully and review the project documentation as misuse m
 
 - Crypto.org <=> Cronos;
 - Cosmos <=> Cronos;
-- Terra <=> Cronos.
+- Terra <=> Cronos;
+- Akash <=> Cronos.
 
 #### Currently supported tokens:
 
 - CRO;
 - ATOM;
-- LUNA.
+- LUNA;
+- AKT.
 
 #### Currently supported wallets:
 
@@ -151,7 +153,8 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
   - Crypto.org => Cronos;
   - Cronos => Crypto.org;
   - Cosmos => Cronos;
-  - Terra => Cronos.
+  - Terra => Cronos;
+  - Akash => Cronos.
 - The fee waived is the bridge network transaction fee on the destination chain. However, you are still liable to pay for the origin chain gas fee directly on your wallet extension.
 - This is a promotional waiver; we reserve the right to modify and terminate the promotion at any time
 
@@ -171,6 +174,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
   - Cronos;
   - Cosmos;
   - Terra;
+  - Akash;
   - Coming Soon: Ethereum
 
 ### What are the supported wallets?
