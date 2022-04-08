@@ -1,16 +1,6 @@
-# Overview
+# Cronos Play
 
-Cronos Play Gaming SDK opens up the opportunity for connecting the gaming world with Cronos! It allows you to integrate your gaming platform with Cronos, and to create a seamless experience for your players, for example we can
-
-- Connect and interact with Cronos networks;
-- Provide in-game NFTs functionality;
-- Authenticate by using different crypto wallets;
-
-... and many more!
-
-Currently, Cronos Play supports the Unity game engine as a starting point, and it will be extended to support other game engines in the future.
-
-# Cronos Play Integration Documentation
+### Overview
 
 This section showcase the Cronos play Gaming SDK integration with the Cronos chain, aiming to bring Unity games into the Cronos ecosystem. In particular, we will show how to do a basic integration of the Cronos play with the Cronos chain including:
 
@@ -19,47 +9,7 @@ This section showcase the Cronos play Gaming SDK integration with the Cronos cha
 - Obtaining a sample NFT and;
 - Import Sample package from Unity Asset Store
 
-
-## Useful Links
-
-- [Cronos official website](https://cronos.crypto.org/)
-- [ChainSafe official website](https://gaming.chainsafe.io/)
-- [Unity official website](https://unity.com/)
-- [Openzeppelin](https://docs.openzeppelin.com/)
-- [Remix IDE](https://remix.ethereum.org/)
-- [Cronos-ChainSafe-Unity-sample](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/play/assets/cronos-chainsafe-unity-sample.unitypackage.zip)
-
 ## Integration guide for Cronos
-
-## Pre-requisites
-
-1. [Unity](https://unity3d.com/get-unity/download) (Version 2020.3.25f1 or later)
-2. [ChainSafe SDK](https://github.com/ChainSafe/web3.unity/releases)
-
-3. [Metamask browser extension](https://metamask.io/download/)
-
-- Below is the configuration of adding Cronos Network
-  - Network Name: **Cronos Mainnet**
-    - New RPC URL: **https://evm-dev.cronos.org/**
-    - Chain ID: **25**
-    - Currency Symbol: **CRO**
-    - Block Explorer URL: **https://cronoscan.com/**
-  ***
-  - Network Name: **Cronos Testnet**
-    - New RPC URL: **https://evm-dev-t3.cronos.org/**
-    - Chain ID: **338**
-    - Currency Symbol: **TCRO**
-    - Block Explorer URL: **https://cronos.org/explorer/testnet3**
-  - Sufficient fund on deployer address
-    - [Testnet Faucet](https://cronos.crypto.org/faucet/)
-
----
-
-- For Crypto.com DeFi Wallet integration, please refer to our [documentation](./gamefi-sdk.html#step-3-game-login-example).
-
----
-
-## Get Started
 
 ### Step 1. [Unity] Create a new project or open an existing project in Unity
 
