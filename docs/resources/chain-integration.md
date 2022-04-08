@@ -78,6 +78,7 @@ If this assumption is important in your application, please consider setting up 
 | QRDO       | [0x70BB395F1A824D9a3F9D510C25e699cEaf603dEc](https://cronoscan.com/address/0x70BB395F1A824D9a3F9D510C25e699cEaf603dEc/transactions)   | 8       |
 | ALI        | [0x45C135C1CDCE8d25A3B729A28659561385C52671](https://cronoscan.com/address/0x45C135C1CDCE8d25A3B729A28659561385C52671/transactions)   | 18      |
 | APE        | [0x9C62F89a8C9907582f21205Ce90443730361EA05](https://cronoscan.com/address/0x9C62F89a8C9907582f21205Ce90443730361EA05/transactions)   | 18      |
+| MATIC      | [0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5](https://cronoscan.com/address/0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
