@@ -223,7 +223,7 @@ module.exports = {
     [
       '@vuepress/plugin-google-analytics',
       {
-        'ga': 'G-K3JV1CQR70'
+        id: 'G-K3JV1CQR70'
       }
     ]
   ]
