@@ -11,5 +11,8 @@
   "dependencies": {
     "vuepress": "^1.7.1",
     "vuepress-plugin-export": "https://github.com/calvinaco/vuepress-plugin-export.git"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.9.7"
   }
 }
