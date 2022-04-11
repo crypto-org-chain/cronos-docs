@@ -219,6 +219,12 @@ module.exports = {
           return ordering[a["title"]] - ordering[b["title"]];
         }
       }
+    ],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-99317940-14'
+      }
     ]
   ]
 };
