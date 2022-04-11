@@ -79,6 +79,8 @@ If this assumption is important in your application, please consider setting up 
 | ALI        | [0x45C135C1CDCE8d25A3B729A28659561385C52671](https://cronoscan.com/address/0x45C135C1CDCE8d25A3B729A28659561385C52671/transactions)   | 18      |
 | APE        | [0x9C62F89a8C9907582f21205Ce90443730361EA05](https://cronoscan.com/address/0x9C62F89a8C9907582f21205Ce90443730361EA05/transactions)   | 18      |
 | MATIC      | [0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5](https://cronoscan.com/address/0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5/transactions)   | 18      |
+| FTM        | [0x63888BaFc5975630E4E5CF50c3845a3250115F64](https://cronoscan.com/address/0x63888BaFc5975630E4E5CF50c3845a3250115F64/transactions)   | 18      |
+| AKT        | [0x39a65A74Dc5A778Ff93d1765Ea51F57BC49c81B3](https://cronoscan.com/address/0x39a65A74Dc5A778Ff93d1765Ea51F57BC49c81B3/transactions)   | 6       |
 
 ## Integration guide for **Cronos Testnet**
 
