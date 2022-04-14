@@ -45,7 +45,7 @@ Or you can download the latest [releases](https://github.com/ChainSafe/web3.unit
 
 ### Create a new Unity Project
 Create a new project directly from your Unity Hub. In the next step Choose 3D as your project type.
-<img src="./assets/getting-started/new_projects.png" />
+<img src="./assets/getting-started/new-projects.png" />
 
 ### Upload web3.unity Folders into Project 
 Now you have to import the content of the cloned repository (web3.unity) directly into your newly created project assets folder.
