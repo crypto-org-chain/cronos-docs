@@ -81,6 +81,12 @@ If this assumption is important in your application, please consider setting up 
 | MATIC      | [0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5](https://cronoscan.com/address/0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5/transactions)   | 18      |
 | FTM        | [0x63888BaFc5975630E4E5CF50c3845a3250115F64](https://cronoscan.com/address/0x63888BaFc5975630E4E5CF50c3845a3250115F64/transactions)   | 18      |
 | AKT        | [0x39a65A74Dc5A778Ff93d1765Ea51F57BC49c81B3](https://cronoscan.com/address/0x39a65A74Dc5A778Ff93d1765Ea51F57BC49c81B3/transactions)   | 6       |
+| CRV        | [0xfEf44a0C77eca218F443382d3128a7A251a8C542](https://cronoscan.com/address/0xfEf44a0C77eca218F443382d3128a7A251a8C542/transactions)   | 18      |
+| ALICE      | [0x46EfE38eC0558C48352e2eBc85AF3bd2E87Fb2A1](https://cronoscan.com/address/0x46EfE38eC0558C48352e2eBc85AF3bd2E87Fb2A1/transactions)   | 6       |
+| SLP        | [0xc00DcfBc7aC19B7210fa9c73b5F1d2E0f7E62711](https://cronoscan.com/address/0xc00DcfBc7aC19B7210fa9c73b5F1d2E0f7E62711/transactions)   | 0       |
+| AXS        | [0xE27753e456AbA584f10aCEf0B4e367EF38f01e14](https://cronoscan.com/address/0xE27753e456AbA584f10aCEf0B4e367EF38f01e14/transactions)   | 18      |
+| GALA       | [0x7A887D4f8a3221e1aaFA2f4435b774D51429A3e1](https://cronoscan.com/address/0x7A887D4f8a3221e1aaFA2f4435b774D51429A3e1/transactions)   | 8       |
+| LTC        | [0x9d97Be214b68C7051215BB61059B4e299Cd792c3](https://cronoscan.com/address/0x9d97Be214b68C7051215BB61059B4e299Cd792c3/transactions)   | 8       |
 
 ## Integration guide for **Cronos Testnet**
 
