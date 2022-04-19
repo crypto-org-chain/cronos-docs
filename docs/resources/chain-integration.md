@@ -81,6 +81,18 @@ If this assumption is important in your application, please consider setting up 
 | MATIC      | [0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5](https://cronoscan.com/address/0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5/transactions)   | 18      |
 | FTM        | [0x63888BaFc5975630E4E5CF50c3845a3250115F64](https://cronoscan.com/address/0x63888BaFc5975630E4E5CF50c3845a3250115F64/transactions)   | 18      |
 | AKT        | [0x39a65A74Dc5A778Ff93d1765Ea51F57BC49c81B3](https://cronoscan.com/address/0x39a65A74Dc5A778Ff93d1765Ea51F57BC49c81B3/transactions)   | 6       |
+| CRV        | [0xfEf44a0C77eca218F443382d3128a7A251a8C542](https://cronoscan.com/address/0xfEf44a0C77eca218F443382d3128a7A251a8C542/transactions)   | 18      |
+| ALICE      | [0x46EfE38eC0558C48352e2eBc85AF3bd2E87Fb2A1](https://cronoscan.com/address/0x46EfE38eC0558C48352e2eBc85AF3bd2E87Fb2A1/transactions)   | 6       |
+| SLP        | [0xc00DcfBc7aC19B7210fa9c73b5F1d2E0f7E62711](https://cronoscan.com/address/0xc00DcfBc7aC19B7210fa9c73b5F1d2E0f7E62711/transactions)   | 0       |
+| AXS        | [0xE27753e456AbA584f10aCEf0B4e367EF38f01e14](https://cronoscan.com/address/0xE27753e456AbA584f10aCEf0B4e367EF38f01e14/transactions)   | 18      |
+| GALA       | [0x7A887D4f8a3221e1aaFA2f4435b774D51429A3e1](https://cronoscan.com/address/0x7A887D4f8a3221e1aaFA2f4435b774D51429A3e1/transactions)   | 8       |
+| LTC        | [0x9d97Be214b68C7051215BB61059B4e299Cd792c3](https://cronoscan.com/address/0x9d97Be214b68C7051215BB61059B4e299Cd792c3/transactions)   | 8       |
+| ICP        | [0x8Bf3E654075E269c1C415e4889C12D9837452be0](https://cronoscan.com/address/0x8Bf3E654075E269c1C415e4889C12D9837452be0/transactions)   | 8       |
+| SAND       | [0x9097eA65B55dfC7383A7EFB465e8fFC18D46e784](https://cronoscan.com/address/0x9097eA65B55dfC7383A7EFB465e8fFC18D46e784/transactions)   | 18      |
+| BCH        | [0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23](https://cronoscan.com/address/0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23/transactions)   | 8       |
+| ALGO       | [0x2fEfe47989214c2e74A6319076c138d395681407](https://cronoscan.com/address/0x2fEfe47989214c2e74A6319076c138d395681407/transactions)   | 6       |
+| MANA       | [0x6Ed8c99E5c6B2c551e012E4272d8f3d1DF23a71A](https://cronoscan.com/address/0x6Ed8c99E5c6B2c551e012E4272d8f3d1DF23a71A/transactions)   | 18      |
+| UNI        | [0x16aD43896f7C47a5d9Ee546c44A22205738B329c](https://cronoscan.com/address/0x16aD43896f7C47a5d9Ee546c44A22205738B329c/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
