@@ -87,6 +87,12 @@ If this assumption is important in your application, please consider setting up 
 | AXS        | [0xE27753e456AbA584f10aCEf0B4e367EF38f01e14](https://cronoscan.com/address/0xE27753e456AbA584f10aCEf0B4e367EF38f01e14/transactions)   | 18      |
 | GALA       | [0x7A887D4f8a3221e1aaFA2f4435b774D51429A3e1](https://cronoscan.com/address/0x7A887D4f8a3221e1aaFA2f4435b774D51429A3e1/transactions)   | 8       |
 | LTC        | [0x9d97Be214b68C7051215BB61059B4e299Cd792c3](https://cronoscan.com/address/0x9d97Be214b68C7051215BB61059B4e299Cd792c3/transactions)   | 8       |
+| ICP        | [0x8Bf3E654075E269c1C415e4889C12D9837452be0](https://cronoscan.com/address/0x8Bf3E654075E269c1C415e4889C12D9837452be0/transactions)   | 8       |
+| SAND       | [0x9097eA65B55dfC7383A7EFB465e8fFC18D46e784](https://cronoscan.com/address/0x9097eA65B55dfC7383A7EFB465e8fFC18D46e784/transactions)   | 18      |
+| BCH        | [0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23](https://cronoscan.com/address/0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23/transactions)   | 8       |
+| ALGO       | [0x2fEfe47989214c2e74A6319076c138d395681407](https://cronoscan.com/address/0x2fEfe47989214c2e74A6319076c138d395681407/transactions)   | 6       |
+| MANA       | [0x6Ed8c99E5c6B2c551e012E4272d8f3d1DF23a71A](https://cronoscan.com/address/0x6Ed8c99E5c6B2c551e012E4272d8f3d1DF23a71A/transactions)   | 18      |
+| UNI        | [0x16aD43896f7C47a5d9Ee546c44A22205738B329c](https://cronoscan.com/address/0x16aD43896f7C47a5d9Ee546c44A22205738B329c/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
