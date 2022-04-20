@@ -34,7 +34,7 @@ canonicalUrl: https://cronos.org/docs/chain-details/introduction.html
 
 Crypto.org introduces the Cronos mainnet beta, the Cosmos SDK based EVM compatible chain, on 8 Nov 2021.
 
-Cronos is the EVM compatible chain running in parallel to the [Crypto.org Chain](https://crypto.org/docs/). It aims to massively scale the Chain DeFi ecosystem, by providing developers with the ability to rapidly port apps from Ethereum and EVM-compatible chains, with funding from [Particle B’s $100m EVM fund](https://blog.crypto.com/particle-b-accelerator-launches-the-cro-evm-fund/) and access to the 10M+ user base of the Crypto.com ecosystem.
+Cronos is the EVM compatible chain running in parallel to the [Crypto.org Chain](https://crypto.org/docs/). It aims to massively scale the Chain DeFi ecosystem, by providing developers with the ability to rapidly port apps from Ethereum and EVM-compatible chains, with funding from [Cronos Ecosystem Grants](https://cronos.org/grants) and access to the 10M+ user base of the Crypto.com ecosystem.
 
 #### Cronos on Ethermint
 
