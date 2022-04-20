@@ -93,6 +93,12 @@ If this assumption is important in your application, please consider setting up 
 | ALGO       | [0x2fEfe47989214c2e74A6319076c138d395681407](https://cronoscan.com/address/0x2fEfe47989214c2e74A6319076c138d395681407/transactions)   | 6       |
 | MANA       | [0x6Ed8c99E5c6B2c551e012E4272d8f3d1DF23a71A](https://cronoscan.com/address/0x6Ed8c99E5c6B2c551e012E4272d8f3d1DF23a71A/transactions)   | 18      |
 | UNI        | [0x16aD43896f7C47a5d9Ee546c44A22205738B329c](https://cronoscan.com/address/0x16aD43896f7C47a5d9Ee546c44A22205738B329c/transactions)   | 18      |
+| SOL        | [0xc9DE0F3e08162312528FF72559db82590b481800](https://cronoscan.com/address/0xc9DE0F3e08162312528FF72559db82590b481800/transactions)   | 9       |
+| AVAX       | [0x8d58088D4E8Ffe75A8b6357ba5ff17B93B912640](https://cronoscan.com/address/0x8d58088D4E8Ffe75A8b6357ba5ff17B93B912640/transactions)   | 9       |
+| ZIL        | [0xc70ed252E55d68A7020A754Fb92Fa5c68e3c199f](https://cronoscan.com/address/0xc70ed252E55d68A7020A754Fb92Fa5c68e3c199f/transactions)   | 12      |
+| FLOW       | [0x22EF9d73EA90E774CfB21fADDF84b37BD54FE7a6](https://cronoscan.com/address/0x22EF9d73EA90E774CfB21fADDF84b37BD54FE7a6/transactions)   | 8       |
+| IMX        | [0x8f27dB0E597B67F33d5Fb58D5EEcD6A3CC780942](https://cronoscan.com/address/0x8f27dB0E597B67F33d5Fb58D5EEcD6A3CC780942/transactions)   | 18      |
+| OMG        | [0x5a56509C61ad80680caF5b3B980E6C88319eeE33](https://cronoscan.com/address/0x5a56509C61ad80680caF5b3B980E6C88319eeE33/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
