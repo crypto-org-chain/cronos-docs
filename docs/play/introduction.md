@@ -4,7 +4,7 @@ The term GameFi refers to the financialization of gaming. Similar to the term De
 
 ## Overview
 
-Cronos Play Gaming SDK opens up the opportunity for connecting the gaming world with Cronos! It allows you to integrate your gaming platform with Cronos, and to create a seamless experience for your players, for example we can
+Cronos Play Gaming SDK opens up the opportunity for connecting the gaming world with Cronos! It allows you to integrate your gaming platform with Cronos, and to create a seamless experience for your players, for example we can:
 
 - Connect and interact with Cronos networks;
 - Provide in-game NFTs functionality;
