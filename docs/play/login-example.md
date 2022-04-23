@@ -73,4 +73,4 @@ To build the Game Login example, you need to go to `File/Build Settings` and sel
 
 <img src="./assets/getting-started/build_settings.png" />
 
-On successfull completion, you will be able to login to your DefiConnect wallet. On succesfull login, the scene will load any textures from NFT assets you own. 
+On successful completion, you will be able to log in to your DefiConnect wallet. The scene will load any textures from NFT assets you own on successful login.
