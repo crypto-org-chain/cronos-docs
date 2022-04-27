@@ -37,10 +37,6 @@ module.exports = {
             link: "/getting-started/cronos-smart-contract"
           },
           {
-            text: "GameFi SDK",
-            link: "/getting-started/gamefi-sdk"
-          },
-          {
             text: "Best Practices for DeFi Project in Cronos",
             link: "/getting-started/defi-practice"
           },
@@ -97,12 +93,20 @@ module.exports = {
         text: "Cronos Play",
         items: [
           {
-            text: "Intergrating with Cronos Play",
-            link: "/play/cronos-gamefi-integraton.html",           
+            text: "Introduction",
+            link: "/play/introduction.html",           
           },
           {
-            text: "Intergration Demo",
-            link: "/play/gamefi-sdk.html",            
+            text: "Getting Started",
+            link: "/play/getting-started.html",           
+          },
+          {
+            text: "Login Example",
+            link: "/play/login-example.html",           
+          },
+          {
+            text: "Intergrating with Cronos Play",
+            link: "/play/cronos-gamefi-integraton.html",           
           }
         ]
       },
@@ -160,8 +164,12 @@ module.exports = {
         "other_chain"
       ],
       "/play/": [
+        "introduction",
+        "getting-started",
+        "login-example",
+        "scripts",
         "cronos-gamefi-integraton",
-        "gamefi-sdk"
+        "useful-links",
       ],
       "/resources/": [
         "chain-integration",
