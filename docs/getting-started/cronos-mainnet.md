@@ -370,7 +370,7 @@ It should begin fetching blocks from the other peers.
 
 Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “Quicksync” service to make the process more efficient for our users. 
 
-Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/networks/crypto.html) and download the snapshots for Cronos and Crypto.org Chain and with different pruning settings. You may refer to the following guide to implement Quicksync. 
+Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/networks/crypto.html) and download the snapshots for Cronos and Crypto.org Chain with different pruning settings (*currently only leveldb downloads are available*). You may refer to the following guide to implement Quicksync. You may refer to the following guide to implement Quicksync.
 
 
 ### Step 4-1 Quicksync Download 
