@@ -99,6 +99,17 @@ If this assumption is important in your application, please consider setting up 
 | FLOW       | [0x22EF9d73EA90E774CfB21fADDF84b37BD54FE7a6](https://cronoscan.com/address/0x22EF9d73EA90E774CfB21fADDF84b37BD54FE7a6/transactions)   | 8       |
 | IMX        | [0x8f27dB0E597B67F33d5Fb58D5EEcD6A3CC780942](https://cronoscan.com/address/0x8f27dB0E597B67F33d5Fb58D5EEcD6A3CC780942/transactions)   | 18      |
 | OMG        | [0x5a56509C61ad80680caF5b3B980E6C88319eeE33](https://cronoscan.com/address/0x5a56509C61ad80680caF5b3B980E6C88319eeE33/transactions)   | 18      |
+| AAVE       | [0xE657b115bc45c0786274c824f83e3e02CE809185](https://cronoscan.com/address/0xE657b115bc45c0786274c824f83e3e02CE809185/transactions)   | 18      |
+| LRC        | [0xAF760dE3201fEeD80FEeA59FB16A8360C8c4d1a2](https://cronoscan.com/address/0xAF760dE3201fEeD80FEeA59FB16A8360C8c4d1a2/transactions)   | 18      |
+| DAR        | [0x5893915Fe3d15e4004F7232c80036bFa92aCa564](https://cronoscan.com/address/0x5893915Fe3d15e4004F7232c80036bFa92aCa564/transactions)   | 6       |
+| GRT        | [0x4c523222Cd0DE11616F7aD685f24145B9FaF7996](https://cronoscan.com/address/0x4c523222Cd0DE11616F7aD685f24145B9FaF7996/transactions)   | 18      |
+| CHZ        | [0x4E4F362170bFb88D3c9378FF7818d93fC2fbd257](https://cronoscan.com/address/0x4E4F362170bFb88D3c9378FF7818d93fC2fbd257/transactions)   | 18      |
+| INJ        | [0x4E05F3C7ee6155e3add224470E1c4583D4F424A3](https://cronoscan.com/address/0x4E05F3C7ee6155e3add224470E1c4583D4F424A3/transactions)   | 18      |
+| KNC        | [0xd73EBf885C4157D3E88c6D87ad3b8018B4a32fEF](https://cronoscan.com/address/0xd73EBf885C4157D3E88c6D87ad3b8018B4a32fEF/transactions)   | 18      |
+| XTZ        | [0x9D5a7d02D51Dc523197e62c2865907dbB53642Af](https://cronoscan.com/address/0x9D5a7d02D51Dc523197e62c2865907dbB53642Af/transactions)   | 6       |
+| RUNE       | [0x171C8AAA57D0107d0187f54Ccf4CC03406E76a4E](https://cronoscan.com/address/0x171C8AAA57D0107d0187f54Ccf4CC03406E76a4E/transactions)   | 8       |
+| KSM        | [0x0BD48A8A9565385649D9d7f1c945D1d0C4543E26](https://cronoscan.com/address/0x0BD48A8A9565385649D9d7f1c945D1d0C4543E26/transactions)   | 12      |
+| HNT        | [0x61426C150207AbF8a215f3377a0819dDcA842aF3](https://cronoscan.com/address/0x61426C150207AbF8a215f3377a0819dDcA842aF3/transactions)   | 8       |
 
 ## Integration guide for **Cronos Testnet**
 
