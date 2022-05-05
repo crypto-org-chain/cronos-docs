@@ -2,7 +2,7 @@
 
 :::warning
 The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800 
-(_Estimated time ~Tuesday, 10 MAY 2022 02:00:00 GMT_, but this depends on the actual time taken when the blocks is being processed).
+(_Estimated time ~Tuesday, 10 MAY 2022 00:00:00 GMT_, but this depends on the actual time taken when the blocks is being processed).
 
 
 
