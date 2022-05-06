@@ -1,7 +1,9 @@
 # The "Huygen" upgrade guide (`v0.6.*` to `v0.7.*`) :
 
 :::warning
+
 The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800. Referencing estimated time can be found on [https://cronoscan.com/block/countdown/2693800](https://cronoscan.com/block/countdown/2693800)
+
 
 
 
