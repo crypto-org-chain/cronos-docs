@@ -1,8 +1,7 @@
 # The "Huygen" upgrade guide (`v0.6.*` to `v0.7.*`) :
 
 :::warning
-The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800 
-(_Estimated time ~Tuesday, 10 MAY 2022 02:00:00 GMT_, but this depends on the actual time taken when the blocks is being processed).
+The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800. Referencing estimated time can be found on [https://cronoscan.com/block/countdown/2693800](https://cronoscan.com/block/countdown/2693800)
 
 
 
@@ -67,31 +66,35 @@ $ ./cronosd version
 
 In this v0.7.0 upgrade, there are a few extra parameters that we would have to add to `.cronos/config/app.toml` under
 
-- JSON RPC Configuration - `[json-rpc]` and;
-- EVM Configuration - `[evm]` ,
-
+- EVM Configuration - `[evm]` and;
+- JSON RPC Configuration - `[json-rpc]`.
 they are:
 
-```
+``` diff
+...
+...
+###############################################################################
+###                             EVM Configuration                           ###
+###############################################################################
+
+[evm]
+
++ max-tx-gas-wanted=500000
+...
+...
 ###############################################################################
 ###                           JSON RPC Configuration                        ###
 ###############################################################################
 
 [json-rpc]
 
-feehistory-cap = 100
-logs-cap = 10000
-block-range-cap = 10000
-http-timeout="30s"
-http-idle-timeout="120s"
-
-
-###############################################################################
-###                             EVM Configuration                           ###
-###############################################################################
-
-[evm]
-max-tx-gas-wanted=500000
++ feehistory-cap = 100
++ logs-cap = 10000
++ block-range-cap = 10000
++ http-timeout="30s"
++ http-idle-timeout="120s"
+...
+...
 
 ```
 
