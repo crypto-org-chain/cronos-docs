@@ -110,6 +110,12 @@ If this assumption is important in your application, please consider setting up 
 | RUNE       | [0x171C8AAA57D0107d0187f54Ccf4CC03406E76a4E](https://cronoscan.com/address/0x171C8AAA57D0107d0187f54Ccf4CC03406E76a4E/transactions)   | 8       |
 | KSM        | [0x0BD48A8A9565385649D9d7f1c945D1d0C4543E26](https://cronoscan.com/address/0x0BD48A8A9565385649D9d7f1c945D1d0C4543E26/transactions)   | 12      |
 | HNT        | [0x61426C150207AbF8a215f3377a0819dDcA842aF3](https://cronoscan.com/address/0x61426C150207AbF8a215f3377a0819dDcA842aF3/transactions)   | 8       |
+| NEO        | [0xB3fc0777738168ce33B228F1831EEbD5A81aaDB3](https://cronoscan.com/address/0xB3fc0777738168ce33B228F1831EEbD5A81aaDB3/transactions)   | 0       |
+| YFI        | [0x7bDF81a86f4AA8B442Ca05670Cbf296BB22Bc7bB](https://cronoscan.com/address/0x7bDF81a86f4AA8B442Ca05670Cbf296BB22Bc7bB/transactions)   | 18      |
+| SUSHI      | [0xdb3de0AAC8A39490932FA19c2e32F179368Ab840](https://cronoscan.com/address/0xdb3de0AAC8A39490932FA19c2e32F179368Ab840/transactions)   | 18      |
+| QNT        | [0x7d54F4E05f273a9317f723997612Ed64eF53C900](https://cronoscan.com/address/0x7d54F4E05f273a9317f723997612Ed64eF53C900/transactions)   | 18      |
+| MKR        | [0xab9Cf8C5A9B6Cf5215c82D088D37d04bB146704A](https://cronoscan.com/address/0xab9Cf8C5A9B6Cf5215c82D088D37d04bB146704A/transactions)   | 18      |
+| HOT        | [0xc4010CfB5172D82A348bcBC8cD543733c1e9BF89](https://cronoscan.com/address/0xc4010CfB5172D82A348bcBC8cD543733c1e9BF89/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
