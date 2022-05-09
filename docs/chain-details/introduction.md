@@ -52,6 +52,6 @@ Cronos Ecosystem Grants program aims to support early-stage projects on Cronos b
 
 **Easy deployment** - Users can follow the deployment instruction to quickly and easily deploy Cronos network for their own using purposes.
 
-**Crypto.com ecosystem** - 10 million users + ecosystem
+**Crypto.com ecosystem** - 50 million users + ecosystem
 
-**Crypto.com community Support** - Finance + Audit
+**Crypto.com community Support** - Crypto.com community support - contribution to open-source projects, security reviews.
