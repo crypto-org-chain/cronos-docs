@@ -16,9 +16,6 @@
 
 
       <div class="introduction">
-        <div class="introduction-headline">
-          Testnet is now launched!
-        </div>
         <div class="signup-newsletter-text">
           Sign up to our newsletter to get the latest updates and
         </div>
@@ -290,11 +287,6 @@ export default {
     padding 34px
     text-align center
     font-size 1.5em
-
-    .introduction-headline {
-      font-size: 40px;
-      font-weight: bold;
-    }
 
     .signup-newsletter-text {
       margin-top 20px
