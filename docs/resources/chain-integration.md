@@ -116,6 +116,12 @@ If this assumption is important in your application, please consider setting up 
 | QNT        | [0x7d54F4E05f273a9317f723997612Ed64eF53C900](https://cronoscan.com/address/0x7d54F4E05f273a9317f723997612Ed64eF53C900/transactions)   | 18      |
 | MKR        | [0xab9Cf8C5A9B6Cf5215c82D088D37d04bB146704A](https://cronoscan.com/address/0xab9Cf8C5A9B6Cf5215c82D088D37d04bB146704A/transactions)   | 18      |
 | HOT        | [0xc4010CfB5172D82A348bcBC8cD543733c1e9BF89](https://cronoscan.com/address/0xc4010CfB5172D82A348bcBC8cD543733c1e9BF89/transactions)   | 18      |
+| QTUM       | [0x32529346958711B3beF92B96507C14821e50C9c8](https://cronoscan.com/address/0x32529346958711B3beF92B96507C14821e50C9c8/transactions)   | 8       |
+| CELR       | [0xfA0235feF8644C107f7e531Fa9CFe0613Fbe8909](https://cronoscan.com/address/0xfA0235feF8644C107f7e531Fa9CFe0613Fbe8909/transactions)   | 18      |
+| REN        | [0x2b4eE166a125E01Aba019885932C944cEfED2932](https://cronoscan.com/address/0x2b4eE166a125E01Aba019885932C944cEfED2932/transactions)   | 18      |
+| BAT        | [0x2F712E0a6f92e3f865EaEb86f07BAFc67974d26c](https://cronoscan.com/address/0x2F712E0a6f92e3f865EaEb86f07BAFc67974d26c/transactions)   | 18      |
+| SRM        | [0xB858e614779f148992949A3b15E6127dDA204ca4](https://cronoscan.com/address/0xB858e614779f148992949A3b15E6127dDA204ca4/transactions)   | 6       |
+| DYDX       | [0x4442C740cc5B47F032983106E66E3C9dC945676C](https://cronoscan.com/address/0x4442C740cc5B47F032983106E66E3C9dC945676C/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
