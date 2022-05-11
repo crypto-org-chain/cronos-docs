@@ -51,6 +51,18 @@ canonicalUrl: https://cronos.org/docs/getting-started/cronos-mainnet.html
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet Beta `cronosmainnet_25-1`.
 
+## Step 0 : Notes on "Huygen" Network upgrade
+
+Before we start, please note that there was "*Huygen*" network upgrade at the block height `2,693,800`, which requires the node operator to update their Cronos Mainnet binary `cronosd` from `v0.6.*` to `v0.7.0`. 
+
+For the host who would like to build a Full Node with complete blockchain data from scratch, one would need to:
+1. Start the node with the older binary version `v0.6.*`; 
+1. Sync-up with the blockchain until it reaches the target upgrade block height `2,693,800`;
+1. Update the binary to `v0.7.0` and start the node;
+
+Users can refer to the upgrade guide of ["Huygen"](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/getting-started/huygen.md) for the detailed upgrade steps.
+
+
 ## Pre-requisites
 
 ### Supported OS
