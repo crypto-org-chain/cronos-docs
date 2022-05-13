@@ -57,7 +57,7 @@ Similarly, for Cronos testnet, insert the network name, for example "Cronos test
   - `https://evm-t3.cronos.org` for **New RPC URL**; and 
   - `338` for **Chain ID**, 
   - `tCRO` for the symbol, and
-  - `https://cronos.org/explorer/testnet3` for the **Block explorer URL** as below:
+  - `https://testnet.cronoscan.com/` for the **Block explorer URL** as below:
 
 
 ## Importing private key to MetaMask

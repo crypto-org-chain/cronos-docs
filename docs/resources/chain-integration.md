@@ -138,7 +138,7 @@ If this assumption is important in your application, please consider setting up 
   - New RPC URL: **https://evm-t3.cronos.org/**
   - Chain ID: **338**
   - Currency Symbol: **TCRO**
-  - Block Explorer URL: **https://cronos.org/explorer/testnet3**
+  - Block Explorer URL: **https://testnet.cronoscan.com/**
 
 ### RPC URLs for For Cronos testnet
 
@@ -275,7 +275,7 @@ https://evm-t3.cronos.org:8545/
 - Cronos Mainnet Beta:
   [https://cronoscan.com/](https://cronoscan.com)
 - Cronos Testnet:
-  [https://cronos.org/explorer/testnet3](https://cronos.org/explorer/testnet3)
+  [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
 
 ## Community
 
