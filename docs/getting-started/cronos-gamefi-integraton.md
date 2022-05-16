@@ -22,13 +22,13 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 - Below is the configuration of adding Cronos Network
   - Network Name: **Cronos Mainnet**
-    - New RPC URL: **https://evm.cronos.org/**
+    - New RPC URL: **https://evm-dev.cronos.org/**
     - Chain ID: **25**
     - Currency Symbol: **CRO**
     - Block Explorer URL: **https://cronoscan.com/**
   ***
   - Network Name: **Cronos Testnet**
-    - New RPC URL: **https://evm-t3.cronos.org/**
+    - New RPC URL: **https://evm-dev-t3.cronos.org/**
     - Chain ID: **338**
     - Currency Symbol: **TCRO**
     - Block Explorer URL: **https://testnet.cronoscan.com**
