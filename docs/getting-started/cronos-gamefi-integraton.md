@@ -31,7 +31,7 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
     - New RPC URL: **https://evm-dev-t3.cronos.org/**
     - Chain ID: **338**
     - Currency Symbol: **TCRO**
-    - Block Explorer URL: **https://cronos.org/explorer/testnet3**
+    - Block Explorer URL: **https://testnet.cronoscan.com**
   - Sufficient fund on deployer address
     - [Testnet Faucet](https://cronos.crypto.org/faucet/)
 
