@@ -36,7 +36,7 @@ Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and
 Web SDK
 Learn more about how to integrate with Wallet Extension here.
 
-# DeFiConnect
+## DeFiConnect
 
 
 ### Installation
