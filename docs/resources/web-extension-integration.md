@@ -36,7 +36,7 @@ Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and
 Web SDK
 Learn more about how to integrate with Wallet Extension here.
 
-## DeFiConnect
+# DeFiConnect
 
 
 ### Installation
@@ -199,4 +199,5 @@ Complete the form below to whitelist your DApp.  Whitelisting allows your DApp t
 
 ## DApp Listing Form
 Complete the form below to be featured on our DeFi Wallet DApp listing:
-https://crypto-com.typeform.com/to/bRvudlYV
+
+To be featured on our DeFi Wallet, kindly complete the [DApp Listing Form](https://crypto-com.typeform.com/to/bRvudlYV).
