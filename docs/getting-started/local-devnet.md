@@ -39,7 +39,7 @@ By following this tutorial, you can compile and run the latest development versi
 
 ## Overview
 
-We will be using [pystarport](https://github.com/crypto-org-chain/chain-main/tree/master/pystarport), a dedicated script similar to [cosmos starport](https://github.com/tendermint/starport) without the scaffolding feature to build a local development network with multiple validators. Or using a shell script init.sh to build a local development network with a single validator.
+The first option is to use [pystarport](https://github.com/crypto-org-chain/chain-main/tree/master/pystarport), a dedicated script similar to [cosmos starport](https://github.com/tendermint/starport), but without the scaffolding feature to build a local development network with multiple validators. Another option is to use a shell script `init.sh` to build a local development network with a single validator.
 
 
 ## Pre-requisites
@@ -191,6 +191,8 @@ As in the last section, pre-created Hierarchical Deterministic (HD) mnemonic wit
 $ cronosd keys add signer2 --recover --keyring-backend test
 ```
 
+Fill in your bip39 mnemonic, as can be found in `data/cronos_777-1/accounts.json`. Note that these addresses and mnemonic phrases are different for everyone.
+
 ```bash
 Enter your bip39 mnemonic
 cruel install century disease tired glass lesson mushroom donor usual uncover fly post stamp busy utility certain obscure whisper scene order want sentence reduce
@@ -205,7 +207,7 @@ cruel install century disease tired glass lesson mushroom donor usual uncover fl
 
 ### Check account balance
 
-You can check the account balance by
+You can, for example, check the account balance by
 
 ```sh
 cronosd q bank balances crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk -o json | jq
@@ -250,10 +252,10 @@ We can see that there is `30000000000000000000000` basetcro in this address.
   pubkeys: []
   ```
 
-- Now we can transfer tokens to `Bob`, for example you can send `1cro` to Bob's address by
+- Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
 
 ```sh
-  $ cronosd tx bank send signer1 crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt 1cro --keyring-backend test --chain-id cronosd
+  $ cronosd tx bank send signer1 crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt 1basetcro --keyring-backend test --chain-id cronos_777-1
   ```
 
 - Lastly, check balance of Bob's address:
