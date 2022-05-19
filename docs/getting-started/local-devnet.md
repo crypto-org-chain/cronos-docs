@@ -207,7 +207,7 @@ cruel install century disease tired glass lesson mushroom donor usual uncover fl
 
 ### Check account balance
 
-You can for example check the account balance by
+You can, for example, check the account balance by
 
 ```sh
 cronosd q bank balances crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk -o json | jq
