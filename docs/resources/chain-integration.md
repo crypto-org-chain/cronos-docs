@@ -277,6 +277,30 @@ https://evm-t3.cronos.org:8545/
 - Cronos Testnet:
   [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
 
+### Creating API Keys on CronoScan
+The CronoScan Developer APIs are designed to provide accessible and consistent Cronos data to the Cronos community. 
+The APIs are provided as a community service with a rate up to 5 calls per second per IP. 
+Users need to register for a CronoScan account to register for an API key. 
+After registration at [https://cronoscan.com/register](https://cronoscan.com/register), a CronoScan user account will have a quota of 3 API keys.
+
+On the CronoScan user dashboard ([https://cronoscan.com/myaccount](https://cronoscan.com/myaccount)), select “_**API-KEYs**_” from the left-hand side column or go to [https://cronoscan.com/myapikey](https://cronoscan.com/myapikey).
+
+<p align="center">
+<img src="./assets/myapikey-page.png" alt="drawing" height="400px"/>
+</p>
+
+Click on the “_**Create a new API-KEY token**_” button, then optionally input an “_**AppName**_”, “My Cronos App” for example.
+
+<p align="center">
+<img src="./assets/create-apikey.png" alt="drawing" height="200px"/>
+</p>
+
+After the “_**API-KEY Token**_” is successfully created, a message will show up as below, and you may now use the “_**API key token**_” for your applications on Cronos!
+
+<p align="center">
+<img src="./assets/create-apikey-successful.png" alt="drawing" height="300px"/>
+</p>
+
 ## Community
 
 [Discord](https://discord.gg/cGtxgVfGMZ)
