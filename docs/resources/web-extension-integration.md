@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Crypto.com | Wallet Extension - A non-custodial wallet to store, earn, and grow your crypto
+
+### Crypto.com | Wallet Extension - A non-custodial wallet to store, earn, and grow your crypto
 
 Crypto.com | Wallet Extension provides a simple and secure way for users to connect their Crypto.com DeFi Wallet with Ethereum-compatible DApps via their browser.
 
@@ -30,19 +31,40 @@ Integrations with additional chains are planned for the near future.
 
 ## Integrating with Defi Connect
 
-Integrate your DApp with Defi Connect to provide a seamless and native experience for your end users to sign transactions.
+Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and native experience for your end users to sign transactions.
 
-### Install
+Web SDK
+Learn more about how to integrate with Wallet Extension here.
 
-#### Via yarn
-```bash
-yarn add "deficonnect"
-```
+## DeFiConnect
 
-#### Via npm
+
+### Installation
+
+####  Via npm package manager
+
 ```bash
 npm install "deficonnect"
 ```
+
+
+#### Via script tag
+
+```html
+<script type="module" src="https://unpkg.com/deficonnect/dist/index.umd.js"></script>
+```
+
+the global variable is: `window.DeFiConnect`
+
+ 
+```javascript
+const connector = new window.DeFiConnect.DeFiWeb3Connector({
+ supportedChainIds: [1],
+ rpc: { 1: 'https://mainnet.infura.io/v3/INFURA_API_KEY' },
+ pollingInterval: 15000
+})
+```
+
 
 ### Usage
 :::tip Note
@@ -51,6 +73,7 @@ npm install "deficonnect"
 
 #### For `web3-react` 
 if you use web3-react, it is easy to integrate:
+
 ```tsx
 import { DeFiWeb3Connector } from 'deficonnect'
 
@@ -79,6 +102,83 @@ connector.activate();
 const provider = await connector.getProvider();
 const web3 = new Web3(provider);
 ```
+
+### methods for DeFiWeb3Connector
+ 
+```typescript
+// connect to the Wallet
+await connector.activate()
+ 
+// disconnect the Wallet
+await connector.deactivate()
+```
+ 
+### events for Provider (EIP-1193)
+ 
+```typescript
+// Subscribe to accounts change
+provider.on('accountsChanged', (accounts: string[]) => {
+ console.log(accounts)
+})
+ 
+// Subscribe to chainId change
+provider.on('chainChanged', (chainId: number) => {
+ console.log(chainId)
+})
+ 
+// Subscribe to session connection
+provider.on('connect', () => {
+ console.log('connect')
+})
+ 
+// Subscribe to session disconnection
+provider.on('disconnect', (code: number, reason: string) => {
+ console.log(code, reason)
+})
+```
+ 
+### methods for Provider
+ 
+```typescript
+interface RequestArguments {
+method: string;
+params?: unknown[] | object;
+}
+ 
+// Send JSON RPC requests
+const result = await provider.request(payload: RequestArguments);
+ 
+// Close provider session
+await provider.disconnect()
+```
+ 
+### methods for Web3
+ 
+```typescript
+//  Get Accounts
+const accounts = await web3.eth.getAccounts()
+ 
+//  Get Chain Id
+const chainId = await web3.eth.chainId()
+ 
+//  Get Network Id
+const networkId = await web3.eth.net.getId()
+ 
+// Send Transaction
+const txHash = await web3.eth.sendTransaction(tx)
+ 
+// Sign Transaction
+const signedTx = await web3.eth.signTransaction(tx)
+ 
+// Sign Message
+const signedMessage = await web3.eth.sign(msg)
+ 
+// Sign Typed Data
+const signedTypedData = await web3.eth.signTypedData(msg)
+```
+
+
+
 ## Example Apps
 The following git folder will provide you with some basic deficonnect integrations via react and web3modal. 
 :::tip Note
@@ -90,8 +190,14 @@ You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://in
   $ git clone git@github.com:crypto-org-chain/dev-utils.git
   ```
 
-## DApp Listing Form
+## DApp Whitelisting Form
+Complete the form below to whitelist your DApp.  Whitelisting allows your DApp to be connected to DeFi Wallet via DApp browser:
 
+[DApp Whitelisting Form](https://crypto-com.typeform.com/to/MNIS7boO#app_version=xxxxx&os_version=xxxxx&device=xxxxx)
+
+*We are trying to respond to all whitelisting requests within 24 hours on working days. 
+
+## DApp Listing Form
 Complete the form below to be featured on our DeFi Wallet DApp listing:
 
-[DApp Listing Form](https://crypto-com.typeform.com/to/bRvudlYV)
+To be featured on our DeFi Wallet, kindly complete the [DApp Listing Form](https://crypto-com.typeform.com/to/bRvudlYV).
