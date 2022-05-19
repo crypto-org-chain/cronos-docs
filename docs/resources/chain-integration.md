@@ -49,7 +49,7 @@ If this assumption is important in your application, please consider setting up 
 4. **EVM HTTP JSON RPC (Web3 compatible)**
    - [https://evm.cronos.org/](https://evm.cronos.org/)
 
-### Official token contract addresses for Cronos mainnet Beta
+## Official token contract addresses for Cronos mainnet Beta
 
 | Token name | Address                                                                                                                               | Decimal |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
@@ -122,6 +122,12 @@ If this assumption is important in your application, please consider setting up 
 | BAT        | [0x2F712E0a6f92e3f865EaEb86f07BAFc67974d26c](https://cronoscan.com/address/0x2F712E0a6f92e3f865EaEb86f07BAFc67974d26c/transactions)   | 18      |
 | SRM        | [0xB858e614779f148992949A3b15E6127dDA204ca4](https://cronoscan.com/address/0xB858e614779f148992949A3b15E6127dDA204ca4/transactions)   | 6       |
 | DYDX       | [0x4442C740cc5B47F032983106E66E3C9dC945676C](https://cronoscan.com/address/0x4442C740cc5B47F032983106E66E3C9dC945676C/transactions)   | 18      |
+| UMA        | [0x33564807CC70c6422124d867B344D7b90bF21A76](https://cronoscan.com/address/0x33564807CC70c6422124d867B344D7b90bF21A76/transactions)   | 18      |
+| CHR        | [0xcdee9300A1527E0000b054320D371A9C8c4a8AF6](https://cronoscan.com/address/0xcdee9300A1527E0000b054320D371A9C8c4a8AF6/transactions)   | 6       |
+| EFI        | [0x47E16f9EE811d3651D979941325c545Da6385daF](https://cronoscan.com/address/0x47E16f9EE811d3651D979941325c545Da6385daF/transactions)   | 18      |
+| STX        | [0x30BBA7b57952E7028c47d5c6AB295D0Da7139eF9](https://cronoscan.com/address/0x30BBA7b57952E7028c47d5c6AB295D0Da7139eF9/transactions)   | 6       |
+| ENS        | [0xA0913e0D7A85954e89452e7Ccb8d1235db74C330](https://cronoscan.com/address/0xA0913e0D7A85954e89452e7Ccb8d1235db74C330/transactions)   | 18      |
+| PLA        | [0x044597363b0054986aE4289d25CD7D0D451766Fc](https://cronoscan.com/address/0x044597363b0054986aE4289d25CD7D0D451766Fc/transactions)   | 18      |
 
 ## Integration guide for **Cronos Testnet**
 
@@ -138,7 +144,7 @@ If this assumption is important in your application, please consider setting up 
   - New RPC URL: **https://evm-t3.cronos.org/**
   - Chain ID: **338**
   - Currency Symbol: **TCRO**
-  - Block Explorer URL: **https://cronos.org/explorer/testnet3**
+  - Block Explorer URL: **https://testnet.cronoscan.com/**
 
 ### RPC URLs for For Cronos testnet
 
@@ -275,7 +281,7 @@ https://evm-t3.cronos.org:8545/
 - Cronos Mainnet Beta:
   [https://cronoscan.com/](https://cronoscan.com)
 - Cronos Testnet:
-  [https://cronos.org/explorer/testnet3](https://cronos.org/explorer/testnet3)
+  [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
 
 ## Community
 

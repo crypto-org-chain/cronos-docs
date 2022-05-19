@@ -266,7 +266,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 
 ## Cronos testnet faucet and explorer
 
-- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://cronos.org/explorer/testnet3);
+- You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://testnet.cronoscan.com);
 
 - To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
 
