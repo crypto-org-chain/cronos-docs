@@ -133,7 +133,11 @@ module.exports = {
           {
             text: "Technical Glossary",
             link: "/resources/technical-glossary"
-          }
+          },
+          {
+            text: "Useful Projects on Cronos",
+            link: "/resources/useful-projects"
+          },
         ]
       }
     ],
@@ -177,7 +181,8 @@ module.exports = {
         "desktop-wallet-integration",
         "node-and-rpc-setup-notes",
         "cosmos-grpc-docs",
-        "technical-glossary"
+        "technical-glossary",
+        "useful-projects",
       ],
       "/api/": "auto"
     },
