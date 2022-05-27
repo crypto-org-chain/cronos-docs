@@ -11,7 +11,7 @@ WorkingDirectory=<ETHERMINTD_BINARY_DIR>
 ExecStart=<ETHERMINTD_BINARY> start --home <ETHERMINTD_USER_HOME>/.cronos
 Restart=on-failure
 RestartSec=10
-LimitNOFILE=4096
+LimitNOFILE=50000
 
 [Install]
 WantedBy=multi-user.target
