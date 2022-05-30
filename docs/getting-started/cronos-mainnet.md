@@ -339,7 +339,7 @@ Restart=on-failure
 
 RestartSec=10
 
-LimitNOFILE=4096
+LimitNOFILE=50000
 
 
 
