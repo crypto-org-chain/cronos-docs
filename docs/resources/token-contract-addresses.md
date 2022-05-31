@@ -88,4 +88,7 @@
 | JASMY      | [0x227EdF65f866255A0ED4B5b453fe43A41182EC3A](https://cronoscan.com/address/0x227EdF65f866255A0ED4B5b453fe43A41182EC3A/transactions)   | 18      |
 | COMP       | [0x4Fb1af9D09DB3fbbda96071EaE0aeae6E871F9AC](https://cronoscan.com/address/0x4Fb1af9D09DB3fbbda96071EaE0aeae6E871F9AC/transactions)   | 18      |
 | ANKR       | [0x1FE0f470736548794b47AFe5613d3A309d964d3c](https://cronoscan.com/address/0x1FE0f470736548794b47AFe5613d3A309d964d3c/transactions)   | 18      |
-
+| YGG        | [0xfF9620d9F80F80056cbE4Bb84403a9E9C5174213](https://cronoscan.com/address/0xfF9620d9F80F80056cbE4Bb84403a9E9C5174213/transactions)   | 18      |
+| PAXG       | [0x81749e7258f9e577f61f49ABeeB426b70F561b89](https://cronoscan.com/address/0x81749e7258f9e577f61f49ABeeB426b70F561b89/transactions)   | 18      |
+| OGN        | [0x78E9974A74d6c980De4E3F8039248320c5A2d714](https://cronoscan.com/address/0x78E9974A74d6c980De4E3F8039248320c5A2d714/transactions)   | 18      |
+| AR         | [0xeB6B3AEdA7A2705fAC5e2350fA4D71a64b393b37](https://cronoscan.com/address/0xeB6B3AEdA7A2705fAC5e2350fA4D71a64b393b37/transactions)   | 12      |
