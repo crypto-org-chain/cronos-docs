@@ -24,3 +24,10 @@ This documentation showcases the Cronos play Gaming SDK integration with the Cro
 
 ## ChainSafe SDK
 The underlying SDK for this documentation has been developed and curated by ChainSafe. For additional operations and methods please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
+
+
+### Useful links
+
+- Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
+- Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da&label=Crypto.org Chain)](https://discord.gg/pahqHz26q4)
+- Email: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)
