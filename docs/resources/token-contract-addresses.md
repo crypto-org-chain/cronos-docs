@@ -15,7 +15,7 @@
 | ENJ        | [0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7](https://cronoscan.com/address/0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7/transactions)   | 18      |
 | ELON       | [0x02DCcaf514C98451320a9365C5b46C61d3246ff3](https://cronoscan.com/address/0x02DCcaf514C98451320a9365C5b46C61d3246ff3/transactions)   | 18      |
 | TUSD       | [0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e](https://cronoscan.com/address/0x87EFB3ec1576Dec8ED47e58B832bEdCd86eE186e/transactions)   | 18      |
-| LUNA       | [0x9278C8693e7328bef49804BacbFb63253565dffD](https://cronoscan.com/address/0x9278C8693e7328bef49804BacbFb63253565dffD/transactions)   | 6       |
+| LUNC       | [0x9278C8693e7328bef49804BacbFb63253565dffD](https://cronoscan.com/address/0x9278C8693e7328bef49804BacbFb63253565dffD/transactions)   | 6       |
 | DOT        | [0x994047FE66406CbD646cd85B990E11D7F5dB8fC7](https://cronoscan.com/address/0x994047FE66406CbD646cd85B990E11D7F5dB8fC7/transactions)   | 10      |
 | ADA        | [0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0](https://cronoscan.com/address/0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0/transactions)   | 6       |
 | RADAR      | [0xa58e3AeAeA3292c3E260378e55E9684C59E7A27a](https://cronoscan.com/address/0xa58e3AeAeA3292c3E260378e55E9684C59E7A27a/transactions)   | 18      |
@@ -88,4 +88,7 @@
 | JASMY      | [0x227EdF65f866255A0ED4B5b453fe43A41182EC3A](https://cronoscan.com/address/0x227EdF65f866255A0ED4B5b453fe43A41182EC3A/transactions)   | 18      |
 | COMP       | [0x4Fb1af9D09DB3fbbda96071EaE0aeae6E871F9AC](https://cronoscan.com/address/0x4Fb1af9D09DB3fbbda96071EaE0aeae6E871F9AC/transactions)   | 18      |
 | ANKR       | [0x1FE0f470736548794b47AFe5613d3A309d964d3c](https://cronoscan.com/address/0x1FE0f470736548794b47AFe5613d3A309d964d3c/transactions)   | 18      |
-
+| YGG        | [0xfF9620d9F80F80056cbE4Bb84403a9E9C5174213](https://cronoscan.com/address/0xfF9620d9F80F80056cbE4Bb84403a9E9C5174213/transactions)   | 18      |
+| PAXG       | [0x81749e7258f9e577f61f49ABeeB426b70F561b89](https://cronoscan.com/address/0x81749e7258f9e577f61f49ABeeB426b70F561b89/transactions)   | 18      |
+| OGN        | [0x78E9974A74d6c980De4E3F8039248320c5A2d714](https://cronoscan.com/address/0x78E9974A74d6c980De4E3F8039248320c5A2d714/transactions)   | 18      |
+| AR         | [0xeB6B3AEdA7A2705fAC5e2350fA4D71a64b393b37](https://cronoscan.com/address/0xeB6B3AEdA7A2705fAC5e2350fA4D71a64b393b37/transactions)   | 12      |
