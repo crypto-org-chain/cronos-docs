@@ -6,3 +6,4 @@
 - [Openzeppelin](https://docs.openzeppelin.com/)
 - [Remix IDE](https://remix.ethereum.org/)
 - [Cronos-ChainSafe-Unity-sample](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/play/assets/cronos-chainsafe-unity-sample.unitypackage.zip)
+- Email: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)
