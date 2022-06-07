@@ -92,3 +92,10 @@
 | PAXG       | [0x81749e7258f9e577f61f49ABeeB426b70F561b89](https://cronoscan.com/address/0x81749e7258f9e577f61f49ABeeB426b70F561b89/transactions)   | 18      |
 | OGN        | [0x78E9974A74d6c980De4E3F8039248320c5A2d714](https://cronoscan.com/address/0x78E9974A74d6c980De4E3F8039248320c5A2d714/transactions)   | 18      |
 | AR         | [0xeB6B3AEdA7A2705fAC5e2350fA4D71a64b393b37](https://cronoscan.com/address/0xeB6B3AEdA7A2705fAC5e2350fA4D71a64b393b37/transactions)   | 12      |
+| GLMR       | [0x268B344bF8bbCd9Dd4e4FA68264309B05F15820a](https://cronoscan.com/address/0x268B344bF8bbCd9Dd4e4FA68264309B05F15820a/transactions)   | 18      |
+| ACA        | [0x213E6fb02009c13692bAA23C63FdE8D623d22705](https://cronoscan.com/address/0x213E6fb02009c13692bAA23C63FdE8D623d22705/transactions)   | 12      |
+| SPS        | [0x1B554fda68bA95924E5bbD0BaF8e769F039e775B](https://cronoscan.com/address/0x1B554fda68bA95924E5bbD0BaF8e769F039e775B/transactions)   | 18      |
+| CKB        | [0x5dEED46f39c485bA03b61d83763d0f6357dc4737](https://cronoscan.com/address/0x5dEED46f39c485bA03b61d83763d0f6357dc4737/transactions)   |   8      |
+| VOXEL      | [0x5fdbFE38E050829374001630B8710BDd05Ea55C0](https://cronoscan.com/address/0x5fdbFE38E050829374001630B8710BDd05Ea55C0/transactions)   | 18      |
+| KRL        | [0x62E622fa4E180C391f2E089FC1d5eA7AdCB96575](https://cronoscan.com/address/0x62E622fa4E180C391f2E089FC1d5eA7AdCB96575/transactions)   | 18      |
+
