@@ -1,20 +1,16 @@
-# The "Huygen" upgrade guide (`v0.6.*` to `v0.7.*`) :
+# The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :
 
-:::warning
-
+{% hint style="warning" %}
 The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800. Referencing estimated time can be found on [https://cronoscan.com/block/countdown/2693800](https://cronoscan.com/block/countdown/2693800)
-
-
-
 
 **DO NOT UPGRADE to the binary v0.7.0 before that suggested upgrade schedule.**
 
+You might check the current block height by the [Cronoscan explorer](https://cronoscan.com/) or using
 
-You might check the current block height by the [Cronoscan explorer](https://cronoscan.com/) or using 
 ```
 curl -s https://rpc-cronos.crypto.org:443/commit | jq "{height: .result.signed_header.header.height}"
 ```
-:::
+{% endhint %}
 
 ## Step 0 - Don't panic
 
@@ -36,23 +32,23 @@ It is critically important for validator operators to back-up the `.cronos/data/
 
 To simplify the following step, we will be using **Linux-x86** for illustration. Binary for Mac Windows with different DB and architecture are also available [here](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0).
 
-- Terminate the `cronosd`; afterwards, download the `0.7.0` released binaries from github:
+*   Terminate the `cronosd`; afterwards, download the `0.7.0` released binaries from github:
 
-  ```bash
-  $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Linux_x86_64.tar.gz
-  $ tar -zxvf cronos_0.7.0_Linux_x86_64.tar.gz
-  ```
+    ```bash
+    $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.7.0/cronos_0.7.0_Linux_x86_64.tar.gz
+    $ tar -zxvf cronos_0.7.0_Linux_x86_64.tar.gz
+    ```
+*
 
-  ::: tip Remarks:
-  If you have stated `cronosd` with _systemd_ service, kindly stop it by
+{% hint style="info" %}
+Remarks: If you have stated `cronosd` with _systemd_ service, kindly stop it by
 
-  ```bash
-  $ sudo systemctl stop cronosd
-  ```
+```bash
+$ sudo systemctl stop cronosd
+```
 
-  And replace the binary in the location where the `ExecStart` states in Systemd Unit file.
-
-  :::
+And replace the binary in the location where the `ExecStart` states in Systemd Unit file.
+{% endhint %}
 
 ### Step 1.1 - Verify the version
 
@@ -68,11 +64,10 @@ $ ./cronosd version
 
 In this v0.7.0 upgrade, there are a few extra parameters that we would have to add to `.cronos/config/app.toml` under
 
-- EVM Configuration - `[evm]` and;
-- JSON RPC Configuration - `[json-rpc]`.
-they are:
+* EVM Configuration - `[evm]` and;
+* JSON RPC Configuration - `[json-rpc]`. they are:
 
-``` diff
+```diff
 ...
 ...
 ###############################################################################
@@ -97,7 +92,6 @@ they are:
 + http-idle-timeout="120s"
 ...
 ...
-
 ```
 
 kindly insert the above parameters, save it and move on!
@@ -106,21 +100,21 @@ kindly insert the above parameters, save it and move on!
 
 We are ready to start the node join the network again with the new binary:
 
-- Start `cronosd`, e.g.:
+* Start `cronosd`, e.g.:
 
 ```bash
   $ ./cronosd start
 ```
 
-:::tip Remark:
-Once the `cronosd` is started we would see the message
+{% hint style="info" %}
+Remark: Once the `cronosd` is started we would see the message
 
 ```
 applying upgrade "v0.7.0" at height: 2693800"
 ```
 
 and there will be an iteration over the previous blockchain data. This process will take a while, which is depending on the size of the database and the hardware specs.
-:::
+{% endhint %}
 
 Afterwards, sit back and wait for the syncing process. You can query the node syncing status by
 

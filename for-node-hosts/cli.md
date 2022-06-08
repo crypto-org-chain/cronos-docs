@@ -1,26 +1,32 @@
 ---
 meta:
-  - name: "title"
+  - name: title
     content: Cronos | cronosd
-  - name: "description"
-    content: cronosd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
-  - name: "og:title"
+  - name: description
+    content: >-
+      cronosd is the all-in-one command-line interface. It supports wallet
+      management, funds transfer and staking operations.
+  - name: og:title
     content: Cronos | cronosd
-  - name: "og:type"
+  - name: og:type
     content: Website
-  - name: "og:description"
-    content: cronosd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
-  - name: "og:image"
+  - name: og:description
+    content: >-
+      cronosd is the all-in-one command-line interface. It supports wallet
+      management, funds transfer and staking operations.
+  - name: og:image
     content: https://cronos.org/og-image.png
-  - name: "twitter:title"
+  - name: twitter:title
     content: Cronos | cronosd
-  - name: "twitter:site"
-    content: "@cryptocom"
-  - name: "twitter:card"
+  - name: twitter:site
+    content: '@cryptocom'
+  - name: twitter:card
     content: summary_large_image
-  - name: "twitter:description"
-    content: cronosd is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
-  - name: "twitter:image"
+  - name: twitter:description
+    content: >-
+      cronosd is the all-in-one command-line interface. It supports wallet
+      management, funds transfer and staking operations.
+  - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://cronos.org/docs/wallets/cli.html
 ---
@@ -33,7 +39,7 @@ canonicalUrl: https://cronos.org/docs/wallets/cli.html
 
 ### Build Prerequisites
 
-- You can get the latest `cronosd` binary here from the [release page](https://github.com/crypto-org-chain/cronos/releases);
+* You can get the latest `cronosd` binary here from the [release page](https://github.com/crypto-org-chain/cronos/releases);
 
 ### Using `cronosd`
 
@@ -111,8 +117,7 @@ node = "tcp://localhost:26657"
 broadcast-mode = "sync"
 ```
 
-After the necessary changes are made in the `client.toml`, then save.
-For example, if we directly change the `chain-id` from `ethermint0` to ethermint-test1, and output to number, it would change instantly as shown below.
+After the necessary changes are made in the `client.toml`, then save. For example, if we directly change the `chain-id` from `ethermint0` to ethermint-test1, and output to number, it would change instantly as shown below.
 
 ```
 $ cronosd config
@@ -129,26 +134,27 @@ $ cronosd config
 
 A list of commonly used flags of cronosd is listed below:
 
-| Option              | Description                   | Type         | Default Value   |
-| ------------------- | ----------------------------- | ------------ | --------------- |
-| `--home`            | Directory for config and data | string       | `~/.cronos` |
-| `--chain-id`        | Full Chain ID                 | String       | ---             |
-| `--output`          | Output format                 | string       | "text"          |
-| `--keyring-backend` | Select keyring's backend      | os/file/test | os              |
+| Option              | Description                   | Type         | Default Value |
+| ------------------- | ----------------------------- | ------------ | ------------- |
+| `--home`            | Directory for config and data | string       | `~/.cronos`   |
+| `--chain-id`        | Full Chain ID                 | String       | ---           |
+| `--output`          | Output format                 | string       | "text"        |
+| `--keyring-backend` | Select keyring's backend      | os/file/test | os            |
 
 ## Command list
 
 A list of commonly used `cronosd` commands.
 
-| Command | Description                                                         | List                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `keys`  | [Keys management](#keys-management-cronosd-keys)                 | [`add <wallet_name>`](#keys-add-wallet-name-create-a-new-key)<br /><br />[`add <key_name> --recover`](#keys-add-key-name-recover-restore-existing-key-by-seed-phrase)<br /><br />[`list`](#keys-list-list-your-keys)<br /><br />[`show <key_name>`](#keys-show-key-name-retrieve-key-information)<br /><br />[`delete <key_name>`](#keys-delete-key-name-delete-a-key)<br /><br />[`export <key_name>`](#keys-export-key-name-export-private-keys) |
-| `tx`    | [Transactions subcommands](#transactions-subcommands-cronosd-tx) | [`bank send`](#tx-bank-send-transfer-operation)<br /><br />[`staking delegate`](#delegate-you-funds-to-a-validator-tx-staking-delegate-validator-addr-amount)<br /><br />[`staking unbond`](#unbond-your-delegated-funds-tx-staking-unbond-validator-addr-amount)<br /><br />[`staking create-validator`](#tx-staking-create-validator-joining-the-network-as-a-validator)<br /><br />[`slashing unjail`](#tx-slashing-unjail-unjail-a-validator)  |
-| `query` | [Query subcommands](#balance-transaction-history)                   | [`query bank balance`](#query-bank-balances-check-your-transferable-balance)                                                                                                                                                                                                                                                                                                                                                                       |
+| Command | Description                                                            | List                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `keys`  | [Keys management](cli.md#keys-management-cronosd-keys)                 | <p><a href="cli.md#keys-add-wallet-name-create-a-new-key"><code>add &#x3C;wallet_name></code></a><br><br><a href="cli.md#keys-add-key-name-recover-restore-existing-key-by-seed-phrase"><code>add &#x3C;key_name> --recover</code></a><br><br><a href="cli.md#keys-list-list-your-keys"><code>list</code></a><br><br><a href="cli.md#keys-show-key-name-retrieve-key-information"><code>show &#x3C;key_name></code></a><br><br><a href="cli.md#keys-delete-key-name-delete-a-key"><code>delete &#x3C;key_name></code></a><br><br><a href="cli.md#keys-export-key-name-export-private-keys"><code>export &#x3C;key_name></code></a></p> |
+| `tx`    | [Transactions subcommands](cli.md#transactions-subcommands-cronosd-tx) | <p><a href="cli.md#tx-bank-send-transfer-operation"><code>bank send</code></a><br><br><a href="cli.md#delegate-you-funds-to-a-validator-tx-staking-delegate-validator-addr-amount"><code>staking delegate</code></a><br><br><a href="cli.md#unbond-your-delegated-funds-tx-staking-unbond-validator-addr-amount"><code>staking unbond</code></a><br><br><a href="cli.md#tx-staking-create-validator-joining-the-network-as-a-validator"><code>staking create-validator</code></a><br><br><a href="cli.md#tx-slashing-unjail-unjail-a-validator"><code>slashing unjail</code></a></p>                                                   |
+| `query` | [Query subcommands](cli.md#balance-transaction-history)                | [`query bank balance`](cli.md#query-bank-balances-check-your-transferable-balance)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 You may also add the flag `-h, --help` on `cronosd [command]` to get more available commands and details.
 
-::: details Example: More details of subcommand - tx staking
+{% hint style="info" %}
+Example: More details of subcommand - tx staking
 
 ```bash
 $ cronosd tx staking --help
@@ -176,7 +182,8 @@ Global Flags:
       --trace
 ```
 
-:::
+
+{% endhint %}
 
 ## Keys management - `cronosd keys`
 
@@ -184,8 +191,10 @@ First of all, you will need an address to store and spend your CRO.
 
 ### `keys add <wallet_name>` - Create a new key
 
-You can create a new key with the name `Default` as in the following example:
-::: details Example: Create a new address
+You can create a new key with the name `Default` as in the following example:&#x20;
+
+{% hint style="info" %}
+Example: Create a new address
 
 ```bash
 $ cronosd keys add Default
@@ -201,33 +210,34 @@ It is the only way to recover your account if you ever forget your password.
 
 farm surround surround hunt shop glory fringe bag mountain clerk arch ankle announce turtle slide brisk carbon album immense drop example speed grain dutch
 ```
+{% endhint %}
 
-:::
 The key comes with a "mnemonic phrase", which is serialized into a human-readable 24-word mnemonic. User can recover their associated addresses with the mnemonic phrase.
 
-:::danger
-It is important that you keep the mnemonic for address secure, as there is **no way** to recover it. You would not be able to recover and access the funds in the wallet if you forget the mnemonic phrase.
-:::
+{% hint style="danger" %}
+It is important that you keep the mnemonic for address secure, as there is **no way** to recover it. You would not be able to recover and access the funds in the wallet if you forget the mnemonic phrase.&#x20;
+{% endhint %}
 
-### `keys add <key_name> --recover ` - Restore existing key by seed phrase
+### `keys add <key_name> --recover` - Restore existing key by seed phrase
 
 You can restore an existing key with the mnemonic.
 
-::: details Example: Restore an existing key
+{% hint style="info" %}
+Example: Restore an existing key
 
 ```bash
 $ cronosd keys add Default_restore --recover
 > Enter your bip39 mnemonic
 ## Enter your 24-word mnemonic here ##
 ```
-
-:::
+{% endhint %}
 
 ### `keys list` - List your keys
 
 Multiple keys can be created when needed. You can list all keys saved under the storage path.
 
-::: details Example: List all of your keys
+{% hint style="info" %}
+Example: List all of your keys
 
 ```bash
 $ cronosd keys list
@@ -246,14 +256,14 @@ $ cronosd keys list
     threshold: 0
     pubkeys: []
 ```
-
-:::
+{% endhint %}
 
 ### `keys show <key_name>` - Retrieve key information
 
 You can retrieve key information by its name:
 
-::: details Example: Retrieve key information - Account Address and its public key
+{% hint style="info" %}
+Example: Retrieve key information - Account Address and its public key
 
 ```bash
 $ cronosd keys show mykey --bech acc
@@ -263,10 +273,10 @@ $ cronosd keys show mykey --bech acc
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 ```
+{% endhint %}
 
-:::
-
-::: details Example: Retrieve key information - Validator Address and its public key
+{% hint style="info" %}
+Example: Retrieve key information - Validator Address and its public key
 
 ```bash
 $ cronosd keys show Default --bech val
@@ -277,10 +287,10 @@ $ cronosd keys show test --bech val
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 ```
+{% endhint %}
 
-:::
-
-::: details Example: Retrieve key information - Consensus nodes Address and its public key
+{% hint style="info" %}
+Example: Retrieve key information - Consensus nodes Address and its public key
 
 ```bash
 $ cronosd keys show Default --bech cons
@@ -291,33 +301,32 @@ $ cronosd keys show test --bech cons
   pubkey: '{"@type":"/ethermint.crypto.v1alpha1.ethsecp256k1.PubKey","key":"A8nbJ3eW9oAb2RNZoS8L71jFMfjk6zVa1UISYgKK9HPm"}'
   mnemonic: ""
 ```
-
-:::
+{% endhint %}
 
 ### `keys delete <key_name>` - Delete a key
 
 You can delete a key in your storage path.
 
-:::danger
-Make sure you have backed up the key mnemonic before removing any of your keys, as there will be no way to recover your key without the mnemonic.
-:::
+{% hint style="danger" %}
+Make sure you have backed up the key mnemonic before removing any of your keys, as there will be no way to recover your key without the mnemonic.&#x20;
+{% endhint %}
 
-::: details Example: Remove a key
+{% hint style="info" %}
+Example: Remove a key
 
 ```bash
 $ cronosd keys delete Default_restore1
 Key reference will be deleted. Continue? [y/N]: y
 Key deleted forever (uh oh!)
 ```
-
-:::
+{% endhint %}
 
 ### `keys export <key_name>` - Export private keys
 
 You can export and backup your key by using the `export` subcommand:
 
-::: details Example: Export your keys
-Exporting the key _Default_ :
+{% hint style="info" %}
+Example: Export your keys Exporting the key _Default_ :
 
 ```bash
 $ cronosd keys export Default
@@ -330,8 +339,7 @@ type: secp256k1
 ## Tendermint private key ##
 -----END TENDERMINT PRIVATE KEY-----
 ```
-
-:::
+{% endhint %}
 
 ### The keyring `--keyring-backend` option
 
@@ -347,11 +355,11 @@ The default `os` backend stores the keys in operating system's credential sub-sy
 
 Here is a list of the corresponding password managers in different operating systems:
 
-- macOS (since Mac OS 8.6): [Keychain](https://support.apple.com/en-gb/guide/keychain-access/welcome/mac)
-- Windows: [Credentials Management API](https://docs.microsoft.com/en-us/windows/win32/secauthn/credentials-management)
-- GNU/Linux:
-  - [libsecret](https://gitlab.gnome.org/GNOME/libsecret)
-  - [kwallet](https://api.kde.org/frameworks/kwallet/html/index.html)
+* macOS (since Mac OS 8.6): [Keychain](https://support.apple.com/en-gb/guide/keychain-access/welcome/mac)
+* Windows: [Credentials Management API](https://docs.microsoft.com/en-us/windows/win32/secauthn/credentials-management)
+* GNU/Linux:
+  * [libsecret](https://gitlab.gnome.org/GNOME/libsecret)
+  * [kwallet](https://api.kde.org/frameworks/kwallet/html/index.html)
 
 ### `file` backend
 
@@ -363,13 +371,14 @@ The `test` backend is a password-less variation of the `file` backend. It stores
 
 ## Transactions subcommands - `cronosd tx`
 
-### `tx bank send ` - Transfer operation
+### `tx bank send` - Transfer operation
 
 Transfer operation involves the transfer of tokens between two addresses.
 
-#### **Send Funds** [`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
+#### **Send Funds** \[`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
 
-:::details Example: Send 10tcro  from an address to another.
+{% hint style="info" %}
+Example: Send 10tcro from an address to another.
 
 ```bash
 $ cronosd tx bank send Default tcrc1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcro  --chain-id cronostestnet_338-1
@@ -377,18 +386,18 @@ $ cronosd tx bank send Default tcrc1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcr
   {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address"....}
 confirm transaction before signing and broadcasting [y/N]: y
 ```
-
-:::
+{% endhint %}
 
 ### `tx staking` - Staking operations
 
 Staking operations involve the interaction between an address and a validator. It allows you to create a validator and lock/unlocking funds for staking purposes.
 
-#### **Delegate you funds to a validator** [`tx staking delegate <validator-addr> <amount>`]
+#### **Delegate you funds to a validator** \[`tx staking delegate <validator-addr> <amount>`]
 
 To bond funds for staking, you can delegate funds to a validator by the `delegate` command
 
-::: details Example: Delegate funds from `mykey` to a validator under the address `ethvaloper...lq`
+{% hint style="info" %}
+Example: Delegate funds from `mykey` to a validator under the address `ethvaloper...lq`
 
 ```bash
 $ cronosd tx staking delegate ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq 100tcro --from mykey --chain-id cronostestnet_338-1
@@ -396,14 +405,16 @@ $ cronosd tx staking delegate ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq 
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgDelegate"....}
 confirm transaction before signing and broadcasting [y/N]: y
 ```
+{% endhint %}
 
-:::
-
-#### **Unbond your delegated funds** [`tx staking unbond <validator-addr> <amount>`]
+#### **Unbond your delegated funds** \[`tx staking unbond <validator-addr> <amount>`]
 
 On the other hand, we can create a `Unbond` transaction to unbond the delegated funds
 
-::: details Example: Unbond funds from a validator under the address `ethvaloper...lq`
+{% hint style="info" %}
+
+
+Example: Unbond funds from a validator under the address `ethvaloper...lq`
 
 ```bash
 $ cronosd tx staking unbond ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq 100tcro --from mykey --chain-id cronostestnet_338-1
@@ -411,21 +422,20 @@ $ cronosd tx staking unbond ethvaloper1qsklxwt77qrxur494uvw07zjynu03dq9rdsrlq 10
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgUndelegate"...}
 confirm transaction before signing and broadcasting [y/N]: y
 ```
+{% endhint %}
 
-:::
-
-::: tip
-
-- Once your funds were unbonded, It will be locked until the `unbonding_time` has passed.
-
-:::
+{% hint style="info" %}
+Once your funds are unbonded, It will be locked until the`unbonding_time`has passed.
+{% endhint %}
 
 ## Balance & transaction history
 
 ### `query bank balances` - Check your transferable balance
 
-You can check your _transferable_ balance with the `balances` command under the bank module.
-:::details Example: Check your address balance
+You can check your _transferable_ balance with the `balances` command under the bank module.&#x20;
+
+{% hint style="info" %}
+Example: Check your address balance
 
 ```bash
 $ cronosd query bank balances tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --output json | jq
@@ -442,10 +452,8 @@ $ cronosd query bank balances tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --outp
     "total": "0"
   }
 }
-
 ```
-
-:::
+{% endhint %}
 
 ## Advance operations and transactions
 
@@ -457,7 +465,8 @@ Anyone who wishes to become a validator can submit a `create-validator` transact
 $ cronosd tx staking create-validator [flags]
 ```
 
-::: details Example: Joining the network as a validator
+{% hint style="info" %}
+Example: Joining the network as a validator
 
 ```bash
 $ cronosd tx staking create-validator \
@@ -474,8 +483,9 @@ $ cronosd tx staking create-validator \
 {"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator"...}
 confirm transaction before signing and broadcasting [y/N]: y
 ```
+{% endhint %}
 
-:::
+
 
 (TODO: details of each flag )
 

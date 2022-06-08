@@ -20,8 +20,12 @@ Only selected tokens mentioned above will be available for withdrawal into Crono
 
 **Step 4**: Select Cronos Network and paste in your Cronos wallet address
 
-You should have a Cronos wallet address ready at this point (Either on Metamask, Crypto.com DeFi Wallet or any other wallet supporting the Cronos chain). No memo is required to withdraw your funds to Cronos. Once you have confirmed that your Cronos wallet address is accurate, click “Continue” ![centered image](../../docs/bridge/assets/cdcapp4.png)
+You should have a Cronos wallet address ready at this point (Either on Metamask, Crypto.com DeFi Wallet or any other wallet supporting the Cronos chain). No memo is required to withdraw your funds to Cronos. Once you have confirmed that your Cronos wallet address is accurate, click “Continue”
 
-**Step 5**: Select your newly whitelisted Cronos wallet address and input the amount of assets that you wish to withdraw After entering the amount that you wish to withdraw, click the “Withdraw” button. Once you click Withdraw, you will be prompted to enter your Password and 2FA (If enabled). ![centered image](../../docs/bridge/assets/cdcapp5.png)
+&#x20;![centered image](../../docs/bridge/assets/cdcapp4.png)
+
+**Step 5**: Select your newly whitelisted Cronos wallet address and input the amount of assets that you wish to withdraw After entering the amount that you wish to withdraw, click the “Withdraw” button. Once you click Withdraw, you will be prompted to enter your Password and 2FA (If enabled).
+
+&#x20;![centered image](../../docs/bridge/assets/cdcapp5.png)
 
 **Step 6**: Confirm your Transfer and click confirm

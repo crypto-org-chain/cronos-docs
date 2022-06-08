@@ -36,9 +36,11 @@ canonicalUrl: https://cronos.org/docs/getting-started/local-devnet.html
 
 # Devnet: Running Latest Development Node
 
-::: warning CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
+{% hint style="warning" %}
+&#x20;CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
 
-For anyone interested in joining the Cronos testnet, please refer to our public testnet documentation which will be released shortly. :::
+For anyone interested in joining the Cronos testnet, please refer to our public testnet documentation which will be released shortly.
+{% endhint %}
 
 By following this tutorial, you can compile and run the latest development version of Cronos testnet from scratch. It is intended for testing purpose only.
 

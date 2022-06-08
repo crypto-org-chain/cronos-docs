@@ -19,29 +19,32 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 2. [ChainSafe SDK](https://github.com/ChainSafe/web3.unity/releases)
 3. [Metamask browser extension](https://metamask.io/download/)
 
-*   Below is the configuration of adding Cronos Network
+{% tabs %}
+{% tab title="Mainnet" %}
+Network Name: **Cronos Mainnet**
 
-    * Network Name: **Cronos Mainnet**
-      * New RPC URL: **https://evm-dev.cronos.org/**
-      * Chain ID: **25**
-      * Currency Symbol: **CRO**
-      * Block Explorer URL: **https://cronoscan.com/**
+* New RPC URL: **https://evm-dev.cronos.org/**
+* Chain ID: **25**
+* Currency Symbol: **CRO**
+* Block Explorer URL: **https://cronoscan.com/**
+{% endtab %}
 
-    ***
+{% tab title="Testnet" %}
+Network Name: **Cronos Testnet**
 
-    * Network Name: **Cronos Testnet**
-      * New RPC URL: **https://evm-dev-t3.cronos.org/**
-      * Chain ID: **338**
-      * Currency Symbol: **TCRO**
-      * Block Explorer URL: **https://testnet.cronoscan.com**
-    * Sufficient fund on deployer address
-      * [Testnet Faucet](https://cronos.crypto.org/faucet/)
+* New RPC URL: **https://evm-dev-t3.cronos.org/**
+* Chain ID: **338**
+* Currency Symbol: **TCRO**
+* Block Explorer URL: **https://testnet.cronoscan.com**
+{% endtab %}
+{% endtabs %}
 
-***
+*   Sufficient fund on deployer address
+
+    * [Testnet Faucet](https://cronos.crypto.org/faucet/)
+
 
 * For Crypto.com DeFi Wallet integration, please refer to our [documentation](https://cronos.org/docs/getting-started/gamefi-sdk.md#enable-deficonnect-and-walletconnect).
-
-***
 
 ## Get Started
 
@@ -77,7 +80,8 @@ This section showcase the Chainsafe integration with Cronos chain, aiming to bri
 
 ### Step 4. \[Unity] Build and Run
 
-1. Switch to WebGL platform ![](../docs/getting-started/assets/cronos-gamefi-integration-step8-1.png)
+1. Switch to WebGL platform\
+   &#x20;![](../docs/getting-started/assets/cronos-gamefi-integration-step8-1.png)
 2. Click the `Player Setting` button
 3. Select `Web3GL-2020` under `Resolution and Presentation` tab ![](../docs/getting-started/assets/cronos-gamefi-integration-step8-2.png)
 4. Set `Compression Format` to `Disabled` under `Publishing Settings` tab ![](../docs/getting-started/assets/cronos-gamefi-integration-step8-3.png)
@@ -247,4 +251,5 @@ contract My1155Token is ERC1155, Ownable {
 
 * Step 1. Fill in the price at list item modal and confirm ![](../docs/getting-started/assets/cronos-gamefi-integration-nft-fauct-5.png)
 * Step 2. Sign approval and create item transaction ![](../docs/getting-started/assets/cronos-gamefi-integration-nft-fauct-6.png) ![](../docs/getting-started/assets/cronos-gamefi-integration-nft-fauct-7.png)
-* Step 3. View the listed item in Marketplace tab ![](../docs/getting-started/assets/cronos-gamefi-integration-nft-fauct-8.png)
+* Step 3. View the listed item in Marketplace tab \
+  ![](../docs/getting-started/assets/cronos-gamefi-integration-nft-fauct-8.png)

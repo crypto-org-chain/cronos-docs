@@ -45,23 +45,31 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 *   In the **"Networks"** page, click "Add Network":
 
     ![](../docs/getting-started/assets/2.png)
-* Insert the network name, for example "Cronos" and put
-  * `https://evm.cronos.org` for **New RPC URL**; and
-  * `25` for **Chain ID**,
-  * `CRO` for the symbol, and
-  *   `https://cronoscan.com/` for the **Block explorer URL** as below:
 
-      ![](../docs/getting-started/assets/3.png)
-* After saving the network config, we should be able to see the token in your address!
 
-### Using MetaMask on Cronos testnet
 
+{% tabs %}
+{% tab title="Mainnet" %}
+Insert the network name, for example "Cronos" and put:
+
+* `https://evm.cronos.org` for **New RPC URL**; and
+* `25` for **Chain ID**,
+* `CRO` for the symbol, and
+* `https://cronoscan.com/` for the **Block explorer URL** as below:
+{% endtab %}
+
+{% tab title="Testnet" %}
 Similarly, for Cronos testnet, insert the network name, for example "Cronos testnet" and put
 
 * `https://evm-t3.cronos.org` for **New RPC URL**; and
 * `338` for **Chain ID**,
 * `tCRO` for the symbol, and
 * `https://testnet.cronoscan.com/` for the **Block explorer URL** as below:
+{% endtab %}
+{% endtabs %}
+
+* ![](../docs/getting-started/assets/3.png)
+* After saving the network config, we should be able to see the token in your address!
 
 ## Importing private key to MetaMask
 
@@ -108,7 +116,9 @@ $ cronosd debug addr 2F743F55AC49A446484988505244941DEDA1B60A
   Bech32 Val: crcvaloper19a6r74dvfxjyvjzf3pg9y3y5rhk6rds2ph398y
 ```
 
-::: tip Remarks: One would have to add the `0x` at the beginning when using the Ethereum HEX address shown as above: for example: `Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A` implies that `0x2F743F55AC49A446484988505244941DEDA1B60A` will be the address in the Ethereum manner. :::
+{% hint style="info" %}
+Remarks: One would have to add the `0x` at the beginning when using the Ethereum HEX address shown as above: for example: `Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A` implies that `0x2F743F55AC49A446484988505244941DEDA1B60A` will be the address in the Ethereum manner.&#x20;
+{% endhint %}
 
 ## Resetting your account on Metamask
 

@@ -22,33 +22,39 @@
 
 #### RPC URLs for Cronos mainnet Beta
 
-:::danger Public RPCs URL Updates: The Cronos RPC endpoints have been lately updated (shown as below) and it is recommended for users to update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later. :::
+{% hint style="danger" %}
+Public RPCs URL Updates: The Cronos RPC endpoints have been lately updated (shown as below) and it is recommended for users to update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later.&#x20;
+{% endhint %}
 
-:::tip Request Limits on Public RPCs: To provide a stable experience to users, there is a request rate limit on the public RPCs to ensure fair usage. If your application requires a higher usage, please consider setting up your own nodes. You can also reach out to us on [Discord](https://discord.gg/cGtxgVfGMZ) for assistance. :::
+{% hint style="info" %}
+Request Limits on Public RPCs: To provide a stable experience to users, there is a request rate limit on the public RPCs to ensure fair usage. If your application requires a higher usage, please consider setting up your own nodes. You can also reach out to us on [Discord](https://discord.gg/cGtxgVfGMZ) for assistance.&#x20;
+{% endhint %}
 
-:::tip Public RPCs Integration Tips: There are more than one machines serving the public RPC services. There is no guarantee that you are served by the same machine every time. This could break the assumptions of some applications. For example when you want to broadcast multiple transactions in sequential account nonce at once, each transactions may arrive on different machines if you are not broadcasting them in a batch.
+{% hint style="info" %}
+Public RPCs Integration Tips: There are more than one machines serving the public RPC services. There is no guarantee that you are served by the same machine every time. This could break the assumptions of some applications. For example when you want to broadcast multiple transactions in sequential account nonce at once, each transactions may arrive on different machines if you are not broadcasting them in a batch.
 
-If this assumption is important in your application, please consider setting up your own nodes. :::
+If this assumption is important in your application, please consider setting up your own nodes.
+{% endhint %}
 
 {% tabs %}
 {% tab title="Mainnet" %}
-1. **Tendermint RPC**
-   * [https://rpc.cronos.org/](https://rpc.cronos.org/)
-2. **Cosmos RESTful**
-   * [https://rest.cronos.org/](https://rest.cronos.org/)
-3. **Cosmos gRPC Based**
-   * [https://grpc.cronos.org/](http://grpc.cronos.org/)
-4. **EVM HTTP JSON RPC (Web3 compatible)**
-   * [https://evm.cronos.org/](https://evm.cronos.org/)
+* **Tendermint RPC**
+  * [https://rpc.cronos.org/](https://rpc.cronos.org/)
+* **Cosmos RESTful**
+  * [https://rest.cronos.org/](https://rest.cronos.org/)
+* **Cosmos gRPC Based**
+  * [https://grpc.cronos.org/](http://grpc.cronos.org/)
+* **EVM HTTP JSON RPC (Web3 compatible)**
+  * [https://evm.cronos.org/](https://evm.cronos.org/)
 {% endtab %}
 
 {% tab title="Testnet" %}
 * **Cosmos RPC**
   * https://rpc-t3.cronos.org/
-* **gRPC Based**
-  * https://grpc-t3.cronos.org/
 * **Cosmos RESTful**
   * https://rest-t3.cronos.org/
+* **gRPC Based**
+  * https://grpc-t3.cronos.org/
 * **EVM HTTP JSON RPC**
   * https://evm-t3.cronos.org/
 {% endtab %}
@@ -58,6 +64,10 @@ If this assumption is important in your application, please consider setting up 
 
 Below is the preview of the [complete list of the official token contract addresses](https://github.com/crypto-org-chain/cronos-docs/tree/master/docs/resources/token-contract-addresses.md).
 
+{% tabs %}
+{% tab title="Mainnet" %}
+
+
 | Token name | Address                                                                                                                               | Decimal |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | WCRO       | [0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23](https://cronoscan.com/tokens/0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23/token-transfers) | 18      |
@@ -66,6 +76,19 @@ Below is the preview of the [complete list of the official token contract addres
 | USDC       | [0xc21223249CA28397B4B6541dfFaEcC539BfF0c59](https://cronoscan.com/tokens/0xc21223249CA28397B4B6541dfFaEcC539BfF0c59/token-transfers) | 6       |
 | USDT       | [0x66e428c3f67a68878562e79A0234c1F83c208770](https://cronoscan.com/tokens/0x66e428c3f67a68878562e79A0234c1F83c208770/token-transfers) | 6       |
 | DAI        | [0xF2001B145b43032AAF5Ee2884e456CCd805F677D](https://cronoscan.com/tokens/0xF2001B145b43032AAF5Ee2884e456CCd805F677D/token-transfers) | 18      |
+{% endtab %}
+
+{% tab title="Testnet" %}
+| Token name | address                                      | decimal |
+| ---------- | -------------------------------------------- | ------- |
+| WCRO       | `0x6a3173618859C7cd40fAF6921b5E9eB6A76f1fD4` | 18      |
+| WETH       | `0x796135E94527c38433e9c42f4Cd91ca931E5e6A6` | 18      |
+| WBTC       | `0xEE200f25d7B1B9518AC944fd60b113d39bee209c` | 8       |
+| USDC       | `0x25f0965F285F03d6F6B3B21c8EC3367412Fd0ef6` | 6       |
+| USDT       | `0xa144617Afd9205AF1ceDE3Cc671da1a409A82c5a` | 6       |
+| DAI        | `0x8662A8111daEC7570a1bDF3dbd3E163d41563904` | 18      |
+{% endtab %}
+{% endtabs %}
 
 ### Integration guide for **Cronos Testnet**
 
@@ -84,29 +107,7 @@ Below is the preview of the [complete list of the official token contract addres
   * Currency Symbol: **TCRO**
   * Block Explorer URL: **https://testnet.cronoscan.com/**
 
-#### RPC URLs for For Cronos testnet
 
-:::tip The Cronos Testnet RPC endpoints have been lately updated shown as below and it is recommanded for users to update the endpoints, while the old endpoints will still be compatible. :::
-
-1. **Cosmos RPC**
-   * https://rpc-t3.cronos.org/
-2. **gRPC Based**
-   * https://grpc-t3.cronos.org/
-3. **Cosmos RESTful**
-   * https://rest-t3.cronos.org/
-4. **EVM HTTP JSON RPC**
-   * https://evm-t3.cronos.org/
-
-#### Mock token contract addresses for Cronos testnet
-
-| Token name | address                                      | decimal |
-| ---------- | -------------------------------------------- | ------- |
-| WCRO       | `0x6a3173618859C7cd40fAF6921b5E9eB6A76f1fD4` | 18      |
-| WETH       | `0x796135E94527c38433e9c42f4Cd91ca931E5e6A6` | 18      |
-| WBTC       | `0xEE200f25d7B1B9518AC944fd60b113d39bee209c` | 8       |
-| USDC       | `0x25f0965F285F03d6F6B3B21c8EC3367412Fd0ef6` | 6       |
-| USDT       | `0xa144617Afd9205AF1ceDE3Cc671da1a409A82c5a` | 6       |
-| DAI        | `0x8662A8111daEC7570a1bDF3dbd3E163d41563904` | 18      |
 
 ### API Clients and libraries
 

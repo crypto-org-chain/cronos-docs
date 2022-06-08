@@ -26,15 +26,19 @@ Depending on your preferred build settings we recommend to install platform pack
 
 You can use the following RPC methods. By default, we use the mainnet rpc method.
 
-**Mainnet**:
-
+{% tabs %}
+{% tab title="Mainnet" %}
 * RPC Method: `https://evm-dev.cronos.org`
 * Chain ID: **25**
+{% endtab %}
 
-**Testnet**:
-
+{% tab title="Testnet" %}
 * RPC Method: `https://evm-dev-t3.cronos.org`
 * Chain ID: **338**
+{% endtab %}
+{% endtabs %}
+
+
 
 ## Import ChainSafe Package
 

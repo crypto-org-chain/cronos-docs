@@ -79,7 +79,9 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 
 ### Step 1. Get the Cronos testnet binary
 
-::: tip Remarks: The following is the minimal setup for a **full node**. :::
+{% hint style="info" %}
+&#x20;Remarks: The following is the minimal setup for a **full node**.
+{% endhint %}
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 
@@ -150,15 +152,18 @@ Before kick-starting your node, we will have to configure your node so that it c
     OK!
     ```
 
-    ::: tip NOTE
 
-    *   For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
 
-        ```bash
-        function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
-        ```
+{% hint style="info" %}
+NOTE
 
-        :::
+For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
+
+```bash
+function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
+```
+{% endhint %}
+
 *   (Validator node only) In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
     ```bash
@@ -172,15 +177,19 @@ Before kick-starting your node, we will have to configure your node so that it c
     $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
     ```
 
-::: tip NOTE
+{% hint style="info" %}
+NOTE
 
-* For Mac environment, if `jq` is missing, you may install it by: `brew install jq` :::
+For Mac environment, if `jq` is missing, you may install it by: `brew install jq`
+{% endhint %}
 
 ### Step 3. Run everything
 
-::: warning CAUTION This page only shows the minimal setup for validator / full node.
+{% hint style="warning" %}
+CAUTION: This page only shows the minimal setup for validator / full node.
 
-Furthermore, you may want to run full nodes as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc. :::
+Furthermore, you may want to run full nodes as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
+{% endhint %}
 
 Once the `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
 
@@ -190,7 +199,8 @@ Once the `cronosd` has been configured, we are ready to start the node and sync 
   $ ./cronosd start
 ```
 
-::: tip Remarks: If you see errors saying `too many files opened...`, then you need to set a higher number for maximum open file descriptors in your OS.
+{% hint style="info" %}
+Remarks: If you see errors saying `too many files opened...`, then you need to set a higher number for maximum open file descriptors in your OS.
 
 If you are on OSX or Linux, then the following could be useful:
 
@@ -202,10 +212,9 @@ $ ulimit -Sn [NEW_MAX_FILE_DESCRIPTOR]
 # Example
 $ ulimit -Sn 4096
 ```
+{% endhint %}
 
-:::
-
-* _(Optional for Linux)_ Start cronosd with systemd service, e.g.:
+_(Optional for Linux)_ Start cronosd with systemd service, e.g.:
 
 ```bash
   $ curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/create-service.sh -o create-service.sh && curl -s https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/systemd/cronosd.service.template -o cronosd.service.template
@@ -215,7 +224,8 @@ $ ulimit -Sn 4096
   $ journalctl -u cronosd -f
 ```
 
-:::details Example: /etc/systemd/system/cronosd.service created by script
+{% hint style="info" %}
+Example: /etc/systemd/system/cronosd.service created by script
 
 ```bash
 # /etc/systemd/system/cronosd.service
@@ -236,8 +246,9 @@ LimitNOFILE=50000
 [Install]
 WantedBy=multi-user.target
 ```
+{% endhint %}
 
-:::
+
 
 It should begin fetching blocks from the other peers. Please wait until it is fully synced before moving onto the next step.
 

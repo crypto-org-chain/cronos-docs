@@ -149,15 +149,18 @@ Note:
     OK!
     ```
 
-    ::: tip NOTE
 
-    *   For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
 
-        ```bash
-        function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
-        ```
+{% hint style="info" %}
+NOTE
 
-        :::
+For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
+
+```bash
+function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
+```
+{% endhint %}
+
 *   (Validator node only) In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
 
     ```bash
@@ -176,23 +179,21 @@ Note:
     $ sed -i.bak -E 's#^(pruning[[:space:]]+=[[:space:]]+).*$#\1"nothing"#' ~/.cronos/config/app.toml
     ```
 
-::: tip NOTE
+{% hint style="info" %}
+NOTE
 
-*   For Mac environment, if `jq` is missing, you may install it by: `brew install jq`
-
-    :::
+For Mac environment, if `jq` is missing, you may install it by: `brew install jq`
+{% endhint %}
 
 ## Step 3. Run everything
 
-::: warning CAUTION
+{% hint style="warning" %}
+CAUTION
 
 This page only shows the minimal setup for validator / full node.
 
-Furthermore, you may want to run full nodes
-
-as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
-
-:::
+Furthermore, you may want to run full nodes as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
+{% endhint %}
 
 ### Step 3-1. Create a new key and address (Validator node only)
 
@@ -214,7 +215,8 @@ Once the `cronosd` has been configured, we are ready to start the node and sync 
   $ ./cronosd start
 ```
 
-::: tip Remarks:
+{% hint style="info" %}
+Remarks:
 
 If you see errors saying `too many files opened...`, then you need to set a higher number for maximum open file descriptors in your OS.
 
@@ -222,19 +224,17 @@ If you are on OSX or Linux, then the following could be useful:
 
 ```bash
 # Check current max fd
-
 $ ulimit -n
 
 # Set a new max fd
-
 $ ulimit -Sn [NEW_MAX_FILE_DESCRIPTOR]
 
 # Example
-
 $ ulimit -Sn 4096
 ```
 
-:::
+
+{% endhint %}
 
 * _(Optional for Linux)_ Start cronosd with systemd service, e.g.:
 
@@ -250,45 +250,34 @@ $ ulimit -Sn 4096
   $ journalctl -u cronosd -f
 ```
 
-:::details Example: /etc/systemd/system/cronosd.service created by script
+{% hint style="info" %}
+Example: /etc/systemd/system/cronosd.service created by script
 
 ```bash
 # /etc/systemd/system/cronosd.service
 
 [Unit]
-
 Description=cronosd
-
 ConditionPathExists=/usr/local/bin/cronosd
-
 After=network.target
 
 
-
 [Service]
-
 Type=simple
-
 User=ubuntu
-
 WorkingDirectory=/usr/local/bin
-
 ExecStart=/usr/local/bin/cronosd start --home /home/ubuntu/.cronos
-
 Restart=on-failure
-
 RestartSec=10
-
 LimitNOFILE=50000
 
 
-
 [Install]
-
 WantedBy=multi-user.target
 ```
 
-:::
+
+{% endhint %}
 
 It should begin fetching blocks from the other peers.
 
@@ -321,7 +310,12 @@ Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/netw
 
 After executing the command `./cronosd` start at Step 3-2 Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
 
-:::details Example: `chain-maind start` with 0 height originally
+
+
+{% hint style="info" %}
+
+
+Example: `chain-maind start` with 0 height originally
 
 ```bash
   $ ./cronosd start
@@ -333,8 +327,7 @@ After executing the command `./cronosd` start at Step 3-2 Run everything, it sta
   7:13PM INF ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 server=node software-version=0.6.5
   7:13PM INF ABCI Replay Blocks appHeight=0 module=consensus server=node stateHeight=0 storeHeight=0
 ```
-
-:::
+{% endhint %}
 
 To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from https://quicksync.io/networks/crypto.html.
 
@@ -365,7 +358,10 @@ Then perform the following steps:
 * Change the path under `.cronos` with `cd .cronos`
 * Decompress with `lz4` and `tar` by `lz4 -d /Users/<username>/.cronos/cronosmainnet_25-1-pruned.20220308.2010.tar.lz4 | tar -xv`, as below:
 
-:::details Example: Decompress the QuickSync pack with `lz4`
+
+
+{% hint style="info" %}
+Example: Decompress the QuickSync pack with `lz4`
 
 ```bash
   x data/
@@ -378,7 +374,8 @@ Then perform the following steps:
   x data/snapshots/metadata.db/LOG
 ```
 
-:::
+
+{% endhint %}
 
 The original data folder under `.cronos` is overwritten with this step (it takes around 5-7 mins to decompress the pruned version \~50GB).
 
@@ -386,7 +383,8 @@ The original data folder under `.cronos` is overwritten with this step (it takes
 
 Direct back to the parent directory of current directory(`/Users/<username>/` in this case) by `cd..`. Then run Cronos again with `./cronosd start` and now it suppose to start the node and sync the blockchain data from the height of `1813707`.
 
-:::details Example: Restart `chain-maind start` with QuickSync
+{% hint style="info" %}
+Example: Restart `chain-maind start` with QuickSync
 
 ```bash
   $ ./cronosd start
@@ -397,8 +395,7 @@ Direct back to the parent directory of current directory(`/Users/<username>/` in
   ...
   6:59PM INF ABCI Replay Blocks appHeight=1813707 module=consensus server=node stateHeight=1813707 storeHeight=1813707
 ```
-
-:::
+{% endhint %}
 
 ***
 
