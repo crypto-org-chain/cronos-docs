@@ -147,7 +147,6 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     ```bash
     $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "7d898ad75b3e2e1fa182d928ca10a284c1dd252e12d17ad6dab76551b29d1a59" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
-
     OK!
     ```
 
