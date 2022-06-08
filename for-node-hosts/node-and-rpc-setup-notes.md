@@ -2,7 +2,7 @@
 
 ## Node minimum setup
 
-Here we will be using a local `cronosd` folder as the home directory. By default chain data are stored in your home directory `~/.cronos`. For example, when joining the testnet `cronostestnet_338-1`: 
+Here we will be using a local `cronosd` folder as the home directory. By default chain data are stored in your home directory `~/.cronos`. For example, when joining the testnet `cronostestnet_338-1`:
 
 ```bash
 ./cronosd init mynode --chain-id cronostestnet_338-1 
@@ -12,10 +12,10 @@ $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\
 $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
 ```
 
-
 ### Enable API and gRPC server
 
 Edit `~/.cronos/config/app.toml` and update the following section
+
 ```toml
 [api]
 
@@ -41,18 +41,19 @@ address = "0.0.0.0:9090"
 
 ### Start the node
 
-Afterward, you should be able to start you node by running 
+Afterward, you should be able to start you node by running
+
 ```bash
 ./cronosd start 
-````
+```
+
 where the blockchain data, keys will be stored at the folder `~/.cronos`
 
 ## Access RPC server
 
 ### Tendermint (Local access only)
 
-You can access Tendermint Swagger UI here:
-https://docs.tendermint.com/master/rpc/#/
+You can access Tendermint Swagger UI here: https://docs.tendermint.com/master/rpc/#/
 
 Switch the servers to localhost in the dropdown and you can interact with the Swagger UI.
 
@@ -62,25 +63,21 @@ There are few clients our team has used before
 
 #### BloomRPC
 
-- https://github.com/uw-labs/bloomrpc
-
-- GUI client for GRPC services
+* https://github.com/uw-labs/bloomrpc
+* GUI client for GRPC services
 
 #### grpcurl
 
-- https://github.com/fullstorydev/grpcurl
+* https://github.com/fullstorydev/grpcurl
+* Like curl, but for gRPC
+*   Install grpcurl (Mac)
 
-- Like curl, but for gRPC
+    ```bash
+    brew install grpcurl
+    ```
 
-- Install grpcurl (Mac)
-
-  ```bash
-  brew install grpcurl
-  ```
-
-  for other OSs please refer to GitHub
-
-- Query gRPC API
+    for other OSs please refer to GitHub
+*   Query gRPC API
 
     ```bash
     grpcurl -plaintext localhost:9090 list
@@ -94,33 +91,8 @@ There are few clients our team has used before
     ```bash
     grpcurl -import-path ./grpc/proto -proto ./grpc/proto/cosmos/staking/v1beta1/query.proto -plaintext localhost:9090 cosmos.staking.v1beta1.Query.Validators
     ```
-
-- More query examples
+*   More query examples
 
     ```bash
     grpcurl -d ' {"validator_addr": "tcrocncl1l74wnswzx4zsmv674tl99h3h3fgj3al2tdzne7"}' -import-path ./grpc/proto -proto ./grpc/proto/cosmos/staking/v1beta1/query.proto -plaintext localhost:9090 cosmos.staking.v1beta1.Query.Validator
-    ```
-
-## Tricks on creating a validator on testnet
-
-1. Make sure your node is fully sync before you join as validator
-
-2. Gas price error
-
-    As discussed in the metting, sometimes the `create-valiator` may fail because of the gas. You can use the following command instead (notice we have provide `--gas` and `--gas-price`) 
-
-    ```bash
-    $ ./cronosd tx staking create-validator \
-    --from=[name_of_your_key] \
-    --amount=500000tcro \
-    --pubkey=[tcrocnclconspub...]  \
-    --moniker="[The_id_of_your_node]" \
-    --security-contact="[security contact email/contact method]" \
-    --chain-id="cronostestnet_338-1" \
-    --commission-rate="0.10" \
-    --commission-max-rate="0.20" \
-    --commission-max-change-rate="0.01" \
-    --min-self-delegation="1" \
-    --gas="auto" \
-    --gas-price="0.1basetcro"
     ```

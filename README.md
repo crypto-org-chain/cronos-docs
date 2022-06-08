@@ -56,7 +56,7 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 
 #### Devnet
 
-*   **Devnet** - [Build latest development version](for-validators/local-devnet.md):
+*   **Devnet** - [Build latest development version](for-node-hosts/local-devnet.md):
 
     Try running the latest development network (_Devnet_)
 

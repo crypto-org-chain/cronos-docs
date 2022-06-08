@@ -30,6 +30,8 @@
 
 If this assumption is important in your application, please consider setting up your own nodes. :::
 
+{% tabs %}
+{% tab title="Mainnet" %}
 1. **Tendermint RPC**
    * [https://rpc.cronos.org/](https://rpc.cronos.org/)
 2. **Cosmos RESTful**
@@ -38,6 +40,19 @@ If this assumption is important in your application, please consider setting up 
    * [https://grpc.cronos.org/](http://grpc.cronos.org/)
 4. **EVM HTTP JSON RPC (Web3 compatible)**
    * [https://evm.cronos.org/](https://evm.cronos.org/)
+{% endtab %}
+
+{% tab title="Testnet" %}
+* **Cosmos RPC**
+  * https://rpc-t3.cronos.org/
+* **gRPC Based**
+  * https://grpc-t3.cronos.org/
+* **Cosmos RESTful**
+  * https://rest-t3.cronos.org/
+* **EVM HTTP JSON RPC**
+  * https://evm-t3.cronos.org/
+{% endtab %}
+{% endtabs %}
 
 ### Official token contract addresses for Cronos mainnet Beta
 

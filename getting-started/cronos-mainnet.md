@@ -64,11 +64,13 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 
 ## Step 1. Get the Cronos mainnet Beta binary
 
-\{% hint style="info" %\}  Remarks:
+{% hint style="info" %}
+Remarks:
 
 The following is the minimal setup for a **validator node** / **full node**.
+{% endhint %}
 
-\{% endhint %\}
+
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 
@@ -78,7 +80,6 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
     ```bash
     $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Linux_x86_64.tar.gz
-
     $ tar -zxvf cronos_0.6.5_Linux_x86_64.tar.gz
     ```
 
@@ -86,7 +87,6 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
     ```bash
     $ ./cronosd version
-
     0.6.5
     ```
 
@@ -126,12 +126,14 @@ Before kick-starting your node, we will have to configure your node so that it c
       $ ./cronosd init pegasus-node --chain-id cronosmainnet_25-1
     ```
 
-    ::: tip NOTE
 
-    * Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
-    *   You can also put the `cronosd` to your binary path and run it by `cronosd`
 
-        :::
+{% hint style="info" %}
+Note:
+
+* Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
+* You can also put the `cronosd` to your binary path and run it by `cronosd`
+{% endhint %}
 
 ### Step 2-2 Configure cronosd
 
