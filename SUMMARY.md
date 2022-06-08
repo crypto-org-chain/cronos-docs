@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Getting Started](README.md)
+* [README](README.md)
+* [Getting Started](<README (1).md>)
   * [Introduction](getting-started/introduction.md)
   * [Cronos Mainnet: Running Nodes](getting-started/cronos-mainnet.md)
   * [cronos-testnet](getting-started/cronos-testnet.md)
