@@ -1,26 +1,32 @@
 ---
 meta:
-  - name: "title"
+  - name: title
     content: Cronos | Modules
-  - name: "description"
-    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking and more.
-  - name: "og:title"
+  - name: description
+    content: >-
+      Learn about the important modules on Cronos including Bank, Distribution,
+      Governance, Mint, Slashing, Staking and more.
+  - name: og:title
     content: Cronos | Modules
-  - name: "og:type"
+  - name: og:type
     content: Website
-  - name: "og:description"
-    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking and more.
-  - name: "og:image"
+  - name: og:description
+    content: >-
+      Learn about the important modules on Cronos including Bank, Distribution,
+      Governance, Mint, Slashing, Staking and more.
+  - name: og:image
     content: https://cronos.org/og-image.png
-  - name: "twitter:title"
+  - name: twitter:title
     content: Cronos | Modules
-  - name: "twitter:site"
-    content: "@cryptocom"
-  - name: "twitter:card"
+  - name: twitter:site
+    content: '@cryptocom'
+  - name: twitter:card
     content: summary_large_image
-  - name: "twitter:description"
-    content: Learn about the important modules on Cronos including Bank, Distribution, Governance, Mint, Slashing, Staking and more.
-  - name: "twitter:image"
+  - name: twitter:description
+    content: >-
+      Learn about the important modules on Cronos including Bank, Distribution,
+      Governance, Mint, Slashing, Staking and more.
+  - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://cronos.org/docs/chain-details/module_overview.html
 ---
@@ -28,32 +34,31 @@ canonicalUrl: https://cronos.org/docs/chain-details/module_overview.html
 # Modules
 
 ## Overview
-Cronos utilizes [Ethermint](https://github.com/tharsis/ethermint) and the [Tendermint](https://tendermint.com/) Core consensus engine underneath. Specifically, the Cosmos SDK is a framework that facilitates the development of secure state-machines on top of Tendermint. In particular, we utilize different SDK modules to facilitate the special features of Cronos. 
+
+Cronos utilizes [Ethermint](https://github.com/tharsis/ethermint) and the [Tendermint](https://tendermint.com/) Core consensus engine underneath. Specifically, the Cosmos SDK is a framework that facilitates the development of secure state-machines on top of Tendermint. In particular, we utilize different SDK modules to facilitate the special features of Cronos.
 
 In this documentation, we will be focusing on some of the important modules we used, for example:
 
-- [Bank](#bank) - Token transfer functionalities and query support for the total supply of all assets; 
-- [Distribution](#distribution) - Fee distribution, and staking rewards to the validators and delegator; 
-- [Governance](#gov) - On-chain proposals and voting;
-- [Mint](#mint) - Creation of new units of staking token;
-- [Slashing](#slashing) - Validator punishment mechanisms;
-- [Staking](#staking) - Proof-of-Stake layer for public blockchains;
+* [Bank](./#bank) - Token transfer functionalities and query support for the total supply of all assets;
+* [Distribution](./#distribution) - Fee distribution, and staking rewards to the validators and delegator;
+* [Governance](./#gov) - On-chain proposals and voting;
+* [Mint](./#mint) - Creation of new units of staking token;
+* [Slashing](./#slashing) - Validator punishment mechanisms;
+* [Staking](./#staking) - Proof-of-Stake layer for public blockchains;
 
-
-
-## `bank` 
+## `bank`
 
 ### Introduction
 
 The `bank` module maintains the state of two primary objects:
 
-- Account balances by address;
-- Total supply of tokens of the chain
+* Account balances by address;
+* Total supply of tokens of the chain
 
 `bank` module tracks and provides query support for the total supply of all assets used in the application. It also supports token transfer functionalities. Specifically, the total supply is updated whenever a token is:
 
-- **Minted**, e.g. Token created by the [mint](#mint) module; or
-- **Burned**, e.g. Token distorted by the [slashing](#slashing) module.
+* **Minted**, e.g. Token created by the [mint](./#mint) module; or
+* **Burned**, e.g. Token distorted by the [slashing](./#slashing) module.
 
 ### Transactions and Queries
 
@@ -70,10 +75,7 @@ $ cronosd tx bank send <address_a> <address_b> 1basetcro --keyring-backend test 
 {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":<address a>,"to_address":<address b>,"amount":[{"denom":"basetcro","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":[]}
 
 confirm transaction before signing and broadcasting [y/N]: y
-
 ```
-
-
 
 ### Queries
 
@@ -113,15 +115,14 @@ $ cronosd query bank total --output json | jq
     }
 ```
 
-
 ### Appendix
 
 #### `bank` module: Network Parameters and configuration
 
-| Key                  | Type          | Example                              |
-| -------------------- | ------------- | ------------------------------------ |
-| `SendEnabled`        | []SendEnabled | [{denom: "basetcro", enabled: true }] |
-| `DefaultSendEnabled` | bool          | true                                 |
+| Key                  | Type           | Example                                |
+| -------------------- | -------------- | -------------------------------------- |
+| `SendEnabled`        | \[]SendEnabled | \[{denom: "basetcro", enabled: true }] |
+| `DefaultSendEnabled` | bool           | true                                   |
 
 ## `distribution`
 
@@ -135,17 +136,17 @@ The `distribution` module is responsible for the distribution of rewards to the 
 
 Below are all the network parameters for the `distribution` module:
 
-- `community_tax` - The rate of community tax;
-- `base_proposer_reward` - Base bonus on transaction fees collected in a valid block;
-- `bonus_proposer_reward` - Maximum bonus on transaction fees collected in a valid block;
-- `withdraw_addr_enabled` - Whether delegators can set a different address to withdraw their rewards.
+* `community_tax` - The rate of community tax;
+* `base_proposer_reward` - Base bonus on transaction fees collected in a valid block;
+* `bonus_proposer_reward` - Maximum bonus on transaction fees collected in a valid block;
+* `withdraw_addr_enabled` - Whether delegators can set a different address to withdraw their rewards.
 
 #### Rewards
 
 There are two main types of rewards
 
-- Block rewards, governed by the [mint](#mint) module; and
-- [Transaction fees bonus](#transaction-fees-bonus).
+* Block rewards, governed by the [mint](./#mint) module; and
+* [Transaction fees bonus](./#transaction-fees-bonus).
 
 #### Block reward
 
@@ -153,10 +154,10 @@ Block rewards are distributed proportionally to all validators relative to their
 
 For the validator operator, the distribution information is updated if:
 
-- the amount of delegation to a validator is updated (delegation, unbond, slashing etc.);
-- a validator successfully proposes a block and receives the reward;
-- any delegator withdraws from a validator, or
-- the validator withdraws it's commission.
+* the amount of delegation to a validator is updated (delegation, unbond, slashing etc.);
+* a validator successfully proposes a block and receives the reward;
+* any delegator withdraws from a validator, or
+* the validator withdraws it's commission.
 
 For delegators, once they have delegated to a validator, they will be entitled to a portion of the total reward obtained by the validators. The reward is proportional to their delegated amount, and the commission charged by the validator operator (if any).
 
@@ -170,9 +171,9 @@ This mechanism aims to incentivize non-empty block proposals, better networking 
 
 #### Community tax
 
-The `community_tax` is the tax rate to the reward obtained by the validator. Specifically, part of the reward will be taxed and send to the community pool. The funds in the community pool can be withdrawn by submitting a community pool spend proposal with the [gov module](#gov).
+The `community_tax` is the tax rate to the reward obtained by the validator. Specifically, part of the reward will be taxed and send to the community pool. The funds in the community pool can be withdrawn by submitting a community pool spend proposal with the [gov module](./#gov).
 
-Even if the `community_tax` is set to be zero, the balance of the community pool could be non-zero. For example, the truncated remainder in some accounting edge cases will be sent to the community pool as well. Besides that, users can fund the community pool voluntary, and there could be funds allocated to the community pool in the [genesis](./genesis_file.md).
+Even if the `community_tax` is set to be zero, the balance of the community pool could be non-zero. For example, the truncated remainder in some accounting edge cases will be sent to the community pool as well. Besides that, users can fund the community pool voluntary, and there could be funds allocated to the community pool in the [genesis](../genesis\_file.md).
 
 ### Transactions and Queries
 
@@ -186,9 +187,7 @@ Delegator can withdraw their reward(s) from the validator(s) that they have dele
 
 Delegator can withdraw their reward from a specific validator.
 
-:::tip Remark:
-Validator operation can withdraw the commission in addition to the rewards by adding the commission flag `--commission`.
-:::
+:::tip Remark: Validator operation can withdraw the commission in addition to the rewards by adding the commission flag `--commission`. :::
 
 #### `tx distribution set-withdraw-addr [withdraw-addr]` - Change the default withdraw address for rewards associated with an address
 
@@ -220,7 +219,7 @@ We can check the history of slashing event of a validator.
 
 We can check distribution outstanding (un-withdrawn) rewards for a validator and all of their delegations.
 
-#### `query distribution params ` - Query the current distribution parameters
+#### `query distribution params` - Query the current distribution parameters
 
 We can query the current distribution parameters by
 
@@ -249,18 +248,17 @@ The following tables show overall effects on different configurations of the dis
 | Constraints          | Value has to be less or equal to `1`          | Value has to be less or equal to `1`                 | Value has to be less or equal to `1` |
 | Sample configuration | `0` (0%)                                      | `0.01` (1%)                                          | `0.04` (4%)                          |
 
-
 ## `gov`
 
 ### Introduction
 
 The `gov` module enables on-chain governance which allows Cronos token holder to participate in the decision-making processes. For example, users can:
 
-- Form an idea and seek the feedback;
-- Create the proposal and adjust according to feedback as needed;
-- Submit a proposal along with an initial deposit;
-- Deposit tokens and fund an active proposal;
-- Vote for an active proposal.
+* Form an idea and seek the feedback;
+* Create the proposal and adjust according to feedback as needed;
+* Submit a proposal along with an initial deposit;
+* Deposit tokens and fund an active proposal;
+* Vote for an active proposal.
 
 The details about the governance proposal process are available on [The Proposal Process page](https://crypto.org/docs/chain-details/govprocess.html).
 
@@ -270,15 +268,15 @@ The details about the governance proposal process are available on [The Proposal
 
 Below are all the network parameters for the `gov` module:
 
-- `deposit_params` - Deposit related parameters:
-  - `min_deposit`: Minimum deposit for a proposal to enter voting period; and
-  - `max_deposit_period`: Maximum period for Cro holders to deposit on a proposal.
-- `voting_params` - Voting related parameters
-  - `voting_period`: The length of the voting period.
-- `tally_params` - Tally related parameters
-  - `quorum`: The minimum percentage of voting power that needs to be casted on a proposal for the result to be valid;
-  - `threshold`: Minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted; and
-  - `veto`: Minimum proportion of `Veto` votes to total votes ratio for proposal to be vetoed.
+* `deposit_params` - Deposit related parameters:
+  * `min_deposit`: Minimum deposit for a proposal to enter voting period; and
+  * `max_deposit_period`: Maximum period for Cro holders to deposit on a proposal.
+* `voting_params` - Voting related parameters
+  * `voting_period`: The length of the voting period.
+* `tally_params` - Tally related parameters
+  * `quorum`: The minimum percentage of voting power that needs to be casted on a proposal for the result to be valid;
+  * `threshold`: Minimum proportion of `Yes` votes (excluding `Abstain` votes) for the proposal to be accepted; and
+  * `veto`: Minimum proportion of `Veto` votes to total votes ratio for proposal to be vetoed.
 
 #### The Governance Procedure
 
@@ -296,10 +294,10 @@ During the _voting period_, staked (bonded) token will be able to participate in
 
 After the `voting_period` has passed, there are several scenarios that a proposal will consider to be "Rejected", for example, if
 
-- No one votes (everyone `"abstain"`);
-- Votes did not reach the `quorum`;
-- More than `veto` of voters vote for `"no_with_veto"`;
-- More than `threshold` that non-abstaining voters vote `"no"`.
+* No one votes (everyone `"abstain"`);
+* Votes did not reach the `quorum`;
+* More than `veto` of voters vote for `"no_with_veto"`;
+* More than `threshold` that non-abstaining voters vote `"no"`.
 
 Otherwise, the proposal will be accepted and changes will be implemented according to the proposal.
 
@@ -309,35 +307,32 @@ Otherwise, the proposal will be accepted and changes will be implemented accordi
 
 #### `tx gov submit-proposal` - Submit a proposal along with an initial deposit
 
-- Submit a parameter change proposal - `param-change [proposal-file]`
+*   Submit a parameter change proposal - `param-change [proposal-file]`
 
-  Users can submit a proposal to modify network parameters during run time, Here is a demon proposal if we would like to change the parameter `MaxValidators` (maximum number of validator) in the `staking` module,
+    Users can submit a proposal to modify network parameters during run time, Here is a demon proposal if we would like to change the parameter `MaxValidators` (maximum number of validator) in the `staking` module,
 
-  ```json
-  {
-    "title": "Staking Param Change",
-    "description": "Update max validators",
-    "changes": [
-      {
-        "subspace": "staking",
-        "key": "MaxValidators",
-        "value": 151
-      }
-    ]
-  }
-  ```
+    ```json
+    {
+      "title": "Staking Param Change",
+      "description": "Update max validators",
+      "changes": [
+        {
+          "subspace": "staking",
+          "key": "MaxValidators",
+          "value": 151
+        }
+      ]
+    }
+    ```
+*   Submit a community pool spend proposal - `community-pool-spend [proposal-file]`
 
-- Submit a community pool spend proposal - `community-pool-spend [proposal-file]`
+    Users can submit a proposal and request funds from the community pool to support their projects or other usages.
+*   Submit a software upgrade proposal- `software-upgrade [name] (--upgrade-height [height] | --upgrade-time [time]) (--upgrade-info [info])`
 
-  Users can submit a proposal and request funds from the community pool to support their projects or other usages.
+    Users can submit an upgrade proposal and suggest a software upgrade at a specific block height.
+*   Cancel the current software upgrade proposal - `cancel-software-upgrade`
 
-- Submit a software upgrade proposal- `software-upgrade [name] (--upgrade-height [height] | --upgrade-time [time]) (--upgrade-info [info])`
-
-  Users can submit an upgrade proposal and suggest a software upgrade at a specific block height.
-
-- Cancel the current software upgrade proposal - `cancel-software-upgrade`
-
-  On the other hand, users can submit a proposal to cancel the planned software upgrade.
+    On the other hand, users can submit a proposal to cancel the planned software upgrade.
 
 #### `tx gov deposit [proposal-id] [deposit]` - Deposit tokens for an active proposal
 
@@ -417,12 +412,11 @@ The following tables show overall effects on different configurations of the gov
 | Constraints          | Value has to be less or equal to `1` | Value has to be less or equal to `1` | Value has to be less or equal to `1` |
 | Sample configuration | `0.15` (15%)                         | `0.5` (50%)                          | `0.33` (33%)                         |
 
-
 ## `mint`
 
 ### Introduction
 
-The `mint` module is responsible for creating token in a flexible way to reward the validator who participate in the proof of stake consensus process (see also the [distribution module](#distribution)). It is also designed in a way to bring a balance between market liquidity and staked supply.
+The `mint` module is responsible for creating token in a flexible way to reward the validator who participate in the proof of stake consensus process (see also the [distribution module](./#distribution)). It is also designed in a way to bring a balance between market liquidity and staked supply.
 
 ### Overview
 
@@ -430,12 +424,12 @@ The `mint` module is responsible for creating token in a flexible way to reward 
 
 Below are all the network parameters for the `mint` module:
 
-- `"blocks_per_year"` - The expected number of blocks being produced per year;
-- `"goal_bonded"` - Goal of bonded token in percentage;
-- `"inflation_max"` - Maximum annual inflation rate;
-- `"inflation_min"` - Minimum annual inflation rate;
-- `"inflation_rate_change"` - Maximum annual change in inflation rate;
-- `"mint_denom"` - Token type being minted.
+* `"blocks_per_year"` - The expected number of blocks being produced per year;
+* `"goal_bonded"` - Goal of bonded token in percentage;
+* `"inflation_max"` - Maximum annual inflation rate;
+* `"inflation_min"` - Minimum annual inflation rate;
+* `"inflation_rate_change"` - Maximum annual change in inflation rate;
+* `"mint_denom"` - Token type being minted.
 
 The target annual inflation rate is recalculated for each previsions cycle. The inflation is also subject to a rate change (positive or negative) depending on the distance from the desired ratio (`"goal_bonded"`). The maximum rate change possible is defined to be `"inflation_rate_change"` per year, where the annual inflation is capped as between `"inflation_min"` and `"inflation_max"`.
 
@@ -494,7 +488,7 @@ The following tables show overall effects on different configurations of the min
 | Higher               | More expected blocks per year      | Higher target bonding ratio          | N/A          |
 | Lower                | Less expected blocks per year      | Lower target bonding ratio           | N/A          |
 | Constraints          | Value has to be a positive integer | Value has to be less or equal to `1` | N/A          |
-| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `basetcro`    |
+| Sample configuration | `5256000` (5,256,000 blocks)       | `0.66` (66%)                         | `basetcro`   |
 
 |                      | `inflation_max`                       | `inflation_min`                      | `inflation_rate_change`                       |
 | -------------------- | ------------------------------------- | ------------------------------------ | --------------------------------------------- |
@@ -518,65 +512,44 @@ Specifically, `slashing` functionality that aims to dis-incentivize network-obse
 
 Below are all the network parameters used to configure the behavior of validator punishments. Details of all these parameters and their effect on behavior of validator punishments is discussed later in this document.
 
-- `signed_blocks_window`: Number of blocks for which the liveness is calculated for uptime tracking;
-- `min_signed_per_window`: Maximum percentage of blocks with faulty/missed validations allowed for an account in last; `signed_blocks_window` blocks before it gets deactivated;
-- `downtime_jail_duration`: Duration for [jailing](#jailing);
--  `slash_fraction_double_sign`: Percentage of funds being slashed when validator makes a byzantine fault; and
--  `slash_fraction_downtime`: Percentage of funds being slashed when a validator is non-live.
+* `signed_blocks_window`: Number of blocks for which the liveness is calculated for uptime tracking;
+* `min_signed_per_window`: Maximum percentage of blocks with faulty/missed validations allowed for an account in last; `signed_blocks_window` blocks before it gets deactivated;
+* `downtime_jail_duration`: Duration for [jailing](./#jailing);
+* `slash_fraction_double_sign`: Percentage of funds being slashed when validator makes a byzantine fault; and
+* `slash_fraction_downtime`: Percentage of funds being slashed when a validator is non-live.
 
 #### Slashing mechanism
 
 Punishments for a validator are triggered when they either make a _byzantine fault_ or become _non-live_:
 
-- Liveness Faults (Low availability)
+*   Liveness Faults (Low availability)
 
-  A validator is said to be **non-live** when they fail to sign at least `min_signed_per_window` blocks (in percentage) in the
-  last `signed_blocks_window` blocks successfully. `signed_blocks_window` and `min_signed_per_window` are network
-  parameters and can be configured during genesis and can be updated during runtime by the governance module.
+    A validator is said to be **non-live** when they fail to sign at least `min_signed_per_window` blocks (in percentage) in the last `signed_blocks_window` blocks successfully. `signed_blocks_window` and `min_signed_per_window` are network parameters and can be configured during genesis and can be updated during runtime by the governance module.
 
-:::tip Example:
-For example, if `block_signing_window` is `2000` blocks and `min_signed_per_window` is `0.5`, a validator will
-be marked as **non-live** and jailed if they fail to successfully sign at least `2000*0.5=1000` blocks in last `2000` blocks.
-:::
+:::tip Example: For example, if `block_signing_window` is `2000` blocks and `min_signed_per_window` is `0.5`, a validator will be marked as **non-live** and jailed if they fail to successfully sign at least `2000*0.5=1000` blocks in last `2000` blocks. :::
 
-- Byzantine Faults 
+*   Byzantine Faults
 
-  A validator is said to make a byzantine fault when they sign conflicting messages/blocks at the same height and round. Tendermint has mechanisms to publish evidence of validators that signed conflicting votes so they can be punished by the slashing module. For example:
-  
+    A validator is said to make a byzantine fault when they sign conflicting messages/blocks at the same height and round. Tendermint has mechanisms to publish evidence of validators that signed conflicting votes so they can be punished by the slashing module. For example:
 
-  - Validator who votes for two different blocks within a single round (*"Equivocation validator"*/ *"Double signing"*);
-
-
-  - Validator who signs commit messages for arbitrary application state ( *"Lunatic validator"*).
-
+    * Validator who votes for two different blocks within a single round (_"Equivocation validator"_/ _"Double signing"_);
+    * Validator who signs commit messages for arbitrary application state ( _"Lunatic validator"_).
 
 **Remark**: The evidence of a set of validators attempting to mislead a light client can also be detected and captured. However, even the [Amnesia attack](https://github.com/tendermint/tendermint/blob/master/docs/architecture/adr-056-light-client-amnesia-attacks.md#amnesia-attack) can be detected, punishment can not be applied at this stage, as we can not deduce the malicious validators.
 
-:::tip Implementation note:
-Tendermint passes `Evidence` of a byzantine validator in `BeginBlock` request. Before jailing any account due to byzantine fault, that evidence should be verified. Also, it should be checked that evidence provided by tendermint is
-not older than `max_age` in tendermint.
-:::
-
-
-
-
+:::tip Implementation note: Tendermint passes `Evidence` of a byzantine validator in `BeginBlock` request. Before jailing any account due to byzantine fault, that evidence should be verified. Also, it should be checked that evidence provided by tendermint is not older than `max_age` in tendermint. :::
 
 ### Inactivity Slashing
 
 It is important that the validators maintain excellent availability and network connectivity to perform their tasks. A penalty should be imposed on validators' misbehavior to reinforce this.
 
-When a validator fails to successfully sign `missed_block_threshold` blocks in last `block_signing_window` blocks, it is
-immediately jailed and punished by deducting funds from their bonded and unbonded amount and removing them from active validator set. The funds to be deducted are calculated based on `slash_fraction_downtime`. Kindly refer to this [link](https://docs.cosmos.network/v0.40/modules/slashing/04_begin_block.html) on the logic of the liveness tracking.
+When a validator fails to successfully sign `missed_block_threshold` blocks in last `block_signing_window` blocks, it is immediately jailed and punished by deducting funds from their bonded and unbonded amount and removing them from active validator set. The funds to be deducted are calculated based on `slash_fraction_downtime`. Kindly refer to this [link](https://docs.cosmos.network/v0.40/modules/slashing/04\_begin\_block.html) on the logic of the liveness tracking.
 
 ### Jailing
 
-A validator is jailed when they make liveness or Byzantine fault, when a validator is jailed, it will no longer be considered as an active validator until they are un-jailed. Futhermore, it cannot be un-jailed
-before `downtime_jail_duration`. This `downtime_jail_duration` is a
-network parameter which can be configured during genesis.
+A validator is jailed when they make liveness or Byzantine fault, when a validator is jailed, it will no longer be considered as an active validator until they are un-jailed. Futhermore, it cannot be un-jailed before `downtime_jail_duration`. This `downtime_jail_duration` is a network parameter which can be configured during genesis.
 
-:::warning Important:
-When a validator is jailed because of a byzantine fault, their validator public key is added to a list of permanently banned validators and cannot re-join the network as a validator with the same public key, see [staking tombstone](https://docs.cosmos.network/master/modules/slashing/07_tombstone.html)
-:::
+:::warning Important: When a validator is jailed because of a byzantine fault, their validator public key is added to a list of permanently banned validators and cannot re-join the network as a validator with the same public key, see [staking tombstone](https://docs.cosmos.network/master/modules/slashing/07\_tombstone.html) :::
 
 #### Un-jailing
 
@@ -617,7 +590,7 @@ $ cronosd tx slashing unjail --from node1 --chain-id cronostestnet_338-1
 
 ### Queries
 
-#### `query slashing params ` - Query the current slashing parameters
+#### `query slashing params` - Query the current slashing parameters
 
 We can query the current slashing parameters by
 
@@ -647,17 +620,15 @@ The following tables show overall effects on different configurations of the sla
 | Constraints          | Value has to be a positive integer          | Value has to be positive        | Value has to be a positive integer |
 | Sample configuration | `2000` (2000 blocks)                        | `0.5` (50%)                     | `3600s` (1 hour)                   |
 
----
+***
 
 |                      | `slash_fraction_double_sign`         | `slash_fraction_downtime`            |
 | -------------------- | ------------------------------------ | ------------------------------------ |
 | Type                 | string (dec)                         | string (dec)                         |
-| Higher               | Heavier penalty on byzantine faults  | Heavier penalty on liveness faults   |  |
+| Higher               | Heavier penalty on byzantine faults  | Heavier penalty on liveness faults   |
 | Lower                | Lighter penalty on byzantine faults  | Lighter penalty on liveness faults   |
 | Constraints          | Value has to be less or equal to `1` | Value has to be less or equal to `1` |
 | Sample configuration | `0.001` (0.1%)                       | `0.05` (5%)                          |
-
-
 
 ## `staking`
 
@@ -669,21 +640,21 @@ The `staking` module handles Proof-of-Stake related logics, which plays a very i
 
 Cronos is based on Tendermint Core's consensus engine, it relies on a set of validators to participate in the proof of stake (PoS) consensus protocol, and they are responsible for committing new blocks in the blockchain.
 
-- `unbonding_time`: The time duration of unbonding;
-- `max_validators`: The maximum number of validator;
-- `max_entries`: The max entries for either unbonding delegation or redelegation;
-- `historical_entries`: The number of historical entries to persist; and
-- `bond_denom`: Coin denomination for staking.
+* `unbonding_time`: The time duration of unbonding;
+* `max_validators`: The maximum number of validator;
+* `max_entries`: The max entries for either unbonding delegation or redelegation;
+* `historical_entries`: The number of historical entries to persist; and
+* `bond_denom`: Coin denomination for staking.
 
 ### Validator
 
-Validators are responsible for signing or proposing block at each consensus round. It is important that the validators maintain excellent availability and network connectivity to perform their tasks. To incentivise the validator nodes to run the network, rewards are distributed to the validators according to their performance and amount of staked token (see [distribution](#distribution) and [mint](#mint)). On the other hand, a penalty should be imposed on validators' misbehavior (see [slashing](#slashing)).
+Validators are responsible for signing or proposing block at each consensus round. It is important that the validators maintain excellent availability and network connectivity to perform their tasks. To incentivise the validator nodes to run the network, rewards are distributed to the validators according to their performance and amount of staked token (see [distribution](./#distribution) and [mint](./#mint)). On the other hand, a penalty should be imposed on validators' misbehavior (see [slashing](./#slashing)).
 
 ### Delegator
 
-The `staking` module enables CRO owners to delegate their tokens to active validators and share part of the reward obtained by the validator during the proof of stake protocol(see [distribution](#distribution) module). Specifically, It allows token owners to take part in the consensus process without running a validator themselves.
+The `staking` module enables CRO owners to delegate their tokens to active validators and share part of the reward obtained by the validator during the proof of stake protocol(see [distribution](./#distribution) module). Specifically, It allows token owners to take part in the consensus process without running a validator themselves.
 
-It is important to point out that the delegator and the validator are on the same boat: They share the reward and the risk. In particular, part of their delegated token could be slashed due to validator's misbehaviour (see [slashing](#slashing)). Therefore, It is very important to choose a reliable validator to delegate. Kindly refer to this [link](https://docs.cosmos.network/v0.40/modules/staking/02_state_transitions.html#delegations) for detailed specification and state transitions of delegation.
+It is important to point out that the delegator and the validator are on the same boat: They share the reward and the risk. In particular, part of their delegated token could be slashed due to validator's misbehaviour (see [slashing](./#slashing)). Therefore, It is very important to choose a reliable validator to delegate. Kindly refer to this [link](https://docs.cosmos.network/v0.40/modules/staking/02\_state\_transitions.html#delegations) for detailed specification and state transitions of delegation.
 
 ### Transactions and Queries
 
@@ -927,9 +898,9 @@ The following tables show overall effects on different configurations of the sta
 | Higher               | N/A          | More historical entries to persist | More entries for either unbonding delegation or redelegation  |
 | Lower                | N/A          | Less historical entries to persist | Fewer entries for either unbonding delegation or redelegation |
 | Constraints          | N/A          | Value has to be positive           | Value has to be a positive                                    |
-| Sample configuration | `basetcro`    | `100` (50%)                        | `7`                                                           |
+| Sample configuration | `basetcro`   | `100` (50%)                        | `7`                                                           |
 
----
+***
 
 |                      | `max_validators`                     | `unbonding_time`                     |
 | -------------------- | ------------------------------------ | ------------------------------------ |
@@ -938,5 +909,3 @@ The following tables show overall effects on different configurations of the sta
 | Lower                | Fewer active validators              | Shorter waiting period for unbonding |
 | Constraints          | Value has to be less or equal to `1` | Positive value in seconds            |
 | Sample configuration | `100` (maximum 100 active validator) | `"1814400s"` (3 weeks)               |
-
-

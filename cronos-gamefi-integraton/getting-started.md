@@ -1,6 +1,7 @@
 # Getting Started
 
 ## Pre-requisites
+
 This SDK assumes that you have a basic understanding of Unity, ERC721 and EVM practices.
 
 ### Supported OS
@@ -8,56 +9,65 @@ This SDK assumes that you have a basic understanding of Unity, ERC721 and EVM pr
 This documentation currently supports WebGL, IOS and Android builds. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Other Requirements
-- **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode. 
-- **DefiConnect**: [DefiConnect](https://chrome.google.com/webstore/detail/cryptocom-wallet-extensio/hifafgmccdpekplomjjkcfgodnhcellj) is required for the Login Example.
-- **Assets**: Some of the scenes require assets to work properly. If you do not have any assets you can always use the Cronos Testnet and generate some ERC721 test assets. You can read more around integration methods [here](https://cronos.crypto.org/docs/resources/chain-integration.html#useful-links]).
+
+* **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode.
+* **DefiConnect**: [DefiConnect](https://chrome.google.com/webstore/detail/cryptocom-wallet-extensio/hifafgmccdpekplomjjkcfgodnhcellj) is required for the Login Example.
+* **Assets**: Some of the scenes require assets to work properly. If you do not have any assets you can always use the Cronos Testnet and generate some ERC721 test assets. You can read more around integration methods [here](https://cronos.crypto.org/docs/resources/chain-integration.html#useful-links]).
 
 ### Download and install Unity
 
-You can refer to the [Unity Download Section](https://unity.com/download)  
+You can refer to the [Unity Download Section](https://unity.com/download)
 
 ### Unity Build Modules
+
 Depending on your preferred build settings we recommend to install platform packages for `WebGL`, `IOS` and `Android` from your Unity build settings.
 
 ### Chain Overview
+
 You can use the following RPC methods. By default, we use the mainnet rpc method.
 
-**Mainnet**: 
-- RPC Method: `https://evm-dev.cronos.org`
-- Chain ID: **25**
+**Mainnet**:
 
+* RPC Method: `https://evm-dev.cronos.org`
+* Chain ID: **25**
 
-**Testnet**: 
-- RPC Method: `https://evm-dev-t3.cronos.org`
-- Chain ID: **338**
+**Testnet**:
 
+* RPC Method: `https://evm-dev-t3.cronos.org`
+* Chain ID: **338**
 
 ## Import ChainSafe Package
 
 ### Github
+
 You can clone the following repository.
+
 ```bash
 $ git clone git@github.com:ChainSafe/web3.unity.git
 ```
 
 ### Releases
-Or you can download the latest [releases](https://github.com/ChainSafe/web3.unity/releases)  
+
+Or you can download the latest [releases](https://github.com/ChainSafe/web3.unity/releases)
 
 ### Create a new Unity Project
-Create a new project directly from your Unity Hub. In the next step Choose 3D as your project type.
-<img src="./assets/getting-started/new-projects.png" />
 
-### Upload web3.unity Folders into Project 
+Create a new project directly from your Unity Hub. In the next step Choose 3D as your project type. ![](../docs/play/assets/getting-started/new-projects.png)
+
+### Upload web3.unity Folders into Project
+
 Now you have to import the content of the cloned repository (web3.unity) directly into your newly created project assets folder.
 
 ## Connect to Cronos Assets
+
 To connect your Cronos Assets to your Unity project, you can add the following scripts to your assets. For your scripts to work, you will need the create as well a prefab and link it to the asset as seen in the following image.
 
-<img src="./assets/getting-started/prefab_scripts.png" />
+![](../docs/play/assets/getting-started/prefab\_scripts.png)
 
 ### Get CRO Balance
-- Script Path: `Assets/Web3Unity/Scripts/Prefabs/EVM/EVMBalanceOfCronos.cs`
-- Prefab Path: `Assets/Web3Unity/Prefabs/EVM/EVMBalanceOfCronos.prefab`
+
+* Script Path: `Assets/Web3Unity/Scripts/Prefabs/EVM/EVMBalanceOfCronos.cs`
+* Prefab Path: `Assets/Web3Unity/Prefabs/EVM/EVMBalanceOfCronos.prefab`
 
 ```csharp
 using System.Collections;
@@ -78,11 +88,13 @@ public class EVMBalanceOfCronos : MonoBehaviour
     }
 }
 ```
+
 Drag the prefab into the sample scene and play in order to run the script. The balance should be printed below in the Unity output.
 
 ### Get NFT Balance
-- Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ERC721BalanceOfCronos.cs`
-- Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ERC721BalanceOfCronos.prefab`
+
+* Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ERC721BalanceOfCronos.cs`
+* Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ERC721BalanceOfCronos.prefab`
 
 ```csharp
 using System.Collections;
@@ -105,11 +117,13 @@ public class ERC721BalanceOfCronos : MonoBehaviour
     }
 }
 ```
+
 Drag the prefab into the sample scene and play in order to run the script. The balance should be printed below in the Unity output.
 
 ### Get NFT Owner
-- Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ERC721OwnerOfCronos.cs`
-- Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ERC721OwnerOfCronos.prefab`
+
+* Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ERC721OwnerOfCronos.cs`
+* Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ERC721OwnerOfCronos.prefab`
 
 ```csharp
 using System.Collections;
@@ -131,13 +145,15 @@ public class ERC721OwnerOfCronos : MonoBehaviour
     }
 }
 ```
+
 Drag the prefab into the sample scene and play in order to run the script. The owner address of the asset should be printed below in the Unity output.
 
 ### Import NFT Metadata
+
 You can test this script by creating a random 3D Quad object in the SampleScene and add the following script to it.
 
-- Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ImportNFTTextureCronos.cs`
-- Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ImportNFTTextureCronos.prefab`
+* Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ImportNFTTextureCronos.cs`
+* Prefab Path: `Assets/Web3Unity/Prefabs/ERC721/ImportNFTTextureCronos.prefab`
 
 ```csharp
 using System.Collections;
@@ -180,4 +196,5 @@ public class ImportNFTTextureCronos : MonoBehaviour
     }
 }
 ```
+
 Drag the prefab into the sample scene and play in order to run the script. The Quad should take the form of the image fetched form the NFT metadata.

@@ -1,53 +1,57 @@
 ---
 meta:
-  - name: "title"
+  - name: title
     content: Cronos | Crypto.org EVM Chain | Local Network Deployment
-  - name: "description"
-    content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
-  - name: "og:title"
+  - name: description
+    content: >-
+      Learn how to compile and run the latest development version of Cronos
+      testnet from scratch. This page is for building and running the latest
+      development version of the chain for testing purpose only.
+  - name: og:title
     content: Cronos | Crypto.org EVM Chain | Local Network Deployment
-  - name: "og:type"
+  - name: og:type
     content: Website
-  - name: "og:description"
-    content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
-  - name: "og:image"
+  - name: og:description
+    content: >-
+      Learn how to compile and run the latest development version of Cronos
+      testnet from scratch. This page is for building and running the latest
+      development version of the chain for testing purpose only.
+  - name: og:image
     content: https://cronos.org/og-image.png
-  - name: "twitter:title"
+  - name: twitter:title
     content: Cronos | Crypto.org EVM Chain | Local Network Deployment
-  - name: "twitter:site"
-    content: "@cryptocom"
-  - name: "twitter:card"
+  - name: twitter:site
+    content: '@cryptocom'
+  - name: twitter:card
     content: summary_large_image
-  - name: "twitter:description"
-    content: Learn how to compile and run the latest development version of Cronos testnet from scratch. This page is for building and running the latest development version of the chain for testing purpose only.
-  - name: "twitter:image"
+  - name: twitter:description
+    content: >-
+      Learn how to compile and run the latest development version of Cronos
+      testnet from scratch. This page is for building and running the latest
+      development version of the chain for testing purpose only.
+  - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://cronos.org/docs/getting-started/local-devnet.html
 ---
 
 # Devnet: Running Latest Development Node
 
-::: warning CAUTION
-this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
+::: warning CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
 
-For anyone interested in joining the Cronos testnet,
-please refer to our public testnet documentation which will be released shortly.
-:::
+For anyone interested in joining the Cronos testnet, please refer to our public testnet documentation which will be released shortly. :::
 
 By following this tutorial, you can compile and run the latest development version of Cronos testnet from scratch. It is intended for testing purpose only.
-
 
 ## Overview
 
 The first option is to use [pystarport](https://github.com/crypto-org-chain/chain-main/tree/master/pystarport), a dedicated script similar to [cosmos starport](https://github.com/tendermint/starport), but without the scaffolding feature to build a local development network with multiple validators. Another option is to use a shell script `init.sh` to build a local development network with a single validator.
 
-
 ## Pre-requisites
 
 ### Option 1. Using `pystarport`
 
-- Python > 3.7.3
-- [cronosd](https://github.com/crypto-org-chain/cronos)
+* Python > 3.7.3
+* [cronosd](https://github.com/crypto-org-chain/cronos)
 
 To install pystarport, run:
 
@@ -80,13 +84,9 @@ $ cronosd version
 [version-g<commit_hash>]
 ```
 
-
-
-
-## Step 1. Customize your devnet 
+## Step 1. Customize your devnet
 
 _Note_: You can skip this section and start a local devnet without customization.
-
 
 ### Option 1. Using `pystarport`
 
@@ -110,10 +110,12 @@ You can customize your devnet based on `cronos/scripts/cronos-devnet.yaml`, for 
       coins: 30000000000000000000000basetcro
       mnemonic: ${SIGNER2_MNEMONIC}
 ```
+
 The default configuration will give us two devnet validators with the chain-id `cronos_777-1`; three accounts `community`, `signer1` and `signer2` with some allocated funds at the genesis.
 
 ### Option 2. Using Shell script
-You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init_cronos_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
+
+You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init\_cronos\_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
 
 ```yaml
 ### customize the name of your key, the chain-id and moniker of the node ###
@@ -133,14 +135,13 @@ You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-c
 
 The default configuration will give us a single validator devnet with the chain-id `cronos_777-1`; one account under the name of `mykey` with some allocated funds at the genesis.
 
-
 ## Step 2. Start the devnet
 
 Once we finish with the configuration, we are ready to start the chain: in the repository root directory, run
 
 ### Option 1. Using `pystarport`
 
-```sh
+```
 $ pystarport serve --config ./scripts/cronos-devnet.yaml
 ```
 
@@ -158,17 +159,13 @@ Afterwards, keys will be generated according to the configuration specified, the
 
 Kindly save these mnemonics for key recovery later.
 
-Blocks are now being generated! You can view the blockchain data by the rpc port of the `awesome0` (first node): [http://localhost:26657/](http://localhost:26657/).
-Furthermore, you can also use the swagger doc of `awesome0` at [http://localhost:26654/swagger/](http://localhost:26654/swagger/).
+Blocks are now being generated! You can view the blockchain data by the rpc port of the `awesome0` (first node): [http://localhost:26657/](http://localhost:26657/). Furthermore, you can also use the swagger doc of `awesome0` at [http://localhost:26654/swagger/](http://localhost:26654/swagger/).
 
 It is worth mentioning that the `serve` command would truncate all the blocks previously generated and regenerate a new genesis block, which means you'll also lose all of your transaction records. If you wish to restart the chain with the existing blocks, please run `pystarport` with `start` command:
 
 ```bash
 $ pystarport start --config ./scripts/cronos-devnet.yaml
 ```
-
-
-
 
 ## Step 3. Interact with the chain
 
@@ -182,12 +179,11 @@ For Pystarport:
 
 As in the last section, pre-created Hierarchical Deterministic (HD) mnemonic with genesis funds inside are prepared for you in the Devnet. To gain access to the funds, kindly restore the key by using the mnemonic before moving on to the next step.
 
-**Note**: The keys are stored in your operating system by default, we will use `--keyring-backend test` for simplicity. You may refer to a more detailed explanation [here](../wallets/cli.md#the-keyring-keyring-backend-option). 
+**Note**: The keys are stored in your operating system by default, we will use `--keyring-backend test` for simplicity. You may refer to a more detailed explanation [here](cli.md#the-keyring-keyring-backend-option).
 
-- Firstly, restore the key name as `signer2`:
+* Firstly, restore the key name as `signer2`:
 
-
-```sh
+```
 $ cronosd keys add signer2 --recover --keyring-backend test
 ```
 
@@ -203,13 +199,11 @@ cruel install century disease tired glass lesson mushroom donor usual uncover fl
   mnemonic: ""
 ```
 
-
-
 ### Check account balance
 
 You can, for example, check the account balance by
 
-```sh
+```
 cronosd q bank balances crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk -o json | jq
 ```
 
@@ -234,43 +228,46 @@ We can see that there is `30000000000000000000000` basetcro in this address.
 
 ### Transfer token to another address
 
-- We are now ready to transfer token between different addresses; we can create another address with the key name `Bob`:
+*   We are now ready to transfer token between different addresses; we can create another address with the key name `Bob`:
 
-  ```
-  $ cronosd keys add Bob --keyring-backend test
-  ```
+    ```
+    $ cronosd keys add Bob --keyring-backend test
+    ```
 
-  which gives, for example:
+    which gives, for example:
 
- ```bash
-  - name: Bob
-  type: local
-  address: crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
-  pubkey: '{"@type":"/ethermint.crypto.v1.ethsecp256k1.PubKey","key":"AsR5N3GJpk6TiN4EDYv7SsW/eKPvaLBkiEh/FFwcNvUoG"}'
-  mnemonic: ""
-  threshold: 0
-  pubkeys: []
-  ```
+```bash
+ - name: Bob
+ type: local
+ address: crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
+ pubkey: '{"@type":"/ethermint.crypto.v1.ethsecp256k1.PubKey","key":"AsR5N3GJpk6TiN4EDYv7SsW/eKPvaLBkiEh/FFwcNvUoG"}'
+ mnemonic: ""
+ threshold: 0
+ pubkeys: []
+```
 
-- Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
+* Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
 
-```sh
+```
   $ cronosd tx bank send signer1 crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt 1basetcro --keyring-backend test --chain-id cronos_777-1
-  ```
+```
 
-- Lastly, check balance of Bob's address:
-  ```sh
-  $ cronosd query bank balances crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
-  ```
-  and we can see that 1 `basetcro` has already been transferred:
-  ```bash
-  balances:
-  - amount: "1"
-  denom: basetcro
-  pagination:
-  next_key: null
-  total: "0"
-  ```
+*   Lastly, check balance of Bob's address:
+
+    ```
+    $ cronosd query bank balances crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
+    ```
+
+    and we can see that 1 `basetcro` has already been transferred:
+
+    ```bash
+    balances:
+    - amount: "1"
+    denom: basetcro
+    pagination:
+    next_key: null
+    total: "0"
+    ```
 
 Congratulations! You've successfully transferred tokens to Bob.
 
@@ -328,5 +325,5 @@ then we can see that there are two active validator `localtestnet` at the moment
 
 For the validator, we can see that it comes with an address and a public key:
 
-- `"operator_address"` - The operator address, which is used for identifying the operators of validators;
-- `"consensus_pubkey"` - The consensus public key, which is used for identifying the validator nodes participating in consensus.
+* `"operator_address"` - The operator address, which is used for identifying the operators of validators;
+* `"consensus_pubkey"` - The consensus public key, which is used for identifying the validator nodes participating in consensus.

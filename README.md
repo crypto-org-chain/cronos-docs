@@ -1,121 +1,65 @@
-<br />
-<p align="center">
-  <img src="./docs/.vuepress/public/cronos.svg" alt="Cronos Logo" width="300">
-</p>
-<br />
+---
+meta:
+  - name: title
+    content: Cronos | Crypto.org EVM Chain | Getting Started
+  - name: description
+    content: >-
+      Learn how to setup nodes, different SDK modules and our all-in-one
+      command-line interface cronosd in this technical documentation.
+  - name: og:title
+    content: Cronos | Crypto.org EVM Chain | Getting Started
+  - name: og:type
+    content: Website
+  - name: og:description
+    content: >-
+      Learn how to setup nodes, different SDK modules and our all-in-one
+      command-line interface cronosd in this technical documentation.
+  - name: og:image
+    content: https://cronos.org/og-image.png
+  - name: twitter:title
+    content: Cronos | Crypto.org EVM Chain | Getting Started
+  - name: twitter:site
+    content: '@cryptocom'
+  - name: twitter:card
+    content: summary_large_image
+  - name: twitter:description
+    content: >-
+      Learn how to setup nodes, different SDK modules and our all-in-one
+      command-line interface cronosd in this technical documentation.
+  - name: twitter:image
+    content: https://cronos.org/og-image.png
+canonicalUrl: https://cronos.org/docs/getting-started/
+---
 
+# Getting Started
 
+Thanks for your interest in Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `cronosd`, and different SDK modules we utilized in the Cronos Chain.
 
-# Cronos Testnet's Documentation
+### What is Cronos Chain?
 
-The documentation in this repository site is meant to provide specifications and implementation details that will be useful to third party developers or contributors to the main repository.
+Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. An open-source and permission-less Layer 1 chain, Cronos aims to massively scale the DeFi, GameFi, and overall Web3 user community by providing builders with the ability to instantly port apps and crypto assets from other chains while benefiting from low transaction fees, high throughput, and fast finality.
 
-## Getting Started
+#### Cronos Chain Mainnet Beta
 
-### Prerequisites
+*   [Join Cronos Mainnet Beta](getting-started/cronos-mainnet.md):
 
-You're going to need:
+    Try running Full Node connected Cronos Mainnet Beta.
+*   [Setup your Metamask](for-users/metamask.md):
 
-- **NPM**
-- **Oracle JDK** (For generating the pdf, deployment needs this)
+    Setup Metamask and connect to Cronos Mainnet Beta.
 
-### Getting Set Up
+#### Cronos Testnet
 
-1. Fork this repository on Github
-2. Clone your forked repository (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/cronos-docs.git`
-3. `cd cronos-docs`
-4. Initialize and start chain-docs.
+*   [Join Cronos Testnet](getting-started/cronos-testnet.md):
 
-```bash
-npm install
-npm run docs:dev
-```
+    Try running Full Nodes or Validators connected to our Cronos Testnet.
 
-You can now see the docs at [http://localhost:8080](http://localhost:8080).
+#### Devnet
 
-## Adding new page to the doc
+*   **Devnet** - [Build latest development version](for-validators/local-devnet.md):
 
-1. Create a markdown file under `/docs/getting-started/`
-2. Open `/docs/.vuepress/config.js`
-3. Add the file name to `sidebar` and the `ordering` under `vuepress-plugin-export` in plugins
+    Try running the latest development network (_Devnet_)
 
-``` diff
-module.exports = {
-  ...,
+### Useful links
 
-  themeConfig: {
-    ...,
-
-    sidebar: {
-      '/getting-started/': [
-        '',
-        ...,
-+        '[Add_Your_New_File_Name_Here]'
-        ...
-      ]
-    }
-  },
-  ...,
-
-  plugins: [
-    ['vuepress-plugin-export',
-    {
-      sorter: function(a,b){
-        var ordering = {
-          'Home': 0,
-          ...,
-+         '[Add_Your_New_File_Name_Here]': [Add_The_Number_You_Want_The_Page_Be_Ordered]
-          ...,
-        };
-        ...
-      }
-    }
-    ]
-  ]
-}
-```
-
-## Generating a PDF version of the site
-
-Go to ``cronos-docs/docs``, then run:
-
-```bash
-vuepress export
-```
-
-PDF styling config in `/docs/.vuepress/config.js`, you can refer to [Puppeteer doc](https://pptr.dev/#?product=Puppeteer&version=v2.1.0&show=api-pagepdfoptions) for the complete page API when generating PDF.
-
-``` diff
-module.exports = {
-  plugins: [
-    ['vuepress-plugin-export',
-    {
-      page: {         // Puppeteer.page.pdf([options])
-        format: 'A4',
-        printBackground: true,
-        margin: {
-          top: 60,
-          left: 20,
-          right: 20,
-          bottom: 60
-        }
-      },
-      sorter: function(a,b){
-        ...,
-      }
-    }
-    ]
-  ]
-}
-```
-
-a PDF version of the site will be generated under the ``/docs`` path.
-
-## Deploying Chain-doc to Github Pages
-
-1. Make sure you're working on a fork in your own account, not our original repository: `git remote show origin`
-2. Commit your changes: `git commit -a -m "YOUR MESSAGE"`
-3. Push the changes to GitHub: `git push`
-4. Run `./deploy.sh`
-
-You should see your updates on [http://yourusermame.github.io/chain-docs](http://yourusermame.github.io/chain-docs).
+\- \[Project Website]\(https://cronos.org) - \[Project Repository]\(https://github.com/crypto-org-chain/cronos) - Community chatrooms (non-technical): \[Discord]\(https://discord.gg/nsp9JTC) \[Telegram]\(https://t.me/CryptoComOfficial) - Developer community channel (technical): \[!\[Support Server]\(https://img.shields.io/discord/783264383978569728.svg?color=7289da\&label=Crypto.org Chain)]\(https://discord.gg/pahqHz26q4) - Email: \[contact@cronoslabs.org]\(mailto:contact@cronoslabs.org)
