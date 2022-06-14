@@ -30,4 +30,5 @@ The underlying SDK for this documentation has been developed and curated by Chai
 
 - Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
 - Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da&label=Crypto.org Chain)](https://discord.gg/pahqHz26q4)
-- Email: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)
+- [Contact form](https://airtable.com/shrFiQnLrcpeBp2lS)
+- Email dev relations : [contact@cronoslabs.org](mailto:contact@cronoslabs.org)
