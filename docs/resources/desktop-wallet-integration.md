@@ -43,8 +43,8 @@ desktopWalletButton.on("click", () => {
   if (navigator.userAgent.includes("Desktop Wallet")) {
     // within Desktop Wallet's DappBrowser, connect wallet
   } else {
-    // jump to download desktop wallet page
-    window.open("https://crypto.org/desktopwallet");
+    // jump to download Desktop Wallet page
+    window.open("https://crypto.com/defi-wallet");
   }
 });
 ```
