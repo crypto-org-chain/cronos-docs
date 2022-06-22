@@ -97,16 +97,16 @@ module.exports = {
             link: "/play/introduction.html",           
           },
           {
-            text: "Getting Started",
+            text: "Unity",
             link: "/play/getting-started.html",           
           },
           {
-            text: "Login Example",
-            link: "/play/login-example.html",           
-          },
+            text: "Unreal Engine",
+            link: "/play/getting-started_unreal.html",           
+          },          
           {
-            text: "Intergrating with Cronos Play",
-            link: "/play/cronos-gamefi-integraton.html",           
+            text: "C++ SDK",
+            link: "/play/getting-started_cpp.html",           
           }
         ]
       },
@@ -166,10 +166,8 @@ module.exports = {
       "/play/": [
         "introduction",
         "getting-started",
-        "login-example",
-        "scripts",
-        "cronos-gamefi-integraton",
-        "useful-links",
+        "getting-started_unreal",
+        "getting-started_cpp"
       ],
       "/resources/": [
         "chain-integration",
