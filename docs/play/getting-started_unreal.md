@@ -29,28 +29,25 @@ To compile the existing library, follow the steps below:
 
 1. Install unreal engine 4.27
 2. Clone the following repository
-```sh
-git clone https://github.com/cronos-labs/play-unreal-plugin
-```
+    ```sh
+    git clone https://github.com/cronos-labs/play-unreal-plugin
+    ```
 3. open `CronosPlaySdk/CronosPlaySdk.uproject` with the unreal editor
 
 ### How to install
 
 To install, run the following commands:
 
-1. Clone the following repository
-```sh
-git clone https://github.com/cronos-labs/play-unreal-plugin
-```
-2. Run the following commands to copy dynamic libraries for ue4 editor
-```sh
-cd CronosPlaySdk 
-`copydll.sh` or `copydll.bat`
-mkdir Plugins
-copy ./CronosPlaySdk/Plugins/CronosPlayUnreal yourProjectFolder/Plugins/
-cd yourProjectFolder/Plugins/
-`copydll.sh` or `copydll.bat`
-```
+1. Run the following commands to copy dynamic libraries for ue4 editor
+    ```sh
+    git clone https://github.com/cronos-labs/play-unreal-plugin
+    cd CronosPlaySdk 
+    `copydll.sh` or `copydll.bat`
+    mkdir Plugins
+    copy ./CronosPlaySdk/Plugins/CronosPlayUnreal yourProjectFolder/Plugins/
+    cd yourProjectFolder/Plugins/
+    `copydll.sh` or `copydll.bat`
+    ```
 ### How to start coding
 
 1. click **add blueprint** in the ue4 menu
@@ -81,22 +78,22 @@ Unreal Engine 4.27 and 5.0 are supported, i.e. one of them should be installed v
 To install, run the following commands:
 
 **macOS**
-  1.  Run the following commands
-```sh
-git clone https://github.com/cronos-labs/play-unreal-demo
-cd play-unreal-demo/CronosPlayUnrealDemo/
-`copydll.sh`
-```
-  2.  `CronosPlayUnrealDeemo.project` with the unreal editor
+1.  Run the following commands
+    ```sh
+    git clone https://github.com/cronos-labs/play-unreal-demo
+    cd play-unreal-demo/CronosPlayUnrealDemo/
+    `copydll.sh`
+    ```
+2.  `CronosPlayUnrealDeemo.project` with the unreal editor
 
 
 **Windows**
 1.  Run the following commands
-```sh
-git submodule update --init --recursive`
-cd CronosPlayUnrealDemo`
-`copydll.bat`
-```
+    ```sh
+    git submodule update --init --recursive`
+    cd CronosPlayUnrealDemo`
+    `copydll.bat`
+    ```
 2. `CronosPlayUnrealDemo.project`with the unreal editor
 
 

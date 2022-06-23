@@ -24,9 +24,9 @@ Please download the archive file based on your OS in the [release page](https://
 #### Windows
 
 1. Clone the following repository
-```sh
-git clone https://github.com/cronos-labs/play-cpp-sdk.git
-```
+    ```sh
+    git clone https://github.com/cronos-labs/play-cpp-sdk.git
+    ```
 2. Unzip the archive file into `demo` folder
 3. Open `demo.sln` which includes two projects: `demo` (dynamic build) and `demostatic` (static
    build). If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to
@@ -44,31 +44,31 @@ The following build events are included in the project file:
 #### Mac
 
 1. Clone the current repository
-```sh
-git clone https://github.com/cronos-labs/play-cpp-sdk.git
-```
+    ```sh
+    git clone https://github.com/cronos-labs/play-cpp-sdk.git
+    ```
 2. Unzip the archive file into `demo` folder
 3. Copy the dynamic library to `/usr/local/lib`
-```sh
-cd demo
-cp lib/libplay_cpp_sdk.dylib /usr/local/lib
-```
+    ```sh
+    cd demo
+    cp lib/libplay_cpp_sdk.dylib /usr/local/lib
+    ```
 4. Under `demo` folder and build the `demo` project
-```sh
-make
-```
+    ```sh
+    make
+    ```
 
 #### Linux
 
 1. Clone the current repository
-```sh
-git clone https://github.com/cronos-labs/play-cpp-sdk.git
-```
+    ```sh
+    git clone https://github.com/cronos-labs/play-cpp-sdk.git
+    ```
 2. Unzip the archive file into `demo` folder
 3. Under `demo` folder and build the `demo` project
-```sh
-make
-```
+    ```sh
+    make
+    ```
 
 ### In any other c++ 14 (or newer) projects
 
