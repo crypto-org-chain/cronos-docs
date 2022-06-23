@@ -10,4 +10,4 @@ touch index.html && aws s3 cp index.html s3://${S3_BUCKET} --region ${REGION}
 
 # invalidate cloudfront distribution
 echo "invalidate cloudfront distribution 🔄"
-AWS_PAGER="" aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/docs*'
+aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/docs*'
