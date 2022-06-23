@@ -123,7 +123,7 @@ Simply go to `Setting/Advance` and click `Reset Account` as shown below:
 
 ## FAQs for ERC20-only transaction Support
 
-### Q1: I transferred CRO from the other centralized exchanges (CEXs) to the Crypto.com DeFi Desktop Wallet, but why it is not showing up in my wallet? 
+### Q1: I transferred CRO from the other centralized exchanges (CEXs) to the Crypto.org Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet? 
 
 **A** : Some centralized exchanges currently only support Ethereum mainnet ERC20-CRO withdrawal, while the Crypto.com DeFi Desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. 
 It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works. 

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-[Crypto.org Chain Desktop Wallet (Beta)](https://crypto.org/desktopwallet), a public, open-source Desktop Wallet on Cronos Chain.
+[Crypto.com DeFi Desktop Wallet](https://crypto.com/defi-wallet), a public, open-source Desktop Wallet on Cronos Chain.
 
-Crypto.org Chain Desktop Wallet (Beta) supports staking operations, validator selections, and governance voting. Users can also view, send and mint NFTs directly, and much more from the Desktop Wallet. It provides a simple and secure way for users to connect their Desktop Wallet with Ethereum-compatible DApps via DApp Browser.
+Crypto.com DeFi Desktop Wallet supports staking operations, validator selections, and governance voting. Users can also view, send and mint NFTs directly, and much more from the Desktop Wallet. It provides a simple and secure way for users to connect their Desktop Wallet with Ethereum-compatible DApps via DApp Browser.
 
 - **For DApp builders**, integrating with Desktop Wallet allows them to offer a streamlined user experience to the users, as well as encourage increased adoption and usage.
 - **For users**, this means that they can connect to DApps simply by clicking the DApp's logo or type in the DApp's URL, they can also bookmark their favorite DApps. The user experience is familiar for those who are already using DApps in the browser. It also supports Ledger out of the box.
@@ -43,8 +43,8 @@ desktopWalletButton.on("click", () => {
   if (navigator.userAgent.includes("Desktop Wallet")) {
     // within Desktop Wallet's DappBrowser, connect wallet
   } else {
-    // jump to download desktop wallet page
-    window.open("https://crypto.org/desktopwallet");
+    // jump to download Desktop Wallet page
+    window.open("https://crypto.com/defi-wallet");
   }
 });
 ```
