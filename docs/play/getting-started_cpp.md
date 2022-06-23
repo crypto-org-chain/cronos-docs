@@ -23,10 +23,10 @@ Please download the archive file based on your OS in the [release page](https://
 
 #### Windows
 
-1. Clone the current repository
-   ```sh
-   git clone https://github.com/cronos-labs/play-cpp-sdk.git
-   ```
+1. Clone the following repository
+```sh
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
+```
 2. Unzip the archive file into `demo` folder
 3. Open `demo.sln` which includes two projects: `demo` (dynamic build) and `demostatic` (static
    build). If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to
@@ -44,31 +44,31 @@ The following build events are included in the project file:
 #### Mac
 
 1. Clone the current repository
-   ```sh
-   git clone https://github.com/cronos-labs/play-cpp-sdk.git
-   ```
+```sh
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
+```
 2. Unzip the archive file into `demo` folder
 3. Copy the dynamic library to `/usr/local/lib`
-   ```sh
-   cd demo
-   cp lib/libplay_cpp_sdk.dylib /usr/local/lib
-   ```
+```sh
+cd demo
+cp lib/libplay_cpp_sdk.dylib /usr/local/lib
+```
 4. Under `demo` folder and build the `demo` project
-   ```sh
-   make
-   ```
+```sh
+make
+```
 
 #### Linux
 
 1. Clone the current repository
-   ```sh
-   git clone https://github.com/cronos-labs/play-cpp-sdk.git
-   ```
+```sh
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
+```
 2. Unzip the archive file into `demo` folder
 3. Under `demo` folder and build the `demo` project
-   ```sh
-   make
-   ```
+```sh
+make
+```
 
 ### In any other c++ 14 (or newer) projects
 
@@ -80,56 +80,57 @@ The following build events are included in the project file:
 - `CHANGELOG.md`
 - `LICENSE`
 
-      ::: tip We suggest:
-      - In case of same name collision, we suggest you unzip the archive in a temporary folder and
-      review them first.
-      - Review the folder or file names under `include` and `lib` folder to see if there are files
-      that have same names as in your project, rename those files in your project to avoid
-      collision.
-      - Finally copy `include` and `lib` folders into your project.
-      - We will support CMAKE and provide you a better integration in future release.
-      :::
+::: tip We suggest:
+- In case of same name collision, we suggest you unzip the archive in a temporary folder and
+review them first.
+- Review the folder or file names under `include` and `lib` folder to see if there are files
+that have same names as in your project, rename those files in your project to avoid
+collision.
+- Finally copy `include` and `lib` folders into your project.
+- We will support CMAKE and provide you a better integration in future release.
+:::
 
 2. Include the following headers and use the namespaces in your source codes
 
-   ```c++
-   #include "include/defi-wallet-core-cpp/src/contract.rs.h" // erc20, erc721, erc1155 supports
-   #include "include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
-   #include "include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
-   #include "include/defi-wallet-core-cpp/src/uint.rs.h" // uint256 type support
-   #include "include/extra-cpp-bindings/src/lib.rs.h" // etherscan/cronoscan, crypto.com pay, wallet connect support
-   #include "include/rust/cxx.h" // the important data types, e.g., rust::String, rust::str, etc
+```c++
+#include "include/defi-wallet-core-cpp/src/contract.rs.h" // erc20, erc721, erc1155 supports
+#include "include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
+#include "include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
+#include "include/defi-wallet-core-cpp/src/uint.rs.h" // uint256 type support
+#include "include/extra-cpp-bindings/src/lib.rs.h" // etherscan/cronoscan, crypto.com pay, wallet connect support
+#include "include/rust/cxx.h" // the important data types, e.g., rust::String, rust::str, etc
 
-   using namespace rust;
-   using namespace org::defi_wallet_core;
-   using namespace com::crypto::game_sdk;
-   ```
+using namespace rust;
+using namespace org::defi_wallet_core;
+using namespace com::crypto::game_sdk;
+```
 
 3. Link `play_cpp_sdk` static library in your build flow (check `demo/Makefile` for more
    details)
 
-- Windows
-  ```c++
-      lib\play_cpp_sdk.lib
-  ```
-- Mac or Linux
-  ```c++
-      lib/libplay_cpp_sdk.a
-  ```
+Windows
+```c++
+lib\play_cpp_sdk.lib
+```
+Mac or Linux
+```c++
+lib/libplay_cpp_sdk.a
+```
 
 4. Or link `play_cpp_sdk` dynamic library and `cxxbridge1` static library in your build flow
    (check `demo/Makefile` for more details)
 
-- Windows
-  ```
-  lib\play_cpp_sdk.dll.lib
-  lib\libcxxbridge1.a
-  ```
-- Mac
-  ```c++
-  lib/libplay_cpp_sdk.dylib
-  lib\libcxxbridge1.a
-  ```
+Windows
+```
+lib\play_cpp_sdk.dll.lib
+lib\libcxxbridge1.a
+```
+
+Mac or Linux
+```c++
+lib/libplay_cpp_sdk.dylib
+lib\libcxxbridge1.a
+```
 - Linux dynamic build is under testing.
 
 ## Build libraries and bindings from scratch
@@ -193,16 +194,16 @@ function `new_privatekey`- Generates a random private key
 function `new_privatekey_from_bytes` - Constructs private key from hex bytes
 
 ```rust
+// constructs private key from bytes
 ::rust::Box<::org::defi_wallet_core::PrivateKey > new_privatekey_from_bytes(
     ::rust::Vec<::std::uint8_t > bytes
 )
-constructs private key from bytes
 ```
 
 `function new_privatekey_from_hex` - Constructs private key from hex string
 
 ```rust
-    constructs private key from hex string
+// constructs private key from hex string
 ::rust::Box<::org::defi_wallet_core::PrivateKey > new_privatekey_from_hex(
     ::rust::String hex
 )
@@ -221,7 +222,7 @@ function `balance_of` - Returns the decimal amount of tokens owned by account_ad
 
 ```
 
-::: tip Example
+**Example**
 
 ```Rust
 Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
@@ -231,15 +232,13 @@ U256 = erc20.balance_of("0xf0307093f23311FE6776a7742dB619EB3df62969");
 cout << balance.to_string() << endl;
 ```
 
-:::
-
 function `name` -Returns the name of the token.
 
 ```rust
 ::rust::String name() const
 ```
 
-::: tip Example
+**Example**
 
 ```Rust
 Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
@@ -248,14 +247,13 @@ String name = erc20.name();
 assert(name == "USDC");
 ```
 
-:::
 function `symbol` - Returns the symbol of the token.
 
 ```rust
 ::rust::String symbol() const
 ```
 
-::: tip Example
+**Example**
 
 ```rust
 Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
@@ -264,15 +262,13 @@ String symbol = erc20.symbol();
 assert(symbol == "USDC");
 ```
 
-:::
-
 function `decimals`- Returns the number of decimals the token uses.
 
 ```rust
 ::std::uint8_t decimals() const
 ```
 
-::: tip Example
+**Example**
 
 ```rust
 Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
@@ -281,8 +277,6 @@ Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
 uint8_t decimals = erc20.decimals();
 assert(decimals == 6);
 ```
-
-:::
 
 ## [ERC721](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg_1_1defi__wallet__core_1_1_erc721)
 
@@ -316,13 +310,14 @@ function `symbol` - Get the abbreviated name for NFTs in this contract.
 
 function `token_uri`- Get the distinct Uniform Resource Identifier (URI) for a given asset.
 
-````rust
+```rust
 ::rust::String token_uri(
     ::rust::String token_id
 ) const
-
+```
 
 function `transfer_from` - Transfers token_id token from from_address to to_address.
+
 ```rust
 ::org::defi_wallet_core::CronosTransactionReceiptRaw transfer_from(
     ::rust::String from_address,
@@ -330,7 +325,7 @@ function `transfer_from` - Transfers token_id token from from_address to to_addr
     ::rust::String token_id,
     const ::org::defi_wallet_core::PrivateKey & private_key
 ) const
-````
+```
 
 function `safe_transfer_from` - Safely transfers `token_id` token from `from_address` to `to_address`.
 
