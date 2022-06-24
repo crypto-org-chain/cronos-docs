@@ -388,25 +388,6 @@ Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/netw
 
 
 ### Step 4-1 Quicksync Download 
-After executing the command `./cronosd` start at Step 3-2 Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal. 
-
-:::details Example: `chain-maind start` with 0 height originally
-
-```bash
-
-  $ ./cronosd start
-  7:13PM INF Unlocking keyring
-  7:13PM INF starting ABCI with Tendermint
-  7:13PM INF Starting multiAppConn service impl=multiAppConn module=proxy server=node
-  7:13PM INF Starting localClient service connection=query impl=localClient module=abci-client server=node
-  ...
-  7:13PM INF ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 server=node software-version=0.6.5
-  7:13PM INF ABCI Replay Blocks appHeight=0 module=consensus server=node stateHeight=0 storeHeight=0
-
-```
-
-:::
-
 To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from https://quicksync.io/networks/crypto.html. 
 
 
@@ -455,7 +436,7 @@ The original data folder under `.cronos` is overwritten with this step (it takes
 ### Step 4-3 Sync with Quicksync
 Direct back to the parent directory of current directory(`/Users/<username>/` in this case) by `cd..`. Then run Cronos again with `./cronosd start` and now it suppose to start the node and sync the blockchain data from the height of `1813707`. 
 
-:::details Example: Restart `chain-maind start` with QuickSync
+:::details Example: Restart `cronosd start` with QuickSync
 
 ```bash
 
