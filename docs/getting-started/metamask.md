@@ -125,18 +125,18 @@ Simply go to `Setting/Advance` and click `Reset Account` as shown below:
 
 ### Q1: I transferred CRO from the other centralized exchanges (CEXs) to the Crypto.org Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet? 
 
-**A** : Some centralized exchanges currently only support Ethereum mainnet ERC20-CRO withdrawal, while Crypto.org desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. 
+**A** : Some centralized exchanges currently only support Ethereum mainnet ERC20-CRO withdrawal, while the Crypto.com DeFi Desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. 
 It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works. 
 
 
-### Q2: I’ve already made the transfer from the centralized exchange that does not support Cronos Beta Chain to my Crypto.org Desktop wallet. What should I do to retrieve my funds?
+### Q2: I’ve already made the transfer from the centralized exchange that does not support Cronos Beta Chain to my Crypto.com DeFi Desktop Wallet. What should I do to retrieve my funds?
 
 **A** : Here's what you could do:  
 1. Send some ETH (around 0.03 ETH) to your `0x..` address for paying the transaction gas fee on Ethereum
 2. Download our Crypto.com App, and register an account (skip this if you're already a user)
 3. Send your ERC20-CRO to the Crypto.com App ERC20-CRO deposit address*
 4. When you get your CRO, withdraw your CRO to your ledger address (MAKE SURE YOU SELECT Cronos Beta Chain) `0x..` address
-5. You would be able to see your funds on Desktop Wallet afterwards
+5. You would be able to see your funds on Crypto.com DeFi Desktop Wallet afterwards
 
 Other than this, it is also possible that there is no Ethereum in your wallet, which could result in your funds getting stuck as you aren't able to pay for the Ethereum gas fee. Please ensure you have enough ETH for the transaction. 
 
