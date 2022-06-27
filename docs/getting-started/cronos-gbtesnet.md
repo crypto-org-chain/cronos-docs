@@ -4,7 +4,7 @@ This is a detailed documentation for setting up a full node on Cronos gravity br
 
 ::: tip Remarks: 
 
-Cronos gravity bridge testnet - Pionner 11 (`pioneereleventestnet_340-1`) is **distinct from** the official "Cronos testnet" (cronostestnet_338-3) which is used by app developers to test their Dapps. The Pioneer 11 testnet is a dedicated testnet created specifically for the purpose of testing the Cronos Gravity Bridge.
+Cronos gravity bridge testnet - Pionner 11 (`pioneereleventestnet_340-1`) is **distinct from** the official "Cronos testnet" (`cronostestnet_338-3`) which is used by app developers to test their Dapps. The Pioneer 11 testnet is a dedicated testnet created specifically for the purpose of testing the Cronos Gravity Bridge.
 :::
 
 
@@ -211,5 +211,5 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 
 - To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/pioneer11-faucet) to obtain test CRO tokens for performing transactions on the **Cronos** gravity bridge testnet.
 
-  - Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](./metamask.mdl#using-metamask-on-cronos-gravity-birdge-testnet-pionner-11).
+  - Users can use the [faucet](https://cronos.org/pioneer11-faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](./metamask.md#using-metamask-on-cronos-gravity-birdge-testnet-pionner-11).
 
