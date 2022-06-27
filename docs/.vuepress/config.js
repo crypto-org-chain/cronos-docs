@@ -29,6 +29,10 @@ module.exports = {
             link: "/getting-started/cronos-testnet"
           },
           {
+          text: "Cronos Gravity bridge Testnet",
+          link: "/getting-started/cronos-gbtestnet"
+          },          
+          {
             text: "Local network deployment",
             link: "/getting-started/local-devnet"
           },
@@ -142,6 +146,7 @@ module.exports = {
         "cronos-mainnet",
         "metamask",
         "cronos-testnet",
+        "cronos-gbtesnet",        
         "local-devnet",
         "security-checklist.md",
         "defi-practice",
