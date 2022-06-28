@@ -64,20 +64,23 @@
           <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/cronos_chain">
             <img :src="$withBase('/social/twitter.svg')" alt="twitter" />
           </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/cronos-labs/">
+            <img :src="$withBase('/social/linkedin.svg')" alt="linkedin" />
+          </a>
           <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/CryptoComOfficial">
             <img :src="$withBase('/social/facebook.svg')" alt="facebook" />
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cryptocomofficial/">
             <img :src="$withBase('/social/instagram.svg')" alt="instagram" />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://hk.linkedin.com/company/cryptocom">
-            <img :src="$withBase('/social/linkedin.svg')" alt="linkedin" />
-          </a>
+          -->
+
           <a target="_blank" rel="noopener noreferrer"
-            href="https://www.youtube.com/channel/UCOMprzxakZOqmY23LYIawmg"
+            href="https://www.youtube.com/channel/UC0VNDQLc_YHDACURNuQCZfw"
           >
             <img :src="$withBase('/social/youtube.svg')" alt="youtube" />
           </a>
+          <!--
           <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Crypto_com/">
             <img :src="$withBase('/social/reddit.svg')" alt="reddit" />
           </a> -->
@@ -93,6 +96,9 @@
           <!-- <a target="_blank" rel="noopener noreferrer" href="https://open.kakao.com/o/gGH1WQM">
             <img :src="$withBase('/social/kakaotalk.svg')" alt="kakaotalk" />
           </a> -->
+          <a target="_blank" rel="noopener noreferrer" href="mailto:contact@cronoslabs.org">
+            <img :src="$withBase('/social/email.svg')" alt="Email" />
+          </a>
         </div>
       </div>
       <p class="copyright">

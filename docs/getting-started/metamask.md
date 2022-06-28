@@ -41,9 +41,10 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
     <img src="./assets/2.png" />
 
-- Insert the network name, for example "Cronos" and put 
-  - `https://evm.cronos.org` for **New RPC URL**; and 
-  - `25` for **Chain ID**, 
+- Insert the network name, for example "Cronos" and put
+
+  - `https://evm.cronos.org` for **New RPC URL**; and
+  - `25` for **Chain ID**,
   - `CRO` for the symbol, and
   - `https://cronoscan.com/` for the **Block explorer URL** as below:
 
@@ -53,15 +54,23 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
 ### Using MetaMask on Cronos testnet
 
-Similarly, for Cronos testnet, insert the network name, for example "Cronos testnet" and put 
-  - `https://evm-t3.cronos.org` for **New RPC URL**; and 
-  - `338` for **Chain ID**, 
-  - `tCRO` for the symbol, and
-  - `https://testnet.cronoscan.com/` for the **Block explorer URL** as below:
+For Cronos testnet, insert the network name, for example "Cronos testnet" and put
 
+- `https://evm-t3.cronos.org` for **New RPC URL**,
+- `338` for **Chain ID**,
+- `tCRO` for the symbol, and
+- `https://testnet.cronoscan.com/` for the **Block explorer URL**.
+
+### Using MetaMask on Cronos Gravity birdge testnet (Pionner 11)
+
+For Cronos Gravity birdge testnet (Pionner 11), insert the network name, for example "Cronos testnet" and put
+
+- `https://evm-p11.cronos.org` for **New RPC URL**,
+- `340` for **Chain ID**,
+- `tCRO` for the symbol, and
+- `https://cronos.org/explorer/pioneer11` for the **Block explorer URL**.
 
 ## Importing private key to MetaMask
-
 
 Alternatively, We can export the private key by using the `unsafe-export-eth-key` command with `cronosd`, for example:
 
@@ -111,52 +120,45 @@ One would have to add the `0x` at the beginning when using the Ethereum HEX addr
 `Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A` implies that `0x2F743F55AC49A446484988505244941DEDA1B60A` will be the address in the Ethereum manner.
 :::
 
-
 ## Resetting your account on Metamask
 
-If you come across any issue with your account or you have used the imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function on the MetaMask. 
+If you come across any issue with your account or you have used the imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function on the MetaMask.
 
 Simply go to `Setting/Advance` and click `Reset Account` as shown below:
 
 <img src="./assets/10.png" />
 
-
 ## FAQs for ERC20-only transaction Support
 
-### Q1: I transferred CRO from the other centralized exchanges (CEXs) to the Crypto.org Desktop wallet, but why it is not showing up in my Crypto.org Chain Desktop Wallet? 
+### Q1: I transferred CRO from the other centralized exchanges (CEXs) to the Crypto.org Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet?
 
-**A** : Some centralized exchanges currently only support Ethereum mainnet ERC20-CRO withdrawal, while Crypto.org desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. 
-It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works. 
+**A** : Some centralized exchanges currently only support Ethereum mainnet ERC20-CRO withdrawal, while the Crypto.com DeFi Desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet.
+It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works.
 
+### Q2: I’ve already made the transfer from the centralized exchange that does not support Cronos Beta Chain to my Crypto.com DeFi Desktop Wallet. What should I do to retrieve my funds?
 
-### Q2: I’ve already made the transfer from the centralized exchange that does not support Cronos Beta Chain to my Crypto.org Desktop wallet. What should I do to retrieve my funds?
+**A** : Here's what you could do:
 
-**A** : Here's what you could do:  
 1. Send some ETH (around 0.03 ETH) to your `0x..` address for paying the transaction gas fee on Ethereum
 2. Download our Crypto.com App, and register an account (skip this if you're already a user)
-3. Send your ERC20-CRO to the Crypto.com App ERC20-CRO deposit address*
+3. Send your ERC20-CRO to the Crypto.com App ERC20-CRO deposit address\*
 4. When you get your CRO, withdraw your CRO to your ledger address (MAKE SURE YOU SELECT Cronos Beta Chain) `0x..` address
-5. You would be able to see your funds on Desktop Wallet afterwards
+5. You would be able to see your funds on Crypto.com DeFi Desktop Wallet afterwards
 
-Other than this, it is also possible that there is no Ethereum in your wallet, which could result in your funds getting stuck as you aren't able to pay for the Ethereum gas fee. Please ensure you have enough ETH for the transaction. 
+Other than this, it is also possible that there is no Ethereum in your wallet, which could result in your funds getting stuck as you aren't able to pay for the Ethereum gas fee. Please ensure you have enough ETH for the transaction.
 
-*For step 3 of transferring your ERC20-CRO, you could either use Metamask or Ledger Live (for ledger user) to send ERC20-CRO from your Ledger to Crypto.com App. 
-Take the wallet on Metamask as an example, if you log into the same wallet on Metamask and switch the network to the ethereum mainnet on Metamask, you would be able to access those ERC20 tokens in this wallet on Metamask. After that, you would be free to transfer the funds to the Crypto.com app then withdraw them to the Cronos Beta network.*
- 
- 
+_For step 3 of transferring your ERC20-CRO, you could either use Metamask or Ledger Live (for ledger user) to send ERC20-CRO from your Ledger to Crypto.com App.
+Take the wallet on Metamask as an example, if you log into the same wallet on Metamask and switch the network to the ethereum mainnet on Metamask, you would be able to access those ERC20 tokens in this wallet on Metamask. After that, you would be free to transfer the funds to the Crypto.com app then withdraw them to the Cronos Beta network._
+
 ### Q3: I would like to send ERC20-CRO from Crypto.com App or Defi Wallet to the other CEXs directly. Is it possible?
- 
-**A** : Please make sure both sender and receiver accounts support ERC20 format. Only if the other CEXs support ERC20-CRO can you send it. Users may refer to this guide for more details: 
+
+**A** : Please make sure both sender and receiver accounts support ERC20 format. Only if the other CEXs support ERC20-CRO can you send it. Users may refer to this guide for more details:
+
 - https://help.crypto.com/en/articles/5019195-send-and-receive-cro-the-difference-between-native-cro-and-erc20-cro
 - https://help.crypto.com/en/articles/4970776-cro-deposit-withdrawal-information-in-crypto-com-app
 
+### Q4: I made a transaction on MetaMask (through Cronos Beta network) to the other CEXs that do NOT support Cronos. How should I retrieve it back?
 
-### Q4: I made a transaction on MetaMask (through Cronos Beta network) to the other CEXs that do NOT support Cronos. How should I retrieve it back? 
-
-**A** : In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronoscan](https://cronoscan.com/). 
-Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies. 
+**A** : In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronoscan](https://cronoscan.com/).
+Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies.
 Otherwise, you will most likely not be able to access the funds until that CEX starts to support Cronos.
-
-
-
-

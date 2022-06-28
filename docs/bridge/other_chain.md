@@ -20,14 +20,14 @@ Please read the guide carefully and review the project documentation as misuse m
 
 - Crypto.org <=> Cronos;
 - Cosmos <=> Cronos;
-- Terra <=> Cronos;
+- Terra (classic) <=> Cronos;
 - Akash <=> Cronos.
 
 #### Currently supported tokens:
 
 - CRO;
 - ATOM;
-- LUNA;
+- LUNC;
 - AKT.
 
 #### Currently supported wallets:
@@ -50,7 +50,7 @@ Once a connection request is sent, look for a popup from your wallet interface o
 
 Note 1: If you are bridging assets from or to Crypto.org, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
 
-Note 2: Currently, Terra ⇔ Cronos only support Keplr wallet. Learn how to add your Terra station wallet to Keplr wallet, please click [here](#add-your-terra-station-wallet-to-keplr-wallet).
+Note 2: Currently, Terra (classic) ⇔ Cronos only support on Keplr wallet, and only Terra classic (LUNC) is supported. Learn how to add your Terra station wallet to Keplr wallet, please click [here](#add-your-terra-station-wallet-to-keplr-wallet). 
 
 <img src="./assets/webapp_connect_wallet.png"  alt="centered image" />
 
@@ -155,7 +155,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
   - Crypto.org => Cronos;
   - Cronos => Crypto.org;
   - Cosmos => Cronos;
-  - Terra => Cronos;
+  - Terra (classic) => Cronos;
   - Akash => Cronos.
 - The fee waived is the bridge network transaction fee on the destination chain. However, you are still liable to pay for the origin chain gas fee directly on your wallet extension.
 - This is a promotional waiver; we reserve the right to modify and terminate the promotion at any time
@@ -174,7 +174,7 @@ Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 - The networks supported are:
   - Cronos;
   - Cosmos;
-  - Terra;
+  - Terra (classic);
   - Akash;
   - Coming Soon: Ethereum
 
@@ -255,11 +255,11 @@ Alternatively, you may view your transaction history on the upper right hand cor
 <img src="./assets/defiwallet6.png" width="300" alt="centered image" />
 
 
-## Via Crypto.org Chain Desktop Wallet
+## Via Crypto.com DeFi Desktop Wallet
 
-### Transfer assets from Crypto.org Chain using Crypto.org Chain Desktop Wallet
+### Transfer assets from Crypto.org Chain using Crypto.com DeFi Desktop Wallet
 
-Crypto.org Chain Desktop Wallet has integrated with the Cronos Bridge to allow all of its wallet users to seamlessly transfer assets over to Cronos straight from the Crypto.org Chain Desktop Wallet. Here’s how you can do so:
+Crypto.com DeFi Desktop Wallet has integrated with the Cronos Bridge to allow all of its wallet users to seamlessly transfer assets over to Cronos straight from the Crypto.com DeFi Desktop Wallet. Here’s how you can do so:
 
 
 ### Step-by-step Walkthrough
@@ -269,7 +269,7 @@ Crypto.org Chain Desktop Wallet has integrated with the Cronos Bridge to allow a
 
 **Step 2**: Select “From” Crypto.org Chain as the origination chain and “To” Cronos Chain as the destination chain
 
-Only the `Crypto.org Chain <=> Cronos` route will be available on Day 1. The `Ethereum <=> Cronos` route will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.org Chain Desktop Wallet, you will automatically have a Crypto.org Chain wallet address and Cronos Chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.
+Only the `Crypto.org Chain <=> Cronos` route will be available on Day 1. The `Ethereum <=> Cronos` route will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.com DeFi Desktop Wallet, you will automatically have a Crypto.org Chain wallet address and Cronos Chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.
 
 
 **Step 3**: Enter the amount of CRO you want to transfer and click “Transfer Asset”
