@@ -237,11 +237,11 @@ Alternatively, you may view your transaction history on the upper right hand cor
 
 ![centered image](../../docs/bridge/assets/defiwallet6.png)
 
-## Via Crypto.org Chain Desktop Wallet
+## Via Crypto.com DeFi Desktop Wallet
 
-### Transfer assets from Crypto.org Chain using Crypto.org Chain Desktop Wallet
+### Transfer assets from Crypto.org Chain using Crypto.com DeFi Desktop Wallet
 
-Crypto.org Chain Desktop Wallet has integrated with the Cronos Bridge to allow all of its wallet users to seamlessly transfer assets over to Cronos straight from the Crypto.org Chain Desktop Wallet. Here’s how you can do so:
+Crypto.com DeFi Desktop Wallet has integrated with the Cronos Bridge to allow all of its wallet users to seamlessly transfer assets over to Cronos straight from the Crypto.com DeFi Desktop Wallet. Here’s how you can do so:
 
 ### Step-by-step Walkthrough
 
@@ -249,7 +249,7 @@ Crypto.org Chain Desktop Wallet has integrated with the Cronos Bridge to allow a
 
 **Step 2**: Select “From” Crypto.org Chain as the origination chain and “To” Cronos Chain as the destination chain
 
-Only the `Crypto.org Chain <=> Cronos` route will be available on Day 1. The `Ethereum <=> Cronos` route will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.org Chain Desktop Wallet, you will automatically have a Crypto.org Chain wallet address and Cronos Chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.
+Only the `Crypto.org Chain <=> Cronos` route will be available on Day 1. The `Ethereum <=> Cronos` route will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.com DeFi Desktop Wallet, you will automatically have a Crypto.org Chain wallet address and Cronos Chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.
 
 **Step 3**: Enter the amount of CRO you want to transfer and click “Transfer Asset”
 

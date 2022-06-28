@@ -73,11 +73,14 @@
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cryptocomofficial/">
             <img :src="$withBase('/social/instagram.svg')" alt="instagram" />
           </a>
+          -->
+
           <a target="_blank" rel="noopener noreferrer"
-            href="https://www.youtube.com/channel/UCOMprzxakZOqmY23LYIawmg"
+            href="https://www.youtube.com/channel/UC0VNDQLc_YHDACURNuQCZfw"
           >
             <img :src="$withBase('/social/youtube.svg')" alt="youtube" />
           </a>
+          <!--
           <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Crypto_com/">
             <img :src="$withBase('/social/reddit.svg')" alt="reddit" />
           </a> -->
