@@ -388,7 +388,7 @@ Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/netw
 
 
 ### Step 4-1 Quicksync Download 
-To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from https://quicksync.io/networks/crypto.html. 
+To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/crypto.html). 
 
 
 #### There are three versions for Cronos Network:
