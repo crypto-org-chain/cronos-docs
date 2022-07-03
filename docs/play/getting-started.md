@@ -395,7 +395,7 @@ try {
 }
 ```
 
-## Example on inntegration
+## Example integration
 
 ### Overview
 
