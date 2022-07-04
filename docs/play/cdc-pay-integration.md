@@ -153,7 +153,7 @@ This section illustrates how a new webview game object is created to display the
 7. Complete a test order and retrieve the payload via webhook as explained in the next section.
     <img src="./assets/web-view/web-view-integration-step-8.png" />
 ::: tip
-Client Logic can be invoked in the game directly. Therefore, the onApprove function should only handle screen changes. It should be accompanied by server side logic like [Webhooks](https://pay-docs.crypto.com/?shell#api-reference-webhooks) to complete your orders.
+Client Logic can be invoked in the game directly. Therefore, the approve function should only handle screen changes. It should be accompanied by server side logic like [Webhooks](https://pay-docs.crypto.com/?shell#api-reference-webhooks) to complete your orders.
 :::
 
 ## Webhooks
