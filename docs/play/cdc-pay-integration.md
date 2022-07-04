@@ -191,4 +191,4 @@ To simulate a purchase and retrieve the payload from the CDC Pay events, you can
     <img src="./assets/webhook/webhook-step-2.png" />
 
 ## CDC Pay documentation
-You can read more about the CDC PAy integration [here](https://pay-docs.crypto.com/?shell#overview-home).
+You can read more about the CDC Pay integration [here](https://pay-docs.crypto.com/?shell#overview-home).
