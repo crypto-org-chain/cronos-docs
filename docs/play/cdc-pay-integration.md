@@ -179,7 +179,7 @@ To simulate a purchase and retrieve the payload from the CDC Pay events, you can
     node server.js
     ```
     ::: tip
-    Please ensure to repalce the `SIGNATURE_SECRET` from you merchants dasboard after adding the webhook endpoint.
+    Please ensure to repalce the `SIGNATURE_SECRET` from you merchants dashboard after adding the webhook endpoint.
     :::
 4. Open a new terminal and run the following command:
     ```sh
