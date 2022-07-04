@@ -51,7 +51,7 @@ To use the CDC Pay module in Unity we can simple use the [UnityWebRequest](https
             form.AddField("cancel_url", "http://YOUR_WEBSITE.com/orders/123/fail");
 
             using (UnityWebRequest www = UnityWebRequest.Post("https://pay.crypto.com/api/payments", form))
-            www.SetRequestHeader("Authorization", "Bearer SECURITY_KEY");
+            www.SetRequestHeader("Authorization", "Bearer YOUR_PUBLISHABLE_KEY");
             {
                 yield return www.SendWebRequest();
 
@@ -116,7 +116,7 @@ This section illustrates how a new webview game object is created to display the
 
             using (UnityWebRequest www = UnityWebRequest.Post("https://pay.crypto.com/api/payments", form))
             {
-                www.SetRequestHeader("Authorization", "Bearer pk_test_Lp6yX1M1fyx4zmyAyzLNwH1H");
+                www.SetRequestHeader("Authorization", "Bearer YOUR_PUBLISHABLE_KEY");
                 yield return www.SendWebRequest();
                 Response data = JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(www.downloadHandler.data));
                 
