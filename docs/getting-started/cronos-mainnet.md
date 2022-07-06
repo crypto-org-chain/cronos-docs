@@ -384,11 +384,11 @@ It should begin fetching blocks from the other peers.
 
 Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “Quicksync” service to make the process more efficient for our users. 
 
-Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/networks/crypto.html) and download the snapshots for Cronos Chain and Crypto.org Chain with different pruning settings (*currently only leveldb downloads are available*). You may refer to the following guide to implement Quicksync.
+Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings (*currently only leveldb downloads are available*). You may refer to the following guide to implement Quicksync.
 
 
 ### Step 4-1 Quicksync Download 
-To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/crypto.html). 
+To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html). 
 
 
 #### There are three versions for Cronos Network:
