@@ -150,7 +150,7 @@ module.exports = {
         "cronos-mainnet",
         "metamask",
         "cronos-testnet",
-        "cronos-gbtesnet",        
+        "cronos-gbtestnet",        
         "local-devnet",
         "security-checklist.md",
         "defi-practice",
