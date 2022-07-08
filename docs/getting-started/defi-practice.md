@@ -3,24 +3,69 @@
 
 Decentralized Finance (DeFi) is revolutionizing the finance industry and bringing boundless opportunities to the finance world. However, at the same time it has witnessed millions of funds being hacked. We believe it is critical for us to play a part to minimize such incidents as we place security as a top priority. With that, we have compiled a list of best practices to develop secure smart contracts for the Cronos ecosystem. This is by no means an exhaustive list but we believe it is a good foundation and minimum security baseline for any smart contract project.
 
-## Secure Coding Practices:
+## Secure Coding Practices
 
+### Design
+#### Documentation
+
+- The document about your contract should be recorded clearly, including the smart contract's purpose and what it can do. The document should be updated when you implement and update the contracts:
+Solidity contracts can use a particular form of comments to provide rich documentation for functions, return variables and more. This particular form is named the Ethereum Natural Language Specification Format [NatSpec](https://docs.soliditylang.org/en/develop/natspec-format.html). You may refer to the Natspec format for more details. 
+Schema and architectural diagrams, including the contract interactions and the state machine of the system. You may refer to [Slither printers](https://github.com/crytic/slither/wiki/Printer-documentation) which can help you to generate your schemas.
+
+#### Upgradeability
+- For contract upgradeability, it is recommended to consider contract migration first, which will spare you the risks of an upgradeability mechanism but allows you to have the new functions. 
+- You may refer to this [contract migration guide](https://blog.trailofbits.com/2018/10/29/how-contract-migration-works/) for contract migration and the [OpenZeppelin smart contracts](https://docs.openzeppelin.com/learn/upgrading-smart-contracts) upgrade guide for the contract upgrade. 
+Also, remember to document the migration/upgrade procedure before the deployment. 
+
+#### On-chain vs Off-chain computation
+- Keep as much code as you can off-chain and keep the on-chain layer small. Pre-process data with code off-chain in such a way that verification on-chain is simple.
+
+### Development Implementation
+#### Function Composition
+- Use simple solutions for your functions so that you and your team can understand when they review back. Also, the architecture of your codebase should make your code easy to check. 
+  - You may write small functions with a clear purpose. This helps facilitate a more straightforward review and testing.
+  - You can also split the logic of your system either through multiple contracts or by grouping similar functions.
+  
+#### Inheritance
+- Keep the inheritance manageable. Even though inheritance should be used to divide the logic, your project should aim to minimize the depth and width of the inheritance tree. You may check out [Slither’s inheritance printer](https://github.com/crytic/slither/wiki/Printer-documentation#inheritance-graph) to check the contracts’ hierarchy to help you review the size of the hierarchy.
+
+#### Solidity
+- For Solidity, use a stable release to compile and the latest release to check for warnings. Make sure your code has no reported issues with the latest compiler version. Also, stay cautious when using inline assembly, as it requires strong EVM expertise.
+
+#### Events & Logging
+- Log all major operations. Events will help to debug the contract during the development and monitor it after deployment.
+
+#### Dependencies
+- For dependencies, you would want to use well-tested libraries to reduce the chance of buggy code. You may consider using a dependency manager. If you rely on an external source, you should keep it up-to-date with the original source.
+
+#### Common Security Issues
+Be aware of the most common security issues and keep an eye on the warnings and updates from the [Solidity documentation](https://docs.soliditylang.org/en/v0.8.15/). 
+
+### Testing 
 - Static analysis tools are an important toolkit for smart contract auditors. These tools are automated, and hence saves time and improves quality as it helps to discover potential common vulnerabilities in your code. Below are some examples of some tools widely used:
   - [Slither](https://github.com/crytic/slither) runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses. 
   - [Mythril](https://github.com/ConsenSys/mythril) is a security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum. It uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities. 
   - [Echidna](https://github.com/crytic/echidna) is a smart contract fuzzing tool. Fuzzing is an automated testing technique that randomly feeds invalid and unexpected inputs and data into smart contracts in order to find coding errors and security vulnerabilities. Echidna uses grammar based fuzzing based on an EVM ABI to falsify user-defined predicates or Solidity assertions. 
+
 - Testing is important, but more importantly, tests should be automated and have consistent run results. Tests find bugs and vulnerabilities easier, quicker and ensure it meets the functional requirements the smart contracts promised to deliver i.e. verification.
   - Ensure there is sufficient coverage of smart contracts, specifically on those with complex business logics.
   - Ensure deployment on mainnet is after the test suite passes.
   - Ensure testing is part of continuous integration (CI). Ideally, anyone can see the test result/execution from a repository like github.
   - Ensure anyone can checkout the repository and run the test without any additional setup.
+  - Ensure writing through unit tests. An extensive test suite is crucial to build high-quality software.
   - Need to know [more about testing](https://guidelines.secureth.org/development/testing)
-- Deployment
+
+
+### Deployment
   - Smart contract code must be viewable from Cronos explorer.
   - Ideally, each release of smart contracts should be trackable from repositories like github, e.g. using tagging features of github.
-- Study and review against smart contracts development best practices
-  - [Consensys smart contracts best practices](https://consensys.github.io/smart-contract-best-practices/recommendations)
+  - Study and review against smart contracts development best practices.
+  - Monitor your contracts. Watch the logs, and be ready to react in case of contract or wallet compromise.
+  - Have a contingency plan for incidents: an attacker may take control of the contract owner's keys even if your contracts are free of bugs.
+  - [Consensys smart contracts best practices](https://consensys.github.io/smart-contract-best-practices/)
   - [List of known attack vectors](https://blog.sigmaprime.io/solidity-security.html)
+
+*The above section is based on the [Building Secure Smart Contracts guide](https://github.com/crytic/building-secure-contracts), credit to the Trail of Bits team.*
 
 ## Security Audit
 
@@ -52,7 +97,7 @@ Decentralized Finance (DeFi) is revolutionizing the finance industry and bringin
 - You could also use https://securitytxt.org/ to generate a basic security policy.
 - An [example](https://github.com/yearn/yearn-security/blob/master/SECURITY.md) of a good DeFi project security policy: 
 
-## Latest hacks
+## Latest Hacks
 - Keep abreast with all hacks in smart contracts across EVM compatible blockchains. Some sources of news of hacks as follow:
     - [Rekt News](https://rekt.news/)
     - [Slowmist hack reports](https://hacked.slowmist.io) 
