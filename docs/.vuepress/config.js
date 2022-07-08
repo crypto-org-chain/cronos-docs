@@ -31,7 +31,7 @@ module.exports = {
           {
           text: "Cronos Gravity bridge Testnet",
           link: "/getting-started/cronos-gbtestnet"
-          },          
+          },
           {
             text: "Local network deployment",
             link: "/getting-started/local-devnet"
@@ -90,7 +90,11 @@ module.exports = {
           {
             text: "From other chains (Crypto.com DeFi Desktop Wallet)",
             link: "/bridge/other_chain#via-crypto-com-defi-desktop-wallet"
-          }                   
+          },
+          {
+            text: "Gravity Bridge (Cronos Bridge WebApp)",
+            link: "/bridge/gb-testnet"
+          }                     
         ]
       },   
       {
@@ -170,7 +174,8 @@ module.exports = {
       ],
       "/bridge/": [
         "app_n_ex",
-        "other_chain"
+        "other_chain",
+        "gb-testnet"
       ],
       "/play/": [
         "introduction",
