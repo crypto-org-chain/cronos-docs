@@ -154,7 +154,7 @@ module.exports = {
         "cronos-mainnet",
         "metamask",
         "cronos-testnet",
-        "cronos-gbtesnet",        
+        "cronos-gbtestnet",        
         "local-devnet",
         "cronos-node-best-practises",
         "security-checklist.md",
