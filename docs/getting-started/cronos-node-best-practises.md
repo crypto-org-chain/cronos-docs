@@ -1,6 +1,6 @@
 # Best Practices for node hosts in Cronos
 
-In order to make it more convenient for Dapps and node hosts to setup a node, we put together a list of useful settings and configurations. Feel free to refer to this guide, and adapt settings to suit your use-case. 
+In order to make it more convenient for Dapps and node hosts to setup a node, we put together a list of useful settings and configurations. Feel free to refer to this guide, and adapt settings to suit your use-case.
 
 ## config.toml
 
@@ -10,7 +10,7 @@ In order to make it more convenient for Dapps and node hosts to setup a node, we
 
 ### db_backend
 - `goleveldb` (default) db: for low / medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
-- `rocksdb` suited for a lot of use-cases, especially for high query load ~ few M / day. Has a better balance between rpc queries and p2p at high traffic.
+- `rocksdb` suited for a lot of use-cases, especially for high query load ~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation.
 
 ### max_num_inbound_peers and max_num_outbound_peers
 - `max_num_inbound_peers` For node providers the number of inbound peers can be set to a higher value for example 50.
@@ -21,8 +21,12 @@ In order to make it more convenient for Dapps and node hosts to setup a node, we
 ## app.toml
 
 ### pruning
-- `default` Normal usage can just use default.
+- `default` Normal usage can just set to default. In the Cosmos SDK this is defined as:
+```go
+PruneDefault = NewPruningOptions(362880, 100, 10)
+```
+meaning the app will keep the latest 362880 versions (around 21 days by 5 secs block time), and then only keep 1 version for every 100 blocks past the keepRecent period( the rest will be put into the pruning list), and then execute the pruning every 10 blocks.
 - `everything` if you only need to do transaction broadcasting and only need the last blocks. 
-- `nothing` for DApps that want to be able to query information at a certain known blockheight.
+- `nothing` for DApps that want to be able to query information at a certain known blockheight. Note that this is only needed for `archive` nodes.
 
 
