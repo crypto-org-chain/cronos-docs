@@ -92,7 +92,7 @@ https://goerlifaucet.com/
 
 For more faucets, visit the goerli testnet page: https://github.com/eth-clients/goerli
 
-<img src="./assets/transferassets1.png"  width="300" alt="centered image"/>
+<img src="./assets/transferassets1.png"  alt="centered image"/>
 
 **From Cronos Gravity Bridge testnet to Ethereum (Goerli testnet)**
 Note that there might be additional bridge network fees calculated. When bridging from Cronos to Ethereum, you will have two options for bridging, Cronos Pool and Cronos Warp. 
@@ -102,14 +102,14 @@ Cronos Warp are immediate transfers ranging from ~few mins to 1 hour.
 For Pioneer, you can get some TCRO from the pioneer 11 faucet:
 https://cronos.org/pioneer11-faucet
 
-<img src="./assets/transferassets2.png" width="300"  alt="centered image"/>
+<img src="./assets/transferassets2.png"  alt="centered image"/>
 
 
 #### 4. Confirm the transaction
 Once all transfer settings have been confirmed, click Transfer Assets, a transaction confirmation page will pop up summarizing the transaction. This will send a transaction request to your wallet; please confirm on your wallet screen to ultimately authorize the transfer.
 Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. See [FAQ](https://cronos.org/docs/bridge/other_chain.html#faq) for more information.
 
-<img src="./assets/confirmpioneer.png"  width="300" alt="centered image"/>
+<img src="./assets/confirmpioneer.png"  alt="centered image"/>
 
 <img src="./assets/confirmmetamask.png" width="300"  alt="centered image"/>
 
@@ -126,7 +126,7 @@ Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
 <img src="./assets/bridgingpending.png"   alt="centered image"/>
 
 
-<img src="./assets/bridgingcompleted.png"  width="300" alt="centered image"/>
+<img src="./assets/bridgingcompleted.png"  alt="centered image"/>
 
 
 <img src="./assets/bridginghistory.png"   alt="centered image"/>
