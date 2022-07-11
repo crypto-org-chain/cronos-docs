@@ -6,7 +6,7 @@ In order to make it more convenient for Dapps and node hosts to setup a node, we
 
 ### Log_level
 - `info` Depending on the needs of your application it is ok to stick to `info` (default), but do consider setting up log-rotation for your logs, and archive logs after a certain amount of time or size, e.g. use a cron job with weekly rotation or until your file size hits ~5GB.
-- set tot `debug` only for debugging purpose, turn off after you are finished with debugging.
+- set to `debug` only for debugging purpose, turn off after you are finished with debugging.
 
 ### db_backend
 - `goleveldb` (default) db: for low / medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
