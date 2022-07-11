@@ -122,10 +122,6 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
 
 
-
-<img src="./assets/bridgingpending.png"   alt="centered image"/>
-
-
 <img src="./assets/bridgingcompleted.png"  alt="centered image"/>
 
 
