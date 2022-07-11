@@ -8,8 +8,9 @@
 
 The Gravity Bridge now makes it possible to transfer assets between the Cronos and the Ethereum network. The Gravity Bridge (Beta) for Testnet can be found [here](https://cronos.org/bridge/). Make sure to switch to the Testnet.
 
-The Gravity Bridge is derived from a Cosmos community open-source project, called [PeggyJV gravity bridge](https://github.com/PeggyJV/gravity-bridge). The gravity bridge technology allows the transfer of ERC20 cryptocurrency tokens from and to Ethereum through a mint/lock mechanism. This means that:
+The Gravity Bridge is derived from a Cosmos community open-source project, called [PeggyJV gravity bridge](https://github.com/PeggyJV/gravity-bridge). The gravity bridge technology allows the transfer of ERC20 cryptocurrency tokens from and to Ethereum through a mint/lock mechanism. 
 
+This means that:
 When a user sends assets from Ethereum to Cronos, the corresponding ERC20 token is locked in a smart contract on the Ethereum side, and minted on the Cronos side in the form of a CRC20 token.
 When a user sends assets from Cronos to Ethereum, the corresponding CRC20 token is burned on the Cronos side, and the ERC20 token is released on the Ethereum side.
 
@@ -33,6 +34,7 @@ Risk and disclaimer: Please read the guide carefully and review the project docu
 
 #### Currently supported wallets:
 - Metamask
+- Crypto.com DeFi Wallet
 
 We are constantly working on adding new tokens and chain support. If you have any feedback and issues, please drop us an email at product.bridge@crypto.org.
 
@@ -41,7 +43,7 @@ We are constantly working on adding new tokens and chain support. If you have an
 #### 1. Connect your wallet
 Click the “Connect Wallet’ button to connect your desktop or browser extension wallet. We currently support browser-compatible versions of the Metamask. Click connect wallet and look for a popup from your wallet interface or click into the wallet extension to give consent.
 
-<img src="./assets/webapp_connect_wallet.png"  alt="centered image" />
+<img src="./assets/webapp_connect_wallet_pioneer.png"  alt="centered image" />
 
  **Testnet**
 If you are using Metamask, make sure to enable test networks, on the Metamask wallet 
@@ -72,13 +74,14 @@ Note that your ERC20 compatible addresses on Ethereum and Cronos are the same.
 <img src="./assets/pioneerassets.png"   alt="centered image"/>
 
 
-If you would like to swap any of the other tokens listed, you can head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on Goerli testnet. Refer to the appendix for an example.
+If you would like to swap any of the other tokens listed, you can head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on Goerli testnet. Refer to [here](#swap-tokens-on-uniswap) for an example.
 
 #### 3. Enter the amount
 After selecting the network and token, enter and confirm the amount you would like to transfer.
 The bridge network fees will be calculated accordingly. You always need to pay the gas fee charged by the source network. Before bridging a large amount, we encourage testing a transfer of a minor amount first to ensure all the settings are correct.
 
-If this is the first time you are swapping this token using the Gravity Bridge, you may need to enable the contract such that the Gravity Bridge has access to this token. Accept Permission in your wallet.
+If this is the first time you are swapping this particular token using the Gravity Bridge, you may need to enable the contract such that the Gravity Bridge has access to this token. 
+For example for USDC, click the enable button and accept permission in your wallet. Now you can bridge UDSC. 
 
 
 <img src="./assets/enablecontract.png"   alt="centered image"/>
