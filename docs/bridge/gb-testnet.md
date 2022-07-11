@@ -58,7 +58,7 @@ Add the following network details:
 - New RPC URL: https://evm-p11.cronos.org
 - ChainID: 340
 - Currency symbol: TCRO
-- Block Explorer URL (Optional): https://cronos.crypto.org/explorer/pioneer11
+- Block Explorer URL (Optional): https://cronos.org/explorer/pioneer11
 
 
 <img src="./assets/metamaskpioneer11.png" width="300"  alt="centered image"/>
