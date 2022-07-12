@@ -37,6 +37,10 @@ module.exports = {
             link: "/getting-started/local-devnet"
           },
           {
+            text: "Cronos node setup best practises",
+            link: "/getting-started/cronos-node-best-practises"
+          },          
+          {
             text: "Deploy Smart Contract at Cronos",
             link: "/getting-started/cronos-smart-contract"
           },
@@ -156,6 +160,7 @@ module.exports = {
         "cronos-testnet",
         "cronos-gbtestnet",        
         "local-devnet",
+        "cronos-node-best-practises",
         "security-checklist.md",
         "defi-practice",
         "cronos-smart-contract"
