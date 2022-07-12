@@ -44,7 +44,7 @@ We are constantly working on adding new tokens and chain support. If you have an
 ### How to use the Gravity Bridge [Web Dapp]
 
 #### 1. Connect your wallet
-Click the “Connect Wallet" button to connect your desktop or browser extension wallet. We currently support browser-compatible versions of the Metamask. Click connect wallet and look for a popup from your wallet interface or click into the wallet extension to give consent.
+Click the “Connect Wallet" button on the top right to connect your browser extension wallet. Choose one of the supported wallets and look for a popup from your wallet interface or click into the wallet extension to give consent. Note that it might already ask permission to switch network, press "Accept" in that case.
 
 <img src="./assets/webapp_connect_wallet_pioneer.png"  alt="centered image" />
 
