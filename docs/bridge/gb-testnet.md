@@ -1,6 +1,6 @@
-# Via the Gravity Bridge Web App 
+# Via the Gravity Bridge Web App - Testnet only
 
-## Transfer assets between Ethereum and Cronos using the Gravity Bridge Web App
+## Transfer assets between Ethereum testnet and Cronos testnet using the Gravity Bridge Web App
 
 ### Introduction
 

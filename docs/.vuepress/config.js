@@ -96,7 +96,7 @@ module.exports = {
             link: "/bridge/other_chain#via-crypto-com-defi-desktop-wallet"
           },
           {
-            text: "Gravity Bridge (Cronos Bridge WebApp)",
+            text: "Gravity Bridge (Cronos Bridge WebApp - Testnet only)",
             link: "/bridge/gb-testnet"
           }                     
         ]
