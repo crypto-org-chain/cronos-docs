@@ -311,29 +311,12 @@ Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/netw
 After executing the command `./cronosd` start at Step 3-2 Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
 
 
+Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings (*currently only leveldb downloads are available*). You may refer to the following guide to implement Quicksync.
 
 {% hint style="info" %}
 
-
-Example: `chain-maind start` with 0 height originally
-
-```bash
-  $ ./cronosd start
-  7:13PM INF Unlocking keyring
-  7:13PM INF starting ABCI with Tendermint
-  7:13PM INF Starting multiAppConn service impl=multiAppConn module=proxy server=node
-  7:13PM INF Starting localClient service connection=query impl=localClient module=abci-client server=node
-  ...
-  7:13PM INF ABCI Handshake App Info hash= height=0 module=consensus protocol-version=0 server=node software-version=0.6.5
-  7:13PM INF ABCI Replay Blocks appHeight=0 module=consensus server=node stateHeight=0 storeHeight=0
-```
-{% endhint %}
-
-To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from https://quicksync.io/networks/crypto.html.
-
-#### There are three versions for Cronos Network:
-
-**Cronosmainnet\_25-1-pruned**
+### Step 4-1 Quicksync Download 
+To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html). 
 
 * Pruned snapshot is the quickest way to get a node running. If you just would like to give a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when your startup your node. But you will not be able to query anything earlier than that.
 
@@ -381,7 +364,7 @@ The original data folder under `.cronos` is overwritten with this step (it takes
 
 ### Step 4-3 Sync with Quicksync
 
-Direct back to the parent directory of current directory(`/Users/<username>/` in this case) by `cd..`. Then run Cronos again with `./cronosd start` and now it suppose to start the node and sync the blockchain data from the height of `1813707`.
+:::details Example: Restart `cronosd start` with QuickSync
 
 {% hint style="info" %}
 Example: Restart `chain-maind start` with QuickSync

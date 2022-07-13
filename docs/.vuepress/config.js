@@ -31,11 +31,15 @@ module.exports = {
           {
           text: "Cronos Gravity bridge Testnet",
           link: "/getting-started/cronos-gbtestnet"
-          },          
+          },
           {
             text: "Local network deployment",
             link: "/getting-started/local-devnet"
           },
+          {
+            text: "Cronos node setup best practises",
+            link: "/getting-started/cronos-node-best-practises"
+          },          
           {
             text: "Deploy Smart Contract at Cronos",
             link: "/getting-started/cronos-smart-contract"
@@ -90,7 +94,11 @@ module.exports = {
           {
             text: "From other chains (Crypto.com DeFi Desktop Wallet)",
             link: "/bridge/other_chain#via-crypto-com-defi-desktop-wallet"
-          }                   
+          },
+          {
+            text: "Gravity Bridge (Cronos Bridge WebApp - Testnet only)",
+            link: "/bridge/gb-testnet"
+          }                     
         ]
       },   
       {
@@ -137,7 +145,11 @@ module.exports = {
           {
             text: "Technical Glossary",
             link: "/resources/technical-glossary"
-          }
+          },
+          {
+            text: "Useful Projects on Cronos",
+            link: "/resources/useful-projects"
+          },
         ]
       }
     ],
@@ -146,8 +158,9 @@ module.exports = {
         "cronos-mainnet",
         "metamask",
         "cronos-testnet",
-        "cronos-gbtesnet",        
+        "cronos-gbtestnet",        
         "local-devnet",
+        "cronos-node-best-practises",
         "security-checklist.md",
         "defi-practice",
         "cronos-smart-contract"
@@ -166,7 +179,8 @@ module.exports = {
       ],
       "/bridge/": [
         "app_n_ex",
-        "other_chain"
+        "other_chain",
+        "gb-testnet"
       ],
       "/play/": [
         "introduction",
@@ -180,7 +194,8 @@ module.exports = {
         "desktop-wallet-integration",
         "node-and-rpc-setup-notes",
         "cosmos-grpc-docs",
-        "technical-glossary"
+        "technical-glossary",
+        "useful-projects",
       ],
       "/api/": "auto"
     },
