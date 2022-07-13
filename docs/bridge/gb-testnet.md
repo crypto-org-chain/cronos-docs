@@ -72,7 +72,7 @@ Note that your ERC20 compatible addresses on Ethereum and Cronos are the same.
 <img src="./assets/pioneerassets.png"   alt="centered image"/>
 
 
-If you would like to swap any of the other tokens listed, you can head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on Goerli testnet. Refer to [here](#swap-tokens-on-uniswap) for an example.
+If you would like to swap any of the other tokens listed, you can head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on Goerli testnet. Refer to [Swap tokens on Uniswap](#swap-tokens-on-uniswap) for an example.
 
 #### 3. Enter the amount
 After selecting the network and token, enter and confirm the amount you would like to transfer.
@@ -89,9 +89,9 @@ If this is the first time you are swapping this particular token using the Gravi
 Note that there might be additional bridge network fees calculated. During the promotional launch period, the network fee incurred by the bridge from Ethereum to Cronos will be waived. 
 
 For Goerli, you can get some Goerli Eth from one of the Goerli faucets, for example:
-[https://goerlifaucet.com/](https://goerlifaucet.com/)
-
-For more faucets, visit the goerli testnet page [https://github.com/eth-clients/goerli](https://github.com/eth-clients/goerli). 
+- [https://faucets.chain.link/goerli](https://faucets.chain.link/goerli)
+- [https://goerlifaucet.com/](https://goerlifaucet.com/)
+- check the goerli testnet page for other faucets [https://github.com/eth-clients/goerli](https://github.com/eth-clients/goerli). 
 
 <img src="./assets/transferassets1.png"  alt="centered image"/>
 
