@@ -31,7 +31,7 @@ meta:
       and EVM-compatible chains.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/chain-details/introduction.html
+canonicalUrl: https://docs.cronos.org/chain-details/introduction.html
 ---
 
 # Introduction

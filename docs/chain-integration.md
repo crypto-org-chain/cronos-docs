@@ -6,19 +6,19 @@
 
 * [Cronos website](https://cronos.org/)
 * [GitHub Repository](https://github.com/crypto-org-chain/cronos)
-* [Official Documentation](https://cronos.org/docs/)
+* [Official Documentation](https://docs.cronos.org/)
 * [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)
 
 ### Integration guide for **Cronos Mainnet Beta**
 
 #### Setup Guide
 
-* [Joining the Cronos Mainnet](https://cronos.org/docs/getting-started/cronos-mainnet.html)
-* [Deploying Smart Contract](https://cronos.org/docs/getting-started/cronos-smart-contract.html)
+* [Joining the Cronos Mainnet](https://docs.cronos.org/getting-started/cronos-mainnet.html)
+* [Deploying Smart Contract](https://docs.cronos.org/getting-started/cronos-smart-contract.html)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
-* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)
-* [Using MetaMask](https://cronos.org/docs/getting-started/metamask.html)
+* [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger?network=mainnet)
+* [Using MetaMask](https://docs.cronos.org/getting-started/metamask.html)
 
 #### RPC URLs for Cronos mainnet Beta
 
@@ -94,12 +94,12 @@ Below is the preview of the [complete list of the official token contract addres
 
 #### Setup Guide
 
-* [Joining the Cronos Testnet](https://cronos.org/docs/getting-started/cronos-testnet.html)
+* [Joining the Cronos Testnet](https://docs.cronos.org/getting-started/cronos-testnet.html)
 * [Testnet Faucet](https://cronos.org/faucet/)
   * Note that the faucet only takes eth-type `0x...` addr
 * [Seeds for fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-1/genesis.json)
-* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger)
+* [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger)
 * Using Metamask for testnet
   * Network Name: **Cronos Testnet**
   * New RPC URL: **https://evm-t3.cronos.org/**
@@ -125,8 +125,8 @@ Below is the preview of the [complete list of the official token contract addres
 
 Below is a list of Ethereum type JSON-RPC Methods where users can curl via local node. While you can also surf to our swagger playground for a better understanding.
 
-* [Mainnet swagger playground](https://cronos.org/docs/swagger?network=mainnet)
-* [Testnet swagger playground](https://cronos.org/docs/swagger)
+* [Mainnet swagger playground](https://docs.cronos.org/swagger?network=mainnet)
+* [Testnet swagger playground](https://docs.cronos.org/swagger)
 
 #### JSON-RPC Methods
 

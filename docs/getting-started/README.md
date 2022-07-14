@@ -22,7 +22,7 @@ meta:
     content: Learn how to setup nodes, different SDK modules and our all-in-one command-line interface cronosd in this technical documentation.
   - name: "twitter:image"
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/getting-started/
+canonicalUrl: https://docs.cronos.org/getting-started/
 ---
 
 # Getting Started

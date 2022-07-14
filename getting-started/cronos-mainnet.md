@@ -28,7 +28,7 @@ meta:
       Beta cronosmainnet_25-1 in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/getting-started/cronos-mainnet.html
+canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 ---
 
 # Cronos Mainnet: Running Nodes

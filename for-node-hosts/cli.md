@@ -28,7 +28,7 @@ meta:
       management, funds transfer and staking operations.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/wallets/cli.html
+canonicalUrl: https://docs.cronos.org/wallets/cli.html
 ---
 
 # cronosd

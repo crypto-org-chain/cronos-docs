@@ -28,7 +28,7 @@ meta:
       interact with the Cronos testnet in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/getting-started/metamask.html
+canonicalUrl: https://docs.cronos.org/getting-started/metamask.html
 ---
 
 # Using MetaMask on Cronos mainnet Beta

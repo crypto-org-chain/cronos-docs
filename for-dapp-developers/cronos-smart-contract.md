@@ -28,7 +28,7 @@ meta:
       Truffle and Hardhat are included in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/getting-started/cronos-smart-contract.html
+canonicalUrl: https://docs.cronos.org/getting-started/cronos-smart-contract.html
 ---
 
 # Cronos: Deploy Smart Contract

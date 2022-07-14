@@ -141,7 +141,7 @@ contract DemoOracleUSD {
 3. Compile the contract with compiler version 0.8.13;
 4. Switch to the **DEPLOY & RUN TRANSACTIONS** tab of [Remix](https://remix.ethereum.org/);
 5. Select `Injected Web3` in the **ENVIRONMENT** dropdown in the top left to connect with Metamask;
-    - Make sure that Metamask is connected to the Cronos testnet, you can refer to our [official documentation](https://cronos.org/docs/resources/chain-integration.html#integration-guide-for-cronos-testnet);
+    - Make sure that Metamask is connected to the Cronos testnet, you can refer to our [official documentation](https://docs.cronos.org/resources/chain-integration.html#integration-guide-for-cronos-testnet);
 7. Deploy the contract with the below Cronos testnet Band reference data proxy address;
     - `0xD0b2234eB9431e850a814bCdcBCB18C1093F986B`;
 8. Hooray, you can now fetch the latest supported token prices from Band Protocol!

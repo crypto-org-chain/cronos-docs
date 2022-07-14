@@ -44,7 +44,7 @@ Network Name: **Cronos Testnet**
     * [Testnet Faucet](https://cronos.crypto.org/faucet/)
 
 
-* For Crypto.com DeFi Wallet integration, please refer to our [documentation](https://cronos.org/docs/getting-started/gamefi-sdk.md#enable-deficonnect-and-walletconnect).
+* For Crypto.com DeFi Wallet integration, please refer to our [documentation](https://docs.cronos.org/getting-started/gamefi-sdk.md#enable-deficonnect-and-walletconnect).
 
 ## Get Started
 

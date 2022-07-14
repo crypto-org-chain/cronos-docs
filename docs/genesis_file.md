@@ -22,7 +22,7 @@ meta:
     content: The genesis.json file defines the initial state of the Crypto.org Chain. Find out more about genesis file in this documentation.
   - name: "twitter:image"
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/chain-details/genesis_file.html
+canonicalUrl: https://docs.cronos.org/chain-details/genesis_file.html
 ---
 
 # Genesis

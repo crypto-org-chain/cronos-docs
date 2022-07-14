@@ -31,7 +31,7 @@ meta:
     content: View our latest chain documentation on Cronos. Sign up to our newsletter to get the latest updates and read the documentation to connect to our Testnet. 
   - name: "twitter:image"
     content: https://cronos.org/og-image.png
-canonicalUrl: https://cronos.org/docs/
+canonicalUrl: https://docs.cronos.org/
 ---
 
 The documentation in this repository site is meant to provide specifications and implementation details that will be useful to third party developers or contributors to the main [repository](https://github.com/crypto-com/chain-docs-nextgen).
