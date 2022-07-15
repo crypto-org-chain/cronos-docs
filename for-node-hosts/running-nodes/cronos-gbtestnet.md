@@ -1,10 +1,12 @@
 # Cronos Gravity Bridge Testnet
 
-This is a detailed documentation for setting up a full node on Cronos gravity bridge testnet - Pionner 11 `pioneereleventestnet_340-1`.
+This is a detailed documentation for setting up a full node on Cronos gravity bridge testnet - Pioneer 11 `pioneereleventestnet_340-1`.
 
-::: tip Remarks:
+{% hint style="info" %}
+Remarks:
 
-Cronos gravity bridge testnet - Pionner 11 (`pioneereleventestnet_340-1`) is **distinct from** the official "Cronos testnet" (`cronostestnet_338-3`) which is used by app developers to test their Dapps. The Pioneer 11 testnet is a dedicated testnet created specifically for the purpose of testing the Cronos Gravity Bridge. :::
+Cronos gravity bridge testnet - Pioneer 11 (`pioneereleventestnet_340-1`) is **distinct from** the official "Cronos testnet" (`cronostestnet_338-3`) which is used by app developers to test their Dapps. The Pioneer 11 testnet is a dedicated testnet created specifically for the purpose of testing the Cronos Gravity Bridge.&#x20;
+{% endhint %}
 
 ## Pre-requisites
 
@@ -25,7 +27,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 
 **Mac** Intel x86 as `Darwin_x86_64`, **Mac** M1 as `arm64` and **Windows** as `Windows_x86_64` are also available [here](https://github.com/crypto-org-chain/cronos/releases/tag/v0.8.0-gravity-alpha0).
 
-*   To install released **Cronos Cronos Pionner 11 testnet binaries** from github:
+*   To install released **Cronos Cronos Pioneer 11 testnet binaries** from github:
 
     ```bash
     $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.8.0-gravity-alpha0/cronos_0.8.0-gravity-alpha0-testnet_Linux_x86_64.tar.gz
@@ -108,9 +110,9 @@ Before kick-starting your node, we will have to configure your node so that it c
     $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
     ```
 
-::: tip NOTE
-
-* For Mac environment, if `jq` is missing, you may install it by: `brew install jq` :::
+{% hint style="info" %}
+For Mac environment, if `jq` is missing, you may install it by: `brew install jq`
+{% endhint %}
 
 ## Step 3. Run everything
 
@@ -122,7 +124,8 @@ Once the `cronosd` has been configured, we are ready to start the node and sync 
   $ ./cronosd start --unsafe-experimental
 ```
 
-::: tip Remarks: If you see errors saying `too many files opened...`, then you need to set a higher number for maximum open file descriptors in your OS.
+{% hint style="info" %}
+Remarks: If you see errors saying `too many files opened...`, then you need to set a higher number for maximum open file descriptors in your OS.
 
 If you are on OSX or Linux, then the following could be useful:
 
@@ -134,8 +137,7 @@ $ ulimit -Sn [NEW_MAX_FILE_DESCRIPTOR]
 # Example
 $ ulimit -Sn 4096
 ```
-
-:::
+{% endhint %}
 
 * _(Optional for Linux)_ Start cronosd with systemd service, e.g.:
 
@@ -147,7 +149,10 @@ $ ulimit -Sn 4096
   $ journalctl -u cronosd -f
 ```
 
-:::details Example: /etc/systemd/system/cronosd.service created by script
+{% hint style="info" %}
+details
+
+Example: /etc/systemd/system/cronosd.service created by script
 
 ```bash
 # /etc/systemd/system/cronosd.service
@@ -168,8 +173,7 @@ LimitNOFILE=50000
 [Install]
 WantedBy=multi-user.target
 ```
-
-:::
+{% endhint %}
 
 It should begin fetching blocks from the other peers. Please wait until it is fully synced before moving onto the next step.
 

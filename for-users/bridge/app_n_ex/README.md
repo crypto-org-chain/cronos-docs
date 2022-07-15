@@ -1,4 +1,4 @@
-# Via Crypto.com App and Exchange
+# From App and Exchange
 
 ## Via Crypto.com App and Exchange
 
@@ -12,7 +12,9 @@ Only selected tokens mentioned above will be available for withdrawal into Crono
 
 #### Step-by-step Walkthrough
 
-**Step 1**: Select the token that you want to withdraw from your Crypto Wallet Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet. ![centered image](../assets/cdcapp1.png)
+**Step 1**: Select the token that you want to withdraw from your Crypto Wallet Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet.
+
+&#x20;![centered image](../assets/cdcapp1.png)
 
 **Step 2**: Click on “Transfer” and “Withdraw”
 
@@ -40,14 +42,22 @@ Supported assets on Day 1: CRO, USDT, USDC, DAI, ETH, WBTC
 
 #### Step-by-step Walkthrough
 
-**Step 1**: Select the asset that you want to bridge over in your spot wallet and click withdraw ![centered image](../assets/cdcex1.png)
+**Step 1**: Select the asset that you want to bridge over in your spot wallet and click withdraw
 
-**Step 2**: Select “External Wallet Address” ![centered image](../assets/cdcex2.png)
+&#x20;![centered image](../assets/cdcex1.png)
 
-**Step 3**: Select “Add Withdrawal Address” ![centered image](<../assets/cdcex3 (1).png>)
+**Step 2**: Select “External Wallet Address”
+
+&#x20;![centered image](../assets/cdcex2.png)
+
+**Step 3**: Select “Add Withdrawal Address”
+
+&#x20;![centered image](<../assets/cdcex3 (1).png>)
 
 **Step 4**: Select the Cronos Network, add your Cronos wallet address and save it ![centered image](../assets/cdcex4.png)
 
-**Step 5**: Select your Cronos wallet address that you have whitelisted and input the withdrawal amount ![centered image](<../assets/cdcex3 (1) (1) (1).png>)
+**Step 5**: Select your Cronos wallet address that you have whitelisted and input the withdrawal amount
+
+&#x20;![centered image](<../assets/cdcex3 (1) (1) (1).png>)
 
 **Step 6**: Review your withdrawal information and enter your 2FA code to Confirm Withdrawal Once you click “Review Withdrawal”, you will be taken to a new page for you to confirm your withdrawal information and type in your 2FA code to finalise your withdrawal. Your assets will appear on your Cronos wallet within a few minutes of withdrawal confirmation.

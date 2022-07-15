@@ -133,10 +133,12 @@ Before kick-starting your node, we will have to configure your node so that it c
       $ ./cronosd init pegasus-node --chain-id cronostestnet_338-3
     ```
 
-    ::: tip NOTE
+{% hint style="info" %}
+NOTE
 
-    * Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
-    * You can also put the `cronosd` to your binary path and run it by `cronosd` :::
+* Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
+* You can also put the `cronosd` to your binary path and run it by `cronosd`
+{% endhint %}
 
 #### Step 2-2 Configure cronosd
 

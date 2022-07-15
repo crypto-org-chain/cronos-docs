@@ -173,7 +173,11 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 | [`eth_subscribe`](./#eth-subscribe)                                                 | Websocket | ✔           |        |
 | [`eth_unsubscribe`](./#eth-unsubscribe)                                             | Websocket | ✔           |        |
 
-:::tip Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pending"`. ::: :::tip While the examples below make use of local node http://localhost:8545, users may also use our public full node: https://evm-t3.cronos.org:8545/ :::
+{% hint style="info" %}
+Tip\
+\
+Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pending"`. ::: :::tip While the examples below make use of local node http://localhost:8545, users may also use our public full node: https://evm-t3.cronos.org:8545/&#x20;
+{% endhint %}
 
 ### JSON-RPC namespaces
 

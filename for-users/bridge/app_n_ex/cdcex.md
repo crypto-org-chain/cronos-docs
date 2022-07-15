@@ -8,7 +8,9 @@ Supported assets on Day 1: CRO, USDT, USDC, DAI, ETH, WBTC
 
 ### Step-by-step Walkthrough
 
-**Step 1**: Select the asset that you want to bridge over in your spot wallet and click withdraw ![centered image](../assets/cdcex1.png)
+**Step 1**: Select the asset that you want to bridge over in your spot wallet and click withdraw
+
+&#x20;![centered image](../assets/cdcex1.png)
 
 **Step 2**: Select “External Wallet Address”
 

@@ -1,4 +1,4 @@
-# Node Setup and RPC note
+# Node Setup and RPC server
 
 ## Node minimum setup
 
@@ -53,7 +53,9 @@ where the blockchain data, keys will be stored at the folder `~/.cronos`
 
 ### Tendermint (Local access only)
 
-You can access Tendermint Swagger UI here: https://docs.tendermint.com/master/rpc/#/
+
+
+[https://docs.tendermint.com/master/rpc/#/](https://docs.tendermint.com/master/rpc/#/)
 
 Switch the servers to localhost in the dropdown and you can interact with the Swagger UI.
 

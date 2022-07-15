@@ -41,18 +41,33 @@ Thanks for your interest in Cronos Chain. In this technical documentation, we ha
 
 Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. An open-source and permission-less Layer 1 chain, Cronos aims to massively scale the DeFi, GameFi, and overall Web3 user community by providing builders with the ability to instantly port apps and crypto assets from other chains while benefiting from low transaction fees, high throughput, and fast finality.
 
+
+
+### For Users
+
+*   [Setup your Metamask](for-users/metamask.md):&#x20;
+
+    Setup Metamask and connect to Cronos Mainnet Beta.
+
+### For Node hosts
+
 {% tabs %}
 {% tab title="Cronos Mainnet" %}
-* [Join Cronos Mainnet Beta](getting-started/for-node-hosts/cronos-mainnet.md): Try running Full Node connected Cronos Mainnet Beta.
-* [Setup your Metamask](getting-started/for-users/metamask.md): Setup Metamask and connect to Cronos Mainnet Beta.
+*   [Join Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet.md):&#x20;
+
+    Try running Full Node connected Cronos Mainnet Beta.
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-* [Join Cronos Testnet](getting-started/for-node-hosts/cronos-testnet.md): Try running Full Nodes or Validators connected to our Cronos Testnet.
+*   [Join Cronos Testnet:](for-node-hosts/running-nodes/cronos-testnet.md)&#x20;
+
+    Try running Full Nodes or Validators connected to our Cronos Testnet.
 {% endtab %}
 
 {% tab title="Devnet" %}
-* [Build latest development version](getting-started/for-node-hosts/local-devnet.md): Try running the latest development network (_Devnet_).
+*   [Build latest development version](for-node-hosts/running-nodes/local-devnet.md):&#x20;
+
+    Try running the latest development network (_Devnet_).
 {% endtab %}
 {% endtabs %}
 

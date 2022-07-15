@@ -1,98 +1,102 @@
 # Cronos Play C++ SDK
 
-## Pre-requisites
+## Cronos Play C++ SDK
 
-- python 3.8 or newer
-- [rust](https://www.rust-lang.org/) 1.61 or newer
-- C++ 14 or newer
-- Optional:
-  - GNU make
-  - Visual Studio 2019 or newer for windows
+### Pre-requisites
 
-# Pre-build Download
+* python 3.8 or newer
+* [rust](https://www.rust-lang.org/) 1.61 or newer
+* C++ 14 or newer
+* Optional:
+  * GNU make
+  * Visual Studio 2019 or newer for windows
+
+## Pre-build Download
 
 Please download the archive file based on your OS in the [release page](https://github.com/cronos-labs/play-cpp-sdk/releases), where:
 
-- Visual Studio 2019 MSVC, x86_64, toolset 14.29 or newer: `play_cpp_sdk_Windows_x86_64.zip`;
-- macOS 10.15 or newer: `play_cpp_sdk_Darwin_x86_64.tar.gz`;
-- Ubuntu 20.04 or newer: `play_cpp_sdk_Linux_x86_64.tar.gz`.
+* Visual Studio 2019 MSVC, x86\_64, toolset 14.29 or newer: `play_cpp_sdk_Windows_x86_64.zip`;
+* macOS 10.15 or newer: `play_cpp_sdk_Darwin_x86_64.tar.gz`;
+* Ubuntu 20.04 or newer: `play_cpp_sdk_Linux_x86_64.tar.gz`.
 
-## Setup
+### Setup
 
-### In a demo Visual C++ project
+#### In a demo Visual C++ project
 
-#### Windows
+**Windows**
 
-1. Clone the following repository
-    ```sh
+1.  Clone the following repository
+
+    ```
     git clone https://github.com/cronos-labs/play-cpp-sdk.git
     ```
 2. Unzip the archive file into `demo` folder
-3. Open `demo.sln` which includes two projects: `demo` (dynamic build) and `demostatic` (static
-   build). If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to
-   v143.
+3. Open `demo.sln` which includes two projects: `demo` (dynamic build) and `demostatic` (static build). If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to v143.
 4. Select `Release` profile.
 5. Right click `demo` or `demostatic` project, click `Build` or `Rebuild` to build the project
 
-##### Build Events
+**Build Events**
 
 The following build events are included in the project file:
 
-- Pre-Build event (`demo` and `demostatic`): `call pre_build.bat`
-- Post-Build event (`demo`): `copy $(ProjectDir)lib\play_cpp_sdk.dll $(TargetDir)`
+* Pre-Build event (`demo` and `demostatic`): `call pre_build.bat`
+* Post-Build event (`demo`): `copy $(ProjectDir)lib\play_cpp_sdk.dll $(TargetDir)`
 
-#### Mac
+**Mac**
 
-1. Clone the current repository
-    ```sh
+1.  Clone the current repository
+
+    ```
     git clone https://github.com/cronos-labs/play-cpp-sdk.git
     ```
 2. Unzip the archive file into `demo` folder
-3. Copy the dynamic library to `/usr/local/lib`
-    ```sh
+3.  Copy the dynamic library to `/usr/local/lib`
+
+    ```
     cd demo
     cp lib/libplay_cpp_sdk.dylib /usr/local/lib
     ```
-4. Under `demo` folder and build the `demo` project
-    ```sh
+4.  Under `demo` folder and build the `demo` project
+
+    ```
     make
     ```
 
-#### Linux
+**Linux**
 
-1. Clone the current repository
-    ```sh
+1.  Clone the current repository
+
+    ```
     git clone https://github.com/cronos-labs/play-cpp-sdk.git
     ```
 2. Unzip the archive file into `demo` folder
-3. Under `demo` folder and build the `demo` project
-    ```sh
+3.  Under `demo` folder and build the `demo` project
+
+    ```
     make
     ```
 
-### In any other c++ 14 (or newer) projects
+#### In any other c++ 14 (or newer) projects
 
-1. Unzip the archive file into the root folder of your project, you should see the following
-   folders and files.
+1. Unzip the archive file into the root folder of your project, you should see the following folders and files.
 
-- `include`: c++ source files and header files
-- `lib`: static and dynamic libraries
-- `CHANGELOG.md`
-- `LICENSE`
+* `include`: c++ source files and header files
+* `lib`: static and dynamic libraries
+* `CHANGELOG.md`
+* `LICENSE`
 
-::: tip We suggest:
-- In case of same name collision, we suggest you unzip the archive in a temporary folder and
-review them first.
-- Review the folder or file names under `include` and `lib` folder to see if there are files
-that have same names as in your project, rename those files in your project to avoid
-collision.
-- Finally copy `include` and `lib` folders into your project.
-- We will support CMAKE and provide you a better integration in future release.
-:::
+{% hint style="info" %}
+tip We suggest:
 
-2. Include the following headers and use the namespaces in your source codes
+* In case of same name collision, we suggest you unzip the archive in a temporary folder and review them first.
+* Review the folder or file names under `include` and `lib` folder to see if there are files that have same names as in your project, rename those files in your project to avoid collision.
+* Finally copy `include` and `lib` folders into your project.
+* We will support CMAKE and provide you a better integration in future release.&#x20;
+{% endhint %}
 
-```c++
+1. Include the following headers and use the namespaces in your source codes
+
+```
 #include "include/defi-wallet-core-cpp/src/contract.rs.h" // erc20, erc721, erc1155 supports
 #include "include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
 #include "include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
@@ -105,67 +109,67 @@ using namespace org::defi_wallet_core;
 using namespace com::crypto::game_sdk;
 ```
 
-3. Link `play_cpp_sdk` static library in your build flow (check `demo/Makefile` for more
-   details)
+1. Link `play_cpp_sdk` static library in your build flow (check `demo/Makefile` for more details)
 
 Windows
-```c++
+
+```
 lib\play_cpp_sdk.lib
 ```
+
 Mac or Linux
-```c++
+
+```
 lib/libplay_cpp_sdk.a
 ```
 
-4. Or link `play_cpp_sdk` dynamic library and `cxxbridge1` static library in your build flow
-   (check `demo/Makefile` for more details)
+1. Or link `play_cpp_sdk` dynamic library and `cxxbridge1` static library in your build flow (check `demo/Makefile` for more details)
 
 Windows
+
 ```
 lib\play_cpp_sdk.dll.lib
 lib\libcxxbridge1.a
 ```
 
 Mac or Linux
-```c++
+
+```
 lib/libplay_cpp_sdk.dylib
 lib\libcxxbridge1.a
 ```
-- Linux dynamic build is under testing.
 
-## Build libraries and bindings from scratch
+* Linux dynamic build is under testing.
 
-If the Pre-built release does not support your platform, you can build the binaries and
-bindings on your own.
+### Build libraries and bindings from scratch
 
-### Windows
+If the Pre-built release does not support your platform, you can build the binaries and bindings on your own.
 
-1. Run `windows_build.bat` in x64 Native Tools Command Prompt for VS 2019. It will clone
-   necessary submodules, build `play-cpp-sdk` crate, finally setup and build the demo project.
+#### Windows
+
+1. Run `windows_build.bat` in x64 Native Tools Command Prompt for VS 2019. It will clone necessary submodules, build `play-cpp-sdk` crate, finally setup and build the demo project.
 2. Clean `~/.cargo/git/checkouts` if cxx fails to build, then run `windows_build.bat` again.
-3. Run `windows_install.bat`, libraries and bindings will be copied into a new created folder:
-   `build`
+3. Run `windows_install.bat`, libraries and bindings will be copied into a new created folder: `build`
 
-### Notes about Visual Studio 2022
+#### Notes about Visual Studio 2022
 
-1. Open `demo.sln`. If you use Visual Studio 2022, retarget project, and upgrade
-   PlatformToolset to `v143` before running `windows_build.bat`
+1. Open `demo.sln`. If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to `v143` before running `windows_build.bat`
 
-### Mac
+#### Mac
 
 1. Run `make build_cpp` or `make cppx86_64`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `build`
 
-### Linux
+#### Linux
 
 1. Run `make build_cpp`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `build`
 
-## Common functions
+### Common functions
 
 Full function list can be found [here](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1)
 
-## Wallet related functions
+### Wallet related functions
 
 function `new_wallet` - Generates the HD wallet with a BIP39 backup phrase (English words) and password
 
@@ -209,22 +213,21 @@ function `new_privatekey_from_bytes` - Constructs private key from hex bytes
 )
 ```
 
-### ERC20, ERC721, ERC1155 related functions
+#### ERC20, ERC721, ERC1155 related functions
 
-## [ERC20](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg_1_1defi__wallet__core_1_1_erc20)
+### [ERC20](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc20)
 
-function `balance_of` - Returns the decimal amount of tokens owned by account_address.
+function `balance_of` - Returns the decimal amount of tokens owned by account\_address.
 
 ```rust
 ::org::defi_wallet_core::U256 balance_of(
     ::rust::String account_address
 ) const
-
 ```
 
 **Example**
 
-```Rust
+```
 Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
    "https://cronos-testnet-3.crypto.org:8545", 383)
  .legacy();
@@ -240,7 +243,7 @@ function `name` -Returns the name of the token.
 
 **Example**
 
-```Rust
+```
 Erc20 erc20 = new_erc20("0xf0307093f23311FE6776a7742dB619EB3df62969",
    "https://cronos-testnet-3.crypto.org:8545", 383);
 String name = erc20.name();
@@ -278,9 +281,9 @@ uint8_t decimals = erc20.decimals();
 assert(decimals == 6);
 ```
 
-## [ERC721](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg_1_1defi__wallet__core_1_1_erc721)
+### [ERC721](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc721)
 
-function `balance_of` - Returns the number of tokens in owner's account_address.
+function `balance_of` - Returns the number of tokens in owner's account\_address.
 
 ```rust
 ::org::defi_wallet_core::U256 balance_of(
@@ -288,7 +291,7 @@ function `balance_of` - Returns the number of tokens in owner's account_address.
 ) const
 ```
 
-function `owner_of` - Returns the owner of the token_id token.
+function `owner_of` - Returns the owner of the token\_id token.
 
 ```rust
 ::rust::String owner_of(
@@ -316,7 +319,7 @@ function `token_uri`- Get the distinct Uniform Resource Identifier (URI) for a g
 ) const
 ```
 
-function `transfer_from` - Transfers token_id token from from_address to to_address.
+function `transfer_from` - Transfers token\_id token from from\_address to to\_address.
 
 ```rust
 ::org::defi_wallet_core::CronosTransactionReceiptRaw transfer_from(
@@ -338,7 +341,7 @@ function `safe_transfer_from` - Safely transfers `token_id` token from `from_add
 ) const
 ```
 
-function `safe_transfer_from_with_data` - Safely transfers token_id token from from_address to to_address with additional_data.
+function `safe_transfer_from_with_data` - Safely transfers token\_id token from from\_address to to\_address with additional\_data.
 
 ```rust
 ::org::defi_wallet_core::CronosTransactionReceiptRaw safe_transfer_from_with_data(
@@ -350,7 +353,7 @@ function `safe_transfer_from_with_data` - Safely transfers token_id token from f
 ) const
 ```
 
-## [ERC1155](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg_1_1defi__wallet__core_1_1_erc1155)
+### [ERC1155](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc1155)
 
 function `balance_of` - Returns the amount of tokens of `token_id` owned by `account_address`.
 
@@ -361,7 +364,7 @@ function `balance_of` - Returns the amount of tokens of `token_id` owned by `acc
 ) const
 ```
 
-function `balance_of_batch` - Batched version of balance_of, get the balance of multiple account/token pairs
+function `balance_of_batch` - Batched version of balance\_of, get the balance of multiple account/token pairs
 
 ```rust
 ::rust::Vec<::rust::String > balance_of_batch(

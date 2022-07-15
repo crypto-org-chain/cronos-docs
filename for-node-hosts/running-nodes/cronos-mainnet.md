@@ -31,9 +31,9 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 ---
 
-# Cronos Mainnet: Running Nodes
+# Cronos Mainnet
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet Beta `cronosmainnets_25-1`.
+This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet Beta `cronosmainnet_25-1`.
 
 ## Step 0 : Notes on "Huygen" Network upgrade
 
@@ -47,7 +47,7 @@ For the host who would like to build a Full Node with complete blockchain data f
 4. Update the binary to `v0.7.0`;
 5. Restart the node;
 
-Users can refer to the [upgrade guide of "Huygen"](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/getting-started/huygen.md) for the detailed upgrade steps.
+Users can refer to the [upgrade guide of "Huygen"](huygen.md) for the detailed upgrade steps.
 
 ## Pre-requisites
 
@@ -69,8 +69,6 @@ Remarks:
 
 The following is the minimal setup for a **validator node** / **full node**.
 {% endhint %}
-
-
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
 
@@ -126,8 +124,6 @@ Before kick-starting your node, we will have to configure your node so that it c
       $ ./cronosd init pegasus-node --chain-id cronosmainnet_25-1
     ```
 
-
-
 {% hint style="info" %}
 Note:
 
@@ -148,8 +144,6 @@ Note:
     $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "58f17545056267f57a2d95f4c9c00ac1d689a580e220c5d4de96570fbbc832e1" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
     OK!
     ```
-
-
 
 {% hint style="info" %}
 NOTE
@@ -232,8 +226,6 @@ $ ulimit -Sn [NEW_MAX_FILE_DESCRIPTOR]
 # Example
 $ ulimit -Sn 4096
 ```
-
-
 {% endhint %}
 
 * _(Optional for Linux)_ Start cronosd with systemd service, e.g.:
@@ -275,8 +267,6 @@ LimitNOFILE=50000
 [Install]
 WantedBy=multi-user.target
 ```
-
-
 {% endhint %}
 
 It should begin fetching blocks from the other peers.
@@ -310,13 +300,11 @@ Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/netw
 
 After executing the command `./cronosd` start at Step 3-2 Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
 
+Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings (_currently only leveldb downloads are available_). You may refer to the following guide to implement Quicksync.
 
-Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings (*currently only leveldb downloads are available*). You may refer to the following guide to implement Quicksync.
+### Step 4-1 Quicksync Download
 
-{% hint style="info" %}
-
-### Step 4-1 Quicksync Download 
-To start with Quicksync, you need to run `brew install lz4`  to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html). 
+To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html).
 
 * Pruned snapshot is the quickest way to get a node running. If you just would like to give a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when your startup your node. But you will not be able to query anything earlier than that.
 
@@ -341,8 +329,6 @@ Then perform the following steps:
 * Change the path under `.cronos` with `cd .cronos`
 * Decompress with `lz4` and `tar` by `lz4 -d /Users/<username>/.cronos/cronosmainnet_25-1-pruned.20220308.2010.tar.lz4 | tar -xv`, as below:
 
-
-
 {% hint style="info" %}
 Example: Decompress the QuickSync pack with `lz4`
 
@@ -356,18 +342,14 @@ Example: Decompress the QuickSync pack with `lz4`
   x data/snapshots/metadata.db/MANIFEST-000107
   x data/snapshots/metadata.db/LOG
 ```
-
-
 {% endhint %}
 
 The original data folder under `.cronos` is overwritten with this step (it takes around 5-7 mins to decompress the pruned version \~50GB).
 
 ### Step 4-3 Sync with Quicksync
 
-:::details Example: Restart `cronosd start` with QuickSync
-
 {% hint style="info" %}
-Example: Restart `chain-maind start` with QuickSync
+Example: Restart `cronosd start` with QuickSync
 
 ```bash
   $ ./cronosd start

@@ -10,7 +10,9 @@ Only selected tokens mentioned above will be available for withdrawal into Crono
 
 ### Step-by-step Walkthrough
 
-**Step 1**: Select the token that you want to withdraw from your Crypto Wallet Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet. ![centered image](../assets/cdcapp1.png)
+**Step 1**: Select the token that you want to withdraw from your Crypto Wallet Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet.
+
+&#x20;![centered image](../assets/cdcapp1.png)
 
 **Step 2**: Click on “Transfer” and “Withdraw”
 
