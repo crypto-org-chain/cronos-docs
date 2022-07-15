@@ -34,10 +34,10 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/local-devnet.html
 ---
 
-# Devnet: Running Latest Development Node
+# Devnet
 
 {% hint style="warning" %}
-&#x20;CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
+CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
 
 For anyone interested in joining the Cronos testnet, please refer to our public testnet documentation which will be released shortly.
 {% endhint %}
@@ -181,7 +181,7 @@ For Pystarport:
 
 As in the last section, pre-created Hierarchical Deterministic (HD) mnemonic with genesis funds inside are prepared for you in the Devnet. To gain access to the funds, kindly restore the key by using the mnemonic before moving on to the next step.
 
-**Note**: The keys are stored in your operating system by default, we will use `--keyring-backend test` for simplicity. You may refer to a more detailed explanation [here](cli.md#the-keyring-keyring-backend-option).
+**Note**: The keys are stored in your operating system by default, we will use `--keyring-backend test` for simplicity. You may refer to a more detailed explanation [here](../cli.md#the-keyring-keyring-backend-option).
 
 * Firstly, restore the key name as `signer2`:
 

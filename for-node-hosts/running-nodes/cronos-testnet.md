@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/cronos-testnet.html
 ---
 
-# cronos-testnet
+# Cronos Testnet
 
 ## Cronos Testnet: Running Nodes
 
@@ -80,7 +80,7 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 ### Step 1. Get the Cronos testnet binary
 
 {% hint style="info" %}
-&#x20;Remarks: The following is the minimal setup for a **full node**.
+Remarks: The following is the minimal setup for a **full node**.
 {% endhint %}
 
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
@@ -151,8 +151,6 @@ Before kick-starting your node, we will have to configure your node so that it c
     $ if [[ $(sha256sum ~/.cronos/config/genesis.json | awk '{print $1}') = "7d898ad75b3e2e1fa182d928ca10a284c1dd252e12d17ad6dab76551b29d1a59" ]]; then echo "OK"; else echo "MISMATCHED"; fi;
     OK!
     ```
-
-
 
 {% hint style="info" %}
 NOTE
@@ -248,8 +246,6 @@ WantedBy=multi-user.target
 ```
 {% endhint %}
 
-
-
 It should begin fetching blocks from the other peers. Please wait until it is fully synced before moving onto the next step.
 
 *   You can query the node syncing status by
@@ -275,6 +271,6 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 
 * You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://testnet.cronoscan.com);
 * To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
-  * Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](../for-users/metamask.md#using-metamask-on-cronos-testnet).
+  * Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](../../for-users/metamask.md#using-metamask-on-cronos-testnet).
 
 In case you have reached the daily limit on faucet , you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel , stating who you are and your `0x...` address.

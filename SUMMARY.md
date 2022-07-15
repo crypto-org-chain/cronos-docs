@@ -6,9 +6,9 @@
 * [Introduction](getting-started/introduction.md)
 * [Architecture](getting-started/architecture.md)
 
-## FOR  USERS
+## FOR USERS
 
-* [Using MetaMask on Cronos mainnet Beta](for-users/metamask.md)
+* [Metamask](for-users/metamask.md)
 * [Bridge](for-users/bridge/README.md)
   * [Via Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
@@ -22,24 +22,25 @@
 
 ## FOR DAPP DEVELOPERS
 
-* [Cronos: Deploy Smart Contract](for-dapp-developers/cronos-smart-contract.md)
-* [Best Practices for DeFi Project in Cronos](for-dapp-developers/defi-practice.md)
+* [Smart Contracts](for-dapp-developers/cronos-smart-contract.md)
+* [Best Practices](for-dapp-developers/defi-practice.md)
 * [Wallet integration](for-dapp-developers/wallet-integration/README.md)
   * [Web Extension Integration](for-dapp-developers/wallet-integration/web-extension-integration.md)
   * [Desktop Wallet Integration](for-dapp-developers/wallet-integration/desktop-wallet-integration.md)
-* [Useful Projects on Cronos](for-dapp-developers/useful-projects-on-cronos.md)
+* [Useful Projects](for-dapp-developers/useful-projects-on-cronos.md)
   * [Band Protocol](for-dapp-developers/band-protocol.md)
 
 ## FOR NODE HOSTS
 
-* [Cronos Mainnet: Running Nodes](for-node-hosts/cronos-mainnet.md)
-* [Cronos Testnet: Running Nodes](for-node-hosts/cronos-testnet.md)
-* [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/huygen.md)
-* [Devnet: Running Latest Development Node](for-node-hosts/local-devnet.md)
-* [Cronos gravity bridge testnet: Running Nodes](for-node-hosts/cronos-gbtestnet.md)
-* [Best Practices for node hosts in Cronos](for-node-hosts/cronos-node-best-practises.md)
-* [Node Setup and RPC note](for-node-hosts/node-and-rpc-setup-notes.md)
-* [cronosd](for-node-hosts/cli.md)
+* [Running nodes](for-node-hosts/running-nodes/README.md)
+  * [Cronos Mainnet](for-node-hosts/running-nodes/cronos-mainnet.md)
+  * [Cronos Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
+  * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
+  * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/huygen.md)
+  * [Cronos Gravity Bridge Testnet](for-node-hosts/running-nodes/cronos-gbtestnet.md)
+* [Best Practices](for-node-hosts/cronos-node-best-practises.md)
+* [Node Setup and RPC server](for-node-hosts/node-and-rpc-setup-notes.md)
+* [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY
 
@@ -56,7 +57,7 @@
 ## CHAIN INTEGRATION
 
 * [Chain Integration](chain-integration/chain-integration/README.md)
-  * [Official token contract addresses for Cronos mainnet Beta](chain-integration/chain-integration/token-contract-addresses.md)
+  * [Token Contract Addresses](chain-integration/chain-integration/token-contract-addresses.md)
 
 ## ABOUT CRONOS
 
@@ -70,7 +71,7 @@
   * [module\_slashing](about-cronos/module\_overview/module\_slashing.md)
   * [module\_staking](about-cronos/module\_overview/module\_staking.md)
 * [The Proposal Process](about-cronos/govprocess.md)
-* [chain-details](about-cronos/chain-details/README.md)
+* [Chain Details](about-cronos/chain-details/README.md)
   * [List of parameters](about-cronos/chain-details/parameters.md)
   * [Technical glossary](about-cronos/chain-details/technical-glossary.md)
   * [Protocol Documentation](about-cronos/chain-details/cosmos-grpc-docs.md)
