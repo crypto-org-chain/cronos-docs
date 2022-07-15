@@ -63,11 +63,12 @@ Network Name: **Cronos Testnet**
 
 *   Drag the `Transfer721` prefab under `Assets/Web3Unity/Prefabs/WebGL` dir into the scene.
 
-    <img src="./cronos-play/assets/cronos-gamefi-integration-step6-1.png" alt="" data-size="original">
+![](./cronos-play/assets/cronos-gamefi-integration-step6-1.png)
+
 * Update the `Contract` address under `Transfer721Script` object inspector
 *   Update the `To Account` address to your desired wallet address
 
-    <img src="./cronos-play/assets/cronos-gamefi-integration-step6-2.png" alt="" data-size="original">
+![](./cronos-play/assets/cronos-gamefi-integration-step6-2.png)
 
 ***
 
@@ -80,9 +81,12 @@ Network Name: **Cronos Testnet**
 1. Switch to WebGL platform\
    ![](./cronos-play/assets/cronos-gamefi-integration-step8-1.png)
 2. Click the `Player Setting` button
-3. Select `Web3GL-2020` under `Resolution and Presentation` tab ![](./cronos-play/assets/cronos-gamefi-integration-step8-2.png)
-4. Set `Compression Format` to `Disabled` under `Publishing Settings` tab ![](./cronos-play/assets/cronos-gamefi-integration-step8-3.png)
-5. After that, click `Build and Run` button and you are ready to play. ![](./cronos-play/assets/cronos-gamefi-integration-step8-4.png)
+3. Select `Web3GL-2020` under `Resolution and Presentation` tab 
+![](./cronos-play/assets/cronos-gamefi-integration-step8-2.png)
+4. Set `Compression Format` to `Disabled` under `Publishing Settings` tab 
+![](./cronos-play/assets/cronos-gamefi-integration-step8-3.png)
+5. After that, click `Build and Run` button and you are ready to play. 
+![](./cronos-play/assets/cronos-gamefi-integration-step8-4.png)
 
 ## What's next
 
@@ -236,17 +240,24 @@ contract My1155Token is ERC1155, Ownable {
 
 ### 3. NFT Faucet
 
-* Step 1. Connect your wallet via metamask or walletconnect ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-1.png)
-* Step 2. Click `Create NFT` under `YOUR COLLECTION` tab ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-2.png)
-* Step 3. Create and sign the transaction after uploading the image ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-3.png)
-* Step 4. Copy the contract address and image URL from the NFT modal ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-4.png)
-* Step 5. Paste into the corresponding input box inside Unity inspector ![](./cronos-play/assets/cronos-gamefi-integration-step6-2.png)
+* Step 1. Connect your wallet via metamask or walletconnect 
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-1.png)
+* Step 2. Click `Create NFT` under `YOUR COLLECTION` tab 
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-2.png)
+* Step 3. Create and sign the transaction after uploading the image 
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-3.png)
+* Step 4. Copy the contract address and image URL from the NFT modal 
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-4.png)
+* Step 5. Paste into the corresponding input box inside Unity inspector 
+![](./cronos-play/assets/cronos-gamefi-integration-step6-2.png)
 
 ***
 
 ### (Optional) List NFT for sale in marketplace faucet
 
-* Step 1. Fill in the price at list item modal and confirm ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-5.png)
-* Step 2. Sign approval and create item transaction ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-6.png) ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-7.png)
-* Step 3. View the listed item in Marketplace tab\
-  ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-8.png)
+* Step 1. Fill in the price at list item modal and confirm 
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-5.png)
+* Step 2. Sign approval and create item transaction 
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-6.png) ![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-7.png)
+* Step 3. View the listed item in Marketplace tab
+![](./cronos-play/assets/cronos-gamefi-integration-nft-fauct-8.png)
