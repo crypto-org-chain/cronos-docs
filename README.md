@@ -43,7 +43,7 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 
 {% tabs %}
 {% tab title="Cronos Mainnet" %}
-[Join Cronos Mainnet Beta](getting-started/cronos-mainnet.md):
+[Join Cronos Mainnet Beta](for-node-hosts/cronos-mainnet.md):
 
 * Try running Full Node connected Cronos Mainnet Beta.
 
@@ -53,7 +53,7 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-[Join Cronos Testnet](getting-started/cronos-testnet.md):
+[Join Cronos Testnet](for-node-hosts/cronos-testnet.md):
 
 Try running Full Nodes or Validators connected to our Cronos Testnet.
 {% endtab %}
