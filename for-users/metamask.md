@@ -136,7 +136,7 @@ If you come across any issue with your account or you have used the imported acc
 
 Simply go to `Setting/Advance` and click `Reset Account` as shown below:
 
-<img src="./assets/10.png" />
+![central image](./assets/10.png)
 
 ## FAQs for ERC20-only transaction Support
 

@@ -8,7 +8,7 @@
 Please read the guide carefully and review the project documentation as misuse may cause incorrect transfer or even loss of assets. We recommend transferring a small amount first to get yourself acquainted with the bridge before moving significant amounts. We are **NOT** responsible for any losses incurred while using the bridge! Use at your own risk.
 :::
 
-<img src="./assets/bridge.png"   alt="centered image" />
+![centered image](./assets/bridge.png)
 
 The Gravity Bridge now makes it possible to transfer assets between the Cronos and the Ethereum network. The Gravity Bridge (Beta) for Testnet can be found [here](https://cronos.org/bridge/). Make sure to switch to the Testnet.
 
@@ -46,7 +46,7 @@ We are constantly working on adding new tokens and chain support. If you have an
 #### 1. Connect your wallet
 Click the “Connect Wallet" button on the top right to connect your browser extension wallet. Choose one of the supported wallets and look for a popup from your wallet interface or click into the wallet extension to give consent. Note that it might already ask permission to switch network, press "Accept" in that case.
 
-<img src="./assets/webapp_connect_wallet_pioneer.png"  alt="centered image" />
+![centered image](./assets/webapp_connect_wallet_pioneer.png)
 
  **Testnet**
 If you are using Metamask, make sure to enable test networks, on the Metamask wallet 
@@ -61,15 +61,15 @@ Add the following network details:
 - Currency symbol: **TCRO**
 - Block Explorer URL (Optional): **https://cronos.org/explorer/pioneer11**
 
-<img src="./assets/testnetworks.png" width="300"  alt="centered image"/>
-<img src="./assets/metamaskpioneer11.png" width="300"  alt="centered image"/>
+![centered image](./assets/testnetworks.png)
+![centered image](./assets/metamaskpioneer11.png)
 
 #### 2. Select Network and Token
 Select the origin chain on the left and the destination chain on the right in the bridge interface. Auto-suggestion may set some parameters. However, a manual check might be needed to match your wallet settings to the selected network. Once the networks are chosen, select the asset you would like to transfer. 
 Note that your ERC20 compatible addresses on Ethereum and Cronos are the same.
 
 
-<img src="./assets/pioneerassets.png"   alt="centered image"/>
+![centered image](./assets/pioneerassets.png)
 
 
 If you would like to swap any of the other tokens listed, you can head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on Goerli testnet. Refer to [Swap tokens on Uniswap](#swap-tokens-on-uniswap) for an example.
@@ -81,7 +81,7 @@ The bridge network fees will be calculated accordingly. You always need to pay t
 If this is the first time you are swapping this particular token using the Gravity Bridge, you may need to enable the contract such that the Gravity Bridge has access to this token. For example for USDC, click the "enable" button and accept permission in your wallet. Now you can bridge UDSC. 
 
 
-<img src="./assets/enablecontract.png"   alt="centered image"/>
+![centered image](./assets/enablecontract.png)
 
 
 **From Ethereum (Goerli testnet) to Cronos Gravity Bridge testnet**
@@ -93,7 +93,7 @@ For Goerli, you can get some Goerli Eth from one of the Goerli faucets, for exam
 - [https://goerlifaucet.com/](https://goerlifaucet.com/)
 - check the goerli testnet page for other faucets [https://github.com/eth-clients/goerli](https://github.com/eth-clients/goerli). 
 
-<img src="./assets/transferassets1.png"  alt="centered image"/>
+![centered image](./assets/transferassets1.png)
 
 **From Cronos Gravity Bridge testnet to Ethereum (Goerli testnet)**
 
@@ -103,7 +103,7 @@ Note that there might be additional bridge network fees calculated. When bridgin
 
 For Pioneer 11, you can get some TCRO from the [pioneer 11 faucet](https://cronos.org/pioneer11-faucet)
 
-<img src="./assets/transferassets2.png"  alt="centered image"/>
+![centered image](./assets/transferassets2.png)
 
 
 #### 4. Confirm the transaction
@@ -111,9 +111,7 @@ Once all transfer settings have been confirmed, click "Transfer Assets", a trans
 
 Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens.
 
-<img src="./assets/confirmpioneer.png"  alt="centered image"/>
-
-<img src="./assets/confirmmetamask.png" width="300"  alt="centered image"/>
+![centered image](./assets/confirmpioneer.png) ![centered image](./assets/confirmmetamask.png)
 
 
 #### 5. Bridging assets
@@ -124,10 +122,9 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
 
 
-<img src="./assets/bridgingcompleted.png"  alt="centered image"/>
+![centered image](./assets/bridgingcompleted.png)
 
-
-<img src="./assets/bridginghistory.png"   alt="centered image"/>
+![centered image](./assets/bridginghistory.png)
 
 
 ###  Appendix
@@ -136,18 +133,17 @@ Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
 
 Head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on Goerli testnet. Connect with your wallet and switch to the goerli network. 
 
-<img src="./assets/Uniswap.png"   alt="centered image"/>
+![centered image](./assets/Uniswap.png)
 
 
 If the token you are looking to swap to is not listed, you may need to import the token address yourself, for example for [USDC](https://goerli.etherscan.io/address/0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C) on Goerli testnet: 
 
-<img src="./assets/Uniswaptoken.png"   alt="centered image"/>
+![centered image](./assets/Uniswaptoken.png)
 
 
 Make sure that this is the correct address for your token before importing! If so, click "import" and finally, confirm the swap.
 
 
-<img src="./assets/Uniswaptokenimport.png" width="300"  alt="centered image"/>
-<img src="./assets/Uniswaptokenconfirm.png"  width="300" alt="centered image"/>
+![centered image](./assets/Uniswaptokenimport.png) ![centered image](./assets/Uniswaptokenconfirm.png)
 
 

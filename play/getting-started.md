@@ -56,7 +56,9 @@ Or you can download the latest [releases](https://github.com/ChainSafe/web3.unit
 
 #### Create a new Unity Project
 
-Create a new project directly from your Unity Hub. In the next step Choose 3D as your project type. ![](assets/getting-started/new-projects.png)
+Create a new project directly from your Unity Hub. In the next step Choose 3D as your project type. 
+
+![](assets/getting-started/new-projects.png)
 
 #### Upload web3.unity Folders into Project
 
