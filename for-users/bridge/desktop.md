@@ -6,7 +6,7 @@ Crypto.com DeFi Desktop Wallet has integrated with the Cronos Bridge to allow al
 
 ### Step-by-step Walkthrough
 
-**Step 1**: Select the Cronos Bridge option on the left hand panel ![centered image](../../docs/bridge/assets/desktop1.png)
+**Step 1**: Select the Cronos Bridge option on the left hand panel ![centered image](./assets/desktop1.png)
 
 **Step 2**: Select “From” Crypto.org Chain as the origination chain and “To” Cronos Chain as the destination chain
 
@@ -16,7 +16,7 @@ Only the `Crypto.org Chain <=> Cronos` route will be available on Day 1. The `Et
 
 You will be able to verify the amount that you will receive and your Cronos address after entering the amount of CRO that you want to transfer. Click “Transfer Asset” and enter your Password to proceed.
 
-![centered image](../../docs/bridge/assets/desktop3.png)
+![centered image](./assets/desktop3.png)
 
 **Step 4**: Confirm the transaction
 
@@ -24,7 +24,7 @@ You will be given an overview of the bridge transaction, including the network f
 
 Please note that once you’ve clicked the “Confirm” button, there will be no going back.
 
-![centered image](../../docs/bridge/assets/desktop4.png)
+![centered image](./assets/desktop4.png)
 
 **Step 5**: Await for Bridge confirmation
 
@@ -32,4 +32,4 @@ After the transfer is initiated, the CRO will be bridged from the Crypto.org Cha
 
 Additionally, you will be able to view the Transaction in further details by clicking the transaction hash which directs you to the Crypto.org Chain explorer.And you can always review your latest bridge transfer history by clicking the icon at the top-right corner.
 
-![centered image](../../docs/bridge/assets/desktop5-1.png) ![centered image](../../docs/bridge/assets/desktop5-2.png)
+![centered image](./assets/desktop5-1.png) ![centered image](./assets/desktop5-2.png)

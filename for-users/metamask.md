@@ -41,10 +41,10 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
 *   Hit the my account button in the top right corner, under **"Settings"**, select **"Networks"**
 
-    ![](../docs/getting-started/assets/1.png)
+    ![](./assets/1.png)
 *   In the **"Networks"** page, click "Add Network":
 
-    ![](../docs/getting-started/assets/2.png)
+    ![](./assets/2.png)
 
 
 
@@ -68,7 +68,7 @@ Similarly, for Cronos testnet, insert the network name, for example "Cronos test
 {% endtab %}
 {% endtabs %}
 
-* ![](../docs/getting-started/assets/3.png)
+* ![](./assets/3.png)
 * After saving the network config, we should be able to see the token in your address!
 
 ### Using MetaMask on Cronos Gravity birdge testnet (Pionner 11)
@@ -92,11 +92,11 @@ It will show your private, we can copy it for the next step.
 
 Then hit my account button in the top right corner again, select "Import Account" under "My account" on your MetaMask:
 
-![](../docs/getting-started/assets/4.png)
+![](./assets/4.png)
 
 Paste the private from the former step here and click "Import".
 
-![](../docs/getting-started/assets/5.png)
+![](./assets/5.png)
 
 Once it has been connect, you should see the balance and may start performing transactions via MetaMask!
 

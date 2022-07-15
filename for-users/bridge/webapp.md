@@ -4,7 +4,7 @@
 
 ### Introduction
 
-![centered image](../../docs/bridge/assets/webappintro.png)
+![centered image](./assets/webappintro.png)
 
 The Cronos bridge’s goal is to support a seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best Dapps and earnings no matter the chain.
 
@@ -49,7 +49,7 @@ Note 1: If you are bridging assets from or to Crypto.org, you may specify the de
 
 Note 2: Currently, Terra ⇔ Cronos only support Keplr wallet. Learn how to add your Terra station wallet to Keplr wallet, please click [here](webapp.md#add-your-terra-station-wallet-to-keplr-wallet).
 
-![centered image](../../docs/bridge/assets/webapp\_connect\_wallet.png)
+![centered image](./assets/webapp\_connect\_wallet.png)
 
 ### 2. Select Network and Token
 
@@ -59,7 +59,7 @@ If you are transferring from or to Crypto.org, you need to specify the destinati
 
 Once the networks are chosen, select the asset you would like to transfer.
 
-![centered image](../../docs/bridge/assets/webapp\_select\_network.png)
+![centered image](./assets/webapp\_select\_network.png)
 
 ### 3. Enter the amount
 
@@ -73,7 +73,7 @@ During the promotional launch period, the network fee incurred by the bridge wil
 
 Before bridging a large amount, we encourage testing a transfer of a minor amount first to ensure all the settings are correct.
 
-![centered image](../../docs/bridge/assets/webapp\_enter\_amout.png)
+![centered image](./assets/webapp\_enter\_amout.png)
 
 ### 4. Confirm the transaction
 
@@ -83,7 +83,7 @@ This will send a transaction request to your wallet; please confirm on your wall
 
 Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. See [FAQ](webapp.md#faq) for more information
 
-![centered image](../../docs/bridge/assets/webapp\_confirmation\_screen.png) ![centered image](../../docs/bridge/assets/4a\_confirm\_wallet\_txn.png) ![centered image](../../docs/bridge/assets/4b\_confirm\_wallet\_txn.png) ![centered image](../../docs/bridge/assets/4c\_confirm\_wallet\_txn.png)
+![centered image](./assets/webapp\_confirmation\_screen.png) ![centered image](./assets/4a\_confirm\_wallet\_txn.png) ![centered image](./assets/4b\_confirm\_wallet\_txn.png) ![centered image](./assets/4c\_confirm\_wallet\_txn.png)
 
 ### 5. Bridging assets
 
@@ -93,37 +93,37 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 
 Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 
-![centered image](../../docs/bridge/assets/5\_txn\_complete.png) ![centered image](../../docs/bridge/assets/5\_history\_table.png)
+![centered image](./assets/5\_txn\_complete.png) ![centered image](./assets/5\_history\_table.png)
 
 ## Add your Terra station wallet to Keplr wallet
 
 1. Create and log in to your Keplr wallet
 
-![centered image](../../docs/bridge/assets/terra1.png)
+![centered image](./assets/terra1.png)
 
 1. Click the button on the top right corner. Then, click “+ Add Account”
 
-![centered image](../../docs/bridge/assets/terra2.png)
+![centered image](./assets/terra2.png)
 
 1. Select “import existing account”
 
-![centered image](../../docs/bridge/assets/terra3.png)
+![centered image](./assets/terra3.png)
 
 1. Input the Mnemonic of your Terra station wallet and name your account, then click "Next"
 
-![centered image](../../docs/bridge/assets/terra4.png)
+![centered image](./assets/terra4.png)
 
 1. Go back to your Keplr account, click the button on the top right again. You will see your imported Terra station account here.
 
-![centered image](../../docs/bridge/assets/terra5.png)
+![centered image](./assets/terra5.png)
 
 1. Select your imported Terra station account. Then, click the arrow on the top, and select "Terra".
 
-![centered image](../../docs/bridge/assets/terra6.png)
+![centered image](./assets/terra6.png)
 
 1. You can now use your Terra station wallet on Keplr!
 
-![centered image](../../docs/bridge/assets/terra7.png)
+![centered image](./assets/terra7.png)
 
 ## FAQ
 
