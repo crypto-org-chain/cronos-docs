@@ -28,6 +28,7 @@
   * [Web Extension Integration](for-dapp-developers/wallet-integration/web-extension-integration.md)
   * [Desktop Wallet Integration](for-dapp-developers/wallet-integration/desktop-wallet-integration.md)
 * [Useful Projects on Cronos](for-dapp-developers/useful-projects-on-cronos.md)
+  * [Band Protocol](for-dapp-developers/band-protocol.md)
 
 ## FOR NODE HOSTS
 
