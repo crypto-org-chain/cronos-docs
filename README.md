@@ -29,7 +29,7 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/
-cover: .gitbook/assets/Cronos generic background 1.png
+cover: getting-started/.gitbook/assets/Cronos%20generic%20background%201.png
 coverY: 0
 ---
 
@@ -43,21 +43,16 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 
 {% tabs %}
 {% tab title="Cronos Mainnet" %}
-* [Join Cronos Mainnet Beta](for-node-hosts/cronos-mainnet.md):
-  Try running Full Node connected Cronos Mainnet Beta.
-
-* [Setup your Metamask](for-users/metamask.md):
-  Setup Metamask and connect to Cronos Mainnet Beta.
+* [Join Cronos Mainnet Beta](getting-started/for-node-hosts/cronos-mainnet.md): Try running Full Node connected Cronos Mainnet Beta.
+* [Setup your Metamask](getting-started/for-users/metamask.md): Setup Metamask and connect to Cronos Mainnet Beta.
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-* [Join Cronos Testnet](for-node-hosts/cronos-testnet.md):
-  Try running Full Nodes or Validators connected to our Cronos Testnet.
+* [Join Cronos Testnet](getting-started/for-node-hosts/cronos-testnet.md): Try running Full Nodes or Validators connected to our Cronos Testnet.
 {% endtab %}
 
 {% tab title="Devnet" %}
-* [Build latest development version](for-node-hosts/local-devnet.md):
-  Try running the latest development network (_Devnet_).
+* [Build latest development version](getting-started/for-node-hosts/local-devnet.md): Try running the latest development network (_Devnet_).
 {% endtab %}
 {% endtabs %}
 
