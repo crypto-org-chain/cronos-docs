@@ -56,7 +56,7 @@ To install, run the following commands:
 4. category is **CronosPlayUnreal**
 5. the api in `..Blueprint.h` is stateless, and can be called anywhere in the blueprint
 
-![centered image](./assets/unreal-engine/blue_print.png" />
+![centered image](./assets/unreal-engine/blue_print.png)
 
 ## Documentation for UE function and blueprint 
 

@@ -43,25 +43,21 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 
 {% tabs %}
 {% tab title="Cronos Mainnet" %}
-[Join Cronos Mainnet Beta](for-node-hosts/cronos-mainnet.md):
+* [Join Cronos Mainnet Beta](for-node-hosts/cronos-mainnet.md):
+  Try running Full Node connected Cronos Mainnet Beta.
 
-* Try running Full Node connected Cronos Mainnet Beta.
-
-[Setup your Metamask](for-users/metamask.md):
-
-* Setup Metamask and connect to Cronos Mainnet Beta.
+* [Setup your Metamask](for-users/metamask.md):
+  Setup Metamask and connect to Cronos Mainnet Beta.
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-[Join Cronos Testnet](for-node-hosts/cronos-testnet.md):
-
-Try running Full Nodes or Validators connected to our Cronos Testnet.
+* [Join Cronos Testnet](for-node-hosts/cronos-testnet.md):
+  Try running Full Nodes or Validators connected to our Cronos Testnet.
 {% endtab %}
 
 {% tab title="Devnet" %}
-**Devnet** - [Build latest development version](for-node-hosts/local-devnet.md):
-
-Try running the latest development network (_Devnet_)
+* [Build latest development version](for-node-hosts/local-devnet.md):
+  Try running the latest development network (_Devnet_).
 {% endtab %}
 {% endtabs %}
 

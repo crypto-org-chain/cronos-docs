@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Getting Started](README.md)
+* [Getting Started](getting-started/README.md)
   * [Introduction](getting-started/introduction.md)
   * [Architecture](getting-started/architecture.md)
 * [For Users](for-users/README.md)
@@ -34,7 +34,6 @@
 * [Chain Integration](chain-integration/README.md)
   * [Official token contract addresses for Cronos mainnet Beta](chain-integration/token-contract-addresses.md)
 * [Cronos Play](cronos-play/README.md)
-  * [Introduction](cronos-play/introduction.md)
   * [Unreal Engine Plugin](cronos-play/getting-started\_unreal.md)
   * [Cronos Play C++ SDK](cronos-play/getting-started\_cpp.md)
   * [Unity](cronos-play/getting-started/README.md)
