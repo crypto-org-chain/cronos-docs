@@ -10,14 +10,14 @@
 
 * [Metamask](for-users/metamask.md)
 * [Bridge](for-users/bridge/README.md)
-  * [Via Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
+  * [From App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
     * [From Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
-  * [From other chains](for-users/bridge/other\_chain/README.md)
-    * [From Crypto.org Chain (Cronos Bridge Web App)](for-users/bridge/other\_chain/webapp.md)
-    * [From Crypto.org Chain (Crypto.com DeFi Wallet)](for-users/bridge/other\_chain/defiwallet.md)
-    * [From Crypto.org Chain (Crypto.org Chain Desktop Wallet)](for-users/bridge/other\_chain/desktop.md)
-  * [Via the Gravity Bridge Web App - Testnet only)](for-users/bridge/gb-testnet.md)
+  * [From Crypto.org Chain](for-users/bridge/other\_chain/README.md)
+    * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
+    * [Crypto.com DeFi Wallet](for-users/bridge/other\_chain/defiwallet.md)
+    * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
+  * [From Gravity Bridge Web App  (Testnet only)](for-users/bridge/gb-testnet.md)
   * [FAQ](for-users/bridge/faq.md)
 
 ## FOR DAPP DEVELOPERS
