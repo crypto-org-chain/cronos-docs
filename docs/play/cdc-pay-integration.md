@@ -25,51 +25,8 @@ curl https://pay.crypto.com/api/payments \
 This API can be called using either your Secret Key or Publishable Key. These keys are generated in the merchant center [dashboard](https://merchant.crypto.com/users/sign_in/).
 :::
 
-## Integrating with Unity
-To use the CDC Pay module in Unity we can simple use the [UnityWebRequest](https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Post.html) module to simulate a post request. We recommend to use a webhook server to retrieve the payment event responses.
-
-- Create payment example
-    ```csharp
-    using UnityEngine;
-    using UnityEngine.Networking;
-    using System.Collections;
-
-    public class CDCPayment : MonoBehaviour
-    {
-        void Start()
-        {
-            StartCoroutine(Pay());
-        }
-
-        IEnumerator Pay()
-        {
-            WWWForm form = new WWWForm();
-            form.AddField("amount", "1000");
-            form.AddField("currency", "USD");
-            form.AddField("description", "Product Name");
-            form.AddField("return_url", "http://YOUR_WEBSITE.com/orders/123/complete");
-            form.AddField("cancel_url", "http://YOUR_WEBSITE.com/orders/123/fail");
-
-            using (UnityWebRequest www = UnityWebRequest.Post("https://pay.crypto.com/api/payments", form))
-            www.SetRequestHeader("Authorization", "Bearer YOUR_PUBLISHABLE_KEY");
-            {
-                yield return www.SendWebRequest();
-
-                if (www.result != UnityWebRequest.Result.Success)
-                {
-                    Debug.Log(www.error);
-                }
-                else
-                {
-                    Debug.Log(www.downloadHandler.data);
-                }
-            }
-        }
-    }
-    ```
-
 ## Unity Webview Module
-This section illustrates how a new webview game object is created to display the CDC Pay page within the game. To install the webview module, please follow the examples below.
+To use the CDC Pay module in Unity we can simple use the [UnityWebRequest](https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Post.html) module to simulate a post request. We recommend to use a webhook server to retrieve the payment event responses. This section illustrates how a new webview game object is created to display the CDC Pay page within the game. To install the webview module, please follow the examples below. 
 
 1. Create a new 3d Game in Unity.
 
