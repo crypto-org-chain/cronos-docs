@@ -29,6 +29,8 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/
+cover: .gitbook/assets/Cronos generic background 1.png
+coverY: 0
 ---
 
 # Getting Started
@@ -44,8 +46,6 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 [Join Cronos Mainnet Beta](getting-started/cronos-mainnet.md):
 
 * Try running Full Node connected Cronos Mainnet Beta.
-
-
 
 [Setup your Metamask](for-users/metamask.md):
 
