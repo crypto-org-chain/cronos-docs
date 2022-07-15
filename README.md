@@ -71,4 +71,4 @@ Try running the latest development network (_Devnet_)
 * [Project Repository](https://github.com/crypto-org-chain/cronos)
 * Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
 * Developer community channel (technical): [Support Server](https://discord.gg/pahqHz26q4)
-* Email: mailto:contact@cronoslabs.org
+* Email dev relations: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)

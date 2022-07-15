@@ -72,6 +72,6 @@ To build the Game Login example, you need to go to `File/Build Settings` and sel
 NOTE Make sure to select the Cronos Defi Wallet Template in the Player -> Resolution and Presentation settings.
 {% endhint %}
 
-![](../../play/assets/getting-started/cronos\_template.png) ![](../../play/assets/getting-started/build\_settings.png)
+![](./cronos-play/assets/getting-started/cronos\_template.png) ![](./cronos-play/assets/getting-started/build\_settings.png)
 
 On successful completion, you will be able to log in to your DefiConnect wallet. The scene will load any textures from NFT assets you own on successful login.

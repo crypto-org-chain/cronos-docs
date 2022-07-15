@@ -2,7 +2,7 @@
 
 * [Getting Started](README.md)
   * [Introduction](getting-started/introduction.md)
-  * [Architecture](readme/architecture.md)
+  * [Architecture](getting-started/architecture.md)
 * [For Users](for-users/README.md)
   * [Using MetaMask on Cronos mainnet Beta](for-users/metamask.md)
   * [Bridge](for-users/bridge/README.md)
