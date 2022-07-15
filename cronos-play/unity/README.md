@@ -427,7 +427,7 @@ This section showcase the Cronos play Gaming SDK integration with the Cronos cha
 * Update the `Contract` address under `Transfer721Script` object inspector
 *   Update the `To Account` address to your desired wallet address
 
-![](../assets/cronos-play/cronos-gamefi-integration-step6-2.png")
+![](../assets/cronos-play/cronos-gamefi-integration-step6-2.png)
 
 ***
 
@@ -468,7 +468,7 @@ The above guideline documentation only highlights the basic integration between 
 
 **Step 1b. \[Unity] Create a new project in Unity**
 
-![](../assets/cronos-play/new-projects.png)
+![](../assets/getting-started/new-projects.png)
 
 **Step 1c. \[Unity] Open the Package Manager window in Unity and under "My Assets" download the Bolt Kit.**
 
