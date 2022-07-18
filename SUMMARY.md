@@ -17,16 +17,19 @@
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
     * [Crypto.com DeFi Wallet](for-users/bridge/other\_chain/defiwallet.md)
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
-  * [From Gravity Bridge Web App  (Testnet only)](for-users/bridge/gb-testnet.md)
+  * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
   * [FAQ](for-users/bridge/faq.md)
 
 ## FOR DAPP DEVELOPERS
 
-* [Smart Contracts](for-dapp-developers/cronos-smart-contract.md)
-* [Best Practices](for-dapp-developers/defi-practice.md)
-* [Wallet integration](for-dapp-developers/wallet-integration/README.md)
-  * [Web Extension Integration](for-dapp-developers/wallet-integration/web-extension-integration.md)
-  * [Desktop Wallet Integration](for-dapp-developers/wallet-integration/desktop-wallet-integration.md)
+* [Cronos Integration](for-dapp-developers/chain-integration/README.md)
+  * [Public RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
+  * [Web Extension Integration](for-dapp-developers/chain-integration/web-extension-integration.md)
+  * [Desktop Wallet Integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
+  * [JSON-RPC](for-dapp-developers/chain-integration/json-rpc.md)
+* [Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
+  * [Best Practices](for-dapp-developers/cronos-smart-contract/defi-practice.md)
+  * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
 * [Useful Projects](for-dapp-developers/useful-projects-on-cronos.md)
   * [Band Protocol](for-dapp-developers/band-protocol.md)
 
@@ -38,8 +41,8 @@
   * [Cronos Gravity Bridge Testnet](for-node-hosts/running-nodes/cronos-gbtestnet.md)
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/huygen.md)
-* [Best Practices](for-node-hosts/cronos-node-best-practises.md)
-* [Node Setup and RPC server](for-node-hosts/node-and-rpc-setup-notes.md)
+  * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
+  * [Node Setup and RPC server](for-node-hosts/running-nodes/node-and-rpc-setup-notes.md)
 * [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY
@@ -54,14 +57,10 @@
 * [Unreal Engine Plugin](cronos-play/getting-started\_unreal.md)
 * [Cronos Play C++ SDK](cronos-play/getting-started\_cpp.md)
 
-## INTEGRATING WITH CRONOS
+## Block Explorers
 
-* [Cronos Integration](integrating-with-cronos/chain-integration/README.md)
-  * [Public RPC endpoints](integrating-with-cronos/chain-integration/public-rpc-endpoints.md)
-  * [JSON-RPC](integrating-with-cronos/chain-integration/json-rpc.md)
-  * [Block Explorer and API Keys](integrating-with-cronos/chain-integration/block-explorer-and-api-keys.md)
-  * [Cronoscan](https://cronoscan.com/)
-  * [Token Contract Addresses](integrating-with-cronos/chain-integration/token-contract-addresses.md)
+* [Block Explorer and API Keys](block-explorers/block-explorer-and-api-keys.md)
+* [Cronoscan](https://cronoscan.com/)
 
 ## ABOUT CRONOS
 

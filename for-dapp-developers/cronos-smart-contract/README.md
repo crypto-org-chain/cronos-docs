@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/cronos-smart-contract.html
 ---
 
-# Cronos: Deploy Smart Contract
+# Smart Contracts
 
 This documentation demostrate the deployment of smart contract to Cronos, using Solidity. `@openzeppelin/contracts` is used for the demo Solidity script.
 
@@ -121,7 +121,7 @@ npm run deploy-contract-cronos
 
 ### Step 8. Obtain Contract address from console and input to Metamask
 
-Correct balance will be shown on Metamask page ![](./assets/cronos-smart-contract/truffle\_deploy\_contract\_address.png) ![](./assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](./assets/cronos-smart-contract/metamask\_add\_token\_success.png)
+Correct balance will be shown on Metamask page ![](../assets/cronos-smart-contract/truffle\_deploy\_contract\_address.png) ![](../assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](../assets/cronos-smart-contract/metamask\_add\_token\_success.png)
 
 ## Hardhat: Deploy ERC20 Contract
 
@@ -194,4 +194,4 @@ Correct balance will be shown on Metamask page
 CronosToken deployed to: 0x5F803c894a0A16B46fe5982fB5D89eb334eAF68
 ```
 
-![](./assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](./assets/cronos-smart-contract/metamask\_add\_token\_success.png)
+![](../assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](../assets/cronos-smart-contract/metamask\_add\_token\_success.png)

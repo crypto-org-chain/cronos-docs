@@ -4,29 +4,23 @@
 
 {% tabs %}
 {% tab title="Mainnet" %}
-#### Setup Guide
+**Setup Guide**
 
 * [Joining the Cronos Mainnet](../../for-node-hosts/running-nodes/cronos-mainnet.md)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
 * [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger?network=mainnet)
-
-
-
-* [Deploying Smart Contract](../../for-dapp-developers/cronos-smart-contract.md)
+* [Deploying Smart Contract](../cronos-smart-contract/)
 * [Using MetaMask](https://docs.cronos.org/getting-started/metamask.html)
 {% endtab %}
 
 {% tab title="Testnet" %}
-#### Setup Guide
+**Setup Guide**
 
 * [Joining the Cronos Testnet](https://docs.cronos.org/getting-started/cronos-testnet.html)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-1/genesis.json)
 * [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger)
-
-
-
 * [Testnet Faucet](https://cronos.org/faucet/)
 * [Using Metamask](https://docs.cronos.org/for-users/metamask)
 {% endtab %}
@@ -45,5 +39,3 @@
 * [**Python** library](https://pypi.org/project/chainlibpy/#description);
 * [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
 * [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
-
-

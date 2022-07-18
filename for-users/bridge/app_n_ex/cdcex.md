@@ -18,7 +18,7 @@ Supported assets on Day 1: CRO, USDT, USDC, DAI, ETH, WBTC
 
 **Step 3**: Select “Add Withdrawal Address”
 
-![centered image](<../assets/cdcex3 (1).png>)
+![centered image](<../assets/cdcex3 (1) (1) (2).png>)
 
 **Step 4**: Select the Cronos Network, add your Cronos wallet address and save it ![centered image](../assets/cdcex4.png)
 
