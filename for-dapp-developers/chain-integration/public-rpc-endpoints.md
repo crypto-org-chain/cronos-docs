@@ -17,7 +17,7 @@ If this assumption is important in your application, please consider setting up 
 {% endhint %}
 
 {% tabs %}
-{% tab title="Mainnet" %}
+{% tab title="Mainnet Beta" %}
 * **Tendermint RPC**
   * [https://rpc.cronos.org/](https://rpc.cronos.org/)
 * **Cosmos RESTful**
@@ -26,6 +26,8 @@ If this assumption is important in your application, please consider setting up 
   * [https://grpc.cronos.org/](http://grpc.cronos.org/)
 * **EVM HTTP JSON RPC (Web3 compatible)**
   * [https://evm.cronos.org/](https://evm.cronos.org/)
+* **Explorer**
+  * [https://cronoscan.com/](https://cronoscan.com/)
 {% endtab %}
 
 {% tab title="Testnet" %}
@@ -37,6 +39,26 @@ If this assumption is important in your application, please consider setting up 
   * [https://grpc-t3.cronos.org/](https://grpc-t3.cronos.org/)
 * **EVM HTTP JSON RPC (Web3 compatible)**
   * [https://evm-t3.cronos.org/](https://evm-t3.cronos.org/)
+* **Explorer**
+  * [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
+{% endtab %}
+
+{% tab title="Gravity Bridge" %}
+* **Tendermint RPC**
+  * [https://rpc-p11.cronos.org:443](https://rpc-p11.cronos.org)
+* **Cosmos RESTful**
+  * [https://rest-p11.cronos.org](https://rest-p11.cronos.org)
+* **Cosmos gRPC Based**
+  * [https://grpc-p11.cronos.org](https://grpc-p11.cronos.org)
+* **EVM HTTP JSON RPC (Web3 compatible)**
+  * [https://evm-p11.cronos.org](https://evm-p11.cronos.org)
+* **Explorer**\
+  [https://cronos.crypto.org/explorer/pioneer11](https://cronos.crypto.org/explorer/pioneer11)
 {% endtab %}
 {% endtabs %}
 
+
+
+### External node providers
+
+* [RockX](https://help.rockx.com/en/articles/6153885-guide-to-cronos-free-access-node)&#x20;

@@ -8,7 +8,7 @@ The Crypto.com App will be able to seamlessly transfer selected assets over to C
 
 **Supported assets on Day 1**: CRO, USDT, USDC, DAI, ETH, WBTC
 
-Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet Beta.
+Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet Beta. For a complete list of available assets to withdraw, we refer to [this help page](https://help.crypto.com/en/articles/5978017-what-should-i-know-about-cryptocurrency-deposits-and-withdrawals).
 
 ## From Crypto.com Exchange
 

@@ -8,7 +8,7 @@
 
 ## FOR USERS
 
-* [Metamask](for-users/metamask.md)
+* [MetaMask](for-users/metamask.md)
 * [Bridge](for-users/bridge/README.md)
   * [From App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
@@ -19,7 +19,7 @@
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
-  * [FAQ](for-users/bridge/faq.md)
+* [FAQ](for-users/faq.md)
 
 ## FOR DAPP DEVELOPERS
 

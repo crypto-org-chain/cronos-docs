@@ -52,14 +52,26 @@ Cronos Ecosystem Grants program aims to support early-stage projects on Cronos b
 
 ### Features
 
-#### **EVM Compatible** - Ethereum developers are used to smart contract capabilities as Ethermint can support any smart contracts, DAOs or Dapps deployed on Ethereum.
+#### **EVM Compatible**
 
-#### **Scalable** - Tendermint can process way more transactions per minute than the EVM, making it faster, cheaper and greener to execute smart contracts.
+Ethereum developers are used to smart contract capabilities as Ethermint can support any smart contracts, DAOs or Dapps deployed on Ethereum.
 
-#### **Interoperable** - IBC is a protocol that allows blockchains to talk to each other; interoperate and transfer value, interchange assets and services, and connect without running into the scaling issues inherent in some of the largest blockchains today.
+#### **Scalable**&#x20;
 
-#### **Easy deployment** - Users can follow the deployment instruction to quickly and easily deploy Cronos network for their own using purposes.
+Tendermint can process way more transactions per minute than the EVM, making it faster, cheaper and greener to execute smart contracts.
 
-#### **Crypto.com ecosystem** - 50 million users + ecosystem
+#### **Interoperable**
 
-#### **Crypto.com community Support** - Crypto.com community support - contribution to open-source projects, security reviews.
+IBC is a protocol that allows blockchains to talk to each other; interoperate and transfer value, interchange assets and services, and connect without running into the scaling issues inherent in some of the largest blockchains today.
+
+#### **Easy deployment**&#x20;
+
+Users can follow the deployment instructions to quickly and easily deploy to the Cronos network for their own using purposes.
+
+#### **Crypto.com ecosystem**&#x20;
+
+50 million users + ecosystem
+
+#### **Crypto.com community Support**
+
+Crypto.com community support - contribution to open-source projects, security reviews.

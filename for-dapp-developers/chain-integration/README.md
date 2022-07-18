@@ -19,7 +19,7 @@
 
 * [Joining the Cronos Testnet](https://docs.cronos.org/getting-started/cronos-testnet.html)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
-* [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-1/genesis.json)
+* [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-3/genesis.json)
 * [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger)
 * [Testnet Faucet](https://cronos.org/faucet/)
 * [Using Metamask](https://docs.cronos.org/for-users/metamask)
@@ -29,6 +29,7 @@
 ### Useful Links
 
 * [Cronos website](https://cronos.org/)
+* [Cronos Whitepaper](https://whitepaper.cronos.org/)
 * [GitHub Repository](https://github.com/crypto-org-chain/cronos)
 * [Official Documentation](https://docs.cronos.org/)
 * [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)

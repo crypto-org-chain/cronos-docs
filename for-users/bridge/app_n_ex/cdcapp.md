@@ -6,21 +6,21 @@ The Crypto.com App will be able to seamlessly transfer selected assets over to C
 
 **Supported assets on Day 1**: CRO, USDT, USDC, DAI, ETH, WBTC
 
-Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of  Beta.
+Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Beta. For a complete list of available assets to withdraw, we refer to [this help page](https://help.crypto.com/en/articles/5978017-what-should-i-know-about-cryptocurrency-deposits-and-withdrawals).
 
 ### Step-by-step Walkthrough
 
-**Step 1**: Select the token that you want to withdraw from your Crypto Wallet Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet.
+**Step 1**: Select the token that you want to withdraw from your Crypto Wallet Only selected tokens mentioned above will be available for withdrawal into Cronos on Day 1 of Cronos Mainnet Beta.
 
 ![centered image](../assets/cdcapp1.png)
 
 **Step 2**: Click on “Transfer” and “Withdraw”
 
-![centered image](../assets/cdcapp2-1.png) 
+![centered image](../assets/cdcapp2-1.png)
 
 ![centered image](../assets/cdcapp2-2.png)
 
-**Step 3**: Select “External wallet” and whitelist your Cronos wallet address 
+**Step 3**: Select “External wallet” and whitelist your Cronos wallet address
 
 ![centered image](../assets/cdcapp3-1.png)
 
