@@ -73,10 +73,14 @@ Before kick-starting your node, we will have to configure your node so that it c
       $ ./cronosd init pegasus-node --chain-id pioneereleventestnet_340-1
     ```
 
-    ::: tip NOTE
 
-    * Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
-    * You can also put the `cronosd` to your binary path and run it by `cronosd` :::
+
+{% hint style="info" %}
+NOTE
+
+* Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
+* You can also put the `cronosd` to your binary path and run it by `cronosd`
+{% endhint %}
 
 ### Step 2-2 Configure cronosd
 
@@ -93,15 +97,17 @@ Before kick-starting your node, we will have to configure your node so that it c
     OK!
     ```
 
-    ::: tip NOTE
+{% hint style="info" %}
+NOTE:\
 
-    *   For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
 
-        ```bash
-        function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
-        ```
+For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
 
-        :::
+```bash
+function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
+```
+{% endhint %}
+
 *   For network configuration, in `~/.cronos/config/config.toml`, validator nodes need to modify the configurations of `persistent_peers`, `create_empty_blocks_interval` and `timeout_commit`. For non-validator full nodes, only `persistent_peers` modification is required:
 
     ```bash
@@ -150,8 +156,6 @@ $ ulimit -Sn 4096
 ```
 
 {% hint style="info" %}
-details
-
 Example: /etc/systemd/system/cronosd.service created by script
 
 ```bash
@@ -196,8 +200,8 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
     $ ./cronosd status 2>&1 | jq '.SyncInfo.latest_block_height'
     ```
 
-## Cronos gravity bridge testnet faucet and explorer
+## Cronos Gravity Bridge Testnet faucet and explorer
 
 * You can lookup data within the `pioneereleventestnet_340-1` network by the [explorer](https://cronos.org/explorer/pioneer11);
 * To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/pioneer11-faucet) to obtain test CRO tokens for performing transactions on the **Cronos** gravity bridge testnet.
-  * Users can use the [faucet](https://cronos.org/pioneer11-faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](../metamask.md#using-metamask-on-cronos-gravity-birdge-testnet-pionner-11).
+  * Users can use the [faucet](https://cronos.org/pioneer11-faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by Using [metamask](../for-users/metamask.md).

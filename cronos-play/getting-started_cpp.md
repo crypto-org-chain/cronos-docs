@@ -44,37 +44,39 @@ The following build events are included in the project file:
 
 **Mac**
 
-1.  Clone the current repository
+1. Clone the current repository
 
-    ```
-    git clone https://github.com/cronos-labs/play-cpp-sdk.git
-    ```
-2. Unzip the archive file into `demo` folder
-3.  Copy the dynamic library to `/usr/local/lib`
+```bash
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
+```
+
+1. Unzip the archive file into `demo` folder
+2.  Copy the dynamic library to `/usr/local/lib`
 
     ```
     cd demo
     cp lib/libplay_cpp_sdk.dylib /usr/local/lib
     ```
-4.  Under `demo` folder and build the `demo` project
+3. Under `demo` folder and build the `demo` project
 
-    ```
-    make
-    ```
+```bash
+make
+```
 
 **Linux**
 
-1.  Clone the current repository
+1. Clone the current repository
 
-    ```
-    git clone https://github.com/cronos-labs/play-cpp-sdk.git
-    ```
-2. Unzip the archive file into `demo` folder
-3.  Under `demo` folder and build the `demo` project
+```bash
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
+```
 
-    ```
-    make
-    ```
+1. Unzip the archive file into `demo` folder
+2. Under `demo` folder and build the `demo` project
+
+```bash
+make
+```
 
 #### In any other c++ 14 (or newer) projects
 
@@ -96,7 +98,7 @@ tip We suggest:
 
 1. Include the following headers and use the namespaces in your source codes
 
-```
+```rust
 #include "include/defi-wallet-core-cpp/src/contract.rs.h" // erc20, erc721, erc1155 supports
 #include "include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
 #include "include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
@@ -113,7 +115,7 @@ using namespace com::crypto::game_sdk;
 
 Windows
 
-```
+```powershell
 lib\play_cpp_sdk.lib
 ```
 

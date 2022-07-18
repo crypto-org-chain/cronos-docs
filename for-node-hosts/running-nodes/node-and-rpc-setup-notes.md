@@ -53,8 +53,6 @@ where the blockchain data, keys will be stored at the folder `~/.cronos`
 
 ### Tendermint (Local access only)
 
-
-
 [https://docs.tendermint.com/master/rpc/#/](https://docs.tendermint.com/master/rpc/#/)
 
 Switch the servers to localhost in the dropdown and you can interact with the Swagger UI.
@@ -65,12 +63,12 @@ There are few clients our team has used before
 
 #### BloomRPC
 
-* https://github.com/uw-labs/bloomrpc
+* [https://github.com/uw-labs/bloomrpc](https://github.com/uw-labs/bloomrpc)
 * GUI client for GRPC services
 
 #### grpcurl
 
-* https://github.com/fullstorydev/grpcurl
+* [https://github.com/fullstorydev/grpcurl](https://github.com/fullstorydev/grpcurl)
 * Like curl, but for gRPC
 *   Install grpcurl (Mac)
 

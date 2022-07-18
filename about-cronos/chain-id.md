@@ -1,26 +1,32 @@
 ---
 meta:
-  - name: "title"
+  - name: title
     content: Cronos | Crypto.org EVM Chain | Chain ID and Address Format
-  - name: "description"
-    content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
-  - name: "og:title"
+  - name: description
+    content: >-
+      Find out more about Bech32 address, BIP-0173 address prefix and Chain ID
+      format in this documentation.
+  - name: og:title
     content: Cronos | Crypto.org EVM Chain | Chain ID and Address Format
-  - name: "og:type"
+  - name: og:type
     content: Website
-  - name: "og:description"
-    content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
-  - name: "og:image"
+  - name: og:description
+    content: >-
+      Find out more about Bech32 address, BIP-0173 address prefix and Chain ID
+      format in this documentation.
+  - name: og:image
     content: https://cronos.org/og-image.png
-  - name: "twitter:title"
+  - name: twitter:title
     content: Cronos | Crypto.org EVM Chain | Chain ID and Address Format
-  - name: "twitter:site"
-    content: "@cryptocom"
-  - name: "twitter:card"
+  - name: twitter:site
+    content: '@cryptocom'
+  - name: twitter:card
     content: summary_large_image
-  - name: "twitter:description"
-    content: Find out more about Bech32 address, BIP-0173 address prefix and Chain ID format in this documentation.
-  - name: "twitter:image"
+  - name: twitter:description
+    content: >-
+      Find out more about Bech32 address, BIP-0173 address prefix and Chain ID
+      format in this documentation.
+  - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/chain-details/chain-id.html
 ---
@@ -39,19 +45,19 @@ For example, our testnet Chain ID is `cronostestnet_338-1`.
 
 | Testnet |
 | ------- |
-| `tcrc`   |
+| `tcrc`  |
 
 Cronos uses the Bech32 address format wherever users must handle binary data. Bech32 encoding provides robust integrity checks on data and the human readable part(HRP) that provides contextual hints that can assist UI developers with providing informative error messages. Specifically, we have the following HRP prefix for different addresses types in the mainnet:
 
 |                    | Address bech32 Prefix |
 | ------------------ | --------------------- |
-| Account            | `tcrc`                 |
-| Validator Operator | `tcrcvaloper`          |
-| Consensus Nodes    | `tcrcvalcons`          |
+| Account            | `tcrc`                |
+| Validator Operator | `tcrcvaloper`         |
+| Consensus Nodes    | `tcrcvalcons`         |
 
-We can use the `keys show` command of `cronosd` with the flag `--bech <type> (acc|val|cons) ` to obtain the addresses and keys as mentioned above: for example,
+We can use the `keys show` command of `cronosd` with the flag `--bech <type> (acc|val|cons)` to obtain the addresses and keys as mentioned above: for example,
 
-```
+```bash
 $ cronosd keys show mykey --bech acc
 - name: mykey
   type: local

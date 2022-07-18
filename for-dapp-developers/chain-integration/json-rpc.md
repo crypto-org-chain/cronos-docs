@@ -4,14 +4,20 @@
 
 ### Pre-requisite Readings
 
-* [Ethereum JSON-RPC](https://eth.wiki/json-rpc/API) {prereq}
-* [Geth JSON-RPC APIs](https://geth.ethereum.org/docs/rpc/server) {prereq}
+* [Ethereum JSON-RPC](https://eth.wiki/json-rpc/API)
+* [Geth JSON-RPC APIs](https://geth.ethereum.org/docs/rpc/server)
 
 Below is a list of Ethereum type JSON-RPC Methods where users can curl via local node. While you can also surf to our swagger playground for a better understanding.
 
-* [Mainnet swagger playground](https://docs.cronos.org/swagger?network=mainnet)
-* [Testnet swagger playground](https://docs.cronos.org/swagger)
+{% tabs %}
+{% tab title="Mainnet" %}
+[Mainnet swagger playground](https://docs.cronos.org/swagger?network=mainnet)
+{% endtab %}
 
+{% tab title="Testnet" %}
+[Testnet swagger playground](https://docs.cronos.org/swagger)
+{% endtab %}
+{% endtabs %}
 
 ### JSON-RPC Methods
 
@@ -65,20 +71,20 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 {% hint style="info" %}
 Tip\
 \
-Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pending"`.&#x20;
+Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pending"`.
 {% endhint %}
 
 {% hint style="info" %}
 Tip\
 \
-While the examples below make use of local node [http://localhost:8545](http://localhost:8545), users may also use our public full node: [https://evm-t3.cronos.org:8545/ ](https://evm-t3.cronos.org:8545/)
+While the examples below make use of local node [http://localhost:8545](http://localhost:8545), users may also use our public full node: [https://evm-t3.cronos.org:8545/](https://evm-t3.cronos.org:8545/)
 {% endhint %}
 
 ## JSON-RPC namespaces
 
 ### Pre-requisite Readings
 
-* [Geth JSON-RPC Namespaces](https://geth.ethereum.org/docs/rpc/server) {prereq}
+* [Geth JSON-RPC Namespaces](https://geth.ethereum.org/docs/rpc/server)
 
 ### Ethereum Namespaces
 
