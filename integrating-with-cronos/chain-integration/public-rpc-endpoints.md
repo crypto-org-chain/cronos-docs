@@ -24,7 +24,7 @@ If this assumption is important in your application, please consider setting up 
   * [https://rest.cronos.org/](https://rest.cronos.org/)
 * **Cosmos gRPC Based**
   * [https://grpc.cronos.org/](http://grpc.cronos.org/)
-* **EVM HTTP JSON RPC**&#x20;
+* **EVM HTTP JSON RPC (Web3 compatible)**
   * [https://evm.cronos.org/](https://evm.cronos.org/)
 {% endtab %}
 
