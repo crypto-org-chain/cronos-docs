@@ -37,7 +37,7 @@
 ## FOR NODE HOSTS
 
 * [Running nodes](for-node-hosts/running-nodes/README.md)
-  * [Cronos Mainnet](for-node-hosts/running-nodes/cronos-mainnet.md)
+  * [Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet.md)
   * [Cronos Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/huygen.md)

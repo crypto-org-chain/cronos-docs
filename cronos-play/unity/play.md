@@ -18,7 +18,7 @@ This section showcase the Cronos play Gaming SDK integration with the Cronos cha
 
 {% tabs %}
 {% tab title="Mainnet" %}
-Network Name: **Cronos Mainnet**
+Network Name: **Cronos Mainnet Beta**
 
 * New RPC URL: **https://evm-dev.cronos.org/**
 * Chain ID: **25**

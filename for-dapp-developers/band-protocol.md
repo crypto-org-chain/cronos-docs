@@ -148,7 +148,7 @@ contract DemoOracleUSD {
 
 ### Contract Addresses
 
-| Network        | StdReference Contract Address                                                                                                                               |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cronos Mainnet | [`0xDA7a001b254CD22e46d3eAB04d937489c93174C3`](https://cronoscan.com/address/0xDA7a001b254CD22e46d3eAB04d937489c93174C3) |
-| Cronos Testnet | [`0xD0b2234eB9431e850a814bCdcBCB18C1093F986B`](https://testnet.cronoscan.com/address/0xD0b2234eB9431e850a814bCdcBCB18C1093F986B) |
+| Network             | StdReference Contract Address                                                                                                                            |
+| --------------      | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cronos Mainnet Beta | [`0xDA7a001b254CD22e46d3eAB04d937489c93174C3`](https://cronoscan.com/address/0xDA7a001b254CD22e46d3eAB04d937489c93174C3)                                 |
+| Cronos Testnet      | [`0xD0b2234eB9431e850a814bCdcBCB18C1093F986B`](https://testnet.cronoscan.com/address/0xD0b2234eB9431e850a814bCdcBCB18C1093F986B)                         |

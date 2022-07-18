@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 ---
 
-# Cronos Mainnet
+# Cronos Mainnet Beta
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet Beta `cronosmainnet_25-1`.
 
@@ -364,6 +364,6 @@ Example: Restart `cronosd start` with QuickSync
 
 ***
 
-## Cronos mainnet explorer: CronoScan
+## Cronos Mainnet Beta explorer: Cronoscan
 
 * You can lookup data within the `cronosmainnet_25-1` network by the [explorer](https://cronoscan.com/);
