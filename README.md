@@ -35,43 +35,43 @@ coverY: 0
 
 # Getting Started
 
-Thanks for your interest in Cronos Chain. In this technical documentation, we cover e.g.:
+Thanks for your interest in Cronos. In this technical documentation, we cover the following:
 
 * For users, wallet setup and bridging solutions
-* For DApp devs, chain integration, smart contract deployment and Cronos Play modules
+* For DApp developers, chain integration, smart contract deployment and Cronos Play modules
 * For node hosts, node setup instructions and our all-in-one command-line interface `cronosd`
 
-### What is Cronos Chain?
+### What is Cronos?
 
-Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. An open-source and permission-less Layer 1 chain, Cronos aims to massively scale the DeFi, GameFi, and overall Web3 user community by providing builders with the ability to instantly port apps and crypto assets from other chains while benefiting from low transaction fees, high throughput, and fast finality.
+Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. It is an open-source and permission-less layer-1 network that aims to massively scale the DeFi, GameFi, and overall Web3 user community. Cronos does this by providing builders with the ability to instantly port DApps and crypto assets from other chains with low transaction fees, high throughput, and fast finality.
 
 ### For Users
 
-* [Setup your Metamask](for-users/metamask.md)
-* [Bridge from App and Exchange](for-users/bridge/app\_n\_ex/)
+* [Connect your MetaMask wallet](for-users/metamask.md)
+* [Bridging from the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/)
 * [Crypto.org - Cronos Bridge](for-users/bridge/other\_chain/)&#x20;
 * [Gravity Bridge (Testnet)](for-users/bridge/gb-testnet.md)
 
-### For DApp Devs
+### For DApp Developers
 
 * [Integrating with Cronos](for-dapp-developers/chain-integration/)
-* [Deploy Smart contracts on Cronos](for-dapp-developers/cronos-smart-contract/)
-* [Reference useful projects on Cronos](for-dapp-developers/useful-projects-on-cronos.md)
+* [Deploying Smart contracts on Cronos](for-dapp-developers/cronos-smart-contract/)
+* [Useful projects on Cronos to reference](for-dapp-developers/useful-projects-on-cronos.md)
 * [Cronos Play](cronos-play/cronos-play.md)
 
 ### For Node hosts
 
 {% tabs %}
 {% tab title="Cronos Mainnet Beta" %}
-[Join Cronos Mainnet Beta by running a Full node](for-node-hosts/running-nodes/cronos-mainnet.md)
+[Join Cronos Mainnet Beta by running a full node](for-node-hosts/running-nodes/cronos-mainnet.md)
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-[Join Cronos Testnet by running a Full node or validator:](for-node-hosts/running-nodes/cronos-testnet.md)
+[Join Cronos Testnet by running a full node or validator](for-node-hosts/running-nodes/cronos-testnet.md)
 {% endtab %}
 
 {% tab title="Devnet" %}
-[Build latest development version](for-node-hosts/running-nodes/local-devnet.md)
+[Build the latest development version](for-node-hosts/running-nodes/local-devnet.md)
 {% endtab %}
 
 {% tab title="Gravity Bridge" %}
