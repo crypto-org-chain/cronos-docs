@@ -54,10 +54,14 @@
 * [Unreal Engine Plugin](cronos-play/getting-started\_unreal.md)
 * [Cronos Play C++ SDK](cronos-play/getting-started\_cpp.md)
 
-## CHAIN INTEGRATION
+## INTEGRATING WITH CRONOS
 
-* [Chain Integration](chain-integration/chain-integration/README.md)
-  * [Token Contract Addresses](chain-integration/chain-integration/token-contract-addresses.md)
+* [Cronos Integration](integrating-with-cronos/chain-integration/README.md)
+  * [Public RPC endpoints](integrating-with-cronos/chain-integration/public-rpc-endpoints.md)
+  * [JSON-RPC](integrating-with-cronos/chain-integration/json-rpc.md)
+  * [Block Explorer](integrating-with-cronos/chain-integration/block-explorer.md)
+  * [Cronoscan](https://cronoscan.com/)
+  * [Token Contract Addresses](integrating-with-cronos/chain-integration/token-contract-addresses.md)
 
 ## ABOUT CRONOS
 
@@ -70,7 +74,6 @@
   * [module\_mint](about-cronos/module\_overview/module\_mint.md)
   * [module\_slashing](about-cronos/module\_overview/module\_slashing.md)
   * [module\_staking](about-cronos/module\_overview/module\_staking.md)
-* [The Proposal Process](about-cronos/govprocess.md)
 * [Chain Details](about-cronos/chain-details/README.md)
   * [List of parameters](about-cronos/chain-details/parameters.md)
   * [Technical glossary](about-cronos/chain-details/technical-glossary.md)
