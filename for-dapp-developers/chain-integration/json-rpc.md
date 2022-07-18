@@ -11,11 +11,11 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 
 {% tabs %}
 {% tab title="Mainnet" %}
-[Mainnet swagger playground](https://docs.cronos.org/swagger?network=mainnet)
+[Mainnet swagger playground](https://cronos.org/docs/swagger?network=mainnet)
 {% endtab %}
 
 {% tab title="Testnet" %}
-[Testnet swagger playground](https://docs.cronos.org/swagger)
+[Testnet swagger playground](https://cronos.org/docs/swagger?network=testnet)
 {% endtab %}
 {% endtabs %}
 
@@ -23,39 +23,39 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 
 | Method                                                                              | Namespace | Implemented | Public |
 | ----------------------------------------------------------------------------------- | --------- | ----------- | ------ |
-| [`web3_clientVersion`](./#web3-clientversion)                                       | Web3      | ✔           | ✔      |
-| [`web3_sha3`](./#web3-sha3)                                                         | Web3      | ✔           | ✔      |
-| [`net_version`](./#net-version)                                                     | Net       | ✔           | ✔      |
-| [`net_peerCount`](./#net-peerCount)                                                 | Net       | ✔           | ✔      |
-| [`net_listening`](./#net-listening)                                                 | Net       | ✔           | ✔      |
-| [`eth_protocolVersion`](./#eth-protocolversion)                                     | Eth       | ✔           | ✔      |
-| [`eth_syncing`](./#eth-syncing)                                                     | Eth       | ✔           | ✔      |
-| [`eth_gasPrice`](./#eth-gasprice)                                                   | Eth       | ✔           | ✔      |
-| [`eth_accounts`](./#eth-accounts)                                                   | Eth       | ✔           | ✔      |
-| [`eth_blockNumber`](./#eth-blocknumber)                                             | Eth       | ✔           | ✔      |
-| [`eth_getBalance`](./#eth-getbalance)                                               | Eth       | ✔           | ✔      |
-| [`eth_getStorageAt`](./#eth-getstorageat)                                           | Eth       | ✔           | ✔      |
-| [`eth_getTransactionCount`](./#eth-gettransactioncount)                             | Eth       | ✔           | ✔      |
-| [`eth_getBlockTransactionCountByNumber`](./#eth-getblocktransactioncountbynumber)   | Eth       | ✔           | ✔      |
-| [`eth_getBlockTransactionCountByHash`](./#eth-getblocktransactioncountbyhash)       | Eth       | ✔           | ✔      |
-| [`eth_getCode`](./#eth-getcode)                                                     | Eth       | ✔           | ✔      |
-| [`eth_sign`](./#eth-sign)                                                           | Eth       | ✔           | ✔      |
-| [`eth_sendTransaction`](./#eth-sendtransaction)                                     | Eth       | ✔           | ✔      |
-| [`eth_sendRawTransaction`](./#eth-sendrawtransaction)                               | Eth       | ✔           | ✔      |
-| [`eth_call`](./#eth-call)                                                           | Eth       | ✔           | ✔      |
-| [`eth_estimateGas`](./#eth-estimategas)                                             | Eth       | ✔           | ✔      |
-| [`eth_getBlockByNumber`](./#eth-getblockbynumber)                                   | Eth       | ✔           | ✔      |
-| [`eth_getBlockByHash`](./#eth-getblockbyhash)                                       | Eth       | ✔           | ✔      |
-| [`eth_getTransactionByHash`](./#eth-gettransactionbyhash)                           | Eth       | ✔           | ✔      |
-| [`eth_getTransactionByBlockHashAndIndex`](./#eth-gettransactionbyblockhashandindex) | Eth       | ✔           | ✔      |
-| [`eth_getTransactionReceipt`](./#eth-gettransactionreceipt)                         | Eth       | ✔           | ✔      |
-| [`eth_newFilter`](./#eth-newfilter)                                                 | Eth       | ✔           | ✔      |
-| [`eth_newBlockFilter`](./#eth-newblockfilter)                                       | Eth       | ✔           | ✔      |
-| [`eth_newPendingTransactionFilter`](./#eth-newpendingtransactionfilter)             | Eth       | ✔           | ✔      |
-| [`eth_uninstallFilter`](./#eth-uninstallfilter)                                     | Eth       | ✔           | ✔      |
-| [`eth_getFilterChanges`](./#eth-getfilterchanges)                                   | Eth       | ✔           | ✔      |
-| [`eth_getFilterLogs`](./#eth-getfilterlogs)                                         | Eth       | ✔           | ✔      |
-| [`eth_getLogs`](./#eth-getlogs)                                                     | Eth       | ✔           | ✔      |
+| `web3_clientVersion`                                                                | Web3      | ✔           | ✔      |
+| `web3_sha3`                                                                         | Web3      | ✔           | ✔      |
+| `net_version`                                                                       | Net       | ✔           | ✔      |
+| `net_peerCount`                                                                     | Net       | ✔           | ✔      |
+| `net_listening`                                                                     | Net       | ✔           | ✔      |
+| `eth_protocolVersion`                                                               | Eth       | ✔           | ✔      |
+| `eth_syncing`                                                                       | Eth       | ✔           | ✔      |
+| `eth_gasPrice`                                                                      | Eth       | ✔           | ✔      |
+| `eth_accounts`                                                                      | Eth       | ✔           | ✔      |
+| `eth_blockNumber`                                                                   | Eth       | ✔           | ✔      |
+| `eth_getBalance`                                                                    | Eth       | ✔           | ✔      |
+| `eth_getStorageAt`                                                                  | Eth       | ✔           | ✔      |
+| `eth_getTransactionCount`                                                           | Eth       | ✔           | ✔      |
+| `eth_getBlockTransactionCountByNumber`                                              | Eth       | ✔           | ✔      |
+| `eth_getBlockTransactionCountByHash`                                                | Eth       | ✔           | ✔      |
+| `eth_getCode`                                                                       | Eth       | ✔           | ✔      |
+| `eth_sign`                                                                          | Eth       | ✔           | ✔      |
+| `eth_sendTransaction`                                                               | Eth       | ✔           | ✔      |
+| `eth_sendRawTransaction`                                                            | Eth       | ✔           | ✔      |
+| `eth_call`                                                                          | Eth       | ✔           | ✔      |
+| `eth_estimateGas`                                                                   | Eth       | ✔           | ✔      |
+| `eth_getBlockByNumber`                                                              | Eth       | ✔           | ✔      |
+| `eth_getBlockByHash`                                                                | Eth       | ✔           | ✔      |
+| `eth_getTransactionByHash`                                                          | Eth       | ✔           | ✔      |
+| `eth_getTransactionByBlockHashAndIndex`                                             | Eth       | ✔           | ✔      |
+| `eth_getTransactionReceipt`                                                         | Eth       | ✔           | ✔      |
+| `eth_newFilter`                                                                     | Eth       | ✔           | ✔      |
+| `eth_newBlockFilter`                                                                | Eth       | ✔           | ✔      |
+| `eth_newPendingTransactionFilter`                                                   | Eth       | ✔           | ✔      |
+| `eth_uninstallFilter`                                                               | Eth       | ✔           | ✔      |
+| `eth_getFilterChanges`                                                              | Eth       | ✔           | ✔      |
+| `eth_getFilterLogs`                                                                 | Eth       | ✔           | ✔      |
+| `eth_getLogs`                                                                       | Eth       | ✔           | ✔      |
 | `eth_getTransactionbyBlockNumberAndIndex`                                           | Eth       |             | ✔      |
 | `eth_submitHashrate`                                                                | Eth       |             |        |
 | `eth_getCompilers`                                                                  | Eth       |             |        |
@@ -63,10 +63,10 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 | `eth_compileSolidity`                                                               | Eth       |             |        |
 | `eth_compileSerpent`                                                                | Eth       |             |        |
 | `eth_signTransaction`                                                               | Eth       |             |        |
-| [`eth_coinbase`](./#eth-coinbase)                                                   | Eth       | ✔           |        |
-| [`eth_getProof`](./#eth-getProof)                                                   | Eth       | ✔           |        |
-| [`eth_subscribe`](./#eth-subscribe)                                                 | Websocket | ✔           |        |
-| [`eth_unsubscribe`](./#eth-unsubscribe)                                             | Websocket | ✔           |        |
+| `eth_coinbase`                                                                      | Eth       | ✔           |        |
+| `eth_getProof`                                                                      | Eth       | ✔           |        |
+| `eth_subscribe`                                                                     | Websocket | ✔           |        |
+| `eth_unsubscribe`                                                                   | Websocket | ✔           |        |
 
 {% hint style="info" %}
 Tip\

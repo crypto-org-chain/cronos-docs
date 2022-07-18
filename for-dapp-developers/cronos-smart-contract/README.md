@@ -121,7 +121,11 @@ npm run deploy-contract-cronos
 
 ### Step 8. Obtain Contract address from console and input to Metamask
 
-Correct balance will be shown on Metamask page ![](../assets/cronos-smart-contract/truffle\_deploy\_contract\_address.png) ![](../assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](../assets/cronos-smart-contract/metamask\_add\_token\_success.png)
+Correct balance will be shown on Metamask page 
+
+![](../assets/cronos-smart-contract/truffle\_deploy\_contract\_address.png) 
+
+![](../assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](../assets/cronos-smart-contract/metamask\_add\_token\_success.png)
 
 ## Hardhat: Deploy ERC20 Contract
 

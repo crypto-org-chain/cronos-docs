@@ -41,10 +41,11 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
 *   Hit the my account button in the top right corner, under **"Settings"**, select **"Networks"**
 
-    <img src="assets/1.png" alt="" data-size="original">
+![](assets/1.png)
+
 *   In the **"Networks"** page, click "Add Network":
 
-    <img src="assets/2.png" alt="" data-size="original">
+![](assets/2.png)
 
 {% tabs %}
 {% tab title="Mainnet Beta" %}
@@ -72,7 +73,8 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 {% endtab %}
 {% endtabs %}
 
-* ![](assets/3.png)
+![](assets/3.png)
+
 * After saving the network config, we should be able to see the token in your address!
 
 ## Importing private key to MetaMask
