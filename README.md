@@ -35,39 +35,47 @@ coverY: 0
 
 # Getting Started
 
-Thanks for your interest in Cronos Chain. In this technical documentation, we have covered node setup instructions, our all-in-one command-line interface `cronosd`, and different SDK modules we utilized in the Cronos Chain.
+Thanks for your interest in Cronos Chain. In this technical documentation, we cover e.g.:
+
+* For users, wallet setup and bridging solutions
+* For DApp devs, chain integration, smart contract deployment and Cronos Play modules
+* For node hosts, node setup instructions and our all-in-one command-line interface `cronosd`
 
 ### What is Cronos Chain?
 
 Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. An open-source and permission-less Layer 1 chain, Cronos aims to massively scale the DeFi, GameFi, and overall Web3 user community by providing builders with the ability to instantly port apps and crypto assets from other chains while benefiting from low transaction fees, high throughput, and fast finality.
 
-
-
 ### For Users
 
-*   [Setup your Metamask](for-users/metamask.md):&#x20;
+* [Setup your Metamask](for-users/metamask.md)
+* [Bridge from App and Exchange](for-users/bridge/app\_n\_ex/)
+* [Crypto.org - Cronos Bridge](for-users/bridge/other\_chain/)&#x20;
+* [Gravity Bridge (Testnet)](for-users/bridge/gb-testnet.md)
 
-    Setup Metamask and connect to Cronos Mainnet Beta.
+### For DApp Devs
+
+* [Integrating with Cronos](for-dapp-developers/chain-integration/)
+* [Deploy Smart contracts on Cronos](for-dapp-developers/cronos-smart-contract/)
+* [Reference useful projects on Cronos](for-dapp-developers/useful-projects-on-cronos.md)
+* [Cronos Play](cronos-play/cronos-play.md)
 
 ### For Node hosts
 
 {% tabs %}
 {% tab title="Cronos Mainnet Beta" %}
-*   [Join Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet.md):&#x20;
-
-    Try running Full Node connected Cronos Mainnet Beta.
+[Join Cronos Mainnet Beta by running a Full node](for-node-hosts/running-nodes/cronos-mainnet.md)
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-*   [Join Cronos Testnet:](for-node-hosts/running-nodes/cronos-testnet.md)&#x20;
-
-    Try running Full Nodes or Validators connected to our Cronos Testnet.
+[Join Cronos Testnet by running a Full node or validator:](for-node-hosts/running-nodes/cronos-testnet.md)
 {% endtab %}
 
 {% tab title="Devnet" %}
-*   [Build latest development version](for-node-hosts/running-nodes/local-devnet.md):&#x20;
+[Build latest development version](for-node-hosts/running-nodes/local-devnet.md)
+{% endtab %}
 
-    Try running the latest development network (_Devnet_).
+{% tab title="Gravity Bridge" %}
+[Run a node for the Gravity Bridge Testnet](for-node-hosts/cronos-gbtestnet.md)
 {% endtab %}
 {% endtabs %}
 
