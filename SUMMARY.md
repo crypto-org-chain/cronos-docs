@@ -17,6 +17,7 @@
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
     * [Crypto.com DeFi Wallet](for-users/bridge/other\_chain/defiwallet.md)
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
+    * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
   * [FAQ](for-users/bridge/faq.md)
 

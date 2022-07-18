@@ -57,7 +57,9 @@ For the Pioneer11 testnet, Go to settings > Networks > Add network Add the follo
 * Currency symbol: **TCRO**
 * Block Explorer URL (Optional): **https://cronos.org/explorer/pioneer11**
 
-![centered image](assets/testnetworks.png) ![centered image](assets/metamaskpioneer11.png)
+![centered image](assets/testnetworks.png) 
+
+![centered image](assets/metamaskpioneer11.png)
 
 #### 2. Select Network and Token
 
@@ -104,7 +106,9 @@ Once all transfer settings have been confirmed, click "Transfer Assets", a trans
 
 Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens.
 
-![centered image](assets/confirmpioneer.png) ![centered image](assets/confirmmetamask.png)
+![centered image](assets/confirmpioneer.png) 
+
+![centered image](assets/confirmmetamask.png)
 
 #### 5. Bridging assets
 

@@ -10,13 +10,17 @@ Crypto.com DeFi Wallet has integrated with the Cronos Bridge and has provided a 
 
 You can access the Cronos Bridge either on the DeFi Wallet homepage or directly in your CRO balance page
 
-![centered image](../assets/defiwallet1-1.png) ![centered image](../assets/defiwallet1-2.png)
+![centered image](../assets/defiwallet1-1.png) 
+
+![centered image](../assets/defiwallet1-2.png)
 
 **Step 2**: Select “From” Crypto.org Chain as the origination chain and “To” Cronos as the destination chain
 
 Only the `Crypto.org Chain <=> Cronos bridge` will be available on Day 1. The `Ethereum <=> Cronos` bridge will not be available till the Cronos Gravity Bridge goes live. As a user of the Crypto.com DeFi wallet, you will automatically have a Crypto.org Chain wallet address and Cronos chain wallet address created for you. These wallet addresses will automatically be detected by the Cronos bridge.
 
-![centered image](../assets/defiwallet2-1.png) ![centered image](../assets/defiwallet2-2.png)
+![centered image](../assets/defiwallet2-1.png)
+
+![centered image](../assets/defiwallet2-2.png)
 
 **Step 3**: Enter the amount of asset you want to transfer
 

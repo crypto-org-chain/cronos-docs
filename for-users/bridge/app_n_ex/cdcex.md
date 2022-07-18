@@ -10,7 +10,7 @@ Supported assets on Day 1: CRO, USDT, USDC, DAI, ETH, WBTC
 
 **Step 1**: Select the asset that you want to bridge over in your spot wallet and click withdraw
 
-&#x20;![centered image](../assets/cdcex1.png)
+![centered image](../assets/cdcex1.png)
 
 **Step 2**: Select “External Wallet Address”
 
@@ -20,7 +20,9 @@ Supported assets on Day 1: CRO, USDT, USDC, DAI, ETH, WBTC
 
 ![centered image](<../assets/cdcex3 (1) (1) (2).png>)
 
-**Step 4**: Select the Cronos Network, add your Cronos wallet address and save it ![centered image](../assets/cdcex4.png)
+**Step 4**: Select the Cronos Network, add your Cronos wallet address and save it 
+
+![centered image](../assets/cdcex4.png)
 
 **Step 5**: Select your Cronos wallet address that you have whitelisted and input the withdrawal amount
 
