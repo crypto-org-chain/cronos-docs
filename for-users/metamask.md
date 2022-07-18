@@ -81,7 +81,7 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
 Alternatively, We can export the private key by using the `unsafe-export-eth-key` command with `cronosd`, for example:
 
-```
+```bash
 cronosd keys unsafe-export-eth-key mykey --keyring-backend test
 ```
 
@@ -101,7 +101,7 @@ Once it has been connect, you should see the balance and may start performing tr
 
 Note that the address format in Cronos is in there form of bech32 `crc...` , we can use `cronosd debug addr` to convert an address between hex and bech32, for example:
 
-```
+```bash
 $ cronosd keys list --keyring-backend test
   - name: mykey
     type: local

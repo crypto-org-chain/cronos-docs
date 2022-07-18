@@ -143,7 +143,7 @@ Once we finish with the configuration, we are ready to start the chain: in the r
 
 ### Option 1. Using `pystarport`
 
-```
+```bash
 $ pystarport serve --config ./scripts/cronos-devnet.yaml
 ```
 
@@ -185,7 +185,7 @@ As in the last section, pre-created Hierarchical Deterministic (HD) mnemonic wit
 
 * Firstly, restore the key name as `signer2`:
 
-```
+```bash
 $ cronosd keys add signer2 --recover --keyring-backend test
 ```
 
@@ -205,7 +205,7 @@ cruel install century disease tired glass lesson mushroom donor usual uncover fl
 
 You can, for example, check the account balance by
 
-```
+```bash
 cronosd q bank balances crc1drs00mg2wfn26vtgsfqreq0m3jcfqf564gwkkk -o json | jq
 ```
 
@@ -232,7 +232,7 @@ We can see that there is `30000000000000000000000` basetcro in this address.
 
 *   We are now ready to transfer token between different addresses; we can create another address with the key name `Bob`:
 
-    ```
+    ```bash
     $ cronosd keys add Bob --keyring-backend test
     ```
 
@@ -250,13 +250,13 @@ We can see that there is `30000000000000000000000` basetcro in this address.
 
 * Now we can transfer tokens to `Bob`, for example you can send `1basetcro` to Bob's address by
 
-```
+```bash
   $ cronosd tx bank send signer1 crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt 1basetcro --keyring-backend test --chain-id cronos_777-1
 ```
 
 *   Lastly, check balance of Bob's address:
 
-    ```
+    ```bash
     $ cronosd query bank balances crc1vqgk86fzr64xsyeemlxnxxeawcw0zfcx3dwgjt
     ```
 
@@ -277,7 +277,7 @@ Congratulations! You've successfully transferred tokens to Bob.
 
 Firstly, we can check the details of the current validator set by the query command of cronosd, for example:
 
-```
+```bash
 $ cronosd query staking validators -o json | jq
 ```
 

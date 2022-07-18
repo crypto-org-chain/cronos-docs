@@ -89,7 +89,7 @@ $ cronosd tx staking redelegate [src-validator-addr] [dst-validator-addr] [amoun
 
 We will be covering most of the commonly used queries here. Meanwhile, you can use
 
-```
+```bash
 cronosd query staking -h
 ```
 

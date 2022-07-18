@@ -69,7 +69,7 @@ To specify the cronosd config and data storage directory; you can add a global f
 
 We can view the default config setting by using `cronosd config` command:
 
-```
+```bash
 $ cronosd config
 {
 	"chain-id": "",
@@ -84,7 +84,7 @@ We can make changes to the default settings upon our choices, so it allows users
 
 For example, the `chain-id` can be changed to `cronostestnet_338-1` from a blank name by
 
-```
+```bash
 $ cronosd config "chain-id" cronostestnet_338-1
 $ cronosd config
 {
@@ -100,7 +100,7 @@ Other values can be changed in the same way.
 
 Alternatively, we can directly make the changes to the config values in one place at client.toml. It is under the path of `.ethermint/config/client.toml` in the folder where we installed ethermint:
 
-```
+```bash
 ############################################################################
 ###                         Client Configuration                         ###
 ############################################################################
@@ -119,7 +119,7 @@ broadcast-mode = "sync"
 
 After the necessary changes are made in the `client.toml`, then save. For example, if we directly change the `chain-id` from `ethermint0` to ethermint-test1, and output to number, it would change instantly as shown below.
 
-```
+```bash
 $ cronosd config
 {
 	"chain-id": "ethermint-test1",
@@ -345,7 +345,7 @@ type: secp256k1
 
 Interacting with a node requires a public-private key pair. Keyring is the place holding the keys. The keys can be stored in different locations with specified backend type.
 
-```
+```bash
 $ cronosd keys [subcommands] --keyring-backend [backend type]
 ```
 

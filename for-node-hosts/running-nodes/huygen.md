@@ -7,7 +7,7 @@ The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block heig
 
 You might check the current block height by the [Cronoscan explorer](https://cronoscan.com/) or using
 
-```
+```bash
 curl -s https://rpc-cronos.crypto.org:443/commit | jq "{height: .result.signed_header.header.height}"
 ```
 {% endhint %}
@@ -16,7 +16,7 @@ curl -s https://rpc-cronos.crypto.org:443/commit | jq "{height: .result.signed_h
 
 At the point of the proposed upgrade, user will see the error message on the `cronosd` similar to the below:
 
-```
+```bash
 ERR UPGRADE "v0.7.0" NEEDED at height: 2693800: {\"binaries\":{...."}}
 ```
 
@@ -109,7 +109,7 @@ We are ready to start the node join the network again with the new binary:
 {% hint style="info" %}
 Remark: Once the `cronosd` is started we would see the message
 
-```
+```bash
 applying upgrade "v0.7.0" at height: 2693800"
 ```
 
