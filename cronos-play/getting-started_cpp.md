@@ -9,9 +9,10 @@
 * C++ 14 or newer
 * Optional:
   * GNU make
+  * GNU make for mac and linux, ninja for windows
   * Visual Studio 2019 or newer for windows
 
-## Pre-build Download
+## Pre-built Download
 
 Please download the archive file based on your OS in the [release page](https://github.com/cronos-labs/play-cpp-sdk/releases), where:
 
@@ -19,155 +20,111 @@ Please download the archive file based on your OS in the [release page](https://
 * macOS 10.15 or newer: `play_cpp_sdk_Darwin_x86_64.tar.gz`;
 * Ubuntu 20.04 or newer: `play_cpp_sdk_Linux_x86_64.tar.gz`.
 
-### Setup
+### Setup a demo project
 
-#### In a demo Visual C++ project
+#### Windows
 
-**Windows**
+**Visual Studio Project**
 
-1.  Clone the following repository
+Start with a C++ project with `.sln` and `.vcxproj` files:
 
-```bash
-git clone https://github.com/cronos-labs/play-cpp-sdk.git
-```
+1.  Clone the current repository
 
-2. Unzip the archive file into `demo` folder
+    ```
+    git clone https://github.com/crypto-com/play-cpp-sdk.git
+    ```
+2. Unzip the archive file into `demo` folder, and replace the original `sdk` folder
 3. Open `demo.sln` which includes two projects: `demo` (dynamic build) and `demostatic` (static build). If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to v143.
 4. Select `Release` profile.
 5. Right click `demo` or `demostatic` project, click `Build` or `Rebuild` to build the project
 
-**Build Events**
+**CMake Project**
 
-The following build events are included in the project file:
+Build modern, cross-platform C++ apps that don't depend on `.sln` or `.vcxproj` files:
 
-* Pre-Build event (`demo` and `demostatic`): `call pre_build.bat`
-* Post-Build event (`demo`): `copy $(ProjectDir)lib\play_cpp_sdk.dll $(TargetDir)`
+1. Open Visual Studio, then open a local folder in welcome window (or click `File` > `Open` > `Folder...` in the menu), locate the `demo` folder and open it
+2. Select configuration `x64-Release` in the tool bar
+3. Click `Build` > `Build All` or `Rebuild All` to build the project
 
-**Mac**
+#### Mac
 
-1. Clone the current repository
+1.  Clone the current repository
 
-```bash
-git clone https://github.com/cronos-labs/play-cpp-sdk.git
-```
+    ```
+    git clone https://github.com/crypto-com/play-cpp-sdk.git
+    ```
+2. Unzip the archive file into `demo` folder, and replace the original `sdk` folder
+3.  Under `demo` folder and build the `demo` project
 
-1. Unzip the archive file into `demo` folder
-2.  Copy the dynamic library to `/usr/local/lib`
+    ```
+    make
+    ```
 
-```bash
-cd demo
-cp lib/libplay_cpp_sdk.dylib /usr/local/lib
-```
+#### Linux
 
-3. Under `demo` folder and build the `demo` project
+1.  Clone the current repository
 
-```bash
-make
-```
+    ```
+    git clone https://github.com/crypto-com/play-cpp-sdk.git
+    ```
+2. Unzip the archive file into `demo` folder, and replace the original `sdk` folder
+3.  Under `demo` folder and build the `demo` project
 
-**Linux**
+    ```
+    make
+    ```
 
-1. Clone the current repository
+### Setup a c++ 14 (or newer) project
 
-```bash
-git clone https://github.com/cronos-labs/play-cpp-sdk.git
-```
+1.  Unzip the archive file into the root folder of your project, you should see a folder named `sdk` and its subdirectories/files.
 
-1. Unzip the archive file into `demo` folder
-2. Under `demo` folder and build the `demo` project
+    ```
+     - sdk
+       - CMakeLists.txt
+       - include: c++ source files and header files
+       - lib: static and dynamic libraries
+       - CHANGELOG.md
+       - LICENSE
+    ```
+2.  Include the following headers and use the namespaces in your source codes based on your need
 
-```bash
-make
-```
+    ```
+    #include "sdk/include/defi-wallet-core-cpp/src/contract.rs.h" // erc20, erc721, erc1155 supports
+    #include "sdk/include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
+    #include "sdk/include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
+    #include "sdk/include/defi-wallet-core-cpp/src/uint.rs.h" // uint256 type support
+    #include "sdk/include/extra-cpp-bindings/src/lib.rs.h" // etherscan/cronoscan, crypto.com pay, wallet connect support
+    #include "sdk/include/rust/cxx.h" // the important data types, e.g., rust::String, rust::str, etc
 
-#### In any other c++ 14 (or newer) projects
+    using namespace rust;
+    using namespace org::defi_wallet_core;
+    using namespace com::crypto::game_sdk;
+    ```
+3. Link the `play_cpp_sdk` static or dynamic library, `cxxbridge1` static library, and sources (\*.cc) into your build system (Visual Studio solution, CMake or Makefile). For more details, check out [Cronos Play Docs](https://github.com/crypto-org-chain/cronos-play-docs).
 
-1. Unzip the archive file into the root folder of your project, you should see the following folders and files.
-
-* `include`: c++ source files and header files
-* `lib`: static and dynamic libraries
-* `CHANGELOG.md`
-* `LICENSE`
-
-{% hint style="info" %}
-tip We suggest:
-
-* In case of same name collision, we suggest you unzip the archive in a temporary folder and review them first.
-* Review the folder or file names under `include` and `lib` folder to see if there are files that have same names as in your project, rename those files in your project to avoid collision.
-* Finally copy `include` and `lib` folders into your project.
-* We will support CMAKE and provide you a better integration in future release.&#x20;
-{% endhint %}
-
-1. Include the following headers and use the namespaces in your source codes
-
-```rust
-#include "include/defi-wallet-core-cpp/src/contract.rs.h" // erc20, erc721, erc1155 supports
-#include "include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
-#include "include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
-#include "include/defi-wallet-core-cpp/src/uint.rs.h" // uint256 type support
-#include "include/extra-cpp-bindings/src/lib.rs.h" // etherscan/cronoscan, crypto.com pay, wallet connect support
-#include "include/rust/cxx.h" // the important data types, e.g., rust::String, rust::str, etc
-
-using namespace rust;
-using namespace org::defi_wallet_core;
-using namespace com::crypto::game_sdk;
-```
-
-1. Link `play_cpp_sdk` static library in your build flow (check `demo/Makefile` for more details)
-
-Windows
-
-```powershell
-lib\play_cpp_sdk.lib
-```
-
-Mac or Linux
-
-```bash
-lib/libplay_cpp_sdk.a
-```
-
-1. Or link `play_cpp_sdk` dynamic library and `cxxbridge1` static library in your build flow (check `demo/Makefile` for more details)
-
-Windows
-
-```powershell
-lib\play_cpp_sdk.dll.lib
-lib\libcxxbridge1.a
-```
-
-Mac or Linux
-
-```bash
-lib/libplay_cpp_sdk.dylib
-lib\libcxxbridge1.a
-```
-
-* Linux dynamic build is under testing.
-
-### Build libraries and bindings from scratch
+## Build libraries and bindings from scratch
 
 If the Pre-built release does not support your platform, you can build the binaries and bindings on your own.
 
-#### Windows
+### Windows
 
 1. Run `windows_build.bat` in x64 Native Tools Command Prompt for VS 2019. It will clone necessary submodules, build `play-cpp-sdk` crate, finally setup and build the demo project.
 2. Clean `~/.cargo/git/checkouts` if cxx fails to build, then run `windows_build.bat` again.
-3. Run `windows_install.bat`, libraries and bindings will be copied into a new created folder: `build`
+3. Run `windows_install.bat`, libraries and bindings will be copied into a new created folder: `install`
 
 #### Notes about Visual Studio 2022
 
 1. Open `demo.sln`. If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to `v143` before running `windows_build.bat`
 
-#### Mac
+### Mac
 
-1. Run `make build_cpp` or `make cppx86_64`
-2. Run `make install`, libraries and bindings will be copied into a new created folder: `build`
+1. Run `make`
+2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
 #### Linux
 
-1. Run `make build_cpp`
-2. Run `make install`, libraries and bindings will be copied into a new created folder: `build`
+1. Run `make`
+2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
 ### Common functions
 
