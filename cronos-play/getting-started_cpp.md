@@ -31,7 +31,7 @@ Start with a C++ project with `.sln` and `.vcxproj` files:
 * Clone the current repository
 
 ```bash
-git clone https://github.com/crypto-labs/play-cpp-sdk.git
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
 ```
 
 * Unzip the archive file into `demo` folder, and replace the original `sdk` folder
