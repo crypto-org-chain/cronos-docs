@@ -204,4 +204,4 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 
 * You can lookup data within the `pioneereleventestnet_340-1` network by the [explorer](https://cronos.org/explorer/pioneer11);
 * To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/pioneer11-faucet) to obtain test CRO tokens for performing transactions on the **Cronos** gravity bridge testnet.
-  * Users can use the [faucet](https://cronos.org/pioneer11-faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by Using [metamask](../for-users/metamask.md).
+  * Users can use the [faucet](https://cronos.org/pioneer11-faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by Using [metamask](../../for-users/metamask.md).

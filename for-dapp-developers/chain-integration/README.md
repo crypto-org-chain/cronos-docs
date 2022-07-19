@@ -6,7 +6,7 @@
 {% tab title="Mainnet" %}
 **Setup Guide**
 
-* [Joining the Cronos Mainnet](../../for-node-hosts/running-nodes/cronos-mainnet.md)
+* [Joining the Cronos Mainnet](../../for-node-hosts/running-nodes/cronos-mainnet/)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
 * [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)

@@ -38,13 +38,13 @@
 ## FOR NODE HOSTS
 
 * [Running nodes](for-node-hosts/running-nodes/README.md)
-  * [Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet.md)
+  * [Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet/README.md)
+    * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/cronos-mainnet/huygen.md)
   * [Cronos Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
-  * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/huygen.md)
+  * [Cronos Gravity Bridge Testnet](for-node-hosts/running-nodes/cronos-gbtestnet.md)
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
   * [Node Setup and RPC server](for-node-hosts/running-nodes/node-and-rpc-setup-notes.md)
-* [Cronos Gravity Bridge Testnet](for-node-hosts/cronos-gbtestnet.md)
 * [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY
