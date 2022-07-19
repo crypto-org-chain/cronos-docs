@@ -11,19 +11,21 @@ Crypto.com DeFi Desktop Wallet supports staking operations, validator selections
 
 The Desktop Wallet currently supports the following networks:
 
-**Mainnet**:
-
+{% tabs %}
+{% tab title="Mainnet" %}
 * Cronos Mainnet Beta;
 * Crypto.org Chain.
+{% endtab %}
 
-**Testnet**:
-
-* Cronos Testnet;
-* Croeseid Testnet;
+{% tab title="Testnet" %}
+* Cronos Testnet
+* Croeseid Testnet
+{% endtab %}
+{% endtabs %}
 
 Integrations with additional chains are planned for the near future.
 
-## Integrating with Desktop Wallet
+## Integrating with the Desktop Wallet
 
 The DApp Browsers in Desktop Wallet works the same way as MetaMask does: it injects the global `ethereum` object into the DApp's `window` object. It has implemented the essential Ethereum Provider API most DApps use, which means that if your DApp can works with MetaMask, it can also work with the Desktop Wallet.
 

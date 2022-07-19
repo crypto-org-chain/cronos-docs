@@ -1,11 +1,7 @@
 # Token Contract Addresses
 
-## Official token contract addresses for Cronos mainnet Beta
-
-
-
 {% tabs %}
-{% tab title="Mainnet" %}
+{% tab title="Cronos Mainnet Beta" %}
 | Token name | Address                                                                                                                               | Decimal |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | WCRO       | [0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23](https://cronoscan.com/tokens/0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23/token-transfers) | 18      |

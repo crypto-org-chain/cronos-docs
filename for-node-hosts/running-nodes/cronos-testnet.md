@@ -33,9 +33,21 @@ canonicalUrl: https://docs.cronos.org/getting-started/cronos-testnet.html
 
 # Cronos Testnet
 
-## Cronos Testnet: Running Nodes
+### Pre-requisites
 
-The latest Crypto.org EVM Chain Testnet has been named as **Cronos**.
+#### Supported OS
+
+We officially support macOS, Windows, and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other operating systems after we have stabilised our current architecture.
+
+#### Prepare your machine
+
+To run Cronos Testnet nodes, you will need a machine with the following minimum requirements:
+
+* 4-core, x86\_64/ARM architecture processor;
+* 16 GB RAM;
+* 1 TB of storage space.
+
+### Step 0 : Notes on "Huygen" Network upgrade
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
@@ -62,22 +74,7 @@ Before we start, please note that there are 3 binary upgrade along with the test
    * After it reaches the block height `2483600`, update the binary to [cronos\_0.7.0-rc3-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc3);
    * Start the node again
 
-##
-
-### Pre-requisites
-
-#### Supported OS
-
-We officially support macOS, Windows and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
-
-#### Prepare your machine
-
-* To run Cronos testnet nodes, you will need a machine with the following minimum requirements:
-  * 4-core, x86\_64/ARM architecture processor;
-  * 16 GB RAM;
-  * 1 TB of storage space.
-
-### Step 1. Get the Cronos testnet binary
+### Step 1. Get the Cronos Testnet binary
 
 {% hint style="info" %}
 Remarks: The following is the minimal setup for a **full node**.
@@ -94,7 +91,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
     $ tar -zxvf cronos_0.6.0-testnet_Linux_x86_64.tar.gz
     ```
 
-    Afterward, you can check the version of `cronosd` by
+    Afterwards, you can check the version of `cronosd` by
 
     ```bash
     $ ./cronosd version
@@ -110,14 +107,13 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
     ```bash
     $ ./cronosd unsafe-reset-all
     ```
-
-    and remove the old genesis file by
+*   Remove the old genesis file:
 
     ```bash
     $ rm ~/.cronos/config/genesis.json
     ```
 
-Before kick-starting your node, we will have to configure your node so that it connects to the Cronos testnet:
+Before kick-starting your node, we will have to configure your node so that it connects to the Cronos Testnet:
 
 #### Step 2-1 Initialize `cronosd`
 
@@ -191,7 +187,7 @@ CAUTION: This page only shows the minimal setup for validator / full node.
 Furthermore, you may want to run full nodes as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
 {% endhint %}
 
-Once the `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
+Once `cronosd` has been configured, we are ready to start the node and sync the blockchain data.
 
 * Start cronosd, e.g.:
 
@@ -269,10 +265,11 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
     $ ./cronosd status 2>&1 | jq '.SyncInfo.latest_block_height'
     ```
 
-### Cronos testnet faucet and explorer
+### Cronos Testnet Faucet
 
-* You can lookup data within the `cronostestnet_338-3` network by the [explorer](https://testnet.cronoscan.com);
 * To interact with the blockchain, simply use the [test-token faucet](https://cronos.org/faucet) to obtain test CRO tokens for performing transactions on the **Cronos** testnet.
-  * Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](../../for-users/metamask.md#using-metamask-on-cronos-testnet).
+* Users can use the [faucet](https://cronos.org/faucet) to obtain test tokens, please note that you would need a Ethereum type address `0x...` that can be obtained by [Using metamask](../../for-users/metamask.md#using-metamask-on-cronos-testnet).
 
+{% hint style="info" %}
 In case you have reached the daily limit on faucet , you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel , stating who you are and your `0x...` address.
+{% endhint %}

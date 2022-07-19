@@ -13,21 +13,23 @@ Crypto.com DeFi Wallet is a non-custodial wallet that gives users full control o
 
 The Crypto.com Wallet Extension currently supports the following networks:
 
-**Mainnet**:
+{% tabs %}
+{% tab title="Mainnet" %}
+* Cronos Mainnet Beta
+* Ethereum Mainnet
+* Crypto.org Chain
+{% endtab %}
 
-* Cronos Mainnet Beta;
-* Ethereum Mainnet;
-* Crypto.org Chain.
-
-**Testnet**:
-
-* Cronos Testnet;
-* Croeseid Testnet;
-* Ethereum Testnet (Ropsten, Kovan, Ribkeby, Goerli);
+{% tab title="Testnet" %}
+* Cronos Testnet
+* Croeseid Testnet
+* Ethereum Testnet (Ropsten, Kovan, Ribkeby, Goerli)
+{% endtab %}
+{% endtabs %}
 
 Integrations with additional chains are planned for the near future.
 
-## Integrating with Defi Connect
+## Integrating with De**F**i Connect
 
 Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and native experience for your end users to sign transactions.
 
@@ -62,7 +64,7 @@ const connector = new window.DeFiConnect.DeFiWeb3Connector({
 ### Usage
 
 {% hint style="info" %}
-Note: `DeFiWeb3Connector` has implement `AbstractConnector` from `web3-react`&#x20;
+Note: `DeFiWeb3Connector` has implement `AbstractConnector` from `web3-react`
 {% endhint %}
 
 #### For `web3-react`
@@ -175,10 +177,10 @@ const signedTypedData = await web3.eth.signTypedData(msg)
 
 ## Example Apps
 
-The following git folder will provide you with some basic deficonnect integrations via react and web3modal.&#x20;
+The following git folder will provide you with some basic deficonnect integrations via react and web3modal.
 
 {% hint style="info" %}
-Note You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://infura.io/)&#x20;
+Note You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://infura.io/)
 {% endhint %}
 
 ### Git clone `deficonnect-examples`

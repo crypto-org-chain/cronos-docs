@@ -35,6 +35,19 @@ canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet Beta `cronosmainnet_25-1`.
 
+## Pre-requisites
+
+### Supported OS
+
+We officially support macOS, Windows, and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other operating systems after we have stabilised our current architecture.
+
+### Prepare your machine
+
+* To run Cronos Mainnet Beta nodes, you will need a machine with the following minimum requirements:
+  * 4-core, x86\_64/ARM architecture processor;
+  * 16 GB RAM;
+  * 1 TB of storage space.
+
 ## Step 0 : Notes on "Huygen" Network upgrade
 
 Before we start, please note that there was "_Huygen_" network upgrade at the block height `2,693,800`, which requires the node operator to update their Cronos Mainnet binary `cronosd` from `v0.6.*` to `v0.7.0`.
@@ -49,20 +62,7 @@ For the host who would like to build a Full Node with complete blockchain data f
 
 Users can refer to the [upgrade guide of "Huygen"](huygen.md) for the detailed upgrade steps.
 
-## Pre-requisites
-
-### Supported OS
-
-We officially support macOS, Windows and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
-
-### Prepare your machine
-
-* To run Cronos mainnet Beta nodes, you will need a machine with the following minimum requirements:
-  * 4-core, x86\_64/ARM architecture processor;
-  * 16 GB RAM;
-  * 1 TB of storage space.
-
-## Step 1. Get the Cronos mainnet Beta binary
+## Step 1. Get the Cronos Mainnet Beta binary
 
 {% hint style="info" %}
 Remarks:
@@ -70,11 +70,10 @@ Remarks:
 The following is the minimal setup for a **validator node** / **full node**.
 {% endhint %}
 
-To simplify the following step, we will be using **Linux** (Intel x86) for illustration. Binary for
+To simplify the following step, we will be using **Linux** (Intel x86) for illustration. \
+Binaries for **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip) are also available.
 
-**Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip) are also available.
-
-*   To install released **Cronos mainnet Beta binaries** from github:
+*   To install released **Cronos Mainnet Beta binaries** from github:
 
     ```bash
     $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Linux_x86_64.tar.gz
@@ -116,7 +115,8 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     This `moniker` will be the displayed id of your node when connected to Cronos Chain network.
 
-    When providing the moniker value, make sure you drop the square brackets since they are not needed.
+    When providing the moniker value, make sure you drop the square brackets since they are not needed.\
+
 
     The example below shows how to initialize a node named `pegasus-node` :
 
@@ -201,7 +201,7 @@ You should obtain an address with `crc` prefix, e.g. `crc10u5mgfflasrfj9s94mt8l9
 
 ### Step 3-2. Run everything
 
-Once the `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
+Once `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
 
 * Start cronosd, e.g.:
 
@@ -362,8 +362,3 @@ Example: Restart `cronosd start` with QuickSync
 ```
 {% endhint %}
 
-***
-
-## Cronos Mainnet Beta explorer: Cronoscan
-
-* You can lookup data within the `cronosmainnet_25-1` network by the [explorer](https://cronoscan.com/);

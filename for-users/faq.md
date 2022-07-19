@@ -2,15 +2,15 @@
 
 ## FAQs for ERC20-only transaction Support
 
-### I transferred CRO from the other centralized exchanges (CEXs) to the Crypto.org Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet?
+### I transferred CRO from the other centralised exchanges (CEXs) to the Crypto.org Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet?
 
-**A** : Some centralized exchanges currently only support Ethereum mainnet ERC20-CRO withdrawal, while the Crypto.com DeFi Desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works.
+* Some centralised exchanges currently only support Ethereum Mainnet ERC20-CRO withdrawal, while the Crypto.com DeFi Desktop Wallet only supports Crypto.org Chain & Cronos Beta Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works.
 
-### I’ve already made the transfer from the centralized exchange that does not support Cronos Beta Chain to my Crypto.com DeFi Desktop Wallet. What should I do to retrieve my funds?
+### I have already made the transfer from the centralised exchange that does not support Cronos Beta Chain to my Crypto.com DeFi Desktop Wallet. What should I do to retrieve my funds?
 
-**A** : Here's what you could do:
+* Here's what you could do:
 
-1. Send some ETH (around 0.03 ETH) to your `0x..` address for paying the transaction gas fee on Ethereum
+1. Send some ETH (around 0.03 ETH) to your `0x..` address for paying the transaction gas fee on Ethereum.
 2. Download our Crypto.com App, and register an account (skip this if you're already a user)
 3. Send your ERC20-CRO to the Crypto.com App ERC20-CRO deposit address\*
 4. When you get your CRO, withdraw your CRO to your ledger address (MAKE SURE YOU SELECT Cronos Beta Chain) `0x..` address
@@ -18,18 +18,19 @@
 
 Other than this, it is also possible that there is no Ethereum in your wallet, which could result in your funds getting stuck as you aren't able to pay for the Ethereum gas fee. Please ensure you have enough ETH for the transaction.
 
-_For step 3 of transferring your ERC20-CRO, you could either use Metamask or Ledger Live (for ledger user) to send ERC20-CRO from your Ledger to Crypto.com App. Take the wallet on Metamask as an example, if you log into the same wallet on Metamask and switch the network to the ethereum mainnet on Metamask, you would be able to access those ERC20 tokens in this wallet on Metamask. After that, you would be free to transfer the funds to the Crypto.com app then withdraw them to the Cronos Beta network._
+{% hint style="info" %}
+_For step 3 of transferring your ERC20-CRO, you could either use MetaMask or Ledger Live (for ledger user) to send ERC20-CRO from your Ledger to Crypto.com App. Take the wallet on MetaMask as an example, if you log into the same wallet on MetaMask and switch the network to the Ethereum mainnet on MetaMask, you would be able to access those ERC20 tokens in this wallet on MetaMask. After that, you would be free to transfer the funds to the Crypto.com app then withdraw them to the Cronos Beta network._
+{% endhint %}
 
-### I would like to send ERC20-CRO from Crypto.com App or Defi Wallet to the other CEXs directly. Is it possible?
+### I would like to send ERC20-CRO from Crypto.com App or DeFi Wallet to the other CEXs directly. Is this possible?
 
-**A** : Please make sure both sender and receiver accounts support ERC20 format. Only if the other CEXs support ERC20-CRO can you send it. Users may refer to this guide for more details:
+* Please make sure both sender and receiver accounts support ERC20 format. Only if the other CEXs support ERC20-CRO can you send it. Users may refer to this guide for more details:
+  * [Difference between ERC-20 CRO and native CRO](https://help.crypto.com/en/articles/5019195-send-and-receive-cro-the-difference-between-native-cro-and-erc20-cro)
+  * [CRO deposit/withdrawal information](https://help.crypto.com/en/articles/4970776-cro-deposit-withdrawal-information-in-crypto-com-app)
 
-* https://help.crypto.com/en/articles/5019195-send-and-receive-cro-the-difference-between-native-cro-and-erc20-cro
-* https://help.crypto.com/en/articles/4970776-cro-deposit-withdrawal-information-in-crypto-com-app
+### I made a transaction on MetaMask (through Cronos Beta network) to another CEX that does not support Cronos. How can I retrieve it back?
 
-### I made a transaction on MetaMask (through Cronos Beta network) to the other CEXs that do NOT support Cronos. How should I retrieve it back?
-
-**A** : In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronoscan](https://cronoscan.com/). Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies. Otherwise, you will most likely not be able to access the funds until that CEX starts to support Cronos.
+* In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronoscan](https://cronoscan.com/). Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies. Otherwise, you will most likely not be able to access the funds until that CEX starts to support Cronos.
 
 ## FAQs for Bridge transfers
 
@@ -37,11 +38,10 @@ _For step 3 of transferring your ERC20-CRO, you could either use Metamask or Led
 
 ### What are the fees involved?
 
-\-The bridge service itself is free and does not charge any additional service fees. The fees displayed are network gas fees which the blockchain infrastructure charges itself to process the transactions and vary depending on the network.
-
+* The bridge service itself is free and does not charge any additional service fees. The fees displayed are network gas fees which the blockchain infrastructure charges itself to process the transactions and vary depending on the network.
 * For any bridge transaction, network gas fees are incurred on two chains: origin and destination.
   * For the origin chain gas fee, this will be displayed and settled directly on your wallet extension.
-  * For the destination chain gas fee (“Bridge network fee”), our decentralized bridge is tasked to collect the appropriate gas fee and pay the network.
+  * For the destination chain gas fee (“Bridge network fee”), our decentralised bridge is tasked to collect the appropriate gas fee and pay the network.
 
 ### How does the Bridge network fee waiver work?
 
@@ -58,18 +58,20 @@ _For step 3 of transferring your ERC20-CRO, you could either use Metamask or Led
 ### Can I transfer assets to a different wallet than my own?
 
 * For transfers between Cronos and Crypto.org, we support either connecting a second compatible wallet or inputting the wallet address string.
-  * If possible, we recommend connecting the second wallet to avoid manual typing and potential malware risks such as clipboard attacks.
+* If possible, we recommend connecting the second wallet to avoid manual typing and potential malware risks such as clipboard attacks.
 
 ### What are the support blockchains and tokens?
 
 * The networks supported are:
   * Crypto.org
   * Cronos
-  * Coming Soon: Cosmos and Ethereum
+  * Cosmos
+  * Akash
+  * Ethereum (Coming soon)
 
 ### What are the supported wallets?
 
-* The initially supported wallets will be Crypto.com DeFi Wallet, Metamask, and Keplr.
+* The initially supported wallets will be Crypto.com DeFi Wallet, MetaMask, and Keplr.
 * Please ensure to set the correct active network on your Wallet if it is supported.
 
 ### Can I complete multiple transfers in one go?
@@ -78,13 +80,13 @@ _For step 3 of transferring your ERC20-CRO, you could either use Metamask or Led
 
 ### Where can I report bugs and provide product feedback?
 
-For any bug reports, or feedback please contact contact.bridge@crypto.org. This is for the web Cronos bridge only. For Crypto.com app, exchange, and DeFi wallet, contact directly https://help.crypto.com/en/
+For any bug reports, or feedback please contact [contact.bridge@crypto.org](mailto:contact.bridge@crypto.org). This is for the web Cronos bridge only. For Crypto.com app, exchange, and DeFi wallet, contact directly [https://help.crypto.com/en/](https://help.crypto.com/en/)
 
 ### How do I find my missing funds?
 
-* Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all. If you believe you still have missing funds, please contact us at product@cronos.org.
+* Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all. If you believe you still have missing funds, please contact us at [product@cronos.org.](mailto:product@cronos.org.)
 
 ### Is transferring tokens across blockchains safe?
 
-* As with any decentralized application, there is a degree of risk related to code exploits and hacking.
+* As with any decentralised application, there is a degree of risk related to code exploits and hacking.
 * Our bridge code is publicly available. We leverage open-source code from the IBC protocol and Gravity bridge projects.

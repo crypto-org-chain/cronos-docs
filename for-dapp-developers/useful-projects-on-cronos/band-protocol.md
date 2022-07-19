@@ -4,9 +4,9 @@
 
 ### Introduction
 
-**Band Protocol** is a secure, blockchain-agnostic decentralized oracle solution ([more detail here](https://docs.bandchain.org)). It features a blockchain of its own (**BandChain**) that does the heavy-lifting job of pulling data from external sources, aggregating all the results, and creating a verifiable proof of data integrity to be used in other blockchain applications — all with a secure crypto-economic which guarantees data availability and correctness.
+Band Protocol is a secure, blockchain-agnostic decentralised oracle solution ([more detail here](https://docs.bandchain.org/)). It features a blockchain of its own (BandChain) that does the heavy lifting of pulling data from external sources, aggregating all the results, and creating a verifiable proof of data integrity to be used in other blockchain applications — all with a secure crypto-economic which guarantees data availability and correctness.
 
-Developers building applications on **Cronos** can now utilize **Band**’s decentralized oracle services. With **Band**’s oracle, they now have access to various cryptocurrency price data to integrate into their applications.
+Developers building applications on Cronos can now utilise Band’s decentralised oracle services. With Band’s oracle, they now have access to various cryptocurrency price data points to integrate into their applications.
 
 ### Currency Pair and Supported Currencies
 
@@ -119,8 +119,8 @@ contract DemoOracleUSD {
 2. Specify `//SPDX-License-Identifier`, or put `// SPDX-License-Identifier: UNLICENSED` if unlicensed, at the first line of the above code;
 3. Compile the contract with compiler version 0.8.13;
 4. Switch to the **DEPLOY & RUN TRANSACTIONS** tab of [Remix](https://remix.ethereum.org/);
-5. Select `Injected Web3` in the **ENVIRONMENT** dropdown in the top left to connect with Metamask;
-   * Make sure that Metamask is connected to the Cronos testnet, you can refer to our [official documentation](../../for-users/metamask.md);
+5. Select `Injected Web3` in the **ENVIRONMENT** dropdown in the top left to connect with MetaMask;
+   * Make sure that MetaMask is connected to the Cronos testnet, you can refer to our [official documentation](../../for-users/metamask.md);
 6. Deploy the contract with the below Cronos testnet Band reference data proxy address;
    * `0xD0b2234eB9431e850a814bCdcBCB18C1093F986B`;
 7. Hooray, you can now fetch the latest supported token prices from Band Protocol!
