@@ -52,7 +52,7 @@ Build modern, cross-platform C++ apps that don't depend on `.sln` or `.vcxproj` 
 * Clone the current repository
 
 ```bash
-git clone https://github.com/crypto-com/play-cpp-sdk.git
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
 ```
 
 * Unzip the archive file into `demo` folder, and replace the original `sdk` folder
@@ -67,7 +67,7 @@ make
 * Clone the current repository
 
 ```bash
-git clone https://github.com/crypto-com/play-cpp-sdk.git
+git clone https://github.com/cronos-labs/play-cpp-sdk.git
 ```
 
 * Unzip the archive file into `demo` folder, and replace the original `sdk` folder
