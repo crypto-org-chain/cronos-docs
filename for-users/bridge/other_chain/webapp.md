@@ -1,8 +1,8 @@
-# From Crypto.org Chain (Cronos Bridge Web App)
+# Cronos Bridge Web App
 
-## Transfer assets from Crypto.org Chain using Cronos Bridge Web App
+## Transfer assets from the Crypto.org Chain using the Cronos Bridge Web App
 
-### Step-by-step Walkthrough
+### Step-by-step walkthrough
 
 **Step 1: Connect your wallet**
 
@@ -46,11 +46,11 @@ This will send a transaction request to your wallet; please confirm on your wall
 
 Please note that after bridging the tokens, they will be converted into the destination blockchain-supported tokens. See [FAQ](webapp.md#faq) for more information
 
-![centered image](../assets/webapp\_confirmation\_screen.png) 
+![centered image](../assets/webapp\_confirmation\_screen.png)
 
-![centered image](../assets/4a\_confirm\_wallet\_txn.png) 
+![centered image](../assets/4a\_confirm\_wallet\_txn.png)
 
-![centered image](../assets/4b\_confirm\_wallet\_txn.png) 
+![centered image](../assets/4b\_confirm\_wallet\_txn.png)
 
 ![centered image](../assets/4c\_confirm\_wallet\_txn.png)
 
@@ -62,8 +62,6 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 
 Thank you for using the Cronos bridge and supporting the Crypto.org ecosystem!
 
-![centered image](../assets/5\_txn\_complete.png) 
+![centered image](../assets/5\_txn\_complete.png)
 
 ![centered image](../assets/5\_history\_table.png)
-
-

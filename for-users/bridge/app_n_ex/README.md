@@ -12,4 +12,4 @@ Only the tokens mentioned above will be available for withdrawal to Cronos on Da
 
 The Crypto.com Exchange will be supporting the seamless transfer of selected assets over to Cronos on Day 1. The withdrawal process will be exactly the same as how you would transfer funds to a separate chain.
 
-Supported assets on Day 1: CRO, USDT, USDC, DAI, ETH, WBTC
+**Supported assets on Day 1**: CRO, USDT, USDC, DAI, ETH, WBTC
