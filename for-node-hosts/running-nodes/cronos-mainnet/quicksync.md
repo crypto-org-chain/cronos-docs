@@ -1,18 +1,24 @@
-# Quickstart
+# Quicksync
 
 ## 1. QuickSync
 
-Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “Quicksync” service to make the process more efficient for our users.
+Syncing Cronos could be a time-consuming process, Crypto.org Chain team has partnered with Chainlayer to provide the “**Quicksync**” service to make the process more efficient for our users.
 
-Users can visit [Chainlayer QuickSync Crypto.org page](https://quicksync.io/networks/crypto.html) and download the snapshots for Cronos Chain and Crypto.org Chain with different pruning settings (_currently only leveldb downloads are available_). You may refer to the following guide to implement Quicksync.
+Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain and Crypto.org Chain with different pruning settings
 
-### Step 1 Quicksync Download
+{% hint style="info" %}
+&#x20;NOTE \
+\
+_currently only leveldb downloads are available). You may refer to the following guide to implement Quicksync._
+{% endhint %}
 
-After executing the command `./cronosd` start at [Step 3-2](cronos-mainnet/#step-3-2.-run-everything) Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
+### Step 1: Quicksync Download
+
+After executing the command `./cronosd` start at [Step 3-2](./#step-3-2.-run-everything) Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
 
 Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings (_currently only leveldb downloads are available_). You may refer to the following guide to implement Quicksync.
 
-### Step 4-1 Quicksync Download
+### Step 2: Quicksync Extract
 
 To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal. Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html).
 
@@ -26,7 +32,7 @@ To start with Quicksync, you need to run `brew install lz4` to install lz4 in a 
 
 * For the users who would like to query the old block, you may pick the archive one for complete blockchain data. The archive node will have all the blocks from the chain start or chain upgrade with full indexing. So this is a good option for API nodes if you need to have access to the whole chain history. Archives grow fast in size and might be more sluggish to run, so if you need something simpler default or a pruned kickstarted API node might solve most of the needs out there.
 
-### Step 4-2 Quicksync Setup
+### Step 3: Quicksync Setup
 
 In the following steps, we will take the version `cronosmainnet_25-1-pruned.20220309.2010.tar.lz4` as an example.
 
@@ -56,7 +62,7 @@ Example: Decompress the QuickSync pack with `lz4`
 
 The original data folder under `.cronos` is overwritten with this step (it takes around 5-7 mins to decompress the pruned version \~50GB).
 
-### Step 4-3 Sync with Quicksync
+### Step 4: Sync with Quicksync
 
 {% hint style="info" %}
 Example: Restart `cronosd start` with QuickSync
@@ -71,4 +77,3 @@ Example: Restart `cronosd start` with QuickSync
   6:59PM INF ABCI Replay Blocks appHeight=1813707 module=consensus server=node stateHeight=1813707 storeHeight=1813707
 ```
 {% endhint %}
-

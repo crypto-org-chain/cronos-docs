@@ -39,8 +39,8 @@
 ## FOR NODE HOSTS
 
 * [Running nodes](for-node-hosts/running-nodes/README.md)
-  * [Quickstart](for-node-hosts/running-nodes/quickstart.md)
   * [Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet/README.md)
+    * [Quicksync](for-node-hosts/running-nodes/cronos-mainnet/quicksync.md)
     * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/cronos-mainnet/huygen.md)
   * [Cronos Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
