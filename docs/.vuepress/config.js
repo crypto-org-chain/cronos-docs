@@ -119,6 +119,10 @@ module.exports = {
           {
             text: "C++ SDK",
             link: "/play/getting-started_cpp.html",           
+          },
+          {
+            text: "CDC Pay Integration",
+            link: "/play/cdc-pay-integration.html",           
           }
         ]
       },
@@ -186,7 +190,8 @@ module.exports = {
         "introduction",
         "getting-started",
         "getting-started_unreal",
-        "getting-started_cpp"
+        "getting-started_cpp",
+        "cdc-pay-integration"
       ],
       "/resources/": [
         "chain-integration",
