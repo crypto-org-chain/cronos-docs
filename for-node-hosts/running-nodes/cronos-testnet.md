@@ -62,13 +62,13 @@ Before we start, please note that there are 3 binary upgrade along with the test
    * After it reaches the block height `2483600`, update the binary to [cronos\_0.7.0-rc3-testnet](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0-rc3);
    * Start the node again
 
-##
+
 
 ### Pre-requisites
 
 #### Supported OS
 
-We officially support macOS, Windows and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
+We officially support macOS, Windows, and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other operating systems after we have stabilised our current architecture.
 
 #### Prepare your machine
 

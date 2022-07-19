@@ -1,29 +1,32 @@
 # Block Explorer and API Keys
 
-### Block Explorer
+### Block Explorers
 
 {% tabs %}
-{% tab title="Mainnet" %}
-Cronos Mainnet Beta: [https://cronoscan.com/](https://cronoscan.com)
+{% tab title="Cronos Mainnet Beta" %}
+* &#x20;[https://cronoscan.com/](https://cronoscan.com)
+* [https://cronos.org/explorer/](https://cronos.org/explorer/)
 {% endtab %}
 
 {% tab title="Testnet" %}
-Cronos Testnet: [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
+* [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
+* [https://cronos.org/explorer/testnet3](https://cronos.org/explorer/testnet3)
 {% endtab %}
 {% endtabs %}
 
-* #### Creating API Keys on CronoScan
+### **Creating API Keys on CronoScan**
 
-The CronoScan Developer APIs are designed to provide accessible and consistent Cronos data to the Cronos community. The APIs are provided as a community service with a rate up to 5 calls per second per IP. Users need to [register](https://cronoscan.com/register) for a CronoScan account to create an API key. After registration, a CronoScan user account will have a quota of up to 3 API keys.
+The CronoScan Developer APIs are designed to provide accessible and consistent Cronos data to the Cronos community. The APIs are provided as a community service with a rate up to five calls per second per IP. Users need to [register](https://cronoscan.com/register) for a CronoScan account to create an API key. \
+After registration, a CronoScan user account will have a quota of up to three API keys.
 
-On the [CronoScan user dashboard](https://cronoscan.com/myaccount), select “_**API-KEYs**_” from the left-hand side column or go to [https://cronoscan.com/myapikey](https://cronoscan.com/myapikey).
+On the [CronoScan user dashboard](https://cronoscan.com/myaccount), select “**API-KEYs**” in the left column or go to [https://cronoscan.com/myapikey](https://cronoscan.com/myapikey).
 
-![drawing](./assets/myapikey-page.png)
+![drawing](assets/myapikey-page.png)
 
-Click on the “_**Create a new API-KEY token**_” button, then optionally input an “_**AppName**_”, “My Cronos App” for example.
+Click “**Create a new API-KEY token**”. Then optionally input an _**AppName** _ if you wish to.
 
-![drawing](./assets/create-apikey.png)
+![drawing](assets/create-apikey.png)
 
-After the “_**API-KEY Token**_” is successfully created, a message will show up as below, and you may now use the “_**API key token**_” for your applications on Cronos!
+After the “**API**_**-**_**KEY Token**” is successfully created, a message will show up as per the example below. You can now use the “**API key token**” for your applications on Cronos!
 
-![drawing](./assets/create-apikey-successful.png)
+![drawing](assets/create-apikey-successful.png)

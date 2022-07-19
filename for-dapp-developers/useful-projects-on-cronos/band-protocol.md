@@ -4,9 +4,9 @@
 
 ### Introduction
 
-**Band Protocol** is a secure, blockchain-agnostic decentralized oracle solution ([more detail here](https://docs.bandchain.org)). It features a blockchain of its own (**BandChain**) that does the heavy-lifting job of pulling data from external sources, aggregating all the results, and creating a verifiable proof of data integrity to be used in other blockchain applications — all with a secure crypto-economic which guarantees data availability and correctness.
+Band Protocol is a secure, blockchain-agnostic decentralised oracle solution ([more detail here](https://docs.bandchain.org/)). It features a blockchain of its own (BandChain) that does the heavy lifting of pulling data from external sources, aggregating all the results, and creating a verifiable proof of data integrity to be used in other blockchain applications — all with a secure crypto-economic which guarantees data availability and correctness.
 
-Developers building applications on **Cronos** can now utilize **Band**’s decentralized oracle services. With **Band**’s oracle, they now have access to various cryptocurrency price data to integrate into their applications.
+Developers building applications on Cronos can now utilise Band’s decentralised oracle services. With Band’s oracle, they now have access to various cryptocurrency price data points to integrate into their applications.
 
 ### Currency Pair and Supported Currencies
 

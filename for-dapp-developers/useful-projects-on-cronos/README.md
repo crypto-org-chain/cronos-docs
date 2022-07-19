@@ -1,3 +1,3 @@
-# Useful Projects on Cronos
+# Useful Projects
 
-Here we list useful projects on Cronos that you can reference in your projects.
+Here is a handy list of projects on Cronos that you can reference in your own projects.
