@@ -29,7 +29,7 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/
-cover: getting-started/.gitbook/assets/Cronos%20generic%20background%201.png
+cover: .gitbook/assets/Cronos generic background 1.png
 coverY: 0
 ---
 
