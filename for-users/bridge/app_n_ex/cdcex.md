@@ -22,6 +22,6 @@
 
 **Step 5**: Select the Cronos wallet address that you have whitelisted and input the withdrawal amount
 
-![centered image](<../assets/cdcex3 (1) (1) (1).png>)
+![centered image](<../assets/cdcex3 (1) (1) (1) (1) (2).png>)
 
 **Step 6**: Review your withdrawal information and click “**Review Withdrawal”**. You will then be taken to another page for you to confirm your withdrawal information and type in your 2FA code to finalise your withdrawal. Your assets will appear in your Cronos wallet within a few minutes of withdrawal confirmation.

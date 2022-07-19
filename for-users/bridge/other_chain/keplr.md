@@ -1,29 +1,29 @@
-## Add your Terra station wallet to Keplr wallet
+# Keplr
 
-1. Create and log in to your Keplr wallet
+**Step 1:** Create or log in to your Keplr wallet
 
 ![centered image](../assets/terra1.png)
 
-2. Click the button on the top right corner. Then, click “+ Add Account”
+**Step 2:** Click the icon at the top right corner. Then, click “**+ Add Account**”
 
 ![centered image](../assets/terra2.png)
 
-3. Select “import existing account”
+**Step 3:** Select “**import existing account**”
 
 ![centered image](../assets/terra3.png)
 
-4. Input the Mnemonic of your Terra station wallet and name your account, then click "Next"
+**Step 4:** Input the Mnemonic of your Terra station wallet and name your account, then click "**Next**"
 
 ![centered image](../assets/terra4.png)
 
-5. Go back to your Keplr account, click the button on the top right again. You will see your imported Terra station account here.
+**Step 5:** Go back to your Keplr wallet and click the icon at the top right corner again. You will see your imported Terra station wallet here.
 
 ![centered image](../assets/terra5.png)
 
-6. Select your imported Terra station account. Then, click the arrow on the top, and select "Terra".
+**Step 6:** Select your imported Terra station account. Then, click the arrow on the top, and select "**Terra**".
 
 ![centered image](../assets/terra6.png)
 
-7. You can now use your Terra station wallet on Keplr!
+You can now use your Terra station wallet on Keplr!
 
 ![centered image](../assets/terra7.png)
