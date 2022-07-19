@@ -190,13 +190,6 @@ You need to replace `INFURA_API_KEY` with a key generated at [Infura](https://in
   $ git clone git@github.com:crypto-org-chain/dev-utils.git
   ```
 
-## DApp Whitelisting Form
-Complete the form below to whitelist your DApp.  Whitelisting allows your DApp to be connected to DeFi Wallet via DApp browser:
-
-[DApp Whitelisting Form](https://crypto-com.typeform.com/to/MNIS7boO#app_version=xxxxx&os_version=xxxxx&device=xxxxx)
-
-*We are trying to respond to all whitelisting requests within 24 hours on working days. 
-
 ## DApp Listing Form
 Complete the form below to be featured on our DeFi Wallet DApp listing:
 
