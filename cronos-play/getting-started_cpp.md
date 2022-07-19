@@ -1,7 +1,5 @@
 # Cronos Play C++ SDK
 
-## Cronos Play C++ SDK
-
 ### Pre-requisites
 
 * python 3.8 or newer
@@ -12,7 +10,7 @@
   * GNU make for mac and linux, ninja for windows
   * Visual Studio 2019 or newer for windows
 
-## Pre-built Download
+### Pre-built Download
 
 Please download the archive file based on your OS in the [release page](https://github.com/cronos-labs/play-cpp-sdk/releases), where:
 
@@ -20,7 +18,7 @@ Please download the archive file based on your OS in the [release page](https://
 * macOS 10.15 or newer: `play_cpp_sdk_Darwin_x86_64.tar.gz`;
 * Ubuntu 20.04 or newer: `play_cpp_sdk_Linux_x86_64.tar.gz`.
 
-### Setup a demo project
+## Setup a demo project
 
 #### Windows
 
@@ -77,7 +75,7 @@ git clone https://github.com/cronos-labs/play-cpp-sdk.git
 make
 ```
 
-### Setup a c++ 14 (or newer) project
+## Setup a c++ 14 (or newer) project
 
 * Unzip the archive file into the root folder of your project, you should see a folder named `sdk` and its subdirectories/files.
 
@@ -111,7 +109,7 @@ using namespace com::crypto::game_sdk;
 
 If the Pre-built release does not support your platform, you can build the binaries and bindings on your own.
 
-### Windows
+#### Windows
 
 1. Run `windows_build.bat` in x64 Native Tools Command Prompt for VS 2019. It will clone necessary submodules, build `play-cpp-sdk` crate, finally setup and build the demo project.
 2. Clean `~/.cargo/git/checkouts` if cxx fails to build, then run `windows_build.bat` again.
@@ -121,12 +119,12 @@ If the Pre-built release does not support your platform, you can build the binar
 
 * Open `demo.sln`. If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to `v143` before running `windows_build.bat`
 
-### Mac
+#### Mac
 
 1. Run `make`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
-### Linux
+#### Linux
 
 1. Run `make`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
@@ -179,9 +177,9 @@ function `new_privatekey_from_bytes` - Constructs private key from hex bytes
 )
 ```
 
-#### ERC20, ERC721, ERC1155 related functions
+### ERC20, ERC721, ERC1155 related functions
 
-### [ERC20](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc20)
+#### [ERC20](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc20)
 
 function `balance_of` - Returns the decimal amount of tokens owned by account\_address.
 
@@ -247,7 +245,7 @@ uint8_t decimals = erc20.decimals();
 assert(decimals == 6);
 ```
 
-### [ERC721](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc721)
+#### [ERC721](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc721)
 
 function `balance_of` - Returns the number of tokens in owner's account\_address.
 
@@ -319,7 +317,7 @@ function `safe_transfer_from_with_data` - Safely transfers token\_id token from 
 ) const
 ```
 
-### [ERC1155](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc1155)
+#### [ERC1155](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1/classes/structorg\_1\_1defi\_\_wallet\_\_core\_1\_1\_erc1155)
 
 function `balance_of` - Returns the amount of tokens of `token_id` owned by `account_address`.
 
@@ -376,4 +374,3 @@ function `safe_batch_transfer_from` - Batched version of `safeTransferFrom`.
 ## Cronos Play C++ API Reference
 
 API Reference can be found [here](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1)
-

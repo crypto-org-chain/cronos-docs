@@ -31,9 +31,9 @@ meta:
 canonicalUrl: https://docs.cronos.org/wallets/cli.html
 ---
 
-# Cronosd
+# cronosd
 
-`cronosd` is an all-in-one command-line interface. It supports wallet management, funds transfers and staking operations.
+`cronosd` is the all-in-one command-line interface. It supports wallet management, funds transfer and staking operations.
 
 ## Build and configurations
 
@@ -57,9 +57,9 @@ $ cronosd -h
 
 ### Config and data directory
 
-By default, your configuration and data are stored in the folder located in the `~/.cronos` directory.\
-\
-Ensure that you have backed up your wallet after creating it. Otherwise, your funds may be inaccessible in the event of an accident.
+By default, your config and data are stored in the folder located at the `~/.cronos` directory.
+
+Make sure you have backed up your wallet storage after creating the wallet or else your funds may be inaccessible in case of accident forever.
 
 #### Configure cronosd config and data directory
 
@@ -181,6 +181,8 @@ Global Flags:
       --log_level string    The logging level (trace|debug|info|warn|error|fatal|panic) (default "info")
       --trace
 ```
+
+
 {% endhint %}
 
 ## Keys management - `cronosd keys`
@@ -189,7 +191,7 @@ First of all, you will need an address to store and spend your CRO.
 
 ### `keys add <wallet_name>` - Create a new key
 
-You can create a new key with the name `Default` as in the following example:
+You can create a new key with the name `Default` as in the following example:&#x20;
 
 {% hint style="info" %}
 Example: Create a new address
@@ -213,7 +215,7 @@ farm surround surround hunt shop glory fringe bag mountain clerk arch ankle anno
 The key comes with a "mnemonic phrase", which is serialized into a human-readable 24-word mnemonic. User can recover their associated addresses with the mnemonic phrase.
 
 {% hint style="danger" %}
-It is important that you keep the mnemonic for address secure, as there is **no way** to recover it. You would not be able to recover and access the funds in the wallet if you forget the mnemonic phrase.
+It is important that you keep the mnemonic for address secure, as there is **no way** to recover it. You would not be able to recover and access the funds in the wallet if you forget the mnemonic phrase.&#x20;
 {% endhint %}
 
 ### `keys add <key_name> --recover` - Restore existing key by seed phrase
@@ -306,7 +308,7 @@ $ cronosd keys show test --bech cons
 You can delete a key in your storage path.
 
 {% hint style="danger" %}
-Make sure you have backed up the key mnemonic before removing any of your keys, as there will be no way to recover your key without the mnemonic.
+Make sure you have backed up the key mnemonic before removing any of your keys, as there will be no way to recover your key without the mnemonic.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -410,6 +412,8 @@ confirm transaction before signing and broadcasting [y/N]: y
 On the other hand, we can create a `Unbond` transaction to unbond the delegated funds
 
 {% hint style="info" %}
+
+
 Example: Unbond funds from a validator under the address `ethvaloper...lq`
 
 ```bash
@@ -428,7 +432,7 @@ Once your funds are unbonded, It will be locked until the`unbonding_time`has pas
 
 ### `query bank balances` - Check your transferable balance
 
-You can check your _transferable_ balance with the `balances` command under the bank module.
+You can check your _transferable_ balance with the `balances` command under the bank module.&#x20;
 
 {% hint style="info" %}
 Example: Check your address balance
@@ -480,6 +484,8 @@ $ cronosd tx staking create-validator \
 confirm transaction before signing and broadcasting [y/N]: y
 ```
 {% endhint %}
+
+
 
 (TODO: details of each flag )
 

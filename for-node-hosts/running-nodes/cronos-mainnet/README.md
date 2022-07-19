@@ -53,16 +53,16 @@ Users can refer to the [upgrade guide of "Huygen"](huygen.md) for the detailed u
 
 ### Supported OS
 
-We officially support macOS, Windows, and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other operating systems after we have stabilised our current architecture.
+We officially support macOS, Windows and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Prepare your machine
 
-* To run Cronos Mainnet Beta nodes, you will need a machine with the following minimum requirements:
+* To run Cronos mainnet Beta nodes, you will need a machine with the following minimum requirements:
   * 4-core, x86\_64/ARM architecture processor;
   * 16 GB RAM;
   * 1 TB of storage space.
 
-## Step 1. Get the Cronos Mainnet Beta binary
+## Step 1. Get the Cronos mainnet Beta binary
 
 {% hint style="info" %}
 Remarks:
@@ -364,3 +364,6 @@ Example: Restart `cronosd start` with QuickSync
 
 ***
 
+## Cronos Mainnet Beta explorer: Cronoscan
+
+* You can lookup data within the `cronosmainnet_25-1` network by the [explorer](https://cronoscan.com/);

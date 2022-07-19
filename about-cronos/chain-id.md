@@ -35,19 +35,19 @@ canonicalUrl: https://docs.cronos.org/chain-details/chain-id.html
 
 ## Chain ID
 
-Cronos has different Chain IDs to distinguish between the _devnet_, _testnet_ and _mainnet_. When running Cronos in your local environment, you will need to decide your own Chain ID.
+Cronos has different Chain ID to distinguish between _devnet_, _testnet_ and _mainnet_. When running the Cronos in your local environment, you will also need to decide your own Chain ID.
 
 For example, our testnet Chain ID is `cronostestnet_338-1`.
 
 ## Address prefix
 
-[BIP-0173](https://github.com/satoshilabs/slips/blob/master/slip-0173.md) defines a new format for segregated witness output addresses that contains a human-readable part which identifies the coin type. Cronos has different address prefixes for its corresponding network types, these prefixes are:
+[BIP-0173](https://github.com/satoshilabs/slips/blob/master/slip-0173.md) defines a new format for segregated witness output addresses that contains a human-readable part that identifies the coin type. Cronos has different address prefixes for its corresponding network types, these prefixes are:
 
 | Testnet |
 | ------- |
 | `tcrc`  |
 
-Cronos uses the Bech32 address format wherever users must handle binary data. Bech32 encoding provides robust integrity checks on data and the human readable part (HRP) that provides contextual hints that can assist UI developers with providing informative error messages. Specifically, we have the following HRP prefixes for different address types in the mainnet:
+Cronos uses the Bech32 address format wherever users must handle binary data. Bech32 encoding provides robust integrity checks on data and the human readable part(HRP) that provides contextual hints that can assist UI developers with providing informative error messages. Specifically, we have the following HRP prefix for different addresses types in the mainnet:
 
 |                    | Address bech32 Prefix |
 | ------------------ | --------------------- |
@@ -55,8 +55,7 @@ Cronos uses the Bech32 address format wherever users must handle binary data. Be
 | Validator Operator | `tcrcvaloper`         |
 | Consensus Nodes    | `tcrcvalcons`         |
 
-We can use the `keys show` command of `cronosd` with the flag `--bech <type> (acc|val|cons)` to obtain the addresses and keys as mentioned above. \
-For example:
+We can use the `keys show` command of `cronosd` with the flag `--bech <type> (acc|val|cons)` to obtain the addresses and keys as mentioned above: for example,
 
 ```bash
 $ cronosd keys show mykey --bech acc

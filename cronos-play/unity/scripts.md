@@ -1,4 +1,4 @@
-## Scripts
+# Scripts
 
 This section contains the different types of script that can be used in the Unity SDK. For additional operations and methods please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
 
@@ -11,9 +11,10 @@ string account = PlayerPrefs.GetString("Account");
 print(account);
 ```
 
-### EVM 
+### EVM
 
 Get the current latest block number
+
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
@@ -24,6 +25,7 @@ print(blockNumber);
 ```
 
 Get the balance of the native blockchain
+
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
@@ -35,6 +37,7 @@ print(balance);
 ```
 
 Verify a signed message.
+
 ```csharp
 string message = "YOUR_MESSAGE";
 string signature = "YOUR_SIGNATURE";
@@ -43,8 +46,8 @@ string address = await EVM.Verify(message, signature);
 print(address);
 ```
 
-
 Print Nonce.
+
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
@@ -58,6 +61,7 @@ print(nonce);
 ### ERC721
 
 Counts all NFTs assigned to an owner
+
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
@@ -70,6 +74,7 @@ print(balance);
 ```
 
 Find the owner of a NFT.
+
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
@@ -82,6 +87,7 @@ print(ownerOf);
 ```
 
 Print URI.
+
 ```csharp
 string chain = "cronos";
 string network = "mainnet";
@@ -90,7 +96,6 @@ string tokenId = "TOKEN_ID";
 
 string uri = await ERC721.URI(chain, network, contract, tokenId);
 print(uri)
-
 ```
 
 ### Signatures

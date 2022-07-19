@@ -1,16 +1,14 @@
 # Unity
 
-## Overview
-
 ### Pre-requisites
 
 This SDK assumes that you have a basic understanding of Unity, ERC721 and EVM practices.
 
-#### Supported OS
+### Supported OS
 
 This documentation currently supports WebGL, IOS and Android builds. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
-#### Other Requirements
+### Other Requirements
 
 * **Mobile IDE**: If you want to test your Mobile Builds we recommend you to download a Mobile Development IDE with Device Simulation Capabilities such as Xcode.
 * **DefiConnect**: [DefiConnect](https://chrome.google.com/webstore/detail/cryptocom-wallet-extensio/hifafgmccdpekplomjjkcfgodnhcellj) is required for the Login Example.

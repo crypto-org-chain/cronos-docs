@@ -12,7 +12,7 @@ Cronos gravity bridge testnet - Pioneer 11 (`pioneereleventestnet_340-1`) is **d
 
 ### Supported OS
 
-We officially support macOS, Windows, and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other operating systems after we have stabilised our current architecture.
+We officially support macOS, Windows and Linux only. Other platforms may work but there is no guarantee. We will extend our support to other platforms after we have stabilized our current architecture.
 
 ### Prepare your machine
 

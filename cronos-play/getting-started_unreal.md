@@ -1,6 +1,6 @@
 # Unreal Engine Plugin
 
-## Pre-requisites
+### Pre-requisites
 
 Unreal Engine 4.27 and 5.0 are supported, i.e. one of them should be installed via the Epic Games Launcher.
 
@@ -80,7 +80,7 @@ Visual Studo 2019 or later (2022) or XCODE 13.2.1 Unreal Engine 4.27 and 5.0 are
 
 To install, run the following commands:
 
-**macOS**
+#### **macOS**
 
 1. Run the following commands
 
@@ -92,7 +92,7 @@ cd play-unreal-demo/CronosPlayUnrealDemo/
 
 1. `CronosPlayUnrealDeemo.project` with the unreal editor
 
-**Windows**
+#### **Windows**
 
 1. Run the following commands
 

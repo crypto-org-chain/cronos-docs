@@ -6,7 +6,7 @@ This section will illustrate how to build the scenes to login and load a player'
 NOTE In order to use the Cronos Network, you will have to add the Network ID and Name in the network.js file in the `Assets/WebGLTemplates/Web3GL-2020x/` folder.
 {% endhint %}
 
-## Import NFT
+### Import NFT
 
 To ensure that the NFT loads conditionally after successfully connecting to a wallet, you can update the `ImportNFTTextureCronos.cs` file with the content below.
 
@@ -64,7 +64,7 @@ public class ImportNFTTextureCronos : MonoBehaviour
 NOTE We are using `PlayerPrefs.GetString("Account")` to dynamically fetch the address when connecting to DefiConnect. You can replace this with the actual account address for testing purposes like so: `string account = "account_address"`
 {% endhint %}
 
-## Build the Scenes
+### Build the Scenes
 
 To build the Game Login example, you need to go to `File/Build Settings` and select your WebGL, IOS or Androi Build Settings. In this example, we will build using the WebGL method. To build with the DefiWallet option, you will have to select the Cronos DefiWallet Template in the Player -> Resolution and Presentation settings
 
