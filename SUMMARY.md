@@ -19,6 +19,7 @@
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
+* [Faucet](for-users/faucet.md)
 * [FAQ](for-users/faq.md)
 
 ## FOR DAPP DEVELOPERS
@@ -38,6 +39,7 @@
 ## FOR NODE HOSTS
 
 * [Running nodes](for-node-hosts/running-nodes/README.md)
+  * [Quickstart](for-node-hosts/running-nodes/quickstart.md)
   * [Cronos Mainnet Beta](for-node-hosts/running-nodes/cronos-mainnet/README.md)
     * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/cronos-mainnet/huygen.md)
   * [Cronos Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
