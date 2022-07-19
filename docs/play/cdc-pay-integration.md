@@ -15,7 +15,7 @@ POST https://pay.crypto.com/api/payments
 ```
 ```sh
 curl https://pay.crypto.com/api/payments \
-  -u SECRET_KEY: \
+  -u PUBLISHABLE_KEY: \
   -d amount=2500 \
   -d currency=USD \
   -d description="Crypto.com Tee (Unisex)"
