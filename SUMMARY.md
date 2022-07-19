@@ -10,9 +10,9 @@
 
 * [MetaMask](for-users/metamask.md)
 * [Bridge](for-users/bridge/README.md)
-  * [From App and Exchange](for-users/bridge/app\_n\_ex/README.md)
-    * [From Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
-    * [From Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
+  * [From the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
+    * [From the Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
+    * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
   * [From Crypto.org Chain](for-users/bridge/other\_chain/README.md)
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
     * [Crypto.com DeFi Wallet](for-users/bridge/other\_chain/defiwallet.md)

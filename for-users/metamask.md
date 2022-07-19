@@ -33,17 +33,17 @@ canonicalUrl: https://docs.cronos.org/getting-started/metamask.html
 
 # MetaMask
 
-In the following step-by-step guide, you will learn how to use the MetaMask chrome extension to send/receive and interact with the Cronos chain.
+In this guide, you will learn how to use the MetaMask extension on Google Chrome to send and receive tokens, and interact with the Cronos network.
 
 ## Connecting with MetaMask
 
-First of all we would need to connect the MetaMask with the Cronos chain network:
+First, you will need to connect your MetaMask wallet to the Cronos network:
 
-*   Hit the my account button in the top right corner, under **"Settings"**, select **"Networks"**
+* Click the "**My Account**" button in the top right corner. Then select **"Networks"** in the settings menu.
 
 ![](assets/1.png)
 
-*   In the **"Networks"** page, click "Add Network":
+* Click "**Add Network**":
 
 ![](assets/2.png)
 
@@ -75,31 +75,29 @@ First of all we would need to connect the MetaMask with the Cronos chain network
 
 ![](assets/3.png)
 
-* After saving the network config, we should be able to see the token in your address!
+* After saving the network configuration, we should be able to see the token in your address.
 
-## Importing private key to MetaMask
+## Importing private keys to MetaMask
 
-Alternatively, We can export the private key by using the `unsafe-export-eth-key` command with `cronosd`, for example:
+Alternatively, We can export the private keys by using the `unsafe-export-eth-key` command with `cronosd.` For example:
 
 ```bash
 cronosd keys unsafe-export-eth-key mykey --keyring-backend test
 ```
 
-It will show your private, we can copy it for the next step.
-
-Then hit my account button in the top right corner again, select "Import Account" under "My account" on your MetaMask:
+It will show your private key and you can copy it for the next step. Click the "**My Account"** button at the top right corner again. Then, select "**Import Account**":
 
 ![](assets/4.png)
 
-Paste the private from the former step here and click "Import".
+Paste your private key string from the previous step and click "**Import"**.
 
 ![](assets/5.png)
 
-Once it has been connect, you should see the balance and may start performing transactions via MetaMask!
+Once it has been connected, you should see your token balance and you can then begin performing transactions using your MetaMask wallet!
 
 ## Address conventions
 
-Note that the address format in Cronos is in there form of bech32 `crc...` , we can use `cronosd debug addr` to convert an address between hex and bech32, for example:
+Please note that the address format in Cronos is in there form of bech32 `crc...` , we can use `cronosd debug addr` to convert an address between hex and bech32. For example:
 
 ```bash
 $ cronosd keys list --keyring-backend test
@@ -123,14 +121,14 @@ $ cronosd debug addr 2F743F55AC49A446484988505244941DEDA1B60A
 ```
 
 {% hint style="info" %}
-Remarks: One would have to add the `0x` at the beginning when using the Ethereum HEX address shown as above: for example: `Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A` implies that `0x2F743F55AC49A446484988505244941DEDA1B60A` will be the address in the Ethereum manner.
+Remarks: You will need to add `0x` at the beginning when using the Ethereum HEX address shown as above. For example: `Address (hex): 2F743F55AC49A446484988505244941DEDA1B60A` implies that `0x2F743F55AC49A446484988505244941DEDA1B60A` will be the address in Ethereum.
 {% endhint %}
 
-## Resetting your account on Metamask
+## Resetting your account on MetaMask
 
-If you come across any issue with your account or you have used the imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function on the MetaMask.
+If you come across any issue with your MetaMask account or if you have used your imported account to perform transactions in the legacy testnet, you can reset it by using the `Reset Account` function.
 
-Simply go to `Setting/Advance` and click `Reset Account` as shown below:
+Simply go to `Setting/Advance` and click `Reset Account`:
 
 ![central image](assets/10.png)
 
