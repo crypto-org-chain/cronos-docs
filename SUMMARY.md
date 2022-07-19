@@ -33,6 +33,7 @@
   * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
 * [Useful Projects](for-dapp-developers/useful-projects-on-cronos.md)
   * [Band Protocol](for-dapp-developers/band-protocol.md)
+  * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
 
 ## FOR NODE HOSTS
 
