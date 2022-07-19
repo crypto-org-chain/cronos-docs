@@ -49,12 +49,12 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 | `eth_getTransactionByHash`                                                          | Eth       | ✔           | ✔      |
 | `eth_getTransactionByBlockHashAndIndex`                                             | Eth       | ✔           | ✔      |
 | `eth_getTransactionReceipt`                                                         | Eth       | ✔           | ✔      |
-| `eth_newFilter`                                                                     | Eth       | ✔           | ✔      |
-| `eth_newBlockFilter`                                                                | Eth       | ✔           | ✔      |
-| `eth_newPendingTransactionFilter`                                                   | Eth       | ✔           | ✔      |
-| `eth_uninstallFilter`                                                               | Eth       | ✔           | ✔      |
-| `eth_getFilterChanges`                                                              | Eth       | ✔           | ✔      |
-| `eth_getFilterLogs`                                                                 | Eth       | ✔           | ✔      |
+| `eth_newFilter`                                                                     | Eth       | ✔           |        |
+| `eth_newBlockFilter`                                                                | Eth       | ✔           |        |
+| `eth_newPendingTransactionFilter`                                                   | Eth       | ✔           |        |
+| `eth_uninstallFilter`                                                               | Eth       | ✔           |        |
+| `eth_getFilterChanges`                                                              | Eth       | ✔           |        |
+| `eth_getFilterLogs`                                                                 | Eth       | ✔           |        |
 | `eth_getLogs`                                                                       | Eth       | ✔           | ✔      |
 | `eth_getTransactionbyBlockNumberAndIndex`                                           | Eth       |             | ✔      |
 | `eth_submitHashrate`                                                                | Eth       |             |        |
@@ -78,6 +78,12 @@ Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pendi
 Tip\
 \
 While the examples below make use of local node [http://localhost:8545](http://localhost:8545), users may also use our public full node: [https://evm-t3.cronos.org:8545/](https://evm-t3.cronos.org:8545/)
+{% endhint %}
+
+{% hint style="info" %}
+Note\
+\
+When using batch requests, we currently only allow 3 objects for Mainnet and 5 objects for Testnet
 {% endhint %}
 
 ## JSON-RPC namespaces

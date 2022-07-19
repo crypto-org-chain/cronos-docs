@@ -9,7 +9,7 @@
 * [Joining the Cronos Mainnet](../../for-node-hosts/running-nodes/cronos-mainnet.md)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
-* [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger?network=mainnet)
+* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)
 * [Deploying Smart Contract](../cronos-smart-contract/)
 * [Using MetaMask](https://docs.cronos.org/getting-started/metamask.html)
 {% endtab %}
@@ -20,7 +20,7 @@
 * [Joining the Cronos Testnet](https://docs.cronos.org/getting-started/cronos-testnet.html)
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-3/genesis.json)
-* [JSON-RPC Swagger Playground](https://docs.cronos.org/swagger)
+* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=testnet)
 * [Testnet Faucet](https://cronos.org/faucet/)
 * [Using Metamask](https://docs.cronos.org/for-users/metamask)
 {% endtab %}
