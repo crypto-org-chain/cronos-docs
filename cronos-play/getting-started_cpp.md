@@ -105,7 +105,7 @@ using namespace org::defi_wallet_core;
 using namespace com::crypto::game_sdk;
 ```
 
-* Link the `play_cpp_sdk` static or dynamic library, `cxxbridge1` static library, and sources (\*.cc) into your build system (Visual Studio solution, CMake or Makefile). For more details, check out [Cronos Play Docs](https://github.com/crypto-org-chain/cronos-play-docs).
+* Link the `play_cpp_sdk` static or dynamic library, `cxxbridge1` static library, and sources (\*.cc) into your build system (Visual Studio solution, CMake or Makefile). For more details, check out [Cronos Play Docs](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/).
 
 ## Build libraries and bindings from scratch
 
