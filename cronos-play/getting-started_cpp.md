@@ -130,6 +130,10 @@ If the Pre-built release does not support your platform, you can build the binar
 
 Full function list can be found [here](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1)
 
+### Examples
+
+Examples can be found [here](https://github.com/cronos-labs/play-cpp-sdk/tree/main/demo/examples/src)
+
 ### Wallet related functions
 
 function `new_wallet` - Generates the HD wallet with a BIP39 backup phrase (English words) and password
