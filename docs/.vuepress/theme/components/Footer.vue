@@ -20,7 +20,7 @@
               </a>
             </div> -->
             <div class="link">
-              <a href="/docs">
+              <a href="https://docs.cronos.org/getting-started/readme">
                 Documentation
               </a>
             </div>

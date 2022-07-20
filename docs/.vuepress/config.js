@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       text: "Getting Started",
-      link: "/getting-started/"
+      link: "https://docs.cronos.org/getting-started/readme"
     },
 
       {
@@ -18,35 +18,35 @@ module.exports = {
         items: [
           {
             text: "Cronos Mainnet Beta",
-            link: "/getting-started/cronos-mainnet"
+            link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet"
           },
           {
             text: "Using Metamask",
-            link: "/getting-started/metamask"
+            link: "https://docs.cronos.org/for-users/metamask"
           },
           {
             text: "Cronos Testnet",
-            link: "/getting-started/cronos-testnet"
+            link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-testnet"
           },
           {
           text: "Cronos Gravity bridge Testnet",
-          link: "/getting-started/cronos-gbtestnet"
+          link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-gbtestnet"
           },
           {
             text: "Local network deployment",
-            link: "/getting-started/local-devnet"
+            link: "https://docs.cronos.org/for-node-hosts/running-nodes/local-devnet"
           },
           {
             text: "Cronos node setup best practises",
-            link: "/getting-started/cronos-node-best-practises"
+            link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-node-best-practises"
           },          
           {
             text: "Deploy Smart Contract at Cronos",
-            link: "/getting-started/cronos-smart-contract"
+            link: "https://docs.cronos.org/for-dapp-developers/cronos-smart-contract"
           },
           {
             text: "Best Practices for DeFi Project in Cronos",
-            link: "/getting-started/defi-practice"
+            link: "https://docs.cronos.org/for-dapp-developers/cronos-smart-contract/defi-practice"
           },
           {
             text: "Block Explorer",
@@ -64,15 +64,15 @@ module.exports = {
         items: [
           {
             text: "Introduction",
-            link: "/chain-details/introduction.md"
+            link: "https://docs.cronos.org/getting-started/introduction"
           },
           {
             text: "Design Goals",
-            link: "/chain-details/architecture.md"
+            link: "https://docs.cronos.org/getting-started/architecture"
           },
           {
             text: "Modules",
-            link: "/chain-details/module_overview.md"
+            link: "https://docs.cronos.org/about-cronos/module_overview"
           }
         ]
       },
@@ -81,23 +81,23 @@ module.exports = {
         items: [
           {
             text: "Via Crypto.com App and Exchange",
-            link: "/bridge/app_n_ex.md"
+            link: "https://docs.cronos.org/for-users/bridge/app_n_ex"
           },
           {
             text: "From other chains (Cronos Bridge WebApp)",
-            link: "/bridge/other_chain#via-cronos-bridge-web-app"
+            link: "https://docs.cronos.org/for-users/bridge/other_chain/webapp"
           }, 
           {
             text: "From other chains (Crypto.com DeFi Wallet)",
-            link: "/bridge/other_chain#via-crypto-com-defi-wallet"
+            link: "https://docs.cronos.org/for-users/bridge/other_chain/defiwallet"
           },      
           {
             text: "From other chains (Crypto.com DeFi Desktop Wallet)",
-            link: "/bridge/other_chain#via-crypto-com-defi-desktop-wallet"
+            link: "https://docs.cronos.org/for-users/bridge/other_chain/desktop"
           },
           {
             text: "Gravity Bridge (Cronos Bridge WebApp - Testnet only)",
-            link: "/bridge/gb-testnet"
+            link: "https://docs.cronos.org/for-users/bridge/gb-testnet"
           }                     
         ]
       },   
@@ -106,19 +106,19 @@ module.exports = {
         items: [
           {
             text: "Introduction",
-            link: "/play/introduction.html",           
+            link: "https://docs.cronos.org/cronos-play/cronos-play",           
           },
           {
             text: "Unity",
-            link: "/play/getting-started.html",           
+            link: "https://docs.cronos.org/cronos-play/unity",           
           },
           {
             text: "Unreal Engine",
-            link: "/play/getting-started_unreal.html",           
+            link: "https://docs.cronos.org/cronos-play/getting-started_unreal",           
           },          
           {
             text: "C++ SDK",
-            link: "/play/getting-started_cpp.html",           
+            link: "https://docs.cronos.org/cronos-play/getting-started_cpp",           
           }
         ]
       },
@@ -128,27 +128,23 @@ module.exports = {
         items: [
           {
             text: "Integrating with Cronos Chain",
-            link: "/resources/chain-integration"
+            link: "https://docs.cronos.org/for-dapp-developers/chain-integration"
           },
           {
             text: "Web extension integration",
-            link: "/resources/web-extension-integration"
+            link: "https://docs.cronos.org/for-dapp-developers/chain-integration/web-extension-integration"
           },
           {
             text: "Node Setup and RPC note",
-            link: "/resources/node-and-rpc-setup-notes"
-          },
-          {
-            text: "gRPC API",
-            link: "/resources/cosmos-grpc-docs"
+            link: "https://docs.cronos.org/for-node-hosts/running-nodes/node-and-rpc-setup-notes"
           },
           {
             text: "Technical Glossary",
-            link: "/resources/technical-glossary"
+            link: "https://docs.cronos.org/about-cronos/chain-details/technical-glossary"
           },
           {
             text: "Useful Projects on Cronos",
-            link: "/resources/useful-projects"
+            link: "https://docs.cronos.org/for-dapp-developers/useful-projects-on-cronos"
           },
         ]
       }
