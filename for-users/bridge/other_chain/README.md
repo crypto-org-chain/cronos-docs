@@ -41,10 +41,22 @@ We are constantly working on adding new tokens and blockchains. If you have any 
 
 The Cronos Bridge (Beta) can be found at [https://cronos.org/bridge](https://cronos.org/bridge).
 
+{% content-ref url="webapp.md" %}
+[webapp.md](webapp.md)
+{% endcontent-ref %}
+
 ## Via Crypto.com DeFi Wallet
 
 Crypto.com DeFi Wallet has integrated with Cronos Bridge and provided a front-end UI to allow all users to seamlessly transfer assets over to Cronos straight from the app.
 
+{% content-ref url="defiwallet.md" %}
+[defiwallet.md](defiwallet.md)
+{% endcontent-ref %}
+
 ## Via Crypto.com DeFi Desktop Wallet
 
 Crypto.com DeFi Desktop Wallet has integrated with Cronos Bridge, allowing all users to seamlessly transfer assets over to Cronos straight from the Crypto.com DeFi Desktop Wallet.
+
+{% content-ref url="desktop.md" %}
+[desktop.md](desktop.md)
+{% endcontent-ref %}
