@@ -47,6 +47,14 @@ To run Cronos Testnet nodes, you will need a machine with the following minimum 
 * 16 GB RAM;
 * 1 TB of storage space.
 
+{% tabs %}
+{% tab title="Testnet" %}
+* [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
+* [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-3/genesis.json)
+* Binaries are available [here](https://github.com/crypto-org-chain/cronos/releases)
+{% endtab %}
+{% endtabs %}
+
 ### Step 0 : Notes on "Huygen" Network upgrade
 
 This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.

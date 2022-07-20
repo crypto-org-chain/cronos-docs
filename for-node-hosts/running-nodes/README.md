@@ -21,7 +21,3 @@ Read this section on how to setup a node on Cronos Mainnet Beta, Testnet, Devnet
 {% content-ref url="cronos-node-best-practises.md" %}
 [cronos-node-best-practises.md](cronos-node-best-practises.md)
 {% endcontent-ref %}
-
-{% content-ref url="node-and-rpc-setup-notes.md" %}
-[node-and-rpc-setup-notes.md](node-and-rpc-setup-notes.md)
-{% endcontent-ref %}

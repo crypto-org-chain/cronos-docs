@@ -46,7 +46,6 @@
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [Cronos Gravity Bridge Testnet](for-node-hosts/running-nodes/cronos-gbtestnet.md)
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
-  * [Node Setup and RPC server](for-node-hosts/running-nodes/node-and-rpc-setup-notes.md)
 * [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY

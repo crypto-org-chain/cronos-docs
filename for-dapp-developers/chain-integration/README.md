@@ -1,30 +1,39 @@
 # Cronos Integration
 
-### Integration guides
+{% content-ref url="public-rpc-endpoints.md" %}
+[public-rpc-endpoints.md](public-rpc-endpoints.md)
+{% endcontent-ref %}
+
+{% content-ref url="../cronos-smart-contract/" %}
+[cronos-smart-contract](../cronos-smart-contract/)
+{% endcontent-ref %}
+
+{% content-ref url="../useful-projects-on-cronos/" %}
+[useful-projects-on-cronos](../useful-projects-on-cronos/)
+{% endcontent-ref %}
+
+### Integration Guides
 
 {% tabs %}
 {% tab title="Mainnet" %}
-**Setup Guide**
-
-* [Joining the Cronos Mainnet](../../for-node-hosts/running-nodes/cronos-mainnet/)
-* [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
-* [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
-* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)
 * [Deploying Smart Contract](../cronos-smart-contract/)
 * [Using MetaMask](https://docs.cronos.org/getting-started/metamask.html)
+* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)
 {% endtab %}
 
 {% tab title="Testnet" %}
-**Setup Guide**
-
-* [Joining the Cronos Testnet](https://docs.cronos.org/getting-started/cronos-testnet.html)
-* [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-testnets/blob/main/testnet.json#L21)
-* [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-testnets/main/cronostestnet\_338-3/genesis.json)
-* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=testnet)
 * [Testnet Faucet](https://cronos.org/faucet/)
 * [Using Metamask](https://docs.cronos.org/for-users/metamask)
+* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=testnet)
 {% endtab %}
 {% endtabs %}
+
+### API Clients and Libraries
+
+* [**TypeScript** library](https://github.com/crypto-org-chain/chain-jslib);
+* [**Python** library](https://pypi.org/project/chainlibpy/#description);
+* [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
+* [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
 
 ### Useful Links
 
@@ -33,10 +42,3 @@
 * [GitHub Repository](https://github.com/crypto-org-chain/cronos)
 * [Official Documentation](https://docs.cronos.org/)
 * [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)
-
-### API Clients and libraries
-
-* [**TypeScript** library](https://github.com/crypto-org-chain/chain-jslib);
-* [**Python** library](https://pypi.org/project/chainlibpy/#description);
-* [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
-* [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
