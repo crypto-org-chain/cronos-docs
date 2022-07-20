@@ -28,6 +28,8 @@ If this assumption is important in your application, please consider setting up 
   * [https://evm.cronos.org/](https://evm.cronos.org/)
 * **Explorer**
   * [https://cronoscan.com/](https://cronoscan.com/)
+* **Swagger Playground**
+  * [https://cronos.org/docs/swagger?network=mainnet](https://cronos.org/docs/swagger?network=mainnet)
 {% endtab %}
 
 {% tab title="Testnet" %}
@@ -41,6 +43,8 @@ If this assumption is important in your application, please consider setting up 
   * [https://evm-t3.cronos.org/](https://evm-t3.cronos.org/)
 * **Explorer**
   * [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
+* **Swagger Playground**
+  * [https://cronos.org/docs/swagger?network=testnet](https://cronos.org/docs/swagger?network=testnet)
 {% endtab %}
 
 {% tab title="Gravity Bridge" %}
@@ -56,8 +60,6 @@ If this assumption is important in your application, please consider setting up 
   [https://cronos.crypto.org/explorer/pioneer11](https://cronos.crypto.org/explorer/pioneer11)
 {% endtab %}
 {% endtabs %}
-
-
 
 ### External node providers
 

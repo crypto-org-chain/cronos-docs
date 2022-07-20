@@ -1,39 +1,29 @@
 # Cronos Integration
 
+### Integration Guides
+
 {% content-ref url="public-rpc-endpoints.md" %}
 [public-rpc-endpoints.md](public-rpc-endpoints.md)
 {% endcontent-ref %}
 
-{% content-ref url="../cronos-smart-contract/" %}
-[cronos-smart-contract](../cronos-smart-contract/)
+{% content-ref url="web-extension-integration.md" %}
+[web-extension-integration.md](web-extension-integration.md)
 {% endcontent-ref %}
 
-{% content-ref url="../useful-projects-on-cronos/" %}
-[useful-projects-on-cronos](../useful-projects-on-cronos/)
+{% content-ref url="desktop-wallet-integration.md" %}
+[desktop-wallet-integration.md](desktop-wallet-integration.md)
 {% endcontent-ref %}
 
-### Integration Guides
-
-{% tabs %}
-{% tab title="Mainnet" %}
-* [Deploying Smart Contract](../cronos-smart-contract/)
-* [Using MetaMask](https://docs.cronos.org/getting-started/metamask.html)
-* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=mainnet)
-{% endtab %}
-
-{% tab title="Testnet" %}
-* [Testnet Faucet](https://cronos.org/faucet/)
-* [Using Metamask](https://docs.cronos.org/for-users/metamask)
-* [JSON-RPC Swagger Playground](https://cronos.org/docs/swagger?network=testnet)
-{% endtab %}
-{% endtabs %}
+{% content-ref url="json-rpc.md" %}
+[json-rpc.md](json-rpc.md)
+{% endcontent-ref %}
 
 ### API Clients and Libraries
 
-* [**TypeScript** library](https://github.com/crypto-org-chain/chain-jslib);
-* [**Python** library](https://pypi.org/project/chainlibpy/#description);
-* [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete);
-* [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate).
+* [**TypeScript** library](https://github.com/crypto-org-chain/chain-jslib)
+* [**Python** library](https://pypi.org/project/chainlibpy/#description)
+* [**Rust** library](https://github.com/crypto-org-chain/chainlib-rs) (note that it is not feature complete)
+* [@cosmjs/stargate](https://github.com/cosmos/cosmjs/tree/master/packages/stargate)
 
 ### Useful Links
 
