@@ -135,10 +135,6 @@ module.exports = {
             link: "https://docs.cronos.org/for-dapp-developers/chain-integration/web-extension-integration"
           },
           {
-            text: "Node Setup and RPC note",
-            link: "https://docs.cronos.org/for-node-hosts/running-nodes/node-and-rpc-setup-notes"
-          },
-          {
             text: "Technical Glossary",
             link: "https://docs.cronos.org/about-cronos/chain-details/technical-glossary"
           },
@@ -188,7 +184,6 @@ module.exports = {
         "chain-integration",
         "web-extension-integration",
         "desktop-wallet-integration",
-        "node-and-rpc-setup-notes",
         "cosmos-grpc-docs",
         "technical-glossary",
         "useful-projects",
