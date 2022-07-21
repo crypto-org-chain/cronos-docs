@@ -42,6 +42,14 @@ Before bridging a large amount, we encourage testing a transfer of a small amoun
 
 ![centered image](../assets/webapp\_enter\_amout.png)
 
+****![](../assets/4a\_confirm\_wallet\_txn.png)****
+
+****![](../assets/4b\_confirm\_wallet\_txn.png)****
+
+****![](../assets/4c\_confirm\_wallet\_txn.png)****
+
+****
+
 **Step 4. Confirm the transaction**
 
 Once all the transfer settings have been confirmed, a transaction confirmation page will pop up, summarising the transaction.
@@ -51,12 +59,6 @@ This will send a transaction request to your wallet. Please confirm the request 
 After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../../faq.md).
 
 ![centered image](../assets/webapp\_confirmation\_screen.png)
-
-![centered image](../assets/4a\_confirm\_wallet\_txn.png)
-
-![centered image](../assets/4b\_confirm\_wallet\_txn.png)
-
-![centered image](../assets/4c\_confirm\_wallet\_txn.png)
 
 **Step 5. Bridging assets**
 

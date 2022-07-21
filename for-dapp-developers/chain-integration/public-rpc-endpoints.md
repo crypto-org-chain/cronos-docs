@@ -29,7 +29,7 @@ If this assumption is important in your application, please consider setting up 
 * **Explorer**
   * [https://cronoscan.com/](https://cronoscan.com/)
 * **Swagger Playground**
-  * [https://cronos.org/docs/swagger?network=mainnet](https://cronos.org/docs/swagger?network=mainnet)
+  * [https://cronos.org/swagger?network=mainnet](https://cronos.org/swagger?network=mainnet)
 {% endtab %}
 
 {% tab title="Testnet" %}
@@ -44,7 +44,7 @@ If this assumption is important in your application, please consider setting up 
 * **Explorer**
   * [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
 * **Swagger Playground**
-  * [https://cronos.org/docs/swagger?network=testnet](https://cronos.org/docs/swagger?network=testnet)
+  * [https://cronos.org/swagger?network=testnet](https://cronos.org/swagger?network=testnet)
 {% endtab %}
 
 {% tab title="Gravity Bridge" %}

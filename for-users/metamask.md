@@ -73,7 +73,7 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 {% endtab %}
 {% endtabs %}
 
-![](assets/3.png)
+<img src="assets/3.png" alt="" data-size="original">
 
 * After saving the network configuration, we should be able to see the token in your address.
 
@@ -130,6 +130,4 @@ If you come across any issue with your MetaMask account or if you have used your
 
 Simply go to `Setting/Advance` and click `Reset Account`:
 
-![central image](assets/10.png)
-
-##
+![](assets/10.png)

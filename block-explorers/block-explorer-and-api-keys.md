@@ -29,4 +29,4 @@ Click “**Create a new API-KEY token**”. Then optionally input an _**AppName*
 
 After the “**API**_**-**_**KEY Token**” is successfully created, a message will show up as per the example below. You can now use the “**API key token**” for your applications on Cronos!
 
-![drawing](assets/create-apikey-successful.png)
+![](assets/create-apikey-successful.png)

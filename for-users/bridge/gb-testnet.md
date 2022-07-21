@@ -18,12 +18,6 @@ Esentially, when a user sends assets from Ethereum to Cronos, the corresponding 
 
 #### Currently supported tokens from \[Goerli Testnet]:
 
-* WETH
-* WBTC
-* USDC
-* USDT
-* DAI
-
 | ERC20 | Goerli                                     | Pioneer11                                  |
 | ----- | ------------------------------------------ | ------------------------------------------ |
 | USDC  | 0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C | 0x8a8DfedBF6650737DFf63c2f455ecC54AcEcF197 |
@@ -61,9 +55,7 @@ and add the following network details:
 * Currency symbol: **TCRO**
 * Block Explorer URL (Optional): **https://cronos.org/explorer/pioneer11**
 
-![centered image](assets/testnetworks.png)
-
-![centered image](assets/metamaskpioneer11.png)
+****![](assets/testnetworks.png)****![](assets/metamaskpioneer11.png)****
 
 #### Step 2. Select Network and Token
 
@@ -113,7 +105,7 @@ Please note that after bridging the tokens, they will be converted into tokens t
 
 ![centered image](assets/confirmpioneer.png)
 
-![centered image](assets/confirmmetamask.png)
+#### ![](assets/confirmmetamask.png)
 
 #### 5. Bridging assets
 

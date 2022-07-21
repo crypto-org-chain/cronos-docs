@@ -1,3 +1,7 @@
+---
+layout: editorial
+---
+
 # Band Protocol
 
 ## Band Protocol's Data Feed
