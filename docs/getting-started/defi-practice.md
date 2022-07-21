@@ -6,39 +6,40 @@ Decentralized Finance (DeFi) is revolutionizing the finance industry and bringin
 ## Secure Coding Practices
 
 ### Design
-#### Documentation
+**Documentation**
 
-- The document about your contract should be recorded clearly, including the smart contract's purpose and what it can do. The document should be updated when you implement and update the contracts:
+* The document about your contract should be recorded clearly, including the smart contract's purpose and what it can do. The document should be updated when you implement and update the contracts:
 Solidity contracts can use a particular form of comments to provide rich documentation for functions, return variables and more. This particular form is named the Ethereum Natural Language Specification Format [NatSpec](https://docs.soliditylang.org/en/develop/natspec-format.html). You may refer to the Natspec format for more details. 
 Schema and architectural diagrams, including the contract interactions and the state machine of the system. You may refer to [Slither printers](https://github.com/crytic/slither/wiki/Printer-documentation) which can help you to generate your schemas.
 
-#### Upgradeability
+**Upgradeability**
 - For contract upgradeability, it is recommended to consider contract migration first, which will spare you the risks of an upgradeability mechanism but allows you to have the new functions. 
 - You may refer to this [contract migration guide](https://blog.trailofbits.com/2018/10/29/how-contract-migration-works/) for contract migration and the [OpenZeppelin smart contracts](https://docs.openzeppelin.com/learn/upgrading-smart-contracts) upgrade guide for the contract upgrade. 
 Also, remember to document the migration/upgrade procedure before the deployment. 
 
-#### On-chain vs Off-chain computation
+**On-chain vs Off-chain computation**
 - Keep as much code as you can off-chain and keep the on-chain layer small. Pre-process data with code off-chain in such a way that verification on-chain is simple.
 
 ### Development Implementation
-#### Function Composition
+**Function Composition**
 - Use simple solutions for your functions so that you and your team can understand when they review back. Also, the architecture of your codebase should make your code easy to check. 
   - You may write small functions with a clear purpose. This helps facilitate a more straightforward review and testing.
-  - You can also split the logic of your system either through multiple contracts or by grouping similar functions.
+  - You can split the logic of your system either through multiple contracts or by grouping similar functions.
+  - You should also note that all state modification in the function must happen before an external call is made, when considering the function in Solidity. This potentially prevent a re-entrancy attack. You can learn more details [here](https://dev.to/zaryab2000/the-significance-of-check-effects-interaction-pattern-5hn6). 
   
-#### Inheritance
+**Inheritance**
 - Keep the inheritance manageable. Even though inheritance should be used to divide the logic, your project should aim to minimize the depth and width of the inheritance tree. You may check out [Slither’s inheritance printer](https://github.com/crytic/slither/wiki/Printer-documentation#inheritance-graph) to check the contracts’ hierarchy to help you review the size of the hierarchy.
 
-#### Solidity
+**Solidity**
 - For Solidity, use a stable release to compile and the latest release to check for warnings. Make sure your code has no reported issues with the latest compiler version. Also, stay cautious when using inline assembly, as it requires strong EVM expertise.
 
-#### Events & Logging
+**Events & Logging**
 - Log all major operations. Events will help to debug the contract during the development and monitor it after deployment.
 
-#### Dependencies
+**Dependencies**
 - For dependencies, you would want to use well-tested libraries to reduce the chance of buggy code. You may consider using a dependency manager. If you rely on an external source, you should keep it up-to-date with the original source.
 
-#### Common Security Issues
+**Common Security Issues**
 Be aware of the most common security issues and keep an eye on the warnings and updates from the [Solidity documentation](https://docs.soliditylang.org/en/v0.8.15/). 
 
 ### Testing 
