@@ -19,7 +19,7 @@
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
-* [Faucet](for-users/faucet.md)
+* [Testnet Faucet](for-users/testnet-faucet.md)
 * [FAQ](for-users/faq.md)
 
 ## FOR DAPP DEVELOPERS
