@@ -113,11 +113,25 @@ After the transaction is confirmed from the wallet, the bridge operation will co
 
 Even if you dismiss, quit, or refresh the page, a small popup reminder will be available to indicate an in-progress transaction. A “**transfer completed**” message will finally confirm that the transaction has been completed successfully. You can see a full record of past transactions tied to your wallet in the History tab.
 
-Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
-
 ![centered image](assets/bridgingcompleted.png)
 
 ![centered image](assets/bridginghistory.png)
+
+#### Check your transaction status using the Relayer API
+
+If you want to check if your transaction has gone through successfully, you can query the Relayer API, using the following link:
+
+* [Relayer API](https://cronos.org/pioneer11/relayer/api-doc/#/)
+
+**Step 1:** Go to the`/cronos-eth` or `/eth-cronos` GET method and click "**Try it out**"
+
+**Step 2:** When using the bridge, you will get a Transaction Hash, fill this value in the TxHash field.
+
+**Step 3:** Click "**Execute**", if done correctly, you get a 200 response code. the "**isConfirmed**" field will become "**True"**  after a couple minutes when the Tx is confirmed.
+
+
+
+Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
 
 ### Appendix
 
