@@ -52,7 +52,7 @@ The Ethereum Virtual Machine (EVM) has led to the creation of many useful and in
 
 ## Consensus engine
 
-Cronos Testnet is based on Ethermint and it is a proof of stake blockchain built on the Cosmos SDK, which is EVM-compatible as well. Ethereum requires improvements in scalability, gas price, and customisation. Cronos utilises the [Cosmos SDK](https://cosmos.network/sdk) and the [Tendermint](https://tendermint.com/) Core Consensus Engine. Tendermint works well for PoS / DPos networks, allowing for high transaction throughputs, and provides instant transaction finality on block commitment. It was chosen as the consensus engine for the chain prototype due to the following:
+Cronos Chain is based on Ethermint and it is a proof of stake blockchain built on the Cosmos SDK, which is EVM-compatible as well. Ethereum requires improvements in scalability, gas price, and customisation. Cronos utilises the [Cosmos SDK](https://cosmos.network/sdk) and the [Tendermint](https://tendermint.com/) Core Consensus Engine. Tendermint works well for PoS / DPos networks, allowing for high transaction throughputs, and provides instant transaction finality on block commitment. It was chosen as the consensus engine for the chain prototype due to the following:
 
 * Backed by [formal research](https://eprint.iacr.org/2018/574.pdf)
 * Robustly tested [implementation](http://jepsen.io/analyses/tendermint-0-10-2)
