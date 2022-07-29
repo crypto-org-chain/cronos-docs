@@ -19,8 +19,9 @@
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
+  * [FAQs for Bridge transfers](for-users/bridge/faq.md)
+  * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
 * [Testnet Faucet](for-users/testnet-faucet.md)
-* [FAQ](for-users/faq.md)
 
 ## FOR DAPP DEVELOPERS
 
