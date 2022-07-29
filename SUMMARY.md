@@ -19,7 +19,7 @@
     * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
-  * [FAQs for Bridge transfers](for-users/bridge/faq.md)
+  * [FAQs for Bridge transfers](for-users/faq.md)
   * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
 * [Testnet Faucet](for-users/testnet-faucet.md)
 
@@ -52,7 +52,8 @@
 
 ## CRONOS PLAY
 
-* [Cronos Play](cronos-play/cronos-play.md)
+* [Cronos Play](cronos-play/cronos-play/README.md)
+  * [Cronos Play FAQ](cronos-play/cronos-play/cronos-play-faq.md)
 * [Unity](cronos-play/unity/README.md)
   * [Login Example](cronos-play/unity/login-example.md)
   * [Scripts](cronos-play/unity/scripts.md)
@@ -81,3 +82,4 @@
   * [List of parameters](about-cronos/chain-details/parameters.md)
   * [Technical glossary](about-cronos/chain-details/technical-glossary.md)
   * [Protocol Documentation](about-cronos/chain-details/cosmos-grpc-docs.md)
+* [Cronos General FAQ](about-cronos/cronos-general-faq.md)

@@ -56,7 +56,7 @@ Once all the transfer settings have been confirmed, a transaction confirmation p
 
 This will send a transaction request to your wallet. Please confirm the request in your wallet to ultimately authorise the transfer.
 
-After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../faq.md).
+After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../../faq.md).
 
 ![centered image](../assets/webapp\_confirmation\_screen.png)
 

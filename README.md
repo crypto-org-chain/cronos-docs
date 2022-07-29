@@ -59,8 +59,8 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 [testnet-faucet.md](for-users/testnet-faucet.md)
 {% endcontent-ref %}
 
-{% content-ref url="for-users/bridge/faq.md" %}
-[faq.md](for-users/bridge/faq.md)
+{% content-ref url="for-users/faq.md" %}
+[faq.md](for-users/faq.md)
 {% endcontent-ref %}
 
 ### For DApp Developers
@@ -77,8 +77,8 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 [useful-projects-on-cronos](for-dapp-developers/useful-projects-on-cronos/)
 {% endcontent-ref %}
 
-{% content-ref url="cronos-play/cronos-play.md" %}
-[cronos-play.md](cronos-play/cronos-play.md)
+{% content-ref url="cronos-play/cronos-play/" %}
+[cronos-play](cronos-play/cronos-play/)
 {% endcontent-ref %}
 
 ### For Node hosts
