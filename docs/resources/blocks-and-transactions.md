@@ -1550,11 +1550,13 @@ Latest tally params can be retreived from:[https://mainnet.crypto.org:1317/cosmo
 
 | Module                 | Address                                                                                                                                               |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| mint                   | [cro1m3h30wlvsf8llruxtpukdvsy0km2kum8s20pm3](https://mainnet.crypto.org:1317/cosmos/auth/v1beta1/accounts/cro1m3h30wlvsf8llruxtpukdvsy0km2kum8s20pm3) |
-| fee_collector          | [cro17xpfvakm2amg962yls6f84z3kell8c5lgztehv](https://mainnet.crypto.org:1317/cosmos/auth/v1beta1/accounts/cro17xpfvakm2amg962yls6f84z3kell8c5lgztehv) |
-| distribution           | [cro1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8lyv94w](https://mainnet.crypto.org:1317/cosmos/auth/v1beta1/accounts/cro1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8lyv94w) |
-| bonded_tokens_pool     | [cro1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3dqpk9x](https://mainnet.crypto.org:1317/cosmos/auth/v1beta1/accounts/cro1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3dqpk9x) |
-| not_bonded_tokens_pool | [cro1tygms3xhhs3yv487phx3dw4a95jn7t7leqa8nj](https://mainnet.crypto.org:1317/cosmos/auth/v1beta1/accounts/cro1tygms3xhhs3yv487phx3dw4a95jn7t7leqa8nj) |
-| gov                    | [cro10d07y265gmmuvt4z0w9aw880jnsr700jzemu2z](https://mainnet.crypto.org:1317/cosmos/auth/v1beta1/accounts/cro10d07y265gmmuvt4z0w9aw880jnsr700jzemu2z) |
+| mint                   | [crc1m3h30wlvsf8llruxtpukdvsy0km2kum8l0aw47](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc1m3h30wlvsf8llruxtpukdvsy0km2kum8l0aw47) |
+| fee_collector          | [crc17xpfvakm2amg962yls6f84z3kell8c5l88eker](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc17xpfvakm2amg962yls6f84z3kell8c5l88eker) |
+| distribution           | [crc1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8sp72mp](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8sp72mp) |
+| bonded_tokens_pool     | [crc1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3z9netf](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3z9netf) |
+| not_bonded_tokens_pool | [crc1tygms3xhhs3yv487phx3dw4a95jn7t7lk90gaa](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc1tygms3xhhs3yv487phx3dw4a95jn7t7lk90gaa) |
+| gov                    | [crc10d07y265gmmuvt4z0w9aw880jnsr700jdufnyd](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc10d07y265gmmuvt4z0w9aw880jnsr700jdufnyd) |
+| transfer               | [crc1yl6hdjhmkf37639730gffanpzndzdpmhepvl9a](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc1yl6hdjhmkf37639730gffanpzndzdpmhepvl9a) |
+| cronos                 | [crc1v5ntfruf0ahqspna7q9psgwhs09u9tutd3vt2g](https://rest-cronos.crypto.org/cosmos/auth/v1beta1/accounts/crc1v5ntfruf0ahqspna7q9psgwhs09u9tutd3vt2g) |
 
 [Top](#table-of-content)
