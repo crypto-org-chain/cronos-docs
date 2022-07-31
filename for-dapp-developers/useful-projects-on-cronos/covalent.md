@@ -38,8 +38,6 @@ Try the supported endpoints directly in your browser from our [API Reference](ht
 ❵
 ```
 
-&#x20;
-
 {% tabs %}
 {% tab title="Curl" %}
 ```
@@ -106,9 +104,7 @@ The Covalent API supports a broad range of Web3 data use cases including:
 | ![Trading](https://www.covalenthq.com/static/images/partner-docs/trading.png) | ![Predictions](https://www.covalenthq.com/static/images/partner-docs/predictions.png) | ![Governance](https://www.covalenthq.com/static/images/partner-docs/governance.png)        | ![Pricing](https://www.covalenthq.com/static/images/partner-docs/pricing.png) |
 | DEXs & Trading                                                                | Predictive Analytics                                                                  | Governance                                                                                 | Pricing                                                                       |
 
-Check out our collection of ready-to-ship [**Code Templates**](https://github.com/covalenthq/web3-resources?utm\_source=cronos\&utm\_medium=partner-docs) that you can use to build your Web3 data-powered DApps.
-
-&#x20;
+Check out Covalent's collection of ready-to-ship [**Code Templates**](https://github.com/covalenthq/web3-resources?utm\_source=cronos\&utm\_medium=partner-docs) that you can use to build your Web3 data-powered DApps.
 
 ## Resources
 
@@ -119,6 +115,3 @@ Here are some additional resources to help you get started with the Covalent API
 * [Covalent API Reference](https://covalenthq.com/docs/api/?utm\_source=cronos\&utm\_medium=partner-docs)
 * [API FAQs](https://www.covalenthq.com/docs/developer/faq/?utm\_source=cronos\&utm\_medium=partner-docs)
 * [Discord Support](https://www.covalenthq.com/discord/?utm\_source=cronos\&utm\_medium=partner-docs)
-
-&#x20;
-
