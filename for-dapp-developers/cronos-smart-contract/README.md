@@ -121,9 +121,9 @@ npm run deploy-contract-cronos
 
 ### Step 8. Obtain Contract address from console and input to Metamask
 
-Correct balance will be shown on Metamask page 
+Correct balance will be shown on Metamask page
 
-![](../assets/cronos-smart-contract/truffle\_deploy\_contract\_address.png) 
+![](../assets/cronos-smart-contract/truffle\_deploy\_contract\_address.png)
 
 ![](../assets/cronos-smart-contract/metamask\_add\_tokens.png) ![](../assets/cronos-smart-contract/metamask\_add\_token\_success.png)
 
@@ -169,7 +169,7 @@ PRIVATE_KEY=XXXXXXX
 
 ### Step 6. Endpoints setting
 
-By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.org/` by making changes to `networks` in `truffle-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.org/` by making changes to `networks` in `hardhat.config.js`, for example:
 
 ```json
   networks: {
