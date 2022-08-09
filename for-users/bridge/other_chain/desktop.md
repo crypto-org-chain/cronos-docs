@@ -2,7 +2,11 @@
 
 ## Transfer assets from Crypto.org Chain using Crypto.com DeFi Desktop Wallet
 
-Crypto.com DeFi Desktop Wallet has integrated with Cronos Bridge, allowing all users to seamlessly transfer assets over to Cronos straight from the Crypto.com DeFi Desktop Wallet. Here's how:
+Crypto.com DeFi Desktop Wallet has integrated with Cronos Bridge, allowing all users to seamlessly transfer assets over to Cronos straight from the Crypto.com DeFi Desktop Wallet.&#x20;
+
+{% hint style="info" %}
+For more information on how to setup the Crypto.com DeFi Desktop wallet, visit the [Crypto.com DeFi Desktop Wallet help](https://help.crypto.com/en/articles/6261967-what-is-crypto-com-defi-desktop-wallet) page
+{% endhint %}
 
 ### Step-by-step walkthrough
 
@@ -14,10 +18,7 @@ Crypto.com DeFi Desktop Wallet has integrated with Cronos Bridge, allowing all u
 
 Only the `Crypto.org Chain <=> Cronos bridge` will be available on Day 1. `The Ethereum <=> Cronos bridge` will not be available until the Cronos Gravity Bridge goes live. As a Crypto.com DeFi Desktop Wallet user, you will automatically have a Crypto.org Chain wallet address and Cronos wallet address created for you. These wallet addresses will automatically be detected by the Cronos Bridge.
 
-
-
-**Step 3**: Enter the amount of CRO you would like to transfer and click “**Transfer Asset**”.\
-
+**Step 3**: Enter the amount of CRO you would like to transfer and click “**Transfer Asset**”.\\
 
 You will then be able to verify the amount that you will receive along with your Cronos address after entering the amount of CRO that you want to transfer. Click “**Transfer Asset**” and enter your password to proceed.
 

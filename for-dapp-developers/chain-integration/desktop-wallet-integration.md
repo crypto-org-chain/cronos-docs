@@ -25,6 +25,10 @@ The Desktop Wallet currently supports the following networks:
 
 Integrations with additional chains are planned for the near future.
 
+{% hint style="info" %}
+For more information, visit the [Crypto.com DeFi Desktop Wallet help](https://help.crypto.com/en/articles/6261967-what-is-crypto-com-defi-desktop-wallet) page
+{% endhint %}
+
 ## Integrating with the Desktop Wallet
 
 The DApp Browsers in Desktop Wallet works the same way as MetaMask does: it injects the global `ethereum` object into the DApp's `window` object. It has implemented the essential Ethereum Provider API most DApps use, which means that if your DApp can works with MetaMask, it can also work with the Desktop Wallet.

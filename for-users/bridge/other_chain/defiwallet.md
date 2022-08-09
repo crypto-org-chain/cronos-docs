@@ -2,7 +2,11 @@
 
 ## Transfer assets from Crypto.org Chain using Crypto.com DeFi Wallet
 
-Crypto.com DeFi Wallet has integrated with Cronos Bridge and provided a front-end UI to allow all users to seamlessly transfer assets over to Cronos straight from the app. Here's how:
+Crypto.com DeFi Wallet has integrated with Cronos Bridge and provided a front-end UI to allow all users to seamlessly transfer assets over to Cronos straight from the app.&#x20;
+
+{% hint style="info" %}
+For more information on how to setup the Crypto.com DeFi wallet, visit the [Crypto.com Defi wallet help](https://help.crypto.com/en/articles/3957405-getting-started-defi-wallet) page
+{% endhint %}
 
 ### Step-by-step walkthrough
 
