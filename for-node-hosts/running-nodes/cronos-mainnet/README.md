@@ -78,7 +78,7 @@ Remarks:
 The following is the minimal setup for a **validator node** / **full node**.
 {% endhint %}
 
-To simplify the following step, we will be using **Linux** (Intel x86) for illustration. \
+To simplify the following step, we will be using **Linux** (Intel x86) for illustration.\
 Binaries for **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip) are also available.
 
 *   To install released **Cronos Mainnet Beta binaries** from github:
@@ -123,8 +123,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     This `moniker` will be the displayed id of your node when connected to Cronos Chain network.
 
-    When providing the moniker value, make sure you drop the square brackets since they are not needed.\
-
+    When providing the moniker value, make sure you drop the square brackets since they are not needed.\\
 
     The example below shows how to initialize a node named `pegasus-node` :
 
@@ -171,7 +170,7 @@ function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
 *   For network configuration, in `~/.cronos/config/config.toml`, validator nodes need to modify the configurations of `seed`, `create_empty_blocks_interval` and `timeout_commit`. For non-validator full nodes, only `seed` modification is required:
 
     ```bash
-    $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656"#' ~/.cronos/config/config.toml
+    $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"#' ~/.cronos/config/config.toml
     $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
     $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
     ```
@@ -297,4 +296,3 @@ It should begin fetching blocks from the other peers.
     ```bash
     $ ./cronosd status 2>&1 | jq '.SyncInfo.latest_block_height'
     ```
-
