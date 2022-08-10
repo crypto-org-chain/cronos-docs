@@ -37,6 +37,7 @@
 * [Useful Projects](for-dapp-developers/useful-projects-on-cronos/README.md)
   * [Band Protocol](for-dapp-developers/useful-projects-on-cronos/band-protocol.md)
   * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
+  * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)
 
 ## FOR NODE HOSTS
 
