@@ -1,123 +1,47 @@
----
-meta:
-  - name: title
-    content: Cronos | Crypto.org EVM Chain | Getting Started
-  - name: description
-    content: >-
-      Learn how to setup nodes, different SDK modules and our all-in-one
-      command-line interface cronosd in this technical documentation.
-  - name: og:title
-    content: Cronos | Crypto.org EVM Chain | Getting Started
-  - name: og:type
-    content: Website
-  - name: og:description
-    content: >-
-      Learn how to setup nodes, different SDK modules and our all-in-one
-      command-line interface cronosd in this technical documentation.
-  - name: og:image
-    content: https://cronos.org/og-image.png
-  - name: twitter:title
-    content: Cronos | Crypto.org EVM Chain | Getting Started
-  - name: twitter:site
-    content: '@cryptocom'
-  - name: twitter:card
-    content: summary_large_image
-  - name: twitter:description
-    content: >-
-      Learn how to setup nodes, different SDK modules and our all-in-one
-      command-line interface cronosd in this technical documentation.
-  - name: twitter:image
-    content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/getting-started/
-cover: .gitbook/assets/Cronos generic background 1.png
-coverY: 0
----
+<br />
+<p align="center">
+  <img src="./docs/.vuepress/public/cronos.svg" alt="Cronos Logo" width="300">
+</p>
+<br />
 
-# Getting Started
 
-Thanks for your interest in Cronos. In this technical documentation, we cover the following:
 
-* For users, wallet setup and bridging solutions
-* For DApp developers, chain integration, smart contract deployment and Cronos Play modules
-* For node hosts, node setup instructions and our all-in-one command-line interface `cronosd`
+# Cronos Gitbook Documentation
 
-### What is Cronos?
+The documentation in this repository site is meant to provide specifications and implementation details on Gitbook that will be useful developers or contributors to the main repository.
 
-Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. It is an open-source and permission-less layer-1 network that aims to massively scale the DeFi, GameFi, and overall Web3 user community. Cronos does this by providing builders with the ability to instantly port DApps and crypto assets from other chains with low transaction fees, high throughput, and fast finality.
+## Getting Started
 
-### For Users
+### Contributing
 
-{% content-ref url="for-users/metamask.md" %}
-[metamask.md](for-users/metamask.md)
-{% endcontent-ref %}
+1. Fork this repository on Github
+2. Clone your forked repository with `git clone https://github.com/YOURUSERNAME/cronos-docs.git`
+3. `cd cronos-docs`
+4. `git checkout gitbook` to switch to the gitbook branch.
+5. `git checkout -b [NewBranch]` create a new branch and push your commits.
+6. Finally open a Pull Request.
 
-{% content-ref url="for-users/bridge/" %}
-[bridge](for-users/bridge/)
-{% endcontent-ref %}
+## Adding new page to the docs
 
-{% content-ref url="for-users/testnet-faucet.md" %}
-[testnet-faucet.md](for-users/testnet-faucet.md)
-{% endcontent-ref %}
+1. Create a markdown file `[Newfile.md]` under one of the main categories, e.g. `for-users/`, `for-node-hosts/`, `for-dapp-developers/` or `cronos-play/`
+2. Open `SUMMARY.md` and add the new markdown file in the right file structure, e.g.
 
-{% content-ref url="for-users/faq.md" %}
-[faq.md](for-users/faq.md)
-{% endcontent-ref %}
+```md
+## FOR USERS
 
-### For DApp Developers
+* [MetaMask](for-users/metamask.md)
+* [Bridge](for-users/bridge/README.md)
+  * [New file](for-users/bridge/Newfile.md)
 
-{% content-ref url="for-dapp-developers/chain-integration/" %}
-[chain-integration](for-dapp-developers/chain-integration/)
-{% endcontent-ref %}
+```
 
-{% content-ref url="for-dapp-developers/cronos-smart-contract/" %}
-[cronos-smart-contract](for-dapp-developers/cronos-smart-contract/)
-{% endcontent-ref %}
+## Style guide
 
-{% content-ref url="for-dapp-developers/useful-projects-on-cronos/" %}
-[useful-projects-on-cronos](for-dapp-developers/useful-projects-on-cronos/)
-{% endcontent-ref %}
+- Use 3 levels at most 
+- Categorise docs mostly per user, dapp, node hosts, Cronos play
+- Keep docs/sentences short, DRY and modular
+- Use tabs, tables, hints and relative page links
+- Double check SUMMARY.md and prefer the use of horizontal images
 
-{% content-ref url="cronos-play/cronos-play/" %}
-[cronos-play](cronos-play/cronos-play/)
-{% endcontent-ref %}
 
-### For Node hosts
-
-{% tabs %}
-{% tab title="Cronos Mainnet Beta" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-mainnet/" %}
-[cronos-mainnet](for-node-hosts/running-nodes/cronos-mainnet/)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Cronos Testnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-testnet.md" %}
-[cronos-testnet.md](for-node-hosts/running-nodes/cronos-testnet.md)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Devnet" %}
-{% content-ref url="for-node-hosts/running-nodes/local-devnet.md" %}
-[local-devnet.md](for-node-hosts/running-nodes/local-devnet.md)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Gravity Bridge testnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-gbtestnet.md" %}
-[cronos-gbtestnet.md](for-node-hosts/running-nodes/cronos-gbtestnet.md)
-{% endcontent-ref %}
-{% endtab %}
-{% endtabs %}
-
-{% content-ref url="for-node-hosts/cli.md" %}
-[cli.md](for-node-hosts/cli.md)
-{% endcontent-ref %}
-
-### Useful links
-
-* [Cronos Website](https://cronos.org/)
-* [Cronos Whitepaper](https://whitepaper.cronos.org/)
-* [Github Repository](https://github.com/crypto-org-chain/cronos)
-* Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
-* Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da\&label=Crypto.org%C2%A0Chain)](https://discord.gg/pahqHz26q4)
-* Email dev relations: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)
+For more information on styling and syntax, refer to [https://docs.gitbook.com/](https://docs.gitbook.com/)
