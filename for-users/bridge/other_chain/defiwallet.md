@@ -16,13 +16,13 @@ You can access Cronos Bridge either in DeFi Wallet's homepage or when viewing yo
 
 ![centered image](../assets/defiwallet1-1.png)
 
-![centered image](../assets/defiwallet1-2.png)
+![](../../../.gitbook/assets/defiwallet1-2.png)
 
 **Step 2**: Select “**From**” Crypto.org Chain as the origin chain and “**To**” Cronos as the destination chain.
 
 Only the `Crypto.org Chain <=> Cronos bridge` will be available on Day 1. The `Ethereum <=> Cronos bridge` will not be available until the Cronos Gravity Bridge goes live. As a Crypto.com DeFi Wallet user, you will automatically have a Crypto.org Chain wallet address and Cronos wallet address created for you. These wallet addresses will automatically be detected by the Cronos Bridge.
 
-![centered image](../assets/defiwallet2-1.png)
+![](../../../.gitbook/assets/defiwallet2-1.png)
 
 ![centered image](../assets/defiwallet2-2.png)
 

@@ -73,6 +73,7 @@
 ## ABOUT CRONOS
 
 * [Chain ID and Address Format](about-cronos/chain-id.md)
+* [Cronos General FAQ](about-cronos/cronos-general-faq.md)
 * [Genesis](about-cronos/genesis\_file.md)
 * [Modules](about-cronos/module\_overview/README.md)
   * [module\_bank](about-cronos/module\_overview/module\_bank.md)
@@ -85,4 +86,3 @@
   * [List of parameters](about-cronos/chain-details/parameters.md)
   * [Technical glossary](about-cronos/chain-details/technical-glossary.md)
   * [Protocol Documentation](about-cronos/chain-details/cosmos-grpc-docs.md)
-* [Cronos General FAQ](about-cronos/cronos-general-faq.md)

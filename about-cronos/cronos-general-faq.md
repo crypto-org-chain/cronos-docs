@@ -2,31 +2,33 @@
 
 #### **What is the difference between Cronos Chain and Crypto.org Chain?**
 
-* Cronos is the EVM-compatible chain powered by Ethermint, which allows rapid porting of apps and smart contracts from Ethereum and EVM-compatible chains.&#x20;
-* Crypto.org Chain is our native blockchain solution for Crypto.com, which is the backbone behind the Crypto.com applications. It aims to provide a fast transaction experience. Croeseid Testnet is the testnet for the Crypto.org mainnet to test out the chain.&#x20;
+* Cronos is an EVM-compatible (Ethereum Virtual Machine) chain powered by Ethermint, built on the Cosmos SDK, which allows rapid porting of apps and smart contracts from Ethereum and EVM-compatible chains. On Cronos, users pay transaction fees in the $CRO cryptocurrency.
+* Crypto.org Chain is another Cosmos SDK chain which is primarily used for $CRO staking and as the backbone behind many Crypto.com applications. It aims to provide a fast transaction experience. (Croeseid Testnet is the testnet of Crypto.org Chain). On Crypto.org, users also pay transaction fees in the $CRO cryptocurrency.
 
-The directions and approaches for smart contract implementation Cronos is EVM compatible, while Crypto.org Chain is using CosmWasm.&#x20;
+If you are an application developer who is creating smart contracts in Solidity and would like to deploy decentralized applications in a permissionless environment, Cronos is suitable for your needs.&#x20;
 
 #### **Who is currently running as a validator on Cronos?**&#x20;
 
-Cronos runs on Proof of Authority (POA), a more streamlined and scalable consensus mechanism. Currently, validator hosting is by invitation only at the early stage of the Cronos testnet, and as of now, there are 20+ industry partner validators committed to supporting Cronos.
+Cronos uses Proof of Authority (POA) consensus, a  streamlined and scalable consensus mechanism derived from the Tendermint POS consensus.&#x20;
+
+There are currently 27 validators supporting the Cronos network, all leading infrastructure providers (see the [list here](https://cronos.org/validators)).
 
 #### **How can I become a Cronos validator?**&#x20;
 
-Cronos Validators are by invitation only at the moment. The application for new Cronos validators is not open currently. We will make an announcement once the application reopens.
+Cronos validators are by invitation only at the moment. Application for new Cronos validators are not currently open. We will make an announcement once applications re-open.
 
 #### **What is the chain-ID for Cronos Mainnet?**&#x20;
 
 * Ethereum Chain ID: `25`&#x20;
-* Cronos Chain ID: `cronosmainnet_25-1`
+* Cosmos Chain ID: `cronosmainnet_25-1`
 
-#### **What are the rate limits for the EVM endpoint for Cronos?**&#x20;
+#### **What are the rate limits of the free JSON-RPC EVM endpoint for Cronos?**&#x20;
 
-* Cronos Mainnet: a rate limit is 300 req/min/IP&#x20;
-* Cronos Testnet: a rate limit of 500 req/min/IP
+* Cronos Mainnet: rate limit is 300 req/min/IP&#x20;
+* Cronos Testnet: rate limit of 500 req/min/IP
 
-If the limit is exceeded, the IP gets blocked for 1 minute. If it is expected to consistently make more requests than the limits, you may consider setting up your own full node.&#x20;
+If the limit is exceeded, the IP gets blocked for 1 minute. If you are expecting to consistently make more requests than what limits allow, you may consider setting up your own full node or contacting a commercial JSON-RPC endpoint provider (see Dev Tools & Integrations). You can also reach out to us on [Discord](https://discord.gg/cGtxgVfGMZ) for assistance.
 
-#### **If I increase the gas fee, does it help to speed up my transaction?**&#x20;
+#### **If I increase the gas price, does it help to speed up my transaction?**&#x20;
 
-The current mempool setting works in a first-come-first-serve manner and priority with a gas fee is not supported ( i.e. setting a higher gas fee would not speed up the transaction).
+The current mempool setting works on a first-come-first-serve manner. The Cronos network does not yet support transaction prioritization using gas price or priority fee.
