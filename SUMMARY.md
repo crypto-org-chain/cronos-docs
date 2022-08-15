@@ -32,6 +32,8 @@
   * [JSON-RPC](for-dapp-developers/chain-integration/json-rpc.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
 * [Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
+  * [Contract Deployment](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
+  * [Contract Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
   * [Best Practices](for-dapp-developers/cronos-smart-contract/defi-practice.md)
   * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
 * [Useful Projects](for-dapp-developers/useful-projects-on-cronos/README.md)
