@@ -36,7 +36,7 @@
   * [Contract Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
   * [Best Practices](for-dapp-developers/cronos-smart-contract/defi-practice.md)
   * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
-* [Useful Projects](for-dapp-developers/useful-projects-on-cronos/README.md)
+* [Dev Tools & Integrations](for-dapp-developers/useful-projects-on-cronos/README.md)
   * [Band Protocol](for-dapp-developers/useful-projects-on-cronos/band-protocol.md)
   * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)
