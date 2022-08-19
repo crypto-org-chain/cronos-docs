@@ -106,6 +106,8 @@ logout = async () => {
 
 Here are additional resources to help you get started with the Moralis:
 
+* [Introduction and how to get started with Moralis on Cronos](https://www.youtube.com/watch?v=TE7Pkx\_z5m4)
+* [Buy NFT Outfits Game Programming Demo](https://youtu.be/nxezdsQT1Mk)
 * [Dapp building Tutorial](https://youtu.be/jdx2H1alijQ)
 * [Moralis Account Login](https://admin.moralis.io/login)
 * [Moralis Web3 Tutorial](https://youtu.be/txHnWDRB728)
