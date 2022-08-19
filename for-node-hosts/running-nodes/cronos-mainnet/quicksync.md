@@ -5,7 +5,7 @@
 {% hint style="info" %}
 IMPORTANT
 
-In order to use Quicksync you need to first complete [Step 3-2](./#step-3-2.-run-everything) and run \
+In order to use Quicksync you need to first complete [Step 3-2](./#step-3-2.-run-everything) and run\
 `/cronosd start`
 {% endhint %}
 
@@ -17,16 +17,13 @@ Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks
 
 After executing the command `./cronosd` start at [Step 3-2](./#step-3-2.-run-everything) Run everything, it starts the node and syncs the blockchain data. When you see it starts to sync from 0, you can terminate the terminal.
 
-Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings.
-
-{% hint style="info" %}
-NOTE \
-Currently only leveldb downloads are available.
-{% endhint %}
+Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings. \
+\
+Both RocksDB and LevelDB snapshots are now available for Cronos Chain.
 
 ### Step 2: Quicksync Extract
 
-To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal. \
+To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal.\
 Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html).
 
 * Pruned snapshot is the quickest way to get a node running. If you just would like to give a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when you startup your node. But you will not be able to query anything earlier than that.
@@ -42,7 +39,7 @@ Then download the file with preferred pruning settings directly from [Quicksync]
 ### Step 3: Quicksync Setup
 
 In the following steps, we will take as an example the version\
-&#x20;`cronosmainnet_25-1-pruned.20220309.2010.tar.lz4`.
+`cronosmainnet_25-1-pruned.20220309.2010.tar.lz4`.
 
 * (Optional) you can [download an addressbook](https://quicksync.io/addrbook.cronos.json) to get connected to peers faster. After downloading it, place the new `addrbook.json` under `.cronos/config` folder and restart your node to take effect.
 * Now add the `cronosmainnet_25-1-pruned.20220309.2010.tar.lz4` inside `.cronos`
