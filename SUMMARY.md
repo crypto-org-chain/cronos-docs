@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-* [Getting Started](README.md)
+* [Getting Started](getting-started/getting-started.md)
 * [Introduction](getting-started/introduction.md)
 * [Architecture](getting-started/architecture.md)
 
