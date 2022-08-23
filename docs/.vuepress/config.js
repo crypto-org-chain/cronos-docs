@@ -119,7 +119,11 @@ module.exports = {
           {
             text: "C++ SDK",
             link: "https://docs.cronos.org/cronos-play/getting-started_cpp",           
-          }
+          },
+          {
+            text: "CDC Pay Integration",
+            link: "https://docs.cronos.org/cronos-play/cdc-pay-integration",           
+          },
         ]
       },
 
