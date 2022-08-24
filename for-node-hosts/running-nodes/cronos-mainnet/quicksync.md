@@ -11,7 +11,7 @@ In order to use Quicksync you need to first complete [Step 3-2](./#step-3-2.-run
 
 Syncing Cronos could be a time-consuming process, that's why the Crypto.org Chain team has partnered with Chainlayer to provide the “**Quicksync**” service and make the process more efficient for our users.
 
-Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings
+Users can visit [Chainlayer QuickSync Cronos page](https://quicksync.io/networks/cronos.html) and download the snapshots for Cronos Chain with different pruning settings.
 
 ### Step 1: Quicksync Download
 
@@ -26,7 +26,9 @@ Both RocksDB and LevelDB snapshots are now available for Cronos Chain.
 To start with Quicksync, you need to run `brew install lz4` to install lz4 in a new terminal.\
 Then download the file with preferred pruning settings directly from [Quicksync](https://quicksync.io/networks/cronos.html).
 
-* Pruned snapshot is the quickest way to get a node running. If you just would like to give a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when you startup your node. But you will not be able to query anything earlier than that.
+**Cronosmainnet\_25-1-pruned**
+
+* Pruned snapshot is the quickest way to get a node running. If you just would like to give it a shot, use it for a validator or sentry node, the pruned snapshot will be a good choice. Pruned snapshots have tx index disabled to save disk/download size, which also will make API queries not work backward in time. If you still want to use a pruned snapshot to start an API node, then you can enable tx index on your end to start indexing blocks from when you startup your node. But you will not be able to query anything earlier than that.
 
 **Cronosmainnet\_25-1-default**
 

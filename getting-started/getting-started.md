@@ -29,7 +29,7 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/
-cover: .gitbook/assets/Cronos generic background 1.png
+cover: ../.gitbook/assets/Cronos generic background 1.png
 coverY: 0
 ---
 
@@ -47,70 +47,70 @@ Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK t
 
 ### For Users
 
-{% content-ref url="for-users/metamask.md" %}
-[metamask.md](for-users/metamask.md)
+{% content-ref url="../for-users/metamask.md" %}
+[metamask.md](../for-users/metamask.md)
 {% endcontent-ref %}
 
-{% content-ref url="for-users/bridge/" %}
-[bridge](for-users/bridge/)
+{% content-ref url="../for-users/bridge/" %}
+[bridge](../for-users/bridge/)
 {% endcontent-ref %}
 
-{% content-ref url="for-users/testnet-faucet.md" %}
-[testnet-faucet.md](for-users/testnet-faucet.md)
+{% content-ref url="../for-users/testnet-faucet.md" %}
+[testnet-faucet.md](../for-users/testnet-faucet.md)
 {% endcontent-ref %}
 
-{% content-ref url="for-users/faq.md" %}
-[faq.md](for-users/faq.md)
+{% content-ref url="../for-users/faq.md" %}
+[faq.md](../for-users/faq.md)
 {% endcontent-ref %}
 
 ### For DApp Developers
 
-{% content-ref url="for-dapp-developers/chain-integration/" %}
-[chain-integration](for-dapp-developers/chain-integration/)
+{% content-ref url="../for-dapp-developers/chain-integration/" %}
+[chain-integration](../for-dapp-developers/chain-integration/)
 {% endcontent-ref %}
 
-{% content-ref url="for-dapp-developers/cronos-smart-contract/" %}
-[cronos-smart-contract](for-dapp-developers/cronos-smart-contract/)
+{% content-ref url="../for-dapp-developers/cronos-smart-contract/" %}
+[cronos-smart-contract](../for-dapp-developers/cronos-smart-contract/)
 {% endcontent-ref %}
 
-{% content-ref url="for-dapp-developers/useful-projects-on-cronos/" %}
-[useful-projects-on-cronos](for-dapp-developers/useful-projects-on-cronos/)
+{% content-ref url="../for-dapp-developers/useful-projects-on-cronos/" %}
+[useful-projects-on-cronos](../for-dapp-developers/useful-projects-on-cronos/)
 {% endcontent-ref %}
 
-{% content-ref url="cronos-play/cronos-play/" %}
-[cronos-play](cronos-play/cronos-play/)
+{% content-ref url="../cronos-play/cronos-play/" %}
+[cronos-play](../cronos-play/cronos-play/)
 {% endcontent-ref %}
 
 ### For Node hosts
 
 {% tabs %}
 {% tab title="Cronos Mainnet Beta" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-mainnet/" %}
-[cronos-mainnet](for-node-hosts/running-nodes/cronos-mainnet/)
+{% content-ref url="../for-node-hosts/running-nodes/cronos-mainnet/" %}
+[cronos-mainnet](../for-node-hosts/running-nodes/cronos-mainnet/)
 {% endcontent-ref %}
 {% endtab %}
 
 {% tab title="Cronos Testnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-testnet.md" %}
-[cronos-testnet.md](for-node-hosts/running-nodes/cronos-testnet.md)
+{% content-ref url="../for-node-hosts/running-nodes/cronos-testnet.md" %}
+[cronos-testnet.md](../for-node-hosts/running-nodes/cronos-testnet.md)
 {% endcontent-ref %}
 {% endtab %}
 
 {% tab title="Devnet" %}
-{% content-ref url="for-node-hosts/running-nodes/local-devnet.md" %}
-[local-devnet.md](for-node-hosts/running-nodes/local-devnet.md)
+{% content-ref url="../for-node-hosts/running-nodes/local-devnet.md" %}
+[local-devnet.md](../for-node-hosts/running-nodes/local-devnet.md)
 {% endcontent-ref %}
 {% endtab %}
 
 {% tab title="Gravity Bridge testnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-gbtestnet.md" %}
-[cronos-gbtestnet.md](for-node-hosts/running-nodes/cronos-gbtestnet.md)
+{% content-ref url="../for-node-hosts/running-nodes/cronos-gbtestnet.md" %}
+[cronos-gbtestnet.md](../for-node-hosts/running-nodes/cronos-gbtestnet.md)
 {% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
 
-{% content-ref url="for-node-hosts/cli.md" %}
-[cli.md](for-node-hosts/cli.md)
+{% content-ref url="../for-node-hosts/cli.md" %}
+[cli.md](../for-node-hosts/cli.md)
 {% endcontent-ref %}
 
 ### Useful links

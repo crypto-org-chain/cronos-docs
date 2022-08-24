@@ -37,7 +37,7 @@ This documentation showcases the Cronos Play Gaming SDK integration with the Cro
 * [Unity official website](https://unity.com/)
 * [Openzeppelin](https://docs.openzeppelin.com/)
 * [Remix IDE](https://remix.ethereum.org/)
-* [Cronos-ChainSafe-Unity-sample](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/play/assets/cronos-chainsafe-unity-sample.unitypackage.zip)
+* [Cronos-ChainSafe-Unity-sample](https://github.com/crypto-org-chain/cronos-docs/blob/master/docs/getting-started/assets/cronos-chainsafe-unity-sample.unitypackage.zip)
 * Repositories
   * [Cronos Play Unreal SDK plugin repository](https://github.com/cronos-labs/play-unreal-plugin)
   * [Cronos Play Unreal demo repository](https://github.com/cronos-labs/play-unreal-demo)
