@@ -1,11 +1,7 @@
 # README
 
-\
 
-
-![Cronos Logo](docs/.vuepress/public/cronos.svg)
-
-\
+![Cronos Logo](../docs/.vuepress/public/cronos.svg)
 
 
 ## Cronos Gitbook Documentation
