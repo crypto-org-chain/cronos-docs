@@ -84,6 +84,7 @@
   * [module\_mint](about-cronos/module\_overview/module\_mint.md)
   * [module\_slashing](about-cronos/module\_overview/module\_slashing.md)
   * [module\_staking](about-cronos/module\_overview/module\_staking.md)
+  * [module\_feemarket](about-cronos/module\_overview/module\_feemarket.md)
 * [Chain Details](about-cronos/chain-details/README.md)
   * [List of parameters](about-cronos/chain-details/parameters.md)
   * [Technical glossary](about-cronos/chain-details/technical-glossary.md)
