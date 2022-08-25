@@ -62,11 +62,13 @@ Before we start, please note that there was "_Huygen_" network upgrade at the bl
 
 For the host who would like to build a Full Node with complete blockchain data from scratch, one would need to:
 
-1. Start the node with the older binary version `v0.6.*`;
-2. Sync-up with the blockchain until it reaches the target upgrade block height `2,693,800`;
-3. Update `app.toml` with [new config items](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0);
-4. Update the binary to `v0.7.0`;
-5. Restart the node;
+| Block Height  | Binary Version                                                                        | Instruction                                                                                                                                                                                                                                                                                                 |
+| ------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `~ 2,693,800` | ``[`cronos_v0.6.*`](https://github.com/crypto-org-chain/cronos/releases?page=3)``     | <p>Start the node with the older binary version <a href="https://github.com/crypto-org-chain/cronos/releases?page=3"><code>cronos_v0.6.*</code></a><code>;</code><br><code></code><br><code></code>Sync-up with the blockchain until it reaches the target upgrade block height <code>2,693,800</code>;</p> |
+| `2,693,800`   | ``[`cronos_v0.6.*`](https://github.com/crypto-org-chain/cronos/releases?page=3)``     | <p>After it reaches the block height <code>2,693,800</code>, update <code>app.toml</code> with <a href="https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0">new config items</a>;<br></p>                                                                                                       |
+| `2,693,800 ~` | ``[`cronos_v0.7.0`](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0)`` | <p>Update the binary to <a href="https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0"><code>cronos_v0.7.0</code></a><code>;</code><br><code></code>Restart the node</p>                                                                                                                          |
+
+
 
 Users can refer to the [upgrade guide of "Huygen"](huygen.md) for the detailed upgrade steps.
 
