@@ -44,15 +44,15 @@ We officially support macOS, Windows, and Linux only. Other platforms may work b
 ### Prepare your machine
 
 * To run Cronos Mainnet Beta nodes, you will need a machine with the following minimum requirements:
-  * 4-core, x86\_64/ARM architecture processor;
-  * 16 GB RAM;
-  * 1 TB of storage space.
+  * 4-core, x86\_64/ARM architecture processor
+  * 16 GB RAM
+  * 1 TB of storage space
 
 {% tabs %}
 {% tab title="Mainnet Beta" %}
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
-* Binaries for [Linux](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Linux\_x86\_64.tar.gz), **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip)
+* Binaries for [Linux](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Linux\_x86\_64.tar.gz), Mac ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip)
 {% endtab %}
 {% endtabs %}
 
