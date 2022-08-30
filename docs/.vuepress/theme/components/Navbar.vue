@@ -175,7 +175,7 @@ $searchBoxInputColor = #0b1426
         display: block;
         height: 15px;
         padding: 10px 45px;
-        background: white url("/search-icon.svg") no-repeat 15px center;
+        background: white url("/docs/search-icon.svg") no-repeat 15px center;
         background-size: 15px 15px;
         font-size: 16px;
         border: none;
