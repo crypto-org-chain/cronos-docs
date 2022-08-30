@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       linksWrapMaxWidth: null,
-      input: ref(""),
+      input: null,
     };
   },
 
