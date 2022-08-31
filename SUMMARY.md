@@ -40,6 +40,7 @@
   * [Band Protocol](for-dapp-developers/useful-projects-on-cronos/band-protocol.md)
   * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)
+  * [Witnet](for-dapp-developers/useful-projects-on-cronos/witnet.md)
 
 ## FOR NODE HOSTS
 
