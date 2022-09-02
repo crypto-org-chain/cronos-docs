@@ -31,11 +31,11 @@ For more information, visit the [Crypto.com DeFi Desktop Wallet help](https://he
 
 ## Integrating with the Desktop Wallet
 
-The DApp Browsers in Desktop Wallet works the same way as MetaMask does: it injects the global `ethereum` object into the DApp's `window` object. It has implemented the essential Ethereum Provider API most DApps use, which means that if your DApp can works with MetaMask, it can also work with the Desktop Wallet.
+The DApp Browsers in Desktop Wallet works the same way as MetaMask does: it injects the global `ethereum` object into the DApp's `window` object. It has implemented the essential Ethereum Provider API most DApps use, which means that if your DApp can work with MetaMask, it can also work with the Desktop Wallet.
 
 ### Add a Connect Wallet Button
 
-![](../assets/desktopwallet-button.png)
+&#x20;                                               ![](../../.gitbook/assets/metamask\_0.png)
 
 Although the Desktop Wallet works the same way as MetaMask, users can click the MetaMask's button to connect to the DApp, it would be better to add a button to the wallet options to make it more intuitive for users to connect their Desktop Wallet with DApps.
 

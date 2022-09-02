@@ -29,5 +29,5 @@ Click “**Create a new API-KEY token**”. Then optionally input an \_**AppName
 
 After the “**API**_**-**_**KEY Token**” is successfully created, a message will show up as per the example below. You can now use the “**API key token**” for your applications on Cronos!
 
-&#x20;                                               <img src="../.gitbook/assets/image.png" alt="" data-size="original">
+&#x20;                                               <img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
 
