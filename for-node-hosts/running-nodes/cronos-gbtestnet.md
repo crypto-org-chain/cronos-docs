@@ -5,7 +5,7 @@ This is a detailed documentation for setting up a full node on Cronos gravity br
 {% hint style="info" %}
 Remarks:
 
-Cronos gravity bridge testnet - Pioneer 11 (`pioneereleventestnet_340-1`) is **distinct from** the official "Cronos testnet" (`cronostestnet_338-3`) which is used by app developers to test their Dapps. The Pioneer 11 testnet is a dedicated testnet created specifically for the purpose of testing the Cronos Gravity Bridge.&#x20;
+Cronos gravity bridge testnet - Pioneer 11 (`pioneereleventestnet_340-1`) is **distinct from** the official "Cronos testnet" (`cronostestnet_338-3`) which is used by app developers to test their Dapps. The Pioneer 11 testnet is a dedicated testnet created specifically for the purpose of testing the Cronos Gravity Bridge.
 {% endhint %}
 
 ## Pre-requisites
@@ -20,6 +20,19 @@ We officially support macOS, Windows, and Linux only. Other platforms may work b
   * 4-core, x86\_64/ARM architecture processor;
   * 16 GB RAM;
   * 1 TB of storage space.
+
+### Step 0 : Notes on testnet Network upgrade
+
+This is a detailed documentation for setting up a full node on Crypto.org Cronos testnet `pioneereleventestnet_340-1`.
+
+Before we start, please note that there are three binary upgrades along with the testnet:
+
+| Block Height | Binary Version                                                                                                     | Instruction                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \~ `991350`  | [v0.8.0-gravity-alpha0](https://github.com/crypto-org-chain/cronos/releases/tag/v0.8.0-gravity-alpha0)             | <p>Follow <a href="cronos-gbtestnet.md#step-1.-get-the-cronos-gravity-bridge-testnet-binary">Step 1</a> to <a href="cronos-gbtestnet.md#step-3.-run-everything">Step 3</a> and start the node with the older binary version <code>v0.8.0-gravity-alpha0</code>;<br></p><p>Sync-up with the blockchain until it reaches the target upgrade block height <code>991350</code>;</p><p><em></em><br><em>Please note that <code>panic: UPGRADE "v0.7.0-hotfix" NEEDED at height:</code></em><code> 991350</code> <em>is the expected error message when we hit that block.</em></p> |
+| `991350`     | [v0.8.0-gravity-alpha1-patch](https://github.com/crypto-org-chain/cronos/releases/tag/v0.8.0-gravity-alpha1-patch) | <p>After it reaches the block height <code>4904100</code>, update the binary to <a href="https://github.com/crypto-org-chain/cronos/releases/tag/v0.8.0-gravity-alpha1-patch">v0.8.0-gravity-alpha1-patch</a>;</p><p></p><p>Start the node again</p>                                                                                                                                                                                                                                                                                                                          |
+
+###
 
 ## Step 1. Get the Cronos gravity bridge testnet binary
 
@@ -73,8 +86,6 @@ Before kick-starting your node, we will have to configure your node so that it c
       $ ./cronosd init pegasus-node --chain-id pioneereleventestnet_340-1
     ```
 
-
-
 {% hint style="info" %}
 NOTE
 
@@ -98,8 +109,7 @@ NOTE
     ```
 
 {% hint style="info" %}
-NOTE:\
-
+NOTE:\\
 
 For Mac environment, `sha256sum` was not installed by default. In this case, you may setup `sha256sum` with this command:
 

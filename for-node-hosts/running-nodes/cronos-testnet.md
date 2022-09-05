@@ -57,7 +57,7 @@ To run Cronos Testnet nodes, you will need a machine with the following minimum 
 
 ### Step 0 : Notes on testnet Network upgrade
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
+This is a detailed documentation for setting up a full node on Crypto.org Cronos testnet `cronostestnet_338-3`.
 
 Before we start, please note that there are three binary upgrades along with the testnet:
 
