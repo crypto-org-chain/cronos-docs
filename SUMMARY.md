@@ -66,6 +66,7 @@
   * [Useful Links](cronos-play/unity/useful-links.md)
 * [Unreal Engine Plugin](cronos-play/getting-started\_unreal.md)
 * [Cronos Play C++ SDK](cronos-play/getting-started\_cpp.md)
+* [Crypto.com Pay Integration](cronos-play/crypto.com-pay-integration.md)
 
 ## Block Explorers
 
