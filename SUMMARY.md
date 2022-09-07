@@ -15,8 +15,6 @@
     * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
   * [From Crypto.org Chain](for-users/bridge/other\_chain/README.md)
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
-    * [Crypto.com DeFi Wallet](for-users/bridge/other\_chain/defiwallet.md)
-    * [Crypto.com DeFi Desktop Wallet](for-users/bridge/other\_chain/desktop.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
@@ -53,6 +51,7 @@
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [Cronos Gravity Bridge Testnet](for-node-hosts/running-nodes/cronos-gbtestnet.md)
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
+  * [Cronosd build with Nix](for-node-hosts/running-nodes/cronosd-build-with-nix.md)
 * [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY
