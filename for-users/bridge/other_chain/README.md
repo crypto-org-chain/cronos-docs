@@ -16,14 +16,12 @@ Please read this guide and review the project documentation carefully as misuse 
 
 * Crypto.org <=> Cronos;
 * Cosmos <=> Cronos;
-* Terra (classic) <=> Cronos;
 * Akash <=> Cronos.
 
 #### Currently supported tokens:
 
 * CRO;
 * ATOM;
-* LUNC;
 * AKT.
 
 #### Currently supported wallets:
