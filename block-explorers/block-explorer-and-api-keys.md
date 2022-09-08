@@ -19,6 +19,10 @@
 The CronoScan Developer APIs are designed to provide accessible and consistent Cronos data to the Cronos community. The APIs are provided as a community service with a rate up to five calls per second per IP. Users need to [register](https://cronoscan.com/register) for a CronoScan account to create an API key.\
 After registration, a CronoScan user account will have a quota of up to three API keys.
 
+{% hint style="info" %}
+Cronoscan Testnet uses the same API key as Cronoscan Mainnet.
+{% endhint %}
+
 On the [CronoScan user dashboard](https://cronoscan.com/myaccount), select “**API-KEYs**” in the left column or go to [https://cronoscan.com/myapikey](https://cronoscan.com/myapikey).
 
 ![drawing](assets/myapikey-page.png)
