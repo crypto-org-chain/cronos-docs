@@ -63,7 +63,6 @@ If you are sending large numbers of transactions from your backend, consider set
 
 ### External node providers
 
-* [RockX](https://help.rockx.com/en/articles/6153885-guide-to-cronos-free-access-node)
 * [GetBlock](https://getblock.io/)
 * RockX:&#x20;
   * [Guide to Cronos Free Access Node](https://help.rockx.com/en/articles/6153885-guide-to-cronos-free-access-node)
