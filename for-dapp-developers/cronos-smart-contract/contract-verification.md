@@ -109,5 +109,3 @@ npx hardhat verify --network cronosTestnet "0x00e9fd0eaea8325dc31a64e23d91607fdd
 You should now be able to see your contact is verified on [Cronoscan](https://cronoscan.com/) or [Testnet Cronoscan](https://testnet.cronoscan.com/) and start to read and write your smart contracts.
 
 ![](https://lh3.googleusercontent.com/0kiqsvlsjaE7K8gNfNqxPTUMFeXZjxLgdtQF9lgQ56eVfl9iSCSQrsNC1YE8GN2g9WG25ZYy716DGVFBanlEap3uAq\_wvTfI1Ijc-6cNhB0gzBYGBu2An7vjunlAkRLKAMLCnknuqT3qxZZ-45V1vEU)
-
-[Follow this link for a blog post](https://medium.com/cronos-chain/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986) with a more detailed step-by-step tutorial.

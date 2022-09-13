@@ -1,36 +1,17 @@
-# Wallet integrations
+# Web Extension Integration
 
-Cronos chain is supported by the following self-custodial wallets:
+## Introduction
 
-* Crypto.com DeFi Wallet.
-* Trust Wallet.
-* MetaMask (requires custom network configuration).
-* and more than 20 other wallets (you can see a more complete list of dev tools [here](https://crofam.me/devtools)).
-
-Crypto.com DeFi Wallet, Trust Wallet and Metamask have mobile apps that include in-app dApp browsers. Users can access dApps on the go via these in-app browsers. We recommend that all dApp developers integrate with these 3 wallets at least, and more if possible.
-
-## Crypto.com DeFi Wallet
+### Crypto.com | Wallet Extension&#x20;
 
 #### &#x20;A non-custodial wallet to store, earn, and grow your crypto
 
-[Crypto.com DeFi Wallet](https://crypto.com/defi-wallet) is a non-custodial wallet that gives users full control of their crypto and private keys. Private keys are encrypted locally on the user’s mobile phone, and protected by Biometric Authentication and 2-Factor Authentication.&#x20;
+Crypto.com | Wallet Extension provides a simple and secure way for users to connect their Crypto.com DeFi Wallet with Ethereum-compatible DApps via their browser.
 
-If you are a dApp developer, integration with the Crypto.com DeFi Wallet is the best way to deliver a smooth user experience to the more than 50 million Crypto.com customers.
+* **For DApp builders**, integrating with Wallet Extension allows them to offer a streamlined user experience to the millions of Crypto.com DeFi Wallet users, as well as encourage increased adoption and usage.
+* **For users**, this means that they can connect to DApps simply by clicking the Wallet Extension logo, scanning the QR code with their DeFi Wallet, and approving the connection. The user experience is familiar for those who are already using Wallet Connect with the DeFi Wallet, yet it feels more native and simple. Over time, additional user-friendly features will be built into Wallet Extension.
 
-Users will be able to login with your dApp in several ways:
-
-* On Mobile, they can visit your dApp and connect to it via the in-app browser of the Crypto.com DeFi Wallet iOS or Android apps.
-* On Desktop, they can install the Crypto.com Wallet Extension from the Chrome extension store into their Chrome, Edge or Brave browser. The extension can be connected to the Crypto.com DeFi Wallet mobile app (in which case the user will need to confirm each transaction on their mobile phone), or alternatively it can work as a standalone extension entirely in the browser.
-
-Continue reading below if you would like to learn more about integrating your dApp and the Crypto.com DeFi Wallet.
-
-## Crypto.com | Wallet Extension
-
-### Overview
-
-As a developer, if you would like to offer all the mobile and desktop connection options provided by the Crypto.com DeFi Wallet, the first step is to integrate your dApp with the Crypto.com Wallet  Extension.
-
-Once the Wallet Extension is working, all the other connection methods should start working as well, even on mobile, since they are supported by the same SDKs.
+Crypto.com DeFi Wallet is a non-custodial wallet that gives users full control of their crypto and private keys. Through Wallet Extension, it offers smooth navigation with DApps. Private keys are encrypted locally on the user’s mobile phone, and protected by Biometric Authentication and 2-Factor Authentication. For transactions made on desktop, users must confirm the transaction via the DeFi Wallet mobile app.
 
 The Crypto.com Wallet Extension currently supports the following networks:
 
@@ -48,18 +29,16 @@ The Crypto.com Wallet Extension currently supports the following networks:
 {% endtab %}
 {% endtabs %}
 
-Additional chains are planned for the near future.
+Integrations with additional chains are planned for the near future.
 
-### dApp integration
+## Integrating with De**F**i Connect
 
-The official repository and documentation of Crypto.com Wallet Extension are available at: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo).
+Integrate your DApp with Crypto.com | Wallet Extension to provide a seamless and native experience for your end users to sign transactions.
 
-**For most dApp developers,** the best way to integrate the Crypto.com Wallet Extension is to develop your application's front-end in React and to use the DeFiWeb3Connector object which is provided by the `"@deficonnect/web3-connector"` npm package as documented here: [https://github.com/crypto-com/deficonnect-monorepo/tree/develop/packages/web3-connector](https://github.com/crypto-com/deficonnect-monorepo/tree/develop/packages/web3-connector).
+## Web SDK&#x20;
 
-Once the connector is activated, your dApp can retrieve the provider using `getProvider()` and subsequently use it via a common Web3 SDK like ethers.js. [Follow this link](https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5) for a basic tutorial on how to implement the main wallet connection methods available to Cronos dApp developers.
+Learn more about how to integrate with Wallet Extension here:
 
-**Some developers** may need to dig deeper into the documentation, for example if they are not using React or need more customization. In this case, please refer to:
-
-* Github: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo)
 * Document: [https://github.com/crypto-com/deficonnect-monorepo/wiki/Chrome-Extension-Wallet-Integration ](https://github.com/crypto-com/deficonnect-monorepo/wiki/Chrome-Extension-Wallet-Integration)
+* Github: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo)
 
