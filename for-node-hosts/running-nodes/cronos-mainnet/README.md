@@ -87,15 +87,15 @@ Binaries for **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/rel
 *   To install released **Cronos Mainnet Beta binaries** from github:
 
     ```bash
-    $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos_0.6.5_Linux_x86_64.tar.gz
-    $ tar -zxvf cronos_0.6.5_Linux_x86_64.tar.gz
+    $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.11/cronos_0.6.11_Linux_x86_64.tar.gz
+    $ tar -zxvf cronos_0.6.11_Linux_x86_64.tar.gz
     ```
 
     Afterward, you can check the version of `cronosd` by
 
     ```bash
     $ ./cronosd version
-    0.6.5
+    0.6.11
     ```
 
 ## Step 2. Configure `cronosd`
