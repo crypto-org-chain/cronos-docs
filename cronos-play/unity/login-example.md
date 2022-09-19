@@ -10,10 +10,7 @@ NOTE In order to use the Cronos Network, you will have to add the Network ID and
 
 To ensure that the NFT loads conditionally after successfully connecting to a wallet, you can update the `ImportNFTTextureCronos.cs` file with the content below.
 
-* Script Path: `Assets/Web3Unity/Scripts/Prefabs/ERC721/ImportNFTTextureCronos.cs`
-
-```csharp
-using System.Collections;
+<pre class="language-csharp"><code class="lang-csharp">using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -28,24 +25,23 @@ public class ImportNFTTextureCronos : MonoBehaviour
     async void Start()
     {
         string chain = "cronos";
-        string network = "mainnet"; 
-        string account = PlayerPrefs.GetString("Account");
+<strong>        string network = "mainnet"; // mainnet or testnet
+</strong>        string account = "WALLET_ADDRESS"; // PlayerPrefs.GetString("Account");
         string contract = "CONTRACT_ADDRESS";
         string tokenId = "TOKEN_ID";
-        string rpc = "https://evm-dev.cronos.org";
 
-        string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
+        string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId);
 
         if (ownerOf == account) 
         {
             // fetch uri from chain
-            string uri = await ERC721.URI(chain, network, contract, tokenId, rpc);
+            string uri = await ERC721.URI(chain, network, contract, tokenId);
             print("uri: " + uri);
 
             // fetch json from uri
             UnityWebRequest webRequest = UnityWebRequest.Get(uri);
             await webRequest.SendWebRequest();
-            Response data = JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
+            Response data = JsonUtility.FromJson&#x3C;Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
 
             // parse json to get image uri
             string imageUri = data.image;
@@ -54,15 +50,23 @@ public class ImportNFTTextureCronos : MonoBehaviour
             // fetch image and display in game
             UnityWebRequest textureRequest = UnityWebRequestTexture.GetTexture(imageUri);
             await textureRequest.SendWebRequest();
-            this.gameObject.GetComponent<Renderer>().material.mainTexture = ((DownloadHandlerTexture)textureRequest.downloadHandler).texture;
+            this.gameObject.GetComponent&#x3C;Renderer>().material.mainTexture = ((DownloadHandlerTexture)textureRequest.downloadHandler).texture;
         }
     }
+}</code></pre>
+
+{% hint style="warning" %}
+If you are using IPFS please replace IPFS with an HTTPS call as seen below
+{% endhint %}
+
+**Replace IPFS**&#x20;
+
+```csharp
+if (uri.StartsWith("ipfs://"))
+{
+    uri = uri.Replace("ipfs://", "https://ipfs.io/ipfs/");
 }
 ```
-
-{% hint style="info" %}
-NOTE We are using `PlayerPrefs.GetString("Account")` to dynamically fetch the address when connecting to DefiConnect. You can replace this with the actual account address for testing purposes like so: `string account = "account_address"`
-{% endhint %}
 
 ### Build the Scenes
 

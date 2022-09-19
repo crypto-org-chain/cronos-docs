@@ -1,6 +1,10 @@
-# Scripts
+---
+description: A standard interface for EVM methods
+---
 
-This section contains the different types of script that can be used in the Unity SDK. For additional operations and methods please refer to the [ChainSafe Documentation](https://chainsafe.github.io/game-docs/).
+# EVM
+
+This section contains the different types of EVM methods that can be used in the Unity SDK. For additional operations and methods please refer to the [ChainSafe Documentation.](https://docs.gaming.chainsafe.io/)
 
 ### Player Account
 
@@ -11,30 +15,32 @@ string account = PlayerPrefs.GetString("Account");
 print(account);
 ```
 
-### EVM
+### Block number <a href="#block-number" id="block-number"></a>
 
 Get the current latest block number
 
 ```csharp
 string chain = "cronos";
-string network = "mainnet";
-string rpc = "https://evm-dev.cronos.org";
+string network = "mainnet"; // mainnet or testnet
 
-int blockNumber = await EVM.BlockNumber(chain, network, rpc);
-print(blockNumber);
+int blockNumber = await EVM.BlockNumber(chain, network);
+print(blockNumber); Some code
 ```
+
+### Balance Of <a href="#balance-of" id="balance-of"></a>
 
 Get the balance of the native blockchain
 
 ```csharp
 string chain = "cronos";
-string network = "mainnet";
-string account = "ACCOUNT_ADDRESS";
-string rpc = "https://evm-dev.cronos.org";
+string network = "mainnet"; // mainnet or testnet
+string account = "WALLET_ADDRESS";
 
 string balance = await EVM.BalanceOf(chain, network, account, rpc);
 print(balance);
 ```
+
+### Verify <a href="#verify" id="verify"></a>
 
 Verify a signed message.
 
@@ -46,68 +52,32 @@ string address = await EVM.Verify(message, signature);
 print(address);
 ```
 
+### Nonce <a href="#nonce" id="nonce"></a>
+
 Print Nonce.
 
 ```csharp
 string chain = "cronos";
-string network = "mainnet";
-string account = "ACCOUNT_ADDRESS";
+string network = "mainnet"; // mainnet or testnet
+string account = "WALLET_ADDRESS";
 string rpc = "https://evm-dev.cronos.org";
 
 string nonce = await EVM.Nonce(chain, network, account, rpc);
 print(nonce);
 ```
 
-### ERC721
+### Convert WEI to CRO and CRO to WEI <a href="#convert-wei-to-eth-and-eth-to-wei" id="convert-wei-to-eth-and-eth-to-wei"></a>
 
-Counts all NFTs assigned to an owner
-
-```csharp
-string chain = "cronos";
-string network = "mainnet";
-string contract = "CONTRACT_ADDRESS";
-string account = "ACCOUNT_ADDRESS";
-string rpc = "https://evm-dev.cronos.org";
-
-int balance = await ERC721.BalanceOf(chain, network, contract, account, rpc);
-print(balance);
-```
-
-Find the owner of a NFT.
+Converts WEI values
 
 ```csharp
-string chain = "cronos";
-string network = "mainnet";
-string contract = "CONTRACT_ADDRESS";
-string tokenId = "TOKEN_ID";
-string rpc = "https://evm-dev.cronos.org";
+float cro = float.Parse("0.1");
+float decimals = 1000000000000000000; // 18 decimals
+float wei = cro * decimals;
+print(Convert.ToDecimal(wei).ToString());
 
-string ownerOf = await ERC721.OwnerOf(chain, network, contract, tokenId, rpc);
-print(ownerOf);
-```
-
-Print URI.
-
-```csharp
-string chain = "cronos";
-string network = "mainnet";
-string contract = "CONTRACT_ADDRESS";
-string tokenId = "TOKEN_ID";
-
-string uri = await ERC721.URI(chain, network, contract, tokenId);
-print(uri)
-```
-
-### Signatures
-
-Sign through WebGL
-
-```csharp
-try {
-  string message = "signature_message";
-  string response = await Web3GL.Sign(message);
-  Debug.Log(response);
-} catch (Exception e) {
-  Debug.LogException(e, this);
-}
+float wei = float.Parse("10123755");
+float decimals = 1000000000000000000; // 18 decimals
+float cro = wei / decimals;
+print(Convert.ToDecimal(cro).ToString());
 ```
