@@ -58,7 +58,7 @@ Ethereum developers are used to smart contract capabilities as Ethermint can sup
 
 #### **Scalable**&#x20;
 
-Tendermint can process a higher number of transactions per minute as compared to EVM, making it faster, cheaper, and more eco-friendly to execute smart contracts.
+Tendermint can process a higher number of transactions per minute as compared to EVM, making it faster, cheaper, and carbon-neutral to execute smart contracts.
 
 #### **Interoperable**
 
