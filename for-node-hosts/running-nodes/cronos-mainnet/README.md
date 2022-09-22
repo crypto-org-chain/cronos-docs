@@ -33,7 +33,7 @@ canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 
 # Cronos Mainnet
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet `cronosmainnet_25-1`.
+This is a detailed documentation for setting up a Validator or a full node on Cronos mainnet `cronosmainnet_25-1`.
 
 ## Pre-requisites
 
