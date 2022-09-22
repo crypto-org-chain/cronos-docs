@@ -4,7 +4,7 @@
 
 #### Introduction&#x20;
 
-The Huygen upgrade v0.7.0 on Cronos Beta Mainnet introduced the Feemarket module and EIP-1559 implementation. The new feemarket module allows a dynamic fee structure to be applied to the network. It allows for defining a common base fee for the network, and this base fee is calculated dynamically in each block for the next block allowing it to reflect the activity of the network.
+The Huygen upgrade v0.7.0 on Cronos Mainnet introduced the Feemarket module and EIP-1559 implementation. The new feemarket module allows a dynamic fee structure to be applied to the network. It allows for defining a common base fee for the network, and this base fee is calculated dynamically in each block for the next block allowing it to reflect the activity of the network.
 
 With EIP-1559, the transaction fee itself is calculated with `fee = (baseFee + priorityTip)*gasLimit`, where `baseFee` is the fixed-per-block network fee per gas and `priorityTip` is an optional fee per gas added on extra to accelerate the transaction. However, Cronos chain is based on Cosmos SDK which does not have a prioritization mechanism by nature, and transactions are first in and first out (FIFO) basis on the Cronos chain. Thus, different from the regular EIP-1559 design, Cronos feemarket module design does not have any “prioritization fee” mechanism than the Ethereum EIP-1559 design.
 
