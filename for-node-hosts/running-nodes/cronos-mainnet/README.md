@@ -31,9 +31,9 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 ---
 
-# Cronos Mainnet Beta
+# Cronos Mainnet
 
-This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet Beta `cronosmainnet_25-1`.
+This is a detailed documentation for setting up a Validator or a full node on Crypto.org Cronos mainnet `cronosmainnet_25-1`.
 
 ## Pre-requisites
 
@@ -43,13 +43,13 @@ We officially support macOS, Windows, and Linux only. Other platforms may work b
 
 ### Prepare your machine
 
-* To run Cronos Mainnet Beta nodes, you will need a machine with the following minimum requirements:
+* To run Cronos Mainnet nodes, you will need a machine with the following minimum requirements:
   * 4-core, x86\_64/ARM architecture processor
   * 16 GB RAM
   * 1 TB of storage space
 
 {% tabs %}
-{% tab title="Mainnet Beta" %}
+{% tab title="Mainnet" %}
 * [Seeds for Fullnode](https://github.com/crypto-org-chain/cronos-mainnet#seed-nodes)
 * [Genesis files](https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet\_25-1/genesis.json)
 * Binaries for [Linux](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Linux\_x86\_64.tar.gz), Mac ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip)
@@ -73,7 +73,7 @@ For the host who would like to build a Full Node with complete blockchain data f
 
 Users can refer to the [upgrade guide of "Huygen"](huygen.md) for the detailed upgrade steps.
 
-## Step 1. Get the Cronos Mainnet Beta binary
+## Step 1. Get the Cronos Mainnet binary
 
 {% hint style="info" %}
 Remarks:
@@ -84,7 +84,7 @@ The following is the minimal setup for a **validator node** / **full node**.
 To simplify the following step, we will be using **Linux** (Intel x86) for illustration.\
 Binaries for **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_x86\_64.tar.gz) / [M1](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Darwin\_arm64.tar.gz)) and [Windows](https://github.com/crypto-org-chain/cronos/releases/download/v0.6.5/cronos\_0.6.5\_Windows\_x86\_64.zip) are also available.
 
-*   To install released **Cronos Mainnet Beta binaries** from github:
+*   To install released **Cronos Mainnet binaries** from github:
 
     ```bash
     $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.11/cronos_0.6.11_Linux_x86_64.tar.gz
@@ -114,7 +114,7 @@ Binaries for **Mac** ([Intel x86](https://github.com/crypto-org-chain/cronos/rel
     $ rm ~/.cronos/config/genesis.json
     ```
 
-Before kick-starting your node, we will have to configure your node so that it connects to the Cronos mainnet Beta:
+Before kick-starting your node, we will have to configure your node so that it connects to the Cronos mainnet:
 
 ### Step 2-1 Initialize `cronosd`
 
@@ -143,7 +143,7 @@ Note:
 
 ### Step 2-2 Configure cronosd
 
-*   Download and replace the Cronos Mainnet Beta `genesis.json` by:
+*   Download and replace the Cronos Mainnet `genesis.json` by:
 
     ```bash
     $ curl https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json > ~/.cronos/config/genesis.json

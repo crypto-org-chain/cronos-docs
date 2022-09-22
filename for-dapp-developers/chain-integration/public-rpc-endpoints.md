@@ -1,6 +1,6 @@
 # Public RPC endpoints
 
-### RPC URLs for Cronos Beta
+### RPC URLs for Cronos
 
 {% hint style="danger" %}
 Public RPCs URL Updates: The Cronos RPC endpoints have been updated in March 2021 (shown as below) and it is recommended that all users update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later.
@@ -17,7 +17,7 @@ If you are sending large numbers of transactions from your backend, consider set
 {% endhint %}
 
 {% tabs %}
-{% tab title="Mainnet Beta" %}
+{% tab title="Mainnet" %}
 * **EVM HTTP JSON RPC (Web3 compatible)**
   * [https://evm.cronos.org/](https://evm.cronos.org/)
 * **Block explorer**

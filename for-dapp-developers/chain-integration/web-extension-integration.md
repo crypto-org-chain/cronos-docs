@@ -36,7 +36,7 @@ The Crypto.com Wallet Extension currently supports the following networks:
 
 {% tabs %}
 {% tab title="Mainnet" %}
-* Cronos Mainnet Beta
+* Cronos Mainnet
 * Ethereum Mainnet
 * Crypto.org Chain
 {% endtab %}

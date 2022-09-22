@@ -8,7 +8,7 @@ Linux x86\_64 is confirmed to work. Other platforms may work but there is no gua
 
 ### Prepare your machine
 
-To run Cronos Mainnet Beta nodes, you will need a machine with the following minimum requirements:
+To run Cronos Mainnet nodes, you will need a machine with the following minimum requirements:
 
 * 4-core, x86\_64 / ARM architecture processor
 * 16 GB RAM

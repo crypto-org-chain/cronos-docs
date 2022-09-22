@@ -13,7 +13,7 @@ The Desktop Wallet currently supports the following networks:
 
 {% tabs %}
 {% tab title="Mainnet" %}
-* Cronos Mainnet Beta
+* Cronos Mainnet
 * Crypto.org Chain
 {% endtab %}
 
@@ -35,7 +35,7 @@ The DApp Browsers in Desktop Wallet works the same way as MetaMask does: it inje
 
 ### Add a Connect Wallet Button
 
-&#x20;                                               ![](<../../.gitbook/assets/metamask\_0 (1).png>)
+&#x20;                                               ![](../../.gitbook/assets/metamask\_0.png)
 
 Although the Desktop Wallet works the same way as MetaMask, users can click the MetaMask's button to connect to the DApp, it would be better to add a button to the wallet options to make it more intuitive for users to connect their Desktop Wallet with DApps.
 
