@@ -6,9 +6,9 @@
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-* The **CronosPlayUnreal Content** is shown in the **Source Panel** of the **Content Browser as below**
+* The **CronosPlayUnreal Content** is shown in the **Source Panel** of the **Content Browser** as below
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * Right click **CrnosPlayUnreal Content** > **Migrate...**
 * Press **OK** in **Asset Report** window
@@ -22,7 +22,7 @@
 * This demo shows how to use  plugin assets and c++ classes. You can also migrate the demo maps and work on it.
 * Unzip the archive, double click **CronosPlayUnrealDemo.uproject** and launch the demo project. Press Yes to load it anyway in unreal 4.27.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In **Content Browser**, Right click **ThirdPersonCPP** > **Migrate**...
 * Uncheck all assets except **ThirdPersonCPP** > **OK**
