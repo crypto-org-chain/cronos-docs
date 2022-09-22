@@ -33,7 +33,7 @@ State-sync depends on the ability to pull a snapshot from its persistent-peers, 
 The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v0.8.0`
 {% endhint %}
 
-* Install the **Cronos Mainnet Beta** binaries from github:
+* Install the **Cronos Mainnet** binaries from github:
 
 <pre class="language-bash"><code class="lang-bash"><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.8.0/cronos_0.8.0_Linux_x86_64.tar.gz
 </strong>tar -zxvf cronos_0.8.0_Linux_x86_64.tar.gz</code></pre>
@@ -55,7 +55,7 @@ The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases
 ./bin/cronosd init [moniker] --chain-id cronosmainnet_25-1
 ```
 
-* Download and replace the Cronos Mainnet Beta `genesis.json` by:
+* Download and replace the Cronos Mainnet `genesis.json` by:
 
 ```bash
 curl https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json > ~/.cronos/config/genesis.json
@@ -116,4 +116,4 @@ To check the current node syncing status:
 
 
 
-That's it! You are now running a synced node on **Cronos Mainnet Beta** !
+That's it! You are now running a synced node on **Cronos Mainnet**!
