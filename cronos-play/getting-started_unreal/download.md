@@ -6,11 +6,11 @@
 * In **Library** Tab of **Epic Games Launcher**, click **Install to Engine** below **Cronos Play for Unreal Engine** inside **VAULT** section.
 * Select the Engine version then click **Install**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-* Cronos Play for Unreal Engine will be downloading to the specified Unreal Engine
+*   Cronos Play for Unreal Engine will be downloading to the specified Unreal Engine
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## Enable Plugin
 
