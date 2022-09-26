@@ -30,7 +30,7 @@ Restore wallet with mnemonics.
 
 Get backup mnemonic phrase.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Output**: backup mnemonics
 * **Success**: whether succeed or not
@@ -40,7 +40,7 @@ Get backup mnemonic phrase.
 
 Generate mnemonics.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Password**: salt in mnemonics restoration
 * **Wordcount**: mnemonics word count (12, 18, 24)
@@ -63,7 +63,7 @@ Get eth address with index
 
 Get eth balance
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Address**: eth address
 * **Output**: get balance

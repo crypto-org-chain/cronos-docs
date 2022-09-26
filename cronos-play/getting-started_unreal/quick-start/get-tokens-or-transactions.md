@@ -4,7 +4,7 @@
 
 given the BlockScout REST API base url and the account address (hexadecimal), it will return the list of all owned tokens (ref: https://cronos.org/explorer/testnet3/api-docs)
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Blockscout Base Url**: the base url of the BlockScout API
 * **Account Address**: the account address to query
@@ -32,7 +32,7 @@ NOTE: QueryOption::ByContract is not supported by BlockScout
 
 crono-scan api, get transaction history
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Address**: the address to query
 * **Apikey**: the api key
@@ -66,7 +66,7 @@ default option is by address
 
 The API key can be obtained from https://cronoscan.com
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Address**: the address to query
 * **Contract Address**: the contract address to query
