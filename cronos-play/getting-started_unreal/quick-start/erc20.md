@@ -13,10 +13,10 @@
 * Click **Compile** > **Play**, **USDC** is printed in the game.
 * We can create a variable **contract** and set the default value as **0xf0307093f23311FE6776a7742dB619EB3df62969** for later easy access.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 *   Similarly, we can call other ERC20 functions by dragging from the **Return Value** of the **SpawnActor BP Defi Wallet Core** and search to add **Erc20Balance**, **Erc20Symbol**, **Erc20Decimals**, and **Erc20TotalSupply** like below
 
-    <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
     PS: In above example, we use Account Address **0xf0307093f23311FE6776a7742dB619EB3df62969** to query its balance.

@@ -10,7 +10,7 @@
 
 *   Cronos Play for Unreal Engine will be downloading to the specified Unreal Engine
 
-    <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Enable Plugin
 
