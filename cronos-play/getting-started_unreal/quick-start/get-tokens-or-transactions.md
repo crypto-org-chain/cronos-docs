@@ -6,11 +6,11 @@ given the BlockScout REST API base url and the account address (hexadecimal), it
 
 <figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
-* **Blockscout Base Url**: the base url of the BlockScout API
-* **Account Address**: the account address to query
-* **output**: the output of the query
-* **success**: success of the query
-* **output\_message**: error message of the query
+* `Blockscout Base Url`: the base url of the BlockScout API
+* `Account Address`: the account address to query
+* `Output`: the output of the query
+* `Success`: success of the query
+* `Output Message`: error message of the query
 
 ## GetTokenTransfersBlocking
 
@@ -20,13 +20,13 @@ NOTE: QueryOption::ByContract is not supported by BlockScout
 
 <figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-* **Blockscout Base Url**: the base url of the BlockScout API
-* **Address**: the account address to query
-* **Contract Address**: the contract address to query
-* **Option**: the query option
-* **Output**: the output of the query
-* **Success**: success of the query
-* **Output Message**: error message of the query \*/
+* `Blockscout Base Url`: the base url of the BlockScout API
+* `Address`: the account address to query
+* `Contract Address`: the contract address to query
+* `Option`: the query option
+* `Output`: the output of the query
+* `Success`: success of the query
+* `Output Message`: error message of the query \*/
 
 ## GetTransactionHistoryBlocking
 
@@ -34,11 +34,11 @@ crono-scan api, get transaction history
 
 <figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
-* **Address**: the address to query
-* **Apikey**: the api key
-* **Output**: the output of the query
-* **Success**: success of the query
-* **Output Message**: error message of the query
+* `Address`: the address to query
+* `Apikey`: the api key
+* `Output`: the output of the query
+* `Success`: success of the query
+* `Output Message`: error message of the query
 
 ## GetErc20TransferHistoryBlocking
 
@@ -46,13 +46,13 @@ crono-scan api, get erc20 transaction history
 
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-* **Address**: the address to query
-* **Contract Address**: the contract address to query
-* **Option**: the query option
-* **Api Key**: the api key
-* **Output**: the output of the query
-* **Success**: success of the query
-* **Output Message**: error message of the query
+* `Address`: the address to query
+* `Contract Address`: the contract address to query
+* `Option`: the query option
+* `Api Key`: the api key
+* `Output`: the output of the query
+* `Success`: success of the query
+* `Output Message`: error message of the query
 
 ## GetErc721TransferHistoryBlocking
 
@@ -68,11 +68,11 @@ The API key can be obtained from https://cronoscan.com
 
 <figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
-* **Address**: the address to query
-* **Contract Address**: the contract address to query
-* **Option**: the query option
-* **Api Key**: the api key
-* **Output**: the output of the query
-* **Success**: success of the query
-* **Output Message**: error message of the query
+* `Address`: the address to query
+* `Contract Address`: the contract address to query
+* `Option`: the query option
+* `Api Key`: the api key
+* `Output`: the output of the query
+* `Success`: success of the query
+* `Output Message`: error message of the query
 

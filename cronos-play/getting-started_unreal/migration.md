@@ -2,7 +2,7 @@
 
 ## Download the demo
 
-Download the demo here: [https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.6-alpha/CronosPlayDemo.zip](https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.6-alpha/CronosPlayDemo.ziphttps://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.6-alpha/CronosPlayDemo.zip)
+Download the demo here: [https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.7-alpha/CronosPlayDemo.zip](https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.7-alpha/CronosPlayDemo.zip)
 
 ## Migrate Demo Assets&#x20;
 
