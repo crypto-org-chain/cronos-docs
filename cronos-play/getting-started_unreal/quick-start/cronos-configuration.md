@@ -4,11 +4,11 @@ After creating **BP\_DefiWalletCore**, we should configure the Network Configura
 
 * Double click **BP\_DefiWalletCore** in **Content Browser**, and open the Blueprint Editor
 * In **Cronos Play Unreal** section of **Details** tab, input the RPC and Chain ID settings, for example like below:
-  * `My Cronos Rpc`: [https://cronos-testnet-3.crypto.org:8545](https://cronos-testnet-3.crypto.org:8545)
-  *   `My Cronos Chain ID`: 383
+  * `My Cronos Rpc`: [https://evm-dev-t3.cronos.org](https://evm-dev-t3.cronos.org) (Testnet), [https://evm-dev.cronos.org](https://evm-dev.cronos.org) (Mainnet)
+  *   `My Cronos Chain ID`: 338
 
 
 
-      <figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
   * `My Cosmos Rpc`, `My Tendermint Rpc`, and `My Chain ID` are for COSMOS chain, such as Crypto.org Chain, you can leave them as default values.
   * **Save** > **Compile** to check if any errors
