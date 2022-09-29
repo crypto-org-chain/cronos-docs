@@ -28,6 +28,7 @@ Below are the parameters for the `x/feemarket` module:
 | BaseFee                  | uint32  | 1000000000     | base fee for EIP-1559 blocks                                                                                            |
 | EnableHeight             | uint32  | 0              | height which enable fee adjustment                                                                                      |
 | MinGasPrice              | sdk.Dec | 0              | global minimum gas price that needs to be paid to include a transaction in a block                                      |
+| min\_gas\_multiplier     | sdk.Dec | 0              | bounds the minimum gasUsed to be charged to senders based on the GasLimit                                               |
 
 #### Base Fee
 
