@@ -15,12 +15,19 @@ Crypto.com DeFi Wallet, Trust Wallet and Metamask have mobile apps that include 
 
 [Crypto.com DeFi Wallet](https://crypto.com/defi-wallet) is a non-custodial wallet that gives users full control of their crypto and private keys. Private keys are encrypted locally on the user’s mobile phone, and protected by Biometric Authentication and 2-Factor Authentication.&#x20;
 
-If you are a dApp developer, integration with the Crypto.com DeFi Wallet is the best way to deliver a smooth user experience to the more than 50 million Crypto.com customers.
+If you are a dApp developer, integration with the Crypto.com DeFi Wallet is the best way to deliver a smooth user experience to more than 50 million Crypto.com customers.
 
 Users will be able to login with your dApp in several ways:
 
 * On Mobile, they can visit your dApp and connect to it via the in-app browser of the Crypto.com DeFi Wallet iOS or Android apps.
 * On Desktop, they can install the Crypto.com Wallet Extension from the Chrome extension store into their Chrome, Edge or Brave browser. The extension can be connected to the Crypto.com DeFi Wallet mobile app (in which case the user will need to confirm each transaction on their mobile phone), or alternatively it can work as a standalone extension entirely in the browser.
+
+To get your dApp listed on the dApp section of Crypto.com DeFi Wallet, the steps are as below:&#x20;
+
+* Make sure your dApp completes the integration of our SDK and the wallet connection is working
+* Provide your dApp details in the [Submission Form](https://crypto-com.typeform.com/to/bRvudlYV)
+* DeFi Wallet Team review submission with stakeholders
+* DeFi Wallet Team proceed with the dApp listing
 
 Continue reading below if you would like to learn more about integrating your dApp and the Crypto.com DeFi Wallet.
 
