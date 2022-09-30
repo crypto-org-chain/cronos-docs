@@ -79,7 +79,7 @@
     * [Broadcast Transactions](cronos-play/getting-started\_unreal/quick-start/broadcast-transactions.md)
     * [Get Tokens or Transactions](cronos-play/getting-started\_unreal/quick-start/get-tokens-or-transactions.md)
     * [WalletConnect](cronos-play/getting-started\_unreal/quick-start/walletconnect.md)
-  * [Migration](cronos-play/getting-started\_unreal/migration.md)
+  * [Demo](cronos-play/getting-started\_unreal/demo.md)
 * [Cronos Play C++ SDK](cronos-play/getting-started\_cpp.md)
 * [Crypto.com Pay Integration](cronos-play/crypto.com-pay-integration.md)
 
