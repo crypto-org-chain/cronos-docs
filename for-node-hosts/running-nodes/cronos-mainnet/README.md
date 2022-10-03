@@ -73,6 +73,10 @@ For the host who would like to build a Full Node with complete blockchain data f
 
 Users can refer to the [upgrade guide of "Huygen"](huygen.md) for the detailed upgrade steps.
 
+{% hint style="info" %}
+To patch "unlucky" transactions, follow this guide on [patching unlucky tx](patching-unlucky-tx.md)
+{% endhint %}
+
 ## Step 1. Get the Cronos Mainnet binary
 
 {% hint style="info" %}
