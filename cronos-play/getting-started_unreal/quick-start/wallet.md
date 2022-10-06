@@ -10,7 +10,7 @@ Restore wallet with mnemonics and password.
 
 <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-* `Mnemonics`: mnemonics. to restore
+* `Mnemonics`: mnemonics to restore
 * `Password`: salt in mnemonics restoration
 * `Output`: generated address (index=0)
 * `Success`: whether succeed or not
