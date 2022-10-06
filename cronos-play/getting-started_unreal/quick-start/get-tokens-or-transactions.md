@@ -6,7 +6,7 @@ given the BlockScout REST API base url and the account address (hexadecimal), it
 
 <figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
-* `Blockscout Base Url`: the base url of the BlockScout API
+* `Blockscout Base Url`: the base url of the BlockScout API (e.g. [https://cronos.org/explorer/api](https://cronos.org/explorer/api))
 * `Account Address`: the account address to query
 * `Output`: the output of the query
 * `Success`: success of the query
@@ -20,7 +20,7 @@ NOTE: QueryOption::ByContract is not supported by BlockScout
 
 <figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-* `Blockscout Base Url`: the base url of the BlockScout API
+* `Blockscout Base Url`: the base url of the BlockScout API (e.g. [https://cronos.org/explorer/api](https://cronos.org/explorer/api))
 * `Address`: the account address to query
 * `Contract Address`: the contract address to query
 * `Option`: the query option
