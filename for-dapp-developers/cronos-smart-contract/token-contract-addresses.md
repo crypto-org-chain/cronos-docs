@@ -1,7 +1,7 @@
 # Token Contract Addresses
 
 {% tabs %}
-{% tab title="Cronos Mainnet Beta" %}
+{% tab title="Cronos Mainnet" %}
 | Token name | Address                                                                                                                               | Decimal |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | WCRO       | [0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23](https://cronoscan.com/tokens/0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23/token-transfers) | 18      |
@@ -100,8 +100,6 @@
 | CKB        | [0x5dEED46f39c485bA03b61d83763d0f6357dc4737](https://cronoscan.com/address/0x5dEED46f39c485bA03b61d83763d0f6357dc4737/transactions)   | 8       |
 | VOXEL      | [0x5fdbFE38E050829374001630B8710BDd05Ea55C0](https://cronoscan.com/address/0x5fdbFE38E050829374001630B8710BDd05Ea55C0/transactions)   | 18      |
 | KRL        | [0x62E622fa4E180C391f2E089FC1d5eA7AdCB96575](https://cronoscan.com/address/0x62E622fa4E180C391f2E089FC1d5eA7AdCB96575/transactions)   | 18      |
-
-
 {% endtab %}
 
 {% tab title="Testnet" %}

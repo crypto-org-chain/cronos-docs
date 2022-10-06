@@ -1,6 +1,6 @@
 # Running nodes
 
-Read this section on how to setup a node on Cronos Mainnet Beta, Testnet, Devnet or Gravity Bridge.
+Read this section on how to setup a node on Cronos Mainnet, Testnet, Devnet or Gravity Bridge.
 
 {% content-ref url="cronos-mainnet/" %}
 [cronos-mainnet](cronos-mainnet/)

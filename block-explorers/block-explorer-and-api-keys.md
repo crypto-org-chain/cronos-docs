@@ -3,7 +3,7 @@
 ### Block Explorers
 
 {% tabs %}
-{% tab title="Cronos Mainnet Beta" %}
+{% tab title="Cronos Mainnet" %}
 * [https://cronoscan.com/](https://cronoscan.com)
 * [https://cronos.org/explorer/](https://cronos.org/explorer/)
 {% endtab %}

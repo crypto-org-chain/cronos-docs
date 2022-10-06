@@ -13,7 +13,7 @@ The Desktop Wallet currently supports the following networks:
 
 {% tabs %}
 {% tab title="Mainnet" %}
-* Cronos Mainnet Beta
+* Cronos Mainnet
 * Crypto.org Chain
 {% endtab %}
 

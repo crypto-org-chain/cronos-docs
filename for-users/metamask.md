@@ -48,7 +48,7 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
     ![](../.gitbook/assets/metamask\_2.png)
 
 {% tabs %}
-{% tab title="Mainnet Beta" %}
+{% tab title="Mainnet" %}
 * **Name**: Cronos
 * **New RPC URL:**`https://evm.cronos.org`;
 * **Chain ID: 25**
