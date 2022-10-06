@@ -9,6 +9,6 @@ After creating **BP\_DefiWalletCore**, we should configure the Network Configura
 
 
 
-      <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
   * `My Cosmos Rpc`, `My Tendermint Rpc`, and `My Chain ID` are for COSMOS chain, such as Crypto.org Chain, you can leave them as default values.
   * **Save** > **Compile** to check if any errors

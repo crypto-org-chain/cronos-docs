@@ -9,7 +9,7 @@
 
 *   The following screenshot shows Query the name of ERC20 contract and print it on the screen. In this example, we use a Function - **Spawn Actor from Class** to create an Actor instance from **BP\_DefiWalletCore** Class. The Transformation defines the location, rotation, and scale that will be used by the new Actor. A reference to the new instance is available in the Return Value which feeds as input Value of Function **Erc20Name. Erc20Name** also has an input **Contract Address**, for example, we set it as **0xf0307093f23311FE6776a7742dB619EB3df62969**. Finally, print the token name with Function - **Print String**.
 
-    <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 * Click **Compile** > **Play**, **USDC** is printed in the game.
@@ -45,7 +45,7 @@ Get erc-20 balance
 
 Get erc-20 name
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Name`: get name
@@ -56,7 +56,7 @@ Get erc-20 name
 
 Get erc-20 symbol
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Symbol`:: get symbol
@@ -78,7 +78,7 @@ Get erc-20 decimals
 
 Get erc-20 total supply
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Total Supply`: get total supply
@@ -91,7 +91,7 @@ Get erc-20 total supply
 
 erc20 Moves `amount` tokens from the caller’s account to `to_address`.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0
@@ -103,7 +103,7 @@ erc20 Moves `amount` tokens from the caller’s account to `to_address`.
 
 erc20 Moves `amount` tokens from `from_address` to `to_address` using the allowance mechanism.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0
@@ -116,7 +116,7 @@ erc20 Moves `amount` tokens from `from_address` to `to_address` using the allowa
 
 erc20 Allows `approved_address` to withdraw from your account multiple times, up to the `amount` amount.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0

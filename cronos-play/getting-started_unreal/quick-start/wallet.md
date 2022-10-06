@@ -22,7 +22,7 @@ Restore wallet with mnemonics and password.
 
 Create a new wallet with password and wordcount.
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Password`: salt in mnemonics restoration
 * `Wordcount`: mnemonics word count (12, 18, 24)
@@ -78,7 +78,7 @@ Get eth balance
 
 Sign eth amount
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Fromaddress`: sender address

@@ -31,7 +31,7 @@ If the callback return True, then call `SetupCallback` and `GetConnectionString`
 
 In Android, launch the WalletConnect Deep link as below:
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (3).png" alt=""><figcaption></figcaption></figure>
 
 The full blueprint demo:
 
