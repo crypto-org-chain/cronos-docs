@@ -5,7 +5,7 @@
 * Let's work with ERC20 tokens with Blueprint!
 * Back to the map, select the drop down menu of **Blueprints** > **Open Level Blueprint** and launch the Level Blueprint Editor
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 *   The following screenshot shows Query the name of ERC20 contract and print it on the screen. In this example, we use a Function - **Spawn Actor from Class** to create an Actor instance from **BP\_DefiWalletCore** Class. The Transformation defines the location, rotation, and scale that will be used by the new Actor. A reference to the new instance is available in the Return Value which feeds as input Value of Function **Erc20Name. Erc20Name** also has an input **Contract Address**, for example, we set it as **0xf0307093f23311FE6776a7742dB619EB3df62969**. Finally, print the token name with Function - **Print String**.
 
@@ -31,6 +31,8 @@ All ERC20 functions are members of **DefiWalletCoreActor**. The Target should be
 
 Get erc-20 balance
 
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
 * `Contract Address`: erc20 contract address
 * `Account Address`: account address to fetch balance
 * `Balance`: get balance of account address
@@ -43,6 +45,8 @@ Get erc-20 balance
 
 Get erc-20 name
 
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
 * `Contract Address`: erc20 contract address
 * `Name`: get name
 * `Success`: whether succeed or not
@@ -51,6 +55,8 @@ Get erc-20 name
 ### Erc20Symbol
 
 Get erc-20 symbol
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Symbol`:: get symbol
@@ -61,6 +67,8 @@ Get erc-20 symbol
 
 Get erc-20 decimals
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 * `Contract Address`: erc20 contract address
 * `Decimals`: get decimals
 * `Success`: whether succeed or not
@@ -69,6 +77,8 @@ Get erc-20 decimals
 ### Erc20TotalSupply
 
 Get erc-20 total supply
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Total Supply`: get total supply
@@ -81,41 +91,48 @@ Get erc-20 total supply
 
 erc20 Moves `amount` tokens from the caller’s account to `to_address`.
 
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0
 * `To Address`: to address
 * `Amount`: amount
-* `Result`: receipt
-* `Success`: whether succeed or not
-* `Output message`: error message, "" if succeed
+* `Out`: Erc20Transfer callback
 
 ### Erc20TransferFrom
 
 erc20 Moves `amount` tokens from `from_address` to `to_address` using the allowance mechanism.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0
 * `From Address`: from address to move
 * `To Address`: to address
 * `Amount`: amount
-* `Result`: receipt
-* `Success`: whether succeed or not
-* `Output message`: error message, "" if succeed
+* `Out`: Erc20TransferFrom callback
 
 ### Erc20Approve
 
 erc20 Allows `approved_address` to withdraw from your account multiple times, up to the `amount` amount.
 
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0
 * `Approved Address`: address to approve
-* `Result`: receipt
+* `Amount`: amount
+* `Out`: Erc20Approve callback
 
 ### Erc20Allowance
 
 Returns the amount of tokens in existence
 
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 * `Contract Address`: erc20 contract
-* `Owner`: erc20 owner&#x20;
-* `Spender`: erc20 spender
+* `Erc 20owner`: erc20 owner&#x20;
+* `Erc 20spender`: erc20 spender
 * `Result`: allowance
+* `Success`: whether succeed or not
+* `Output message`: error message, "" if succeed

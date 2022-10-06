@@ -1,4 +1,4 @@
-# Migration
+# Demo
 
 ## Download the demo
 
@@ -15,7 +15,7 @@ Download the demo here: [https://github.com/cronos-labs/play-unreal-demo/release
 * Press **OK** in **Asset Report** window
 * Choose the **Content** folder of the project you are working on. **CronosPlayUnreal** assets will be migrated into **Content** folder of the current project.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Migrate Demo Maps
 
