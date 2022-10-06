@@ -25,7 +25,7 @@
 
 ## Functions
 
-
+All ERC20 functions are members of **DefiWalletCoreActor**. The Target should be **Defi Wallet Core Actor**.
 
 ### Erc20Balance
 
@@ -59,7 +59,7 @@ Get erc-20 symbol
 
 ### Erc20Decimals
 
-Get erc-20 decimals\\
+Get erc-20 decimals
 
 * `Contract Address`: erc20 contract address
 * `Decimals`: get decimals
@@ -82,7 +82,7 @@ Get erc-20 total supply
 erc20 Moves `amount` tokens from the caller’s account to `to_address`.
 
 * `Contract Address`: erc20 contract
-* `Walletindex`: which index to use?
+* `Walletindex`: wallet index which starts from 0
 * `To Address`: to address
 * `Amount`: amount
 * `Result`: receipt
@@ -94,7 +94,7 @@ erc20 Moves `amount` tokens from the caller’s account to `to_address`.
 erc20 Moves `amount` tokens from `from_address` to `to_address` using the allowance mechanism.
 
 * `Contract Address`: erc20 contract
-* `Walletindex`: which index to use?
+* `Walletindex`: wallet index which starts from 0
 * `From Address`: from address to move
 * `To Address`: to address
 * `Amount`: amount
@@ -107,7 +107,7 @@ erc20 Moves `amount` tokens from `from_address` to `to_address` using the allowa
 erc20 Allows `approved_address` to withdraw from your account multiple times, up to the `amount` amount.
 
 * `Contract Address`: erc20 contract
-* `Walletindex`: which index to use?
+* `Walletindex`: wallet index which starts from 0
 * `Approved Address`: address to approve
 * `Result`: receipt
 
@@ -116,5 +116,6 @@ erc20 Allows `approved_address` to withdraw from your account multiple times, up
 Returns the amount of tokens in existence
 
 * `Contract Address`: erc20 contract
-* `Owner`: erc20 owner \*@param spender erc20 spender \*@param
+* `Owner`: erc20 owner&#x20;
+* `Spender`: erc20 spender
 * `Result`: allowance
