@@ -2,7 +2,7 @@
 
 ## Download Plugin in Marketplace
 
-* Go to [https://www.unrealengine.com/marketplace/en-US/product/cronos-play-for-unreal-engine](https://www.unrealengine.com/marketplace/en-US/product/cronos-play-for-unreal-engine) and click **Free** button to add it into **Epic Games Launcher**.
+* Go to [https://www.unrealengine.com/marketplace/en-US/product/cronos-play-for-unreal-engine](https://www.unrealengine.com/marketplace/en-US/product/cronos-play-for-unreal-engine), sign in with your Epic game account and click **Free** button to add it into **Epic Games Launcher**.
 * In **Library** Tab of **Epic Games Launcher**, click **Install to Engine** below **Cronos Play for Unreal Engine** inside **VAULT** section.
 * Select the Engine version then click **Install**
 
