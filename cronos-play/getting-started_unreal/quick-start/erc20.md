@@ -31,7 +31,7 @@ All ERC20 functions are members of **DefiWalletCoreActor**. The Target should be
 
 Get erc-20 balance
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Account Address`: account address to fetch balance
@@ -45,7 +45,7 @@ Get erc-20 balance
 
 Get erc-20 name
 
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Name`: get name
@@ -67,7 +67,7 @@ Get erc-20 symbol
 
 Get erc-20 decimals
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Decimals`: get decimals
@@ -103,7 +103,7 @@ erc20 Moves `amount` tokens from the caller’s account to `to_address`.
 
 erc20 Moves `amount` tokens from `from_address` to `to_address` using the allowance mechanism.
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Walletindex`: wallet index which starts from 0
@@ -128,7 +128,7 @@ erc20 Allows `approved_address` to withdraw from your account multiple times, up
 
 Returns the amount of tokens in existence
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Erc 20owner`: erc20 owner&#x20;

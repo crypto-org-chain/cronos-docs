@@ -94,7 +94,7 @@ Sign eth amount
 
 Send eth amount
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Fromaddress`: sender address
@@ -110,7 +110,7 @@ Send eth amount
 
 Sign eth login
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Document`: document to sign
