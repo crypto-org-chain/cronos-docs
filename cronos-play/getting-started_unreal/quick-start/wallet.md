@@ -2,6 +2,8 @@
 
 Most of the wallet functionality is insecure / meant for development testing. To connect Wallets with Dapps/Dgames securely, we bring the open communications protocol for web3 into Unreal Engine. Please check [WalletConnect](walletconnect.md).
 
+The following functions are members of **DefiWalletCoreActor**. The Target should be **Defi Wallet Core Actor**.
+
 ### InitializeWallet
 
 Restore wallet with mnemonics.

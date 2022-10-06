@@ -25,7 +25,7 @@
 
 ## Functions
 
-
+All ERC20 functions are members of **DefiWalletCoreActor**. The Target should be **Defi Wallet Core Actor**.
 
 ### Erc20Balance
 
