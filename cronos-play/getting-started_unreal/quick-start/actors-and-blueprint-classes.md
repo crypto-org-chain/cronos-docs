@@ -2,7 +2,7 @@
 
 ## DefiWalletCoreActor
 
-**DefiWalletCoreActor** is a C++ Class that has all the features for interacting with Crypto.org Chain, Cronos Chain, and other EVM-compatible chains natively. Artists, designers, or programmers can utilise the powerful Blueprint Visual Scripting system in Unreal Engine to create DApps/DGames easily.&#x20;
+**DefiWalletCoreActor** is a C++ Class that has all the features for interacting with Crypto.org Chain and Cronos Chain natively. Artists, designers, or programmers can utilise the powerful Blueprint Visual Scripting system in Unreal Engine to create DApps/DGames easily.&#x20;
 
 ### Create a Blueprint Class
 
