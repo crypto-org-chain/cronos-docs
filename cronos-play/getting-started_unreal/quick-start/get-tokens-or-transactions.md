@@ -1,5 +1,11 @@
 # Get Tokens or Transactions
 
+Tokens and Transactions can be queried by Blockscout api or Cronoscan api. Please find the Blockscout api address or apply the Cronoscan API key before using them:&#x20;
+
+{% content-ref url="../../../block-explorers/block-explorer-and-api-keys.md" %}
+[block-explorer-and-api-keys.md](../../../block-explorers/block-explorer-and-api-keys.md)
+{% endcontent-ref %}
+
 ## GetTokensBlocking
 
 given the BlockScout REST API base url and the account address (hexadecimal), it will return the list of all owned tokens (ref: https://cronos.org/explorer/testnet3/api-docs)
