@@ -9,7 +9,7 @@ Download the demo here: [https://github.com/cronos-labs/play-unreal-demo/release
 * You can migrate the Assets in the demo to your project and work on them.
 * Unzip the archive, double click **CronosPlayUnrealDemo.uproject** and launch the demo project. Press Yes to load it anyway in unreal 4.27.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Right click **Content** > **CrnosPlayUnreal** in Content Browser > **Migrate...**
 * Press **OK** in **Asset Report** window

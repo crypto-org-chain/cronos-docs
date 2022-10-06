@@ -80,3 +80,16 @@ To display QR Code in Unreal Engine, a function `GenerateQrCode` could be used. 
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+## Get Session Status
+
+After the QR Code is shown on the screen, we could call `EnsureSessionBlocking` from **Play Cpp Sdk Actor** to get the session status (Addresses and Chain Id) from the `Out` callback.
+
+* Create variable
+  * `Address`, Variable Type is **Wallet Connect Address**
+  * `ChainID`, Variable Type is **Integer64**
+* Get the first address from the `Session Result Addresses` and set it to `Address`
+* Get the `Session Result Chain Id` and set it to `ChainID`
+* Finally, destroy the QR Code
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
