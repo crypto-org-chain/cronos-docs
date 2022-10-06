@@ -128,7 +128,7 @@ erc20 Allows `approved_address` to withdraw from your account multiple times, up
 
 Returns the amount of tokens in existence
 
-<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract
 * `Erc 20owner`: erc20 owner&#x20;

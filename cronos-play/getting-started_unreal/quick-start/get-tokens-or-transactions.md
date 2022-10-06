@@ -50,7 +50,7 @@ crono-scan api, get transaction history
 
 crono-scan api, get erc20 transaction history
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Address`: the address to query
 * `Contract Address`: the contract address to query
