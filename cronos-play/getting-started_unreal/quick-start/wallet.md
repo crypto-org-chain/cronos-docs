@@ -1,6 +1,8 @@
 # Wallet
 
-{% hint style="danger" %} Most of the wallet functionality is insecure / meant for development testing. To connect Wallets with Dapps/Dgames securely, we bring the open communications protocol for web3 into Unreal Engine. Please check [WalletConnect](walletconnect.md).{% endhint %}
+{% hint style="danger" %}
+Most of the wallet functionality is insecure / meant for development testing. To connect Wallets with Dapps/Dgames securely, we bring the open communications protocol for web3 into Unreal Engine. Please check [WalletConnect](walletconnect.md).
+{% endhint %}
 
 The following functions are members of **DefiWalletCoreActor**. The Target should be **Defi Wallet Core Actor**.
 
@@ -17,8 +19,6 @@ Restore wallet with mnemonics and password.
 * `Output Message`: error message, "" if succeed
 
 ## InitializeNewDevelopmentOnlyWallet
-
-
 
 Create a new wallet with password and wordcount.
 
@@ -112,7 +112,7 @@ Sign eth login
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-* `Wallet Index`: which wallet to use
+* `Wallet Index`: wallet index which starts from 0
 * `Document`: document to sign
 * `Signature`: get signature
 * `Success`: whether succeed or not
@@ -128,6 +128,3 @@ Verify eth login
 * `Signature`: signature to verify
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
-
-
-
