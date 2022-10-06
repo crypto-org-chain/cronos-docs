@@ -8,11 +8,11 @@
 
 * Right click **Content Browser** > **Blueprint Class**
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Search **DefiWalletCoreActor** in All Classes > **Select**
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Rename the blueprint, for example, **BP\_DefiWalletCore**.
 

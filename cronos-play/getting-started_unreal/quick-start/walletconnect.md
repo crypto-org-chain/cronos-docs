@@ -8,7 +8,7 @@ First, we create a variable `PlayCppSdkActor` that references `BP Play Cpp Sdk`.
 
 Then, use Spawn Actor from Class to spawn from `BP Play Cpp Sdk`, and set the return value to variable `PlayCppSdkActor` for later easy access.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 Call `InitializeWalletConnect` function from `PlayCppSdkActor` with the following inputs:
 
@@ -25,11 +25,11 @@ Drag Pin Out from function `InitializeWalletConnect`, search and **select Add Cu
 
 Connect the `Succeed` result to the `Condition` of a node **Branch**
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
 
 If the callback return True, then call `SetupCallback` and `GetConnectionString` as below, finally print the connection string in the Game.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 
 In Android, launch the WalletConnect Deep link as below:
 
@@ -45,21 +45,21 @@ To display QR Code in Unreal Engine, a function `GenerateQrCode` could be used. 
 
 * To show the QR Code on a Widget, select **Maps**, right click **Content Browser** > **User Interface** > **Widget Blueprint**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 * Rename the file as WBP\_QR.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 * Double click WBP\_QR and open the Designer editor, drag **Common** > **Image** to the canvas (it is named as `Image 0`),  update on **Details** tab as: **512** (Size X) x **512** (Size Y)&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 * Click **Graph** and switch to Event Graph
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 *   Right click the graph, search and select **Add Custom Event...**, name it as **ShowQR** with two inputs
 
@@ -67,16 +67,16 @@ To display QR Code in Unreal Engine, a function `GenerateQrCode` could be used. 
     * `QR`: Texture 2D (The input QR code data)
 
 
-* We could control to show or display `Image 0` like below
+* We could control it to show or destroy `Image 0` like below
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 * **Compile** > **Save**
 * Back to level blueprint editor, instead of printing the URI, we connect `Output` of `GetConnectionString` to function `GenerateQrCode`&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 * Finally, show the QR Code by **Creating WBP QR Widget**, Calling **Show QR** function (`Show` should be True, `QR` should be the `Return Value` of `GenerateQrCode`), and **Add to Viewport** like so:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 

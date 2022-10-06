@@ -67,7 +67,7 @@ Get erc-20 symbol
 
 Get erc-20 decimals
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Contract Address`: erc20 contract address
 * `Decimals`: get decimals
