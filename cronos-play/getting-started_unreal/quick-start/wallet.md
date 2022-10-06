@@ -6,7 +6,7 @@ The following functions are members of **DefiWalletCoreActor**. The Target shoul
 
 ### InitializeWallet
 
-Restore wallet with mnemonics.
+Restore wallet with mnemonics and password.
 
 <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,12 +20,12 @@ Restore wallet with mnemonics.
 
 
 
-Restore wallet with mnemonics.
+Create a new wallet with password and wordcount.
 
 <figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-* `Mnemonics`: mnemonics. to restore
 * `Password`: salt in mnemonics restoration
+* `Wordcount`: mnemonics word count (12, 18, 24)
 * `Output`: generated address (index=0)
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
