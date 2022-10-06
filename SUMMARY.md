@@ -69,7 +69,7 @@
   * [Useful Links](cronos-play/unity/useful-links.md)
   * [2D Game Example](cronos-play/unity/play.md)
 * [Unreal Engine Plugin](cronos-play/getting-started\_unreal/README.md)
-  * [Download](cronos-play/getting-started\_unreal/download.md)
+  * [Installation and Enabling](cronos-play/getting-started\_unreal/download.md)
   * [Quick Start](cronos-play/getting-started\_unreal/quick-start/README.md)
     * [Actors and Blueprint Classes](cronos-play/getting-started\_unreal/quick-start/actors-and-blueprint-classes.md)
     * [Cronos Configuration](cronos-play/getting-started\_unreal/quick-start/cronos-configuration.md)
