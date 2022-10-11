@@ -155,7 +155,7 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
       accounts: getHDWallet(),
      },
     testnet: {
-      url: "https://cronos-testnet-3.crypto.org:8545",
+      url: "https://evm-t3.cronos.org:443",
       accounts: getHDWallet(),
     },
   },
