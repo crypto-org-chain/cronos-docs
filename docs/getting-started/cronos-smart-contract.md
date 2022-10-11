@@ -93,7 +93,7 @@ By default, the script will be using your local host `"127.0.0.1"`  - If you are
       network_id: "*",       // Any network (default: none)
     },
     testnet: {
-      provider: new HDWalletProvider(getHDWallet(), "https://cronos-testnet-3.crypto.org:8545"), // TODO
+      provider: new HDWalletProvider(getHDWallet(), "https://evm-t3.cronos.org:443"), // TODO 
       network_id: "*",
       skipDryRun: true
     },
