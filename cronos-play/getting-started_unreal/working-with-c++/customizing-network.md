@@ -3,9 +3,9 @@
 Back to the level editor,&#x20;
 
 * In Content Browser, select All > C++ Classes > CronosPlayDemo,&#x20;
-* Drag `MyDefiWalletCoreActor` we just created into the map, you'll see a new created actor `MyDefiWalletCoreActor` could be found in Outliner
+* Drag `MyDefiWalletCoreActor` we just created into the map, you'll see a new created actor `MyDefiWalletCoreActor` in Outliner
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 * In **Cronos Play Unreal** section of **Details** tab, input the RPC and Chain ID settings, for example like below:
   * `My Cronos Rpc`:
@@ -15,8 +15,8 @@ Back to the level editor,&#x20;
     * **\[Testnet]** 338; or
     * **\[Mainnet]** 25
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Click `Play` to start the simulation, logs could be found in the Output Log
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
