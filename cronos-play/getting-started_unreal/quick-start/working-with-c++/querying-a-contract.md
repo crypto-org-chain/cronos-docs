@@ -26,6 +26,8 @@ UE_LOG(LogTemp, Display, TEXT("ERC20 success: %s"), *success_message);
 UE_LOG(LogTemp, Display, TEXT("ERC20 output_message: %s"), *output_message);
 ```
 
+Examples:
+
 #### `MyDefiWalletCoreActor.h`
 
 ```
@@ -97,3 +99,7 @@ void AMyDefiWalletCoreActor::Tick(float DeltaTime) {
 }
 
 ```
+
+### Building
+
+Select Development Editor Profile in tool bar > Build > Build Solution (Disable Live Coding on Unreal Editor before building)

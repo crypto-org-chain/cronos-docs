@@ -1,4 +1,6 @@
-# Customizing Netowork
+# Customizing Network
+
+Back to the level editor,&#x20;
 
 * In Content Browser, select All > C++ Classes > CronosPlayDemo,&#x20;
 * Drag `MyDefiWalletCoreActor` we just created into the map, you'll see a new created actor `MyDefiWalletCoreActor` could be found in Outliner
