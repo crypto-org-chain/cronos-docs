@@ -84,7 +84,7 @@
       * [Creating a C++ Project](cronos-play/getting-started\_unreal/quick-start/working-with-c++/creating-a-c++-project.md)
       * [Creating a child DefiWalletCoreActor](cronos-play/getting-started\_unreal/quick-start/working-with-c++/creating-a-child-defiwalletcoreactor.md)
       * [Querying a contract](cronos-play/getting-started\_unreal/quick-start/working-with-c++/querying-a-contract.md)
-      * [Customizing Netowork](cronos-play/getting-started\_unreal/quick-start/working-with-c++/customizing-netowork.md)
+      * [Customizing Network](cronos-play/getting-started\_unreal/quick-start/working-with-c++/customizing-network.md)
   * [Demo](cronos-play/getting-started\_unreal/demo.md)
 * [Cronos Play C++ SDK](cronos-play/getting-started\_cpp.md)
 * [Crypto.com Pay Integration](cronos-play/crypto.com-pay-integration.md)
