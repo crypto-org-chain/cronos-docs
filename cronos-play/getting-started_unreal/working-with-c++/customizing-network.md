@@ -7,7 +7,7 @@ Back to the level editor,&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-* In **Cronos Play Unreal** section of **Details** tab, input the RPC and Chain ID settings, for example like below:
+* Select `MyDefiWalletCoreActor` in Outliner. Under **Cronos Play Unreal** section of **Details** tab, input the RPC and Chain ID settings, for example:
   * `My Cronos Rpc`:
     * **\[Testnet]** [https://evm-dev-t3.cronos.org](https://evm-dev-t3.cronos.org); or
     * **\[Mainnet]** [https://evm-dev.cronos.org](https://evm-dev.cronos.org).
@@ -17,6 +17,6 @@ Back to the level editor,&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Click `Play` to start the simulation, logs could be found in the Output Log
+* Click `Play` to start the simulation, logs could be found in the Output Log
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
