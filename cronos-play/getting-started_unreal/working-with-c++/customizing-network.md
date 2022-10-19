@@ -5,7 +5,7 @@ Back to the level editor,&#x20;
 * In Content Browser, select All > C++ Classes > CronosPlayDemo,&#x20;
 * Drag `MyDefiWalletCoreActor` we just created into the map, you'll see a new created actor `MyDefiWalletCoreActor` in Outliner
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-cpp-my-actor" alt=""><figcaption></figcaption></figure>
 
 * Select `MyDefiWalletCoreActor` in Outliner. Under **Cronos Play Unreal** section of **Details** tab, input the RPC and Chain ID settings, for example:
   * `My Cronos Rpc`:

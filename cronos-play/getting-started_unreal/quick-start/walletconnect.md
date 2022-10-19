@@ -21,7 +21,7 @@ Call `InitializeWalletConnect` function from `PlayCppSdkActor` with the followin
 
 Drag Pin Out from function `InitializeWalletConnect`, search and **select Add Custom Event...**
 
-<figure><img src="../../../.gitbook/assets/image (14) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-add-custom-event" alt=""><figcaption></figcaption></figure>
 
 Connect the `Succeed` result to the `Condition` of a node **Branch**
 

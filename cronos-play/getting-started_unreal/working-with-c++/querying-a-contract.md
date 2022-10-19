@@ -26,7 +26,7 @@ UE_LOG(LogTemp, Display, TEXT("ERC20 success: %s"), *success_message);
 UE_LOG(LogTemp, Display, TEXT("ERC20 output_message: %s"), *output_message);
 ```
 
-Examples:
+### Examples
 
 #### `MyDefiWalletCoreActor.h`
 
