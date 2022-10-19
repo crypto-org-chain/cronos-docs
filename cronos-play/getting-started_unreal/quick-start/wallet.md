@@ -10,7 +10,7 @@ The following functions are members of **DefiWalletCoreActor**. The Target shoul
 
 Restore wallet with mnemonics and password.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeWallet" alt=""><figcaption></figcaption></figure>
 
 * `Mnemonics`: mnemonics to restore
 * `Password`: salt in mnemonics restoration
@@ -22,7 +22,7 @@ Restore wallet with mnemonics and password.
 
 Create a new wallet with password and wordcount.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeDevelopment" alt=""><figcaption></figcaption></figure>
 
 * `Password`: salt in mnemonics restoration
 * `Wordcount`: mnemonics word count (12, 18, 24)
@@ -34,7 +34,7 @@ Create a new wallet with password and wordcount.
 
 Get backup mnemonic phrase.
 
-<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-GetBackup" alt=""><figcaption></figcaption></figure>
 
 * `Output`: backup mnemonics
 * `Success`: whether succeed or not
@@ -44,7 +44,7 @@ Get backup mnemonic phrase.
 
 Generate mnemonics.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-DevelopmentOnlyGenerate" alt=""><figcaption></figcaption></figure>
 
 * `Password`: salt in mnemonics restoration
 * `Wordcount`: mnemonics word count (12, 18, 24)
@@ -56,7 +56,7 @@ Generate mnemonics.
 
 Get eth address with index
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-GetEthAddress" alt=""><figcaption></figcaption></figure>
 
 * `Index`: wallet index which starts from 0
 * `Output`: get eth address
@@ -67,7 +67,7 @@ Get eth address with index
 
 Get eth balance
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-GetEthBalance" alt=""><figcaption></figcaption></figure>
 
 * `Address`: eth address
 * `Output`: get balance
@@ -78,7 +78,7 @@ Get eth balance
 
 Sign eth amount
 
-<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-SignEthAmount" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Fromaddress`: sender address
@@ -94,7 +94,7 @@ Sign eth amount
 
 Send eth amount
 
-<figure><img src="../../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-SendEthAmount" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Fromaddress`: sender address
@@ -110,7 +110,7 @@ Send eth amount
 
 Sign eth login
 
-<figure><img src="../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-SignLogin" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Document`: document to sign
@@ -122,7 +122,7 @@ Sign eth login
 
 Verify eth login
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-VerfiyLogin" alt=""><figcaption></figcaption></figure>
 
 * `Document`: document to verify
 * `Signature`: signature to verify

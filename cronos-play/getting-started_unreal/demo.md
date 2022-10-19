@@ -4,18 +4,18 @@
 
 Download the demo here: [https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.7-alpha/CronosPlayDemo.zip](https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.7-alpha/CronosPlayDemo.zip)
 
-## Migrate Demo Assets&#x20;
+## Migrate Demo Assets
 
 * You can migrate the Assets in the demo to your project and work on them.
 * Unzip the archive, double click **CronosPlayUnrealDemo.uproject** and launch the demo project. Press Yes to load it anyway in unreal 4.27.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cronos-gamefi-blueprint-version-notice" alt=""><figcaption></figcaption></figure>
 
 * Right click **Content** > **CrnosPlayUnreal** in Content Browser > **Migrate...**
 * Press **OK** in **Asset Report** window
 * Choose the **Content** folder of the project you are working on. **CronosPlayUnreal** assets will be migrated into **Content** folder of the current project.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cronos-gamefi-blueprint-content-browser" alt=""><figcaption></figcaption></figure>
 
 ## Migrate Demo Maps
 

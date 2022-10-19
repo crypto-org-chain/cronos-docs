@@ -15,8 +15,8 @@ Back to the level editor,&#x20;
     * **\[Testnet]** 338; or
     * **\[Mainnet]** 25
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-cpp-actor-network-setting" alt=""><figcaption></figcaption></figure>
 
 * Click `Play` to start the simulation, logs could be found in the Output Log
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-cpp-logs" alt=""><figcaption></figcaption></figure>
