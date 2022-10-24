@@ -3,7 +3,7 @@ cover: ../../.gitbook/assets/cronosplay.png
 coverY: 0
 ---
 
-# Cronos Play
+# 🎮 Cronos Play
 
 GameFi refers to the monetisation of gaming. Similar to the term DeFi, or decentralised finance, GameFi combines the words “game” and “finance.” In this section, we introduce the concept of GameFi in the context of blockchain game development. The objective of this section is to demonstrate how to bridge games to the Cronos EVM Chain, using Unity, Unreal Engine, or any related C++ game engine.
 

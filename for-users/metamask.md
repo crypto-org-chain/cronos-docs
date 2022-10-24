@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/metamask.html
 ---
 
-# MetaMask
+# 🦊 MetaMask
 
 In this guide, you will learn how to use the MetaMask extension on Google Chrome to send and receive tokens, and interact with the Cronos network.
 
@@ -73,7 +73,7 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/Metamask-settings.png)
+![](<../.gitbook/assets/Metamask-settings (1).png>)
 
 * After saving the network configuration, we should be able to see the token in your address.
 
@@ -91,7 +91,7 @@ It will show your private key and you can copy it for the next step. Click the "
 
 Paste your private key string from the previous step and click "**Import"**.
 
-![](<../.gitbook/assets/metamask\_3 (1) (2).png>)
+![](<../.gitbook/assets/metamask\_3 (1) (1) (1) (1) (3).png>)
 
 Once it has been connected, you should see your token balance and you can then begin performing transactions using your MetaMask wallet!
 

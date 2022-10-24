@@ -8,7 +8,7 @@
 
 ## FOR USERS
 
-* [MetaMask](for-users/metamask.md)
+* [🦊 MetaMask](for-users/metamask.md)
 * [Bridge](for-users/bridge/README.md)
   * [From the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From the Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
@@ -57,7 +57,7 @@
 
 ## CRONOS PLAY
 
-* [Cronos Play](cronos-play/cronos-play/README.md)
+* [🎮 Cronos Play](cronos-play/cronos-play/README.md)
   * [Cronos Play FAQ](cronos-play/cronos-play/cronos-play-faq.md)
 * [Unity](cronos-play/unity/README.md)
   * [EVM](cronos-play/unity/scripts.md)
