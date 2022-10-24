@@ -1,6 +1,6 @@
 # Get Tokens or Transactions
 
-Tokens and Transactions can be queried by Blockscout api or Cronoscan api. Please find the Blockscout api address or apply the Cronoscan API key before using them:&#x20;
+Tokens and Transactions can be queried by Blockscout api or Cronoscan api. Please find the Blockscout api address or apply the Cronoscan API key before using them:
 
 {% content-ref url="../../../block-explorers/block-explorer-and-api-keys.md" %}
 [block-explorer-and-api-keys.md](../../../block-explorers/block-explorer-and-api-keys.md)
@@ -10,7 +10,7 @@ Tokens and Transactions can be queried by Blockscout api or Cronoscan api. Pleas
 
 given the BlockScout REST API base url and the account address (hexadecimal), it will return the list of all owned tokens (ref: https://cronos.org/explorer/testnet3/api-docs)
 
-<figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-gettokens" alt=""><figcaption></figcaption></figure>
 
 * `Blockscout Base Url`: the base url of the BlockScout API (e.g. [https://cronos.org/explorer/api](https://cronos.org/explorer/api))
 * `Account Address`: the account address to query
@@ -24,7 +24,7 @@ given the BlockScout REST API base url and the account address (hexadecimal; req
 
 NOTE: QueryOption::ByContract is not supported by BlockScout
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-gettokentransfers" alt=""><figcaption></figcaption></figure>
 
 * `Blockscout Base Url`: the base url of the BlockScout API (e.g. [https://cronos.org/explorer/api](https://cronos.org/explorer/api))
 * `Address`: the account address to query
@@ -38,7 +38,7 @@ NOTE: QueryOption::ByContract is not supported by BlockScout
 
 crono-scan api, get transaction history
 
-<figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-gettransactionhistory" alt=""><figcaption></figcaption></figure>
 
 * `Address`: the address to query
 * `Apikey`: the api key
@@ -50,7 +50,7 @@ crono-scan api, get transaction history
 
 crono-scan api, get erc20 transaction history
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-geterc20transferhistory" alt=""><figcaption></figcaption></figure>
 
 * `Address`: the address to query
 * `Contract Address`: the contract address to query
@@ -72,7 +72,7 @@ default option is by address
 
 The API key can be obtained from https://cronoscan.com
 
-<figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-geterc721transferhistory" alt=""><figcaption></figcaption></figure>
 
 * `Address`: the address to query
 * `Contract Address`: the contract address to query
@@ -81,4 +81,3 @@ The API key can be obtained from https://cronoscan.com
 * `Output`: the output of the query
 * `Success`: success of the query
 * `Output Message`: error message of the query
-

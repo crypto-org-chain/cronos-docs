@@ -4,7 +4,7 @@
 
 Broadcast a signed eth tx
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-broadcastethtxasync" alt=""><figcaption></figcaption></figure>
 
 * `Out`: event delegate which is triggered after tx is broadcasted
 * `Signedtx`: signed tx as bytes

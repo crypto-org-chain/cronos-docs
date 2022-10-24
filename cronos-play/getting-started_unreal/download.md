@@ -4,15 +4,13 @@
 
 1. Visit our [plugin page](https://www.unrealengine.com/marketplace/en-US/product/cronos-play-for-unreal-engine), sign in with your Epic game account and click the "**Free"** button to add it into **Epic Games Launcher;**
 2. In **Library** Tab of **Epic Games Launcher**, click **Install to Engine** below **Cronos Play for Unreal Engine** inside the **VAULT** section;
-3. Select the Engine version then click **Install** as below:&#x20;
+3. Select the Engine version then click **Install** as below:
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/cronos-gamefi-blueprint-install-plugin" alt=""><figcaption></figcaption></figure>
 
 Afterwards, the plugin will begin to download
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cronos-gamefi-blueprint-download-plugin" alt=""><figcaption></figcaption></figure>
 
 ## Enabling the Plugin
 
