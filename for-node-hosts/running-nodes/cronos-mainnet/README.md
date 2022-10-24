@@ -33,7 +33,7 @@ canonicalUrl: https://docs.cronos.org/getting-started/cronos-mainnet.html
 
 # Cronos Mainnet
 
-This is a detailed documentation for setting up a Validator or a full node on Cronos mainnet `cronosmainnet_25-1`.
+This is a detailed documentation for setting up a full node on Cronos mainnet `cronosmainnet_25-1`.
 
 ## Pre-requisites
 
@@ -130,9 +130,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 
     This `moniker` will be the displayed id of your node when connected to Cronos Chain network.
 
-    When providing the moniker value, make sure you drop the square brackets since they are not needed.\\
-
-    The example below shows how to initialize a node named `pegasus-node` :
+    When providing the moniker value, make sure you drop the square brackets since they are not needed. The example below shows how to initialize a node named `pegasus-node` :
 
     ```bash
       $ ./cronosd init pegasus-node --chain-id cronosmainnet_25-1
@@ -169,19 +167,14 @@ function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
 ```
 {% endhint %}
 
-*   (Validator node only) In `~/.cronos/config/app.toml`, update minimum gas price to avoid [transaction spamming](https://github.com/cosmos/cosmos-sdk/issues/4527)
-
-    ```bash
-    $ sed -i.bak -E 's#^(minimum-gas-prices[[:space:]]+=[[:space:]]+).*$#\1"5000000000000basecro"#' ~/.cronos/config/app.toml
-    ```
-*   For network configuration, in `~/.cronos/config/config.toml`, validator nodes need to modify the configurations of `seed`, `create_empty_blocks_interval` and `timeout_commit`. For non-validator full nodes, only `seed` modification is required:
+*   For network configuration, in `~/.cronos/config/config.toml`, validator nodes need to modify the configurations of `seed`, `create_empty_blocks_interval` and `timeout_commit`
 
     ```bash
     $ sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"#' ~/.cronos/config/config.toml
     $ sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
     $ sed -i.bak -E 's#^(timeout_commit[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
     ```
-*   If you would like to build an archive node that allows you to query all the historical block data - kindly update the pruning setting to `"nothing"` by
+*   If you would like to build an **archive node** that allows you to query all the historical block data - kindly update the pruning setting to `"nothing"` by
 
     ```bash
     $ sed -i.bak -E 's#^(pruning[[:space:]]+=[[:space:]]+).*$#\1"nothing"#' ~/.cronos/config/app.toml
@@ -203,19 +196,9 @@ This page only shows the minimal setup for validator / full node.
 Furthermore, you may want to run full nodes as sentries (see [Tendermint](https://docs.tendermint.com/master/tendermint-core/running-in-production.html)), restrict your validator connections to only connect to your full nodes, test secure storage of validator keys etc.
 {% endhint %}
 
-### Step 3-1. Create a new key and address (Validator node only)
 
-Run the followings to create a new key. For example, you can create a key with the name `Default` by:
 
-```bash
-  $ ./cronosd keys add Default
-```
-
-You should obtain an address with `crc` prefix, e.g. `crc10u5mgfflasrfj9s94mt8l9yucrt2gzhcyt5tsg`. This will be the address for performing transactions.
-
-### Step 3-2. Run everything
-
-Once `cronosd` has been configured, we are ready to start the node and sync the blockchain data:
+Once `cronosd` has been configured, we are ready to start the ode and sync the blockchain data:
 
 * Start cronosd, e.g.:
 
