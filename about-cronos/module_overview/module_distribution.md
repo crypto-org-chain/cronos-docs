@@ -63,7 +63,9 @@ Delegator can withdraw their reward(s) from the validator(s) that they have dele
 
 Delegator can withdraw their reward from a specific validator.
 
-:::tip Remark: Validator operation can withdraw the commission in addition to the rewards by adding the commission flag `--commission`. :::
+{% hint style="info" %}
+Remark: Validator operation can withdraw the commission in addition to the rewards by adding the commission flag `--commission`.
+{% endhint %}
 
 **`tx distribution set-withdraw-addr [withdraw-addr]` - Change the default withdraw address for rewards associated with an address**
 
@@ -101,13 +103,25 @@ We can query the current distribution parameters by
 
 ```json
 $ cronosd query distribution params --output json | jq
+```
 
-  {
+
+
+**REST endpoint**
+
+The parameters can also be checked by browsing to the following REST endpoint on Mainnet:
+
+[https://rest.cronos.org/cosmos/distribution/v1beta1/params](https://rest.cronos.org/cosmos/bank/v1beta1/params)/
+
+```json
+{
+  "params": {
     "community_tax": "0.000000000000000000",
-    "base_proposer_reward": "0.010000000000000000",
-    "bonus_proposer_reward": "0.040000000000000000",
+    "base_proposer_reward": "0.000000000000000000",
+    "bonus_proposer_reward": "0.000000000000000000",
     "withdraw_addr_enabled": true
   }
+}
 ```
 
 #### Appendix

@@ -63,7 +63,13 @@ If you are sending large numbers of transactions from your backend, consider set
 
 ### External node providers
 
-* [GetBlock](https://getblock.io/)
 * RockX:&#x20;
   * [Guide to Cronos Free Access Node](https://help.rockx.com/en/articles/6153885-guide-to-cronos-free-access-node)
   * [Cronos Blockchain API for Web3 Builders](https://access.rockx.com/product/cronos-blockchain-api-for-web3-builders)
+* Chainstack:
+  * [Cronos documentation](https://docs.chainstack.com/operations/cronos/)
+  * [Get started with Cronos Node on Chainstack](https://chainstack.com/build-better-with-cronos/)
+  * [Chainstack announces support for Cronos ](https://chainstack.com/chainstack-announces-support-for-cronos/)
+* GetBlock:
+  * [Cronos Shared Nodes](https://getblock.io/nodes/cro/)
+* Visit this [link](https://crofam.me/devtools) for an unofficial list of available development tools, including node providers and indexers.

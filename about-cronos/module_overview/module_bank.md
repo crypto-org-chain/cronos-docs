@@ -73,6 +73,34 @@ $ cronosd query bank total --output json | jq
 }
 ```
 
+
+
+**REST endpoint**
+
+The parameters can be checked by browsing to the following REST endpoint on Mainnet:
+
+[https://rest.cronos.org/cosmos/bank/v1beta1/params](https://rest.cronos.org/cosmos/bank/v1beta1/params)/
+
+```json
+{
+  "params": {
+    "send_enabled": [
+      {
+        "denom": "stake",
+        "enabled": true
+      },
+      {
+        "denom": "basecro",
+        "enabled": false
+      }
+    ],
+    "default_send_enabled": true
+  }
+}
+```
+
+**``**
+
 #### Appendix
 
 **`bank` module: Network Parameters and configuration**

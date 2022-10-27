@@ -68,3 +68,25 @@ The params command allows users to query the module parameters.
 The query with params command allows users to query the feemarket parameters.
 
 **`./cronosd query feemarket params [flags]`**
+
+**``**
+
+**REST endpoint**
+
+The parameters can also be checked by browsing to the following REST endpoint on testnet:
+
+[https://rest-t3.cronos.org/ethermint/feemarket/v1/params](https://rest-t3.cronos.org/ethermint/feemarket/v1/params)
+
+```json
+{
+  "params": {
+    "no_base_fee": false,
+    "base_fee_change_denominator": 100000000,
+    "elasticity_multiplier": 2,
+    "enable_height": "2280800",
+	    "base_fee": "1955046261113",
+    "min_gas_price": "0.000000000000000000",
+    "min_gas_multiplier": "0.500000000000000000"
+  }
+}
+```
