@@ -1,4 +1,4 @@
-# Dev Tools & Integrations
+# ⚙ Dev Tools & Integrations
 
 Visit [this link](https://crofam.me/devtools) for an up-to-date list of dev tools & integrations that you can leverage as an application developer in the Cronos ecosystem (development frameworks, JSON-RPC providers, oracles, wallets, etc.).
 

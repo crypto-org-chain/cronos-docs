@@ -9,7 +9,8 @@
 ## FOR USERS
 
 * [🦊 MetaMask](for-users/metamask.md)
-* [Bridge](for-users/bridge/README.md)
+* [🦁 Brave Wallet](for-users/brave-wallet.md)
+* [🌉 Bridges](for-users/bridge/README.md)
   * [From the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From the Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
     * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
@@ -19,22 +20,22 @@
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
   * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
-* [Testnet Faucet](for-users/testnet-faucet.md)
+* [🚰 Testnet Faucet](for-users/testnet-faucet.md)
 
 ## FOR DAPP DEVELOPERS
 
-* [Cronos Integration](for-dapp-developers/chain-integration/README.md)
+* [💻 Cronos Integration](for-dapp-developers/chain-integration/README.md)
   * [Public RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
   * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
   * [Crypto.com DeFi Desktop Wallet](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
   * [JSON-RPC](for-dapp-developers/chain-integration/json-rpc.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
-* [Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
+* [📃 Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
   * [Contract Deployment](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
   * [Contract Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
   * [Best Practices](for-dapp-developers/cronos-smart-contract/defi-practice.md)
   * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
-* [Dev Tools & Integrations](for-dapp-developers/useful-projects-on-cronos/README.md)
+* [⚙ Dev Tools & Integrations](for-dapp-developers/useful-projects-on-cronos/README.md)
   * [Band Protocol](for-dapp-developers/useful-projects-on-cronos/band-protocol.md)
   * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)

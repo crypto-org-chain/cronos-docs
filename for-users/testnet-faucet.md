@@ -1,4 +1,4 @@
-# Faucet
+# 🚰 Testnet Faucet
 
 ### Testnet Faucets
 
@@ -9,14 +9,12 @@
 In case you have reached the daily limit on faucet , you can simply send a message on [Discord](https://discord.gg/pahqHz26q4) #request-tcro channel , stating who you are and your `0x...` address.
 {% endhint %}
 
-
-
 {% tabs %}
 {% tab title="Testnet" %}
 * [Test-token faucet](https://cronos.org/faucet)
 {% endtab %}
 
 {% tab title="Gravity Bridge" %}
-* [Test-token faucet](https://cronos.org/pioneer11-faucet)&#x20;
+* [Test-token faucet](https://cronos.org/pioneer11-faucet)
 {% endtab %}
 {% endtabs %}

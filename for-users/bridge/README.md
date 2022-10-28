@@ -1,4 +1,4 @@
-# Bridge
+# 🌉 Bridges
 
 In this section you can find different tutorials on how to bridge your assets:
 

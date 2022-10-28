@@ -1,4 +1,4 @@
-# Cronos Integration
+# 💻 Cronos Integration
 
 ### Integration Guides
 

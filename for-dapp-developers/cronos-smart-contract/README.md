@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/cronos-smart-contract.html
 ---
 
-# Smart Contracts
+# 📃 Smart Contracts
 
 Smart contracts hold an essential role in the blockchain ecosystem of dApps. It is critical to ensure they work as intended and remain as secure as possible. Complete and well-design smart contracts save us from unnecessary financial losses and help the project stay secure. Smart contract verification is sometimes overlooked when teams are rushing to ship, but it is vital to verify smart contracts on their correctness, validity and security.&#x20;
 
