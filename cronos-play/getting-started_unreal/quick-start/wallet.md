@@ -6,7 +6,7 @@ Most of the wallet functionality is insecure / meant for development testing. To
 
 The following functions are members of **DefiWalletCoreActor**. The Target should be **Defi Wallet Core Actor**.
 
-### InitializeWallet
+### RestoreWallet
 
 Restore wallet with mnemonics and password.
 
@@ -18,7 +18,7 @@ Restore wallet with mnemonics and password.
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
 
-## InitializeNewDevelopmentOnlyWallet
+## InitializeNewWallet
 
 Create a new wallet with password and wordcount.
 
@@ -40,7 +40,7 @@ Get backup mnemonic phrase.
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
 
-## DevelopmentOnlyGenerateMnemonics
+## GenerateMnemonics
 
 Generate mnemonics.
 
@@ -90,7 +90,7 @@ Sign eth amount
 * `Output Message`: error message, "" if succeed
 * `Return Value`: signed transaction as bytes
 
-## SendEthAmount or SendEthAmountAsync
+## SendEthAmount
 
 Send eth amount
 
