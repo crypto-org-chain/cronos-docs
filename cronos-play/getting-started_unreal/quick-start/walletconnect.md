@@ -16,12 +16,13 @@ Call `InitializeWalletConnect` function from `PlayCppSdkActor` with the followin
 * `Url`: [http://localhost:8080/](http://localhost:8080/)
 * `Name`: Defi WalletConnect Web3 Example
 * `Icon Urls`: Connect with Make Array
+* `Chain Id`: 25
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeWalletConnect" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeWalletConnect.png" alt=""><figcaption></figcaption></figure>
 
 Drag Pin Out from function `InitializeWalletConnect`, search and **select Add Custom Event...**
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-add-custom-event" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-add-custom-event.png" alt=""><figcaption></figcaption></figure>
 
 Connect the `Succeed` result to the `Condition` of a node **Branch**
 
@@ -37,7 +38,7 @@ In Android, launch the WalletConnect Deep link as below:
 
 The full blueprint demo:
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-qr-example" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-qr-example.png" alt=""><figcaption></figcaption></figure>
 
 ## Display URI using QR Code
 
