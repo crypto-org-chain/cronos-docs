@@ -10,7 +10,7 @@ The following functions are members of **DefiWalletCoreActor**. The Target shoul
 
 Restore wallet with mnemonics and password.
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-RestoreWallet (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-RestoreWallet.png" alt=""><figcaption></figcaption></figure>
 
 * `Mnemonics`: mnemonics to restore
 * `Password`: salt in mnemonics restoration
