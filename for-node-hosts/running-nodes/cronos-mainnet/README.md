@@ -43,10 +43,28 @@ We officially support macOS, Windows, and Linux only. Other platforms may work b
 
 ### Prepare your machine
 
-* To run Cronos Mainnet nodes, you will need a machine with the following minimum requirements:
-  * 4-core, x86\_64/ARM architecture processor
-  * 16 GB RAM
-  * 1 TB of storage space
+To run Cronos Mainnet nodes, you will need a machine with the following minimum requirements to run different types of nodes:
+
+* Pruned node (setting pruning=everything)&#x20;
+  * Storage: \~25G\*&#x20;
+  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
+  * CPU: 4-core
+* Default full node (setting pruning=default)&#x20;
+  * Storage: \~1.5T\*\*&#x20;
+  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
+  * CPU: 4-core
+* Archive node (setting pruning=nothing)&#x20;
+  * Storage: \~2.8T\*\*&#x20;
+  * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
+  * CPU: 4-core
+
+_\*Only in case state-sync enabled._ \
+_\*\* e.g. Note that size of snapshots from Quicksync will keep growing._ \
+_\*\*\* Note that during a state-sync the node might require higher RAM than 3GB but, returns to normal after state-sync has finished._
+
+{% hint style="info" %}
+Note that all depends on the type of node you are running and settings will vary depending on your usage.
+{% endhint %}
 
 {% tabs %}
 {% tab title="Mainnet" %}
