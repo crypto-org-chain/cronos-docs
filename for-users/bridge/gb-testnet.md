@@ -20,11 +20,11 @@ Esentially, when a user sends assets from Ethereum to Cronos, the corresponding 
 
 | ERC20 | Goerli                                     | Pioneer11                                  |
 | ----- | ------------------------------------------ | ------------------------------------------ |
-| USDC  | 0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C | 0x8a8DfedBF6650737DFf63c2f455ecC54AcEcF197 |
-| WETH  | 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6 | 0x17774909725bA203B8501C1DEb22F2495584197e |
-| USDT  | 0xe802376580c10fE23F027e1E19Ed9D54d4C9311e | 0xA5e7cD85b15586ecb8DA34AcEE42FF83ABcB555b |
-| WBTC  | 0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05 | 0x7825cB7feEAD896241f748c89550F3D01AF51e48 |
-| DAI   | 0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60 | 0x71339a9C403383c3E18712130615d369Ff9a7124 |
+| USDC  | 0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C | 0xE1E19D235D344De08Ab845e78656EB289a32875F |
+| WETH  | 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6 | 0x770b0139024e2C92D2E5dD4eA5DA5B52A32dA33f |
+| USDT  | 0xe802376580c10fE23F027e1E19Ed9D54d4C9311e | 0x23Cb66F1f767984520B29441f88FD92E896A2dF7 |
+| WBTC  | 0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05 | 0x62ea2B07757FFA30daF475983976cDf7A4A27914 |
+| DAI   | 0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60 | 0xB209F2ACF6783818D0BC5c74487BF052295F82a2 |
 
 #### Currently supported wallets:
 
@@ -32,8 +32,6 @@ Esentially, when a user sends assets from Ethereum to Cronos, the corresponding 
 * Crypto.com DeFi Wallet
 
 We are constantly working on adding new tokens and blockchain support. If you have any feedback or concerns, please reach out to us at [product.bridge@crypto.org](mailto:product.bridge@crypto.org).
-
-
 
 ### How to use the Gravity Bridge \[Web Dapp]
 
@@ -43,10 +41,10 @@ Click “**Connect Wallet**" at the top right to connect a browser extension wal
 
 ![centered image](assets/webapp\_connect\_wallet\_pioneer.png)
 
-**Testnet** \
+**Testnet**\
 If you are using MetaMask, make sure to enable test networks. On MetaMask, go to settings > Advanced > enable `Show test networks`. Now, you should be able to select the Goerli Test Network in the list of networks, which we will be using in this tutorial.
 
-For the Pioneer11 Testnet, Go to settings > Networks > `Add network`, \
+For the Pioneer11 Testnet, Go to settings > Networks > `Add network`,\
 and add the following network details:
 
 * Network Name: **Pioneer11**
@@ -55,7 +53,7 @@ and add the following network details:
 * Currency symbol: **TCRO**
 * Block Explorer URL (Optional): **https://cronos.org/explorer/pioneer11**
 
-****![](assets/testnetworks.png)****![](assets/metamaskpioneer11.png)****
+![](assets/testnetworks.png)![](assets/metamaskpioneer11.png)\*\*\*\*
 
 #### Step 2. Select Network and Token
 
@@ -63,7 +61,7 @@ Select the origin chain on the left and the destination chain on the right in th
 
 ![centered image](assets/pioneerassets.png)
 
-If you would like to swap any other tokens listed, head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on the Goerli Testnet. \
+If you would like to swap any other tokens listed, head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on the Goerli Testnet.\
 Refer to [Swap tokens on Uniswap](gb-testnet.md#swap-tokens-on-uniswap) for an example.
 
 #### Step 3. Enter the amount
@@ -127,9 +125,7 @@ If you want to check if your transaction has gone through successfully, you can 
 
 **Step 2:** When using the bridge, you will get a Transaction Hash, fill this value in the TxHash field.
 
-**Step 3:** Click "**Execute**", if done correctly, you get a 200 response code. the "**isConfirmed**" field will become "**True"**  after a couple minutes when the Tx is confirmed.
-
-
+**Step 3:** Click "**Execute**", if done correctly, you get a 200 response code. the "**isConfirmed**" field will become "**True"** after a couple minutes when the Tx is confirmed.
 
 Thank you for using the Cronos bridge and supporting the Cronos Ecosystem!
 
@@ -141,7 +137,7 @@ Head to [Uniswap](https://app.uniswap.org/#/swap?chain=goerli) on the Goerli tes
 
 ![centered image](assets/Uniswap.png)
 
-If the token you are looking to swap is not listed, you may need to manually import the token address. The example below shows  [USDC](https://goerli.etherscan.io/address/0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C) on the Goerli testnet:
+If the token you are looking to swap is not listed, you may need to manually import the token address. The example below shows [USDC](https://goerli.etherscan.io/address/0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C) on the Goerli testnet:
 
 ![centered image](assets/Uniswaptoken.png)
 
