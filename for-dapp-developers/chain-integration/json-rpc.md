@@ -38,14 +38,14 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 | `eth_getBlockTransactionCountByHash`      | Eth       | ✔           | ✔      |
 | `eth_getTransactionbyBlockNumberAndIndex` | Eth       | ✔           | ✔      |
 | `eth_getTransactionByBlockHashAndIndex`   | Eth       | ✔           | ✔      |
-| `eth_sign`                                | Eth       | ✔           | ✔      |
+| `eth_sign`                                | Eth       | ✔           |        |
 | `eth_coinbase`                            | Eth       | ✔           |        |
 
 #### Writing data
 
 | Method                         | Namespace | Implemented | Public |
 | ------------------------------ | --------- | ----------- | ------ |
-| `eth_sendTransaction`          | Eth       | ✔           | ✔      |
+| `eth_sendTransaction`          | Eth       | ✔           |        |
 | `eth_sendRawTransaction`       | Eth       | ✔           | ✔      |
 | `eth_sendPrivateTransaction`   | Eth       |             |        |
 | `eth_cancelPrivateTransaction` | Eth       |             |        |
@@ -57,7 +57,7 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 | `eth_getBalance`   | Eth       | ✔           | ✔      |
 | `eth_getStorageAt` | Eth       | ✔           | ✔      |
 | `eth_getCode`      | Eth       | ✔           | ✔      |
-| `eth_accounts`     | Eth       | ✔           | ✔      |
+| `eth_accounts`     | Eth       | ✔           |        |
 | `eth_getProof`     | Eth       | ✔           |        |
 
 #### Event Logs
