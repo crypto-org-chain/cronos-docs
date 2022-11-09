@@ -6,11 +6,11 @@ Most of the wallet functionality is insecure / meant for development testing. To
 
 The following functions are members of **DefiWalletCoreActor**. The Target should be **Defi Wallet Core Actor**.
 
-### InitializeWallet
+### RestoreWallet
 
 Restore wallet with mnemonics and password.
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeWallet" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-RestoreWallet.png" alt=""><figcaption></figcaption></figure>
 
 * `Mnemonics`: mnemonics to restore
 * `Password`: salt in mnemonics restoration
@@ -18,11 +18,11 @@ Restore wallet with mnemonics and password.
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
 
-## InitializeNewDevelopmentOnlyWallet
+## InitializeNewWallet
 
 Create a new wallet with password and wordcount.
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeDevelopment" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-InitializeNewWallet.png" alt=""><figcaption></figcaption></figure>
 
 * `Password`: salt in mnemonics restoration
 * `Wordcount`: mnemonics word count (12, 18, 24)
@@ -40,11 +40,11 @@ Get backup mnemonic phrase.
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
 
-## DevelopmentOnlyGenerateMnemonics
+## GenerateMnemonics
 
 Generate mnemonics.
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-DevelopmentOnlyGenerate" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-GenerateMnemonics.png" alt=""><figcaption></figcaption></figure>
 
 * `Password`: salt in mnemonics restoration
 * `Wordcount`: mnemonics word count (12, 18, 24)
@@ -86,25 +86,25 @@ Sign eth amount
 * `Amount`: amount in eth decimal, eg. 0.1 means 0.1 eth
 * `Gas Limit`: gas limit, fee= gasLimit \* gasPrice
 * `Gas Price`: gas price in wei, eg. 1wei= 1/(10^18)eth 1wei=1/(10^9)gwei
+* `Txdata`: optional data
 * `Success`: whether succeed or not
 * `Output Message`: error message, "" if succeed
 * `Return Value`: signed transaction as bytes
 
-## SendEthAmount or SendEthAmountAsync
+## SendEthAmount
 
 Send eth amount
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-SendEthAmount" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-SendEthAmount.png" alt=""><figcaption></figcaption></figure>
 
 * `Wallet Index`: wallet index which starts from 0
 * `Fromaddress`: sender address
 * `Toaddress`: receiver address
-* `Amount`: amount in eth decimal, eg. 0.1 means 0.1 eth
+* `Amount in Eth Decimal`: amount in eth decimal, eg. 0.1 means 0.1 eth
 * `Gas Limit`: gas limit, fee= gasLimit \* gasPrice
-* `Gas Price`: gas price in wei, eg. 1wei= 1/(10^18)eth 1wei=1/(10^9)gwei
-* `Output`: transaction hash
-* `Success`: whether succeed or not
-* `Output Message`: error message, "" if succeed
+* `Gas Price in Wei`: gas price in wei, eg. 1wei= 1/(10^18)eth 1wei=1/(10^9)gwei
+* `Txdata`: optional data
+* `Out`: SendEthAmount callback
 
 ## SignLogin
 
