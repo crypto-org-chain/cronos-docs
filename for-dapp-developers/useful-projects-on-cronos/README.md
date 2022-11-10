@@ -16,6 +16,6 @@ Below you will find a few more detailed tutorial pages that have been provided b
 [moralis.md](moralis.md)
 {% endcontent-ref %}
 
-{% content-ref url="witnet.md" %}
-[witnet.md](witnet.md)
+{% content-ref url="witnet/" %}
+[witnet](witnet/)
 {% endcontent-ref %}
