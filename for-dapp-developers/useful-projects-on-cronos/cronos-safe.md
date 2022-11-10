@@ -44,7 +44,7 @@ As an additional safety measure, please make sure that you check the addresses o
 
 The Cronos Safe dashboard shows the Cronos address and balance of your newly created Safe.
 
-<figure><img src="../../.gitbook/assets/CronosSafe6 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CronosSafe6 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Test a few small transfers on your end to verify that you are able to control the Safe wallet. You can now send more funds to this address, or assign this address as owner/admin of your dApp smart contracts as required. When you click on “New transaction” the Safe user interface allows you to send CRO, ERC20 tokens or NFTs. You can also call smart contract methods by declaring the ABI of your smart contract:
 
