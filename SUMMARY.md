@@ -48,7 +48,7 @@
     * [Quicksync](for-node-hosts/running-nodes/cronos-mainnet/quicksync.md)
     * [State-sync](for-node-hosts/running-nodes/cronos-mainnet/state-sync.md)
     * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*) :](for-node-hosts/running-nodes/cronos-mainnet/huygen.md)
-    * [Patching unlucky tx](for-node-hosts/running-nodes/cronos-mainnet/patching-unlucky-tx.md)
+    * [Patching Unlucky & Duplicate Tx](for-node-hosts/running-nodes/cronos-mainnet/patching-unlucky-tx.md)
   * [Cronos Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [Cronos Gravity Bridge Testnet](for-node-hosts/running-nodes/cronos-gbtestnet.md)
