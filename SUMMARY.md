@@ -40,6 +40,7 @@
   * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)
   * [Witnet](for-dapp-developers/useful-projects-on-cronos/witnet.md)
+  * [Cronos Safe](for-dapp-developers/useful-projects-on-cronos/cronos-safe.md)
 
 ## FOR NODE HOSTS
 
