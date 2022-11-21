@@ -35,7 +35,7 @@ The DApp Browsers in Desktop Wallet works the same way as MetaMask does: it inje
 
 ### Add a Connect Wallet Button
 
-![](../../.gitbook/assets/metamask\_0.png)
+![](<../../.gitbook/assets/metamask\_0 (1).png>)
 
 Although the Desktop Wallet works the same way as MetaMask, users can click the MetaMask's button to connect to the DApp, it would be better to add a button to the wallet options to make it more intuitive for users to connect their Desktop Wallet with DApps.
 
