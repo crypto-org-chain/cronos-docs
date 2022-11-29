@@ -58,6 +58,8 @@ If you are sending large numbers of transactions from your backend, consider set
   * [https://rest-p11.cronos.org](https://rest-p11.cronos.org)
 * **Cosmos gRPC Based**
   * [https://grpc-p11.cronos.org](https://grpc-p11.cronos.org)
+* **Swagger**&#x20;
+  * [https://cronos.org/pioneer11/relayer/api-doc/#/](https://cronos.org/pioneer11/relayer/api-doc/#/)
 {% endtab %}
 {% endtabs %}
 
