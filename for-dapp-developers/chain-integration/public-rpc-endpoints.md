@@ -71,6 +71,7 @@ If you are sending large numbers of transactions from your backend, consider set
 * Chainstack:
   * [Cronos documentation](https://docs.chainstack.com/operations/cronos/)
   * [Get started with Cronos Node on Chainstack](https://chainstack.com/build-better-with-cronos/)
+  * [Build lottery smart contract on Cronos blockchain with Chainstack](https://chainstack.com/lottery-smart-contract-on-cronos-blockchain/)
   * [Chainstack announces support for Cronos ](https://chainstack.com/chainstack-announces-support-for-cronos/)
 * GetBlock:
   * [Cronos Shared Nodes](https://getblock.io/nodes/cro/)
