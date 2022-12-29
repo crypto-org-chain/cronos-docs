@@ -3,18 +3,19 @@
 ## Getting Started
 
 * [Getting Started](README.md)
-* [Introduction](getting-started/introduction.md)
+* [Background](getting-started/introduction.md)
 * [Architecture](getting-started/architecture.md)
 
 ## FOR USERS
 
-* [🦊 MetaMask](for-users/metamask.md)
+* [🔥 Crypto Wallets](for-users/crypto-wallets.md)
+* [🦊 MetaMask configuration](for-users/metamask.md)
 * [🦁 Brave Wallet](for-users/brave-wallet.md)
 * [🌉 Bridges](for-users/bridge/README.md)
   * [From the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From the Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
     * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
-  * [From Crypto.org Chain](for-users/bridge/other\_chain/README.md)
+  * [IBC (Crypto.org Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
     * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [From Gravity Bridge Web App (Testnet only)](for-users/bridge/gb-testnet.md)
@@ -27,8 +28,8 @@
 * [💻 Cronos Integration](for-dapp-developers/chain-integration/README.md)
   * [Public RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
   * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
-  * [Crypto.com DeFi Desktop Wallet](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
-  * [JSON-RPC](for-dapp-developers/chain-integration/json-rpc.md)
+  * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
+  * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
 * [📃 Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
   * [Contract Deployment](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
@@ -36,6 +37,7 @@
   * [Best Practices](for-dapp-developers/cronos-smart-contract/defi-practice.md)
   * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
 * [⚙ Dev Tools & Integrations](for-dapp-developers/useful-projects-on-cronos/README.md)
+  * [Overview of dev tools & integrations](for-dapp-developers/useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
   * [Band Protocol](for-dapp-developers/useful-projects-on-cronos/band-protocol.md)
   * [Covalent](for-dapp-developers/useful-projects-on-cronos/covalent.md)
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)

@@ -35,89 +35,64 @@ coverY: 0
 
 # Getting Started
 
-Thanks for your interest in Cronos. In this technical documentation, we cover the following:
+Thanks for your interest in Cronos.
 
-* For users, wallet setup and bridging solutions
-* For DApp developers, chain integration, smart contract deployment and Cronos Play modules
-* For node hosts, node setup instructions and our all-in-one command-line interface `cronosd`
+Please browse the navigation bar of this documentation where you can find reference information for:
 
-### What is Cronos?
+* End-users
+* dApp developers
+* Node hosts
+* Game developers (Cronos Play)
+* And more!
 
-Cronos is the first Ethereum-compatible blockchain network built on Cosmos SDK technology. It is an open-source and permission-less layer-1 network that aims to massively scale the DeFi, GameFi, and overall Web3 user community. Cronos does this by providing builders with the ability to instantly port DApps and crypto assets from other chains with low transaction fees, high throughput, and fast finality.
+## What is Cronos?
 
-### For Users
+[Cronos](https://cronos.org/) ([cronos.org](http://cronos.org)) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Crypto.org](http://crypto.org) and more than 400 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 70 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
 
-{% content-ref url="for-users/metamask.md" %}
-[metamask.md](for-users/metamask.md)
-{% endcontent-ref %}
+Shortly after launch in November 2021, Cronos achieved a top 10 position amongst all chains by TVL. It is home to more than 1 million users and 400+ dApps.
 
-{% content-ref url="for-users/bridge/" %}
-[bridge](for-users/bridge/)
-{% endcontent-ref %}
+Transaction fees are paid in Cronos ($CRO), a blue chip cryptocurrency.
 
-{% content-ref url="for-users/testnet-faucet.md" %}
-[testnet-faucet.md](for-users/testnet-faucet.md)
-{% endcontent-ref %}
+Cronos is supported by [Cronos Labs](https://cronoslabs.org/), the ecosystem fund, web3 start-up accelerator, and incubator of Cronos chain.
 
-{% content-ref url="for-users/faq.md" %}
-[faq.md](for-users/faq.md)
-{% endcontent-ref %}
+## Why build on Cronos?
 
-### For DApp Developers
+If you are a Web3 application creator, there are 3 main reasons to build on Cronos:
 
-{% content-ref url="for-dapp-developers/chain-integration/" %}
-[chain-integration](for-dapp-developers/chain-integration/)
-{% endcontent-ref %}
+* EVM compatible – Solidity and all the EVM tools just work out of the box.
+* Strategic partnership with [Crypto.com](http://crypto.com/) – easy on-ramp to your dApp for an ecosystem of >70 million users.
+* \#CROFam - a highly engaged user and builder community who is keen to try the latest and greatest apps.&#x20;
 
-{% content-ref url="for-dapp-developers/cronos-smart-contract/" %}
-[cronos-smart-contract](for-dapp-developers/cronos-smart-contract/)
-{% endcontent-ref %}
+As an application founder/developer on Cronos, you can leverage:
 
-{% content-ref url="for-dapp-developers/useful-projects-on-cronos/" %}
-[useful-projects-on-cronos](for-dapp-developers/useful-projects-on-cronos/)
-{% endcontent-ref %}
+* Wrapped versions of most of the world’s top 50 cryptocurrencies
+* 30+ leading wallets (including Crypto.com Defi Wallet, MetaMask, Trust Wallet)
+* Ethermint, a Ethereum Virtual Machine module built by the open-source Cosmos SDK community.
+* IBC cross-chain connectivity to Cosmos chains
+* Convenient Ethereum developer tools (Solidity, Truffle, Hardhat, OpenZeppelin, Web3.js, ethers.js, ChainSafe Gaming SDK, etc.)
+* [Cronos Play](https://cronos.org/play), a suite of developer tools for web, Unity, Unreal and C++ game developers
 
-{% content-ref url="cronos-play/cronos-play/" %}
-[cronos-play](cronos-play/cronos-play/)
-{% endcontent-ref %}
+## Useful links
 
-### For Node hosts
+Web: [Cronos](https://cronos.org) | [Cronos Labs](https://cronoslabs.org)
 
-{% tabs %}
-{% tab title="Cronos Mainnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-mainnet/" %}
-[cronos-mainnet](for-node-hosts/running-nodes/cronos-mainnet/)
-{% endcontent-ref %}
-{% endtab %}
+Blog: [Cronos](https://medium.com/cronos-chain)
 
-{% tab title="Cronos Testnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-testnet.md" %}
-[cronos-testnet.md](for-node-hosts/running-nodes/cronos-testnet.md)
-{% endcontent-ref %}
-{% endtab %}
+Socials: [Twitter](https://twitter.com/cronos\_chain) | [Telegram](https://t.me/Cryptoorg\_Chain\_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
 
-{% tab title="Devnet" %}
-{% content-ref url="for-node-hosts/running-nodes/local-devnet.md" %}
-[local-devnet.md](for-node-hosts/running-nodes/local-devnet.md)
-{% endcontent-ref %}
-{% endtab %}
+White paper: [Cronos Whitepaper](https://whitepaper.cronos.org/)
 
-{% tab title="Gravity Bridge testnet" %}
-{% content-ref url="for-node-hosts/running-nodes/cronos-gbtestnet.md" %}
-[cronos-gbtestnet.md](for-node-hosts/running-nodes/cronos-gbtestnet.md)
-{% endcontent-ref %}
-{% endtab %}
-{% endtabs %}
+Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 
-{% content-ref url="for-node-hosts/cli.md" %}
-[cli.md](for-node-hosts/cli.md)
-{% endcontent-ref %}
+**Ecosystem:**
 
-### Useful links
+* [List of Dapps](https://cronos.org/ecosystem)
+* [Defillama](https://defillama.com/chain/Cronos)
+* [Dappradar](https://dappradar.com/rankings/protocol/cronos)
+* [Block explorer](https://cronoscan.com/)
 
-* [Cronos Website](https://cronos.org/)
-* [Cronos Whitepaper](https://whitepaper.cronos.org/)
-* [Github Repository](https://github.com/crypto-org-chain/cronos)
-* Community chatrooms (non-technical): [Discord](https://discord.gg/nsp9JTC) [Telegram](https://t.me/CryptoComOfficial)
-* Developer community channel (technical): [![Support Server](https://img.shields.io/discord/783264383978569728.svg?color=7289da\&label=Crypto.org%C2%A0Chain)](https://discord.gg/pahqHz26q4)
-* Email dev relations: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)
+**Developer cheat sheets:**
+
+* [Hackathon cheat sheet](https://cronos-hq.notion.site/Cronos-Hackathon-resources-c27c515be0f848b48356ba9210560c41)
+* [Developer tools and integration](https://cronos-hq.notion.site/274782b2beb844d4a5332f482cd01a38?v=104c447dcbfd438a83f26eaef9c3437f)
+* [Developer FAQs](https://cronos-hq.notion.site/Building-on-Cronos-FAQs-44a6ecade6f74861805c4eac5cf0a27f)

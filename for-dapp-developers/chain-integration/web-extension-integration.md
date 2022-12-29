@@ -5,9 +5,9 @@ Cronos chain is supported by the following self-custodial wallets:
 * Crypto.com DeFi Wallet.
 * Trust Wallet.
 * MetaMask (requires custom network configuration).
-* and more than 20 other wallets (you can see a more complete list of dev tools [here](https://crofam.me/devtools)).
+* and more than 30 other wallets (you can see a more complete list of dev tools [here](https://crofam.me/devtools)).
 
-Crypto.com DeFi Wallet, Trust Wallet and Metamask have mobile apps that include in-app dApp browsers. Users can access dApps on the go via these in-app browsers. We recommend that all dApp developers integrate with these 3 wallets at least, and more if possible.
+Crypto.com DeFi Wallet, Trust Wallet and MetaMask have mobile apps that include in-app dApp browsers. Users can access dApps on the go via these in-app browsers. We recommend that all dApp developers integrate with these 3 wallets at least, and more if possible.
 
 ## Crypto.com DeFi Wallet
 
@@ -65,11 +65,13 @@ Additional chains are planned for the near future.
 
 ### dApp integration
 
+[Follow this link](https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5) for a basic tutorial on how to implement the main wallet connection methods available to Cronos dApp developers.
+
 The official repository and documentation of Crypto.com Wallet Extension are available at: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo).
 
 **For most dApp developers,** the best way to integrate the Crypto.com Wallet Extension is to develop your application's front-end in React and to use the DeFiWeb3Connector object which is provided by the `"@deficonnect/web3-connector"` npm package as documented here: [https://github.com/crypto-com/deficonnect-monorepo/tree/develop/packages/web3-connector](https://github.com/crypto-com/deficonnect-monorepo/tree/develop/packages/web3-connector).
 
-Once the connector is activated, your dApp can retrieve the provider using `getProvider()` and subsequently use it via a common Web3 SDK like ethers.js. [Follow this link](https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5) for a basic tutorial on how to implement the main wallet connection methods available to Cronos dApp developers.
+Once the connector is activated, your dApp can retrieve the provider using `getProvider()` and subsequently use it via a common Web3 SDK like ethers.js.
 
 **Some developers** may need to dig deeper into the documentation, for example if they are not using React or need more customization. In this case, please refer to:
 

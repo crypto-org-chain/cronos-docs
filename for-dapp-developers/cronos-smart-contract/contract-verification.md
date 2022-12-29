@@ -1,8 +1,12 @@
 # Contract Verification
 
+[Follow this link for a step-by-step tutorial](https://medium.com/cronos-chain/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986) on how to verify your smart contracts on Cronos. For the official documentation, read below.&#x20;
+
 ## Hardhat: Verify Your Contracts with Hardhat-Cronoscan plugin
 
-After you deploy your ERC20 Contract successfully, the next is to verify the source code for your Solidity contracts. The [Hardhat-Cronoscan](https://www.npmjs.com/package/@cronos-labs/hardhat-cronoscan) plugin aims to make it easy for smart contract developers to verify the smart contracts on Cronoscan from the Hardhat development environment.
+After you deploy your ERC20 Contract successfully, the next is to verify the source code for your Solidity contracts.
+
+The [Hardhat-Cronoscan](https://www.npmjs.com/package/@cronos-labs/hardhat-cronoscan) plugin aims to make it easy for smart contract developers to verify the smart contracts on Cronoscan from the Hardhat development environment.
 
 This plugin adds the Cronos network to the verify task provided by Hardhat-Etherscan. With this plugin, the verify task is able to verify Cronos contracts through Cronoscan's service.
 
@@ -110,4 +114,3 @@ You should now be able to see your contact is verified on [Cronoscan](https://cr
 
 ![](https://lh3.googleusercontent.com/0kiqsvlsjaE7K8gNfNqxPTUMFeXZjxLgdtQF9lgQ56eVfl9iSCSQrsNC1YE8GN2g9WG25ZYy716DGVFBanlEap3uAq\_wvTfI1Ijc-6cNhB0gzBYGBu2An7vjunlAkRLKAMLCnknuqT3qxZZ-45V1vEU)
 
-[Follow this link for a blog post](https://medium.com/cronos-chain/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986) with a more detailed step-by-step tutorial.

@@ -38,21 +38,27 @@ canonicalUrl: https://docs.cronos.org/chain-details/architecture.html
 
 ## Overview
 
-The Ethereum Virtual Machine (EVM) has led to the creation of many useful and interesting projects. Instead of re-inventing the wheel, Crypto.org Chain can leverage on these existing projects and add on the high speed and low transaction costs of the Cosmos SDK. Cronos is an EVM sidechain along the main Crypto.org Chain built on Ethermint with smart contract capability. It aims to empower and scale decentralised applications for the multichain world of the future, focusing on use cases of NFTs, DeFi, and payments. EVM support will allow for the simple porting of apps from other chains, driving exponential ecosystem growth for Crypto.org, a fully decentralised, open-source, and public chain with high speed and extremely low fees.
+The Cronos blockchain protocol is an [open-source project](https://github.com/crypto-org-chain/cronos) based on:
 
-## Solution
+* [Ethermint](https://github.com/evmos/ethermint), an open-source Cosmos application module that allows the portability of the Ethereum Virtual Machine (EVM), its go-ethereum client, and its solidity-based smart contracts to the Cosmos ecosystem.
+* [Cosmos SDK](https://v1.cosmos.network/sdk), the leading development framework to build interoperable sovereign blockchains.
+* [Tendermint’s](https://docs.tendermint.com/) Core BFT Proof-of-Stake consensus engine, a scalable and energy-efficient blockchain consensus.
 
-**Ethereum Virtual Machine** - EVM is the widely adopted standard for smart contract development. With EVM compatibility, developers can build the same way as they would on Ethereum and benefit from the same tools and applications.
+The open-source Cronos blockchain protocol is fast, cheap, and energy-efficient.
 
-**Cosmos SDK** - A modular blockchain development framework where the components are interdependent. You can develop your own modules to fulfil your application’s custom needs in addition to using pre-built modules such as the governance, token transfer, or IBC (Inter-Blockchain Communication) modules functionalities.
+Going forward, Cronos aims to leverage the best of what the Ethereum/EVM and Cosmos ecosystems both have to offer for end-users and developers.
 
-**Tendermint’s Core BFT Proof-of-Stake Consensus Engine** - Unlike other blockchain solutions that are pre-packaged and built-in state machines, developers can use Tendermint for BFT state machine replication of applications in whatever language they desire, and whatever development environment works for them.
+## **Open-source project**
 
-**Proof of Authority** - A more streamlined and scalable consensus protocol while still maintaining security with a range of validators that many different parties run.
+Please visit the [Github repository](https://github.com/crypto-org-chain/cronos) to contribute to the Cronos blockchain protocol.
 
-## Consensus engine
+## **Consensus**
 
-Cronos Chain is based on Ethermint and it is a proof of stake blockchain built on the Cosmos SDK, which is EVM-compatible as well. Ethereum requires improvements in scalability, gas price, and customisation. Cronos utilises the [Cosmos SDK](https://cosmos.network/sdk) and the [Tendermint](https://tendermint.com/) Core Consensus Engine. Tendermint works well for PoS / DPos networks, allowing for high transaction throughputs, and provides instant transaction finality on block commitment. It was chosen as the consensus engine for the chain prototype due to the following:
+The Cronos consensus is commonly referred to as a proof-of-authority (POA) consensus, as it is a permissioned variant of the proof-of-stake consensus.
+
+Please refer to the [Cronos repository](https://github.com/crypto-org-chain/cronos) for details.
+
+Tendermint was selected by Cronos as the underlying technology for several reasons:
 
 * Backed by [formal research](https://eprint.iacr.org/2018/574.pdf)
 * Robustly tested [implementation](http://jepsen.io/analyses/tendermint-0-10-2)

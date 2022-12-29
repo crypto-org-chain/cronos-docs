@@ -65,6 +65,8 @@ If you are sending large numbers of transactions from your backend, consider set
 
 ### External node providers
 
+* Blockdademon:
+  * [Blockdaemon landing page](https://blockdaemon.com/protocols/cronos/)
 * RockX:&#x20;
   * [Guide to Cronos Free Access Node](https://help.rockx.com/en/articles/6153885-guide-to-cronos-free-access-node)
   * [Cronos Blockchain API for Web3 Builders](https://access.rockx.com/product/cronos-blockchain-api-for-web3-builders)

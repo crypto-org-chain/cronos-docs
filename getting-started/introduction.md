@@ -34,44 +34,52 @@ meta:
 canonicalUrl: https://docs.cronos.org/chain-details/introduction.html
 ---
 
-# Introduction
+# Background
 
 ## Cronos
 
-Crypto.org introduced the Cronos Mainnet, a Cosmos SDK-based EVM compatible chain, on 8 Nov 2021.
+The Cronos Mainnet was launched on 8 November 2021.
 
-Cronos is a EVM-compatible chain running in parallel with the [Crypto.org Chain](https://crypto.org/docs/). It aims to massively scale the Crypto.org Chain DeFi ecosystem by providing developers with the ability to rapidly port DApps from Ethereum and EVM-Compatible chains. Developers also gain access to the massive user base of the Crypto.com ecosystem and funding from Cronos Ecosystem Grants.
+Cronos is the leading EVM-compatible chain build on the Cosmos SDK.
 
-### Cronos on Ethermint
+Cronos aims to massively scale DeFi and GameFi by providing developers with the ability to rapidly port dApps from Ethereum and EVM-Compatible chains, while also benefiting from the multi-chain thesis of the Cosmos ecosystem.
 
-Cronos is powered by [Ethermint](https://github.com/evmos/ethermint), which allows for the rapid porting of DApps smart contracts from Ethereum and EVM-compatible chains. Cronos's base settlement currency will be CRO, the native currency of the Crypto.org Chain. The Inter Blockchain Communications (IBC) protocol enables interoperability and bridging to the Crypto.org Chain, a fully decentralised, open-source, energy efficient public chain with high speed and extremely low fees. It also allows interoperating with other IBC-enabled chains like Cosmos Hub.
+Cronos is powered by the Cronos ($CRO) cryptocurrency for the payment of transaction fees. Cronos runs separately from the [Crypto.org Chain](https://crypto.org/docs/), a Cosmos proof-of-stake chain also powered by $CRO.
 
-### Cronos Ecosystem Grants
+## Ethermint
 
-The Cronos Ecosystem Grants programme aims to support early-stage projects on Cronos by bootstrapping initial product development and providing technical support. We aim to align incentives with new builders and teams by helping their projects grow together with the broader ecosystem. We welcome any talented individuals and teams who are passionate and committed to building incredible products within the Cronos ecosystem. Interested parties can visit the [Cronos grants page](https://cronos.org/grants) and [Cronos's Medium page](https://medium.com/cronos-chain) to learn more about this programme and receive all the latest updates.
+Cronos is powered by the open-source project [Ethermint](https://github.com/evmos/ethermint), which allows for the rapid porting of smart contracts from Ethereum and EVM-compatible chains.
 
-### Features of Cronos
+The Inter Blockchain Communications (IBC) protocol enables interoperability and bridging between Cronos and the Crypto.org Chain as well as other Cosmos chain.
 
-#### **EVM-Compatible**
+## Key features of Cronos technology
 
-Ethereum developers are used to smart contract capabilities as Ethermint can support any smart contracts, DAOs or Dapps deployed on Ethereum.
+#### **EVM-compatible**
+
+Application developers can use Solidity, the leading EVM-compatible language for smart contracts, as well as the broad range of Ethereum developer tools and open-source libraries.
 
 #### **Scalable**
 
-Tendermint can process a higher number of transactions per minute as compared to EVM, making it faster, cheaper, and carbon-neutral to execute smart contracts.
+The Tendermint consensus is robust, fast and cheap. The Cronos validator node ecosystem is carbon neutral, owing to low energy consumption which is further offset by the purchase of carbon credits.
 
 #### **Interoperable**
 
+Cronos is EVM-compatible and interoperable with other Cosmos chains.
+
 IBC is a protocol that allows blockchains to communicate with each other, interoperate and transfer value, interchange assets and services, and connect without running into the scaling issues inherent in some of the largest blockchains today.
 
-#### **Easy Deployment**
+#### Ecosystem
 
-Users can follow the deployment instructions to quickly and easily deploy to the Cronos network for their own usage purposes.
+The Cronos protocol engineering team contributes actively to open-source projects of the Ethereum and Cosmos ecosystem.
 
-#### **Crypto.com ecosystem**
+Through its strategic partnership with Crypto.com, a leading custodial crypto platform, Cronos can leverage easy on-ramp and access for an addressable user community of more than 70 million users worldwide.
 
-Gain access to an ecosystem of over 50 million users.
+## Ecosystem support
 
-#### **Crypto.com Community Support**
+Cronos Labs supports the growth of the Cronos developer ecosystem through various programs.
 
-Enjoy strong support from the community, including contribution to open-source projects and security reviews.
+The Cronos Ecosystem Grants program aims to support early-stage projects on Cronos by bootstrapping initial product development and providing technical support. Please visit the [Cronos grants page](https://cronos.org/grants) and [Cronos's Medium page](https://medium.com/cronos-chain) for more details.
+
+The Cronos Accelerator is another notable program targeted at promising application creators. Please visit the [Cronos accelerator page](https://cronos.org/accelerators) for more details.
+
+###
