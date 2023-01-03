@@ -7,30 +7,29 @@ In order to make it more convenient for DApps and node hosts to set up a node, w
 ### Log\_level
 
 * `info` Depending on the needs of your application it is ok to stick to `info` (default), but do consider setting up log-rotation for your logs, and archive logs after a certain amount of time or size, e.g. use a cron job with weekly rotation or until your file size hits \~5GB.
-* set to `debug` only for debugging purpose, turn off after you are finished with debugging.
+* set to `debug` only for debugging purposes, turn off after you are finished with debugging.
 
 ### db\_backend
 
-* `goleveldb` (default) db: for low / medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
-* `rocksdb` suited for a lot of use-cases, especially for high query load \~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation.
+* `goleveldb` (default) db: for low/medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
+* `rocksdb` suited for a lot of use cases, especially for high query loads \~ few M/day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation.
 
 ### max\_num\_inbound\_peers and max\_num\_outbound\_peers
 
-* `max_num_inbound_peers` For node providers the number of inbound peers can be set to a higher value for example 50.
+* `max_num_inbound_peers` For node providers, the number of inbound peers can be set to a higher value for example 50.
 * `max_num_outbound_peers` For users on a private network set a higher number of outbound peers to 30 for example.
 * After peers are connected, set it back to its default value. Note that some trial values might be needed to get it right.
 
 ### Metrics
 
-Prometheus provides real-time metrics used for event monitoring and alerting. Prometheus metrics can be served on Cronos chain. To enable the Prometheus metrics, you will need to set `instrumentation.prometheus=true` in the `config.toml` file manually.
+Prometheus provides real-time metrics used for event monitoring and alerting. Prometheus metrics can be served on the Cronos chain. To enable the Prometheus metrics, you will need to set `instrumentation.prometheus=true` in the `config.toml` file manually.
 
 Metrics will be served under `…/metrics` on `26660` port by default, e.g. `localhost:26660/metrics`. The listening address can be changed in the `config.toml` file (`prometheus_listen_addr`). &#x20;
 
 Sample Settings:
 
-```
-#######################################################
-###       Instrumentation Configuration Options     ###
+<pre><code><strong>#######################################################
+</strong>###       Instrumentation Configuration Options     ###
 #######################################################
 [instrumentation]
 
@@ -51,13 +50,13 @@ max_open_connections = 3
 # Instrumentation namespace
 namespace = "tendermint"
 
-```
+</code></pre>
 
 ## app.toml
 
-### pruning
+### Pruning
 
-* `default` Normal usage can just set to default. In the Cosmos SDK this is defined as:
+* `default` Normal usage can just be set to default. In the Cosmos SDK this is defined as:
 
 ```go
 PruneDefault = NewPruningOptions(362880, 100, 10)
@@ -67,3 +66,34 @@ meaning the app will keep the latest 362880 versions (around 21 days by 5 secs b
 
 * `everything` if you only need to do transaction broadcasting and only need the last blocks.
 * `nothing` for DApps that want to be able to query information at a certain known blockheight. Note that this is only needed for `archive` nodes.
+
+### Debug Method
+
+`debug_trace` allows nodes to return the trace of block and transaction details. In order to enable `debug_trace` for your node on the Cronos chain, two places need to be configured correctly under `app.toml`.&#x20;
+
+Sample Settings:
+
+```
+# default: the last 362880 states are kept, pruning at 10 block intervals
+# nothing: all historic states will be saved, nothing will be deleted (i.e. archiving node)
+# everything: 2 latest states will be kept; pruning at 10 block intervals.
+# custom: allow pruning options to be manually specified through 'pruning-keep-recent', and 'pruning-interval'
+pruning = "everything"
+
+[evm]
+
+# Tracer defines the 'vm.Tracer' type that the EVM will use when the node is run in
+# debug mode. To enable tracing use the '--evm.tracer' flag when starting your node.
+# Valid types are: json|struct|access_list|markdown
+tracer = ""
+
+
+[json-rpc]
+
+# API defines a list of JSON-RPC namespaces that should be enabled
+# Example: "eth,txpool,personal,net,debug,web3"
+api = "eth,net,web3,txpool,personal,debug"
+```
+
+In addition, it should run as `cronosd start --trace` in `cronosd start` command (_archived node_). For the resources needed for `--trace` flag in Cronos mainnet, the mem usage is slightly higher than the others but 64GB should be enough.
+
