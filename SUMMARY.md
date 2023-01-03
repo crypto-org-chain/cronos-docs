@@ -43,6 +43,7 @@
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)
   * [Witnet](for-dapp-developers/useful-projects-on-cronos/witnet.md)
   * [Cronos Safe](for-dapp-developers/useful-projects-on-cronos/cronos-safe.md)
+  * [Banxa](for-dapp-developers/useful-projects-on-cronos/banxa.md)
 
 ## FOR NODE HOSTS
 
@@ -61,8 +62,7 @@
 
 ## CRONOS PLAY
 
-* [🎮 Cronos Play](cronos-play/cronos-play/README.md)
-  * [Cronos Play FAQ](cronos-play/cronos-play/cronos-play-faq.md)
+* [🎮 Introduction](cronos-play/cronos-play.md)
 * [Unity](cronos-play/unity/README.md)
   * [EVM](cronos-play/unity/scripts.md)
   * [ERC1155](cronos-play/unity/scripts-1.md)
@@ -72,6 +72,7 @@
   * [Login Example](cronos-play/unity/login-example.md)
   * [Useful Links](cronos-play/unity/useful-links.md)
   * [2D Game Example](cronos-play/unity/play.md)
+* [Cronos Play FAQ](cronos-play/cronos-play-faq.md)
 * [Unreal Engine Plugin](cronos-play/getting-started\_unreal/README.md)
   * [Installation and Enabling](cronos-play/getting-started\_unreal/download.md)
   * [Working with Blueprint](cronos-play/getting-started\_unreal/quick-start/README.md)

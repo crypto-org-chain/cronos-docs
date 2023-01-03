@@ -15,6 +15,10 @@ string account = PlayerPrefs.GetString("Account");
 print(account);
 ```
 
+{% hint style="info" %}
+Important: If you run your script from the editor, you will have to hardcode the account string (e.g. "0x6e...")
+{% endhint %}
+
 ### Block number <a href="#block-number" id="block-number"></a>
 
 Get the current latest block number
