@@ -4,6 +4,10 @@ Visit [this link](https://crofam.me/devtools) for an up-to-date list of dev tool
 
 Below you will find a few more detailed tutorial pages that have been provided by the corresponding projects.
 
+{% content-ref url="overview-of-dev-tools-and-integrations.md" %}
+[overview-of-dev-tools-and-integrations.md](overview-of-dev-tools-and-integrations.md)
+{% endcontent-ref %}
+
 {% content-ref url="banxa.md" %}
 [banxa.md](banxa.md)
 {% endcontent-ref %}
