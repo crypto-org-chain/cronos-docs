@@ -44,9 +44,9 @@
   * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
-* [Tips & FAQs](for-dapp-developers/tips-and-faqs/README.md)
-  * [Hackathon resources](for-dapp-developers/tips-and-faqs/hackathon-resources.md)
+* [💡 Tips & FAQs](for-dapp-developers/tips-and-faqs/README.md)
   * [Founder FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
+  * [Hackathon resources](for-dapp-developers/tips-and-faqs/hackathon-resources.md)
 
 ## FOR NODE HOSTS
 
