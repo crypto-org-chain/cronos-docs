@@ -29,6 +29,7 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/
+description: What is Cronos? Why build on Cronos? How to connect?
 cover: .gitbook/assets/Cronos generic background 1.png
 coverY: 0
 ---
@@ -91,7 +92,7 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 * [Dappradar](https://dappradar.com/rankings/protocol/cronos)
 * [Block explorer](https://cronoscan.com/)
 
-**Developer cheat sheets:**
+**Developer tips:**
 
 * [Hackathon cheat sheet](https://cronos-hq.notion.site/Cronos-Hackathon-resources-c27c515be0f848b48356ba9210560c41)
 * [Developer tools and integration](https://cronos-hq.notion.site/274782b2beb844d4a5332f482cd01a38?v=104c447dcbfd438a83f26eaef9c3437f)

@@ -8,7 +8,6 @@ After creating `MyDefiWalletCoreActor`, we can switch to the source code editor 
 
 ```
 PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "PlayCppSdkLibrary" });
-
 ```
 
 ### Querying the name of a ERC20 contract
@@ -60,7 +59,6 @@ public:
 
 	
 };
-
 ```
 
 #### `MyDefiWalletCoreActor.cpp`
@@ -97,7 +95,6 @@ void AMyDefiWalletCoreActor::BeginPlay() {
 void AMyDefiWalletCoreActor::Tick(float DeltaTime) {
 	Super::Tick(DeltaTime);
 }
-
 ```
 
 ### Building

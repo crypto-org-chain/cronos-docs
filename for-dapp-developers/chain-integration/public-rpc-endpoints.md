@@ -1,6 +1,6 @@
-# Public RPC endpoints
+# Free and commercial RPC endpoints
 
-### RPC URLs for Cronos
+### Free RPC URLs for Cronos
 
 {% hint style="danger" %}
 Public RPCs URL Updates: The Cronos RPC endpoints have been updated in March 2021 (shown as below) and it is recommended that all users update the endpoints. The old endpoints are still available for compatibility but maybe deprecated later.
@@ -63,7 +63,7 @@ If you are sending large numbers of transactions from your backend, consider set
 {% endtab %}
 {% endtabs %}
 
-### External node providers
+### Commercial node providers
 
 * Blockdademon:
   * [Blockdaemon landing page](https://blockdaemon.com/protocols/cronos/)
@@ -77,4 +77,3 @@ If you are sending large numbers of transactions from your backend, consider set
   * [Chainstack announces support for Cronos ](https://chainstack.com/chainstack-announces-support-for-cronos/)
 * GetBlock:
   * [Cronos Shared Nodes](https://getblock.io/nodes/cro/)
-* Visit this [link](https://crofam.me/devtools) for an unofficial list of available development tools, including node providers and indexers.

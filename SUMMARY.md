@@ -25,12 +25,6 @@
 
 ## FOR DAPP DEVELOPERS
 
-* [💻 Cronos Integration](for-dapp-developers/chain-integration/README.md)
-  * [Public RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
-  * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
-  * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
-  * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
-  * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
 * [📃 Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
   * [Contract Deployment](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
   * [Contract Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
@@ -44,6 +38,15 @@
   * [Witnet](for-dapp-developers/useful-projects-on-cronos/witnet.md)
   * [Cronos Safe](for-dapp-developers/useful-projects-on-cronos/cronos-safe.md)
   * [Banxa](for-dapp-developers/useful-projects-on-cronos/banxa.md)
+* [💻 Cronos Integration](for-dapp-developers/chain-integration/README.md)
+  * [Free and commercial RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
+  * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
+  * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
+  * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
+  * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
+* [Tips & FAQs](for-dapp-developers/tips-and-faqs/README.md)
+  * [Hackathon resources](for-dapp-developers/tips-and-faqs/hackathon-resources.md)
+  * [Founder FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
 
 ## FOR NODE HOSTS
 
