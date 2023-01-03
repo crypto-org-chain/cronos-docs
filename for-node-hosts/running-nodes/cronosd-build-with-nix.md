@@ -9,7 +9,6 @@ It is also possible to reproducibly build `cronosd` binaries locally yourself us
 
     <pre><code><strong>nix-env -iA cachix -f https://cachix.org/api/v1/install
     </strong>cachix use cronos
-
     </code></pre>
 
 ### Build Type Matrix

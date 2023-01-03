@@ -1,6 +1,6 @@
 # Best Practices
 
-In order to make it more convenient for DApps and node hosts to set up a node, we have put together a list of useful settings and configurations. Feel free to refer to this guide and adapt settings to suit your own use cases.
+In order to make it more convenient for DApps and node hosts to set up a node, we have put together a list of useful settings and configurations. Feel free to refer to this guide and adapt settings to suit your own use cases. For a sample config check [here](https://github.com/crypto-org-chain/cronos-mainnet/tree/master/cronosmainnet\_25-1).
 
 ## config.toml
 
@@ -11,12 +11,28 @@ In order to make it more convenient for DApps and node hosts to set up a node, w
 
 ### db\_backend
 
-* `goleveldb` (default) db: for low/medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
-* `rocksdb` suited for a lot of use cases, especially for high query loads \~ few M/day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation.
+* `goleveldb` (default) db for low / medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
+* `rocksdb` suited for a lot of use-cases, especially for high query load \~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation.
+
+### Seeds and persistent\_peers
+
+* `max_num_inbound_peers` For node providers the number of inbound peers can be set to a higher value for example 50.
+* `max_num_outbound_peers` For users on a private network set a higher number of outbound peers to 30 for example.
+* After peers are connected, set it back to its default value. Note that some trial values might be needed to get it right.
+* `seeds` Set the list of seeds as instructed in the [.](./ "mention") section to connect to.
+* `persistent_peers` is especially useful when using [state-sync.md](cronos-mainnet/state-sync.md "mention") to pull snapshots from.
+
+### send\_rate and recv\_rate
+
+Free to tweak to a higher bytes/sec value, if your networking allows this, e.g. `51200000`
+
+### timeout\_broadcast\_tx\_commit
+
+* Freely tweak this parameter. Set to a slightly higher value, such as `20s` to wait for a tx to be committed during / broadcast\_tx\_commit.  Be careful a value larger than 10s will result in increasing the global HTTP write timeout, which applies to all connections and endpoints.
 
 ### max\_num\_inbound\_peers and max\_num\_outbound\_peers
 
-* `max_num_inbound_peers` For node providers, the number of inbound peers can be set to a higher value for example 50.
+* `max_num_inbound_peers` For node providers the number of inbound peers can be set to a higher value for example 50.
 * `max_num_outbound_peers` For users on a private network set a higher number of outbound peers to 30 for example.
 * After peers are connected, set it back to its default value. Note that some trial values might be needed to get it right.
 
@@ -66,6 +82,38 @@ meaning the app will keep the latest 362880 versions (around 21 days by 5 secs b
 
 * `everything` if you only need to do transaction broadcasting and only need the last blocks.
 * `nothing` for DApps that want to be able to query information at a certain known blockheight. Note that this is only needed for `archive` nodes.
+
+
+
+### iavl-disable-fastnode and iavl-cache-size
+
+During the `dragonberry` patch and the upgrade to `0.8.2` and `0.8.3`,  we enabled the `iavl-disable-fastnode` config parameter. This provides the option to disable the iavl fastnode indexing migration, as a migration will take multiple hours to complete.&#x20;
+
+* `iavl-disable-fastnode = false` is the default setting and performs the migration. This might take a while. So be prepared in advance and schedule this migration downtime. In case you use a snapshot that has performed migration already (e.g. quicksync), leave the value to false
+* `iavl-disable-fastnode = true` if you want to disable the fast indexing, and skip the migration. Only use this in case you really are not able to perform the migration now.
+* `iavl-cache-size` set to `781250` works well as our testing has shown.
+
+
+
+### API
+
+* `enable = true` to enable the API server
+* `swagger = true` to setup the swagger endpoint
+
+
+
+### Json-RPC
+
+* `api = "eth,txpool,web3"` Set to the namespaces you wish to use, optionally add `personal,net,debug` to that list.
+* `evm-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `60s` to avoid timeouts on eth\_calls.
+* `http-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `60s` to avoid read/writes timeouts of the http json-rpc server.
+* `http-idle-timeout`. Freely tweak this parameter. Set to a slightly higher value, such as `120s` to avoid idle timeout of the http json-rpc server.
+
+
+
+``
+
+``
 
 ### Debug Method
 
