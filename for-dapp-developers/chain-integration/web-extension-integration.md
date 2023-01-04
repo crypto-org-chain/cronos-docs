@@ -55,7 +55,7 @@ The Crypto.com Wallet Extension currently supports the following networks:
 * Cronos Testnet
 * Croeseid Testnet
 * Cronos Pioneer11
-* Ethereum Testnet (Ropsten, Kovan, Ribkeby, Goerli)
+* Ethereum Testnet (Goerli)
 * Aptos Testnet
 * Aptos Devnet
 {% endtab %}
