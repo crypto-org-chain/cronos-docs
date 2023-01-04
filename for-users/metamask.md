@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/getting-started/metamask.html
 ---
 
-# 🦊 MetaMask
+# 🦊 MetaMask Configuration
 
 In this guide, you will learn how to use the MetaMask extension on Google Chrome to send and receive tokens, and interact with the Cronos network.
 
@@ -61,7 +61,7 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 * **New RPC URL:** `https://evm-t3.cronos.org` for
 * **Chain ID:**`338`
 * **Symbol**:`tCRO`
-* **Block explorer URL:** `https://testnet.cronoscan.com/`
+* **Block explorer URL:** `https://cronos.org/explorer/testnet3/`
 {% endtab %}
 
 {% tab title="Gravity Bridge" %}
@@ -69,7 +69,7 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 * **New RPC URL:** `https://evm-p11.cronos.org`
 * **Chain ID:**`340`
 * **Symbol:**`tCRO`
-* **Block explorer URL:**`https://cronos.org/explorer/pioneer11`
+* **Block explorer URL:** `https://cronos.org/explorer/pioneer11`
 {% endtab %}
 {% endtabs %}
 

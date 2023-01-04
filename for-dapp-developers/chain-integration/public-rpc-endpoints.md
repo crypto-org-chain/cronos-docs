@@ -36,7 +36,7 @@ If you are sending large numbers of transactions from your backend, consider set
 * **EVM HTTP JSON RPC (Web3 compatible)**
   * [https://evm-t3.cronos.org/](https://evm-t3.cronos.org/)
 * **Block explorer**
-  * [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/)
+  * [https://cronos.org/explorer/testnet3/](https://testnet.cronoscan.com/)
 * **Tendermint RPC**
   * [https://rpc-t3.cronos.org/](https://rpc-t3.cronos.org/)
 * **Cosmos RESTful**

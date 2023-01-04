@@ -7,7 +7,7 @@ In this guide, you will learn how to use the Brave Wallet on Brave to interact w
 Let's connect your Brave Wallet to the Cronos network:
 
 * **Step 1** \
-  ****On the top right side of the Brave browser, click the <img src="../.gitbook/assets/brave-wallet.png" alt="" data-size="line"> icon. \
+  ****On the top right side of the Brave browser, click the <img src="../.gitbook/assets/brave-wallet.png" alt="" data-size="line"> (Wallet) icon. \
   If you don’t see it? Click **Update** in the toolbar for the latest version of Brave. \
 
 * **Step 2**\
@@ -29,7 +29,7 @@ Let's connect your Brave Wallet to the Cronos network:
   ****A new window to add config for a new network will pop up. \
   Under "**Search network**", select "**25  Cronos Network"** from the drop-down menu for Cronos Mainnet or "**338 Testnet"** for testnet.  ****  Now, most fields should be pre-populated, as shown below:
 
-<figure><img src="../.gitbook/assets/brave-network.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2023-01-04 screenshot 072452@2x.png" alt=""><figcaption></figcaption></figure>
 
 * In order to display the Cronos logo, set the "**Icon URLs**" field to[ ](https://cronos.org/favicon.png)
 
