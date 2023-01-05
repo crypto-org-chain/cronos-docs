@@ -79,6 +79,7 @@
 * [Unreal Engine Plugin](cronos-play/getting-started\_unreal/README.md)
   * [Installation and Enabling](cronos-play/getting-started\_unreal/download.md)
   * [Working with Blueprint](cronos-play/getting-started\_unreal/quick-start/README.md)
+    * [Connect Defi Desktop/Mobile Wallet](cronos-play/getting-started\_unreal/quick-start/connect-defi-desktop-mobile-wallet.md)
     * [Actors and Blueprint Classes](cronos-play/getting-started\_unreal/quick-start/actors-and-blueprint-classes.md)
     * [Cronos Configuration](cronos-play/getting-started\_unreal/quick-start/cronos-configuration.md)
     * [Wallet](cronos-play/getting-started\_unreal/quick-start/wallet.md)
