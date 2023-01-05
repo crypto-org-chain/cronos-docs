@@ -1,4 +1,4 @@
-# Connect Defi Desktop/Mobile Wallet
+# Connect Defi Desktop/Mobile Wallet natively
 
 Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect`.
 
