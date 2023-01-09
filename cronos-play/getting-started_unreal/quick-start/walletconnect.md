@@ -1,6 +1,6 @@
 # Connect WalletConnect Step by Step
 
-Although `ConnectWalletConnect` is convenient, it hide details of the WalletConnect Session. If you want to keep track of the wallet connect connection status, session information, connected chain ID, or connected address, you should WalletConnect step by step.
+Although `ConnectWalletConnect` is convenient, it hides details of the WalletConnect Session. If you want to keep track of the wallet connect connection status, session information, connected chain ID, or connected address, you should connect WalletConnect step by step.
 
 ## Get the WalletConnect Standard URI
 
