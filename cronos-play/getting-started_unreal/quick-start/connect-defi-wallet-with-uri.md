@@ -1,6 +1,14 @@
-# Connect Crypto.com Defi Wallet
+# Connect Defi Wallet with URI
 
-Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect`. Once the session is created, the session information would be cached locally, so that we can retrieve the session information even if we restart the game.
+Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect`.&#x20;
+
+To connect with QR Code, please check
+
+{% content-ref url="connect-wallets-with-qr-code.md" %}
+[connect-wallets-with-qr-code.md](connect-wallets-with-qr-code.md)
+{% endcontent-ref %}
+
+Once the session is created, the session information would be cached locally, so that we can retrieve the session information even if we restart the game.
 
 {% tabs %}
 {% tab title="ConnectWalletConnect" %}
