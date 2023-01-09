@@ -1,6 +1,6 @@
 # Connect Crypto.com Defi Wallet
 
-Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect`.
+Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect`. Once the session is created, the session information would be cached locally, so that we can retrieve the session information even if we restart the game.
 
 {% tabs %}
 {% tab title="ConnectWalletConnect" %}
@@ -23,8 +23,6 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallF
    CustomProperties Pin (PinId=424B001F2B440AD4C5CE37845BBBDCE5,PinName="connection_type",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Enum'"/Script/CronosPlayUnreal.EConnectionType"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,DefaultValue="URI_STRING",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
 End Object
 ```
-
-####
 {% endtab %}
 
 {% tab title="Example: Connect Defi Wallet with URI" %}
@@ -142,6 +140,8 @@ After the wallet is connected, you could sign personal message with function - `
 
 {% tabs %}
 {% tab title="SignPersonal" %}
+#### Source Code
+
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_26"
    FunctionReference=(MemberParent=Class'"/Script/CronosPlayUnreal.PlayCppSdkActor"',MemberName="SignPersonal")
@@ -154,7 +154,6 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallF
    CustomProperties Pin (PinId=A1AC65232440B5BB8A09139AA6574179,PinName="user_message",PinToolTip="User Message\nString\n\nuser message to sign",PinType.PinCategory="string",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
    CustomProperties Pin (PinId=326CFD1CAA4C8AD9AB0E5AA40B9DA15D,PinName="Out",PinToolTip="Out\nDelegate",PinType.PinCategory="delegate",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Package'"/Script/CronosPlayUnreal"',MemberName="WalletconnectSignPersonalDelegate__DelegateSignature"),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
 End Object
-
 ```
 {% endtab %}
 
@@ -276,6 +275,8 @@ Sign Eth Transaction with function - `SignEip155Transaction`
 
 {% tabs %}
 {% tab title="SignEip155Transaction" %}
+#### Source Code
+
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_25"
    FunctionReference=(MemberParent=Class'"/Script/CronosPlayUnreal.PlayCppSdkActor"',MemberName="SignEip155Transaction")
@@ -288,12 +289,22 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallF
    CustomProperties Pin (PinId=EF5AA49B914F6A7D593AD29114301FE2,PinName="info",PinToolTip="Info\nWallet Connect Tx Eip 155 Structure\n\nEIP 155 tx information",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject=ScriptStruct'"/Script/CronosPlayUnreal.WalletConnectTxEip155"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
    CustomProperties Pin (PinId=56E42245E74FFFD1AF43179A25D127DB,PinName="Out",PinToolTip="Out\nDelegate\n\nsign legacy tx result callback",PinType.PinCategory="delegate",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Package'"/Script/CronosPlayUnreal"',MemberName="WalletconnectSignEip155TransactionDelegate__DelegateSignature"),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
 End Object
-
 ```
 {% endtab %}
 
 {% tab title="Example: Send CRO to ERC20 address" %}
 To send CRO from the wallet to a ERC20 address, make A `WalletConnectTxEip155` struct, then pass it to `Info` parameter of function `SignEip155Transaction`, like below:
+
+
+
+#### Parameters of `WalletConnectTxEip155`
+
+* To: `0xA914161b1b8d9dbC9c5310Fc7EBee5A5B18044b7` (An ERC20 example address)
+* Gas: `50000`
+* Gas Price: `20000000000`
+* Value: `1000000000000000000`
+* Data: Empty
+* Nonce: `1` (Leave it to 1, it is unused at this moment)
 
 
 
@@ -428,14 +439,12 @@ End Object
 {% endtab %}
 {% endtabs %}
 
-
-
-
-
-Clear Session with `ClearSession`, this will clear the wallet connect session, then you can create a new session.
+You have to clear the WalletConnect Session when it is not used anymore, so that you can create a new session later. To do so, you can use function - `ClearSession`, this will clear the cached wallet connect session information when you call it.
 
 {% tabs %}
 {% tab title="ClearSession" %}
+#### Source Code
+
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_20"
    FunctionReference=(MemberParent=Class'"/Script/CronosPlayUnreal.PlayCppSdkActor"',MemberName="ClearSession")
@@ -447,11 +456,16 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallF
    CustomProperties Pin (PinId=E87C2FB8D34F738B4163EB94ACD6ACB9,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'"/Script/CronosPlayUnreal.PlayCppSdkActor"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
    CustomProperties Pin (PinId=45AD5A8D144916FC136ADCA4FC0243C0,PinName="success",Direction="EGPD_Output",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
 End Object
-
 ```
 {% endtab %}
 
-{% tab title="Example" %}
+{% tab title="Example: Clear the current WalletConnect Session" %}
+This example shows when keyboard 2 is `Pressed`, the session information would be cleared, debug string `Session Cleared` would be printed on the screen. In actual production, users can call `ClearSession` when needed.
+
+
+
+#### Source Code
+
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name="K2Node_InputKey_2"
    InputKey=Two
@@ -519,5 +533,12 @@ Begin Object Class=/Script/UnrealEd.EdGraphNode_Comment Name="EdGraphNode_Commen
 End Object
 
 ```
+
+
+
+#### Blueprint
+
+<figure><img src="../../../.gitbook/assets/ClearSession.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
+
