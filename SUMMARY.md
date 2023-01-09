@@ -81,7 +81,7 @@
   * [Working with Blueprint](cronos-play/getting-started\_unreal/quick-start/README.md)
     * [Actors and Blueprint Classes](cronos-play/getting-started\_unreal/quick-start/actors-and-blueprint-classes.md)
     * [Cronos Configuration](cronos-play/getting-started\_unreal/quick-start/cronos-configuration.md)
-    * [Connect Defi Desktop/Mobile Wallet natively](cronos-play/getting-started\_unreal/quick-start/connect-defi-desktop-mobile-wallet-natively.md)
+    * [Connect Crypto.com Defi Wallet](cronos-play/getting-started\_unreal/quick-start/connect-crypto.com-defi-wallet.md)
     * [Connect Mobile Wallets with QR Code](cronos-play/getting-started\_unreal/quick-start/connect-mobile-wallets-with-qr-code/README.md)
       * [WalletConnect](cronos-play/getting-started\_unreal/quick-start/connect-mobile-wallets-with-qr-code/walletconnect.md)
     * [Wallet](cronos-play/getting-started\_unreal/quick-start/wallet.md)
