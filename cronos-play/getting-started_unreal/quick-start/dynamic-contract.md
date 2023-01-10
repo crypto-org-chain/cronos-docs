@@ -22,6 +22,7 @@ this is for non modifying contract call
 {% tab title="Blueprint" %}
 <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-dynamic-contract-call.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
+
 {% tab title="Blueprint Source" %}
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_Event Name="K2Node_Event_0"
@@ -139,8 +140,12 @@ End Object
 ## Send
 this is for modifying contract call. it needs `DefiWalletCoreActor` to sign the transaction.
 
+{% tabs %}
+{% tab title="Blueprint" %}
 <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-dynamic-contract-send.png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
 
+{% tab title="Blueprint Source" %}
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_Event Name="K2Node_Event_0"
    EventReference=(MemberParent=Class'"/Script/Engine.Actor"',MemberName="ReceiveBeginPlay")
@@ -246,9 +251,22 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_ExecutionSequence Name="K2Node_
 End Object
 
 ```
+
+{% endtab %}
+{% endtabs %}
+
+
+
+
 ## Encode
 this is for wallet-connect. it generates data which can be included in the transaction. and the transaction can be signed with wallet-connect
+
+{% tabs %}
+{% tab title="Blueprint" %}
 <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-dynamic-contract-encode.png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="Blueprint Source" %}
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_Event Name="K2Node_Event_0"
    EventReference=(MemberParent=Class'"/Script/Engine.Actor"',MemberName="ReceiveBeginPlay")
@@ -409,6 +427,11 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_ExecutionSequence Name="K2Node_
 End Object
 
 ```
+
+{% endtab %}
+{% endtabs %}
+
+
 
 ## For function arguments encoding
 ### Sample for safeMint
