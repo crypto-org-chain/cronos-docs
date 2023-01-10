@@ -20,7 +20,7 @@ this is for non modifying contract call.
 to run smart contract which doesn't modify state, you can use this function.  
 you don't need to restore wallet , because it doesn't sign anything.
 
-call ths function `CreateDynamicContract` to get DynamicContractObject.   
+call `CreateDynamicContract` to get DynamicContractObject.   
 after getting dynamic contract object, call `CallDynamicContract`.
 you need function name and parameters to call the function. for function parameters, you need to encode it as json string.
 
@@ -131,7 +131,7 @@ wallet should be restored before calling this function.
 to run smart contract which modify state, you can use this function.  
 you need to restore wallet , because it needs to sign the transaction.
 
-call ths function `CreateDynamicSigningContract` to get DynamicContractObject.   
+call function `CreateDynamicSigningContract` to get DynamicContractObject.   
 after getting dynamic contract object, call `SendDynamicContract`.
 you need function name and parameters to call the function. for function parameters, you need to encode it as json string.
 
@@ -258,12 +258,17 @@ End Object
 
 
 ## Encode
-this is for wallet-connect. it generates data which can be included in the transaction. and the transaction can be signed with wallet-connect
+this is the main funciton for modifying smart contract. it can be used any signer such as wallet-connect.
 
-because it's for data generation for the transaction, you don't need wallet. 
+because it generates data which can be included in the transaction. and the transaction can be signed with wallet-connect
+
+it's for data generation for the transaction, you don't need wallet.
 function name, function args is the same with `call` and `send` functions. 
 
 after encoding, bytes can be signed with any signer.
+
+for blueprint below, it encodes and signs the transaction.  signed transaction is broadcasted with `BroadcastEthTxAsync` function.
+
 
 
 
