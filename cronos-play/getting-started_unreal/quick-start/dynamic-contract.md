@@ -267,7 +267,7 @@ function name, function args is the same with `call` and `send` functions.
 
 after encoding, bytes can be signed with any signer.
 
-for blueprint below, it encodes and signs the transaction.  signed transaction is broadcasted with `BroadcastEthTxAsync` function.
+for blueprint below, it encodes and signs the transaction.  signed transaction can be broadcast with `BroadcastEthTxAsync` function.
 
 
 
