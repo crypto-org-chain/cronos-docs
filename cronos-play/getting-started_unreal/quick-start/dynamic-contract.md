@@ -17,6 +17,14 @@ with Dynamic Contract, you can call any smartcontract. you need abi json file fo
 
 ## Call
 this is for non modifying contract call. 
+to run smart contract which doesn't modify state, you can use this function.  
+you don't need to restore wallet , because it doesn't sign anything.
+
+call ths function `CreateDynamicContract` to get DynamicContractObject.   
+after getting dynamic contract object, call `CallDynamicContract`.
+you need function name and parameters to call the function. for function parameters, you need to encode it as json string.
+
+result is delievered as delegate, as json string.
 
 
 {% tabs %}
@@ -118,6 +126,18 @@ End Object
 
 ## Send
 this is for modifying contract call. it needs `DefiWalletCoreActor` to sign the transaction.
+wallet should be restored before calling this function. 
+
+to run smart contract which modify state, you can use this function.  
+you need to restore wallet , because it needs to sign the transaction.
+
+call ths function `CreateDynamicSigningContract` to get DynamicContractObject.   
+after getting dynamic contract object, call `SendDynamicContract`.
+you need function name and parameters to call the function. for function parameters, you need to encode it as json string.
+
+result is delievered as delegate, as json string.
+
+
 
 {% tabs %}
 {% tab title="Blueprint" %}
@@ -239,6 +259,13 @@ End Object
 
 ## Encode
 this is for wallet-connect. it generates data which can be included in the transaction. and the transaction can be signed with wallet-connect
+
+because it's for data generation for the transaction, you don't need wallet. 
+function name, function args is the same with `call` and `send` functions. 
+
+after encoding, bytes can be signed with any signer.
+
+
 
 {% tabs %}
 {% tab title="Blueprint" %}
@@ -413,6 +440,11 @@ End Object
 
 
 ## For function arguments encoding
+dynamic contract, argument type should be the same with the function signature. 
+`key` is the type of argument, and `value` is the corresponding value.  
+`key` can be one of the following types: `Address`, `FixedBytes`, `Bytes`, `Int`, `Uint`, `Bool`, `String`, `FixedArray`, `Array`, `Tuple`.
+refer to table below for more details.
+
 ### Sample for safeMint
  - solidity function signature:
  ```
@@ -428,7 +460,7 @@ safeMint
 ```
 
 ### Sample for all types
-- Address
+- Address : hex string 
 ```
 {"Address":{"data":"0x00"}}
 ```
@@ -436,19 +468,19 @@ safeMint
 ```
 {"FixedBytes":{"data":[1,2]}}
 ```
-- Bytes
+- Bytes : char array 
 ```
 {"Bytes":{"data":[1,2]}}
 ```
-- Int
+- Int : as string
 ```
 {"Int":{"data":"1"}}
 ```
-- Uint
+- Uint : as string
 ```
 {"Uint":{"data":"1"}}
 ```
-- Bool
+- Bool : true or false
 ```
 {"Bool":{"data":true}}
 ```
@@ -456,15 +488,15 @@ safeMint
 ```
 {"Str":{"data":"test"}}
 ```
-- FixedArray
+- FixedArray : fixed array of tokens
 ```
 {"FixedArray":{"data":[{"Int":{"data":"1"}}]}}
 ```
-- Array
+- Array : array of tokens
 ```
 {"Array":{"data":[{"Int":{"data":"1"}}]}}
 ```
-- Tuple
+- Tuple : tuple of tokens
 ```
 {"Tuple":{"data":[{"Int":{"data":"1"}}]}}
 ```
