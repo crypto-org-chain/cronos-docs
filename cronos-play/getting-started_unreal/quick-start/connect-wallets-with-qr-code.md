@@ -1,6 +1,6 @@
 # Connect Wallets with QR Code
 
-You can connect all WalletConnect-compatible wallets, including but not limited to Defi Wallet, Metamask, TrustWallet etc. with QR Code, with one function `ConnectWalletConnect`.
+You can connect all WalletConnect-compatible wallets, including but not limited to Defi Wallet, Metamask, TrustWallet etc. with QR Code.
 
 To connect with URI, please check
 
@@ -14,7 +14,7 @@ Set the Connection Type of `ConnectWalletConnect` to: **Generate uri as a QR cod
 
 ## Create WBP\_QR Widget
 
-To display QR Code in Unreal Engine, we provide a 2D Texture for users to embedding it into a Widget or HUD. In the following example, let's create a `WBP_QR` Wdiget for displaying the QR Code.
+To display QR Code in Unreal Engine, we provide a 2D Texture for users to embed it into a Widget or HUD. In the following example, we will create a `WBP_QR` Widget for displaying the QR Code.
 
 *   Select **Maps**, right click **Content Browser** > **User Interface** > **Widget Blueprint**
 
