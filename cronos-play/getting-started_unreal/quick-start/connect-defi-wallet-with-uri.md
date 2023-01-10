@@ -36,7 +36,7 @@ End Object
 {% endtab %}
 
 {% tab title="Example: Connect Defi Wallet with URI" %}
-Here is an example showing when Event BeginPlay is triggered, then connect the game to Defi Wallet with URI.
+Here is an example showing when Event BeginPlay is triggered, connect the game to Defi Wallet via URI.
 
 
 
@@ -168,7 +168,7 @@ End Object
 {% endtab %}
 
 {% tab title="Example: Sign Personal Message" %}
-The following example shows when keyboard 0 is `Pressed`, sign a `User Message`: **Hello World**, and print out the `Address` and `Signing Result` to Screen in Development build.
+The following example shows when keyboard 0 is `Pressed`, sign a `User Message`: **Hello World**, and print out the `Address` and `Signing Result` to screen on Development build.
 
 
 
@@ -303,7 +303,7 @@ End Object
 {% endtab %}
 
 {% tab title="Example: Send CRO to ERC20 address" %}
-To send CRO from the wallet to a ERC20 address, make A `WalletConnectTxEip155` struct, then pass it to `Info` parameter of function `SignEip155Transaction`, like below:
+To send CRO from the wallet to an ERC20 address, make a `WalletConnectTxEip155` struct, then pass it to `Info` parameter of function `SignEip155Transaction`, like below:
 
 
 
