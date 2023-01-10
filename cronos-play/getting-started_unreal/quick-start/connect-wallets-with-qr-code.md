@@ -8,11 +8,11 @@ To connect with URI, please check
 [connect-defi-wallet-with-uri.md](connect-defi-wallet-with-uri.md)
 {% endcontent-ref %}
 
-## Connect wallet via ConnectWalletConnect
+### Connect wallet via ConnectWalletConnect
 
 Set the Connection Type of `ConnectWalletConnect` to: **Generate uri as a QR code 2D Texture**
 
-## Create WBP\_QR Widget
+### Create WBP\_QR Widget
 
 To display QR Code in Unreal Engine, we provide a 2D Texture for users to embedding it into a Widget or HUD. In the following example, let's create a `WBP_QR` Wdiget for displaying the QR Code.
 
@@ -53,7 +53,7 @@ To display QR Code in Unreal Engine, we provide a 2D Texture for users to embedd
 * Back to level blueprint editor, instead of printing the URI
 * **Compile** > **Save**
 
-## Show QR Code On QRReady
+### Show QR Code On QRReady
 
 {% tabs %}
 {% tab title="On QRReady" %}

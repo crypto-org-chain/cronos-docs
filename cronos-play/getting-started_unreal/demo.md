@@ -4,7 +4,7 @@
 
 Download the release zip file in [Release](https://github.com/cronos-labs/play-unreal-demo/releases) page.
 
-## simple Demo
+## [simple](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple)
 
 This project includes [Tutorials](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple/Content/Tutorials) and [Projects Settings](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple/Config) for building Mac/Windows/Linux/Android/iOS games on Cronos.
 
@@ -24,7 +24,7 @@ This project includes [Tutorials](https://github.com/cronos-labs/play-unreal-dem
 * Connect wallet with WalletConnect, by QR code or deep link
 * Sign personal message and transaction with WalletConnect
 
-## play2earn Demo
+## [play2earn](https://github.com/cronos-labs/play-unreal-demo/tree/main/play2earn)
 
 This demo shows the basic ERC721/ERC1155 usages on a first-character shooting game.
 
