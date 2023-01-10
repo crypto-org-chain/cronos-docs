@@ -18,8 +18,11 @@ with Dynamic Contract, you can call any smartcontract. you need abi json file fo
 ## Call
 this is for non modifying contract call
 
+{% tabs %}
+{% tab title="Blueprint" %}
 <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-dynamic-contract-call.png" alt=""><figcaption></figcaption></figure>
-
+{% endtab %}
+{% tab title="Blueprint Source" %}
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_Event Name="K2Node_Event_0"
    EventReference=(MemberParent=Class'"/Script/Engine.Actor"',MemberName="ReceiveBeginPlay")
@@ -126,6 +129,11 @@ Begin Object Class=/Script/BlueprintGraph.K2Node_CustomEvent Name="K2Node_Custom
 End Object
 
 ```
+{% endtab %}
+
+{% endtabs %}
+
+
 
 
 ## Send
