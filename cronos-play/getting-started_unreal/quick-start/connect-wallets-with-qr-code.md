@@ -50,7 +50,7 @@ To display QR Code in Unreal Engine, we provide a 2D Texture for users to embed 
 *   We could control it to show or destroy `Image 0` like below
 
     <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-set-brush" alt=""><figcaption></figcaption></figure>
-* Back to level blueprint editor, instead of printing the URI
+* Back to level blueprint editor
 * **Compile** > **Save**
 
 ## Show QR Code On QRReady
