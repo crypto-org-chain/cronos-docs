@@ -8,6 +8,8 @@ To connect with QR Code, please check
 [connect-wallets-with-qr-code.md](connect-wallets-with-qr-code.md)
 {% endcontent-ref %}
 
+### ConnectWalletConnect
+
 Once the session is created, the session information would be cached locally, so that we can retrieve the session information even if we restart the game.
 
 {% tabs %}
@@ -142,6 +144,8 @@ End Object
 {% endtab %}
 {% endtabs %}
 
+### SignPersonal
+
 After the wallet is connected, you could sign personal message with function - `SignPersonal`
 
 {% tabs %}
@@ -274,6 +278,8 @@ End Object
 ```
 {% endtab %}
 {% endtabs %}
+
+### SignEip155Transaction
 
 Sign Eth Transaction with function - `SignEip155Transaction`
 
@@ -440,6 +446,8 @@ End Object
 ```
 {% endtab %}
 {% endtabs %}
+
+### ClearSession
 
 You have to clear the WalletConnect Session when it is not used anymore, so that you can create a new session later. To do so, you can use function - `ClearSession`, this will clear the cached wallet connect session information when you call it.
 
