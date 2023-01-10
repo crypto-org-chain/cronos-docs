@@ -11,6 +11,6 @@ After creating **BP\_DefiWalletCore**, we should configure the Network Configura
     * **\[Testnet]** 338; or
     *   **\[Mainnet]** 25
 
-        <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-cronos-network-setting" alt=""><figcaption></figcaption></figure>
-  * `My Cosmos Rpc`, `My Tendermint Rpc`, and `My Chain ID` are for COSMOS chain, such as Crypto.org Chain, you can leave them as default values.
+        <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-cronos-network-setting.png" alt=""><figcaption></figcaption></figure>
+  * `My Grpc`, `My Cosmos Rpc`, `My Tendermint Rpc`, and `My Chain ID` are for COSMOS chain, such as Crypto.org Chain, you can leave them as default values.
   * **Save** > **Compile** to check if any errors
