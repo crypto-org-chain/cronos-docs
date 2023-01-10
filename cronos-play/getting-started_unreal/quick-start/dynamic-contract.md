@@ -449,82 +449,43 @@ safeMint
 ```
 
 ### Sample for all types
+- Address
 ```
-[
-  {
-    "Address": {
-      "data": "0x0000000000000000000000000000000000000000"
-    }
-  },
-  {
-    "FixedBytes": {
-      "data": [
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "Bytes": {
-      "data": [
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "Int": {
-      "data": "1"
-    }
-  },
-  {
-    "Uint": {
-      "data": "1"
-    }
-  },
-  {
-    "Bool": {
-      "data": true
-    }
-  },
-  {
-    "Str": {
-      "data": "test"
-    }
-  },
-  {
-    "FixedArray": {
-      "data": [
-        {
-          "Int": {
-            "data": "1"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "Array": {
-      "data": [
-        {
-          "Int": {
-            "data": "1"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "Tuple": {
-      "data": [
-        {
-          "Int": {
-            "data": "1"
-          }
-        }
-      ]
-    }
-  }
-]
-
+{"Address":{"data":"0x00"}}
+```
+- FixedBytes
+```
+{"FixedBytes":{"data":[1,2]}}
+```
+- Bytes
+```
+{"Bytes":{"data":[1,2]}}
+```
+- Int
+```
+{"Int":{"data":"1"}}
+```
+- Uint
+```
+{"Uint":{"data":"1"}}
+```
+- Bool
+```
+{"Bool":{"data":true}}
+```
+- Str
+```
+{"Str":{"data":"test"}}
+```
+- FixedArray
+```
+{"FixedArray":{"data":[{"Int":{"data":"1"}}]}}
+```
+- Array
+```
+{"Array":{"data":[{"Int":{"data":"1"}}]}}
+```
+- Tuple
+```
+{"Tuple":{"data":[{"Int":{"data":"1"}}]}}
 ```
