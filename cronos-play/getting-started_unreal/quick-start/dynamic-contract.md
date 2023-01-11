@@ -1,14 +1,16 @@
 # Dynamic Contract 
-
 with Dynamic Contract, you can call any smartcontract. you need abi json file for the contract.  
 - deploy contract beforehand, prepare contract address 
 - prepare abi json file for the contract to access
 
-## How to Use it
-- Create DefiWalletActor 
+## How to Start
+To use Dynamic Contract feature, we have to create a DynamicContractObject. DynamicContractObject is an UObject that is created by CreateDynamicSigningContract or CreateDynamicContract from DefiWalletCoreActor.
+1.  Create DefiWalletActor 
+2.  CreateDynamicContractObject from DefiWalletActor
 - CreateDynamicContract : for query smart-contract
 - CreateDynamicSigningContract : for modifying smart-contract
-- Now DynamicContractObject is ready!
+3. Now DynamicContractObject is ready!
+
 ## What function to use?
 - EncodeDynamicContract : for `encoding`, can be used wallet-connect
 - CallDynamicContract : for `calling`, should be created with CreateDynamicContract
