@@ -453,7 +453,8 @@ dynamic contract, argument type should be the same with the function signature.
 refer to table below for more details.
 
 
-### DynamicContract with walletconnect example
+## DynamicContract with walletconnect example
+
 Use `EncodeDynamicContract` to encode data, and call `SignEip155Transaction` to sign via wallet-connect.  
 Then use `BroadcastEthTxAsync` to broadcast the tx.
 
