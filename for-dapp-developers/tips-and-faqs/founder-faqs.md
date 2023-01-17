@@ -52,9 +52,12 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
   * Ebisu’s Bay is a self-custodial NFT platform on Cronos chain and on Ethereum.
   * New launch & secondary trading: the Cronos Labs team can put you in touch with the Minted team via Telegram. Please send your Telegram handle to your Cronos Labs contact.
 
-**Can I advertise my project, products or services to other app developers, investors or partners of the Cronos ecosystem?**
+**Are there other ways to advertise my project, products or services to other app developers, investors or partners of the Cronos ecosystem?**
 
-* Yes, there is a monthly “Cronos Developer” newsletter. You may subscribe to the Cronos Developer newsletter [at this URL](https://cryptoorg.substack.com/). Email contact@cronoslabs.org if you’d like to share news about your project, product or services in the newsletter.
+* Yes! Please email [contact@cronoslabs.org](mailto:contact@cronoslabs.org) or notify the Cronos Labs team by Telegram if you have major product launch announcements, have reached key milestones (number of daily transactions, number of users, trading volume) or have published interesting pieces of content.
+* Contact @[NewsCronos](https://twitter.com/NewsCronos) and @[TheCronicleNews](https://twitter.com/TheCronicleNews) to get the word out about your project.
+* Consider the [Brave Wallet partner program](https://brave.com/wallet-partner-program/) (Cronos Labs can introduct you).
+* Consider listing your project on the Alchemy Dapp store ([https://www.alchemy.com/dapps](https://www.alchemy.com/dapps)).
 
 **How can I apply for Cronos ecosystem grant support?**
 
