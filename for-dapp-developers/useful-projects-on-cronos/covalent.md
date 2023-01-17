@@ -10,9 +10,7 @@ layout: editorial
 
 To get started, sign up for an [**API Key**](https://www.covalenthq.com/platform/?utm\_source=cronos\&utm\_medium=partner-docs).
 
-| _Developer Mode (JSON)_                                                                      | _Analyst Mode (CSV)_                                                                     |
-| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| ![Developer Mode](https://www.covalenthq.com/static/images/partner-docs/developer\_mode.png) | ![Analyst Mode](https://www.covalenthq.com/static/images/partner-docs/analyst\_mode.png) |
+## API Features
 
 The Covalent API is RESTful and offers the following out-of-the-box for _**Cronos**_:
 
@@ -29,7 +27,7 @@ The Covalent API is RESTful and offers the following out-of-the-box for _**Crono
 
 Try the supported endpoints directly in your browser from our [API Reference](https://covalenthq.com/docs/api/?utm\_source=cronos\&utm\_medium=partner-docs) or use the following code examples. **The JSON response format is the same for all endpoints:**
 
-```
+```json
 ❴
     "data": ..., 
     "error": false,
@@ -89,22 +87,21 @@ get_wallet_balance(blockchain_id, demo_address)
 {% endtab %}
 {% endtabs %}
 
-####
-
 ## Use Cases
 
 The Covalent API supports a broad range of Web3 data use cases including:
 
-|                                                                               |                                                                                       |                                                                                            |                                                                               |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| ![Gaming](https://www.covalenthq.com/static/images/partner-docs/gaming.png)   | ![DeFi](https://www.covalenthq.com/static/images/partner-docs/defi.png)               | ![KYC](https://www.covalenthq.com/static/images/partner-docs/kyc.png)                      | ![NFT](https://www.covalenthq.com/static/images/partner-docs/nft\_icon.png)   |
-| Gaming                                                                        | DeFi Taxes                                                                            | KYC                                                                                        | NFTs                                                                          |
-| ![Wallets](https://www.covalenthq.com/static/images/partner-docs/wallets.png) | ![Dashboards](https://www.covalenthq.com/static/images/partner-docs/dashboards.png)   | ![On-Chain Forensics](https://www.covalenthq.com/static/images/partner-docs/forensics.png) | ![DAO](https://www.covalenthq.com/static/images/partner-docs/dao.png)         |
-| Wallets                                                                       | Dashboards                                                                            | On-Chain Forensics                                                                         | DAO Data                                                                      |
-| ![Trading](https://www.covalenthq.com/static/images/partner-docs/trading.png) | ![Predictions](https://www.covalenthq.com/static/images/partner-docs/predictions.png) | ![Governance](https://www.covalenthq.com/static/images/partner-docs/governance.png)        | ![Pricing](https://www.covalenthq.com/static/images/partner-docs/pricing.png) |
-| DEXs & Trading                                                                | Predictive Analytics                                                                  | Governance                                                                                 | Pricing                                                                       |
+* Gaming
+* Defi Taxes
+* KYC
+* NFTs
+* Wallets
+* Dashboards
+* Dao Data
+* Dex & Trading
+* and many more
 
-Check out Covalent's collection of ready-to-ship [**Code Templates**](https://github.com/covalenthq/web3-resources?utm\_source=cronos\&utm\_medium=partner-docs) that you can use to build your Web3 data-powered DApps.
+Check out Covalent's collection of ready-to-ship [**Code Templates**](https://github.com/covalenthq/web3-resources?utm\_source=cronos\&utm\_medium=partner-docs) that you can use to build your Web3 data-powered dApps.
 
 ## Resources
 
