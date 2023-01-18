@@ -14,9 +14,11 @@
 
 Please download the archive file based on your OS in the [release page](https://github.com/cronos-labs/play-cpp-sdk/releases), where:
 
-* Visual Studio 2019 MSVC, x86\_64, toolset 14.29 or newer: `play_cpp_sdk_Windows_x86_64.zip`;
-* macOS 10.15 or newer: `play_cpp_sdk_Darwin_x86_64.tar.gz`;
-* Ubuntu 20.04 or newer: `play_cpp_sdk_Linux_x86_64.tar.gz`.
+* Visual Studio 2019 MSVC, x86\_64, toolset 14.29 or newer: `play_cpp_sdk_Windows_x86_64.zip`
+* macOS 10.15 or newer: `play_cpp_sdk_Darwin_x86_64.tar.gz`
+* Ubuntu 20.04 or newer: `play_cpp_sdk_libstdc++_Linux_x86_64.tar.gz` or `play_cpp_sdk_libc++_Linux_x86_64.tar.gz`
+* Android: `play_cpp_sdk_$(TARGET)-$(NDK_VERSION).tar.gz`
+* IOS: `play_cpp_sdk_aarch64-apple-ios.tar.gz`
 
 ## Setup a demo project
 
@@ -57,7 +59,9 @@ git clone https://github.com/cronos-labs/play-cpp-sdk.git
 * Under `demo` folder and build the `demo` project
 
 ```bash
-make
+make CXX=g++     # Compile with g++
+make CXX=clang++ # Compile with clang++
+make             # Compile with default compiler
 ```
 
 #### Linux
@@ -69,10 +73,12 @@ git clone https://github.com/cronos-labs/play-cpp-sdk.git
 ```
 
 * Unzip the archive file into `demo` folder, and replace the original `sdk` folder
-* Under `demo` folder and build the `demo` project
+* Under `demo` folder and build the `demo` project with g++, clang++ or default compiler
 
 ```bash
-make
+make CXX=g++     # Compile with g++
+make CXX=clang++ # Compile with clang++
+make             # Compile with default compiler
 ```
 
 ## Setup a c++ 14 (or newer) project
@@ -95,6 +101,7 @@ make
 #include "sdk/include/defi-wallet-core-cpp/src/lib.rs.h" // wallet, EIP4361, query, signing, broadcast etc, on crypto.org and cronos
 #include "sdk/include/defi-wallet-core-cpp/src/nft.rs.h" // crypto.org chain nft support
 #include "sdk/include/defi-wallet-core-cpp/src/uint.rs.h" // uint256 type support
+#include "sdk/include/defi-wallet-core-cpp/src/ethereum.rs.h" // dynamic contract support
 #include "sdk/include/extra-cpp-bindings/src/lib.rs.h" // etherscan/cronoscan, crypto.com pay, wallet connect support
 #include "sdk/include/rust/cxx.h" // the important data types, e.g., rust::String, rust::str, etc
 
@@ -127,6 +134,24 @@ If the Pre-built release does not support your platform, you can build the binar
 #### Linux
 
 1. Run `make`
+2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
+
+#### Android
+
+1. Install Android NDK (e.g. 21.4.7075529) via Android Studio
+2.  Run make for one of the following Android targets on macOS or Linux
+
+    ```
+    NDK_VERSION=21.4.7075529 make armv7-linux-androideabi
+    NDK_VERSION=21.4.7075529 make aarch64-linux-android
+    NDK_VERSION=21.4.7075529 make i686-linux-android
+    NDK_VERSION=21.4.7075529 make x86_64-linux-android
+    ```
+3. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
+
+#### IOS
+
+1. Run `make aarch64-apple-ios`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
 ## Examples
