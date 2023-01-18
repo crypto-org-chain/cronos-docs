@@ -42,5 +42,5 @@ This documentation showcases the Cronos Play Gaming SDK integration with the Cro
   * [Cronos Play Unreal SDK plugin repository](https://github.com/cronos-labs/play-unreal-plugin)
   * [Cronos Play Unreal demo repository](https://github.com/cronos-labs/play-unreal-demo)
   * [Cronos Play C++ SDK repository](https://github.com/cronos-labs/play-cpp-sdk)
-* [Contact form](https://airtable.com/shrFiQnLrcpeBp2lS)
+* [Contact form](https://airtable.com/shrCt6wWy87WrEXr8)
 * Email: [contact@cronoslabs.org](mailto:contact@cronoslabs.org)

@@ -14,4 +14,4 @@ Unreal Engine 4.27, 5.0, or 5.1
 
 ## More information for Cronos Play
 
-If you are interested to build on Cronos, please visit [Cronos Play](https://cronos.org/play) or fill this [Contact Form](https://airtable.com/shrFiQnLrcpeBp2lS) for more information.
+If you are interested to build on Cronos, please visit [Cronos Play](https://cronos.org/play) or fill this [Contact Form](https://airtable.com/shrCt6wWy87WrEXr8) for more information.
