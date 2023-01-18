@@ -139,7 +139,7 @@ If the Pre-built release does not support your platform, you can build the binar
 #### Android
 
 1. Install Android NDK (e.g. 21.4.7075529) via Android Studio
-2.  Run make for one of the following android targets on Mac or Linux
+2.  Run make for one of the following Android targets on macOS or Linux
 
     ```
     NDK_VERSION=21.4.7075529 make armv7-linux-androideabi
