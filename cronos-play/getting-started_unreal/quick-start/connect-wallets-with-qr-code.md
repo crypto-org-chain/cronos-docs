@@ -8,6 +8,10 @@ To connect with URI, please check
 [connect-defi-wallet-with-uri.md](connect-defi-wallet-with-uri.md)
 {% endcontent-ref %}
 
+{% hint style="info" %}
+Source Code could be copied and pasted in Blueprint Editor directly
+{% endhint %}
+
 ## Connect wallet via ConnectWalletConnect
 
 Set the Connection Type of `ConnectWalletConnect` to: **Generate uri as a QR code 2D Texture**

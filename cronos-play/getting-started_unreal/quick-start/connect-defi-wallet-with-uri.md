@@ -8,6 +8,10 @@ To connect with QR Code, please check
 [connect-wallets-with-qr-code.md](connect-wallets-with-qr-code.md)
 {% endcontent-ref %}
 
+{% hint style="info" %}
+Source Code could be copied and pasted in Blueprint Editor directly
+{% endhint %}
+
 ## ConnectWalletConnect
 
 Once the session is created, the session information would be cached locally, so that we can retrieve the session information even if we restart the game.
