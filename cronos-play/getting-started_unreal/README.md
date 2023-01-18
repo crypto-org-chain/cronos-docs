@@ -2,14 +2,15 @@
 
 ## Pre-requisites
 
-Unreal Engine 4.27 or 5.0
+Unreal Engine 4.27, 5.0, or 5.1
 
 ## Supported OS
 
-* **Windows**: Make sure you use Visual Studio 2019 or later
-* **macOS**: Make sure you use Xcode 13.2.1
-* **Linux**: Ubuntu 18.04
+* **Windows**: Windows 10 x64 or newer, Visual Studio 2019 or later as compiler
+* **macOS**: macOS 10.15 or newer, Make sure you use Xcode 13.2.1 as compiler
+* **Linux**: Ubuntu 18.04 or newer
 * **Android**: arm64-v8a, armeabi-v7a, and x86\_64
+* **IOS**: arm64
 
 ## More information for Cronos Play
 

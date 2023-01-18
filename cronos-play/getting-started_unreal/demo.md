@@ -1,25 +1,37 @@
 # Demo
 
-## Download the demo
+## Pre-built Release
 
-Download the demo here: [https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.7-alpha/CronosPlayDemo.zip](https://github.com/cronos-labs/play-unreal-demo/releases/download/v0.0.7-alpha/CronosPlayDemo.zip)
+Download the release zip file in [Release](https://github.com/cronos-labs/play-unreal-demo/releases) page.
 
-## Migrate Demo Assets
+## [simple](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple)
 
-* You can migrate the Assets in the demo to your project and work on them.
-* Unzip the archive, double click **CronosPlayUnrealDemo.uproject** and launch the demo project. Press Yes to load it anyway in unreal 4.27.
+This project includes [Tutorials](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple/Content/Tutorials) and [Projects Settings](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple/Config) for building Mac/Windows/Linux/Android/iOS games on Cronos.
 
-<figure><img src="../../.gitbook/assets/cronos-gamefi-blueprint-version-notice" alt=""><figcaption></figcaption></figure>
+**Pre-requisites**
 
-* Right click **Content** > **CrnosPlayUnreal** in Content Browser > **Migrate...**
-* Press **OK** in **Asset Report** window
-* Choose the **Content** folder of the project you are working on. **CronosPlayUnreal** assets will be migrated into **Content** folder of the current project.
+* Unreal Engine: 4.27
+* Windows: Visual Studo 2019 or later
+* Mac: XCODE 13.2.1
+* Android: NDK 21.4.7075529
+* IOS: Minimum IOS 14
+* Plugin: Cronos Play For Unreal Engine, `4.27` branch of [play-unreal-plugin](https://github.com/cronos-labs/play-unreal-plugin/issues/new) repository
 
-<figure><img src="../../.gitbook/assets/cronos-gamefi-blueprint-content-browser" alt=""><figcaption></figcaption></figure>
+**Features**
 
-## Migrate Demo Maps
+* Restore Wallet by Mnemonics, and generate address with Wallet APIs
+* Query details of ERC20/ERC721/ERC1155 tokens
+* Connect wallet with WalletConnect, by QR code or deep link
+* Sign personal message and transaction with WalletConnect
 
-* You can also migrate the demo maps in your project and work on it.
-* In **Content Browser**, Right click **ThirdPersonCPP** > **Migrate**...
-* Uncheck all assets except **ThirdPersonCPP** > **OK**
-* Choose the **Content** folder of the project you are working on. **CronosPlayDemo** Maps will be migrated into **Content** folder of the current project.
+## [play2earn](https://github.com/cronos-labs/play-unreal-demo/tree/main/play2earn)
+
+This demo shows the basic ERC721/ERC1155 usages on a first-character shooting game.
+
+**Pre-requisites**
+
+* Windows: Visual Studo 2019 or later
+* Mac: XCODE 13.2.1
+* Unreal Engine: 5.x
+* Plugin: Cronos Play For Unreal Engine in Epic Marketplace
+
