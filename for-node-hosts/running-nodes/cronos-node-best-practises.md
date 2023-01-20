@@ -11,8 +11,11 @@ In order to make it more convenient for DApps and node hosts to set up a node, w
 
 ### db\_backend
 
+Since 1.0.2 there is another db parameter in app.toml as well. Be sure to make these 2 parameters the same to avoid issues.
+
 * `goleveldb` (default) db for low / medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
-* `rocksdb` suited for a lot of use-cases, especially for high query load \~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation.
+* `rocksdb` suited for a lot of use-cases, especially for high query load \~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation. \
+
 
 ### Seeds and persistent\_peers
 
@@ -94,6 +97,15 @@ During the `dragonberry` patch and the upgrade to `0.8.2` and `0.8.3`,  we enabl
 * `iavl-cache-size` set to `781250` works well as our testing has shown.
 
 
+
+### app-db-backend
+
+As of `v1.0.0` we support golevelDB and rocksDB in a single binary, hence we allow to select the backend with the `app-db-backend` parameter. If not filled in it will use a fallback option.\
+\
+First fallback is the deprecated compile-time types.DBBackend value.\
+Second fallback (if the types.DBBackend also isn't set), is the db-backend value set in config.toml.
+
+* `app-db-backend = "rocksdb" or "golevelsdb"`
 
 ### API
 
