@@ -1,7 +1,5 @@
 # Cronos Safe
 
-
-
 ## Introduction
 
 DApp developers can protect themselves against the potentially disastrous consequences of the compromise of a single private key, by assigning a multi-signature smart contract wallet as the owner and admin of a dApp. With the open-source community support from Protofire, Cronos Safe offers an easy-to-use implementation of the “Safe” Multisig Wallet user interface and smart contracts on the Cronos chain, which is a perfect tool for DApp developers to Enhance the Security of your dApps. While you can verify independently that the Cronos Safe smart contracts are identical to the official Safe smart contracts, please note that you are using them at your own risk. Cronos Safe is not officially supported by Cronos or Cronos Labs.
@@ -20,8 +18,6 @@ You can visit Cronos Safe (cronos-safe.org) to access the user interface of the 
 
 Click “Create Safe”, connect your wallet, and follow the instructions. You can connect to the Cronos Safe dApp with MetaMask, or with the Crypto.com DeFi Wallet via WalletConnect.
 
-
-
 <figure><img src="../../.gitbook/assets/CronosSafe0.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/CronosSafe1.png" alt=""><figcaption></figcaption></figure>
@@ -32,7 +28,7 @@ Click “Create Safe”, connect your wallet, and follow the instructions. You c
 
 In the next step, you will review the details of your Safe on Cronos and will have to confirm a transaction with your currently connected wallet. The creation will cost approximately 2.58267 CRO. The exact amount will be determined by your wallet.
 
-<figure><img src="../../.gitbook/assets/CronosSafe4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CronosSafe4 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/CronosSafe5.png" alt=""><figcaption></figcaption></figure>
 
@@ -44,13 +40,13 @@ As an additional safety measure, please make sure that you check the addresses o
 
 The Cronos Safe dashboard shows the Cronos address and balance of your newly created Safe.
 
-<figure><img src="../../.gitbook/assets/CronosSafe6 (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CronosSafe6 (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Test a few small transfers on your end to verify that you are able to control the Safe wallet. You can now send more funds to this address, or assign this address as owner/admin of your dApp smart contracts as required. When you click on “New transaction” the Safe user interface allows you to send CRO, ERC20 tokens or NFTs. You can also call smart contract methods by declaring the ABI of your smart contract:
 
 <figure><img src="../../.gitbook/assets/CronosSafe7.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/CronosSafe8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CronosSafe8 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Cronos Safe smart contracts**
 

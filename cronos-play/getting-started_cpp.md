@@ -1,6 +1,14 @@
 # Cronos Play C++ SDK
 
-### Pre-requisites
+## Cronos Play C++ API Reference&#x20;
+
+API Reference can be found:
+
+{% embed url="https://docs.play.cronos.org/" %}
+Cronos Play C++ API Reference
+{% endembed %}
+
+## Pre-requisites
 
 * python 3.8 or newer
 * [rust](https://www.rust-lang.org/) 1.61 or newer
@@ -10,7 +18,7 @@
   * GNU make for mac and linux, ninja for windows
   * Visual Studio 2019 or newer for windows
 
-### Pre-built Download
+## Pre-built Download
 
 Please download the archive file based on your OS in the [release page](https://github.com/cronos-labs/play-cpp-sdk/releases), where:
 
@@ -22,7 +30,7 @@ Please download the archive file based on your OS in the [release page](https://
 
 ## Setup a demo project
 
-#### Windows
+### Windows
 
 **Visual Studio Project**
 
@@ -47,7 +55,7 @@ Build modern, cross-platform C++ apps that don't depend on `.sln` or `.vcxproj` 
 * Select configuration `x64-Release` in the tool bar
 * Click `Build` > `Build All` or `Rebuild All` to build the project
 
-#### Mac
+### Mac
 
 * Clone the current repository
 
@@ -64,7 +72,7 @@ make CXX=clang++ # Compile with clang++
 make             # Compile with default compiler
 ```
 
-#### Linux
+### Linux
 
 * Clone the current repository
 
@@ -116,7 +124,7 @@ using namespace com::crypto::game_sdk;
 
 If the Pre-built release does not support your platform, you can build the binaries and bindings on your own.
 
-#### Windows
+### Windows
 
 1. Run `windows_build.bat` in x64 Native Tools Command Prompt for VS 2019. It will clone necessary submodules, build `play-cpp-sdk` crate, finally setup and build the demo project.
 2. Clean `~/.cargo/git/checkouts` if cxx fails to build, then run `windows_build.bat` again.
@@ -126,17 +134,17 @@ If the Pre-built release does not support your platform, you can build the binar
 
 * Open `demo.sln`. If you use Visual Studio 2022, retarget project, and upgrade PlatformToolset to `v143` before running `windows_build.bat`
 
-#### Mac
+### Mac
 
 1. Run `make`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
-#### Linux
+### Linux
 
 1. Run `make`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
-#### Android
+### Android
 
 1. Install Android NDK (e.g. 21.4.7075529) via Android Studio
 2.  Run make for one of the following Android targets on macOS or Linux
@@ -149,7 +157,7 @@ If the Pre-built release does not support your platform, you can build the binar
     ```
 3. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
 
-#### IOS
+### IOS
 
 1. Run `make aarch64-apple-ios`
 2. Run `make install`, libraries and bindings will be copied into a new created folder: `install`
@@ -395,7 +403,3 @@ function `safe_batch_transfer_from` - Batched version of `safeTransferFrom`.
     const ::org::defi_wallet_core::PrivateKey & private_key
 ) const
 ```
-
-## Cronos Play C++ API Reference
-
-API Reference can be found [here](https://leslie-h-cheung.gitbook.io/cronos-play-c++-sdk/readme-1)
