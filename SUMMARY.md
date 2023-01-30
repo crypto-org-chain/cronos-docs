@@ -35,6 +35,7 @@
   * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
   * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
+  * [Adress Conversion](for-dapp-developers/chain-integration/adress-conversion.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
 * [⚙ Dev Tools & Integrations](for-dapp-developers/useful-projects-on-cronos/README.md)
   * [Overview of dev tools & integrations](for-dapp-developers/useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
