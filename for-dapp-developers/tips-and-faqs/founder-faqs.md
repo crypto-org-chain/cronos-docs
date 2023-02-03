@@ -13,7 +13,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **Subscribe to the Cronos newsletter:**
 
-* [Cronos newsletter](https://cryptoorg.substack.com/)
+* [Cronos newsletter](https://cronoslabs.substack.com)
 
 ## FAQs - ecosystem
 
@@ -111,7 +111,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **Where can I find a list of available developer tools and integration?**
 
-* We have prepared one for you! See here: [useful-projects-on-cronos](../useful-projects-on-cronos/ "mention")
+* We have prepared one for you! See here: [dev-tools-and-integrations](../dev-tools-and-integrations/ "mention")
 
 **Where can ask technical questions to integrate with Cronos chain?**
 

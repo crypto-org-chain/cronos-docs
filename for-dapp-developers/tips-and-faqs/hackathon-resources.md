@@ -12,7 +12,7 @@ description: Quick-start resource if you are hacking and need to integrate with 
 
 ## How to stand out and win in a Web3 hackathon 🥇
 
-Check out our [blog post](https://medium.com/cronos-chain/cronos-developer-series-5-tips-to-stand-out-in-a-web3-hackathon-924d774f1617).
+Check out our [blog post](https://cronoslabs.substack.com/p/cronos-developer-series-5-tips-to-stand-out-in-a-web3-hackathon-924d774f1617).
 
 ## Hack with Cronos 🥚
 
@@ -22,16 +22,15 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 **Cronos overview & key links for developers**
 
-* Cronos docs: [https://cronos.org/docs/](https://cronos.org/docs/)
+* Cronos docs: [https://cronos.org/docs/](https://docs.cronos.org/)
 * Cronos Play (for game developers): [https://cronos.org/play](https://cronos.org/play)
-* [https://medium.com/cronos-chain/why-build-grow-on-cronos-692da1de7885](https://medium.com/cronos-chain/why-build-grow-on-cronos-692da1de7885)
-* [https://medium.com/cronos-chain/cronos-launches-100m-backed-cronos-accelerator-program-to-support-ongoing-ecosystem-building-ae2a5c56e781](https://medium.com/cronos-chain/cronos-launches-100m-backed-cronos-accelerator-program-to-support-ongoing-ecosystem-building-ae2a5c56e781)
+* [Why build on Cronos](https://cronoslabs.substack.com/p/why-build-grow-on-cronos-692da1de7885)
 * Cronos overview by Eat The Blocks: [https://www.youtube.com/watch?v=NqeeKEJiPZU](https://www.youtube.com/watch?v=NqeeKEJiPZU)
 
 **MetaMask end-user configuration**
 
 * The [cronos.org](http://cronos.org) website has a little orange button at the top of the page, that you can click to add Cronos mainnet to your MetaMask wallet.
-* For more details, see [https://docs.cronos.org/for-users/metamask](https://docs.cronos.org/for-users/metamask)
+* For more details, see [Metamask configuration](../../for-users/metamask.md)
 
 **JSON-RPC endpoint configuration**
 
@@ -88,16 +87,11 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 **Blog posts**
 
-* Deploy and verify your smart contracts:
-  * [https://medium.com/cronos-chain/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986](https://medium.com/cronos-chain/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986)
-* Create & deploy a smart contract with OpenZeppelin Wizard and Remix (low code):
-  * [https://medium.com/cronos-chain/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93](https://medium.com/cronos-chain/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93)
-* Connect your Dapp to wallets:
-  * [https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5](https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5)
-* Build a simple Dapp:
-  * [https://medium.com/cronos-chain/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f](https://medium.com/cronos-chain/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
-* Create a NFT collection on Cronos and IPFS:
-  * [https://medium.com/cronos-chain/cronos-developer-series-create-your-nft-collection-with-solidity-typescript-and-ipfs-9b48f90871b9](https://medium.com/cronos-chain/cronos-developer-series-create-your-nft-collection-with-solidity-typescript-and-ipfs-9b48f90871b9)
+* [Deploy and verify your smart contracts](https://cronoslabs.substack.com/p/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986)
+* [Create & deploy a smart contract with OpenZeppelin Wizard and Remix (low code)](https://cronoslabs.substack.com/p/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93)
+* [Connect your Dapp to wallets](https://cronoslabs.substack.com/p/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5)
+* [Build a simple Dapp](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
+* [Create a NFT collection on Cronos and IPFS](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
 
 **Videos**
 
@@ -135,9 +129,7 @@ Create games
 * Unity plugin: [docs](https://cronos.org/docs/play/getting-started.html) and [repo](https://github.com/ChainSafe/web3.unity)
 * Unreal plugin: [docs](https://cronos.org/docs/play/getting-started\_unreal.html#pre-requisites), [repo](https://github.com/cronos-labs/play-unreal-plugin) and [demo](https://github.com/cronos-labs/play-unreal-demo)
 * C++ SDK: [docs](https://cronos.org/docs/play/getting-started\_cpp.html#pre-requisites) and [repo](https://github.com/cronos-labs/play-cpp-sdk)
-*   Full list of available dev tools and integration
-
-    [https://crofam.me/devtools](https://crofam.me/devtools)
+* [Full list of available dev tools and integration](../dev-tools-and-integrations/overview-of-dev-tools-and-integrations.md)
 
 ## Developer support ☎️
 

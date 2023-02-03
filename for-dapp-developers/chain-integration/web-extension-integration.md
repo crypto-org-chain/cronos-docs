@@ -65,7 +65,7 @@ Additional chains are planned for the near future.
 
 ### dApp integration
 
-[Follow this link](https://medium.com/cronos-chain/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5) for a basic tutorial on how to implement the main wallet connection methods available to Cronos dApp developers.
+[Follow this link](https://cronoslabs.substack.com/p/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5) for a basic tutorial on how to implement the main wallet connection methods available to Cronos dApp developers.
 
 The official repository and documentation of Crypto.com Wallet Extension are available at: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo).
 
