@@ -4,26 +4,26 @@ Visit `Overview of dev tools & integrations` below for an up-to-date list of dev
 
 Below you will also find a few more detailed tutorial pages that have been provided by the corresponding projects.
 
-{% content-ref url="overview-of-dev-tools-and-integrations.md" %}
-[overview-of-dev-tools-and-integrations.md](overview-of-dev-tools-and-integrations.md)
+{% content-ref url="../useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md" %}
+[overview-of-dev-tools-and-integrations.md](../useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
 {% endcontent-ref %}
 
-{% content-ref url="banxa.md" %}
-[banxa.md](banxa.md)
+{% content-ref url="../useful-projects-on-cronos/banxa.md" %}
+[banxa.md](../useful-projects-on-cronos/banxa.md)
 {% endcontent-ref %}
 
-{% content-ref url="band-protocol.md" %}
-[band-protocol.md](band-protocol.md)
+{% content-ref url="../useful-projects-on-cronos/band-protocol.md" %}
+[band-protocol.md](../useful-projects-on-cronos/band-protocol.md)
 {% endcontent-ref %}
 
-{% content-ref url="covalent.md" %}
-[covalent.md](covalent.md)
+{% content-ref url="../useful-projects-on-cronos/covalent.md" %}
+[covalent.md](../useful-projects-on-cronos/covalent.md)
 {% endcontent-ref %}
 
-{% content-ref url="moralis.md" %}
-[moralis.md](moralis.md)
+{% content-ref url="../useful-projects-on-cronos/moralis.md" %}
+[moralis.md](../useful-projects-on-cronos/moralis.md)
 {% endcontent-ref %}
 
-{% content-ref url="witnet.md" %}
-[witnet.md](witnet.md)
+{% content-ref url="../useful-projects-on-cronos/witnet.md" %}
+[witnet.md](../useful-projects-on-cronos/witnet.md)
 {% endcontent-ref %}

@@ -129,7 +129,7 @@ Create games
 * Unity plugin: [docs](https://cronos.org/docs/play/getting-started.html) and [repo](https://github.com/ChainSafe/web3.unity)
 * Unreal plugin: [docs](https://cronos.org/docs/play/getting-started\_unreal.html#pre-requisites), [repo](https://github.com/cronos-labs/play-unreal-plugin) and [demo](https://github.com/cronos-labs/play-unreal-demo)
 * C++ SDK: [docs](https://cronos.org/docs/play/getting-started\_cpp.html#pre-requisites) and [repo](https://github.com/cronos-labs/play-cpp-sdk)
-* [Full list of available dev tools and integration](../dev-tools-and-integrations/overview-of-dev-tools-and-integrations.md)
+* [Full list of available dev tools and integration](../useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
 
 ## Developer support ☎️
 

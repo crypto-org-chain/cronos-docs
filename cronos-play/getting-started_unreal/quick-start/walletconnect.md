@@ -48,23 +48,23 @@ To display QR Code in Unreal Engine, a function `GenerateQrCode` could be used. 
 
 * To show the QR Code on a Widget, select **Maps**, right click **Content Browser** > **User Interface** > **Widget Blueprint**
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-user-interface" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Menu of User Interface.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-widget-blueprint" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Menu of Widget Blueprint.png" alt=""><figcaption></figcaption></figure>
 
 * Rename the file as WBP\_QR.
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-WBP_QR" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Icon of WBP_QR .png" alt=""><figcaption></figcaption></figure>
 
 * Double click WBP\_QR and open the Designer editor, drag **Panel** > **Canvas Panel** to viewport to create a Canvas Panel, then drag **Common** > **Image** to the canvas (named it as `Image_0`), update on **Details** tab as: **512** (Size X) x **512** (Size Y)
 
 <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-wbp-qr-arrangement" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-drag-and-create-image" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Canvas of WBP_QR.png" alt=""><figcaption></figcaption></figure>
 
 * Click **Graph** and switch to Event Graph
 
-<figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-click-graph" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Switch to Graph.png" alt=""><figcaption></figcaption></figure>
 
 * Right click the graph, search and select **Add Custom Event...**, name it as **ShowQR** with two inputs
   * `Show`: Boolean (To control the QR code show or not)

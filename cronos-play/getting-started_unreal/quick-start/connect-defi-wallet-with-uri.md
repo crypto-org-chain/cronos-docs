@@ -1,6 +1,6 @@
 # Connect Defi Wallet with URI
 
-Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect`.&#x20;
+Connecting with Defi Desktop Wallet or Defi Mobile Wallet is accomplished with just one blueprint function: `ConnectWalletConnect` from `PlayCppSdkActor`.
 
 To connect with QR Code, please check
 
@@ -9,7 +9,7 @@ To connect with QR Code, please check
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Source Code could be copied and pasted in Blueprint Editor directly
+Source Code could be copied then pasted into Blueprint Editor directly
 {% endhint %}
 
 ## ConnectWalletConnect
@@ -18,7 +18,7 @@ Once the session is created, the session information would be cached locally, so
 
 {% tabs %}
 {% tab title="ConnectWalletConnect" %}
-#### Source Code
+**Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_9"
@@ -40,30 +40,36 @@ End Object
 {% endtab %}
 
 {% tab title="Example: Connect Defi Wallet with URI" %}
-Here is an example showing when Event BeginPlay is triggered, connect the game to Defi Wallet via URI.
+Here is an example showing when Event BeginPlay is triggered, spawn an actor from `PlayCppSdkActor` Class, save it to `PlayCppSdk` variable, finally call ConnectWalletConnect function and connect the game to Defi Wallet via URI.
 
-
-
-#### Blueprint
+**Blueprint**
 
 <figure><img src="../../../.gitbook/assets/ConnectWalletConnect.png" alt=""><figcaption></figcaption></figure>
 
-#### Demo
+**Demo**
 
 <figure><img src="../../../.gitbook/assets/ConnectWalletConnect.gif" alt=""><figcaption></figcaption></figure>
 
-#### Configurations
+**Configurations**
 
 * Description: `Defi WalletConnect example.`
-* Url: [`http://localhost:8080/`](http://localhost:8080/)``
+* Url: [`http://localhost:8080/`](http://localhost:8080/)\`\`
 * Icon Urls: Make Array
 * Name: `Defi WalletConnect Web3 Example`
 * Chain Id: `25`
-* Connection Type: `Launch uri with native wallet directly`&#x20;
+* Connection Type: `Launch uri with native wallet directly`
 
 
 
-#### Source Code
+**VARIABLES Source Code**
+
+```
+BPVar(VarName="PlayCppSdk",VarGuid=60D1F23F42427406445151B89092854D,VarType=(PinCategory="object",PinSubCategory="",PinSubCategoryObject=/Script/CoreUObject.Class'"/Script/CronosPlayUnreal.PlayCppSdkActor"',PinSubCategoryMemberReference=(MemberParent=None,MemberName="",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory="",TerminalSubCategory="",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False),FriendlyName="Play Cpp Sdk",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=67589,RepNotifyFunc="",ReplicationCondition=COND_None,MetaDataArray=,DefaultValue="None")
+```
+
+
+
+**Event Graph Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_Event Name="K2Node_Event_0"
@@ -154,7 +160,7 @@ After the wallet is connected, you could sign personal message with function - `
 
 {% tabs %}
 {% tab title="SignPersonal" %}
-#### Source Code
+**Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_26"
@@ -174,13 +180,11 @@ End Object
 {% tab title="Example: Sign Personal Message" %}
 The following example shows when keyboard 0 is `Pressed`, sign a `User Message`: **Hello World**, and print out the `Address` and `Signing Result` to screen on Development build.
 
-
-
-#### Blueprint
+**Blueprint**
 
 <figure><img src="../../../.gitbook/assets/SignPersonal.png" alt=""><figcaption></figcaption></figure>
 
-#### **Source Code**
+**Event Graph Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name="K2Node_InputKey_0"
@@ -289,7 +293,7 @@ Sign Eth Transaction with function - `SignEip155Transaction`
 
 {% tabs %}
 {% tab title="SignEip155Transaction" %}
-#### Source Code
+**Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_25"
@@ -309,13 +313,11 @@ End Object
 {% tab title="Example: Send CRO to ERC20 address" %}
 To send CRO from the wallet to an ERC20 address, make a `WalletConnectTxEip155` struct, then pass it to `Info` parameter of function `SignEip155Transaction`, like below:
 
-
-
-#### Blueprint
+**Blueprint**
 
 <figure><img src="../../../.gitbook/assets/SignEip155Transaction.png" alt=""><figcaption></figcaption></figure>
 
-#### Parameters of `WalletConnectTxEip155`
+**Parameters of `WalletConnectTxEip155`**
 
 * To: `0xA914161b1b8d9dbC9c5310Fc7EBee5A5B18044b7` (An ERC20 example address)
 * Gas: `50000`
@@ -324,9 +326,7 @@ To send CRO from the wallet to an ERC20 address, make a `WalletConnectTxEip155` 
 * Data: Empty
 * Nonce: `1` (Leave it to 1, it is unused at this moment)
 
-
-
-#### Source Code
+**Event Graph Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name="K2Node_InputKey_1"
@@ -457,7 +457,7 @@ You have to clear the WalletConnect Session when it is not used anymore, so that
 
 {% tabs %}
 {% tab title="ClearSession" %}
-#### Source Code
+**Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_20"
@@ -476,13 +476,11 @@ End Object
 {% tab title="Example: Clear the current WalletConnect Session" %}
 This example shows when keyboard 2 is `Pressed`, the session information would be cleared, debug string `Session Cleared` would be printed on the screen. In actual production, users can call `ClearSession` when needed.
 
-
-
-#### Blueprint
+**Blueprint**
 
 <figure><img src="../../../.gitbook/assets/ClearSession.png" alt=""><figcaption></figcaption></figure>
 
-#### Source Code
+**Event Graph Source Code**
 
 ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name="K2Node_InputKey_2"
@@ -552,4 +550,3 @@ End Object
 ```
 {% endtab %}
 {% endtabs %}
-
