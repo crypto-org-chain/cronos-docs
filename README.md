@@ -77,7 +77,7 @@ As an application founder/developer on Cronos, you can leverage:
 
 Web: [Cronos](https://cronos.org) | [Cronos Labs](https://cronoslabs.org)
 
-Blog: [Cronos](https://cronoslabs.substack.com)
+Blog: [Cronos](https://blog.cronos.org/)
 
 Socials: [Twitter](https://twitter.com/cronos\_chain) | [Telegram](https://t.me/Cryptoorg\_Chain\_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
 
@@ -88,7 +88,8 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 **Ecosystem:**
 
 * [List of Dapps](https://cronos.org/ecosystem)
-* [Defillama](https://defillama.com/chain/Cronos)
+* [DeFi ecosystem on Defillama](https://defillama.com/chain/Cronos)
+* [Gaming and metaverse ecosystem](https://blog.cronos.org/p/news-from-the-cronos-gaming-ecosystem)
 * [Dappradar](https://dappradar.com/rankings/protocol/cronos)
 * [Block explorer](https://cronoscan.com/)
 
@@ -96,4 +97,4 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 
 * [Hackathon cheat sheet](for-dapp-developers/tips-and-faqs/hackathon-resources.md)
 * [Developer tools and integration](for-dapp-developers/dev-tools-and-integrations/)
-* [Developer FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
+* [App creator & developer FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
