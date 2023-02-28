@@ -8,6 +8,10 @@ Below you will also find a few more detailed tutorial pages that have been provi
 [overview-of-dev-tools-and-integrations.md](../useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
 {% endcontent-ref %}
 
+{% content-ref url="tenderly.md" %}
+[tenderly.md](tenderly.md)
+{% endcontent-ref %}
+
 {% content-ref url="../useful-projects-on-cronos/banxa.md" %}
 [banxa.md](../useful-projects-on-cronos/banxa.md)
 {% endcontent-ref %}
@@ -26,4 +30,8 @@ Below you will also find a few more detailed tutorial pages that have been provi
 
 {% content-ref url="../useful-projects-on-cronos/witnet.md" %}
 [witnet.md](../useful-projects-on-cronos/witnet.md)
+{% endcontent-ref %}
+
+{% content-ref url="../useful-projects-on-cronos/cronos-safe.md" %}
+[cronos-safe.md](../useful-projects-on-cronos/cronos-safe.md)
 {% endcontent-ref %}
