@@ -64,3 +64,7 @@ Tendermint was selected by Cronos as the underlying technology for several reaso
 * Robustly tested [implementation](http://jepsen.io/analyses/tendermint-0-10-2)
 * Strong track record: Tendermint has been in continuous development since 2014, and has been adopted by several high-profile [projects](https://forum.cosmos.network/t/list-of-projects-in-cosmos-tendermint-ecosystem/243)
 * Modular architecture: It offers flexibility regarding which applications are developed on top of it, and how they are developed.
+
+## Further reading
+
+Follow [this link](broken-reference) for more information about the Cronos chain protocol.

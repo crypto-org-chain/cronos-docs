@@ -98,3 +98,7 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 * [Hackathon cheat sheet](for-dapp-developers/tips-and-faqs/hackathon-resources.md)
 * [Developer tools and integration](for-dapp-developers/dev-tools-and-integrations/)
 * [App creator & developer FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
+
+**Brand assets:**
+
+{% file src=".gitbook/assets/cronos logos.zip" %}
