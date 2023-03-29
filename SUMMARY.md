@@ -22,6 +22,7 @@
   * [FAQs for Bridge transfers](for-users/faq.md)
   * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
 * [🚰 Testnet Faucet](for-users/testnet-faucet.md)
+* [💡 Tips & FAQs](for-users/tips-and-faqs.md)
 
 ## FOR DAPP DEVELOPERS
 
