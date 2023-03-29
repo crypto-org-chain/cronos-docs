@@ -2,7 +2,29 @@
 
 ## Pre-built Release
 
-Download the release zip file in [Release](https://github.com/cronos-labs/play-unreal-demo/releases) page.
+Download the release zip file on the [Release](https://github.com/cronos-labs/play-unreal-demo/releases) page.
+
+## [Metaverse](https://github.com/cronos-labs/play-unreal-demo/tree/main/Metaverse)
+
+This project builds a Metaverse demo where users can connect Wallets, sign transactions, interact with Smart Contracts, collect Coins and more!
+
+**Pre-requisites**
+
+* Windows: Visual Studio 2022
+* Mac: XCODE 14.2
+* Android: NDK 21.4.7075529
+* IOS: Minimum IOS 14
+* Unreal Engine: 5.1
+* Plugin: Cronos Play For Unreal Engine
+
+#### Features
+
+* Connect wallet with WalletConnect, by QR code or deep link
+* Sign personal message and transaction with WalletConnect
+* Interact with smart contracts
+* Collect coins and have fun&#x20;
+
+
 
 ## [simple](https://github.com/cronos-labs/play-unreal-demo/tree/main/simple)
 
@@ -11,7 +33,7 @@ This project includes [Tutorials](https://github.com/cronos-labs/play-unreal-dem
 **Pre-requisites**
 
 * Unreal Engine: 4.27
-* Windows: Visual Studo 2019 or later
+* Windows: Visual Studio 2019 or later
 * Mac: XCODE 13.2.1
 * Android: NDK 21.4.7075529
 * IOS: Minimum IOS 14
@@ -26,12 +48,15 @@ This project includes [Tutorials](https://github.com/cronos-labs/play-unreal-dem
 
 ## [play2earn](https://github.com/cronos-labs/play-unreal-demo/tree/main/play2earn)
 
-This demo shows the basic ERC721/ERC1155 usages on a first-character shooting game.
+This demo shows the basic ERC721/ERC1155 usage on a first-character shooting game.
 
 **Pre-requisites**
 
-* Windows: Visual Studo 2019 or later
+* Windows: Visual Studio 2019 or later
 * Mac: XCODE 13.2.1
 * Unreal Engine: 5.x
 * Plugin: Cronos Play For Unreal Engine in Epic Marketplace
 
+
+
+&#x20;
