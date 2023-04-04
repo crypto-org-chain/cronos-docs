@@ -46,6 +46,7 @@
   * [Moralis](for-dapp-developers/useful-projects-on-cronos/moralis.md)
   * [Witnet](for-dapp-developers/useful-projects-on-cronos/witnet.md)
   * [Cronos Safe](for-dapp-developers/useful-projects-on-cronos/cronos-safe.md)
+  * [Anyswap](for-dapp-developers/dev-tools-and-integrations/anyswap.md)
   * [Banxa](for-dapp-developers/useful-projects-on-cronos/banxa.md)
 * [💡 Tips & FAQs](for-dapp-developers/tips-and-faqs/README.md)
   * [Founder FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
