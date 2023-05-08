@@ -145,11 +145,11 @@ A list of commonly used flags of cronosd is listed below:
 
 A list of commonly used `cronosd` commands.
 
-| Command | Description                                                            | List                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `keys`  | [Keys management](cli.md#keys-management-cronosd-keys)                 | <p><a href="cli.md#keys-add-wallet-name-create-a-new-key"><code>add &#x3C;wallet_name></code></a><br><br><a href="cli.md#keys-add-key-name-recover-restore-existing-key-by-seed-phrase"><code>add &#x3C;key_name> --recover</code></a><br><br><a href="cli.md#keys-list-list-your-keys"><code>list</code></a><br><br><a href="cli.md#keys-show-key-name-retrieve-key-information"><code>show &#x3C;key_name></code></a><br><br><a href="cli.md#keys-delete-key-name-delete-a-key"><code>delete &#x3C;key_name></code></a><br><br><a href="cli.md#keys-export-key-name-export-private-keys"><code>export &#x3C;key_name></code></a></p> |
-| `tx`    | [Transactions subcommands](cli.md#transactions-subcommands-cronosd-tx) | <p><a href="cli.md#tx-bank-send-transfer-operation"><code>bank send</code></a><br><br><a href="cli.md#delegate-you-funds-to-a-validator-tx-staking-delegate-validator-addr-amount"><code>staking delegate</code></a><br><br><a href="cli.md#unbond-your-delegated-funds-tx-staking-unbond-validator-addr-amount"><code>staking unbond</code></a><br><br><a href="cli.md#tx-staking-create-validator-joining-the-network-as-a-validator"><code>staking create-validator</code></a><br><br><a href="cli.md#tx-slashing-unjail-unjail-a-validator"><code>slashing unjail</code></a></p>                                                   |
-| `query` | [Query subcommands](cli.md#balance-transaction-history)                | [`query bank balance`](cli.md#query-bank-balances-check-your-transferable-balance)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Command | Description                                                           | List                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `keys`  | [Key management](cli.md#keys-management-cronosd-keys)                 | <p><a href="cli.md#keys-add-wallet-name-create-a-new-key"><code>add &#x3C;wallet_name></code></a><br><br><a href="cli.md#keys-add-key-name-recover-restore-existing-key-by-seed-phrase"><code>add &#x3C;key_name> --recover</code></a><br><br><a href="cli.md#keys-list-list-your-keys"><code>list</code></a><br><br><a href="cli.md#keys-show-key-name-retrieve-key-information"><code>show &#x3C;key_name></code></a><br><br><a href="cli.md#keys-delete-key-name-delete-a-key"><code>delete &#x3C;key_name></code></a><br><br><a href="cli.md#keys-export-key-name-export-private-keys"><code>export &#x3C;key_name></code></a></p> |
+| `tx`    | [Transaction subcommands](cli.md#transactions-subcommands-cronosd-tx) | <p><a href="cli.md#tx-bank-send-transfer-operation"><code>bank send</code></a><br><br><a href="cli.md#delegate-you-funds-to-a-validator-tx-staking-delegate-validator-addr-amount"><code>staking delegate</code></a><br><br><a href="cli.md#unbond-your-delegated-funds-tx-staking-unbond-validator-addr-amount"><code>staking unbond</code></a><br><br><a href="cli.md#tx-staking-create-validator-joining-the-network-as-a-validator"><code>staking create-validator</code></a><br><br><a href="cli.md#tx-slashing-unjail-unjail-a-validator"><code>slashing unjail</code></a></p>                                                   |
+| `query` | [Query subcommands](cli.md#balance-and-transaction-history)           | [`query bank balance`](cli.md#query-bank-balances-check-your-transferable-balance)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 You may also add the flag `-h, --help` on `cronosd [command]` to get more available commands and details.
 
@@ -183,7 +183,7 @@ Global Flags:
 ```
 {% endhint %}
 
-## Keys management - `cronosd keys`
+## Key management - `cronosd keys`
 
 First of all, you will need an address to store and spend your CRO.
 
@@ -347,7 +347,7 @@ Interacting with a node requires a public-private key pair. Keyring is the place
 $ cronosd keys [subcommands] --keyring-backend [backend type]
 ```
 
-### `os` backend
+#### `1. os` backend
 
 The default `os` backend stores the keys in operating system's credential sub-system, which are comfortable to most users, yet without compromising on security.
 
@@ -359,15 +359,15 @@ Here is a list of the corresponding password managers in different operating sys
   * [libsecret](https://gitlab.gnome.org/GNOME/libsecret)
   * [kwallet](https://api.kde.org/frameworks/kwallet/html/index.html)
 
-### `file` backend
+#### `2. file` backend
 
-The `file` backend stores the encrypted keys inside the app's configuration directory. A password entry is required everytime a user access it, which may also occur multiple times of repeated password prompts in one single command.
+The `file` backend stores the encrypted keys inside the app's configuration directory. A password entry is required every time a user access it, which may also occur multiple times of repeated password prompts in one single command.
 
-### `test` backend
+#### `3. test` backend
 
 The `test` backend is a password-less variation of the `file` backend. It stores unencrypted keys inside the app's configuration directory. It should only be used in testing environments and never be used in production.
 
-## Transactions subcommands - `cronosd tx`
+## Transaction subcommands - `cronosd tx`
 
 ### `tx bank send` - Transfer operation
 
@@ -424,7 +424,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 Once your funds are unbonded, It will be locked until the`unbonding_time`has passed.
 {% endhint %}
 
-## Balance & transaction history
+## Balance & transaction history - cronosd query
 
 ### `query bank balances` - Check your transferable balance
 
@@ -451,7 +451,7 @@ $ cronosd query bank balances tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --outp
 ```
 {% endhint %}
 
-## Advance operations and transactions
+## Advanced operations and transactions
 
 ### rollback
 
@@ -462,6 +462,23 @@ a faster way to do it as of cronos v1.0.2 would be to use `rollback`.
 //rollback example at current height 6569206
 Rolled back state to height <a data-footnote-ref href="#user-content-fn-1">6569205</a> and hash 5BFA3A9FA0C207B83D327330ADE77C46A5E688A24864614843C743FDFD968BCD%
 </code></pre>
+
+
+
+### index-eth-tx
+
+{% hint style="danger" %}
+Only use this command if you are solely using evm-level queries as evm JSON-RPC queries will remain available after re-indexing, however cosmos-level tx will not be available anymore. For example this will no longer be possible: [https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_](https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_)
+{% endhint %}
+
+After `v1.0.2` nodes can now enable the custom transaction indexer to reduce disk size. \
+The custom tx indexer can be enabled in `app.toml` by setting the `json-rpc.enable-indexer` to `true`. Usually, you will want to re-index previous indexed blocks by using the `--backward` field, e.g.:
+
+```bash
+cronosd index-eth-tx backward
+```
+
+After running the re-index command you will notice in your `.cronos/data/` directory a new file called `evmindexer.db` from which you can see that the size is smaller than the original `tx_index.db` . You can now safely remove the `tx_index.db`file.
 
 
 
