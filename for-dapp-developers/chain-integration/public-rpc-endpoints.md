@@ -48,21 +48,6 @@ If you are sending large numbers of transactions from your backend, consider set
 * **Swagger Playground**
   * [https://cronos.org/swagger?network=testnet](https://cronos.org/swagger?network=testnet)
 {% endtab %}
-
-{% tab title="Gravity Bridge Testnet" %}
-* **EVM HTTP JSON RPC (Web3 compatible)**
-  * [https://evm-p11.cronos.org](https://evm-p11.cronos.org)
-* **Block explorer**
-  * ****[https://cronos.crypto.org/explorer/pioneer11](https://cronos.crypto.org/explorer/pioneer11)
-* **Tendermint RPC**
-  * [https://rpc-p11.cronos.org:443](https://rpc-p11.cronos.org)
-* **Cosmos RESTful**
-  * [https://rest-p11.cronos.org](https://rest-p11.cronos.org)
-* **Cosmos gRPC Based**
-  * [https://grpc-p11.cronos.org](https://grpc-p11.cronos.org)
-* **Swagger Relayer API**
-  * [https://cronos.org/pioneer11/relayer/api-doc/#/](https://cronos.org/pioneer11/relayer/api-doc/#/)
-{% endtab %}
 {% endtabs %}
 
 ### Commercial node providers

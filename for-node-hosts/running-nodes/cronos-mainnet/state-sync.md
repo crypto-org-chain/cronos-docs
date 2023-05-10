@@ -36,7 +36,8 @@ The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases
 * Install the **Cronos Mainnet** binaries from github:
 
 <pre class="language-bash"><code class="lang-bash"><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.8.0/cronos_0.8.0_Linux_x86_64.tar.gz
-</strong>tar -zxvf cronos_0.8.0_Linux_x86_64.tar.gz</code></pre>
+</strong>tar -zxvf cronos_0.8.0_Linux_x86_64.tar.gz
+</code></pre>
 
 * Check that **`cronosd`** is effectively installed:
 
@@ -49,7 +50,7 @@ The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases
 
 ## Step 2. Configure cronosd
 
-* Initialize **cronosd.** Replace the **\[moniker]** with an ID for your node. ****&#x20;
+* Initialize **cronosd.** Replace the **\[moniker]** with an ID for your node. &#x20;
 
 ```bash
 ./bin/cronosd init [moniker] --chain-id cronosmainnet_25-1

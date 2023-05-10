@@ -18,12 +18,12 @@ The first two methods exist in the deployed anyCall contracts.
 DApps need to develop and deploy:
 
 * A sender contract on chain A calling the `anyCall` on the official AnyCall contract
-* A receiver contract on chain B with a function named **** `anyExecute`\
+* A receiver contract on chain B with a function named `anyExecute`\
   This **needs to be present and it will be called!**
 
-<mark style="color:green;">**DAPPS sender contract(Chain A)**</mark>** ->** `anyCall`(Chain A) _****_** ->** \
-****_SMPC Network_ **->** `anyExec`(Chain B) **->`AnyCallExecutor` ->**\
-****`anyExecute` by <mark style="color:green;">**DAPP receiver contract(Chain B)**</mark>
+<mark style="color:green;">**DAPPS sender contract(Chain A)**</mark>** ->** `anyCall`(Chain A) **->** \
+_SMPC Network_ **->** `anyExec`(Chain B) **->`AnyCallExecutor` ->**\
+`anyExecute` by <mark style="color:green;">**DAPP receiver contract(Chain B)**</mark>
 
 
 
@@ -49,7 +49,7 @@ More details on the parameters can be found [here](https://docs.multichain.org/d
 
 #### 3. AnyCallExecutor
 
-As stated above, **** `AnyCallExecutor` **** will make the final execution to your destination contract as a sandbox.
+As stated above,  `AnyCallExecutor`  will make the final execution to your destination contract as a sandbox.
 
 The address of this executor contract is stored in the main anycall contract. It can be accessed with an interface function like below.
 

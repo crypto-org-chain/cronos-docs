@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-Moralis provides the full-stack workflow for building high-performance Dapps, which is now integrated with Cronos Chain. It serves as one of the leading platforms for Web3 development that Web3 developers can simplify their workflow by accessing the Moralis developer tools on the Cronos chain, including high-performance JSON-RPC endpoints, NFT data indexers, and other advanced functionalities. **** Cronos integration is available for Moralis Identity, Moralis Real-Time, Moralis API and Moralis SDK.&#x20;
+Moralis provides the full-stack workflow for building high-performance Dapps, which is now integrated with Cronos Chain. It serves as one of the leading platforms for Web3 development that Web3 developers can simplify their workflow by accessing the Moralis developer tools on the Cronos chain, including high-performance JSON-RPC endpoints, NFT data indexers, and other advanced functionalities. Cronos integration is available for Moralis Identity, Moralis Real-Time, Moralis API and Moralis SDK.&#x20;
 
 Building Cronos Dapp with Moralis includes three main steps, which are setting up Moralis Server and building the login component as well as Dashboard. Below provides a brief introduction of components and functions for Cronos Dapp building with Moralis. Developers interested in exploring the full details can refer to [Moralis official doc](https://docs.moralis.io/moralis-dapp/web3-api) and [Moralis Dapp building guide](https://moralis.io/how-to-build-a-cronos-dapp/).
 
@@ -48,7 +48,7 @@ login = async () => {
 }
 ```
 
-``
+
 
 ### **`Functions`**`:`
 
@@ -100,7 +100,7 @@ logout = async () => {
 }
 ```
 
-****
+
 
 ### **Resources**
 

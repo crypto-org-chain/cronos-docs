@@ -69,7 +69,7 @@ The query with params command allows users to query the feemarket parameters.
 
 **`./cronosd query feemarket params [flags]`**
 
-**``**
+
 
 **REST endpoint**
 

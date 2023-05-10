@@ -46,7 +46,7 @@ import "@cronos-labs/hardhat-cronoscan";
 
 In your project's hardhat.config.js, append to your existing configurations. Replace `{YOUR_CRONOSCAN_API_KEY}`with your Cronoscan API key.
 
-If you don’t have a Cronoscan API KEY, you will need to [create a Cronoscan account](https://docs.cronos.org/block-explorers/block-explorer-and-api-keys#creating-api-keys-on-cronoscan) first. After you log **** in to the Cronoscan account, you will be able to generate it at [API-KEY page](https://cronoscan.com/myapikey). Cronoscan Testnet shares the same API key as Cronoscan Mainnet, but it is recommended to generate a new one on the Cronoscan portal and replace `{YOUR_CRONOSCAN_TESTNET_API_KEY}` with it. One Cronoscan allows creating three API KEYs.
+If you don’t have a Cronoscan API KEY, you will need to [create a Cronoscan account](https://docs.cronos.org/block-explorers/block-explorer-and-api-keys#creating-api-keys-on-cronoscan) first. After you log in to the Cronoscan account, you will be able to generate it at [API-KEY page](https://cronoscan.com/myapikey). Cronoscan Testnet shares the same API key as Cronoscan Mainnet, but it is recommended to generate a new one on the Cronoscan portal and replace `{YOUR_CRONOSCAN_TESTNET_API_KEY}` with it. One Cronoscan allows creating three API KEYs.
 
 Update the settings as below under `hardhat.config.ts`
 

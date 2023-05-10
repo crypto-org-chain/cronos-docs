@@ -72,7 +72,7 @@ You should deploy the contract to the Cronos network. The contract constructor r
 
 _Remark: make sure that you are using the_ [_Cronos WitnetRandomness address_](https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/contract-addresses#cronos-chain)_, not the_  [_Cronos WitnetRequestBoard address_](https://docs.witnet.io/smart-contracts/witnet-web-oracle/contracts-addresses#cronos-chain)_._
 
-****
+
 
 In case a gas estimation error appears when executing `requestRandomNumber()`, increasing the gas allowance will solve the problem. Since randomisation requests will take some time to complete, calling `fetchRandomNumber()` right after `requestRandomNumber()` will most likely cause the transaction to revert. Therefore, you should wait for 5 to 10 minutes before executing `fetchRandomNumber()`.&#x20;
 

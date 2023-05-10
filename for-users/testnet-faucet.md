@@ -13,8 +13,4 @@ In case you have reached the daily limit on faucet , you can simply send a messa
 {% tab title="Testnet" %}
 * [Test-token faucet](https://cronos.org/faucet)
 {% endtab %}
-
-{% tab title="Gravity Bridge" %}
-* [Test-token faucet](https://cronos.org/pioneer11-faucet)
-{% endtab %}
 {% endtabs %}

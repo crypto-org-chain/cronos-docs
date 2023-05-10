@@ -10,6 +10,6 @@ In this section you can find different tutorials on how to bridge your assets:
 [other\_chain](other\_chain/)
 {% endcontent-ref %}
 
-{% content-ref url="gb-testnet.md" %}
-[gb-testnet.md](gb-testnet.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

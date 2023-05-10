@@ -21,7 +21,7 @@ Set the Connection Type of `ConnectWalletConnect` from `PlayCppSdkActor` to: **G
 To display QR Code in Unreal Engine, we provide a 2D Texture for users to embed it into a Widget or HUD. In the following example, we will create a `WBP_QR` Widget for displaying the QR Code.
 
 1.  Select **Maps**, right click **Content Browser** > **User Interface** > **Widget Blueprint**\
-    ****
+
 
     <div>
 

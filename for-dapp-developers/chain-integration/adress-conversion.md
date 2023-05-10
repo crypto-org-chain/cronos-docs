@@ -24,7 +24,7 @@ print(eth_address)
 ```
 ````
 
-Vice versa, in order to convert from an Ethereum `0x...` **** to a Bech32 `crc...` address:
+Vice versa, in order to convert from an Ethereum `0x...` to a Bech32 `crc...` address:
 
 ````python
 ```python

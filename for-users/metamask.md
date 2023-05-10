@@ -63,14 +63,6 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 * **Symbol**:`tCRO`
 * **Block explorer URL:** `https://cronos.org/explorer/testnet3/`
 {% endtab %}
-
-{% tab title="Gravity Bridge" %}
-* **Name:** Pioneer 11
-* **New RPC URL:** `https://evm-p11.cronos.org`
-* **Chain ID:**`340`
-* **Symbol:**`tCRO`
-* **Block explorer URL:** `https://cronos.org/explorer/pioneer11`
-{% endtab %}
 {% endtabs %}
 
 ![](../.gitbook/assets/Metamask-settings.png)
