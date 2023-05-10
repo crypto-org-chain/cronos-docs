@@ -1,4 +1,4 @@
-# From Crypto.org Chain
+# IBC (Crypto.org Chain, other Cosmos chains)
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The Cronos Bridge’s goal is to support the seamless transfer of assets between
 
 The Cronos Bridge (Beta) can be found at [https://cronos.org/bridge](https://cronos.org/bridge)
 
-Cronos Bridge is a fully decentralised protocol built on the open-source projects of [IBC](https://ibcprotocol.org/) and [Gravity Bridge](https://github.com/cosmos/gravity-bridge).
+Cronos Bridge is a fully decentralised protocol built on the open-source projects of [IBC](https://ibcprotocol.org/).
 
 Please read this guide and review the project documentation carefully as misuse may cause the incorrect transfer or even loss of assets. We recommend transferring a small amount first to get yourself acquainted with the Bridge before moving over significant amounts.
 
@@ -27,11 +27,6 @@ Please read this guide and review the project documentation carefully as misuse 
 #### Currently supported wallets:
 
 * Metamask, Keplr, Crypto.com DeFi Wallet
-
-#### Coming Soon:
-
-* Ethereum <=> Cronos \[Testnet]
-* ETH, WETH, WBTC, USDC, USDT, DAI
 
 We are constantly working on adding new tokens and blockchains. If you have any feedback or concerns, please reach out to us at product.bridge@crypto.org.
 

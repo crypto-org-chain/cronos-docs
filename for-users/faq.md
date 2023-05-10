@@ -54,7 +54,7 @@ Please check the transaction history table for your past transactions. If your t
 #### Is transferring tokens across blockchains safe?
 
 * As with any decentralised application, there is a degree of risk related to code exploits and hacking.
-* Our bridge code is publicly available. We leverage open-source code from the IBC protocol and Gravity bridge projects.
+* Our bridge code is publicly available. We leverage open-source code from the IBC protocol project.
 
 
 
