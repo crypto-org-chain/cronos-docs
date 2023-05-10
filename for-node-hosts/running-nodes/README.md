@@ -14,10 +14,6 @@ Read this section on how to setup a node on Cronos Mainnet, Testnet, Devnet or G
 [local-devnet.md](local-devnet.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="cronos-node-best-practises.md" %}
 [cronos-node-best-practises.md](cronos-node-best-practises.md)
 {% endcontent-ref %}
