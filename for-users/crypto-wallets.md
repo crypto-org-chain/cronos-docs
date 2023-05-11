@@ -46,5 +46,5 @@ See [Brave Wallet](brave-wallet.md) for an easy-to-follow guide of configuration
 
 Many other great crypto wallets support Cronos chain cryptocurrencies.
 
-If you are looking for comprehensive portfolio dashboards to view your various cryptocurrencies and DeFi positions on Cronos chain, check  out [Debank](https://debank.com/) and [Zapper](https://zapper.fi/).
+If you are looking for comprehensive portfolio dashboards to view your various cryptocurrencies and DeFi positions on Cronos chain, check  out [Debank](https://debank.com/) and [Rabby](https://rabby.io/).
 
