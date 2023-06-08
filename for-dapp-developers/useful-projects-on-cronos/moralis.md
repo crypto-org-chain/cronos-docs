@@ -10,7 +10,7 @@ Building Cronos Dapp with Moralis includes three main steps, which are setting u
 
 Developers need to have an account with Moralis to get started.&#x20;
 
-In the main dashboard go to “Create New Dapp” and select Cronos Testnet or Cronos mainnet for launching your Dapp on the Cronos chain.
+In the main dashboard go to “Create New Dapp” and select Cronos network for launching your Dapp on the Cronos chain.
 
 ![](https://lh5.googleusercontent.com/7oIaGeTNe80fuhymIeCuPRIg-uoSS9bI3OO2VLGWZi3hOIyPfc2Dmc7i48vRbkcuLHSxZrMMpFauaMmRtByIbX0xWlSp020-zodS-r0ZpFGMqUlyjszH6Td0IbqGpePIzk7MKB1F7SGSD7ZnpJf0DP4)
 
