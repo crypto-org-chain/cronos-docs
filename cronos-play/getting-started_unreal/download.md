@@ -14,7 +14,7 @@ Afterwards, the plugin will begin to download
 
 ## Enabling the Plugin
 
-* In Epic Games Launcher, click **Launch**, for example, **Unreal Engine 5.1**
+* In Epic Games Launcher, click **Launch**, for example, **Unreal Engine 5.2**
 * Select or Create New Project
 * After **Unreal Editor** is opened, click **Edit** > **Plugins**, and search for **Cronos Play for Unreal Engine**
 * Check **Enabled** box and press **Restart Now** button to restart the project, so that the plugin changes can take effect

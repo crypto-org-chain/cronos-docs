@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 
-Unreal Engine 4.27, 5.0, or 5.1
+Unreal Engine 4.27, 5.0, 5.1 or 5.2
 
 ## Supported OS
 
