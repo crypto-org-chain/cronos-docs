@@ -6,86 +6,74 @@ layout: editorial
 
 ## Introduction
 
-[Covalent](https://www.covalenthq.com/?utm\_source=cronos\&utm\_medium=partner-docs) provides a unified API to bring full transparency and visibility to assets across all blockchain networks including Cronos.
+[Covalent](https://www.covalenthq.com/?utm\_source=cronos\&utm\_medium=partner-docs) is a hosted blockchain data solution providing access to historical and current on-chain data on [Cronos](https://www.covalenthq.com/docs/networks/cronos/?utm\_source=cronos\&utm\_medium=partner-docs) and other blockchains.
 
-To get started, sign up for an [**API Key**](https://www.covalenthq.com/platform/?utm\_source=cronos\&utm\_medium=partner-docs).
+Covalent maintains a full archival copy of every supported blockchain, meaning every balance, transaction, log event, and NFT asset data is available from the genesis block. This data is available via:
+
+1. Unified API - Incorporate blockchain data into your app with a familiar REST API
+2. Increment - Create and embed custom charts with no-code analytics
+
+**Consider using Covalent if you need:**
+
+* Structured and enhanced on-chain data well beyond what you get from RPC providers
+* Broad and deep multi-chain data at scale
+* Enterprise-grade performance
+
+[**Sign up to start building on Cronos**](https://www.covalenthq.com/platform/?utm\_source=cronos\&utm\_medium=partner-docs)
+
+&#x20;
 
 ## API Features
 
-The Covalent API is RESTful and offers the following out-of-the-box for _**Cronos**_:
+### Unified API
 
-| **Covalent API**          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Response formats**      | JSON and CSV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Real time response**    | 2 blocks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Batch response**        | 30 minutes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Request volume limit**  | None                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Request rate limit**    | 5 requests per second                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Base URL**              | [https://api.covalenthq.com/v1/](https://api.covalenthq.com/v1/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Networks & `chain_id`** | Mainnet - `25`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Supported Endpoints**   | <p><strong>Class A</strong><br>- <a href="https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/25/?utm_source=cronos&#x26;utm_medium=partner-docs">Balances</a><br>- <a href="https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/25/?utm_source=cronos&#x26;utm_medium=partner-docs">Transactions</a><br>- <a href="https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/25/?utm_source=cronos&#x26;utm_medium=partner-docs">Transfers</a><br>- <a href="https://www.covalenthq.com/docs/api/#/0/Get%20token%20holders%20as%20of%20any%20block%20height/USD/25/?utm_source=cronos&#x26;utm_medium=partner-docs">Token Holders</a><br>- <a href="https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20contract%20address/USD/25/?utm_source=cronos&#x26;utm_medium=partner-docs">Log Events (Contract Address)</a><br>- <a href="https://www.covalenthq.com/docs/api/#/0/Get%20log%20events%20by%20topic%20hash(es)/USD/25/?utm_source=cronos&#x26;utm_medium=partner-docs">Log Events (Topic Hash)</a></p> |
+<figure><img src="https://www.datocms-assets.com/86369/1686100423-example-api-response-json-cronos.png" alt=""><figcaption></figcaption></figure>
 
-Try the supported endpoints directly in your browser from our [API Reference](https://covalenthq.com/docs/api/?utm\_source=cronos\&utm\_medium=partner-docs) or use the following code examples. **The JSON response format is the same for all endpoints:**
+The Covalent API is RESTful and offers the following for Cronos:
 
-```json
-❴
-    "data": ..., 
-    "error": false,
-    "error_message": null,
-    "error_code": null
-❵
-```
+| **Features**                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Response Formats**                            | JSON, CSV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Real-Time Data Latency**                      | 2 blocks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Batch Data Latency**                          | 30 minutes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Supported Networks (`chainName`, `chainId`)** | <p>Mainnet: <code>cronos-mainnet</code>, <code>25</code><br>Testnet: <code>cronos-testnet</code>, <code>338</code></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **API Tiers**                                   | <p><a href="https://www.covalenthq.com/docs/unified-api/pricing/?utm_source=cronos&#x26;utm_medium=partner-docs#free-tier">Free tier</a><br><a href="https://www.covalenthq.com/docs/unified-api/pricing/?utm_source=cronos&#x26;utm_medium=partner-docs#premium-tier">Premium tier</a></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **API Categories**                              | <p><a href="https://www.covalenthq.com/docs/api/balances/get-token-balances-for-address/?utm_source=cronos&#x26;utm_medium=partner-docs">Balances</a><br><a href="https://www.covalenthq.com/docs/api/nft/get-nfts-for-address/?utm_source=cronos&#x26;utm_medium=partner-docs">NFTs</a><br><a href="https://www.covalenthq.com/docs/api/transactions/get-transactions-for-address/?utm_source=cronos&#x26;utm_medium=partner-docs">Transactions</a><br><a href="https://www.covalenthq.com/docs/api/security/get-token-approvals-for-address/?utm_source=cronos&#x26;utm_medium=partner-docs">Security</a><br><a href="https://www.covalenthq.com/docs/api/base/get-log-events-by-contract-address/?utm_source=cronos&#x26;utm_medium=partner-docs">Log Events &#x26; Others</a></p> |
 
-{% tabs %}
-{% tab title="Curl" %}
-```
-curl -X GET "https://api.covalenthq.com/v1/25/address/0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8/balances_v2/?key={YOUR API KEY}" -H "Accept: application/json"
-```
-{% endtab %}
+#### Get started
 
-{% tab title="JavaScript" %}
-```
-const APIKEY = 'YOUR API KEY';
-const baseURL = 'https://api.covalenthq.com/v1'
-const blockchainId = 25
-const demoAddress = '0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8'
+* [API Key](https://www.covalenthq.com/platform/?utm\_source=cronos\&utm\_medium=partner-docs) - sign up for free
+* [Quickstart](https://www.covalenthq.com/docs/unified-api/quickstart/?utm\_source=cronos\&utm\_medium=partner-docs) - summary of key resources to get you building immediately on blockchain
+* [API Reference](https://www.covalenthq.com/docs/api/?utm\_source=cronos\&utm\_medium=partner-docs) - try all the endpoints directly from your browser
+* [Guides](https://www.covalenthq.com/docs/unified-api/guides/?utm\_source=cronos\&utm\_medium=partner-docs) - learn how to build dapps, fetch data and extend your Web3 knowledge
 
-async function getWalletBalance(chainId, address) {
-    const url = new URL(`${baseURL}/${chainId}/address/${address}/balances_v2/?key=${APIKEY}`);
-    const response = await fetch(url);
-    const result = await response.json();
-    const data = result.data;
-    console.log(data)
-    return data;
-}
+### Increment
 
-// Example address request
-getWalletBalance(blockchainId, demoAddress);
-```
-{% endtab %}
+<figure><img src="https://www.datocms-assets.com/86369/1684974544-increment-example-partner-docs.png" alt=""><figcaption></figcaption></figure>
 
-{% tab title="Python" %}
-```
-import requests
-API_KEY = 'YOUR API KEY'
-base_url = 'https://api.covalenthq.com/v1'
-blockchain_id = 25
-demo_address = '0xFEC4f9D5B322Aa834056E85946A32c35A3f5aDD8'
+Increment is a novel no-code charting and reporting tool powered by Covalent, revolutionizing how the Web3 space approaches analytics. Many analytics tools let you write SQL to create charts, but _Increment is the only one to encode business logic - Reach, Retention, and Revenue - into an SQL compiler that can write valid SQL for you._
 
-def get_wallet_balance(chain_id, address):
-    endpoint = f'/{chain_id}/address/{address}/balances_v2/?key={API_KEY}'
-    url = base_url + endpoint
-    result = requests.get(url).json()
-    data = result["data"]
-    print(data)
-    return(data)
+#### Increment use cases
 
+Increment can be used for:
 
-# Example address request
-get_wallet_balance(blockchain_id, demo_address)
-```
-{% endtab %}
-{% endtabs %}
+* [Analyzing Blockchain Networks](https://www.covalenthq.com/docs/increment/data-models/chain-gdp/?utm\_source=cronos\&utm\_medium=partner-docs)
+* [Analyzing DEXs](https://www.covalenthq.com/docs/increment/data-models/swap-land/?utm\_source=cronos\&utm\_medium=partner-docs)
+* [Analyzing NFT Marketplaces](https://www.covalenthq.com/docs/increment/data-models/jpeg-analysis/?utm\_source=cronos\&utm\_medium=partner-docs)
+
+For example, click on the following table to get the latest number of active wallets, transactions and tokens by day, week, month, or year for Cronos:
+
+&#x20;
+
+<figure><img src="https://www.datocms-assets.com/86369/1686100924-example_network_status_increment_general.png" alt=""><figcaption></figcaption></figure>
+
+#### Get started
+
+* [Increment](https://www.covalenthq.com/platform/increment/#/?utm\_source=cronos\&utm\_medium=partner-docs) - login via the Covalent Platform
+* [Docs](https://www.covalenthq.com/docs/increment/?utm\_source=cronos\&utm\_medium=partner-docs) - learn how to use Increment to build dynamic, custom charts
+* [Data Models Demo](https://www.covalenthq.com/docs/increment/data-models/model-intro/?utm\_source=cronos\&utm\_medium=partner-docs) - build analytics in 3 clicks
+* [Explore Models. Seek Alpha.](https://www.covalenthq.com/platform/increment/#/pages/covalent/chain-gdp/?utm\_source=cronos\&utm\_medium=partner-docs) - browse all data models
+* [Use Models. Become Alpha.](https://www.covalenthq.com/platform/increment/#/sql/query\_b6c88fd8604f49d5920ca86fa7/?utm\_source=cronos\&utm\_medium=partner-docs) - use a data model
 
 ## Use Cases
 
@@ -108,7 +96,6 @@ Check out Covalent's collection of ready-to-ship [**Code Templates**](https://gi
 Here are some additional resources to help you get started with the Covalent API:
 
 * [Cronos Network Details](https://www.covalenthq.com/docs/networks/cronos/?utm\_source=cronos\&utm\_medium=partner-docs)
-* [Project Showcase](https://www.covalenthq.com/docs/project-showcase/?utm\_source=cronos\&utm\_medium=partner-docs)
 * [Covalent API Reference](https://covalenthq.com/docs/api/?utm\_source=cronos\&utm\_medium=partner-docs)
-* [API FAQs](https://www.covalenthq.com/docs/developer/faq/?utm\_source=cronos\&utm\_medium=partner-docs)
+* [API FAQs](https://www.covalenthq.com/docs/unified-api/faq/)
 * [Discord Support](https://www.covalenthq.com/discord/?utm\_source=cronos\&utm\_medium=partner-docs)
