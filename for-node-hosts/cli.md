@@ -145,11 +145,7 @@ A list of commonly used flags of cronosd is listed below:
 
 A list of commonly used `cronosd` commands.
 
-| Command | Description                                                           | List                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `keys`  | [Key management](cli.md#keys-management-cronosd-keys)                 | <p><a href="cli.md#keys-add-wallet-name-create-a-new-key"><code>add &#x3C;wallet_name></code></a><br><br><a href="cli.md#keys-add-key-name-recover-restore-existing-key-by-seed-phrase"><code>add &#x3C;key_name> --recover</code></a><br><br><a href="cli.md#keys-list-list-your-keys"><code>list</code></a><br><br><a href="cli.md#keys-show-key-name-retrieve-key-information"><code>show &#x3C;key_name></code></a><br><br><a href="cli.md#keys-delete-key-name-delete-a-key"><code>delete &#x3C;key_name></code></a><br><br><a href="cli.md#keys-export-key-name-export-private-keys"><code>export &#x3C;key_name></code></a></p> |
-| `tx`    | [Transaction subcommands](cli.md#transactions-subcommands-cronosd-tx) | <p><a href="cli.md#tx-bank-send-transfer-operation"><code>bank send</code></a><br><br><a href="cli.md#delegate-you-funds-to-a-validator-tx-staking-delegate-validator-addr-amount"><code>staking delegate</code></a><br><br><a href="cli.md#unbond-your-delegated-funds-tx-staking-unbond-validator-addr-amount"><code>staking unbond</code></a><br><br><a href="cli.md#tx-staking-create-validator-joining-the-network-as-a-validator"><code>staking create-validator</code></a><br><br><a href="cli.md#tx-slashing-unjail-unjail-a-validator"><code>slashing unjail</code></a></p>                                                   |
-| `query` | [Query subcommands](cli.md#balance-and-transaction-history)           | [`query bank balance`](cli.md#query-bank-balances-check-your-transferable-balance)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+<table><thead><tr><th width="185.33333333333331">Command</th><th width="270">Description</th><th>List</th></tr></thead><tbody><tr><td><code>keys</code></td><td><a href="cli.md#keys-management-cronosd-keys">Key management</a></td><td><a href="cli.md#keys-add-wallet-name-create-a-new-key"><code>add &#x3C;wallet_name></code></a><br><br><a href="cli.md#keys-add-key-name-recover-restore-existing-key-by-seed-phrase"><code>add &#x3C;key_name> --recover</code></a><br><br><a href="cli.md#keys-list-list-your-keys"><code>list</code></a><br><br><a href="cli.md#keys-show-key-name-retrieve-key-information"><code>show &#x3C;key_name></code></a><br><br><a href="cli.md#keys-delete-key-name-delete-a-key"><code>delete &#x3C;key_name></code></a><br><br><a href="cli.md#keys-export-key-name-export-private-keys"><code>export &#x3C;key_name></code></a></td></tr><tr><td><code>tx</code></td><td><a href="cli.md#transactions-subcommands-cronosd-tx">Transaction subcommands</a></td><td><a href="cli.md#tx-bank-send-transfer-operation"><code>bank send</code></a><br><br><a href="cli.md#delegate-you-funds-to-a-validator-tx-staking-delegate-validator-addr-amount"><code>staking delegate</code></a><br><br><a href="cli.md#unbond-your-delegated-funds-tx-staking-unbond-validator-addr-amount"><code>staking unbond</code></a><br><br><a href="cli.md#tx-staking-create-validator-joining-the-network-as-a-validator"><code>staking create-validator</code></a><br><br><a href="cli.md#tx-slashing-unjail-unjail-a-validator"><code>slashing unjail</code></a></td></tr><tr><td><code>query</code></td><td><a href="cli.md#balance-and-transaction-history">Query subcommands</a></td><td><a href="cli.md#query-bank-balances-check-your-transferable-balance"><code>query bank balance</code></a></td></tr></tbody></table>
 
 You may also add the flag `-h, --help` on `cronosd [command]` to get more available commands and details.
 
@@ -376,7 +372,7 @@ Transfer operation involves the transfer of tokens between two addresses.
 #### **Send Funds** \[`tx bank send <from_key_or_address> <to_address> <amount> <network_id>`]
 
 {% hint style="info" %}
-Example: Send 10tcro from an address to another.
+Example: Send 10tcro from one address to another.
 
 ```bash
 $ cronosd tx bank send Default tcrc1gjdxrv77zfpq6cywcs8kg6gqyfhl5768ucel6t 10tcro  --chain-id cronostestnet_338-1
@@ -390,7 +386,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 Staking operations involve the interaction between an address and a validator. It allows you to create a validator and lock/unlocking funds for staking purposes.
 
-#### **Delegate you funds to a validator** \[`tx staking delegate <validator-addr> <amount>`]
+#### **Delegate your funds to a validator** \[`tx staking delegate <validator-addr> <amount>`]
 
 To bond funds for staking, you can delegate funds to a validator by the `delegate` command
 
@@ -421,7 +417,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 {% endhint %}
 
 {% hint style="info" %}
-Once your funds are unbonded, It will be locked until the`unbonding_time`has passed.
+Once your funds are unbonded, it will be locked until the`unbonding_time`has passed.
 {% endhint %}
 
 ## Balance & transaction history - cronosd query
@@ -468,7 +464,7 @@ Rolled back state to height <a data-footnote-ref href="#user-content-fn-1">65692
 ### index-eth-tx
 
 {% hint style="danger" %}
-Only use this command if you are solely using evm-level queries as evm JSON-RPC queries will remain available after re-indexing, however cosmos-level tx will not be available anymore. For example this will no longer be possible: [https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_](https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_)
+Only use this command if you are solely using evm-level queries as evm JSON-RPC queries will remain available after re-indexing, however cosmos-level tx will not be available anymore. For example, this will no longer be possible: [https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_](https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_)
 {% endhint %}
 
 After `v1.0.2` nodes can now enable the custom transaction indexer to reduce disk size. \
@@ -514,7 +510,7 @@ confirm transaction before signing and broadcasting [y/N]: y
 
 ### `tx slashing unjail` - Unjail a validator
 
-Validator could be punished and jailed due to network misbehaviour, for example if we check the validator set:
+Validator could be punished and jailed due to network misbehaviour, for example, if we check the validator set:
 
 ```bash
 $ cronosd query staking validators -o json | jq

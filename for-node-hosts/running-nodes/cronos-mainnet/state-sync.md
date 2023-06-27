@@ -24,26 +24,26 @@ So, in order to run a full node, it is better not to use state-sync, but use [Qu
 {% hint style="info" %}
 IMPORTANT
 
-State-sync depends on the ability to pull a snapshot from its persistent-peers, so there is some amount of timing and luck involved with this method. Although it is the fastest way, it is not always going to work, in case state-sync is not syncing, we recommend to use [quicksync](quicksync.md), although it takes longer time to download the snapshot, this method is more guaranteed to work.
+State-sync depends on the ability to pull a snapshot from its persistent-peers, so there is some amount of timing and luck involved with this method. Although it is the fastest way, it is not always going to work, in case state-sync is not syncing, we recommend using [quicksync](quicksync.md), although it takes a longer time to download the snapshot, this method is more guaranteed to work.
 {% endhint %}
 
 ## Step 1. Get the latest cronosd binary
 
 {% hint style="info" %}
-The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v0.8.0`
+The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v1.0.9`
 {% endhint %}
 
-* Install the **Cronos Mainnet** binaries from github:
+* Install the **Cronos Mainnet** binaries from GitHub:
 
-<pre class="language-bash"><code class="lang-bash"><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.8.0/cronos_0.8.0_Linux_x86_64.tar.gz
-</strong>tar -zxvf cronos_0.8.0_Linux_x86_64.tar.gz
+<pre class="language-bash"><code class="lang-bash"><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v1.0.9/cronos_1.0.9_Linux_x86_64.tar.gz
+</strong>tar -zxvf cronos_1.0.9_Linux_x86_64.tar.gz
 </code></pre>
 
 * Check that **`cronosd`** is effectively installed:
 
 ```bash
 ./bin/cronosd version
-0.8.0
+1.0.9
 ```
 
 
@@ -107,7 +107,7 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.cronos/config/config.toml
 1:40AM INF Adding persistent peers
 ```
 
-This will take a couple of minutes, if your node manages to state-sync, you should see that  snapshot chunks are being downloaded, and your node starts signing blocks.
+This will take a couple of minutes, if your node manages to state-sync, you should see that snapshot chunks are being downloaded, and your node starts signing blocks.
 
 To check the current node syncing status:
 

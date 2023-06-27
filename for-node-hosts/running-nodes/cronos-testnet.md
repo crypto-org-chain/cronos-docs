@@ -58,7 +58,7 @@ To run Cronos Tesnet nodes, you will need a machine with the following minimum r
   * RAM: 4 GB (LevelDB) or 64G RAM (RocksDB)\*\*\*&#x20;
   * CPU: 4-core
 
-_\*Only in case state-sync enabled._ \
+_\*Only in case of state-sync enabled._ \
 _\*\* e.g. Note that size of snapshots will keep growing._ \
 _\*\*\* Note that during a state-sync the node might require higher RAM than 3GB but, returns to normal after state-sync has finished._
 
@@ -104,15 +104,15 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
 *   To install released **Cronos testnet binaries** from github:
 
     ```bash
-    $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v0.6.0-testnet/cronos_0.6.0-testnet_Linux_x86_64.tar.gz
-    $ tar -zxvf cronos_0.6.0-testnet_Linux_x86_64.tar.gz
+    $ curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v1.0.9/cronos_1.0.9-testnet_Linux_x86_64.tar.gz
+    $ tar -zxvf cronos_1.0.9-testnet_Linux_x86_64.tar.gz
     ```
 
     Afterwards, you can check the version of `cronosd` by
 
     ```bash
     $ ./cronosd version
-    v0.6.0-testnet
+    v1.0.9-testnet
     ```
 
 ### Step 2. Configure `cronosd`
@@ -124,7 +124,7 @@ To simplify the following step, we will be using **Linux** (Intel x86) for illus
     ```bash
     $ ./cronosd unsafe-reset-all
     ```
-*   Remove the old genesis file:
+*   Remove the old Genesis file:
 
     ```bash
     $ rm ~/.cronos/config/genesis.json
@@ -149,7 +149,7 @@ Before kick-starting your node, we will have to configure your node so that it c
 {% hint style="info" %}
 NOTE
 
-* Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simply the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
+* Depending on your cronosd home setting, the cronosd configuration will be initialized to that home directory. To simplify the following steps, we will use the default cronosd home directory `~/.cronos/` for illustration.
 * You can also put the `cronosd` to your binary path and run it by `cronosd`
 {% endhint %}
 
