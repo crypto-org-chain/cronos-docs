@@ -25,6 +25,8 @@
 
 ## FOR DAPP DEVELOPERS
 
+* [💡 Founder FAQs](for-dapp-developers/founder-faqs.md)
+* [🏅 Hacker's getting started resources](for-dapp-developers/hacker-resources.md)
 * [📃 Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
   * [Contract Deployment](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
   * [Contract Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
@@ -46,9 +48,6 @@
   * [Witnet](for-dapp-developers/useful-projects-on-cronos/witnet.md)
   * [Cronos Safe](for-dapp-developers/useful-projects-on-cronos/cronos-safe.md)
   * [Banxa](for-dapp-developers/useful-projects-on-cronos/banxa.md)
-* [💡 Tips & FAQs](for-dapp-developers/tips-and-faqs/README.md)
-  * [Founder FAQs](for-dapp-developers/tips-and-faqs/founder-faqs.md)
-  * [Hackathon resources](for-dapp-developers/tips-and-faqs/hackathon-resources.md)
 
 ## FOR NODE HOSTS
 

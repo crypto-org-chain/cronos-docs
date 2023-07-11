@@ -2,17 +2,17 @@
 description: Quick-start resource if you are hacking and need to integrate with Cronos.
 ---
 
-# Hackathon resources
+# 🏅 Hacker's getting started resources
 
 ## Overview of Cronos chain
 
-[Cronos](https://cronos.org/) ([cronos.org](http://cronos.org)) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Crypto.org](http://crypto.org) and more than 400 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 70 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
+[Cronos](https://cronos.org/) ([cronos.org](http://cronos.org)) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Crypto.org](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
 
 [Broken link](broken-reference "mention")
 
 ## How to stand out and win in a Web3 hackathon 🥇
 
-Check out our [blog post](https://cronoslabs.substack.com/p/cronos-developer-series-5-tips-to-stand-out-in-a-web3-hackathon-924d774f1617).
+Check out our [blog post](https://blog.cronos.org/p/cronos-developer-series-5-tips-to-stand-out-in-a-web3-hackathon-924d774f1617).
 
 ## Hack with Cronos 🥚
 
@@ -22,7 +22,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 **Cronos overview & key links for developers**
 
-* Cronos docs: [https://cronos.org/docs/](https://docs.cronos.org/)
+* Cronos docs: [https://docs.cronos.org](https://docs.cronos.org)
 * Cronos Play (for game developers): [https://cronos.org/play](https://cronos.org/play)
 * [Why build on Cronos](https://cronoslabs.substack.com/p/why-build-grow-on-cronos-692da1de7885)
 * Cronos overview by Eat The Blocks: [https://www.youtube.com/watch?v=NqeeKEJiPZU](https://www.youtube.com/watch?v=NqeeKEJiPZU)
@@ -30,7 +30,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 **MetaMask end-user configuration**
 
 * The [cronos.org](http://cronos.org) website has a little orange button at the top of the page, that you can click to add Cronos mainnet to your MetaMask wallet.
-* For more details, see [Metamask configuration](../../for-users/metamask.md)
+* For more details, see [Metamask configuration](../for-users/metamask.md)
 
 **JSON-RPC endpoint configuration**
 
@@ -93,9 +93,9 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 * [Build a simple Dapp](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
 * [Create a NFT collection on Cronos and IPFS](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
 
-**Videos**
+**Video tutorials**
 
-<table><thead><tr><th width="88">Top</th><th width="264">Title</th><th width="307">URL</th><th width="141">Date</th></tr></thead><tbody><tr><td></td><td>Creating dapps on Cronos chain</td><td><a href="https://www.youtube.com/watch?v=XUNbR91abwY">https://www.youtube.com/watch?v=XUNbR91abwY</a></td><td>June 10, 2022</td></tr><tr><td>⭐️</td><td>Creating games with Cronos Play</td><td><a href="https://www.youtube.com/watch?v=D52Ike59cL8&#x26;t=5s">https://www.youtube.com/watch?v=D52Ike59cL8&#x26;t=5s</a></td><td>June 10, 2022</td></tr><tr><td></td><td>Cronos Play tutorial</td><td><a href="https://youtu.be/xLSgn5OZql4">https://youtu.be/xLSgn5OZql4</a></td><td>August 23, 2022</td></tr><tr><td></td><td>RockX walk through</td><td><a href="https://www.youtube.com/watch?v=gvY2vyYSZHs">https://www.youtube.com/watch?v=gvY2vyYSZHs</a></td><td>August 24, 2022</td></tr><tr><td></td><td>Covalent walk through</td><td><a href="https://www.youtube.com/watch?v=f7ZHDByytFc&#x26;t">https://www.youtube.com/watch?v=f7ZHDByytFc&#x26;t</a></td><td>August 25, 2022</td></tr><tr><td></td><td>How to win a hackathon</td><td><a href="https://www.youtube.com/watch?v=kyMg0jtuT-8&#x26;t=29s">https://www.youtube.com/watch?v=kyMg0jtuT-8&#x26;t=29s</a></td><td>August 29, 2022</td></tr><tr><td></td><td>Building games with Moralis</td><td><a href="https://www.youtube.com/watch?v=EbO03yoorps">https://www.youtube.com/watch?v=EbO03yoorps</a></td><td>August 30, 2022</td></tr><tr><td></td><td>Moralis walk through</td><td><a href="https://www.youtube.com/watch?v=9F0dweAtm_U">https://www.youtube.com/watch?v=9F0dweAtm_U</a></td><td>September 1, 2022</td></tr><tr><td></td><td>Wallet game design choices</td><td><a href="https://www.youtube.com/watch?v=KdGfDyxmTNU">https://www.youtube.com/watch?v=KdGfDyxmTNU</a></td><td>September 5, 2022</td></tr><tr><td></td><td>Build your Web3 Game with Cronos Play</td><td><a href="https://www.youtube.com/watch?v=lmM7HgXDZ2w">https://www.youtube.com/watch?v=lmM7HgXDZ2w</a></td><td>September 9, 2022</td></tr><tr><td>⭐️</td><td>Create dApps on Cronos chain</td><td><a href="https://www.youtube.com/watch?v=lKzzyUXPeRk">https://www.youtube.com/watch?v=lKzzyUXPeRk</a></td><td>December 1, 2022</td></tr></tbody></table>
+<table><thead><tr><th width="120">Popular</th><th width="181">Title</th><th width="254">URL</th><th width="141">Date</th></tr></thead><tbody><tr><td></td><td>Creating dapps on Cronos chain</td><td><a href="https://www.youtube.com/watch?v=XUNbR91abwY">https://www.youtube.com/watch?v=XUNbR91abwY</a></td><td>June 10, 2022</td></tr><tr><td>⭐️</td><td>Creating games with Cronos Play</td><td><a href="https://www.youtube.com/watch?v=D52Ike59cL8&#x26;t=5s">https://www.youtube.com/watch?v=D52Ike59cL8&#x26;t=5s</a></td><td>June 10, 2022</td></tr><tr><td></td><td>Cronos Play tutorial</td><td><a href="https://youtu.be/xLSgn5OZql4">https://youtu.be/xLSgn5OZql4</a></td><td>August 23, 2022</td></tr><tr><td></td><td>RockX walk through</td><td><a href="https://www.youtube.com/watch?v=gvY2vyYSZHs">https://www.youtube.com/watch?v=gvY2vyYSZHs</a></td><td>August 24, 2022</td></tr><tr><td></td><td>Covalent walk through</td><td><a href="https://www.youtube.com/watch?v=f7ZHDByytFc&#x26;t">https://www.youtube.com/watch?v=f7ZHDByytFc&#x26;t</a></td><td>August 25, 2022</td></tr><tr><td></td><td>How to win a hackathon</td><td><a href="https://www.youtube.com/watch?v=kyMg0jtuT-8&#x26;t=29s">https://www.youtube.com/watch?v=kyMg0jtuT-8&#x26;t=29s</a></td><td>August 29, 2022</td></tr><tr><td></td><td>Building games with Moralis</td><td><a href="https://www.youtube.com/watch?v=EbO03yoorps">https://www.youtube.com/watch?v=EbO03yoorps</a></td><td>August 30, 2022</td></tr><tr><td></td><td>Moralis walk through</td><td><a href="https://www.youtube.com/watch?v=9F0dweAtm_U">https://www.youtube.com/watch?v=9F0dweAtm_U</a></td><td>September 1, 2022</td></tr><tr><td></td><td>Wallet game design choices</td><td><a href="https://www.youtube.com/watch?v=KdGfDyxmTNU">https://www.youtube.com/watch?v=KdGfDyxmTNU</a></td><td>September 5, 2022</td></tr><tr><td></td><td>Build your Web3 Game with Cronos Play</td><td><a href="https://www.youtube.com/watch?v=lmM7HgXDZ2w">https://www.youtube.com/watch?v=lmM7HgXDZ2w</a></td><td>September 9, 2022</td></tr><tr><td>⭐️</td><td>Create dApps on Cronos chain</td><td><a href="https://www.youtube.com/watch?v=lKzzyUXPeRk">https://www.youtube.com/watch?v=lKzzyUXPeRk</a></td><td>December 1, 2022</td></tr></tbody></table>
 
 ## Essential developer tools 💻
 
@@ -117,7 +117,7 @@ Create games
 * Unity plugin: [docs](https://cronos.org/docs/play/getting-started.html) and [repo](https://github.com/ChainSafe/web3.unity)
 * Unreal plugin: [docs](https://cronos.org/docs/play/getting-started\_unreal.html#pre-requisites), [repo](https://github.com/cronos-labs/play-unreal-plugin) and [demo](https://github.com/cronos-labs/play-unreal-demo)
 * C++ SDK: [docs](https://cronos.org/docs/play/getting-started\_cpp.html#pre-requisites) and [repo](https://github.com/cronos-labs/play-cpp-sdk)
-* [Full list of available dev tools and integration](../useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
+* [Full list of available dev tools and integration](useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
 
 ## Developer support ☎️
 

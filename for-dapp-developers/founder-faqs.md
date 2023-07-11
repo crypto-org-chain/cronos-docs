@@ -2,7 +2,7 @@
 description: Planning to release a dApp on Cronos? Here is what you need to know.
 ---
 
-# Founder FAQs
+# 💡 Founder FAQs
 
 ## **Essential information sources**
 
@@ -98,7 +98,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 **Where can I find developer quick start resources?**
 
 * Check out the Cronos documentation: [https://docs.cronos.org/getting-started/readme](https://docs.cronos.org/getting-started/readme)
-* Check out this repository of resources published for Cronos hackathons: [hackathon-resources.md](hackathon-resources.md "mention")
+* Check out this repository of resources published for Cronos hackathons: [hacker-resources.md](hacker-resources.md "mention")
 
 **Are there best practices and security standards that apply to Dapps on Cronos?**
 
@@ -107,11 +107,11 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **I need a commercial node provider because my dApp exceeds the rate limits of the free Cronos JSON-RPC endpoints. Who offers this ?**
 
-* See here: [public-rpc-endpoints.md](../chain-integration/public-rpc-endpoints.md "mention")
+* See here: [public-rpc-endpoints.md](chain-integration/public-rpc-endpoints.md "mention")
 
 **Where can I find a list of available developer tools and integration?**
 
-* We have prepared one for you! See here: [dev-tools-and-integrations](../dev-tools-and-integrations/ "mention")
+* We have prepared one for you! See here: [dev-tools-and-integrations](dev-tools-and-integrations/ "mention")
 
 **Where can ask technical questions to integrate with Cronos chain?**
 
