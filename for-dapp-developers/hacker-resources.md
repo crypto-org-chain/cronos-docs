@@ -51,7 +51,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
           "chainId": 338,
           "url": "https://evm-t3.cronos.org/",
           "gasPrice": 5000000000000,
-          "blockExplorer": "https://testnet.cronoscan.com/",
+          "blockExplorer": "https://cronos.org/explorer/testnet3/",
           "blockExplorerPrefix": "https://cronos.org/explorer/testnet3/tx/"
         },
     }
@@ -74,7 +74,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
           "url": "https://evm-t3.cronos.org/",
           "maxPriorityFeePerGas": 5000000000,
           "maxFeePerGas": 6000000000000,
-          "blockExplorer": "https://testnet.cronoscan.com/",
+          "blockExplorer": "https://cronos.org/explorer/testnet3/",
           "blockExplorerPrefix": "https://cronos.org/explorer/testnet3/tx/"
         },
     }
