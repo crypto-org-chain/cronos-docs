@@ -16,7 +16,7 @@ To run Cronos Mainnet nodes, you will need a machine with the following minimum 
 
 ## Introduction
 
-The fastest way to get a node synced to the latest block-height, is by using [State-sync](https://docs.tendermint.com/master/tendermint-core/state-sync.html). With state-sync your node downloads a data snapshot near the head of the chain and verifies this data. This leads to drastically shorter times to join the network.
+The fastest way to get a node synced to the latest block-height, is by using [State-sync](https://docs.tendermint.com/v0.34/tendermint-core/state-sync.html). With state-sync your node downloads a data snapshot near the head of the chain and verifies this data. This leads to drastically shorter times to join the network.
 
 Keep in mind that the blocks before state-sync trust height will not be queryable. \
 So, in order to run a full node, it is better not to use state-sync, but use [Quicksync](quicksync.md)'s archive snapshot instead.&#x20;
