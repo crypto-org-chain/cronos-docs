@@ -54,7 +54,7 @@ Cronos Safe smart contracts were deployed using a deterministic deployment proxy
 
 The addresses of deployed contracts can be found in Gnosis Safe deployments repository (https://github.com/safe-global/safe-deployments/tree/main/src/assets/v1.3.0). The smart contracts deployed to Cronos mainnet have been verified on Cronoscan.
 
-***
+
 
 ## Resources
 

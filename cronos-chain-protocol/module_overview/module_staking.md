@@ -284,7 +284,7 @@ The following tables show overall effects on different configurations of the sta
 | Constraints          | N/A          | Value has to be positive           | Value has to be a positive                                    |
 | Sample configuration | `basetcro`   | `100` (50%)                        | `7`                                                           |
 
-***
+
 
 |                      | `max_validators`                     | `unbonding_time`                     |
 | -------------------- | ------------------------------------ | ------------------------------------ |

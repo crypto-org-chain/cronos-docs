@@ -46,7 +46,7 @@ Before bridging a large amount, we encourage testing a transfer of a small amoun
 
 ![](../assets/4b\_confirm\_wallet\_txn.png)
 
-***
+![](../assets/4c\_confirm\_wallet\_txn.png)
 
 **Step 4. Confirm the transaction**
 

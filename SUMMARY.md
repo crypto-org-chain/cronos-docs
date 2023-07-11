@@ -63,6 +63,7 @@
   * [Devnet](for-node-hosts/running-nodes/local-devnet.md)
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
   * [Cronosd build with Nix](for-node-hosts/running-nodes/cronosd-build-with-nix.md)
+  * [VersionDB](for-node-hosts/running-nodes/versiondb.md)
 * [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY

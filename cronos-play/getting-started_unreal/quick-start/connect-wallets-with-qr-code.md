@@ -39,7 +39,7 @@ To display QR Code in Unreal Engine, we provide a 2D Texture for users to embed 
 3.  Double click WBP\_QR and open the Designer editor, drag **Panel** > **Canvas Panel** to viewport to create a Canvas Panel, then drag **Common** > **Image** to the canvas (named it as `Image_0`), update on **Details** tab as: **512** (Size X) x **512** (Size Y)\
 
 
-    <div>
+    <div align="center">
 
     <figure><img src="../../../.gitbook/assets/cronos-gamefi-blueprint-wbp-qr-arrangement" alt=""><figcaption></figcaption></figure>
 

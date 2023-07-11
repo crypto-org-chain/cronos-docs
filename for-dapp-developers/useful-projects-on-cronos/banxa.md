@@ -6,10 +6,7 @@ Banxa powers the largest digital asset platforms by providing payments infrastru
 
 ### API Host
 
-| Environment | API Host                         |
-| ----------- | -------------------------------- |
-| Sandbox     | https://cronos.banxa-sandbox.com |
-| Production  | https://cronos.banxa.com         |
+<table><thead><tr><th width="166">Environment</th><th>API Host</th></tr></thead><tbody><tr><td>Sandbox</td><td>https://cronos.banxa-sandbox.com</td></tr><tr><td>Production</td><td>https://cronos.banxa.com</td></tr></tbody></table>
 
 ### NodeJS Examples
 

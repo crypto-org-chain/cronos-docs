@@ -1,4 +1,4 @@
-# Unity Integration example
+# 2D Game Example
 
 ### Overview
 
@@ -66,11 +66,11 @@ Network Name: **Cronos Testnet**
 
 ![](../assets/cronos-play/cronos-gamefi-integration-step6-2.png)
 
-***
+
 
 \* For acquiring the NFT, you can create your own (see [Reference #2](play.md#\_2-smart-contract)), or mint an ERC721 NFT at our [Cronos NFT faucet](https://cronos.org/nft-faucet) (see [Reference #3](play.md#\_3-nft-faucet)).
 
-***
+
 
 ### Build and Run
 
@@ -115,7 +115,7 @@ The above guideline documentation only highlights the basic integration between 
 
 ![](../assets/cronos-play/cronos-gamefi-integration-step2d.png)
 
-***
+
 
 ### Smart contract
 
@@ -235,7 +235,7 @@ contract My1155Token is ERC1155, Ownable {
 -  Copy the contract address
 ```
 
-***
+
 
 ### NFT Faucet
 
@@ -259,7 +259,7 @@ contract My1155Token is ERC1155, Ownable {
 
 ![](../assets/cronos-play/cronos-gamefi-integration-step6-2.png)
 
-***
+
 
 ### (Optional) List NFT for sale in marketplace faucet
 

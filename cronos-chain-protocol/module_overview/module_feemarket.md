@@ -20,15 +20,7 @@ Below are the parameters for the `x/feemarket` module:
 
 
 
-| Key                      | Type    | Default Values | Description                                                                                                             |
-| ------------------------ | ------- | -------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| NoBaseFee                | bool    | false          | control the base fee adjustment                                                                                         |
-| BaseFeeChangeDenominator | uint32  | 8              | bounds the amount the base fee that can change between blocks                                                           |
-| ElasticityMultiplier     | uint32  | 2              | bounds the threshold which the base fee will increase or decrease depending on the total gas used in the previous block |
-| BaseFee                  | uint32  | 1000000000     | base fee for EIP-1559 blocks                                                                                            |
-| EnableHeight             | uint32  | 0              | height which enable fee adjustment                                                                                      |
-| MinGasPrice              | sdk.Dec | 0              | global minimum gas price that needs to be paid to include a transaction in a block                                      |
-| min\_gas\_multiplier     | sdk.Dec | 0              | bounds the minimum gasUsed to be charged to senders based on the GasLimit                                               |
+<table><thead><tr><th width="192">Key</th><th width="121">Type</th><th width="125">Default Values</th><th>Description</th></tr></thead><tbody><tr><td>NoBaseFee</td><td>bool</td><td>false</td><td>control the base fee adjustment</td></tr><tr><td>BaseFeeChangeDenominator</td><td>uint32</td><td>8</td><td>bounds the amount the base fee that can change between blocks</td></tr><tr><td>ElasticityMultiplier</td><td>uint32</td><td>2</td><td>bounds the threshold which the base fee will increase or decrease depending on the total gas used in the previous block</td></tr><tr><td>BaseFee</td><td>uint32</td><td>1000000000</td><td>base fee for EIP-1559 blocks</td></tr><tr><td>EnableHeight</td><td>uint32</td><td>0</td><td>height which enable fee adjustment</td></tr><tr><td>MinGasPrice</td><td>sdk.Dec</td><td>0</td><td>global minimum gas price that needs to be paid to include a transaction in a block</td></tr><tr><td>min_gas_multiplier</td><td>sdk.Dec</td><td>0</td><td>bounds the minimum gasUsed to be charged to senders based on the GasLimit</td></tr></tbody></table>
 
 #### Base Fee
 
