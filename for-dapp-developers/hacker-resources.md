@@ -93,7 +93,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 **Other useful tutorials**
 
-* Create an end to end Web3 application: [smart contract](https://github.com/cronos-labs/cronos-accelerator-workshop-hardhat) and [client](https://github.com/cronos-labs/cronos-accelerator-workshop-client) (repositories)
+* Create an end to end Web3 application: [smart contract](https://github.com/cronos-labs/cronos-accelerator-workshop-hardhat) and [front-end client](https://github.com/cronos-labs/cronos-accelerator-workshop-client) (repositories)
 * [Create a NFT collection on Cronos and IPFS](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
 * [Create dApps on Cronos chain](https://www.youtube.com/watch?v=lKzzyUXPeRk) (video)
 * [Build your Web3 Game with Cronos Play](https://www.youtube.com/watch?v=lmM7HgXDZ2w) (video)
