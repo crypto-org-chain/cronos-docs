@@ -85,17 +85,18 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 ## Tutorials 🚀
 
-**Blog posts**
+**Essential tutorials / boilerplates**
 
-* [Deploy and verify your smart contracts](https://cronoslabs.substack.com/p/cronos-developer-series-deploy-verify-your-contracts-using-hardhat-8b6ab6928986)
-* [Create & deploy a smart contract with OpenZeppelin Wizard and Remix (low code)](https://cronoslabs.substack.com/p/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93)
-* [Connect your Dapp to wallets](https://cronoslabs.substack.com/p/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5)
-* [Build a simple Dapp](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
+* [Deploy and verify your smart contracts](https://github.com/kentimsit/cronos-hardhat-boilerplate) (see Readme for instructions)
+* [Build a Dapp: how to connect and interact with Web3 wallets on Cronos](https://github.com/kentimsit/cronos-wallet-connections-v3) (see Readme for instructions)
+* [Create & deploy a smart contract with OpenZeppelin Wizard and Remix](https://cronoslabs.substack.com/p/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93) (low code version)
 * [Create a NFT collection on Cronos and IPFS](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
 
 **Video tutorials**
 
-<table><thead><tr><th width="120">Popular</th><th width="181">Title</th><th width="254">URL</th><th width="141">Date</th></tr></thead><tbody><tr><td></td><td>Creating dapps on Cronos chain</td><td><a href="https://www.youtube.com/watch?v=XUNbR91abwY">https://www.youtube.com/watch?v=XUNbR91abwY</a></td><td>June 10, 2022</td></tr><tr><td>⭐️</td><td>Creating games with Cronos Play</td><td><a href="https://www.youtube.com/watch?v=D52Ike59cL8&#x26;t=5s">https://www.youtube.com/watch?v=D52Ike59cL8&#x26;t=5s</a></td><td>June 10, 2022</td></tr><tr><td></td><td>Cronos Play tutorial</td><td><a href="https://youtu.be/xLSgn5OZql4">https://youtu.be/xLSgn5OZql4</a></td><td>August 23, 2022</td></tr><tr><td></td><td>RockX walk through</td><td><a href="https://www.youtube.com/watch?v=gvY2vyYSZHs">https://www.youtube.com/watch?v=gvY2vyYSZHs</a></td><td>August 24, 2022</td></tr><tr><td></td><td>Covalent walk through</td><td><a href="https://www.youtube.com/watch?v=f7ZHDByytFc&#x26;t">https://www.youtube.com/watch?v=f7ZHDByytFc&#x26;t</a></td><td>August 25, 2022</td></tr><tr><td></td><td>How to win a hackathon</td><td><a href="https://www.youtube.com/watch?v=kyMg0jtuT-8&#x26;t=29s">https://www.youtube.com/watch?v=kyMg0jtuT-8&#x26;t=29s</a></td><td>August 29, 2022</td></tr><tr><td></td><td>Building games with Moralis</td><td><a href="https://www.youtube.com/watch?v=EbO03yoorps">https://www.youtube.com/watch?v=EbO03yoorps</a></td><td>August 30, 2022</td></tr><tr><td></td><td>Moralis walk through</td><td><a href="https://www.youtube.com/watch?v=9F0dweAtm_U">https://www.youtube.com/watch?v=9F0dweAtm_U</a></td><td>September 1, 2022</td></tr><tr><td></td><td>Wallet game design choices</td><td><a href="https://www.youtube.com/watch?v=KdGfDyxmTNU">https://www.youtube.com/watch?v=KdGfDyxmTNU</a></td><td>September 5, 2022</td></tr><tr><td></td><td>Build your Web3 Game with Cronos Play</td><td><a href="https://www.youtube.com/watch?v=lmM7HgXDZ2w">https://www.youtube.com/watch?v=lmM7HgXDZ2w</a></td><td>September 9, 2022</td></tr><tr><td>⭐️</td><td>Create dApps on Cronos chain</td><td><a href="https://www.youtube.com/watch?v=lKzzyUXPeRk">https://www.youtube.com/watch?v=lKzzyUXPeRk</a></td><td>December 1, 2022</td></tr></tbody></table>
+* [Create dApps on Cronos chain](https://www.youtube.com/watch?v=lKzzyUXPeRk)
+* [Build your Web3 Game with Cronos Play](https://www.youtube.com/watch?v=lmM7HgXDZ2w)
+* [How to win a hackathon](https://www.youtube.com/watch?v=kyMg0jtuT-8\&t=29s)
 
 ## Essential developer tools 💻
 
@@ -108,7 +109,6 @@ Connect your Dapp to the blockchain
 
 * Web3 library for Javascript / Typescript: [ethers.js](https://docs.ethers.io/v5/), [web3.js](https://web3js.readthedocs.io/)
 * Web3 library for Python: [web3.py](https://web3py.readthedocs.io/)
-* Easy to use Web3 SDK: [Moralis](https://moralis.io/)
 
 Create games
 
