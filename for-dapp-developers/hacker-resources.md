@@ -90,13 +90,14 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 * [Deploy and verify your smart contracts](https://github.com/kentimsit/cronos-hardhat-boilerplate) (see Readme for instructions)
 * [Build a Dapp: how to connect and interact with Web3 wallets on Cronos](https://github.com/kentimsit/cronos-wallet-connections-v3) (see Readme for instructions)
 * [Create & deploy a smart contract with OpenZeppelin Wizard and Remix](https://cronoslabs.substack.com/p/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93) (low code version)
+
+**Other useful tutorials**
+
+* Create an end to end Web3 application: [smart contract](https://github.com/cronos-labs/cronos-accelerator-workshop-hardhat) and [client](https://github.com/cronos-labs/cronos-accelerator-workshop-client) (repositories)
 * [Create a NFT collection on Cronos and IPFS](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
-
-**Video tutorials**
-
-* [Create dApps on Cronos chain](https://www.youtube.com/watch?v=lKzzyUXPeRk)
-* [Build your Web3 Game with Cronos Play](https://www.youtube.com/watch?v=lmM7HgXDZ2w)
-* [How to win a hackathon](https://www.youtube.com/watch?v=kyMg0jtuT-8\&t=29s)
+* [Create dApps on Cronos chain](https://www.youtube.com/watch?v=lKzzyUXPeRk) (video)
+* [Build your Web3 Game with Cronos Play](https://www.youtube.com/watch?v=lmM7HgXDZ2w) (video)
+* [How to win a hackathon](https://www.youtube.com/watch?v=kyMg0jtuT-8\&t=29s) (video)
 
 ## Essential developer tools 💻
 
