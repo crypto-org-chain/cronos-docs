@@ -88,7 +88,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 **Essential tutorials / boilerplates**
 
 * [Deploy and verify your smart contracts](https://github.com/kentimsit/cronos-hardhat-boilerplate) (see Readme for instructions)
-* [Build a Dapp: how to connect and interact with Web3 wallets on Cronos](https://github.com/kentimsit/cronos-wallet-connections-v3) (see Readme for instructions)
+* [Build a Dapp: how to connect and interact with Web3 wallets on Cronos](https://github.com/kentimsit/cronos-wallet-connections) (see Readme for instructions)
 * [Create & deploy a smart contract with OpenZeppelin Wizard and Remix](https://cronoslabs.substack.com/p/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93) (low code version)
 
 **Other useful tutorials**
