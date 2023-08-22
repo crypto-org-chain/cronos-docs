@@ -95,7 +95,7 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 
 **Developer tips:**
 
-* [Hackathon cheat sheet](for-dapp-developers/hacker-resources.md)
+* [Hackathon cheatsheet](for-dapp-developers/hacker-resources.md)
 * [Developer tools and integration](for-dapp-developers/dev-tools-and-integrations/)
 * [App creator & developer FAQs](for-dapp-developers/founder-faqs.md)
 
