@@ -19,7 +19,30 @@ The limitations of the setup with VersionDB and pruned IAVL tree are:
 * Does not support `eth_getProof, non-grpc / abci_query` for the historical versions that's pruned in IAVL tree. The other APIs should function just like an archive node as before.\
 
 
-### Tutorial - starting from scratch
+### 1. Tutorial - Migrating from snapshot
+
+#### Step 1 - Extract from snapshot
+
+Download the archive snapshot from either Quicksync or from the [S3 link](https://cronos-mainnet-fullnode-datadir-backup-external-user.s3.ap-southeast-1.amazonaws.com/data/cronosmainnet\_25-1-versiondb-archive-20230810.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAU2KFOQGWRLYDYR3A%2F20230815%2Fap-southeast-1%2Fs3%2Faws4\_request\&X-Amz-Date=20230815T020338Z\&X-Amz-Expires=604800\&X-Amz-SignedHeaders=host\&X-Amz-Signature=9edc36d26ec7d21f61c9a2d8e8ce12321a769a736bc61858955649a9e3733f24) we have provided. After you have extracted the `.tar` into your `$NODE_HOME/data/versiondb` folder, you can continue to update config and restart.
+
+#### Step 2 - **Update config**
+
+To enable VersionDB, you need to add VersionDB to the list of store.streamers in **app.toml** like this:
+
+```bash
+[store]
+streamers = ["versiondb"]
+```
+
+The db instance is placed at `$NODE_HOME/data/versiondb` directory. Currently this path cannot be customized. This will switch the grpc query service's backing store from IAVL tree to VersionDB.
+
+
+
+#### Step 3 - Start the node
+
+Restart the node. it should start to reindex iavl fastnode now.
+
+### 2. Tutorial - starting from scratch
 
 This tutorial starts from scratch, so prepare enough time to go through this migration, especially the change set extraction may take time in the order of **days** for it to complete, even with a `r6g.16xlarge` instance. In case you want to skip this step, we will be supporting a snapshot for this in the near future. For more information on the different steps, see this documentation [here](https://github.com/crypto-org-chain/cronos/wiki/VersionDB-Migration).
 
