@@ -25,6 +25,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 * Amplification of product launches / feature releases on [social media](https://twitter.com/cronos\_chain) and in the [Cronos newsletter](https://blog.cronos.org).
 * Participation in [Cronos video streams / AMAs](https://crofam.me/youtube).
 * Project listing at [discover.cronos.org](https://discover.cronos.org) and on various partner platforms (Crypto.com DeFi Wallet, Defillama, Dappradar, etc.).
+* Introductions to other dapps, key opinion leaders and project launchpads.
 * [Cronos Builders Program](../cronos-play/unity/play.md) and [Cronos Grants Program](https://cronos.org/grants) (usually for projects who have already started to achieve initial user traction on Cronos).
 * [Cronos Accelerator Program](https://cronos.org/accelerators).
 
