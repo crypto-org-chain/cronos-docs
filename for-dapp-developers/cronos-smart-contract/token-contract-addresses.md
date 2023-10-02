@@ -101,15 +101,4 @@
 | VOXEL      | [0x5fdbFE38E050829374001630B8710BDd05Ea55C0](https://cronoscan.com/address/0x5fdbFE38E050829374001630B8710BDd05Ea55C0/transactions)   | 18      |
 | KRL        | [0x62E622fa4E180C391f2E089FC1d5eA7AdCB96575](https://cronoscan.com/address/0x62E622fa4E180C391f2E089FC1d5eA7AdCB96575/transactions)   | 18      |
 {% endtab %}
-
-{% tab title="Testnet" %}
-| Token name | Address                                      | Decimal |
-| ---------- | -------------------------------------------- | ------- |
-| WCRO       | `0x6a3173618859C7cd40fAF6921b5E9eB6A76f1fD4` | 18      |
-| WETH       | `0x796135E94527c38433e9c42f4Cd91ca931E5e6A6` | 18      |
-| WBTC       | `0xEE200f25d7B1B9518AC944fd60b113d39bee209c` | 8       |
-| USDC       | `0x321106e51b78e0e9cebcfec63c5250f0f3ccb82b` | 6       |
-| USDT       | `0xa144617Afd9205AF1ceDE3Cc671da1a409A82c5a` | 6       |
-| DAI        | `0x8662A8111daEC7570a1bDF3dbd3E163d41563904` | 18      |
-{% endtab %}
 {% endtabs %}
