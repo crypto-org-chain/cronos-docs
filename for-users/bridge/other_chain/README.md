@@ -16,13 +16,15 @@ Please read this guide and review the project documentation carefully as misuse 
 
 * Crypto.org <=> Cronos;
 * Cosmos <=> Cronos;
-* Akash <=> Cronos.
+* Akash <=> Cronos;
+* IRISnet<=> Cronos
 
 #### Currently supported tokens:
 
 * CRO;
 * ATOM;
-* AKT.
+* AKT;
+* IRIS
 
 #### Currently supported wallets:
 
