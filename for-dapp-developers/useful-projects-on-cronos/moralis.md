@@ -2,57 +2,23 @@
 
 ## **Introduction**
 
-Moralis provides the full-stack workflow for building high-performance Dapps, which is now integrated with Cronos Chain. It serves as one of the leading platforms for Web3 development that Web3 developers can simplify their workflow by accessing the Moralis developer tools on the Cronos chain, including high-performance JSON-RPC endpoints, NFT data indexers, and other advanced functionalities. Cronos integration is available for Moralis Identity, Moralis Real-Time, Moralis API and Moralis SDK.&#x20;
+Moralis helps leading cryptocurrency and blockchain companies like Metamask, Blockchain.com and Opera Crypto Wallet to grow and innovate faster with high quality, insightful data tools on Cronos, and on all other major EVM chains. By using Moralis, your team can focus on growing your product and your business while minimizing the time and money you spend on data infrastructure.
 
-Building Cronos Dapp with Moralis includes three main steps, which are setting up Moralis Server and building the login component as well as Dashboard. Below provides a brief introduction of components and functions for Cronos Dapp building with Moralis. Developers interested in exploring the full details can refer to [Moralis official doc](https://docs.moralis.io/moralis-dapp/web3-api) and [Moralis Dapp building guide](https://moralis.io/how-to-build-a-cronos-dapp/).
+Moralis offers APIs and real-time data Streams for NFT data, Token data, Wallet data, Raw Blockchain data, as well as market insights and discovery data. 
 
-## Moralis Server
+## Getting Started
 
-Developers need to have an account with Moralis to get started.&#x20;
+In order to use any of the Moralis APIs, you need to [register](https://admin.moralis.io/register?utm_source=cronos-docs) for a free Moralis account and get your API key. 
 
-In the main dashboard go to “Create New Dapp” and select Cronos network for launching your Dapp on the Cronos chain.
-
-![](https://lh5.googleusercontent.com/7oIaGeTNe80fuhymIeCuPRIg-uoSS9bI3OO2VLGWZi3hOIyPfc2Dmc7i48vRbkcuLHSxZrMMpFauaMmRtByIbX0xWlSp020-zodS-r0ZpFGMqUlyjszH6Td0IbqGpePIzk7MKB1F7SGSD7ZnpJf0DP4)
-
-![](https://lh4.googleusercontent.com/A5vDJU3yd7sFEVHpMtVVML2j4vFSst-GliJ9r-KJsuEhaKb\_jj2tf58oLR-4N403oL2RHo9T7gRah-gzYQ5ARtHuUarfSF-v2432IiRaXL6md3HslVWQF0u0f-PpM\_7Uj1zmsJL0HP-xVf3wJDKpEfg)
-
-## **Functions and Components**
-
-### **Login Component:**
-
-To install the SDK, add the following to the HTML file for the login component:
-
-```
-<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-<script src=”https://unpkg.com/moralis/dist/moralis.js"></script>
-```
-
-To initialize Moralis, input the following into the file where you have JavaScript logic to make the elements interactive and add your server URL and application ID:
-
-```
-const serverUrl = "YOUR_SERVER_URL"; 
-const appId = "YOUR_APP_ID";
-```
-
-For authenticating logic, this function allows users to authenticate themselves and saves the details being used to sign the message. The function also redirects the users to the dashboard page.
-
-```
-login = async () => {
-    Moralis.authenticate().then(async function (user) {
-        console.log(user.get(’logged in’))
-        user.set(”name”, document.getElementById(’user-username’).value)
-        user.set(”email”, document.getElementById(’user-email’).value)
-        await user.save();
-        window.location.href = ”dashboard.html”; 
-    })
-}
-```
+You will find your API key under your account settings.
 
 
+## Moralis APIs
 
-### **`Functions`**`:`
+Below you'll find details about the different APIs that Moralis offers and some examples of the endpoints available.
 
-Users can see their transaction history, assets details and other elements you set to display on the dashboard. Some of the common Moralis functions are as follows.
+## NFT API
+The Moralis NFT API can be used quickly build NFT functionality in your wallet, portfolio application or to spin up an NFT marketplace. You can use it to fetch NFTs owned by particular wallets, or get NFT transfers and sales, or track prices of recent NFT sales.
 
 #### _**`getBalances()`**_
 
