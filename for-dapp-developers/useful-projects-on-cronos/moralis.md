@@ -2,9 +2,9 @@
 
 ## **Introduction**
 
-Moralis helps leading cryptocurrency and blockchain companies like Metamask, Blockchain.com and Opera Crypto Wallet to grow and innovate faster with high quality, insightful data tools on Cronos, and on all other major EVM chains. By using Moralis, your team can focus on growing your product and your business while minimizing the time and money you spend on data infrastructure.
+Moralis helps leading cryptocurrency and blockchain companies like MetaMask, Blockchain.com and Opera Crypto Wallet to grow and innovate faster with high quality, insightful data tools on Cronos, and on all other major EVM chains. By using Moralis, your team can focus on growing your product and your business while minimizing the time and money you spend on data infrastructure.
 
-Moralis offers APIs and real-time data Streams for NFT data, Token data, Wallet data, Raw Blockchain data, as well as market insights and discovery data. 
+Moralis offers APIs and real-time data Streams for NFT data, token data, wallet data, raw blockchain data, as well as market insights and discovery data. 
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ You will find your API key under your account settings.
 Below you'll find details about the different APIs that Moralis offers and some examples of the endpoints available.
 
 ### NFT API
-The [Moralis NFT API](https://moralis.io/api/nft/) can be used quickly build NFT functionality in your wallet, portfolio application or to spin up an NFT marketplace. You can use it to fetch NFTs owned by particular wallets, or get NFT transfers and sales, or track prices of recent NFT sales.
+The Moralis [NFT API](https://moralis.io/api/nft/) can be used to quickly build NFT functionality in your wallet, portfolio application or to spin up an NFT marketplace. You can use it to fetch NFTs owned by particular wallets, or get NFT transfers and sales, or track prices of recent NFT sales.
 
 The NFT API automatically indexes all NFTs and metadata across all available chains.  
 
@@ -156,7 +156,7 @@ Below is an example where we call the Get NFTs by Wallet endpoint ( `{wallet_add
 ```
 
 ### Token API
-The [Moralis Token API](https://moralis.io/api/token/?utm_source=cronos-docs) has all the information you need about ERC20 tokens, including ownership, transfers and token prices. Use it to add ERC20 support in your wallet or enrich your token pages with in-depth token metadata.
+The Moralis [Token API](https://moralis.io/api/token/?utm_source=cronos-docs) has all the information you need about ERC20 tokens, including ownership, transfers and token prices. Use it to add ERC20 support in your wallet or enrich your token pages with in-depth token metadata.
 
 The Token API includes token logos and spam detection.
 
@@ -195,7 +195,7 @@ The Token API includes token logos and spam detection.
 ```
 
 ### Market Data API
-The [Moralis Market Data API](https://moralis.io/api/market-data/?utm_source=cronos-docs) helps you retrieve top coins and NFT collection based on market cap and trading volume. You can use it to build market discovery pages, coin listing pages or displaying winners and loosers.
+The Moralis [Market Data API](https://moralis.io/api/market-data/?utm_source=cronos-docs) helps you retrieve top coins and NFT collection based on market cap and trading volume. You can use it to build market discovery pages, coin listing pages or displaying winners and losers.
 
 #### Endpoints
 - [Get the top ERC20 tokens by market cap](https://docs.moralis.io/web3-data-api/evm/reference/get-top-erc20-tokens-by-market-cap)
@@ -226,7 +226,7 @@ const response = await Moralis.EvmApi.marketData.getTopERC20TokensByMarketCap({}
 ```
 
 ### Blockchain API
-Using the [Moralis Blockchain API](https://moralis.io/api/block/?utm_source=cronos-docs) you can fetch basic data about blocks, transactions, logs and events. The Blockchain API also supports transaction decoding, which automtically decodes the transaction logs for you, without submitting any ABIs. 
+Using the Moralis [Blockchain API](https://moralis.io/api/block/?utm_source=cronos-docs) you can fetch basic data about blocks, transactions, logs and events. The Blockchain API also supports transaction decoding, which automtically decodes the transaction logs for you, without submitting any ABIs. 
 
 #### Endpoints
 - [Get Block by Block number or Block Hash](https://docs.moralis.io/web3-data-api/evm/reference/get-block)
@@ -324,7 +324,7 @@ Using the [Moralis Blockchain API](https://moralis.io/api/block/?utm_source=cron
 
 
 ## Moralis Streams
-[Moralis Streams](https://moralis.io/streams/?utm_source=cronos-docs) is an API for real-time blockchain data, sent over webhooks. Using Streams you can avoid polling of other APIs and instead only be notified when something has actually happened. You can configure the Stream to notify you only when specific things happen on chain, like transactions, transfers, mints, or any other custom event. Streams support custom events and customer filters. 
+[Moralis Streams](https://moralis.io/streams/?utm_source=cronos-docs) is an API for real-time blockchain data, sent over webhooks. Using Streams you can avoid polling of other APIs and instead only be notified when something has actually happened. You can configure the Stream to notify you only when specific things happen on-chain, like transactions, transfers, mints, or any other custom event. Streams support custom events and customer filters. 
 
 Streams can be created either in the [Streams User Interface](https://admin.moralis.io/streams) once you're signed into the Moralis Admin Panel, or through the [API](https://docs.moralis.io/streams-api/evm).
 
