@@ -7,7 +7,7 @@ on:
 jobs:
   dummy:
     name: Dummy
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - name: Do nothing
       run: |
