@@ -48,7 +48,7 @@ Please browse the navigation bar of this documentation where you can find refere
 
 ## What is Cronos?
 
-[Cronos](https://cronos.org/) ([cronos.org](http://cronos.org)) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Crypto.org](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
+[Cronos](https://cronos.org/) ([cronos.org](http://cronos.org)) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
 
 Shortly after launch in November 2021, Cronos achieved a top 10 position amongst all chains by TVL. It is home to more than 1 million users and 500+ dApps.
 
@@ -62,7 +62,7 @@ If you are a Web3 application creator, there are 3 main reasons to build on Cron
 
 * EVM compatible – Solidity and all the EVM tools just work out of the box.
 * Strategic partnership with [Crypto.com](http://crypto.com/) – easy on-ramp to your dapp.
-* \#CROFam - a highly engaged user and builder community of >80 million people worldwide, who are keen to try the latest and greatest apps.&#x20;
+* \#CROFam - a highly engaged user and builder community of >80 million people worldwide, who are keen to try the latest and greatest apps.
 
 As an application founder/developer on Cronos, you can leverage:
 
@@ -79,7 +79,7 @@ Web: [Cronos](https://cronos.org) | [Cronos Labs](https://cronoslabs.org)
 
 Blog: [Cronos](https://blog.cronos.org/)
 
-Socials: [Twitter](https://twitter.com/cronos\_chain) | [Telegram](https://t.me/Cryptoorg\_Chain\_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
+Socials: [Twitter](https://twitter.com/cronos\_chain) | [Telegram](https://t.me/Cronos\_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4) | [Youtube](https://www.youtube.com/@cronos\_chain)
 
 White paper: [Cronos Whitepaper](https://whitepaper.cronos.org/)
 

@@ -24,7 +24,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 * Cronos docs: [https://docs.cronos.org](https://docs.cronos.org)
 * Cronos Play (for game developers): [https://cronos.org/play](https://cronos.org/play)
-* [Why build on Cronos](https://cronoslabs.substack.com/p/why-build-grow-on-cronos-692da1de7885)
+* [Why build on Cronos](https://blog.cronos.org/p/why-build-grow-on-cronos-692da1de7885)
 * Cronos overview by Eat The Blocks: [https://www.youtube.com/watch?v=NqeeKEJiPZU](https://www.youtube.com/watch?v=NqeeKEJiPZU)
 
 **MetaMask end-user configuration**
@@ -126,5 +126,5 @@ Please visit the #cronos-mainnet-beta channel on the Cronos [Discord](https://di
 
 Feedback is a gift! [Let us know](mailto:contact@cronoslabs.org) if there is anything that we can improve in this documentation.
 
-Socials: [Twitter](https://twitter.com/cronos\_chain) | [Telegram](https://t.me/Cryptoorg\_Chain\_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4) | [Youtube](https://www.youtube.com/channel/UCUvlFgAWURU\_wECYp2GpJtw/featured)
+Socials: [Twitter](https://twitter.com/cronos\_chain) | [Telegram](https://t.me/Cronos\_Announcements) | [Discord](https://discord.com/invite/cronos) | [Youtube](https://www.youtube.com/@cronos\_chain)
 

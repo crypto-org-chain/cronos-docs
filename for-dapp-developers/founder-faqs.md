@@ -13,7 +13,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **Subscribe to the Cronos newsletter:**
 
-* [Cronos newsletter](https://cronoslabs.substack.com)
+* [Cronos newsletter](https://blog.cronos.org)
 
 ## TLDR; what do I need to know if I am considering Cronos for my dapp?
 
@@ -21,7 +21,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 [Cronos Labs](https://cronoslabs.org) can help most dapp creators to enhance the visibility of their product in the Cronos user community. However, Cronos Labs is generally not able to promote token or NFT sales. The following support is available to dapp creators:
 
-* Technical support via [Discord](https://crofam.me/discord) and Telegram.
+* Technical support via [Discord](https://crofam.me/discord) and [Telegram](https://t.me/Cronos\_Announcements).
 * Amplification of product launches / feature releases on [social media](https://twitter.com/cronos\_chain) and in the [Cronos newsletter](https://blog.cronos.org).
 * Participation in [Cronos video streams / AMAs](https://crofam.me/youtube).
 * Project listing at [discover.cronos.org](https://discover.cronos.org) and on various partner platforms (Crypto.com DeFi Wallet, Defillama, Dappradar, etc.).
@@ -123,7 +123,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 * See here: [public-rpc-endpoints.md](chain-integration/public-rpc-endpoints.md "mention")
 
-**Where can I find a list of available developer tools and integration?**
+**Where can I find a list of available developer tools and integrations?**
 
 * We have prepared one for you! See here: [dev-tools-and-integrations](dev-tools-and-integrations/ "mention")
 

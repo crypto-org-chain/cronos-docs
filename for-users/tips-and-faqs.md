@@ -23,7 +23,7 @@ description: For end-users
 **Where can I find the list of applications available on Cronos chain?**
 
 * In the Crypto.com DeFi Wallet, you can check the "browser" tab where you can see a selection of apps.
-* You can also visit https://cronos.org/ecosystem to browser a database of available dapps (decentralized apps).
+* You can also visit [https://discover.cronos.org](https://discover.cronos.org) to browse a database of available dapps (decentralized apps).
 
 **I have transferred cryptocurrencies by mistake to an address on Cronos chain. Can someone help me to recover the funds?**
 

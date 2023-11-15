@@ -32,7 +32,6 @@ The networks supported are:
 * Cronos
 * Cosmos
 * Akash
-* Ethereum (Coming soon)
 
 #### What are the supported wallets?
 

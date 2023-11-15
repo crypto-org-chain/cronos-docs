@@ -12,10 +12,6 @@ Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently
 Note 1: If you are bridging assets to or from Crypto.org, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
 {% endhint %}
 
-{% hint style="info" %}
-Note 2: Currently, Terra ⇔ Cronos only is only supported by Keplr. To learn how to add your Terra station wallet to Keplr, please click [here](broken-reference).
-{% endhint %}
-
 ![centered image](../assets/webapp\_connect\_wallet.png)
 
 **Step 2. Select Network and Token**

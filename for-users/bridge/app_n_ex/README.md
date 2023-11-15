@@ -1,12 +1,14 @@
 # From the Crypto.com App and Exchange
 
-## From the Crypto.com App and Exchange
+For most users, the easiest way to acquire $CRO cryptocurrency and fund your self-custodial wallet on Cronos is to use the Crypto.com App or Exchange.
 
-The Crypto.com App will be able to seamlessly transfer selected assets over to Cronos on Day 1. The withdrawal process will be exactly the same as how you would transfer funds to a separate chain.
+## From the Crypto.com App
 
-**Supported assets on Day 1**: CRO, USDT, USDC, DAI, ETH, WBTC
+From within the Crypto.com App, you can withdraw $CRO or any of dozens of cryptocurrencies to your self-custodial cryptocurrency wallet on the Cronos (CRC20) blockchain.
 
-Only the tokens mentioned above will be available for withdrawal to Cronos on Day 1 of the Cronos Mainnet. For a complete list of available assets to withdraw, please refer to the Help Centre [help page](https://help.crypto.com/en/articles/5978017-what-should-i-know-about-cryptocurrency-deposits-and-withdrawals).
+For a complete list of available assets to withdraw, please refer to the Help Centre [help page](https://help.crypto.com/en/articles/5978017-what-should-i-know-about-cryptocurrency-deposits-and-withdrawals).
+
+Visit the link below for more details.
 
 {% content-ref url="cdcapp.md" %}
 [cdcapp.md](cdcapp.md)
@@ -14,9 +16,9 @@ Only the tokens mentioned above will be available for withdrawal to Cronos on Da
 
 ## From the Crypto.com Exchange
 
-The Crypto.com Exchange will be supporting the seamless transfer of selected assets over to Cronos on Day 1. The withdrawal process will be exactly the same as how you would transfer funds to a separate chain.
+From within the Crypto.com Exchange, you can withdraw $CRO or any of dozens of cryptocurrencies to your self-custodial cryptocurrency wallet on the Cronos (CRC20) blockchain.
 
-**Supported assets on Day 1**: CRO, USDT, USDC, DAI, ETH, WBTC
+Visit the link below for more details.
 
 {% content-ref url="cdcex.md" %}
 [cdcex.md](cdcex.md)
