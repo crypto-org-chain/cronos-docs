@@ -17,7 +17,6 @@
     * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
   * [IBC (Crypto.org Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
-    * [Keplr](for-users/bridge/other\_chain/keplr.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
   * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
 * [🚰 Testnet Faucet](for-users/testnet-faucet.md)

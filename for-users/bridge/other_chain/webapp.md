@@ -13,7 +13,7 @@ Note 1: If you are bridging assets to or from Crypto.org, you may specify the de
 {% endhint %}
 
 {% hint style="info" %}
-Note 2: Currently, Terra ⇔ Cronos only is only supported by Keplr. To learn how to add your Terra station wallet to Keplr, please click [here](keplr.md).
+Note 2: Currently, Terra ⇔ Cronos only is only supported by Keplr. To learn how to add your Terra station wallet to Keplr, please click [here](broken-reference).
 {% endhint %}
 
 ![centered image](../assets/webapp\_connect\_wallet.png)
