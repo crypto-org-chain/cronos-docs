@@ -1,4 +1,4 @@
-# IBC (Crypto.org Chain, other Cosmos chains)
+# IBC (Cronos POS Chain, other Cosmos chains)
 
 ## Introduction
 
@@ -14,10 +14,10 @@ Please read this guide and review the project documentation carefully as misuse 
 
 #### Currently supported networks:
 
-* Crypto.org <=> Cronos;
-* Cosmos <=> Cronos;
-* Akash <=> Cronos;
-* IRISnet<=> Cronos
+* Cronos POS Chain <=> Cronos (Cronos EVM Chain);
+* Cosmos Hub <=> Cronos (Cronos EVM Chain);
+* Akash <=> Cronos (Cronos EVM Chain);
+* IRISnet<=> Cronos (Cronos EVM Chain).
 
 #### Currently supported tokens:
 
@@ -30,7 +30,7 @@ Please read this guide and review the project documentation carefully as misuse 
 
 * Metamask, Keplr, Crypto.com DeFi Wallet
 
-We are constantly working on adding new tokens and blockchains. If you have any feedback or concerns, please reach out to us at product.bridge@crypto.org.
+We are constantly working on adding new tokens and blockchains. If you have any feedback or concerns, please reach out to bridge@cronos.org.
 
 ## Via Cronos Bridge Web App
 

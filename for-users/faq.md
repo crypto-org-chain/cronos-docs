@@ -10,8 +10,8 @@
 #### How does the Bridge network fee waiver work?
 
 * The following transactions are eligible for a fee waiver:
-  * Crypto.org => Cronos
-  * Cronos => Crypto.org
+  * Cronos POS Chain => Cronos (Cronos EVM chain)
+  * Cronos (Cronos EVM chain) => Cronos POS Chain
 * The fee waived is the bridge network transaction fee on the destination chain. However, you are still liable to pay for the origin chain gas fee directly on your wallet extension.
 * This is a promotional waiver; we reserve the right to modify and terminate the promotion at any time
 
@@ -21,21 +21,21 @@ IBC Transfers will take between 1 min to 1 hour, depending on transfer congestio
 
 #### Can I transfer assets to a different wallet than my own?
 
-* For transfers between Cronos and Crypto.org, we support either connecting a second compatible wallet or inputting the wallet address string.
+* For transfers between Cronos and Cronos POS Chain, we support either connecting a second compatible wallet or inputting the wallet address string.
 * If possible, we recommend connecting the second wallet to avoid manual typing and potential malware risks such as clipboard attacks.
 
 #### What are the support blockchains and tokens?
 
 The networks supported are:
 
-* Crypto.org
-* Cronos
+* Cronos (Cronos EVM Chain)
+* Cronos POS Chain
 * Cosmos
 * Akash
 
 #### What are the supported wallets?
 
-* The initially supported wallets will be Crypto.com DeFi Wallet, MetaMask, and Keplr.
+* The initially supported wallets will be Crypto.com DeFi Wallet, MetaMask, Rabby and Keplr.
 * Please ensure to set the correct active network on your Wallet if it is supported.
 
 #### Can I complete multiple transfers in one go?
@@ -44,11 +44,11 @@ While it is possible to have multiple ongoing transactions, we recommend having 
 
 #### Where can I report bugs and provide product feedback?
 
-For any bug reports, or feedback please contact [contact.bridge@crypto.org](mailto:contact.bridge@crypto.org). This is for the web Cronos bridge only. For Crypto.com app, exchange, and DeFi wallet, refer to [https://help.crypto.com/en/](https://help.crypto.com/en/)
+For any bug reports, or feedback please contact [bridge@cronos.org](mailto:bridge@cronos.org). This is for the web Cronos bridge only. For Crypto.com app, exchange, and DeFi wallet, refer to [https://help.crypto.com/en/](https://help.crypto.com/en/) or [https://help.crypto.com/en/articles/5645017-cronos-bridge](https://help.crypto.com/en/articles/5645017-cronos-bridge).
 
 #### How do I find my missing funds?
 
-Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all. If you believe you still have missing funds, please contact us at [product@cronos.org.](mailto:product@cronos.org.)
+Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all. If you believe you still have missing funds, please contact [bridge@cronos.org](mailto:bridge@cronos.org)[.](mailto:product@cronos.org.)
 
 #### Is transferring tokens across blockchains safe?
 
@@ -58,9 +58,5 @@ Please check the transaction history table for your past transactions. If your t
 
 
 
-
-{% hint style="info" %}
-For additional FAQ about bridge transfers head to the [Cronos bridge help](https://help.crypto.com/en/articles/5645017-cronos-bridge) page.
-{% endhint %}
 
 &#x20;

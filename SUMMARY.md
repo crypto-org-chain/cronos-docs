@@ -15,7 +15,7 @@
   * [From the Crypto.com App and Exchange](for-users/bridge/app\_n\_ex/README.md)
     * [From the Crypto.com App](for-users/bridge/app\_n\_ex/cdcapp.md)
     * [From the Crypto.com Exchange](for-users/bridge/app\_n\_ex/cdcex.md)
-  * [IBC (Crypto.org Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
+  * [IBC (Cronos POS Chain, other Cosmos chains)](for-users/bridge/other\_chain/README.md)
     * [Cronos Bridge Web App](for-users/bridge/other\_chain/webapp.md)
   * [FAQs for Bridge transfers](for-users/faq.md)
   * [FAQs for ERC20-only transaction Support](for-users/bridge/faqs-for-erc20-only-transaction-support.md)
