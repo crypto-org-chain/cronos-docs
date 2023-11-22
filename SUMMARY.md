@@ -49,6 +49,7 @@
   * [Banxa](for-dapp-developers/useful-projects-on-cronos/banxa.md)
   * [Caldera](for-dapp-developers/dev-tools-and-integrations/caldera.md)
   * [Flair](for-dapp-developers/dev-tools-and-integrations/flair.md)
+  * [SubQuery](for-dapp-developers/dev-tools-and-integrations/subquery.md)
 
 ## FOR NODE HOSTS
 
