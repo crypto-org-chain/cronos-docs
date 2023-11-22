@@ -35,3 +35,7 @@ Below you will also find a few more detailed tutorial pages that have been provi
 {% content-ref url="../useful-projects-on-cronos/cronos-safe.md" %}
 [cronos-safe.md](../useful-projects-on-cronos/cronos-safe.md)
 {% endcontent-ref %}
+
+{% content-ref url="subquery.md" %}
+[subquery.md](subquery.md)
+{% endcontent-ref %}
