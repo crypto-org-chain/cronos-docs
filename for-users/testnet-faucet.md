@@ -10,8 +10,8 @@ In case you have reached the daily limit on faucet , you can simply send a messa
 {% endhint %}
 
 {% tabs %}
-{% tab title="Testnet" %}
-* [Cronos.org Test-token faucet](https://cronos.org/faucet);
-* [Covalent's Cronos Testnet Fauce](https://www.covalenthq.com/faucet/).
+{% tab title="Cronos Testnet" %}
+* \[Cronos.org] [Cronos testnet faucet](https://cronos.org/faucet)
+* \[Covalent] [Cronos testnet faucet](https://www.covalenthq.com/faucet/)
 {% endtab %}
 {% endtabs %}
