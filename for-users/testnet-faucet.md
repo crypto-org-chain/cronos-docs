@@ -11,6 +11,7 @@ In case you have reached the daily limit on faucet , you can simply send a messa
 
 {% tabs %}
 {% tab title="Testnet" %}
-* [Test-token faucet](https://cronos.org/faucet)
+* [Cronos.org Test-token faucet](https://cronos.org/faucet);
+* [Covalent's Cronos Testnet Fauce](https://www.covalenthq.com/faucet/).
 {% endtab %}
 {% endtabs %}
