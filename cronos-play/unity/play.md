@@ -2,7 +2,7 @@
 
 ### Overview
 
-This section showcase the Cronos play Gaming SDK integration with the Cronos chain, aiming to bring Unity games into the Cronos ecosystem. In particular, we will show how to do a basic integration of the Cronos play with the Cronos chain including:
+This section showcases the Cronos play Gaming SDK integration with the Cronos chain, aiming to bring Unity games into the Cronos ecosystem. In particular, we will show how to do a basic integration of the Cronos play with the Cronos chain including:
 
 * Connecting to Cronos networks;
 * Installaiton of the SDK;
@@ -22,7 +22,7 @@ Network Name: **Cronos Mainnet Beta**
 * New RPC URL: **https://evm-dev.cronos.org/**
 * Chain ID: **25**
 * Currency Symbol: **CRO**
-* Block Explorer URL: **https://cronoscan.com/**
+* Block Explorer URL: **https://explorer.cronos.org/**
 {% endtab %}
 
 {% tab title="Testnet" %}
@@ -31,11 +31,11 @@ Network Name: **Cronos Testnet**
 * New RPC URL: **https://evm-dev-t3.cronos.org/**
 * Chain ID: **338**
 * Currency Symbol: **TCRO**
-* Block Explorer URL: **https://testnet.cronoscan.com**
+* Block Explorer URL: **https://explorer.cronos.org/testnet**
 {% endtab %}
 {% endtabs %}
 
-* Sufficient fund on deployer address
+* Sufficient funds on deployer address
   * [Testnet Faucet](https://cronos.crypto.org/faucet/)
 * For Crypto.com DeFi Wallet integration, please refer to our [documentation](https://docs.cronos.org/getting-started/gamefi-sdk.md#enable-deficonnect-and-walletconnect).
 
@@ -43,9 +43,9 @@ Network Name: **Cronos Testnet**
 
 ### Create a new project
 
-* Download the tutorial bolt kit from [Unity](https://assetstore.unity.com/packages/essentials/tutorial-projects/bolt-kit-platformer-tutorial-assets-168067) and import the assets into the blank new project. Below are the steps of importing Tutorial Projects - Bolt Kit from Unity. See [Reference #1](play.md#reference).
+* Download the tutorial bolt kit from [Unity](https://assetstore.unity.com/packages/essentials/tutorial-projects/bolt-kit-platformer-tutorial-assets-168067) and import the assets into the blank new project. Below are the steps for importing Tutorial Projects - Bolt Kit from Unity. See [Reference #1](play.md#reference).
 
-### Download the latest ChainSafe SDK and import into the project.
+### Download the latest ChainSafe SDK and import it into the project.
 
 * For a detailed explanation, please refer to [ChainSafe official documentation](https://chainsafe.github.io/game-docs/)
 
@@ -66,11 +66,11 @@ Network Name: **Cronos Testnet**
 
 ![](../assets/cronos-play/cronos-gamefi-integration-step6-2.png)
 
-
+***
 
 \* For acquiring the NFT, you can create your own (see [Reference #2](play.md#\_2-smart-contract)), or mint an ERC721 NFT at our [Cronos NFT faucet](https://cronos.org/nft-faucet) (see [Reference #3](play.md#\_3-nft-faucet)).
 
-
+***
 
 ### Build and Run
 
@@ -115,7 +115,7 @@ The above guideline documentation only highlights the basic integration between 
 
 ![](../assets/cronos-play/cronos-gamefi-integration-step2d.png)
 
-
+***
 
 ### Smart contract
 
@@ -235,7 +235,7 @@ contract My1155Token is ERC1155, Ownable {
 -  Copy the contract address
 ```
 
-
+***
 
 ### NFT Faucet
 
@@ -259,7 +259,7 @@ contract My1155Token is ERC1155, Ownable {
 
 ![](../assets/cronos-play/cronos-gamefi-integration-step6-2.png)
 
-
+***
 
 ### (Optional) List NFT for sale in marketplace faucet
 

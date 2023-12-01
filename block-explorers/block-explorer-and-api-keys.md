@@ -4,13 +4,14 @@
 
 {% tabs %}
 {% tab title="Cronos Mainnet" %}
-* [https://cronoscan.com/](https://cronoscan.com)
+* [https://explorer.cronos.org/](https://explorer.cronos.org/)
 * [https://cronos.org/explorer](https://cronos.org/explorer/)
+* [https://cronoscan.com/](https://cronoscan.com)
 {% endtab %}
 
 {% tab title="Testnet" %}
+* [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
 * [https://cronos.org/explorer/testnet3](https://cronos.org/explorer/testnet3)
-* [https://testnet.cronoscan.com/](https://testnet.cronoscan.com/) (to be deprecated)
 {% endtab %}
 {% endtabs %}
 
