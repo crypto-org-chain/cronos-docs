@@ -104,8 +104,8 @@
 ## Block Explorers
 
 * [Block Explorer and API Keys](block-explorers/block-explorer-and-api-keys.md)
-* [Cronoscan](https://cronoscan.com/)
 * [Cronos Explorer](https://explorer.cronos.org)
+* [Cronoscan](https://cronoscan.com/)
 
 ## CRONOS CHAIN PROTOCOL
 

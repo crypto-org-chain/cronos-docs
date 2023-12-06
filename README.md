@@ -91,7 +91,7 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 * [DeFi ecosystem on Defillama](https://defillama.com/chain/Cronos)
 * [Gaming and metaverse ecosystem](https://blog.cronos.org/p/news-from-the-cronos-gaming-ecosystem)
 * [Dappradar](https://dappradar.com/rankings/protocol/cronos)
-* [Block explorer](https://cronoscan.com/)
+* [Block explorer](https://explorer.cronos.org)
 
 **Developer tips:**
 

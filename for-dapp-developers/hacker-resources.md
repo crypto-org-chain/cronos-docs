@@ -44,15 +44,15 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
           "chainId": 25,
           "url": "https://evm.cronos.org/",
           "gasPrice": 5000000000000,
-          "blockExplorer": "https://cronoscan.com/",
-          "blockExplorerPrefix": "https://cronoscan.com/tx/"
+          "blockExplorer": "https://explorer.cronos.org/",
+          "blockExplorerPrefix": "https://explorer.cronos.org/tx/"
         },
     "cronos_testnet": {
           "chainId": 338,
           "url": "https://evm-t3.cronos.org/",
           "gasPrice": 5000000000000,
-          "blockExplorer": "https://cronos.org/explorer/testnet3/",
-          "blockExplorerPrefix": "https://cronos.org/explorer/testnet3/tx/"
+          "blockExplorer": "https://explorer.cronos.org/testnet/",
+          "blockExplorerPrefix": "https://explorer.cronos.org/testnet/tx/"
         },
     }
     ```
@@ -66,16 +66,16 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
           "url": "https://evm.cronos.org/",
           "maxPriorityFeePerGas": 5000000000,
           "maxFeePerGas": 6000000000000,
-          "blockExplorer": "https://cronoscan.com/",
-          "blockExplorerPrefix": "https://cronoscan.com/tx/"
+          "blockExplorer": "https://explorer.cronos.org/",
+          "blockExplorerPrefix": "https://explorer.cronos.org/tx/"
         },
     "cronos_testnet": {
           "id": 338,
           "url": "https://evm-t3.cronos.org/",
           "maxPriorityFeePerGas": 5000000000,
           "maxFeePerGas": 6000000000000,
-          "blockExplorer": "https://cronos.org/explorer/testnet3/",
-          "blockExplorerPrefix": "https://cronos.org/explorer/testnet3/tx/"
+          "blockExplorer": "https://explorer.cronos.org/",
+          "blockExplorerPrefix": "https://explorer.cronos.org/tx/"
         },
     }
     ```
