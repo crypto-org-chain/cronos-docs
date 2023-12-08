@@ -1,9 +1,9 @@
 # Cronos General FAQ
 
-#### **What is the difference between Cronos Chain and Crypto.org Chain?**
+#### **What is the difference between Cronos Chain and Cronos POS Chain?**
 
 * Cronos is an EVM-compatible (Ethereum Virtual Machine) chain powered by Ethermint, built on the Cosmos SDK, which allows rapid porting of apps and smart contracts from Ethereum and EVM-compatible chains. On Cronos, users pay transaction fees in the $CRO cryptocurrency.
-* Crypto.org Chain is another Cosmos SDK chain which is primarily used for $CRO staking and as the backbone behind many Crypto.com applications. It aims to provide a fast transaction experience. (Croeseid Testnet is the testnet of Crypto.org Chain). On Crypto.org, users also pay transaction fees in the $CRO cryptocurrency.
+* &#x20;Cronos POS Chain is another Cosmos SDK chain that is primarily used for $CRO staking and as the backbone behind many Crypto.com applications. It aims to provide a fast transaction experience. (Croeseid Testnet is the testnet of Cronos POS Chain). On Cronos POS Chain, users also pay transaction fees in the $CRO cryptocurrency.
 
 If you are an application developer who is creating smart contracts in Solidity and would like to deploy decentralized applications in a permissionless environment, Cronos is suitable for your needs.&#x20;
 
@@ -31,4 +31,4 @@ If the limit is exceeded, the IP gets blocked for 1 minute. If you are expecting
 
 #### **If I increase the gas price, does it help to speed up my transaction?**&#x20;
 
-The current mempool setting works on a first-come-first-serve manner. The Cronos network does not yet support transaction prioritization using gas price or priority fee.
+The current mempool setting works in a first-come-first-serve manner. The Cronos network does not yet support transaction prioritization using gas price or priority fee.
