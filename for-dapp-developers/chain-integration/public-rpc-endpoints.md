@@ -73,5 +73,7 @@ Mainnet
   * [Chainstack announces support for Cronos ](https://chainstack.com/chainstack-announces-support-for-cronos/)
 * GetBlock:
   * [Cronos Shared Nodes](https://getblock.io/nodes/cro/)
-* Automata
+* Automata:
   * [Automata 1RPC](https://docs.1rpc.io/overview/supported-networks#cronos)
+* BlockPI:
+  * [Distributed RPC Service](https://public.blockpi.io/)
