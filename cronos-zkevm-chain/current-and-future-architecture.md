@@ -2,7 +2,7 @@
 
 ## Current architecture
 
-The Cronos zk-Hyperchain Testnet is a zero-knowledge layer 2 roll-up network on top of Ethereum Sepolia Testnet. It leverages the [Hyperchain stack created by Matter Labs](https://era.zksync.io/docs/reference/concepts/hyperscaling.html), together with some custom open-source developments such as the use of a custom token (TCRO) to pay for transaction fees.
+The Cronos zkEVM Testnet is a zero-knowledge layer 2 roll-up network on top of Ethereum Sepolia Testnet. It leverages the [hyperchain stack created by Matter Labs](https://era.zksync.io/docs/reference/concepts/hyperscaling.html), together with some custom open-source developments such as the use of a custom token (TCRO) to pay for transaction fees.
 
 Relevant Github repositories:
 
