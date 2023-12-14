@@ -25,7 +25,7 @@
 ## FOR DAPP DEVELOPERS
 
 * [💡 Founder FAQs](for-dapp-developers/founder-faqs.md)
-* [🏅 Hacker's getting started resources](for-dapp-developers/hacker-resources.md)
+* [🏅 Hacker's Getting Started Resources](for-dapp-developers/hacker-resources.md)
 * [📃 Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
   * [Contract Deployment](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
   * [Contract Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
@@ -124,3 +124,12 @@
   * [List of parameters](cronos-chain-protocol/chain-details/parameters.md)
   * [Technical glossary](cronos-chain-protocol/chain-details/technical-glossary.md)
   * [Protocol Documentation](cronos-chain-protocol/chain-details/cosmos-grpc-docs.md)
+
+## Cronos zkEVM Chain
+
+* [Introduction to Cronos zkEVM Chain testnet](cronos-zkevm-chain/introduction-to-cronos-zkevm-chain-testnet.md)
+* [Current and future architecture](cronos-zkevm-chain/current-and-future-architecture.md)
+* [Getting Started](cronos-zkevm-chain/getting-started/README.md)
+  * [Connect a crypto wallet](cronos-zkevm-chain/getting-started/connect-a-crypto-wallet.md)
+  * [Acquire or Bridge TCRO](cronos-zkevm-chain/getting-started/acquire-or-bridge-tcro.md)
+  * [Develop smart contracts and dapps](cronos-zkevm-chain/getting-started/develop-smart-contracts-and-dapps.md)
