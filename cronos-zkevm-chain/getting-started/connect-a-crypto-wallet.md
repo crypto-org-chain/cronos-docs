@@ -20,13 +20,13 @@ Click **"Add Network"**:\
 \
 **Name:** Cronos zkEVM Testnet
 
-**New RPC URL:** [https://rpc-zkevm-t0.cronos.org](https://rpc-zkevm-t0.cronos.org/)
+**New RPC URL:** `https://rpc-zkevm-t0.cronos.org`
 
 **Chain ID:** 282
 
 **Symbol:** TCRO
 
-**Block explorer URL:** [https://zkevm-t0.cronos.org/explorer/](https://rpc-zkevm-t0.cronos.org/)
+**Block explorer URL:** `https://zkevm-t0.cronos.org/explorer/`
 {% endtab %}
 {% endtabs %}
 
