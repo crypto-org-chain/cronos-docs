@@ -19,5 +19,43 @@ Relevant smart contract addresses on Ethereum Sepolia:
 
 ## Future architecture
 
-Will be completed soon.
+Cronos zkEVM is a new Layer 2, will coexist with the flagship Cronos chain (EVM compatible Layer 1 built on Cosmos SDK) and Cronos POS chain (aka "layer zero" built on Cosmos SDK). This is aligned with Cronos' vision of a multi-chain world.
+
+The target timeframe for mainnet launch is by June 2024.
+
+The new network aims to introduce 4 distinctive strengths aligned with the emerging trends of the next market cycle:
+
+### **CROFam**
+
+\#CROFam is a strong community of users and dapps that have proven their passion and resilience through the bear market.
+
+Partners like VVS Finance, Veno Finance and Fulcrom Finance have crafted high quality apps that deserve to be better known and have the potential to scale in the next market cycle.
+
+The new chain will enable participating apps to scale to the next level.
+
+### **Shared liquidity**
+
+When users hold cryptocurrencies on a hyperchain, their assets are secured by Ethereum where they can always choose to withdraw. Besides, they can transfer their assets to other hyperchains securely and at low cost thanks to unified bridge and messaging.
+
+### **Yield-bearing assets**.
+
+At this point we expect that the network token, backed by CRO, and several stable coins and other cryptos, will be natively APY generating for users, just by holding them on the chain. This can be achieved via rebase tokens. Exact mechanism is being worked out with the Veno Finance team.
+
+Cronos zkEVM has the potential to create an entire ecosystem of dapps that treat yield-bearing tokens as first class citizens and can effectively compete in a high interest rate economy.
+
+### **Account Abstraction**.
+
+Account sbstraction has been possible for a while on EVM compatible chains, but it has been challenging for legacy chains to migrate existing liquidity to AA-enabled wallets.
+
+Thanks to AA, users can deposit their funds to the chain and transact with dapps without ever having to switch network. Instead, they can opt to emit off-chain signatures from any EVM home chain, or even from mobile apps or games with usual login.
+
+Dapps on Cronos zkEVM should support AA by default, so that they can take care of relaying transactions to Cronos zkEVM and even pay for gas.
+
+This will unleash the power of AA to support mainstream adoption.
+
+### What's next
+
+We are still in the early days and significant R\&D is needed to translate this vision into a live network, while at the same time monitoring and optimizing the performance of the testnet.
+
+To participate in the conversation, please join the [Discord server](https://discord.com/invite/cronos).
 
