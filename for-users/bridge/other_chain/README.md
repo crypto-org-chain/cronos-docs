@@ -14,17 +14,12 @@ Please read this guide and review the project documentation carefully as misuse 
 
 #### Currently supported networks:
 
-* Cronos POS Chain <=> Cronos (Cronos EVM Chain);
-* Cosmos Hub <=> Cronos (Cronos EVM Chain);
-* Akash <=> Cronos (Cronos EVM Chain);
-* IRISnet<=> Cronos (Cronos EVM Chain).
-
-#### Currently supported tokens:
-
-* CRO;
-* ATOM;
-* AKT;
-* IRIS
+* Cronos POS Chain <=> Cronos (Cronos EVM Chain): CRO token;
+* Cosmos Hub <=> Cronos: ATOM token;
+* Akash <=> Cronos: AKT token;
+* IRISnet<=> Cronos: ISIS token;
+* CANTO <> Cronos: CANTO token;
+* Celestia <> Cronos: TIA token;
 
 #### Currently supported wallets:
 
