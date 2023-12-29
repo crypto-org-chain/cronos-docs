@@ -39,7 +39,7 @@ When users hold cryptocurrencies on a hyperchain, their assets are secured by Et
 
 ### **Yield-bearing assets**.
 
-At this point we expect that the network token, backed by CRO, and several stable coins and other cryptos, will be natively APY generating for users, just by holding them on the chain. This can be achieved via rebase tokens. Exact mechanism is being worked out with the Veno Finance team.
+At this point we expect that the network token, backed by CRO, and several stable coins and other cryptos, will be natively APY generating for users, just by holding them on the chain. The exact mechanism is being worked out with the Veno Finance team.
 
 Cronos zkEVM has the potential to create an entire ecosystem of dapps that treat yield-bearing tokens as first class citizens and can effectively compete in a high interest rate economy.
 
