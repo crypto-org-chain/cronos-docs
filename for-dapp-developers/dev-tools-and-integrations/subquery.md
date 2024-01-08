@@ -16,7 +16,8 @@ Other advantages include superior performance with multiple RPC endpoint configu
 - SubQuery Docs: [SubQuery Academy (Documentation)](https://academy.subquery.network/)
 - Intro Quick Start Guide: [1. Create a New Project](https://academy.subquery.network/quickstart/quickstart.html)
 - [Cronos Quick Start Guide](https://academy.subquery.network/quickstart/quickstart_chains/cosmos-cronos.html#cronos-quick-start)
-
+- For technical questions and support reach out to us start@subquery.network
+  
 ## Getting Started
 
 Take a look at this SubQuery Starter Project that introduces SubQuery's Cronos support by indexing [Cronos](https://github.com/subquery/cosmos-subql-starter/tree/main/Cronos).
