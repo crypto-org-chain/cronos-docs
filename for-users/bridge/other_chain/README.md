@@ -18,8 +18,9 @@ Please read this guide and review the project documentation carefully as misuse 
 * Cosmos Hub <=> Cronos: ATOM token;
 * Akash <=> Cronos: AKT token;
 * IRISnet<=> Cronos: ISIS token;
-* CANTO <> Cronos: CANTO token;
-* Celestia <> Cronos: TIA token;
+* CANTO <=> Cronos: CANTO token;
+* Celestia <=> Cronos: TIA token;
+* Juno <=> Cronos: JUNO token.
 
 #### Currently supported wallets:
 
