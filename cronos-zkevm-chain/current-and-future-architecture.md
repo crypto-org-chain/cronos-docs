@@ -6,9 +6,10 @@ The Cronos zkEVM Testnet is a zero-knowledge layer 2 roll-up network on top of E
 
 Relevant Github repositories:
 
-* [https://github.com/cronos-labs/zksync-era](https://github.com/cronos-labs/zksync-era)&#x20;
+* [https://github.com/cronos-labs/cronos-zkevm](https://github.com/cronos-labs/cronos-zkevm)
+* [https://github.com/cronos-labs/cronos-zkevm-withdrawal-finalizer](https://github.com/cronos-labs/cronos-zkevm-withdrawal-finalizer)
 * [https://github.com/cronos-labs/era-contracts](https://github.com/cronos-labs/era-contracts)
-* [https://github.com/cronos-labs/zksync2-js](https://github.com/cronos-labs/zksync2-js)
+* [https://github.com/cronos-labs/cronos-zkevm-js](https://github.com/cronos-labs/cronos-zkevm-js)
 
 Relevant smart contract addresses on Ethereum Sepolia:
 
