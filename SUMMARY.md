@@ -50,6 +50,10 @@
   * [Caldera](for-dapp-developers/dev-tools-and-integrations/caldera.md)
   * [Flair](for-dapp-developers/dev-tools-and-integrations/flair.md)
 
+***
+
+* [Page](page.md)
+
 ## FOR NODE HOSTS
 
 * [Running nodes](for-node-hosts/running-nodes/README.md)
@@ -63,6 +67,8 @@
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
   * [Cronosd build with Nix](for-node-hosts/running-nodes/cronosd-build-with-nix.md)
   * [VersionDB](for-node-hosts/running-nodes/versiondb.md)
+  * [MemIAVL](for-node-hosts/running-nodes/memiavl.md)
+  * [Local State Sync](for-node-hosts/running-nodes/local-state-sync.md)
 * [Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY
