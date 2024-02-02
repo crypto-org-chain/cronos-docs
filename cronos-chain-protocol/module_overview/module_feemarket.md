@@ -65,9 +65,33 @@ The query with params command allows users to query the feemarket parameters.
 
 **REST endpoint**
 
-The parameters can also be checked by browsing to the following REST endpoint on testnet:
+The parameters can also be checked by browsing to the following REST endpoint&#x20;
 
-[https://rest-t3.cronos.org/ethermint/feemarket/v1/params](https://rest-t3.cronos.org/ethermint/feemarket/v1/params)
+{% tabs %}
+{% tab title="Mainnet" %}
+{% embed url="https://rest.cronos.org/ethermint/feemarket/v1/params" %}
+
+```bash
+{
+  "params": {
+    "no_base_fee": false,
+    "base_fee_change_denominator": 300,
+    "elasticity_multiplier": 4,
+    "enable_height": "0",
+    "base_fee": "10018977710000",
+    "min_gas_price": "10000000000000.000000000000000000",
+    "min_gas_multiplier": "0.500000000000000000"
+  }
+}
+```
+{% endtab %}
+
+{% tab title="Testnet" %}
+
+
+{% embed url="https://rest-t3.cronos.org/ethermint/feemarket/v1/params" %}
+
+
 
 ```json
 {
@@ -76,9 +100,51 @@ The parameters can also be checked by browsing to the following REST endpoint on
     "base_fee_change_denominator": 100000000,
     "elasticity_multiplier": 2,
     "enable_height": "2280800",
-	    "base_fee": "1955046261113",
+    "base_fee": "1955046261113",
     "min_gas_price": "0.000000000000000000",
     "min_gas_multiplier": "0.500000000000000000"
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+**JSON-RPC**
+
+We can query the `eth_feeHistory` by JSON-RPC, the result will return the transaction base fee per gas and effective priority fee per gas for the requested/supported block range.\
+
+
+```bash
+curl --location --request POST 'https://evm.cronos.org' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "jsonrpc": "2.0",
+    "method": "eth_feeHistory",
+    "params": [
+        "0x1",
+        "latest",
+        []
+    ],
+    "id": 44
+}'
+```
+
+For example returns
+
+```json
+{
+    "id": 44,
+    "result": {
+        "oldestBlock": "0xbbbe82",
+        "baseFeePerGas": [
+            "0x9184e72a000",
+            "0x9108fffb52b"
+        ],
+        "gasUsedRatio": [
+            0.0005502
+        ]
+    },
+    "jsonrpc": "2.0"
+}
+```
+
