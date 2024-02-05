@@ -51,6 +51,7 @@
   * [Caldera](for-dapp-developers/dev-tools-and-integrations/caldera.md)
   * [Flair](for-dapp-developers/dev-tools-and-integrations/flair.md)
   * [SubQuery](for-dapp-developers/dev-tools-and-integrations/subquery.md)
+  * [Google Bigquery](for-dapp-developers/dev-tools-and-integrations/google-bigquery.md)
 
 ***
 
