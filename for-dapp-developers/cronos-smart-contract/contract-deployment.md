@@ -1,4 +1,9 @@
-# Contract Deployment
+# Contract Development on Testnet
+
+When developing smart contracts on Testnet, use the Testnet version of the Cronos Explorer block explorer:
+
+* Cronos Explorer Testnet URL: [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
+* Documentation of Cronos Explorer Testnet API: [https://explorer-api-doc.cronos.org/testnet](https://explorer-api-doc.cronos.org/testnet)
 
 ## Truffle: Deploy ERC20 Contract
 

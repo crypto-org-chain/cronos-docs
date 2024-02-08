@@ -48,7 +48,7 @@ We officially support macOS, Windows and Linux only. Other platforms may work bu
 ### Prepare nodejs and npm environment
 
 You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)\
-`Nodejs v10` is suggested
+`Nodejs v18+` is suggested
 
 ### Sufficient funds on deployer address
 
