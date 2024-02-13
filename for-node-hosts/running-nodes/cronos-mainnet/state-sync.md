@@ -30,20 +30,20 @@ State-sync depends on the ability to pull a snapshot from its persistent-peers, 
 ## Step 1. Get the latest cronosd binary
 
 {% hint style="info" %}
-The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v1.0.9`
+The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v1.0.15`
 {% endhint %}
 
 * Install the **Cronos Mainnet** binaries from GitHub:
 
-<pre class="language-bash"><code class="lang-bash"><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v1.0.9/cronos_1.0.9_Linux_x86_64.tar.gz
-</strong>tar -zxvf cronos_1.0.9_Linux_x86_64.tar.gz
+<pre class="language-bash"><code class="lang-bash"><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v1.0.15/cronos_1.0.15_Darwin_x86_64.tar.gz
+</strong>tar -zxvf cronos_1.0.15_Darwin_x86_64.tar.gz
 </code></pre>
 
 * Check that **`cronosd`** is effectively installed:
 
 ```bash
 ./bin/cronosd version
-1.0.9
+1.0.15
 ```
 
 
