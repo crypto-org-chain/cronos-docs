@@ -53,10 +53,6 @@
   * [SubQuery](for-dapp-developers/dev-tools-and-integrations/subquery.md)
   * [Google Bigquery](for-dapp-developers/dev-tools-and-integrations/google-bigquery.md)
 
-***
-
-* [Page](page.md)
-
 ## FOR NODE HOSTS
 
 * [Running nodes](for-node-hosts/running-nodes/README.md)
@@ -134,11 +130,11 @@
   * [Technical glossary](cronos-chain-protocol/chain-details/technical-glossary.md)
   * [Protocol Documentation](cronos-chain-protocol/chain-details/cosmos-grpc-docs.md)
 
-## Cronos zkEVM Chain
+## Cronos zkEVM
 
-* [Introduction to Cronos zkEVM Chain testnet](cronos-zkevm-chain/introduction-to-cronos-zkevm-chain-testnet.md)
-* [Current and future architecture](cronos-zkevm-chain/current-and-future-architecture.md)
-* [Getting Started](cronos-zkevm-chain/getting-started/README.md)
-  * [Connect a crypto wallet](cronos-zkevm-chain/getting-started/connect-a-crypto-wallet.md)
-  * [Acquire or Bridge TCRO](cronos-zkevm-chain/getting-started/acquire-or-bridge-tcro.md)
-  * [Develop smart contracts and dapps](cronos-zkevm-chain/getting-started/develop-smart-contracts-and-dapps.md)
+* [Cronos zkEVM](cronos-zkevm/cronos-zkevm.md)
+* [Current and future architecture](cronos-zkevm/current-and-future-architecture.md)
+* [Getting Started](cronos-zkevm/getting-started/README.md)
+  * [Connect a crypto wallet](cronos-zkevm/getting-started/connect-a-crypto-wallet.md)
+  * [Acquire or Bridge TCRO](cronos-zkevm/getting-started/acquire-or-bridge-tcro.md)
+  * [Develop smart contracts and dapps](cronos-zkevm/getting-started/develop-smart-contracts-and-dapps.md)

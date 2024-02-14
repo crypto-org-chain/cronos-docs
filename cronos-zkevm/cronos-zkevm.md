@@ -3,9 +3,9 @@ cover: ../.gitbook/assets/background.png
 coverY: 0
 ---
 
-# Introduction to Cronos zkEVM Chain testnet
+# Cronos zkEVM
 
-
+## Introducing Cronos zkEVM Testnet
 
 In December 2023, [Cronos Labs](https://cronoslabs.org), the web3 start-up accelerator focusing on DeFi, GameFi, and the development of the [Cronos](https://cronos.org) ecosystem, announced the launch of Cronos zkEVM Chain public testnet, a zero-knowledge (ZK) rollup blockchain network that represents a significant milestone on Cronos' journey towards scalability and mainstream adoption.
 
