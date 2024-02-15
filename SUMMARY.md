@@ -129,6 +129,7 @@
   * [List of parameters](cronos-chain-protocol/chain-details/parameters.md)
   * [Technical glossary](cronos-chain-protocol/chain-details/technical-glossary.md)
   * [Protocol Documentation](cronos-chain-protocol/chain-details/cosmos-grpc-docs.md)
+* [Common IBC Commands](cronos-chain-protocol/common-ibc-commands.md)
 
 ## Cronos zkEVM
 
