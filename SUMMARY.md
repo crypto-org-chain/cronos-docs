@@ -29,7 +29,7 @@
 * [🏅 Hacker's Getting Started Resources](for-dapp-developers/hacker-resources.md)
 * [📃 Smart Contracts](for-dapp-developers/cronos-smart-contract/README.md)
   * [Contract Development on Testnet](for-dapp-developers/cronos-smart-contract/contract-deployment.md)
-  * [Deployment and Verification on Mainnet](for-dapp-developers/cronos-smart-contract/contract-verification.md)
+  * [Contract Deployment and Verification](for-dapp-developers/cronos-smart-contract/contract-verification.md)
   * [Best Practices](for-dapp-developers/cronos-smart-contract/defi-practice.md)
   * [Token Contract Addresses](for-dapp-developers/cronos-smart-contract/token-contract-addresses.md)
 * [💻 dApp Creation](for-dapp-developers/chain-integration/README.md)
