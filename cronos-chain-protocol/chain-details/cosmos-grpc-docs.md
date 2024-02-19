@@ -3852,7 +3852,7 @@ Query/DelegatorValidator RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| validator | [Validator](#cosmos.staking.v1beta1.Validator) |  | validator defines the the validator info. |
+| validator | [Validator](#cosmos.staking.v1beta1.Validator) |  | validator defines the validator info. |
 
 
 
@@ -3885,7 +3885,7 @@ Query/DelegatorValidators RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| validators | [Validator](#cosmos.staking.v1beta1.Validator) | repeated | validators defines the the validators&#39; info of a delegator. |
+| validators | [Validator](#cosmos.staking.v1beta1.Validator) | repeated | validators defines the validators&#39; info of a delegator. |
 | pagination | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
 
@@ -4101,7 +4101,7 @@ QueryValidatorResponse is response type for the Query/Validator RPC method
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| validator | [Validator](#cosmos.staking.v1beta1.Validator) |  | validator defines the the validator info. |
+| validator | [Validator](#cosmos.staking.v1beta1.Validator) |  | validator defines the validator info. |
 
 
 

@@ -84,7 +84,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **How can I apply for the Cronos accelerator program?**
 
-* The Cronos Accelerator Program supports early-stage teams who are working full-time on a dApp project and have an prototype or MVP product.
+* The Cronos Accelerator Program supports early-stage teams who are working full-time on a dApp project and have a prototype or MVP product.
 * Please refer to [this page](https://cronos.org/accelerators) for details.
 * Accelerator program highlights:
   * Target sectors: retail DeFi, GameFi, infrastructure. Projects are expected to launch natively on Cronos, and subsequent multi chain expansion is encouraged.
@@ -100,8 +100,8 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **Can Cronos help with my token sale or NFT primary sale?**
 
-* As an open-source protocol and decentralized network, Cronos will not be able endorse token sales.
-* You can work with some of the the launchpads and media organizations who have build significant audiences within the Cronos ecosystem, such as:
+* As an open-source protocol and decentralized network, Cronos will not be able to endorse token sales.
+* You can work with some of the launchpads and media organizations who have build significant audiences within the Cronos ecosystem, such as:
   * Token launchpads: VVS finance, others.
   * NFT launchpads: Minted, Ebisu’s Bay, others.
   * Media organizations: CronosNews, Cronicle, others.
