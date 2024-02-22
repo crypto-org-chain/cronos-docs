@@ -1,5 +1,7 @@
 # Wallet integrations
 
+## Overview
+
 Cronos chain is supported by the following self-custodial wallets:
 
 * Crypto.com DeFi Wallet.
@@ -8,6 +10,8 @@ Cronos chain is supported by the following self-custodial wallets:
 * and more than 30 other wallets (you can see a more complete list of dev tools [here](https://crofam.me/devtools)).
 
 Crypto.com DeFi Wallet, Trust Wallet and MetaMask have mobile apps that include in-app dApp browsers. Users can access dApps on the go via these in-app browsers. We recommend that all dApp developers integrate with these 3 wallets at least, and more if possible.
+
+[Follow this link](https://github.com/kentimsit/cronos-wallet-connections-v3) for a basic example on how to implement the main wallet connection methods available to Cronos dApp developers.
 
 ## Crypto.com DeFi Wallet
 
@@ -21,19 +25,14 @@ Users will be able to login with your dApp in several ways:
 
 * On Mobile, they can visit your dApp and connect to it via the in-app browser of the Crypto.com DeFi Wallet iOS or Android apps.
 * On Desktop, they can install the Crypto.com Wallet Extension from the Chrome extension store into their Chrome, Edge or Brave browser. The extension can be connected to the Crypto.com DeFi Wallet mobile app (in which case the user will need to confirm each transaction on their mobile phone), or alternatively it can work as a standalone extension entirely in the browser.
+* Finally, on Desktop too, the Crypto.com DeFi Wallet is available as a standalone app.&#x20;
 
 To get your dApp listed on the dApp section of Crypto.com DeFi Wallet, the steps are as below:&#x20;
 
-* Make sure your dApp completes the integration of our SDK and the wallet connection is working
+* Make sure your dApp completes the integration of the Crypto.com Wallet  Extension SDK and the wallet connection is working (see below for details)
 * Provide your dApp details in the [Submission Form](https://crypto-com.typeform.com/to/bRvudlYV)
-* DeFi Wallet Team review submission with stakeholders
-* DeFi Wallet Team proceed with the dApp listing
-
-Continue reading below if you would like to learn more about integrating your dApp and the Crypto.com DeFi Wallet.
-
-## Crypto.com | Wallet Extension
-
-### Overview
+* Crypto.com DeFi Wallet Team reviews submission with stakeholders
+* Crypto.com DeFi Wallet Team may proceesd with the dApp listing
 
 As a developer, if you would like to offer all the mobile and desktop connection options provided by the Crypto.com DeFi Wallet, the first step is to integrate your dApp with the Crypto.com Wallet  Extension.
 
@@ -67,12 +66,6 @@ The Crypto.com Wallet Extension currently supports the following networks:
 * Aptos Testnet
 {% endtab %}
 {% endtabs %}
-
-Additional chains are planned for the near future.
-
-### dApp integration
-
-[Follow this link](https://cronoslabs.substack.com/p/cronos-developer-series-connect-your-dapp-with-defi-wallet-metamask-and-trust-wallet-77419fe696a5) for a basic tutorial on how to implement the main wallet connection methods available to Cronos dApp developers.
 
 The official repository and documentation of Crypto.com Wallet Extension are available at: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo).
 

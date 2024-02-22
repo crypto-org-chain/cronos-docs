@@ -35,7 +35,6 @@
 * [💻 dApp Creation](for-dapp-developers/chain-integration/README.md)
   * [Free and commercial RPC endpoints](for-dapp-developers/chain-integration/public-rpc-endpoints.md)
   * [Wallet integrations](for-dapp-developers/chain-integration/web-extension-integration.md)
-  * [Crypto.com DeFi Desktop Wallet integration](for-dapp-developers/chain-integration/desktop-wallet-integration.md)
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Adress Conversion](for-dapp-developers/chain-integration/adress-conversion.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
@@ -134,7 +133,7 @@
 ## Cronos zkEVM
 
 * [Cronos zkEVM](cronos-zkevm/cronos-zkevm.md)
-* [Current and future architecture](cronos-zkevm/current-and-future-architecture.md)
+* [zkEVM Litepaper v1.0](cronos-zkevm/current-and-future-architecture.md)
 * [Getting Started](cronos-zkevm/getting-started/README.md)
   * [Connect a crypto wallet](cronos-zkevm/getting-started/connect-a-crypto-wallet.md)
   * [Acquire or Bridge TCRO](cronos-zkevm/getting-started/acquire-or-bridge-tcro.md)

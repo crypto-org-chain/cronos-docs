@@ -1,4 +1,4 @@
-# 💻 Cronos Integration
+# 💻 dApp Creation
 
 ### Integration Guides
 
@@ -10,8 +10,8 @@
 [web-extension-integration.md](web-extension-integration.md)
 {% endcontent-ref %}
 
-{% content-ref url="desktop-wallet-integration.md" %}
-[desktop-wallet-integration.md](desktop-wallet-integration.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="json-rpc.md" %}
