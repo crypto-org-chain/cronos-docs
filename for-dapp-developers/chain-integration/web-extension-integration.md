@@ -5,8 +5,9 @@
 Cronos chain is supported by the following self-custodial wallets:
 
 * Crypto.com DeFi Wallet.
+* Rabby (rabby.io)
+* MetaMask (requires custom network configuration) (metamask.io).
 * Trust Wallet.
-* MetaMask (requires custom network configuration).
 * and more than 30 other wallets (you can see a more complete list of dev tools [here](https://crofam.me/devtools)).
 
 Crypto.com DeFi Wallet, Trust Wallet and MetaMask have mobile apps that include in-app dApp browsers. Users can access dApps on the go via these in-app browsers. We recommend that all dApp developers integrate with these 3 wallets at least, and more if possible.
