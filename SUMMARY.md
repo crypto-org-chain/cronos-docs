@@ -38,7 +38,7 @@
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Adress Conversion](for-dapp-developers/chain-integration/adress-conversion.md)
   * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
-* [⚙ Dev Tools & Integrations](for-dapp-developers/dev-tools-and-integrations/README.md)
+* [⚙️ Dev Tools & Integrations](for-dapp-developers/dev-tools-and-integrations/README.md)
   * [Overview of dev tools & integrations](for-dapp-developers/useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
   * [Tenderly](for-dapp-developers/dev-tools-and-integrations/tenderly.md)
   * [Band Protocol](for-dapp-developers/useful-projects-on-cronos/band-protocol.md)
