@@ -31,4 +31,4 @@ If the limit is exceeded, the IP gets blocked for 1 minute. If you are expecting
 
 #### **If I increase the gas price, does it help to speed up my transaction?**&#x20;
 
-The current mempool setting works in a first-come-first-serve manner. The Cronos network does not yet support transaction prioritization using gas price or priority fee.
+The current mempool setting works in a [priority gas fee manner](module\_overview/module\_feemarket.md), where transaction prioritization happens based on the gas price or priority fee.
