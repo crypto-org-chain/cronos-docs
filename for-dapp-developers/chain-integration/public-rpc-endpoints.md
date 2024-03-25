@@ -77,3 +77,5 @@ Mainnet
   * [Automata 1RPC](https://docs.1rpc.io/overview/supported-networks#cronos)
 * BlockPI:
   * [Distributed RPC Service](https://public.blockpi.io/)
+* dRPC:
+  * [Decentralized RPC for Cronos Mainnet & Testnet](https://drpc.org/chainlist/cronos)
