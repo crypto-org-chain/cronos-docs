@@ -1,4 +1,4 @@
-# Adress Conversion
+# Address Conversion
 
 As explained in [chain-id.md](../../cronos-chain-protocol/chain-id.md "mention"), Cronos uses the Bech32 address format. \
 In order to convert between a Bech32 format address and an Ethereum format address, we provide the following sample code below:
