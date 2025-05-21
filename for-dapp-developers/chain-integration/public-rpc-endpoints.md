@@ -82,7 +82,8 @@ Mainnet
   * [Distributed RPC Service](https://public.blockpi.io/)
 * All That Node:
   * [Cronos Nodes](https://www.allthatnode.com/cronos.dsrv)
-*   Allnodes:
-
+* Allnodes:
     * [RPC Gateway to Cronos](https://cronos.publicnode.com/)
-
+* dRPC:
+    * [Cronos Public RPC APIs](https://drpc.org/chainlist/cronos)
+    * [dRPC documentation](https://drpc.org/docs)
