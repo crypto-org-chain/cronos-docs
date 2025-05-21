@@ -28,7 +28,7 @@ Decentralized Finance (DeFi) is revolutionizing the finance industry and bringin
 * Use simple solutions for your functions so that you and your team can understand when they review back. Also, the architecture of your codebase should make your code easy to check.
   * You may write small functions with a clear purpose. This helps facilitate a more straightforward review and testing.
   * You can split the logic of your system either through multiple contracts or by grouping similar functions.
-  * You should also note that all state modification in the function must happen before an external call is made, when considering the function in Solidity. This potentially prevent a re-entrancy attack. You can learn more details [here](https://dev.to/zaryab2000/the-significance-of-check-effects-interaction-pattern-5hn6).
+  * You should also note that all state modification in the function must happen before an external call is made, when considering the function in Solidity. This potentially prevents a re-entrancy attack. You can learn more details [here](https://dev.to/zaryab2000/the-significance-of-check-effects-interaction-pattern-5hn6).
 
 **Inheritance**
 
@@ -52,7 +52,7 @@ Decentralized Finance (DeFi) is revolutionizing the finance industry and bringin
 
 ### Testing
 
-* Static analysis tools are an important toolkit for smart contract auditors. These tools are automated, and hence saves time and improves quality as it helps to discover potential common vulnerabilities in your code. Below are some examples of some tools widely used:
+* Static analysis tools are an important toolkit for smart contract auditors. These tools are automated, and hence save time and improve quality as they help to discover potential common vulnerabilities in your code. Below are some examples of some tools widely used:
   * [Slither](https://github.com/crytic/slither) runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses.
   * [Mythril](https://github.com/ConsenSys/mythril) is a security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum. It uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities.
   * [Echidna](https://github.com/crytic/echidna) is a smart contract fuzzing tool. Fuzzing is an automated testing technique that randomly feeds invalid and unexpected inputs and data into smart contracts in order to find coding errors and security vulnerabilities. Echidna uses grammar based fuzzing based on an EVM ABI to falsify user-defined predicates or Solidity assertions.
