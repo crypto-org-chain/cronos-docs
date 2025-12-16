@@ -8,7 +8,7 @@ Action required:
 * \[DApp Host]
   * Please test your DApps, nodes, product on the Cronos EVM testnet to confirm compatibility with `v1.6.1`
 * \[Node hosts]
-  * Upgrade the `cronosd` binary at the upgrade height (TBA) to [v1.6.1](https://github.com/crypto-org-chain/cronos/releases/tag/v1.6.1)&#x20;
+  * Upgrade the `cronosd` binary at the upgrade height (`45062800`) to [v1.6.1](https://github.com/crypto-org-chain/cronos/releases/tag/v1.6.1)&#x20;
   * Update the "_mempool_" and "_cronos_" config in `app.toml` (see "_New configurations_" [here](https://github.com/crypto-org-chain/cronos/releases/tag/v1.6.1))
 
 &#x20;**DO NOT UPGRADE to the binary v1.6.1 before that suggested upgrade schedule.**
