@@ -23,10 +23,8 @@
 | Contract Address | `0xc01efAaF7C5C61bEbFAeb358E1161b537b8bC0e0` | `0xf951eC28187D9E5Ca673Da8FE6757E6f0Be5F77C` |
 
 {% hint style="info" %}
-**Note**: USDC.e is a 6-decimal token, meaning that 1 USDC.e equals 1,000,000 in its smallest unit.
+**Note**: USDC.e is a 6-decimal token, meaning that 1 USDC.e equals 1,000,000 in its smallest unit. On Cronos Testnet, use the [**faucet**](https://faucet.cronos.org/) to get _devUSDC.e_ for testing.
 {% endhint %}
-
-
 
 ## API Endpoints
 
