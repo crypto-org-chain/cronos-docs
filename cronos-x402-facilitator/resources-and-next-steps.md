@@ -9,6 +9,8 @@ The Cronos x402 Facilitator enables sellers to accept on-chain stablecoin paymen
 * **Base URL**: [https://facilitator.cronoslabs.org](https://facilitator.cronoslabs.org/)
 * **Health Check**: [https://facilitator.cronoslabs.org/healthcheck](https://facilitator.cronoslabs.org/healthcheck)
 * **API Endpoints**: [https://facilitator.cronoslabs.org/v2/x402/](https://facilitator.cronoslabs.org/v2/x402/)
+* **Facilitator Client SDK**: [https://www.npmjs.com/package/@crypto.com/facilitator-client](https://www.npmjs.com/package/@crypto.com/facilitator-client)
+* **Facilitator Client SDK Source Code**: [https://github.com/crypto-com/facilitator-client-ts](https://github.com/crypto-com/facilitator-client-ts)
 
 #### **Documentation & Resources:**
 

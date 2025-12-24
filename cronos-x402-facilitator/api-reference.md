@@ -9,7 +9,11 @@
 {% endhint %}
 
 {% hint style="info" %}
-**Note**: The facilitator uses one base URL for all networks. Switch between mainnet and testnet by setting the `network` field in your payment requirements (`"cronos-testnet"` or `"cronos-mainnet"`). See [API Endpoints](api-reference.md#api-endpoints) below.
+**Note**: Developers can interact with the Facilitator API directly via HTTP requests. See [API Endpoints](api-reference.md#api-endpoints) below.&#x20;
+
+Alternatively, we provide [**Crypto.com Facilitator Client SDK**](https://www.npmjs.com/package/@crypto.com/facilitator-client), a lightweight, strongly typed Node.js/TypeScript client for the interaction.\
+\
+The facilitator uses one base URL for all networks. Switch between mainnet and testnet by setting the `network` field in your payment requirements (`"cronos-testnet"` or `"cronos-mainnet"`).&#x20;
 {% endhint %}
 
 #### USDC.E Contract Information
