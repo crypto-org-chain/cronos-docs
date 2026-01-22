@@ -182,6 +182,7 @@
 * [🎓 About the Ambassador Program](ambassadors/about-the-ambassador-program.md)
 * [Our Objectives & Values](ambassadors/our-objectives-and-values.md)
 * [🤝 Ambassador List](ambassadors/ambassador-list.md)
+* [🎖️ Hall Of CROwns](ambassadors/hall-of-crowns.md)
 * [🧠 Essential Links and Info](ambassadors/essential-links-and-info.md)
 * [🚀 Program Overview](ambassadors/program-overview.md)
 * [🏎️ Contribution Tracks](ambassadors/contribution-tracks.md)

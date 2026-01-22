@@ -1,5 +1,5 @@
 ---
-description: Here is your Cronos Ambassadors Full List
+description: Cronos Ambassadors - Full List
 ---
 
 # 🤝 Ambassador List
