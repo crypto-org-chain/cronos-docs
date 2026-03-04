@@ -4,7 +4,7 @@
 
 The fastest way to get a node synced to the latest block-height is by using [State Sync](https://docs.tendermint.com/master/nodes/state-sync.html#configure-state-sync). With State Sync, your node downloads a snapshot near the head of the chain and verifies this data. This leads to drastically shorter times to join the network.
 
-Keep in mind that blocks prior to the trust height used for State Sync will not be queryable.&#x20;
+Keep in mind that blocks prior to the trust height used for State Sync will not be queryable.
 
 Therefore, if your goal is to run a full node with historical data, it is recommended not to use State Sync, but instead to explore other Snapshot option such as [Native Snapshots](cronos-native-snapshots.md) or [Quicksync](quicksync.md) archive snapshot.
 
@@ -29,7 +29,7 @@ State-sync depends on the ability to pull a snapshot from its persistent-peers, 
 ### Step 1: Get the latest cronosd binary
 
 {% hint style="info" %}
-The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v1.4.5`
+The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases) release is `cronosd v1.4.5`&#x20;
 {% endhint %}
 
 * Install the **Cronos Mainnet** binaries from GitHub:
@@ -47,7 +47,7 @@ The latest Cronosd [version](https://github.com/crypto-org-chain/cronos/releases
 
 ### Step 2: Configure cronosd
 
-* Initialize **cronosd.** Replace the **\[moniker]** with an ID for your node. &#x20;
+* Initialize **cronosd.** Replace the **\[moniker]** with an ID for your node.
 
 ```bash
 ./bin/cronosd init [moniker] --chain-id cronosmainnet_25-1
@@ -80,6 +80,11 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(persistent_peers[[:space:]]+=[[:space:]]+).*$|\1\"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.cronos/config/config.toml
 ```
+
+{% hint style="info" %}
+Tips: Corresponding to the `persistent_peers` above for Cronos Mainnet, here is the ones for **Cronos Testnet**:\
+`8fcba3485c67a2a00a383b6f45660a4ac529c6ca@52.77.30.18:26656,e65199bc579ffd89d7c021c5611f9f1c97f7ff13@54.251.209.254:26656`
+{% endhint %}
 
 ### Step 3: Run everything
 
