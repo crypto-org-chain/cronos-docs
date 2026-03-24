@@ -2,9 +2,8 @@
 
 Choose one or multiple tracks as a Cronos Ambassador and positively impact the ecosystem by playing to your strengths. We’ve given some examples as to what each track might look like on a day-to-day basis.<br>
 
-* **Content & Influence** — Create engaging social content: threads, videos, articles, and visuals that educate and inspire audiences about Cronos.
-* **Localization** — Translate official materials and adapt content for your local community. Break down language barriers.
-* **Education & Onboarding** — Help newcomers get started. Create beginner-friendly tutorials, host Q\&As, and design step-by-step guides.
-* **Campaign Architect** — Design and execute campaigns with measurable KPIs. Launch contests, raids, viral challenges, and community IRL events.
-* **Builder Champion** — Grow the developer ecosystem. Support builders, host technical workshops, contribute to repos, and organize developer community events
-* **Community Builder** — Foster welcoming community spaces. Moderate discussions, gather feedback, and keep members engaged.
+* **Advocacy & Education** - Share and explain the Cronos App and network to your audience through content, threads, videos, or live sessions. Help people understand what it does and why it matters.
+* **Growth & Activation** - Drive awareness and user growth through campaigns, events, or activations tailored to your region or community.
+* **Community Building** - Grow and nurture active Cronos communities on Discord, Telegram, X, or local platforms in your region.
+* **User Support** - Help onboard new users, answer questions, and make the Cronos App experience smoother for people in your community.
+* **Localization** - Translate, adapt, and distribute Cronos App and network content for your region and language so it resonates with local audiences.

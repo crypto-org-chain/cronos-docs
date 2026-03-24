@@ -1,25 +1,8 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: false
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Band Protocol
 
 ### Introduction
 
-Band is the data layer that trains AI engines and powers blockchain applications. By empowering DeFi, GameFi, and AI agents, it enables developers, institutions, and users to access real-time data with zero counterparty risk.&#x20;
+Band is the data layer that trains AI engines and powers blockchain applications. By empowering DeFi, GameFi, and AI agents, it enables developers, institutions, and users to access real-time data with zero counterparty risk.
 
 With Band’s open, battle-tested data infrastructure built for blockchains and LLMs, it ensures that real-time information is always accessible - fuelling everything from financial protocols to autonomous AI systems.
 

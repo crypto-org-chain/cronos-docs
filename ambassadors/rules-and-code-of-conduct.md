@@ -11,7 +11,7 @@ While the program focuses on growth, ambassadors may also be demoted or removed 
 
 Like promotions, demotions are limited to one rank per season. Ambassadors can regain higher ranks in future seasons by contributing actively again.
 
-The Cronos Ambassador Program is a living initiative. While this framework reflects the current structure, missions and progression paths, all details — including points, tiers and rewards — are subject to change as the program evolves. The Cronos team reserves the final discretion on promotions, demotions and recognition to ensure the program remains fair, impactful and aligned with the long-term vision of the ecosystem.
+The Cronos Ambassador Program is a living initiative. While this framework reflects the current structure, missions and progression paths, all details - including XP, tiers and rewards — are subject to change as the program evolves. The Cronos team reserves the final discretion on promotions, demotions and recognition to ensure the program remains fair, impactful and aligned with the long-term vision of the Cronos App and ecosystem.
 
 ## Code of Conduct
 
@@ -38,7 +38,7 @@ For example, give credit by QRTing the original post and/or providing a link to 
 
 **4. Constructive Feedback and Dialogue:** Adopt a mentality geared towards constructive feedback. Focus on solutions and positive outcomes rather than dwelling on problems or assigning blame.
 
-**5. Positive Community Engagement:** Strive to uplift conversations and encourage the community, especially in challenging times. Use positive language to motivate collective action and improvement. E.g. “We are a strong community, we can't drop projects at the first roadblock” , “Let's unite and make this project better, all token holders should make their voice heard to say the direction that they endorse” etc.
+**5. Positive Community Engagement:** Strive to uplift conversations and encourage the community, especially in challenging times. Use positive language to motivate collective action and improvement.&#x20;
 
 **6. Privacy and Confidentiality:** Respect the privacy of individuals and confidentiality of sensitive information. Do not disclose personal information, DM screenshots, private conversations without consent or share insider information about Cronos developments that haven't been made public.
 
@@ -48,7 +48,7 @@ For example, give credit by QRTing the original post and/or providing a link to 
 
 **9. Affiliation with other projects, chains and/or tokens**: being affiliated with projects/tokens on other chains is not allowed. Affiliation with other projects/tokens on Cronos is allowed, however: this has to be disclosed to the core team, and be clearly indicated on the Ambassador's website and/or socials that such projects/tokens are not directly affiliated with or endorsed by Cronos Labs in any way. It is not allowed to leverage the exposure received as a Cronos Ambassador and/or the support (campaign microgrants, AMAs hosted, events, clout...) given to a Cronos Ambassador from Cronos itself to bring unreasonable attention to or have their affiliated projects/tokens benefit directly from such support.
 
-At Cronos, we encourage ambassadors to innovate and build projects that contribute positively to the ecosystem. However, community trust is our shared foundation. If a project you’re involved with results in harm, controversy, or loss of confidence—whether intentional or not—the core team may decide to pause your ambassador status for that cohort. Rejoining the next cohort is possible once trust is rebuilt with the team and community. All final decisions rest with the Cronos core team, made with fairness and in the spirit of preserving a healthy, thriving ecosystem.
+At Cronos, we encourage ambassadors to innovate and build projects that contribute positively to the ecosystem. However, community trust is our shared foundation. If a project you’re involved with results in harm, controversy, or loss of confidence - whether intentional or not - the core team may decide to pause your ambassador status for that cohort. Rejoining the next cohort is possible once trust is rebuilt with the team and community. All final decisions rest with the Cronos core team, made with fairness and in the spirit of preserving a healthy, thriving ecosystem.
 
 ### Example Scenario: Dealing with negative actors / intentional provokers on social media
 
