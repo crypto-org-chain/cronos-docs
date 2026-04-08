@@ -17,7 +17,13 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 
 #### Getting Blocks
 
-<table><thead><tr><th width="248">Method</th><th>Namespace</th><th>Implemented</th><th width="40">Public</th></tr></thead><tbody><tr><td><code>eth_getBalance</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByNumber</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockReceipts</code></td><td>Eth</td><td>✔</td><td>✔</td></tr></tbody></table>
+<table><thead><tr><th width="248">Method</th><th>Namespace</th><th>Implemented</th><th width="40">Public</th></tr></thead><tbody><tr><td><code>eth_getBalance</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByNumber</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockReceipts</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+
+{% hint style="info" %}
+In versions prior to Cronos v0.7, a bug allowed duplicate transaction hashes to exist across different block heights. Standard RPC calls such as `eth_getBlockByNumber` and `eth_getTransactionReceipt` (below) may return inconsistent results when querying these legacy transactions. Developers building indexers or data pipelines over historical block data should implement custom reconciliation logic.
+
+For full details, including remediation commands, see [here](../../for-node-hosts/running-nodes/cronos-mainnet/cronos-evm-differences-from-ethereum.md#id-2.-transaction-hash-uniqueness).
+{% endhint %}
 
 #### Read data
 

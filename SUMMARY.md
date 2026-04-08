@@ -84,6 +84,7 @@
       * [The "v1.6" upgrade guide (v1.5.\* to v1.6.1)](for-node-hosts/running-nodes/cronos-mainnet/upgrade-guide/the-v1.6-upgrade-guide-v1.5.-to-v1.6.1.md)
       * [The "v1.7" upgrade guide (v1.6.1 to v1.7.0)](for-node-hosts/running-nodes/cronos-mainnet/upgrade-guide/the-v1.7-upgrade-guide-v1.6.1-to-v1.7.0.md)
     * [Patching Unlucky & Duplicate Tx](for-node-hosts/running-nodes/cronos-mainnet/patching-unlucky-tx.md)
+    * [Cronos EVM: Differences from Ethereum](for-node-hosts/running-nodes/cronos-mainnet/cronos-evm-differences-from-ethereum.md)
   * [Cronos EVM Testnet](for-node-hosts/running-nodes/cronos-testnet.md)
   * [Cronos EVM Snapshots](for-node-hosts/running-nodes/cronos-evm-snapshots/README.md)
     * [Cronos Native Snapshots](for-node-hosts/running-nodes/cronos-evm-snapshots/cronos-native-snapshots.md)
