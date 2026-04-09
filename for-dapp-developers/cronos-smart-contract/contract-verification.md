@@ -42,3 +42,11 @@ For verification via the web interface, visit the following URLs:
 
 * Mainnet: [https://explorer.cronos.org/verifyContract](https://explorer.cronos.org/verifyContract)
 * Testnet: [https://explorer.cronos.org/testnet/verifyContract](https://explorer.cronos.org/testnet/verifyContract)
+
+**Contract Verification Via Remix and Explorer:**
+
+For contracts developed in Remix, developers can follow the steps below to verify them on the Explorer:&#x20;
+
+1. Compile the contract.
+2. Download the JSON file under `artifacts/build-info/` , and please ensure the file follows this [format](https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description).
+3. Go to the Explorer Contract Verifier introduced in the previous section, fill in the required information, upload the JSON file and verify it on Cronos Explorer.
