@@ -147,7 +147,11 @@ You should see log output indicating blocks are being produced. The node is read
 INF committed state block_app_hash=... height=1
 ```
 
-> **Note:** You may see `ERR Setting ante handler without blacklist` in the logs — this is expected and does not affect functionality.
+{% hint style="info" %}
+**Note**
+
+You may see `ERR Setting ante handler without blacklist` in the logs — this is expected and does not affect functionality.
+{% endhint %}
 
 ### Step 4: Verify the Node
 
@@ -258,4 +262,3 @@ bash setup-devnet.sh
   --gas-prices 200000basetcro \
   --yes
 ```
-

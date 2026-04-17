@@ -7,8 +7,6 @@ description: >-
 
 # Multi-validator Devnet
 
-
-
 {% hint style="warning" %}
 CAUTION \
 This page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
@@ -148,7 +146,9 @@ cronos_777-1:
 EOF
 ```
 
-> **Denomination conversion**: 1 tCRO = 10^18 basetcro (analogous to the ETH-to-Wei relationship)
+{% hint style="info" %}
+**Denomination conversion**: 1 tCRO = 10^18 basetcro (analogous to the ETH-to-Wei relationship)
+{% endhint %}
 
 #### Configuration Reference
 
@@ -214,7 +214,9 @@ pystarport serve \
   -b 26650
 ```
 
-> `serve` = `init` + launches supervisord to manage all node processes.
+{% hint style="info" %}
+`serve` = `init` + launches supervisord to manage all node processes.
+{% endhint %}
 
 Once started, the terminal will display `supervisord` logs. **Keep this terminal open.**
 
@@ -292,7 +294,9 @@ All mnemonics are fixed values for deterministic address generation, enabling th
 | signer1   | `crc1czp5lh3ke85rruvg0vawec02perp2ul678x46r` | `0xC0834FDE36C9E831F1887B3AECE1EA0E461573FA` | 20,000 tCRO     |
 | signer2   | `crc1gt7cfua508jfexuf9ea4536sdqkv62dsxxalc2` | `0x42FD84F3B479E49C9B892E7B5A4750682CCD29B0` | 30,000 tCRO     |
 
-> **Denomination conversion**: 1 tCRO = 10^18 basetcro (analogous to the ETH-to-Wei relationship)
+{% hint style="info" %}
+**Denomination conversion**: 1 tCRO = 10^18 basetcro (analogous to the ETH-to-Wei relationship)
+{% endhint %}
 
 #### Mnemonics
 
