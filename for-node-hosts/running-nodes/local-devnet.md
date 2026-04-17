@@ -32,9 +32,12 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/local-devnet.html
+hidden: true
 ---
 
 # Devnet
+
+
 
 {% hint style="warning" %}
 CAUTION this page is for building and running the latest development version of the chain for testing purpose only. Please note that is under active development and is highly unstable and subject to breaking changes. You should expect a moderate amount of troubleshooting work is required.
@@ -117,7 +120,7 @@ The default configuration will give us two devnet validators with the chain-id `
 
 ### Option 2. Using Shell script
 
-You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init\_cronos\_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
+You can copy the `init.sh` [here](https://raw.githubusercontent.com/crypto-org-chain/cronos-docs/master/docs/getting-started/assets/init_cronos_chain/init.sh) and customize your devnet based on `cronos/init.sh`, for example:
 
 ```yaml
 ### customize the name of your key, the chain-id and moniker of the node ###
