@@ -14,8 +14,7 @@ In order to make it more convenient for DApps and node hosts to set up a node, w
 Since 1.0.2 there is another db parameter in app.toml as well. Be sure to make these 2 parameters the same to avoid issues.
 
 * `goleveldb` (default) db for low / medium level traffic use case. The reason being there can be some lock contention, especially with P2P.
-* `rocksdb` suited for a lot of use-cases, especially for high query load \~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation. \
-
+* `rocksdb` suited for a lot of use-cases, especially for high query load \~ few M / day. Has a better balance between rpc queries and p2p at high traffic. Note that`Rocksdb` however might have a slower startup time and requires a higher memory allocation. \\
 
 ### Seeds and persistent\_peers
 
@@ -31,7 +30,7 @@ Free to tweak to a higher bytes/sec value, if your networking allows this, e.g. 
 
 ### timeout\_broadcast\_tx\_commit
 
-* Freely tweak this parameter. Set to a slightly higher value, such as `20s` to wait for a tx to be committed during / broadcast\_tx\_commit.  Be careful a value larger than 10s will result in increasing the global HTTP write timeout, which applies to all connections and endpoints.
+* Freely tweak this parameter. Set to a slightly higher value, such as `20s` to wait for a tx to be committed during / broadcast\_tx\_commit. Be careful a value larger than 10s will result in increasing the global HTTP write timeout, which applies to all connections and endpoints.
 
 ### max\_num\_inbound\_peers and max\_num\_outbound\_peers
 
@@ -43,7 +42,7 @@ Free to tweak to a higher bytes/sec value, if your networking allows this, e.g. 
 
 Prometheus provides real-time metrics used for event monitoring and alerting. Prometheus metrics can be served on the Cronos chain. To enable the Prometheus metrics, you will need to set `instrumentation.prometheus=true` in the `config.toml` file manually.
 
-Metrics will be served under `…/metrics` on `26660` port by default, e.g. `localhost:26660/metrics`. The listening address can be changed in the `config.toml` file (`prometheus_listen_addr`). &#x20;
+Metrics will be served under `…/metrics` on `26660` port by default, e.g. `localhost:26660/metrics`. The listening address can be changed in the `config.toml` file (`prometheus_listen_addr`).
 
 Sample Settings:
 
@@ -86,17 +85,13 @@ meaning the app will keep the latest 362880 versions (around 21 days by 5 secs b
 * `everything` if you only need to do transaction broadcasting and only need the last blocks.
 * `nothing` for DApps that want to be able to query information at a certain known blockheight. Note that this is only needed for `archive` nodes.
 
-
-
 ### iavl-disable-fastnode and iavl-cache-size
 
-During the `dragonberry` patch and the upgrade to `0.8.2` and `0.8.3`,  we enabled the `iavl-disable-fastnode` config parameter. This provides the option to disable the iavl fastnode indexing migration, as a migration will take multiple hours to complete.&#x20;
+During the `dragonberry` patch and the upgrade to `0.8.2` and `0.8.3`, we enabled the `iavl-disable-fastnode` config parameter. This provides the option to disable the iavl fastnode indexing migration, as a migration will take multiple hours to complete.
 
 * `iavl-disable-fastnode = false` is the default setting and performs the migration. This might take a while. So be prepared in advance and schedule this migration downtime. In case you use a snapshot that has performed migration already (e.g. quicksync), leave the value to false
 * `iavl-disable-fastnode = true` if you want to disable the fast indexing, and skip the migration. Only use this in case you really are not able to perform the migration now.
 * `iavl-cache-size` set to `781250` works well as our testing has shown.
-
-
 
 ### app-db-backend
 
@@ -112,22 +107,16 @@ Second fallback (if the types.DBBackend also isn't set), is the db-backend value
 * `enable = true` to enable the API server
 * `swagger = true` to setup the swagger endpoint
 
-
-
 ### Json-RPC
 
-* `api = "eth,txpool,web3"` Set to the namespaces you wish to use, optionally add `personal,net,debug` to that list.
+* `api = "eth,txpool,web3"` Set to the namespaces you wish to use under the [security consideration](cronos-node-best-practises.md#security-consideration), optionally add `net,debug` to that list.&#x20;
 * `evm-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `60s` to avoid timeouts on eth\_calls.
 * `http-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `60s` to avoid read/writes timeouts of the http json-rpc server.
 * `http-idle-timeout`. Freely tweak this parameter. Set to a slightly higher value, such as `120s` to avoid idle timeout of the http json-rpc server.
 
-
-
-
-
 ### Debug Method
 
-`debug_trace` allows nodes to return the trace of block and transaction details. In order to enable `debug_trace` for your node on the Cronos chain, two places need to be configured correctly under `app.toml`.&#x20;
+`debug_trace` allows nodes to return the trace of block and transaction details. In order to enable `debug_trace` for your node on the Cronos chain, two places need to be configured correctly under `app.toml`.
 
 Sample Settings:
 
@@ -149,9 +138,23 @@ tracer = ""
 [json-rpc]
 
 # API defines a list of JSON-RPC namespaces that should be enabled
-# Example: "eth,txpool,personal,net,debug,web3"
-api = "eth,net,web3,txpool,personal,debug"
+# Example: "eth,txpool,net,debug,web3"
+api = "eth,net,web3,txpool,debug"
 ```
 
 In addition, it should run as `cronosd start --trace` in `cronosd start` command (_archived node_). For the resources needed for `--trace` flag in Cronos mainnet, the mem usage is slightly higher than the others but 64GB should be enough.
+
+## Security Consideration
+
+As a node operator, we do **NOT** recommend exposing `personal_*`, `eth_sign`, or  `eth_signTransaction` to the public internet, since these RPC methods grant direct access to any private keys held by the node:
+
+* **`personal_*`** — account-management methods such as `personal_unlockAccount`, `personal_sendTransaction`, `personal_sign`, and `personal_importRawKey`. An exposed endpoint lets attackers unlock accounts, or sign arbitrary transactions on behalf of the node.
+* **`eth_sign`** — signs a raw 32-byte digest with a node-managed key. Exposure is functionally equivalent to handing over the private key.
+* **`eth_signTransaction`** — returns a signed transaction using a node-managed key. Exposure is functionally equivalent to handing over the private key.
+
+### Recommended practice
+
+1. Bind these namespaces to `localhost` (`127.0.0.1`) only, or disable them entirely.
+2. Never hold user-facing signing keys on a node that also serves public RPC. Use a separate signing service with its own authentication and rate limiting.
+3. Place all RPC endpoints behind a firewall / reverse proxy with IP allowlisting, TLS, and per-method filtering.
 
