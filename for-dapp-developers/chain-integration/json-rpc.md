@@ -13,21 +13,21 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 
 #### Web3
 
-<table><thead><tr><th width="416">Method</th><th width="119">Namespace</th><th width="131">Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>web3_clientVersion</code></td><td>Web3</td><td>✔</td><td>✔</td></tr><tr><td><code>web3_sha3</code></td><td>Web3</td><td>✔</td><td>✔</td></tr></tbody></table>
+<table><thead><tr><th width="249.3251953125">Method</th><th width="183.2529296875">Namespace</th><th width="189.2373046875">Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>web3_clientVersion</code></td><td>Web3</td><td>✔</td><td>✔</td></tr><tr><td><code>web3_sha3</code></td><td>Web3</td><td>✔</td><td>✔</td></tr></tbody></table>
 
 #### Getting Blocks
 
-<table><thead><tr><th width="248">Method</th><th>Namespace</th><th>Implemented</th><th width="40">Public</th></tr></thead><tbody><tr><td><code>eth_getBalance</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByNumber</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockReceipts</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="248">Method</th><th width="180.05859375">Namespace</th><th width="188.6826171875">Implemented</th><th width="135.185546875">Public</th></tr></thead><tbody><tr><td><code>eth_getBalance</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByNumber</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockReceipts</code></td><td>Eth</td><td>✔</td><td>✔</td></tr></tbody></table>
 
 {% hint style="info" %}
-In versions prior to Cronos v0.7, a bug allowed duplicate transaction hashes to exist across different block heights. Standard RPC calls such as `eth_getBlockByNumber` and `eth_getTransactionReceipt` (below) may return inconsistent results when querying these legacy transactions. Developers building indexers or data pipelines over historical block data should implement custom reconciliation logic.
+In versions prior to Cronos v0.7, a bug allowed duplicate transaction hashes to exist across different block heights. Standard RPC calls such as `eth_getBlockReceipts` , `eth_getBlockByNumber` and `eth_getTransactionReceipt` (below) may return inconsistent results when querying these legacy transactions. Developers building indexers or data pipelines over historical block data should implement custom reconciliation logic.
 
 For full details, including remediation commands, see [here](../../for-node-hosts/running-nodes/cronos-mainnet/cronos-evm-differences-from-ethereum.md#id-2.-transaction-hash-uniqueness).
 {% endhint %}
 
 #### Read data
 
-<table><thead><tr><th width="432">Method</th><th>Namespace</th><th width="121">Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>eth_call</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionCount</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionReceipt</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockTransactionCountByNumber</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockTransactionCountByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionbyBlockNumberAndIndex</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionByBlockHashAndIndex</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_sign</code></td><td>Eth</td><td>✔</td><td></td></tr><tr><td><code>eth_coinbase</code></td><td>Eth</td><td>✔</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="377.009765625">Method</th><th>Namespace</th><th width="121">Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>eth_call</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionCount</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionReceipt</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockTransactionCountByNumber</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getBlockTransactionCountByHash</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionbyBlockNumberAndIndex</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_getTransactionByBlockHashAndIndex</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_sign</code></td><td>Eth</td><td>✔</td><td></td></tr><tr><td><code>eth_coinbase</code></td><td>Eth</td><td>✔</td><td></td></tr></tbody></table>
 
 {% hint style="warning" %}
 Do **NOT** expose `eth_sign`  API to the public, due to [the security consideration](../../for-node-hosts/running-nodes/cronos-node-best-practises.md#security-consideration).
@@ -35,7 +35,7 @@ Do **NOT** expose `eth_sign`  API to the public, due to [the security considerat
 
 #### Writing data
 
-<table><thead><tr><th width="363">Method</th><th width="145">Namespace</th><th>Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>eth_sendTransaction</code></td><td>Eth</td><td>✔</td><td></td></tr><tr><td><code>eth_sendRawTransaction</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_sendPrivateTransaction</code></td><td>Eth</td><td></td><td></td></tr><tr><td><code>eth_cancelPrivateTransaction</code></td><td>Eth</td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="379.11328125">Method</th><th width="145">Namespace</th><th>Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>eth_sendTransaction</code></td><td>Eth</td><td>✔</td><td></td></tr><tr><td><code>eth_sendRawTransaction</code></td><td>Eth</td><td>✔</td><td>✔</td></tr><tr><td><code>eth_sendPrivateTransaction</code></td><td>Eth</td><td></td><td></td></tr><tr><td><code>eth_cancelPrivateTransaction</code></td><td>Eth</td><td></td><td></td></tr></tbody></table>
 
 #### Account
 
@@ -54,7 +54,7 @@ Do **NOT** expose `eth_sign`  API to the public, due to [the security considerat
 <table><thead><tr><th width="204">Method</th><th>Namespace</th><th>Implemented</th><th>Public</th></tr></thead><tbody><tr><td><code>eth_subscribe</code></td><td>Websocket</td><td>✔</td><td></td></tr><tr><td><code>eth_unsubscribe</code></td><td>Websocket</td><td>✔</td><td></td></tr></tbody></table>
 
 {% hint style="info" %}
-Tip\
+**Tip**\
 Block Number can be entered as a Hex string, `"earliest"`, `"latest"` or `"pending"`.
 {% endhint %}
 

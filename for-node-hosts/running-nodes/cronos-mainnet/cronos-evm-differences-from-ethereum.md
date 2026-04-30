@@ -51,7 +51,34 @@ A fundamental assumption in Ethereum is that a transaction hash (`TxHash`) is a 
 
 #### **Impact on Indexers and RPCs**
 
-Standard Ethereum-style indexers and RPC nodes (using calls like `eth_getTransactionReceipt` or `eth_getBlockByNumber`) are often unprepared for non-unique hashes.
+Standard Ethereum-style indexers and RPC nodes (using calls like `eth_getTransactionReceipt` or `eth_getBlockReceipts`) are often unprepared for non-unique hashes.
 
 * **Data Inconsistency:** Fetching a receipt by hash might return the "wrong" instance if multiple exist.
-* **Reconciliation:** Developers building on Cronos must implement custom reconciliation strategies to handle these duplicates to ensure data integrity, especially when migrating or indexing legacy block data. We recommend overriding the transaction receipt with the receipt returned for the most recent block.
+* **Reconciliation:** Developers building on Cronos must implement custom reconciliation strategies to handle these duplicates to ensure data integrity, especially when migrating or indexing legacy block data. **We recommend overriding the transaction receipt with the receipt returned for the most recent block.**
+
+#### Behavior Across Current Cronos Versions
+
+Since the affected blocks from the legacy era still live on-chain, and every Cronos release still needs to decide how its JSON-RPC endpoints expose those historical duplicates.
+
+A subsequent patch changed how `eth_getBlockReceipts` handles these duplicates. Releases group into two tiers based on whether they include that patch:
+
+* **Pre-fix:** `v1.7.0` , `v1.7.4`
+* **Post-fix:** `v1.7.1` , `v1.7.5`
+
+{% hint style="info" %}
+**Note on release lineage:** The fix landed in **v1.7.1** and was carried forward into **v1.7.5**. **v1.7.4 is an exception** - it was cut as an **emergency release** for an unrelated issue and did not bundle this patch. Release order alone is therefore not a reliable signal; always check against the table below.
+{% endhint %}
+
+**JSON-RPC behavior by version**
+
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Endpoint</th><th>Pre-fix (v1.7.0 / v1.7.4)</th><th>Post-fix (v1.7.1 / v1.7.5)</th></tr></thead><tbody><tr><td><code>eth_getBlockReceipts</code></td><td>🚨 <strong>Crashes</strong> when the target block contains an unlucky transaction.</td><td>✅ Returns an empty array <code>[]</code> (no crash) if the target block is <strong>not</strong> the most recent one to include the unlucky tx.</td></tr><tr><td><code>eth_getBlockByNumber</code></td><td>Returns normally, with the unlucky transaction included in the block body.</td><td>Same as pre-fix (unchanged by the patch).</td></tr><tr><td><code>eth_getTransactionReceipt</code></td><td>Returns the receipt pointing to the <strong>most recent</strong> block that includes the unlucky tx.</td><td>Same as pre-fix (unchanged by the patch).</td></tr></tbody></table>
+
+{% hint style="warning" %}
+**Upgrade Recommendation**
+
+* If you are on **v1.7.0**, jump directly to **v1.7.5**.
+* If you are on **v1.7.4**, **do not assume you have the fix** - v1.7.4 is a hotfix release that predates the `eth_getBlockReceipts` patch. Upgrade to **v1.7.5**.
+* Clients that only use `eth_getBlockByNumber` / `eth_getTransactionReceipt` are unaffected by the crash, but should still implement the reconciliation guidance above to handle duplicate hashes correctly.
+
+Impact is concentrated on infrastructure that calls `eth_getBlockReceipts` in bulk - indexers, block-explorer backends, analytics pipelines, and bulk receipt fetchers scanning legacy blocks.
+{% endhint %}
