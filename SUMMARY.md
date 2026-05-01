@@ -158,6 +158,7 @@
   * [module\_distribution](cronos-chain-protocol/module_overview/module_distribution.md)
   * [module\_slashing](cronos-chain-protocol/module_overview/module_slashing.md)
   * [module\_feemarket](cronos-chain-protocol/module_overview/module_feemarket.md)
+  * [Module Account Addresses](cronos-chain-protocol/module_overview/module-account-addresses.md)
 * [Chain Details](cronos-chain-protocol/chain-details/README.md)
   * [List of parameters](cronos-chain-protocol/chain-details/parameters.md)
   * [Technical glossary](cronos-chain-protocol/chain-details/technical-glossary.md)
