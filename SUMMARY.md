@@ -70,7 +70,7 @@
 
 ## FOR NODE HOSTS
 
-* [Running Nodes](for-node-hosts/running-nodes/README.md)
+* [🔊 Running Nodes](for-node-hosts/running-nodes/README.md)
   * [Cronos EVM Mainnet](for-node-hosts/running-nodes/cronos-mainnet/README.md)
     * [Upgrade Guide](for-node-hosts/running-nodes/cronos-mainnet/upgrade-guide/README.md)
       * [The "Huygen" upgrade guide (v0.6.\* to v0.7.\*)](for-node-hosts/running-nodes/cronos-mainnet/upgrade-guide/huygen.md)
@@ -102,7 +102,7 @@
   * [VersionDB](for-node-hosts/running-nodes/versiondb.md)
   * [MemIAVL](for-node-hosts/running-nodes/memiavl.md)
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
-* [Cronosd](for-node-hosts/cli.md)
+* [⛓️ Cronosd](for-node-hosts/cli.md)
 
 ## CRONOS PLAY
 

@@ -31,7 +31,7 @@ meta:
 canonicalUrl: https://docs.cronos.org/wallets/cli.html
 ---
 
-# Cronosd
+# ⛓️ Cronosd
 
 `cronosd` is an all-in-one command-line interface. It supports wallet management, funds transfers and staking operations.
 
@@ -451,15 +451,14 @@ $ cronosd query bank balances tcrc1a303tt49l5uhe87yaneyggly83g7e4uncdxqtl --outp
 
 ### rollback
 
-To recover from an app-hash mismatch failure, it would take hours to re-run an archive node, \
+To recover from an app-hash mismatch failure, it would take hours to re-run an archive node,\
 a faster way to do it as of cronos v1.0.2 would be to use `rollback`.
 
-<pre class="language-bash"><code class="lang-bash">cronosd rollback
+```bash
+cronosd rollback
 //rollback example at current height 6569206
-Rolled back state to height <a data-footnote-ref href="#user-content-fn-1">6569205</a> and hash 5BFA3A9FA0C207B83D327330ADE77C46A5E688A24864614843C743FDFD968BCD%
-</code></pre>
-
-
+Rolled back state to height 6569205 and hash 5BFA3A9FA0C207B83D327330ADE77C46A5E688A24864614843C743FDFD968BCD%
+```
 
 ### index-eth-tx
 
@@ -467,7 +466,7 @@ Rolled back state to height <a data-footnote-ref href="#user-content-fn-1">65692
 Only use this command if you are solely using evm-level queries as evm JSON-RPC queries will remain available after re-indexing, however cosmos-level tx will not be available anymore. For example, this will no longer be possible: [https://rpc.cronos.org/tx\_search?query=\_\&prove=\_\&page=\_\&per\_page=\_\&order\_by=\_](https://rpc.cronos.org/tx_search?query=_\&prove=_\&page=_\&per_page=_\&order_by=_)
 {% endhint %}
 
-After `v1.0.2` nodes can now enable the custom transaction indexer to reduce disk size. \
+After `v1.0.2` nodes can now enable the custom transaction indexer to reduce disk size.\
 The custom tx indexer can be enabled in `app.toml` by setting the `json-rpc.enable-indexer` to `true`. Usually, you will want to re-index previous indexed blocks by using the `--backward` field, e.g.:
 
 ```bash
@@ -475,8 +474,6 @@ cronosd index-eth-tx backward
 ```
 
 After running the re-index command you will notice in your `.cronos/data/` directory a new file called `evmindexer.db` from which you can see that the size is smaller than the original `tx_index.db` . You can now safely remove the `tx_index.db`file.
-
-
 
 ### `tx staking create-validator` - Joining the network as a validator
 
@@ -532,5 +529,3 @@ $ cronosd tx slashing unjail --from node1 --chain-id cronostestnet_338-3
   {"body":{"messages":[{"@type":"/cosmos.slashing.v1beta1.MsgUnjail"...}]}
   confirm transaction before signing and broadcasting [y/N]: y
 ```
-
-[^1]: 
