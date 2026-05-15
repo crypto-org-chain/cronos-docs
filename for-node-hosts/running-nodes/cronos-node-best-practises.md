@@ -112,7 +112,8 @@ Second fallback (if the types.DBBackend also isn't set), is the db-backend value
 * `api = "eth,txpool,web3"` Set to the namespaces you wish to use under the [security consideration](cronos-node-best-practises.md#security-consideration), optionally add `net,debug` to that list.&#x20;
 * `evm-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `60s` to avoid timeouts on eth\_calls.
 * `http-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `60s` to avoid read/writes timeouts of the http json-rpc server.
-* `http-idle-timeout`. Freely tweak this parameter. Set to a slightly higher value, such as `120s` to avoid idle timeout of the http json-rpc server.
+* `http-idle-timeout` Freely tweak this parameter. Set to a slightly higher value, such as `120s` to avoid idle timeout of the http json-rpc server.
+* `ws-origins` Introduced from [v1.7.5](https://github.com/crypto-org-chain/cronos/releases/tag/v1.7.5). Default empty value might silently reject WebSocket connections from clients that send an Origin header. Set to `"*"` to allow all origins, or specify a comma-separated allowlist if you need to restrict access. Node operators upgrading from pre-v1.7.5 will not have this field in their existing `app.toml` — add it manually under `[json-rpc]` to avoid unexpected WS connectivity issues.
 
 ### Debug Method
 
