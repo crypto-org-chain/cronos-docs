@@ -1,4 +1,4 @@
-# Cronos EVM: Differences from Ethereum
+# ⏰ Cronos EVM: Differences from Ethereum
 
 ### Overview
 
@@ -18,7 +18,7 @@ The most significant architectural departure is how multiple messages are handle
 * **Indexing:** Each message generates a separate Ethereum receipt, assigned sequential `transactionIndex` values (0, 1, 2, etc.).
 
 {% hint style="warning" %}
-**Predictability:** Developers should never rely on a contract address generated during a batch transaction. Because nonces are verified differently during batch submission, the resulting contract address can be unpredictable compared to the standard Ethereum derivation.
+**Predictability**: Developers should never rely on a nonce or contract address generated during a batch transaction. Because nonces are verified differently during batch submission, the resulting contract address can be unpredictable compared to the standard Ethereum derivation.
 {% endhint %}
 
 #### Implementation Example (Integration Pattern)

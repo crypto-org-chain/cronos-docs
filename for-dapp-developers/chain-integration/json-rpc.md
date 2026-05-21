@@ -22,7 +22,7 @@ Below is a list of Ethereum type JSON-RPC Methods where users can curl via local
 {% hint style="info" %}
 In versions prior to Cronos v0.7, a bug allowed duplicate transaction hashes to exist across different block heights. Standard RPC calls such as `eth_getBlockReceipts` , `eth_getBlockByNumber` and `eth_getTransactionReceipt` (below) may return inconsistent results when querying these legacy transactions. Developers building indexers or data pipelines over historical block data should implement custom reconciliation logic.
 
-For full details, including remediation commands, see [here](../../for-node-hosts/running-nodes/cronos-mainnet/cronos-evm-differences-from-ethereum.md#id-2.-transaction-hash-uniqueness).
+For full details, including remediation commands, see [here](../cronos-evm-differences-from-ethereum.md#id-2.-transaction-hash-uniqueness).
 {% endhint %}
 
 #### Read data
