@@ -8,42 +8,28 @@ description: Planning to release a dApp on Cronos? Here is what you need to know
 
 Don’t forget to follow these Twitter accounts to receive key announcements:
 
-* [Cronos](https://twitter.com/cronos_chain)
-* [Cronos Labs](https://twitter.com/cronos_labs)
+* [Cronos App](https://x.com/CronosApp)
+* [Cronos Network](https://x.com/CronosNetwork)
 
 **Subscribe to the Cronos newsletter:**
 
-* [Cronos newsletter](https://blog.cronos.org)
+* [Cronos newsletter](https://blog.cronos.com/)
 
-## TLDR; what do I need to know if I am considering Cronos for my dapp?
+## TLDR; what do I need to know if I am considering Cronos Network for my dapp?
 
-[Cronos (cronos.org)](https://cronos.org) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals.
+[Cronos (cronos.com)](https://cronos.org) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com and hundreds of app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 150 million people worldwide.&#x20;
 
-[Cronos Labs](https://cronoslabs.org) can help most dapp creators to enhance the visibility of their product in the Cronos user community. However, Cronos Labs is generally not able to promote token or NFT sales. The following support is available to dapp creators:
+[Cronos](https://cronos.com/) can help most dapp creators to enhance the visibility of their product in the Cronos user community. However, Cronos is generally not able to promote token or NFT sales. The following support is available to dapp creators:
 
 * Technical support via [Discord](https://crofam.me/discord) and [Telegram](https://t.me/Cronos_Announcements).
-* Amplification of product launches / feature releases on [social media](https://twitter.com/cronos_chain) and in the [Cronos newsletter](https://blog.cronos.org).
-* Participation in [Cronos video streams / AMAs](https://crofam.me/youtube).
-* Project listing at [discover.cronos.org](https://discover.cronos.org) and on various partner platforms (Crypto.com Onchain Wallet, Defillama, Dappradar, etc.).
+* Project listing on our [Ecosystem page](https://cronos.com/ecosystem)&#x20;
 * Introductions to other dapps, key opinion leaders and project launchpads.
-* [Cronos Builders Program](../cronos-play/unity/legacy-version/play.md) and [Cronos Grants Program](https://cronos.org/grants) (usually for projects who have already started to achieve initial user traction on Cronos).
-* [Cronos Accelerator Program](https://cronos.org/accelerators).
 
 ## FAQs - ecosystem
 
-**How can I get my project featured at** [**discover.cronos.org**](https://discover.cronos.org)**?**
+**How can I get my project featured at** [**cronos.com/ecosystem**](https://discover.cronos.org)**?**
 
-* Visit [https://discover.cronos.org](https://discover.cronos.org) where you can add your project to the list of Cronos ecosystem projects (click the Submit button).&#x20;
-
-**How can I get my project (dApp) featured in the Crypto.com Onchain Wallet browser extension?**
-
-* **Get listed on DeFi Llama:** Submit your dApp through the [DeFi Llama project submission process](https://docs.llama.fi/list-your-project/submit-a-project).
-* **Wait for synchronization:** Allow 48 hours for data to sync between Crypto.com Onchain Wallet and DeFi Llama.
-* **Submit manual request if needed:** If your dApp doesn't appear in the wallet UI after 48 hours, complete the [Crypto.com dApp Submission Form](https://airtable.com/app5F2H2Qp46Q9fGC/shr2pGmQR5lzoMOBh).
-* **Team review:** Applications are reviewed at the discretion of the Crypto.com team for featured placement.&#x20;
-* **Selection criteria:** Listing in the featured section is subject to internal evaluation and approval processes. \
-  In order to increase your chances of being approved, please ensure that your user-facing website includes a link to your docs and to your Github repository, and that the docs include links to the verified smart contracts on [Cronos Explorer](https://explorer.cronos.org/). \
-  Refer to [this tutorial](https://github.com/kentimsit/cronos-hardhat-boilerplate) on how to deploy and verify smart contracts on Cronos Explorer.
+* Visit [https://cronos.com/ecosystem](https://discover.cronos.org) where you can submit your project to be added to the Cronos ecosystem (or submit directly to the form [here](https://docs.google.com/forms/d/e/1FAIpQLSdbCFhO_IjnrDIIU1PyuCLSdXDP6SM7SPSaUxud17wyIzr5IA/viewform)).
 
 **How can I get my project featured in Trust Wallet, once deployed on Cronos?**
 
@@ -52,45 +38,14 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 **How can I get my NFT collection allow-listed on the relevant NFT platforms?**
 
-* Crypto.com NFT platform
-  * Crypto.com NFT platform is a custodial platform that supports Cronos and multiple other chains.
-  * New launch: if you want to create and sell a new NFT collection on the custodial Crypto.com / NFT platform, please contact Crypto.com directly (see this [link](https://help.crypto.com/en/articles/5588880-nft-creation)).
-  * Secondary trading: if you already have a NFT collection live on the Cronos chain and would like to make it allow-listed on the custodial Crypto.com / NFT platform so that the NFT owners can deposit and trade the NFTs at Crypto.com / NFT, please contact Cronos Labs for support ([contact@cronoslabs.org](mailto:contact@cronoslabs.org)) and we will share with you the contractual documents and proof of ownership requirements that are required by Crypto.com.
-* Minted NFT platform
-  * Minted is a self-custodial NFT platform on Cronos chain and on Ethereum.
-  * New launch & secondary trading: the Cronos Labs team can put you in touch with the Minted team via Telegram. Please create a telegram group \[Your project] <> Minted and send the link to your Cronos Labs contact.
 * Ebisu’s Bay
   * Ebisu’s Bay is a self-custodial NFT platform on Cronos chain and on Ethereum.
   * New launch & secondary trading: the Cronos Labs team can put you in touch with the Minted team via Telegram. Please send your Telegram handle to your Cronos Labs contact.
-
-**Are there other ways to advertise my project, products or services to other app developers, investors or partners of the Cronos ecosystem?**
-
-* Yes! Please email [contact@cronoslabs.org](mailto:contact@cronoslabs.org) or notify the Cronos Labs team by Telegram if you have major product launch announcements, have reached key milestones (number of daily transactions, number of users, trading volume) or have published interesting pieces of content.
-* Contact [Cronos](https://x.com/cronos_chain) and [TheCronicleNews](https://twitter.com/TheCronicleNews) on [X.com](https://x.com/) to get the word out about your project.
-* Consider listing your project on [Defillama](https://defillama.com/), [Dappradar](https://dappradar.com/) and on the [Alchemy Dapp ](https://www.alchemy.com/dapps)store.
-
-**How can I apply for Cronos ecosystem grant support?**
-
-* Cronos Labs can facilitate access to the [Cronos Builders Program](https://cronoslabs.org/cronos-builders-program) and the [Cronos Ecosystem Grants](https://cronos.org/grants) program.
-
-**How can I apply for the Cronos accelerator program?**
-
-* The Cronos Accelerator Program supports early-stage teams who are working full-time on a dApp project and have an prototype or MVP product.
-* Please refer to [this page](https://cronos.org/accelerators) for details.
 
 **How can I become a node operator?**
 
 * Anyone can run their own Cronos node: see [the documentation](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet) for instructions.
 * However, the Cronos network is not currently adding **new validators** (except on an exceptional basis). The Cronos Labs team will make public announcements when validator applications are open again. Feel free to email [contact@cronoslabs.org](mailto:contact@cronoslabs.org) to register your interest.
-
-**Can Cronos help with my token sale or NFT primary sale?**
-
-* As an open-source protocol and decentralized network, Cronos will not be able endorse token sales.
-* You can work with some of the the launchpads and media organizations who have build significant audiences within the Cronos ecosystem, such as:
-  * Token launchpads: VVS finance, others.
-  * NFT launchpads: Minted, Ebisu’s Bay, others.
-  * Media organizations: CronosNews, Cronicle, others.
-* Do not hesitate to contact the Cronos Labs team to obtain contact details.
 
 ## FAQs - technical
 
@@ -102,7 +57,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 **Are there best practices and security standards that apply to Dapps on Cronos?**
 
 * The Cronos team strongly encourages all development teams to follow the best practices summarized at this [link](https://cronos.org/docs/getting-started/defi-practice.html#introduction). You can find more information at this [link](https://consensys.github.io/smart-contract-best-practices/) too.
-* It will be difficult for the Cronos Labs team to engage meaningfully with teams who do not publish their code and do not have their smart contracts verified on [Cronos Explorer](https://explorer.cronos.org)
+* It will be difficult for the Cronos team to engage meaningfully with teams who do not publish their code and do not have their smart contracts verified on [Cronos Explorer](https://explorer.cronos.org)
 
 **I need a commercial node provider because my dApp exceeds the rate limits of the free Cronos JSON-RPC endpoints. Who offers this ?**
 
@@ -115,9 +70,8 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 **Where can ask technical questions to integrate with Cronos chain?**
 
 * You can contact the community support on our [Discord server](https://discord.com/invite/pahqHz26q4), in the #cronos-mainnet-beta channel.
-* Or, if the Cronos Labs team already has a joint Telegram group with your team, feel free to reach out to the team in that group. You can also email [contact@cronoslabs.org](mailto:contact@cronoslabs.org).
+* Or, if the Cronos team already has a joint Telegram group with your team, feel free to reach out to the team in that group. You can also email [contact@cronoslabs.org](mailto:contact@cronoslabs.org).
 
-**How can I connect my Dapp to commonly used crypto wallets like MetaMask, Crypto .com Onchain Wallet, or Trust Wallet?**
+**How can I connect my Dapp to commonly used crypto wallets like MetaMask, Crypto.com Onchain Wallet, or Trust Wallet?**
 
 * See this [tutorial](chain-integration/web3-wallet.md).
-

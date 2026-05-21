@@ -42,7 +42,7 @@ The Cronos Mainnet was launched on 8 November 2021.
 
 Cronos is the leading EVM-compatible chain build on the Cosmos SDK.
 
-Cronos aims to massively scale DeFi and GameFi by providing developers with the ability to rapidly port dApps from Ethereum and EVM-Compatible chains, while also benefiting from the multi-chain thesis of the Cosmos ecosystem.
+Cronos aims to massively scale DeFi by providing developers with the ability to rapidly port dApps from Ethereum and EVM-Compatible chains, while also benefiting from the multi-chain thesis of the Cosmos ecosystem.
 
 Cronos is powered by the Cronos ($CRO) cryptocurrency for the payment of transaction fees. Cronos runs separately from the [Cronos POS Chain](https://cronos-pos.org/), a Cosmos proof-of-stake chain also powered by $CRO.
 
@@ -70,16 +70,6 @@ IBC is a protocol that allows blockchains to communicate with each other, intero
 
 #### Ecosystem
 
-The Cronos protocol engineering team contributes actively to open-source projects of the Ethereum and Cosmos ecosystem.
+The Cronos Network engineering team contributes actively to open-source projects of the Ethereum and Cosmos ecosystem.
 
-Through its strategic partnership with Crypto.com, a leading custodial crypto platform, Cronos can leverage easy on-ramp and access for an addressable user community of more than 70 million users worldwide.
-
-## Ecosystem support
-
-Cronos Labs supports the growth of the Cronos developer ecosystem through various programs.
-
-The Cronos Ecosystem Grants program aims to support early-stage projects on Cronos by bootstrapping initial product development and providing technical support. Please visit the [Cronos grants page](https://cronos.org/grants) and [Cronos's Medium page](https://medium.com/cronos-chain) for more details.
-
-The Cronos Accelerator is another notable program targeted at promising application creators. Please visit the [Cronos accelerator page](https://cronos.org/accelerators) for more details.
-
-###
+Through its strategic partnership with Crypto.com, a leading custodial crypto platform, Cronos can leverage easy on-ramp and access for an addressable user community of more than 150 million users worldwide.

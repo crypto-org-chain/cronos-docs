@@ -5,11 +5,9 @@
 * [Getting Started](README.md)
 * [Background](getting-started/introduction.md)
 * [Architecture](getting-started/architecture.md)
-* [Cronos roadmap](getting-started/cronos-roadmap.md)
 
 ## FOR USERS
 
-* [💳 Crypto.com Card Top Up](for-users/crypto.com-card-top-up.md)
 * [🔥 Crypto Wallets](for-users/crypto-wallets.md)
 * [🦊 MetaMask Configuration](for-users/metamask.md)
 * [🦁 Brave Wallet](for-users/brave-wallet.md)
@@ -25,7 +23,6 @@
 * [🚰 Testnet Faucet](for-users/testnet-faucet.md)
 * [💡 Tips & FAQs](for-users/tips-and-faqs.md)
 * [👮 Key Principles for Wallet Security](for-users/key-principles-for-wallet-security.md)
-* [⛽ GasTracker](https://cronos.org/gastracker)
 
 ## FOR DAPP DEVELOPERS
 
@@ -104,45 +101,6 @@
   * [Best Practices](for-node-hosts/running-nodes/cronos-node-best-practises.md)
 * [⛓️ Cronosd](for-node-hosts/cli.md)
 
-## CRONOS PLAY
-
-* [Introduction](cronos-play/cronos-play.md)
-* [Unity Engine](cronos-play/unity/README.md)
-  * [Current Version](cronos-play/unity/current-version.md)
-  * [Legacy Version](cronos-play/unity/legacy-version/README.md)
-    * [EVM](cronos-play/unity/legacy-version/scripts.md)
-    * [2D Game Example](cronos-play/unity/legacy-version/play.md)
-    * [Login Example](cronos-play/unity/legacy-version/login-example.md)
-    * [Custom RPC](cronos-play/unity/legacy-version/scripts-4.md)
-    * [ERC20](cronos-play/unity/legacy-version/scripts-3.md)
-    * [ERC721](cronos-play/unity/legacy-version/scripts-2.md)
-    * [ERC1155](cronos-play/unity/legacy-version/scripts-1.md)
-  * [Useful Links](cronos-play/unity/useful-links.md)
-* [Unreal Engine](cronos-play/getting-started_unreal/README.md)
-  * [Installation and Enabling](cronos-play/getting-started_unreal/download.md)
-  * [Working with Blueprint](cronos-play/getting-started_unreal/quick-start/README.md)
-    * [Actors and Blueprint Classes](cronos-play/getting-started_unreal/quick-start/actors-and-blueprint-classes.md)
-    * [Cronos Configuration](cronos-play/getting-started_unreal/quick-start/cronos-configuration.md)
-    * [Connect Defi Desktop/Onchain Wallet with URI](cronos-play/getting-started_unreal/quick-start/connect-defi-wallet-with-uri.md)
-    * [Connect Wallets with QR Code](cronos-play/getting-started_unreal/quick-start/connect-wallets-with-qr-code.md)
-    * [Connect WalletConnect Step by Step](cronos-play/getting-started_unreal/quick-start/walletconnect.md)
-    * [WalletConnect 2.0 and Unreal Engine 5: Hello World Example](cronos-play/getting-started_unreal/quick-start/walletconnect-2.0-and-unreal-engine-5-hello-world-example.md)
-    * [Wallet](cronos-play/getting-started_unreal/quick-start/wallet.md)
-    * [ERC20](cronos-play/getting-started_unreal/quick-start/erc20.md)
-    * [ERC721](cronos-play/getting-started_unreal/quick-start/erc721.md)
-    * [ERC1155](cronos-play/getting-started_unreal/quick-start/erc1155.md)
-    * [Broadcast Transactions](cronos-play/getting-started_unreal/quick-start/broadcast-transactions.md)
-    * [Get Tokens or Transactions](cronos-play/getting-started_unreal/quick-start/get-tokens-or-transactions.md)
-  * [Working with C++](cronos-play/getting-started_unreal/working-with-c++/README.md)
-    * [Creating a C++ Project](cronos-play/getting-started_unreal/working-with-c++/creating-a-c++-project.md)
-    * [Creating a child DefiWalletCoreActor](cronos-play/getting-started_unreal/working-with-c++/creating-a-child-defiwalletcoreactor.md)
-    * [Querying a contract](cronos-play/getting-started_unreal/working-with-c++/querying-a-contract.md)
-    * [Customizing Network](cronos-play/getting-started_unreal/working-with-c++/customizing-network.md)
-  * [Demo](cronos-play/getting-started_unreal/demo.md)
-* [Cronos Play C++ SDK](cronos-play/getting-started_cpp.md)
-* [Crypto.com Pay Integration](cronos-play/crypto.com-pay-integration.md)
-* [Cronos Play FAQ](cronos-play/cronos-play-faq.md)
-
 ## Block Explorers
 
 * [Block Explorer and API Keys](block-explorers/block-explorer-and-api-keys.md)
@@ -173,14 +131,6 @@
 * [Quick Start for Buyers](cronos-x402-facilitator/quick-start-for-buyers.md)
 * [Quick Start for Sellers](cronos-x402-facilitator/quick-start-for-sellers.md)
 * [Resources & Next Steps](cronos-x402-facilitator/resources-and-next-steps.md)
-
-## Cronos zkEVM
-
-* [Cronos zkEVM](cronos-zkevm/cronos-zkevm.md)
-
-## Resources
-
-* [Media / brand kit](resources/media-brand-kit.md)
 
 ## AMBASSADORS
 

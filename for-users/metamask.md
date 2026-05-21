@@ -41,11 +41,11 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 
 * Click the "**My Account**" button in the top right corner. Then select **"Networks"** in the settings menu.
 
-![](../.gitbook/assets/metamask_1.png)
+<img src="../.gitbook/assets/metamask_1.png" alt="" width="351">
 
 *   Click "**Add Network**":
 
-    ![](../.gitbook/assets/metamask_2.png)
+    <img src="../.gitbook/assets/metamask_2.png" alt="" width="348">
 
 {% tabs %}
 {% tab title="Mainnet" %}
@@ -83,7 +83,7 @@ It will show your private key and you can copy it for the next step. Click the "
 
 Paste your private key string from the previous step and click "**Import"**.
 
-![](<../.gitbook/assets/metamask_3 (1) (1) (1) (1) (1) (1) (1) (1).png>)
+<img src="../.gitbook/assets/metamask_3 (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353">
 
 Once it has been connected, you should see your token balance and you can then begin performing transactions using your MetaMask wallet!
 
@@ -122,4 +122,4 @@ If you come across any issue with your MetaMask account or if you have used your
 
 Simply go to `Setting/Advance` and click `Reset Account`:
 
-![](../.gitbook/assets/Metamask-reset.png)
+<img src="../.gitbook/assets/Metamask-reset.png" alt="" width="375">

@@ -1,6 +1,6 @@
 # 🔥 Crypto Wallets
 
-Cronos is supported by more than 30 wallets, some of which are shown [here](https://cronos.org/wallets).&#x20;
+Cronos is supported by more than 30 wallets, some of which are shown [here](https://cronos.org/wallets).
 
 ## Crypto.com Onchain Wallet
 
@@ -20,11 +20,11 @@ You can now use your Ledger hardware wallet on Cronos chain.
 
 In the Ledger Live companion app, you can see your CRO holdings on Cronos chain. This can be accomplished by selecting "Add account" and then Cronos (CRO):
 
-![](../.gitbook/assets/image.png)
+<img src="../.gitbook/assets/image.png" alt="" width="375">
 
 In order to experience the fullest range of functionalities, including interactions with dApps, we recommend to connect your Ledger hardware wallet with the Crypto.com Onchain browser extension in Standalone mode. In order to accomplish this, select "Import wallet" in the Crypto.com Onchain browser extension and then select "Connect to Ledger".
 
-![](<../.gitbook/assets/2022-12-22 screenshot 190442@2x.png>)
+<img src="../.gitbook/assets/2022-12-22 screenshot 190442@2x.png" alt="" width="373">
 
 ## Trust Wallet
 
@@ -46,5 +46,4 @@ See [Brave Wallet](brave-wallet.md) for an easy-to-follow guide of configuration
 
 Many other great crypto wallets support Cronos chain cryptocurrencies.
 
-If you are looking for comprehensive portfolio dashboards to view your various cryptocurrencies and DeFi positions on Cronos chain, check  out [Debank](https://debank.com/) and [Rabby](https://rabby.io/).
-
+If you are looking for comprehensive portfolio dashboards to view your various cryptocurrencies and DeFi positions on Cronos chain, check out [Debank](https://debank.com/) and [Rabby](https://rabby.io/).

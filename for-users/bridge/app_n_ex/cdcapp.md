@@ -6,7 +6,7 @@
 
 **Step 1**: Select the token that you would like to withdraw from your Crypto Wallet.
 
-![](../../../.gitbook/assets/cdcapp1.png)
+<img src="../../../.gitbook/assets/cdcapp1.png" alt="" width="375">
 
 **Step 2**: Click on “**Transfer**”, then “**Withdraw**”
 
@@ -20,10 +20,10 @@
 
 You should have a Cronos wallet address ready at this point (either on MetaMask, Crypto.com Onchain Wallet, or any other wallet supporting Cronos). No memo is required to withdraw your funds to Cronos. Once you have confirmed that your Cronos wallet address is accurate, tap “**Continue**”.
 
-![](../../../.gitbook/assets/cdcapp4.png)
+<img src="../../../.gitbook/assets/cdcapp4.png" alt="" width="375">
 
 **Step 5**: Select your newly whitelisted Cronos wallet address and input the amount of tokens that you wish to withdraw. After entering the amount, tap “**Withdraw**”. You will then be prompted to enter your password and 2FA code (if enabled).
 
-![](../../../.gitbook/assets/cdcapp5.png)
+<img src="../../../.gitbook/assets/cdcapp5.png" alt="" width="375">
 
 **Step 6**: Tap '**Confirm**' to make the transfer

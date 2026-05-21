@@ -12,7 +12,7 @@ Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently
 Note 1: If you are bridging assets to or from Crypto.org, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
 {% endhint %}
 
-![centered image](../../../.gitbook/assets/webapp_connect_wallet.png)
+<img src="../../../.gitbook/assets/webapp_connect_wallet.png" alt="centered image" width="563">
 
 **Step 2. Select Network and Token**
 
@@ -38,11 +38,11 @@ Before bridging a large amount, we encourage testing a transfer of a small amoun
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-09-23 at 15.55.54.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](../../../.gitbook/assets/4a_confirm_wallet_txn.png)
+<img src="../../../.gitbook/assets/4a_confirm_wallet_txn.png" alt="" width="356">
 
-![](../../../.gitbook/assets/4b_confirm_wallet_txn.png)
+<img src="../../../.gitbook/assets/4b_confirm_wallet_txn.png" alt="" width="355">
 
-![](../../../.gitbook/assets/4c_confirm_wallet_txn.png)
+<img src="../../../.gitbook/assets/4c_confirm_wallet_txn.png" alt="" width="357">
 
 **Step 4. Confirm the transaction**
 
@@ -64,6 +64,6 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 
 Thank you for using the Cronos Bridge and supporting the Crypto.org ecosystem.
 
-![centered image](../../../.gitbook/assets/5_txn_complete.png)
+<img src="../../../.gitbook/assets/5_txn_complete.png" alt="centered image" width="563">
 
-![centered image](../../../.gitbook/assets/5_history_table.png)
+<img src="../../../.gitbook/assets/5_history_table.png" alt="centered image" width="563">

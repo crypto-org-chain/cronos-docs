@@ -30,8 +30,6 @@ meta:
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.org/getting-started/
 description: What is Cronos? Why build on Cronos? How to connect?
-cover: .gitbook/assets/Cronos generic background 1.png
-coverY: 0
 ---
 
 # Getting Started
@@ -43,20 +41,17 @@ Please browse the navigation bar of this documentation where you can find refere
 * End-users
 * dApp developers
 * Node hosts
-* Game developers (Cronos Play)
 * And more!
 
-## What is Cronos?
+## What is Cronos Network?
 
-Cronos (cronos.org) is a leading blockchain ecosystem that has partnered with Crypto.com and more than 500 application developers and contributors representing an addressable user base of more than a hundred million people around the world. Cronos' mission is to make it easy and safe for the next billion crypto users to adopt self-custody in Web3, with a focus on Decentralized Finance and Gaming.
+Cronos Network is a EVM compatible blockchain delivering sub-cent, sub-second 24/7 global settlement, built for financial services and tokenized real-world assets.
+
+As a leading blockchain ecosystem, we have partnered with Crypto.com and more than 100 application developers and contributors representing an addressable user base of more than a 150 million people around the world.&#x20;
 
 The Cronos universe encompasses 3 chains: **Cronos EVM**, the leading Ethereum-compatible blockchain built on the Cosmos SDK; **Cronos POS**, a leading Cosmos chain for payments and NFTs; and **Cronos zkEVM**, a new high performance layer 2 network secured by Ethereum.
 
-Cronos ranks among the top 15 blockchain ecosystems, encompassing more than 6 billion dollars of user assets. Since inception, it has securely settled more than 100 million transactions.
-
 Transaction fees are paid in Cronos ($CRO), a blue chip cryptocurrency.
-
-Cronos is supported by Cronos Labs, a Web3 start-up accelerator focused on DeFi, GameFi, and the development of the Cronos ecosystem.
 
 ## Why build on Cronos EVM?
 
@@ -64,7 +59,7 @@ If you are a Web3 application creator, there are 3 main reasons to build on Cron
 
 * EVM compatible – Solidity and all the EVM tools just work out of the box.
 * Strategic partnership with [Crypto.com](http://crypto.com/) – easy on-ramp to your dapp.
-* \#CROFam - a highly engaged user and builder community of >100 million people worldwide, who are keen to try the latest and greatest apps.
+* \#CROFam - a highly engaged user and builder community of >150 million people worldwide, who are keen to try the latest and greatest apps.
 
 As an application founder/developer on Cronos, you can leverage:
 
@@ -73,15 +68,14 @@ As an application founder/developer on Cronos, you can leverage:
 * Ethermint, a Ethereum Virtual Machine module built by the open-source Cosmos SDK community.
 * IBC cross-chain connectivity to Cosmos chains.
 * Convenient Ethereum developer tools (Solidity, Truffle, Hardhat, OpenZeppelin, Web3.js, ethers.js, ChainSafe Gaming SDK, etc.).
-* [Cronos Play](https://cronos.org/play), a suite of developer tools for web, Unity, Unreal and C++ game developers.
 
 ## Useful links
 
-Web: [Cronos](https://cronos.org) | [Cronos Labs](https://cronoslabs.org)
+Web: [Cronos](https://cronos.com/)
 
-Blog: [Cronos](https://blog.cronos.org/)
+Blog: [Cronos](https://blog.cronos.com/)
 
-Socials:[ X.com](https://x.com/cronos_chain) | [Telegram](https://t.me/Cronos_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4) | [Youtube](https://www.youtube.com/@cronos_chain)
+Socials:[ X.com](https://x.com/CronosApp) | [Telegram](https://t.me/Cronos_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4)&#x20;
 
 White paper: [Cronos Whitepaper](https://whitepaper.cronos.org/)
 
@@ -91,7 +85,6 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 
 * [List of Dapps](https://discover.cronos.org)
 * [DeFi ecosystem on Defillama](https://defillama.com/chain/Cronos)
-* [Gaming and metaverse ecosystem](https://blog.cronos.org/p/news-from-the-cronos-gaming-ecosystem)
 * [Dappradar](https://dappradar.com/rankings/protocol/cronos)
 * [Block explorer](https://explorer.cronos.org)
 
@@ -101,6 +94,3 @@ Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 * [Developer tools and integration](for-dapp-developers/dev-tools-and-integrations/)
 * [App creator & developer FAQs](for-dapp-developers/founder-faqs.md)
 
-**Brand assets:**
-
-[media-brand-kit.md](resources/media-brand-kit.md "mention")

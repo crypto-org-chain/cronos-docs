@@ -2,11 +2,11 @@
 
 ## Introduction
 
-![centered image](../../../.gitbook/assets/webappintro.png)
+<img src="../../../.gitbook/assets/webappintro.png" alt="centered image" width="563">
 
 The Cronos Bridge’s goal is to support the seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best DApps and earnings no matter the chain.
 
-The Cronos Bridge (Beta) can be found at [https://cronos.org/bridge](https://cronos.org/bridge)
+The Cronos Bridge (Beta) can be found at [https://cronos.com/bridge](https://cronos.com/bridge)
 
 Cronos Bridge is a fully decentralised protocol built on the open-source projects of [IBC](https://ibcprotocol.org/).
 
@@ -30,7 +30,7 @@ We are constantly working on adding new tokens and blockchains. If you have any 
 
 ## Via Cronos Bridge Web App
 
-The Cronos Bridge (Beta) can be found at [https://cronos.org/bridge](https://cronos.org/bridge).
+The Cronos Bridge (Beta) can be found at [https://cronos.com/bridge](https://cronos.com/bridge).
 
 {% content-ref url="webapp.md" %}
 [webapp.md](webapp.md)

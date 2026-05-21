@@ -6,9 +6,9 @@ description: Quick-start resource if you are hacking and need to integrate with 
 
 ## Overview of Cronos chain
 
-[Cronos](https://cronos.org/) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Cronos.org](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
+[Cronos](https://cronos.org/) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Cronos.com](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
 
-[Broken link](broken-reference "mention")
+[broken-reference](broken-reference/ "mention")
 
 ## How to stand out and win in a Web3 hackathon 🥇
 
@@ -88,14 +88,14 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 **Essential tutorials / boilerplates**
 
 * [Deploy and verify your smart contracts](https://github.com/kentimsit/cronos-hardhat-boilerplate)
-* [Build a Dapp: how to connect and interact with Web3 wallets on Cronos](chain-integration/web3-wallet.md)&#x20;
+* [Build a Dapp: how to connect and interact with Web3 wallets on Cronos](chain-integration/web3-wallet.md)
 * [Create & deploy a smart contract with OpenZeppelin Wizard and Remix](https://cronoslabs.substack.com/p/cronos-developer-series-create-deploy-a-smart-contract-with-openzeppelin-wizard-and-remix-5b6769fc8b93) (low code version)
 
 **Other useful tutorials**
 
 * Create an end to end Web3 application: [smart contract](https://github.com/cronos-labs/cronos-accelerator-workshop-hardhat) and [front-end client](https://github.com/cronos-labs/cronos-accelerator-workshop-client) (GitHub)
 * [Create a NFT collection on Cronos and IPFS](https://cronoslabs.substack.com/p/cronos-developer-series-build-a-simple-dapp-with-react-crypto-com-defi-wallet-and-metamask-87c37ccd589f)
-* [ Get Started with Cronos Chain](https://www.youtube.com/watch?v=lKzzyUXPeRk) (video)
+* [Get Started with Cronos Chain](https://www.youtube.com/watch?v=lKzzyUXPeRk) (video)
 * [Build your Web3 Game with Cronos Play](https://www.youtube.com/watch?v=lmM7HgXDZ2w) (video)
 * [Cronos Metaverse Gaming Hackathon](https://www.youtube.com/live/kyMg0jtuT-8?si=Tr8ARBJalFsm11zt) (video)
 
@@ -127,4 +127,3 @@ Please visit the [#dev-mainnet ](https://discord.com/channels/783264383978569728
 Feedback is a gift! [Let us know](mailto:contact@cronoslabs.org) if there is anything that we can improve in this documentation.
 
 Socials: [X](https://twitter.com/cronos_chain) | [Telegram](https://t.me/Cronos_Announcements) | [Discord](https://discord.com/invite/cronos) | [YouTube](https://www.youtube.com/@cronos_chain)
-
