@@ -31,7 +31,6 @@ Building on this foundation, Cronos is now powering the **Cronos App** - a mobil
 ### Networks you’ll hear about
 
 * [Cronos EVM](https://docs.cronos.org): EVM-compatible, built with Ethermint/Cosmos SDK; launched Nov 8, 2021. &#x20;
-* [Cronos zkEVM](https://docs-zkevm.cronos.org/): Ethereum-secured L2 using zero-knowledge tech for scale.
 * [Cronos POS](https://cronos-pos.org/wallets): Cosmos chain optimized for payments/consumer use cases.
 
 A lot more info can be found in the other section of these Docs or by following the links above.

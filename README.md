@@ -49,9 +49,13 @@ Cronos Network is a EVM compatible blockchain delivering sub-cent, sub-second 24
 
 As a leading blockchain ecosystem, we have partnered with Crypto.com and more than 100 application developers and contributors representing an addressable user base of more than a 150 million people around the world.&#x20;
 
-The Cronos universe encompasses 3 chains: **Cronos EVM**, the leading Ethereum-compatible blockchain built on the Cosmos SDK; **Cronos POS**, a leading Cosmos chain for payments and NFTs; and **Cronos zkEVM**, a new high performance layer 2 network secured by Ethereum.
+The Cronos universe encompasses 2 chains: **Cronos EVM**, the leading Ethereum-compatible blockchain built on the Cosmos SDK; **Cronos POS**, a leading Cosmos chain for payments and NFTs.
 
 Transaction fees are paid in Cronos ($CRO), a blue chip cryptocurrency.
+
+{% hint style="info" %}
+Notice: Cronos zkEVM is being sunset, please [bridge out your assets](https://docs-zkevm.cronos.org/for-users/cronos-zkevm-bridge) before the network is fully decommissioned.
+{% endhint %}
 
 ## Why build on Cronos EVM?
 
