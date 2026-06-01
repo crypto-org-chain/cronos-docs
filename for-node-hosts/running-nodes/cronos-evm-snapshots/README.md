@@ -26,10 +26,6 @@ This section provides an overview and guidance on the available snapshot options
 [cronos-native-snapshots.md](cronos-native-snapshots.md)
 {% endcontent-ref %}
 
-{% content-ref url="quicksync.md" %}
-[quicksync.md](quicksync.md)
-{% endcontent-ref %}
-
 {% content-ref url="state-sync.md" %}
 [state-sync.md](state-sync.md)
 {% endcontent-ref %}

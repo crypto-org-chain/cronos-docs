@@ -89,7 +89,7 @@ meaning the app will keep the latest 362880 versions (around 21 days by 5 secs b
 
 During the `dragonberry` patch and the upgrade to `0.8.2` and `0.8.3`, we enabled the `iavl-disable-fastnode` config parameter. This provides the option to disable the iavl fastnode indexing migration, as a migration will take multiple hours to complete.
 
-* `iavl-disable-fastnode = false` is the default setting and performs the migration. This might take a while. So be prepared in advance and schedule this migration downtime. In case you use a snapshot that has performed migration already (e.g. quicksync), leave the value to false
+* `iavl-disable-fastnode = false` is the default setting and performs the migration. This might take a while. So be prepared in advance and schedule this migration downtime. In case you use a snapshot that has performed migration already (e.g. [Native Snapshots](cronos-evm-snapshots/cronos-native-snapshots.md)), leave the value to false
 * `iavl-disable-fastnode = true` if you want to disable the fast indexing, and skip the migration. Only use this in case you really are not able to perform the migration now.
 * `iavl-cache-size` set to `781250` works well as our testing has shown.
 

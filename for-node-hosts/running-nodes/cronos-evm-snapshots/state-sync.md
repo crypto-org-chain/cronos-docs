@@ -6,7 +6,7 @@ The fastest way to get a node synced to the latest block-height is by using [Sta
 
 Keep in mind that blocks prior to the trust height used for State Sync will not be queryable.
 
-Therefore, if your goal is to run a full node with historical data, it is recommended not to use State Sync, but instead to explore other Snapshot option such as [Native Snapshots](cronos-native-snapshots.md) or [Quicksync](quicksync.md) archive snapshot.
+Therefore, if your goal is to run a full node with historical data, it is recommended not to use State Sync, but instead to explore other Snapshot option such as [Native Snapshots](cronos-native-snapshots.md) archive snapshot.
 
 #### Supported OS
 
@@ -23,7 +23,7 @@ To run Cronos Mainnet nodes, you will need a machine with the following minimum 
 {% hint style="info" %}
 IMPORTANT
 
-State-sync depends on the ability to pull a snapshot from its persistent-peers, so there is some amount of timing and luck involved with this method. Although it is the fastest way, it is not always going to work, in case state-sync is not syncing, we recommend using [quicksync](quicksync.md), although it takes a longer time to download the snapshot, this method is more guaranteed to work.
+State-sync depends on the ability to pull a snapshot from its persistent-peers, so there is some amount of timing and luck involved with this method. Although it is the fastest way, it is not always going to work, in case state-sync is not syncing, we recommend using [Native Snapshots](cronos-native-snapshots.md), although it takes a longer time to download the snapshot, this method is more guaranteed to work.
 {% endhint %}
 
 ### Step 1: Get the latest cronosd binary

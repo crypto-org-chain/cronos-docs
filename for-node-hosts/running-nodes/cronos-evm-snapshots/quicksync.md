@@ -2,6 +2,7 @@
 description: >-
   Download the latest Cronos Chain snapshots to accelerate node setup and
   maintain sync with current network data
+hidden: true
 ---
 
 # Quicksync

@@ -302,8 +302,8 @@ It should begin fetching blocks from the other peers.
 
 The above outlines how to set up a node from scratch. Alternatively, you can set up a node using snapshots:
 
-{% content-ref url="../cronos-evm-snapshots/quicksync.md" %}
-[quicksync.md](../cronos-evm-snapshots/quicksync.md)
+{% content-ref url="../cronos-evm-snapshots/cronos-native-snapshots.md" %}
+[cronos-native-snapshots.md](../cronos-evm-snapshots/cronos-native-snapshots.md)
 {% endcontent-ref %}
 
 {% content-ref url="../cronos-evm-snapshots/state-sync.md" %}
