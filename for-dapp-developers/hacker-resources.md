@@ -81,7 +81,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
     ```
 *   Testnet CRO faucet
 
-    [https://cronos.org/faucet](https://cronos.org/faucet)
+    [https://faucet.cronos.com/](https://faucet.cronos.com/)
 
 ## Tutorials 🚀
 

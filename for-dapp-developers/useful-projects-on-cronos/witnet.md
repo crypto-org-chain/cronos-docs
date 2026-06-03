@@ -20,11 +20,11 @@ At each block height of the blockchain, any other smart contract can query the n
 
 WitnetRandomness can be used by practically any dApp, as it has already been deployed by the Witnet Foundation. The WitnetRandomness contract uses an instance of the low-level `WitnetRequestRandomness`. The same instance can also be used by other applications running within the same chain. The best way to interact with the WitnetRandomness contract is through the IWitnetRandomness interface, which is readily available through the [witnet-solidity-bridge npm package](https://www.npmjs.com/package/witnet-solidity-bridge).
 
-## Generate Random Numbers with Witnet&#x20;
+## Generate Random Numbers with Witnet
 
 You can start by checking out the [Witnet documentation](https://docs.witnet.io/).
 
-In this section, we will walk through random number generation using a sample smart contract. Please ensure that you have some CRO (or TestCRO) stored in your crypto address to pay transaction fees. If you are deploying on Cronos testnet, simply use the [test-token faucet](https://cronos.org/faucet) to obtain the testnet TCRO tokens.
+In this section, we will walk through random number generation using a sample smart contract. Please ensure that you have some CRO (or TestCRO) stored in your crypto address to pay transaction fees. If you are deploying on Cronos testnet, simply use the [test-token faucet](https://faucet.cronos.com/) to obtain the testnet TCRO tokens.
 
 Firstly, we need to import the interface of the WitnetRandomness .sol file into our smart contract in order to be able to interact with it. This is done with: import "[witnet-solidity-bridge/contracts/interfaces/IWitnetRandomness.sol](https://github.com/witnet/witnet-solidity-bridge/blob/master/contracts/interfaces/IWitnetRandomness.sol)";
 
@@ -70,11 +70,9 @@ This contract involves a two-step workflow:
 
 You should deploy the contract to the Cronos network. The contract constructor requires the address of the WitnetRandomness contract on the blockchain network. You can retrieve the addresses on Cronos [here](https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/contract-addresses#cronos-chain). For this example, you can use the Cronos Testnet address (`0x0017A464A86f48B342Cae3b8Fe29cFCDaA7b0643`).
 
-_Remark: make sure that you are using the_ [_Cronos WitnetRandomness address_](https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/contract-addresses#cronos-chain)_, not the_  [_Cronos WitnetRequestBoard address_](https://docs.witnet.io/smart-contracts/witnet-web-oracle/contracts-addresses#cronos-chain)_._
+_Remark: make sure that you are using the_ [_Cronos WitnetRandomness address_](https://docs.witnet.io/smart-contracts/witnet-randomness-oracle/contract-addresses#cronos-chain)_, not the_ [_Cronos WitnetRequestBoard address_](https://docs.witnet.io/smart-contracts/witnet-web-oracle/contracts-addresses#cronos-chain)_._
 
-
-
-In case a gas estimation error appears when executing `requestRandomNumber()`, increasing the gas allowance will solve the problem. Since randomisation requests will take some time to complete, calling `fetchRandomNumber()` right after `requestRandomNumber()` will most likely cause the transaction to revert. Therefore, you should wait for 5 to 10 minutes before executing `fetchRandomNumber()`.&#x20;
+In case a gas estimation error appears when executing `requestRandomNumber()`, increasing the gas allowance will solve the problem. Since randomisation requests will take some time to complete, calling `fetchRandomNumber()` right after `requestRandomNumber()` will most likely cause the transaction to revert. Therefore, you should wait for 5 to 10 minutes before executing `fetchRandomNumber()`.
 
 See the following screenshot from remix.ethereum.org:
 
@@ -96,13 +94,9 @@ If you would like to generate another random number, you need to execute the sam
 
 ![](https://lh5.googleusercontent.com/DW1LJgzPinuOV0DWEYKOyE8GxGQeHWY3QvcW5x4m5j7fUa-m0MGSRtYsEA5Ui794XJd4x-fLC6X8peThAewaWWViOup1X-8WPuFejqK5tz4PYfNtjMbncd6eji-xBkYhZrTBfXxPQ8Mcvzx9RF3hCIs-xLlHv3JXeNGOsc7hz3E9VNeyOeyxwStH6Q)
 
-
-
 As usual, you can review your transaction details on [Cronos Explorer](https://explorer.cronos.org/)/[Cronos Testnet Explorer](https://explorer.cronos.org/testnet).
 
-
-
-### Resources&#x20;
+### Resources
 
 Here are several additional resources to help you get started with Witnet random number generation:
 
