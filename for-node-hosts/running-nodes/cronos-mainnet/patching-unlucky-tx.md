@@ -3,9 +3,14 @@
 In the first version of Cronos (`v0.6`), there was a known issue where transactions were being included in a block even when the block gas limit at the EVM level had already been reached.\
 This led to:
 
-* Some "unlucky" transactions (before block height `2693800`) are not reflected at the EVM level
+* Some "unlucky" transactions are not reflected at the EVM level
 * One would observe a few blocks that have >100% of the block gas limit at the EVM level.
 * Duplicate transactions
+
+The issue was:
+
+* Last observed in block height `11662912`&#x20;
+* Fixed by binary `v1.0.14`
 
 A node host has two ways to obtain a complete database with patched transactions:
 
@@ -14,7 +19,7 @@ A node host has two ways to obtain a complete database with patched transactions
 
 ## Method 1: Start from Genesis
 
-**Step 1.** Follow the [Cronos Mainnet docs](./) from step 1 to start syncing a node with binary`v0.6.11`
+**Step 1.** Follow the [Cronos Mainnet docs](./) from step 1 to start syncing a node with binary `v0.6.11`
 
 **Step 2.** When you reach blockheight `2693800` , the binary should automatically halt.\
 Now run the command `fix-unlucky-tx`to patch unlucky transactions. This patch only works for blocks until blockheight `2693800` .
