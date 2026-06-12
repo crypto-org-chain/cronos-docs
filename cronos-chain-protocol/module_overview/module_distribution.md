@@ -21,8 +21,8 @@ Below are all the network parameters for the `distribution` module:
 
 There are two main types of rewards
 
-* Block rewards, governed by the [mint](https://docs.cronos.org/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#mint) module; and
-* [Transaction fees bonus](https://docs.cronos.org/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#transaction-fees-bonus).
+* Block rewards, governed by the [mint](https://docs.cronos.com/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#mint) module; and
+* [Transaction fees bonus](https://docs.cronos.com/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#transaction-fees-bonus).
 
 **Block reward**
 
@@ -47,7 +47,7 @@ This mechanism aims to incentivize non-empty block proposals, better networking 
 
 **Community tax**
 
-The `community_tax` is the tax rate to the reward obtained by the validator. Specifically, part of the reward will be taxed and send to the community pool. The funds in the community pool can be withdrawn by submitting a community pool spend proposal with the [gov module](https://docs.cronos.org/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#gov).
+The `community_tax` is the tax rate to the reward obtained by the validator. Specifically, part of the reward will be taxed and send to the community pool. The funds in the community pool can be withdrawn by submitting a community pool spend proposal with the [gov module](https://docs.cronos.com/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#gov).
 
 Even if the `community_tax` is set to be zero, the balance of the community pool could be non-zero. For example, the truncated remainder in some accounting edge cases will be sent to the community pool as well. Besides that, users can fund the community pool voluntary, and there could be funds allocated to the community pool in the [genesis](../genesis_file.md).
 
@@ -111,7 +111,7 @@ $ cronosd query distribution params --output json | jq
 
 The parameters can also be checked by browsing to the following REST endpoint on Mainnet:
 
-[https://rest.cronos.org/cosmos/distribution/v1beta1/params](https://rest.cronos.org/cosmos/bank/v1beta1/params)/
+[https://rest.cronos.com/cosmos/distribution/v1beta1/params](https://rest.cronos.com/cosmos/bank/v1beta1/params)/
 
 ```json
 {

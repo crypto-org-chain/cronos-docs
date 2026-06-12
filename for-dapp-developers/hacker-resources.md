@@ -22,7 +22,7 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 
 **Cronos overview & key links for developers**
 
-* Cronos docs: [https://docs.cronos.org](https://docs.cronos.org)
+* Cronos docs: [https://docs.cronos.com](https://docs.cronos.com)
 * Cronos Play (for game developers): [https://cronos.org/play](https://cronos.org/play)
 * [Why build on Cronos](https://blog.cronos.org/p/why-build-grow-on-cronos-692da1de7885)
 * Cronos overview by [Eat The Blocks](https://www.youtube.com/watch?v=NqeeKEJiPZU)
@@ -42,17 +42,17 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
     {
     "cronos_mainnet": {
           "chainId": 25,
-          "url": "https://evm.cronos.org/",
+          "url": "https://evm.cronos.com/",
           "gasPrice": 5000000000000,
-          "blockExplorer": "https://explorer.cronos.org/",
-          "blockExplorerPrefix": "https://explorer.cronos.org/tx/"
+          "blockExplorer": "https://explorer.cronos.com/",
+          "blockExplorerPrefix": "https://explorer.cronos.com/tx/"
         },
     "cronos_testnet": {
           "chainId": 338,
-          "url": "https://evm-t3.cronos.org/",
+          "url": "https://evm-t3.cronos.com/",
           "gasPrice": 5000000000000,
-          "blockExplorer": "https://explorer.cronos.org/testnet/",
-          "blockExplorerPrefix": "https://explorer.cronos.org/testnet/tx/"
+          "blockExplorer": "https://explorer.cronos.com/testnet/",
+          "blockExplorerPrefix": "https://explorer.cronos.com/testnet/tx/"
         },
     }
     ```
@@ -63,19 +63,19 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
     {
     "cronos_mainnet": {
           "id": 25,
-          "url": "https://evm.cronos.org/",
+          "url": "https://evm.cronos.com/",
           "maxPriorityFeePerGas": 5000000000,
           "maxFeePerGas": 6000000000000,
-          "blockExplorer": "https://explorer.cronos.org/",
-          "blockExplorerPrefix": "https://explorer.cronos.org/tx/"
+          "blockExplorer": "https://explorer.cronos.com/",
+          "blockExplorerPrefix": "https://explorer.cronos.com/tx/"
         },
     "cronos_testnet": {
           "id": 338,
-          "url": "https://evm-t3.cronos.org/",
+          "url": "https://evm-t3.cronos.com/",
           "maxPriorityFeePerGas": 5000000000,
           "maxFeePerGas": 6000000000000,
-          "blockExplorer": "https://explorer.cronos.org/",
-          "blockExplorerPrefix": "https://explorer.cronos.org/tx/"
+          "blockExplorer": "https://explorer.cronos.com/",
+          "blockExplorerPrefix": "https://explorer.cronos.com/tx/"
         },
     }
     ```

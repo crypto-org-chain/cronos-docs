@@ -135,7 +135,7 @@ app_yaml:
 config_yaml:
   db_backend: "goleveldb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
 ```
 {% endtab %}
 
@@ -149,7 +149,7 @@ app_yaml:
 config_yaml:
   db_backend: "rocksdb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
 ```
 {% endtab %}
 
@@ -165,7 +165,7 @@ app_yaml:
 config_yaml:
   db_backend: "rocksdb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
 ```
 {% endtab %}
 
@@ -184,7 +184,7 @@ app_yaml:
 config_yaml:
   db_backend: "rocksdb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
 ```
 {% endtab %}
 {% endtabs %}

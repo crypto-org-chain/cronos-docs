@@ -28,7 +28,7 @@ meta:
       format in this documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/chain-details/chain-id.html
+canonicalUrl: https://docs.cronos.com/chain-details/chain-id.html
 ---
 
 # Chain ID and Address Format

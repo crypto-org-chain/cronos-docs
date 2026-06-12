@@ -47,21 +47,21 @@ These are just a few examples of the many exciting use cases our AI agent produc
 
 ### Explorer API keys
 
-Explorer API keys for the Cronos EVM Chain is required to query block chain data, kindly follow the following instruction to obtain the API key for: [API key for Cronos EVM](https://docs.cronos.org/block-explorers/block-explorer-and-api-keys)
+Explorer API keys for the Cronos EVM Chain is required to query block chain data, kindly follow the following instruction to obtain the API key for: [API key for Cronos EVM](https://docs.cronos.com/block-explorers/block-explorer-and-api-keys)
 
 ### Cronos EVM Mainnet URLs <a href="#cronos-zkevm-sepolia-testnet-urls" id="cronos-zkevm-sepolia-testnet-urls"></a>
 
 * Chain ID: `25`
-* JSON RPC AP&#x49;**:** [https://evm.cronos.org](https://evm.cronos.org)
-* Block explore&#x72;**:** [https://explorer.cronos.org/](https://explorer.cronos.org/)
+* JSON RPC AP&#x49;**:** [https://evm.cronos.com](https://evm.cronos.com)
+* Block explore&#x72;**:** [https://explorer.cronos.com/](https://explorer.cronos.com/)
 
 ***
 
 ### Cronos EVM Testnet URLs <a href="#cronos-zkevm-sepolia-testnet-urls" id="cronos-zkevm-sepolia-testnet-urls"></a>
 
 * Chain ID: `338`
-* JSON RPC API: [https://evm-t3.cronos.org/](https://evm-t3.cronos.org/)
-* Block explore&#x72;**:** [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
+* JSON RPC API: [https://evm-t3.cronos.com/](https://evm-t3.cronos.com/)
+* Block explore&#x72;**:** [https://explorer.cronos.com/testnet](https://explorer.cronos.com/testnet)
 
 ### Get Started
 

@@ -28,7 +28,7 @@ meta:
       Governance, Mint, Slashing, Staking and more.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/chain-details/module_overview.html
+canonicalUrl: https://docs.cronos.com/chain-details/module_overview.html
 ---
 
 # Modules

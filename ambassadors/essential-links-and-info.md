@@ -16,7 +16,7 @@
 
 * Main website: [cronos.com](http://cronos.com/) - ecosystem & product entry points
 * Most popular dapps on Cronos: [discover.cronos.org](https://discover.cronos.org/)
-* Cronos Explorer (official): [explorer.cronos.org](http://explorer.cronos.org)
+* Cronos Explorer (official): [explorer.cronos.com](http://explorer.cronos.com)
 
 _Tip: Link to these pages in your threads, workshops, and meetups instead of copying the content—it helps keep information accurate and up to date._
 
@@ -30,7 +30,7 @@ Building on this foundation, Cronos is now powering the **Cronos App** - a mobil
 
 ### Networks you’ll hear about
 
-* [Cronos EVM](https://docs.cronos.org): EVM-compatible, built with Ethermint/Cosmos SDK; launched Nov 8, 2021. &#x20;
+* [Cronos EVM](https://docs.cronos.com): EVM-compatible, built with Ethermint/Cosmos SDK; launched Nov 8, 2021. &#x20;
 * [Cronos POS](https://cronos-pos.org/wallets): Cosmos chain optimized for payments/consumer use cases.
 
 A lot more info can be found in the other section of these Docs or by following the links above.

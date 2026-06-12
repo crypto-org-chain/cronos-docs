@@ -109,7 +109,7 @@ $ cronosd query slashing params --output json | jq
 
 The parameters can also be checked by browsing to the following REST endpoint on Mainnet:
 
-[https://rest.cronos.org/cosmos/slashing/v1beta1/params](https://rest.cronos.org/cosmos/bank/v1beta1/params)
+[https://rest.cronos.com/cosmos/slashing/v1beta1/params](https://rest.cronos.com/cosmos/bank/v1beta1/params)
 
 ```json
 {

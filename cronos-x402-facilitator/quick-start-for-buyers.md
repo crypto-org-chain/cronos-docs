@@ -62,7 +62,7 @@ async function payForResource(resourceUrl, wallet) {
 // Example usage
 async function main() {
   const privateKey = process.env.PRIVATE_KEY;
-  const provider = new ethers.JsonRpcProvider('https://evm-t3.cronos.org');
+  const provider = new ethers.JsonRpcProvider('https://evm-t3.cronos.com');
   const wallet = new ethers.Wallet(privateKey, provider);
 
   const resourceUrl = 'https://seller-api.example.com/api/premium-data';

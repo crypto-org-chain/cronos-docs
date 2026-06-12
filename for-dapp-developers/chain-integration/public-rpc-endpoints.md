@@ -25,32 +25,32 @@ If you are sending large numbers of transactions from your backend, consider set
 {% tabs %}
 {% tab title="Mainnet" %}
 * **EVM HTTP JSON RPC (Web3 compatible)**
-  * [https://evm.cronos.org/](https://evm.cronos.org/)
+  * [https://evm.cronos.com/](https://evm.cronos.com/)
 * **Block explorer**
-  * [https://explorer.cronos.org/](https://explorer.cronos.org/)
+  * [https://explorer.cronos.com/](https://explorer.cronos.com/)
 * **Tendermint RPC**
-  * [https://rpc.cronos.org/](https://rpc.cronos.org/)
+  * [https://rpc.cronos.com/](https://rpc.cronos.com/)
 * **Cosmos RESTful**
-  * [https://rest.cronos.org/](https://rest.cronos.org/)
+  * [https://rest.cronos.com/](https://rest.cronos.com/)
 * **Cosmos gRPC Based**
-  * [https://grpc.cronos.org/](http://grpc.cronos.org/)
+  * [https://grpc.cronos.com/](http://grpc.cronos.com/)
 * **Swagger Playground**
   * [https://cronos.org/swagger?network=mainnet](https://cronos.org/swagger?network=mainnet)
 * **Swagger Rest API**
-  * [https://rest.cronos.org/swagger/](https://rest.cronos.org/swagger/)
+  * [https://rest.cronos.com/swagger/](https://rest.cronos.com/swagger/)
 {% endtab %}
 
 {% tab title="Testnet" %}
 * **EVM HTTP JSON RPC (Web3 compatible)**
-  * [https://evm-t3.cronos.org/](https://evm-t3.cronos.org/)
+  * [https://evm-t3.cronos.com/](https://evm-t3.cronos.com/)
 * **Block explorer**
-  * [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
+  * [https://explorer.cronos.com/testnet](https://explorer.cronos.com/testnet)
 * **Tendermint RPC**
-  * [https://rpc-t3.cronos.org/](https://rpc-t3.cronos.org/)
+  * [https://rpc-t3.cronos.com/](https://rpc-t3.cronos.com/)
 * **Cosmos RESTful**
-  * [https://rest-t3.cronos.org/](https://rest-t3.cronos.org/)
+  * [https://rest-t3.cronos.com/](https://rest-t3.cronos.com/)
 * **Cosmos gRPC Based**
-  * [https://grpc-t3.cronos.org/](https://grpc-t3.cronos.org/)
+  * [https://grpc-t3.cronos.com/](https://grpc-t3.cronos.com/)
 * **Swagger Playground**
   * [https://cronos.org/swagger?network=testnet](https://cronos.org/swagger?network=testnet)
 {% endtab %}

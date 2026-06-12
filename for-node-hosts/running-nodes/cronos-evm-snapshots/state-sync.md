@@ -69,15 +69,15 @@ OK!
 * Replace the following parameters in the `~/.cronos/config/config.toml` file, by executing:
 
 ```bash
-LATEST_HEIGHT=$(curl -s https://rpc.cronos.org:443/block | jq -r .result.block.header.height); \
+LATEST_HEIGHT=$(curl -s https://rpc.cronos.com:443/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
-TRUST_HASH=$(curl -s "https://rpc.cronos.org:443/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
+TRUST_HASH=$(curl -s "https://rpc.cronos.com:443/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
 
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
-s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"https://rpc.cronos.org:443,https://rpc.cronos.org:443\"| ; \
+s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"https://rpc.cronos.com:443,https://rpc.cronos.com:443\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(persistent_peers[[:space:]]+=[[:space:]]+).*$|\1\"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656\"| ; \
+s|^(persistent_peers[[:space:]]+=[[:space:]]+).*$|\1\"0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656,3032073adc06d710dd512240281637c1bd0c8a7b@seed-1.cronos.com:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@seed-2.cronos.com:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.cronos/config/config.toml
 ```
 

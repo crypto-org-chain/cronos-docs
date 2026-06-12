@@ -28,7 +28,7 @@ meta:
       interact with the Cronos testnet in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/getting-started/metamask.html
+canonicalUrl: https://docs.cronos.com/getting-started/metamask.html
 ---
 
 # 🦊 MetaMask Configuration
@@ -50,18 +50,18 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 {% tabs %}
 {% tab title="Mainnet" %}
 - **Name**: Cronos
-- **New RPC URL:**`https://evm.cronos.org`;
+- **New RPC URL:**`https://evm.cronos.com`;
 - **Chain ID: 25**
 - **Symbol:**`CRO`
-- **Block explorer URL:**`https://explorer.cronos.org/`
+- **Block explorer URL:**`https://explorer.cronos.com/`
 {% endtab %}
 
 {% tab title="Testnet" %}
 * **Name:** Cronos testnet
-* **New RPC URL:** `https://evm-t3.cronos.org`
+* **New RPC URL:** `https://evm-t3.cronos.com`
 * **Chain ID:**`338`
 * **Symbol**:`tCRO`
-* **Block explorer URL:** `https://explorer.cronos.org/testnet`
+* **Block explorer URL:** `https://explorer.cronos.com/testnet`
 {% endtab %}
 {% endtabs %}
 

@@ -166,4 +166,4 @@ See [Verify Endpoint](api-reference.md#verify-endpoint) and [Settle Endpoint](ap
 #### **6. Monitor Transactions**
 
 * Check facilitator response for `txHash` and `blockNumber`
-* View on Cronos Block Explorer: `https://explorer.cronos.org/testnet/tx/[txHash]`
+* View on Cronos Block Explorer: `https://explorer.cronos.com/testnet/tx/[txHash]`

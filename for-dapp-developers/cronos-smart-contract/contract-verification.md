@@ -2,12 +2,12 @@
 
 ## Block Explorer
 
-The Cronos blockchain network is now using the new [Cronos Explorer](https://explorer.cronos.org).
+The Cronos blockchain network is now using the new [Cronos Explorer](https://explorer.cronos.com).
 
 The Cronos Explorer URLs are as follows:
 
-* Mainnet: [https://explorer.cronos.org](https://explorer.cronos.org)
-* Testnet: [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
+* Mainnet: [https://explorer.cronos.com](https://explorer.cronos.com)
+* Testnet: [https://explorer.cronos.com/testnet](https://explorer.cronos.com/testnet)
 
 The documentation of the Cronos Explorer APIs are available at the following URLs:
 
@@ -16,7 +16,7 @@ The documentation of the Cronos Explorer APIs are available at the following URL
 
 ## Contract Deployment
 
-To interact with Cronos mainnet, you can use the public endpoint `https:.//evm.cronos.org` or an endpoint provided by a commercial vendor. You will need CRO in your self-custodial wallet in order to pay for transaction fees.
+To interact with Cronos mainnet, you can use the public endpoint `https:.//evm.cronos.com` or an endpoint provided by a commercial vendor. You will need CRO in your self-custodial wallet in order to pay for transaction fees.
 
 In [this Github repository](https://github.com/kentimsit/cronos-hardhat-boilerplate), you will find a convenient example of Hardhat configuration for smart contract development on Cronos Testnet and Mainnet. Please refer to [the README.md file](https://github.com/kentimsit/cronos-hardhat-boilerplate/blob/main/README.md) for a list of frequently used commands, and to the [Hardhat documentation](https://hardhat.org) for more details.
 
@@ -30,7 +30,7 @@ The new Cronos Explorer supports smart contract verification either through the 
 
 **Contract Verification Via Explorer Hardhat:**
 
-For verification via Hardhat, refer to the example provided in [this boilerplate repository](https://github.com/kentimsit/cronos-hardhat-boilerplate/blob/main/README.md). Cronos is supported by Hardhat out of the box, you just need to configure the network parameters in `hardhat.config.js` . You will need an API key. To find out how to obtain an API key, refer to the [Cronos Explorer API documentation](https://docs.cronos.org/block-explorers/block-explorer-and-api-keys#creating-account-and-getting-api-key-cronso-explorer).
+For verification via Hardhat, refer to the example provided in [this boilerplate repository](https://github.com/kentimsit/cronos-hardhat-boilerplate/blob/main/README.md). Cronos is supported by Hardhat out of the box, you just need to configure the network parameters in `hardhat.config.js` . You will need an API key. To find out how to obtain an API key, refer to the [Cronos Explorer API documentation](https://docs.cronos.com/block-explorers/block-explorer-and-api-keys#creating-account-and-getting-api-key-cronso-explorer).
 
 After the contract verification is complete, the Cronos Explorer will display details about your smart contract code like shown below.
 
@@ -40,8 +40,8 @@ After the contract verification is complete, the Cronos Explorer will display de
 
 For verification via the web interface, visit the following URLs:
 
-* Mainnet: [https://explorer.cronos.org/verifyContract](https://explorer.cronos.org/verifyContract)
-* Testnet: [https://explorer.cronos.org/testnet/verifyContract](https://explorer.cronos.org/testnet/verifyContract)
+* Mainnet: [https://explorer.cronos.com/verifyContract](https://explorer.cronos.com/verifyContract)
+* Testnet: [https://explorer.cronos.com/testnet/verifyContract](https://explorer.cronos.com/testnet/verifyContract)
 
 **Contract Verification Via Remix and Explorer:**
 

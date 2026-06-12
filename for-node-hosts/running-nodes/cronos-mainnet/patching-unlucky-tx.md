@@ -40,7 +40,7 @@ And in the patch unlucky tx wiki\
 `0x435ef379b9ddf226d9fe098ae39d36aed2d03f3c46febd84c48919f1adf1b7fe`
 
 ```bash
-curl -X POST 'https://evm.cronos.org' \
+curl -X POST 'https://evm.cronos.com' \
 -H 'Content-Type: application/json' \
 -d '{
     "jsonrpc": "2.0",
@@ -65,7 +65,7 @@ This command works for all blockheights.
 `0x3941c8a1625163165fb185e934d463743258ee4b0924c5deb690fc836dab839d`
 
 ```bash
-curl -X POST 'https://evm.cronos.org' \
+curl -X POST 'https://evm.cronos.com' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "jsonrpc": "2.0",
@@ -79,7 +79,7 @@ curl -X POST 'https://evm.cronos.org' \
 {"jsonrpc":"2.0","id":44,"result":{"blockHash":"0x6eca0e692f6cce612a5c52294db0f5c75127dc6feb310b2693bc697fe3797793","blockNumber":"0x28c3ed","from":"0xdb8befa2f810662316e298f387c943e57b377260","gas":"0x7a120","gasPrice":"0x4a36fb03800","hash":"0x3941c8a1625163165fb185e934d463743258ee4b0924c5deb690fc836dab839d","input":"0x54d2f242","nonce":"0x30","to":"0xc6494099716abe3d95db5a97e5a7fc5ae7e7caba","transactionIndex":"0x0","value":"0x0","type":"0x0","v":"0x55","r":"0xea07319d8a7666afd8ad4970d7f11e2135c9b71719fc34b69995c110beeb84f4","s":"0x2f4f5aa3a822121ee65aa879ff50a2a4504d2f7575d404f1d22685e06d86e07b"}}
 ```
 
-**Step 6.** After the unlucky has been patched, follow the [Upgrade notes](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet#step-0-notes-on-huygen-network-upgrade) on performing upgrades until the node is synced to the current block height.
+**Step 6.** After the unlucky has been patched, follow the [Upgrade notes](https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet#step-0-notes-on-huygen-network-upgrade) on performing upgrades until the node is synced to the current block height.
 
 {% hint style="info" %}
 You can print out which blocks will need re-indexing by adding the `--print-txs` argument. Bear in mind that this won't actually reindex the block, but rather just print.

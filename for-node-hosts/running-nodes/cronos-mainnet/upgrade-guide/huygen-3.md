@@ -2,11 +2,11 @@
 
 {% hint style="warning" %}
 The Cronos v1.1.0 - "Titan" upgrade is proposed to be scheduled at the block height of 13,184,000. Referencing estimated time can be found at \
-[https://explorer.cronos.org/block/countdown/13184000](https://explorer.cronos.org/block/countdown/13184000)
+[https://explorer.cronos.com/block/countdown/13184000](https://explorer.cronos.com/block/countdown/13184000)
 
 **DO NOT UPGRADE to the binary v1.1.0 before that suggested upgrade schedule.**
 
-You might check the current block height by the [Cronos Explorer](https://explorer.cronos.org/)
+You might check the current block height by the [Cronos Explorer](https://explorer.cronos.com/)
 {% endhint %}
 
 ## Step 0 - Don't panic

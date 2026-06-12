@@ -31,7 +31,7 @@ Subcommands:
 Example:&#x20;
 
 ```
-./cronosd q ibc channel channels --node  https://rpc-t3.cronos.org:443/
+./cronosd q ibc channel channels --node  https://rpc-t3.cronos.com:443/
 ```
 
 Expected output:&#x20;
@@ -69,7 +69,7 @@ Example:
 &#xNAN;**#4 Query the trace info for all token denominations**
 
 ```
-./cronosd q ibc-transfer denom-traces --node https://rpc-t3.cronos.org:443/
+./cronosd q ibc-transfer denom-traces --node https://rpc-t3.cronos.com:443/
 ```
 
 \

@@ -28,7 +28,7 @@ meta:
       Truffle and Hardhat are included in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/getting-started/cronos-smart-contract.html
+canonicalUrl: https://docs.cronos.com/getting-started/cronos-smart-contract.html
 ---
 
 # 📃 Smart Contracts
@@ -52,7 +52,7 @@ You can refer to [Downloading and installing Node.js and npm](https://docs.npmjs
 
 ### Sufficient funds on deployer address
 
-You can access to [faucet](https://faucet.cronos.com/) to obtain testnet TCRO and [explorer](https://explorer.cronos.org/testnet) to view the address details.
+You can access to [faucet](https://faucet.cronos.com/) to obtain testnet TCRO and [explorer](https://explorer.cronos.com/testnet) to view the address details.
 
 ### Git clone `smart-contract-example`
 

@@ -4,15 +4,15 @@
 
 {% tabs %}
 {% tab title="Cronos Mainnet" %}
-* **Cronos Explorer:** [https://explorer.cronos.org/](https://explorer.cronos.org/)
+* **Cronos Explorer:** [https://explorer.cronos.com/](https://explorer.cronos.com/)
 {% endtab %}
 
 {% tab title="Testnet" %}
-* **Cronos Testnet Explorer:** [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
+* **Cronos Testnet Explorer:** [https://explorer.cronos.com/testnet](https://explorer.cronos.com/testnet)
 {% endtab %}
 {% endtabs %}
 
-Cronos Explorer is the reference transaction and block explorer on Cronos `https://explorer.cronos.org`
+Cronos Explorer is the reference transaction and block explorer on Cronos `https://explorer.cronos.com`
 
 ### Creating Account and Getting API Key **Cronos Explorer**
 
@@ -22,7 +22,7 @@ As a means to provide equitable access to blockchain data, we've developed the C
 
 ### 1. Register an Account <a href="#id-1-register-an-account" id="id-1-register-an-account"></a>
 
-Head over to the [**Account Registration**](https://explorer.cronos.org/register) page and provide email and password for your account.
+Head over to the [**Account Registration**](https://explorer.cronos.com/register) page and provide email and password for your account.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 

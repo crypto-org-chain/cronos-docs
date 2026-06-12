@@ -1,11 +1,11 @@
 # The "Huygen" upgrade guide (v0.6.\* to v0.7.\*)
 
 {% hint style="warning" %}
-The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800. Referencing estimated time can be found on [https://explorer.cronos.org/block/countdown/2693800](https://explorer.cronos.org/block/countdown/2693800)
+The Cronos v0.7.0 - Huygen upgrade is proposed to be scheduled at the block height of 2,693,800. Referencing estimated time can be found on [https://explorer.cronos.com/block/countdown/2693800](https://explorer.cronos.com/block/countdown/2693800)
 
 **DO NOT UPGRADE to the binary v0.7.0 before that suggested upgrade schedule.**
 
-You might check the current block height by the [Cronos Explorer](https://explorer.cronos.org/) or using
+You might check the current block height by the [Cronos Explorer](https://explorer.cronos.com/) or using
 
 ```bash
 curl -s https://rpc-cronos.crypto.org:443/commit | jq "{height: .result.signed_header.header.height}"

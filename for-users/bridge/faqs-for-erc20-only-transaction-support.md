@@ -29,7 +29,7 @@ Please make sure both sender and receiver accounts support ERC20 format. Only if
 
 #### I made a transaction on MetaMask (through Cronos network) to another CEX that does not support Cronos Network. How can I retrieve it back?
 
-In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronos Explorer.](https://explorer.cronos.org/) Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies. Otherwise, you will most likely not be able to access the funds until that CEX starts to support Cronos.
+In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronos Explorer.](https://explorer.cronos.com/) Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies. Otherwise, you will most likely not be able to access the funds until that CEX starts to support Cronos.
 
 
 

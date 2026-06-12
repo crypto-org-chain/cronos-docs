@@ -30,5 +30,5 @@
 * [Cronos website](https://cronos.org/)
 * [Cronos Whitepaper](https://whitepaper.cronos.org/)
 * [GitHub Repository](https://github.com/crypto-org-chain/cronos)
-* [Official Documentation](https://docs.cronos.org/)
+* [Official Documentation](https://docs.cronos.com/)
 * [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)

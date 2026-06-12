@@ -11,8 +11,8 @@ The `bank` module maintains the state of two primary objects:
 
 `bank` module tracks and provides query support for the total supply of all assets used in the application. It also supports token transfer functionalities. Specifically, the total supply is updated whenever a token is:
 
-* **Minted**, e.g. Token created by the [mint](https://docs.cronos.org/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#mint) module; or
-* **Burned**, e.g. Token distorted by the [slashing](https://docs.cronos.org/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#slashing) module.
+* **Minted**, e.g. Token created by the [mint](https://docs.cronos.com/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#mint) module; or
+* **Burned**, e.g. Token distorted by the [slashing](https://docs.cronos.com/~/changes/a4CtpNfKT3gnzLfuEveQ/cronos-chain-protocol/module_overview#slashing) module.
 
 #### Transactions and Queries
 
@@ -79,7 +79,7 @@ $ cronosd query bank total --output json | jq
 
 The parameters can be checked by browsing to the following REST endpoint on Mainnet:
 
-[https://rest.cronos.org/cosmos/bank/v1beta1/params](https://rest.cronos.org/cosmos/bank/v1beta1/params)/
+[https://rest.cronos.com/cosmos/bank/v1beta1/params](https://rest.cronos.com/cosmos/bank/v1beta1/params)/
 
 ```json
 {

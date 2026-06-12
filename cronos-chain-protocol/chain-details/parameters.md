@@ -22,7 +22,7 @@ meta:
     content: Brief description of all the mentioned network parameters
   - name: "twitter:image"
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/chain-details/parameters.html
+canonicalUrl: https://docs.cronos.com/chain-details/parameters.html
 ---
 
 # List of parameters

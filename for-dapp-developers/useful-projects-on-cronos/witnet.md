@@ -94,7 +94,7 @@ If you would like to generate another random number, you need to execute the sam
 
 ![](https://lh5.googleusercontent.com/DW1LJgzPinuOV0DWEYKOyE8GxGQeHWY3QvcW5x4m5j7fUa-m0MGSRtYsEA5Ui794XJd4x-fLC6X8peThAewaWWViOup1X-8WPuFejqK5tz4PYfNtjMbncd6eji-xBkYhZrTBfXxPQ8Mcvzx9RF3hCIs-xLlHv3JXeNGOsc7hz3E9VNeyOeyxwStH6Q)
 
-As usual, you can review your transaction details on [Cronos Explorer](https://explorer.cronos.org/)/[Cronos Testnet Explorer](https://explorer.cronos.org/testnet).
+As usual, you can review your transaction details on [Cronos Explorer](https://explorer.cronos.com/)/[Cronos Testnet Explorer](https://explorer.cronos.com/testnet).
 
 ### Resources
 
