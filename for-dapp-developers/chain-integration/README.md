@@ -27,8 +27,7 @@
 
 ### Useful Links
 
-* [Cronos website](https://cronos.org/)
-* [Cronos Whitepaper](https://whitepaper.cronos.org/)
+* [Cronos website](https://cronos.com/)
 * [GitHub Repository](https://github.com/crypto-org-chain/cronos)
 * [Official Documentation](https://docs.cronos.com/)
 * [Cronos Binaries](https://github.com/crypto-org-chain/cronos/releases)

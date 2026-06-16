@@ -6,13 +6,13 @@ description: Quick-start resource if you are hacking and need to integrate with 
 
 ## Overview of Cronos chain
 
-[Cronos](https://cronos.org/) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Cronos.com](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
+[Cronos](https://cronos.com/) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Cronos.com](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
 
 [broken-reference](broken-reference/ "mention")
 
 ## How to stand out and win in a Web3 hackathon 🥇
 
-Check out our [blog post](https://blog.cronos.org/p/cronos-developer-series-5-tips-to-stand-out-in-a-web3-hackathon-924d774f1617).
+Check out our [blog post](https://blog.cronos.com/p/cronos-developer-series-5-tips-to-stand-out-in-a-web3-hackathon-924d774f1617).
 
 ## Hack with Cronos 🥚
 
@@ -23,13 +23,12 @@ The native cryptocurrency of Cronos mainnet is CRO, while the testnet uses TCRO.
 **Cronos overview & key links for developers**
 
 * Cronos docs: [https://docs.cronos.com](https://docs.cronos.com)
-* Cronos Play (for game developers): [https://cronos.org/play](https://cronos.org/play)
-* [Why build on Cronos](https://blog.cronos.org/p/why-build-grow-on-cronos-692da1de7885)
+* [Why build on Cronos](https://blog.cronos.com/p/why-build-grow-on-cronos-692da1de7885)
 * Cronos overview by [Eat The Blocks](https://www.youtube.com/watch?v=NqeeKEJiPZU)
 
 **MetaMask end-user configuration**
 
-* The [cronos.org](http://cronos.org) website has a little orange button at the top of the page, that you can click to add Cronos mainnet to your MetaMask wallet.
+* The [cronos.com](http://cronos.com) website has a little orange button at the top of the page, that you can click to add Cronos mainnet to your MetaMask wallet.
 * For more details, see [Metamask configuration](../for-users/metamask.md)
 
 **JSON-RPC endpoint configuration**
@@ -110,15 +109,6 @@ Connect your Dapp to the blockchain
 
 * Web3 library for Javascript / Typescript: [ethers.js](https://docs.ethers.io/v5/), [web3.js](https://web3js.readthedocs.io/)
 * Web3 library for Python: [web3.py](https://web3py.readthedocs.io/)
-
-Create games
-
-* Cronos Play overview: [Cronos Play](https://cronos.org/docs/play/cronos-gamefi-integraton.html)
-* Javascript SDK: [Moralis](https://moralis.io/)
-* Unity plugin: [docs](https://cronos.org/docs/play/getting-started.html) and [repo](https://github.com/ChainSafe/web3.unity)
-* Unreal plugin: [docs](https://cronos.org/docs/play/getting-started_unreal.html#pre-requisites), [repo](https://github.com/cronos-labs/play-unreal-plugin) and [demo](https://github.com/cronos-labs/play-unreal-demo)
-* C++ SDK: [repo](https://github.com/cronos-labs/play-cpp-sdk)
-* [Full list of available dev tools and integration](useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
 
 ## Developer support ☎️
 

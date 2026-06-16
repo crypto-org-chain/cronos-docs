@@ -20,7 +20,7 @@ To interact with Cronos mainnet, you can use the public endpoint `https:.//evm.c
 
 In [this Github repository](https://github.com/kentimsit/cronos-hardhat-boilerplate), you will find a convenient example of Hardhat configuration for smart contract development on Cronos Testnet and Mainnet. Please refer to [the README.md file](https://github.com/kentimsit/cronos-hardhat-boilerplate/blob/main/README.md) for a list of frequently used commands, and to the [Hardhat documentation](https://hardhat.org) for more details.
 
-In the `hardhat.config.js` file, you will notice that we currently recommend to set the gas price at 10100000000000 wei, but please [check the Gas Tracker](https://cronos.org/gastracker) for a more up to date value.
+In the `hardhat.config.js` file, you will notice that we currently recommend to set the gas price at 10100000000000 wei, but please [check the Average Gas Price](https://explorer.cronos.com/charts) for a more up to date value.
 
 ## Contract Verification
 

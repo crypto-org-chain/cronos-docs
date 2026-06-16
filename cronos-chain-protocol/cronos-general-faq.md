@@ -11,7 +11,7 @@ If you are an application developer who is creating smart contracts in Solidity 
 
 Cronos uses Proof of Authority (POA) consensus, a  streamlined and scalable consensus mechanism derived from the Tendermint POS consensus.&#x20;
 
-There are currently 33 validators supporting the Cronos network, all leading infrastructure providers (see the [list here](https://cronos.org/validators)).
+There are currently 33 validators supporting the Cronos network, all leading infrastructure providers.
 
 #### **How can I become a Cronos validator?**&#x20;
 

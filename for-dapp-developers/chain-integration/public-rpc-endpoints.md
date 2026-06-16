@@ -34,8 +34,6 @@ If you are sending large numbers of transactions from your backend, consider set
   * [https://rest.cronos.com/](https://rest.cronos.com/)
 * **Cosmos gRPC Based**
   * [https://grpc.cronos.com/](http://grpc.cronos.com/)
-* **Swagger Playground**
-  * [https://cronos.org/swagger?network=mainnet](https://cronos.org/swagger?network=mainnet)
 * **Swagger Rest API**
   * [https://rest.cronos.com/swagger/](https://rest.cronos.com/swagger/)
 {% endtab %}
@@ -51,8 +49,6 @@ If you are sending large numbers of transactions from your backend, consider set
   * [https://rest-t3.cronos.com/](https://rest-t3.cronos.com/)
 * **Cosmos gRPC Based**
   * [https://grpc-t3.cronos.com/](https://grpc-t3.cronos.com/)
-* **Swagger Playground**
-  * [https://cronos.org/swagger?network=testnet](https://cronos.org/swagger?network=testnet)
 {% endtab %}
 
 {% tab title="3rd party" %}

@@ -14,7 +14,7 @@ The Cronos x402 Facilitator enables sellers to accept on-chain stablecoin paymen
 
 #### **Documentation & Resources:**
 
-* **Faucet for&#x20;**_**`devUSDC.e`**_**&#x20; test token on Cronos Testnet:** [https://faucet.cronos.org](https://faucet.cronos.org)
+* **Faucet for&#x20;**_**`devUSDC.e`**_**&#x20; test token on Cronos Testnet:** [https://faucet.cronos.com](https://faucet.cronos.com)
 * **Cronos EVM Testnet TCRO faucet:** [https://faucet.cronos.com/](https://faucet.cronos.com/)
 * **API Documentation:** [https://docs.cronos.com/cronos-x402-facilitator/api-reference#api-endpoints](https://docs.cronos.com/cronos-x402-facilitator/api-reference#api-endpoints)
 * **Cronos Block Explorer**: [https://explorer.cronos.com](https://explorer.cronos.com/)

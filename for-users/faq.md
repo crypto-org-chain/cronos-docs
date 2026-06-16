@@ -48,11 +48,11 @@ While it is possible to have multiple ongoing transactions, we recommend having 
 
 #### Where can I report bugs and provide product feedback?
 
-For any bug reports, or feedback please contact [bridge@cronos.org](mailto:bridge@cronos.org). This is for the web Cronos bridge only. For Crypto.com app, exchange, and Onchain wallet, refer to [https://help.crypto.com/en/](https://help.crypto.com/en/) or [https://help.crypto.com/en/articles/5645017-cronos-bridge](https://help.crypto.com/en/articles/5645017-cronos-bridge).
+For any bug reports, or feedback please contact [bridge@cronos.com](mailto:bridge@cronos.com). This is for the web Cronos bridge only. For Crypto.com app, exchange, and Onchain wallet, refer to [https://help.crypto.com/en/](https://help.crypto.com/en/) or [https://help.crypto.com/en/articles/5645017-cronos-bridge](https://help.crypto.com/en/articles/5645017-cronos-bridge).
 
 #### How do I find my missing funds?
 
-Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all. If you believe you still have missing funds, please contact [bridge@cronos.org](mailto:bridge@cronos.org)[.](mailto:product@cronos.org.)
+Please check the transaction history table for your past transactions. If your transactions are not on the list, it was likely not initiated at all. If you believe you still have missing funds, please contact [bridge@cronos.com](mailto:bridge@cronos.com)[.](mailto:product@cronos.com.)
 
 #### Is transferring tokens across blockchains safe?
 

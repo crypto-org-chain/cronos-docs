@@ -68,7 +68,7 @@ It is a state machine that provides the necessary tools to run or create a contr
 
 #### F
 
-[**Faucet**](https://cronos.org/faucet)
+[**Faucet**](https://faucet.cronos.com/)
 
 Service carried out that dispenses funds in the form of free test token that can be used on a testnet.
 

@@ -17,7 +17,7 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 ## TLDR; what do I need to know if I am considering Cronos Network for my dapp?
 
-[Cronos (cronos.com)](https://cronos.org) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com and hundreds of app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 150 million people worldwide.&#x20;
+[Cronos (cronos.com)](https://cronos.com) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com and hundreds of app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 150 million people worldwide.&#x20;
 
 [Cronos](https://cronos.com/) can help most dapp creators to enhance the visibility of their product in the Cronos user community. However, Cronos is generally not able to promote token or NFT sales. The following support is available to dapp creators:
 
@@ -27,9 +27,9 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 ## FAQs - ecosystem
 
-**How can I get my project featured at** [**cronos.com/ecosystem**](https://discover.cronos.org)**?**
+**How can I get my project featured at** [**cronos.com/ecosystem**](https://cronos.com/ecosystem/)**?**
 
-* Visit [https://cronos.com/ecosystem](https://discover.cronos.org) where you can submit your project to be added to the Cronos ecosystem (or submit directly to the form [here](https://docs.google.com/forms/d/e/1FAIpQLSdbCFhO_IjnrDIIU1PyuCLSdXDP6SM7SPSaUxud17wyIzr5IA/viewform)).
+* Visit [https://cronos.com/ecosystem](https://cronos.com/ecosystem/) where you can submit your project to be added to the Cronos ecosystem (or submit directly to the form [here](https://docs.google.com/forms/d/e/1FAIpQLSdbCFhO_IjnrDIIU1PyuCLSdXDP6SM7SPSaUxud17wyIzr5IA/viewform)).
 
 **How can I get my project featured in Trust Wallet, once deployed on Cronos?**
 
@@ -54,9 +54,9 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 * Check out the Cronos documentation: [https://docs.cronos.com/getting-started/readme](https://docs.cronos.com/getting-started/readme)
 * Check out this repository of resources published for Cronos hackathons: [hacker-resources.md](hacker-resources.md "mention")
 
-**Are there best practices and security standards that apply to Dapps on Cronos?**
+**Are there best practices and security standards that apply to dApps on Cronos?**
 
-* The Cronos team strongly encourages all development teams to follow the best practices summarized at this [link](https://cronos.org/docs/getting-started/defi-practice.html#introduction). You can find more information at this [link](https://consensys.github.io/smart-contract-best-practices/) too.
+* The Cronos team strongly encourages all development teams to follow the best practices summarized at this [link](https://docs.cronos.com/for-dapp-developers/cronos-smart-contract/defi-practice/). You can find more information at this [link](https://consensys.github.io/smart-contract-best-practices/) too.
 * It will be difficult for the Cronos team to engage meaningfully with teams who do not publish their code and do not have their smart contracts verified on [Cronos Explorer](https://explorer.cronos.com)
 
 **I need a commercial node provider because my dApp exceeds the rate limits of the free Cronos JSON-RPC endpoints. Who offers this ?**

@@ -15,7 +15,6 @@
 **Official websites and docs**
 
 * Main website: [cronos.com](http://cronos.com/) - ecosystem & product entry points
-* Most popular dapps on Cronos: [discover.cronos.org](https://discover.cronos.org/)
 * Cronos Explorer (official): [explorer.cronos.com](http://explorer.cronos.com)
 
 _Tip: Link to these pages in your threads, workshops, and meetups instead of copying the content—it helps keep information accurate and up to date._

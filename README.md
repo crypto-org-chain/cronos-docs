@@ -81,13 +81,11 @@ Blog: [Cronos](https://blog.cronos.com/)
 
 Socials:[ X.com](https://x.com/CronosApp) | [Telegram](https://t.me/Cronos_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4)&#x20;
 
-White paper: [Cronos Whitepaper](https://whitepaper.cronos.org/)
-
 Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 
 **Ecosystem:**
 
-* [List of Dapps](https://discover.cronos.org)
+* [List of Dapps](https://cronos.com/ecosystem)
 * [DeFi ecosystem on Defillama](https://defillama.com/chain/Cronos)
 * [Dappradar](https://dappradar.com/rankings/protocol/cronos)
 * [Block explorer](https://explorer.cronos.com)

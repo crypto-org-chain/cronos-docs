@@ -7,7 +7,7 @@
 * [Ethereum JSON-RPC](https://ethereum.org/en/developers/docs/apis/json-rpc/)
 * [Geth JSON-RPC APIs](https://geth.ethereum.org/docs/rpc/server)
 
-Below is a list of Ethereum type JSON-RPC Methods where users can curl via local node. While you can also surf to our `swagger playground`for a better understanding.
+Below is a list of Ethereum type JSON-RPC Methods where users can curl via local node.
 
 ### JSON-RPC Methods
 

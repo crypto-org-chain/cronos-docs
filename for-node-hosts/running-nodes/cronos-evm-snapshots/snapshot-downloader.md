@@ -110,7 +110,7 @@ This example demonstrates a multi-part archive snapshot, including an <mark styl
 
 #### Choose Snapshot
 
-Checkout the latest snapshots at [https://snapshot.cronos.org/](https://snapshot.cronos.org/)
+Checkout the latest snapshots at [https://snapshot.cronos.com/](https://snapshot.cronos.com/)
 
 #### Update DB Settings
 
@@ -201,7 +201,7 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
     # Snapshot Downloader Configuration
 
     # URL for the snapshot to download (for single file snapshots)
-    snapshot_url: "https://snapshot.cronos.org/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20250922.tar.lz4"
+    snapshot_url: "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20250922.tar.lz4"
 
     # URLs for multi-part snapshots (alternative to snapshot_url)
     # If snapshot_urls is provided, it will be used instead of snapshot_url
@@ -292,13 +292,13 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
     # Snapshot Downloader Configuration
 
     # URL for the snapshot to download (for single file snapshots)
-    #snapshot_url: "https://snapshot.cronos.org/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20250922.tar.lz4"
+    #snapshot_url: "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20250922.tar.lz4"
 
     # URLs for multi-part snapshots (alternative to snapshot_url)
     # If snapshot_urls is provided, it will be used instead of snapshot_url
     snapshot_urls:
-      - "https://snapshot.cronos.org/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4.part001"
-      - "https://snapshot.cronos.org/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4.part002"
+      - "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4.part001"
+      - "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4.part002"
 
     # Final filename for multi-part snapshots (REQUIRED when using snapshot_urls)
     # This specifies what the final concatenated file should be called
