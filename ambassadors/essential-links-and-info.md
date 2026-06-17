@@ -10,27 +10,29 @@
 
 * Discord: [discord.com/invite/cronos](http://discord.com/invite/cronos)
 * Announcements (Telegram): [t.me/Cronos\_Announcements](http://t.me/Cronos_Announcements)
-* X / Twitter: [@CronosApp](https://x.com/CronosApp)
+* X / Twitter: [@Cronosapp](https://x.com/CronosApp)
 
 **Official websites and docs**
 
 * Main website: [cronos.com](http://cronos.com/) - ecosystem & product entry points
-* Most popular dapps on Cronos: [discover.cronos.org](https://discover.cronos.org/)
-* Cronos Explorer (official): [explorer.cronos.org](http://explorer.cronos.org)
+* Apps on Cronos: [https://cronos.com/ecosystem/](https://cronos.com/ecosystem/)
+* [Cronos EVM Explorer](https://explorer.cronos.org/)
+* [Cronos POS Explorer](https://cronos-pos.org/explorer/)
+* [GitHub](https://github.com/crypto-org-chain)
 
-_Tip: Link to these pages in your threads, workshops, and meetups instead of copying the content—it helps keep information accurate and up to date._
+_Tip: Link to these pages in your threads, workshops, and meetups instead of copying the content - it helps keep information accurate and up to date._
 
 ### What is Cronos?
 
-Cronos is an EVM-compatible blockchain in the Cosmos ecosystem, designed to make it easy and safe for the next wave of users to adopt Web3, with a focus on DeFi, gaming, and consumer apps.
+**The Cronos app** is a mobile-first trading platform that brings tokenized stocks, prediction markets, and crypto into a single experience, giving people around the world access to financial opportunities that have traditionally been fragmented, restricted, or unavailable.
 
-We are bringing real-world finance to billions, on-chain. EVM, AI-ready, compliant. And partnering with Crypto.com to reach 150M+ users.
+Powering the app is **Cronos Network**, an EVM-compatible blockchain delivering sub-second, sub-cent, 24/7 global settlement. Built for financial services and tokenized real-world assets, the network provides the speed, cost efficiency, and scalability needed to support millions of users and real-world financial activity.
 
-Building on this foundation, Cronos is now powering the **Cronos App** - a mobile-first trading app that puts tokenized stocks, prediction markets, and crypto in one place, giving everyday traders around the world access to the financial tools they've always been locked out of. The network powers the app. The app drives users and liquidity back to the network.
+The network powers the app. The app brings users, activity, and liquidity back to the network.
 
 ### Networks you’ll hear about
 
-* [Cronos EVM](https://docs.cronos.org): EVM-compatible, built with Ethermint/Cosmos SDK; launched Nov 8, 2021. &#x20;
-* [Cronos POS](https://cronos-pos.org/wallets): Cosmos chain optimized for payments/consumer use cases.
+* [Cronos EVM](https://docs.cronos.org): Cronos EVM is an Ethereum-compatible blockchain built with the Cosmos SDK and integrated with IBC. &#x20;
+* [Cronos POS](https://docs.cronos-pos.org/): Cronos POS is the foundational blockchain of the Cronos ecosystem.
 
 A lot more info can be found in the other section of these Docs or by following the links above.
