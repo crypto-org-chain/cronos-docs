@@ -1,10 +1,10 @@
 # FAQs for transactions from/to centralized exchanges
 
-#### I transferred CRO from the other centralised exchanges (CEXs) to the Crypto.com Defi Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet?
+#### **I transferred CRO from the other centralised exchanges (CEXs) to the Crypto.com Defi Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet?**
 
 Some centralised exchanges currently only support Ethereum Mainnet ERC20-CRO withdrawal, while the Crypto.com Defi Desktop Wallet only supports Cronos POS Chain & Cronos Chain for the moment, thus you're not able to view any ERC20 assets or balances of Ethereum Chain on the Desktop Wallet. It is highly recommended that all users check the networks before making the withdrawal and always begin with a small amount to make sure the transfer actually works.
 
-#### I have already made the transfer from the centralised exchange that does not support Cronos Chain to my Crypto.com DeFi Desktop Wallet. What should I do to retrieve my funds?
+#### **I have already made the transfer from the centralised exchange that does not support Cronos Chain to my Crypto.com DeFi Desktop Wallet. What should I do to retrieve my funds?**
 
 * Here's what you could do:
 
@@ -31,9 +31,6 @@ Please make sure both sender and receiver accounts support ERC20 format. Only if
 
 In this case, only the owner of the receiving account has access to that funds. You could also check if your transaction is successful/confirmed on [Cronos Explorer.](https://explorer.cronos.org/) Given the receiving account is from other CEXs, you may contact the receiving party and find out if it is possible for them to do a manual refund for your transaction. They may or may not do it depending on their own policies. Otherwise, you will most likely not be able to access the funds until that CEX starts to support Cronos.
 
-
-
 {% hint style="info" %}
 For additional FAQ about CRO migrations, head to the [CRO Token migration help](https://help.crypto.com/en/articles/5015397-all-about-cro-token-migration) page.
 {% endhint %}
-
