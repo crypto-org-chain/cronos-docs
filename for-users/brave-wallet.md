@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 🦁 Brave Wallet
 
 In this guide, you will learn how to use the Brave Wallet on Brave to interact with the Cronos network.
