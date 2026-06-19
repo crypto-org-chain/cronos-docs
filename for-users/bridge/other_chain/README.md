@@ -2,7 +2,7 @@
 
 ## Introduction
 
-<img src="../../../.gitbook/assets/webappintro.png" alt="centered image" width="563">
+<figure><img src="../../../.gitbook/assets/image1_iconreplaced.png" alt="" width="563"><figcaption></figcaption></figure>
 
 The Cronos Bridge’s goal is to support the seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best DApps and earnings no matter the chain.
 

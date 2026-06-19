@@ -20,7 +20,7 @@ You can now use your Ledger hardware wallet on Cronos chain.
 
 In the Ledger Live companion app, you can see your CRO holdings on Cronos chain. This can be accomplished by selecting "Add account" and then Cronos (CRO):
 
-<img src="../.gitbook/assets/image.png" alt="" width="375">
+<figure><img src="../.gitbook/assets/Ledger-hardware-wallet.png" alt="" width="375"><figcaption></figcaption></figure>
 
 In order to experience the fullest range of functionalities, including interactions with dApps, we recommend to connect your Ledger hardware wallet with the Crypto.com Onchain browser extension in Standalone mode. In order to accomplish this, select "Import wallet" in the Crypto.com Onchain browser extension and then select "Connect to Ledger".
 
