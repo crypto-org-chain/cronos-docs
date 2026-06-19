@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Brand Kit
 
 {% hint style="info" %}
