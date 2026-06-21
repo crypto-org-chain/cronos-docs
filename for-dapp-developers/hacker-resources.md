@@ -110,6 +110,14 @@ Connect your Dapp to the blockchain
 * Web3 library for Javascript / Typescript: [ethers.js](https://docs.ethers.io/v5/), [web3.js](https://web3js.readthedocs.io/)
 * Web3 library for Python: [web3.py](https://web3py.readthedocs.io/)
 
+Create games
+
+* Javascript SDK: [Moralis](https://moralis.io/)
+* Unity plugin: [repo](https://github.com/ChainSafe/web3.unity)
+* Unreal plugin: [repo](https://github.com/cronos-labs/play-unreal-plugin) and [demo](https://github.com/cronos-labs/play-unreal-demo)
+* C++ SDK: [repo](https://github.com/cronos-labs/play-cpp-sdk)
+* [Full list of available dev tools and integration](useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
+
 ## Developer support ☎️
 
 Please visit the [#dev-mainnet ](https://discord.com/channels/783264383978569728/823481249179107389)channel on the Cronos [Discord](https://discord.com/invite/pahqHz26q4) server.
