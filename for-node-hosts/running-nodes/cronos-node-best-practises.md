@@ -1,6 +1,6 @@
 # Best Practices
 
-In order to make it more convenient for DApps and node hosts to set up a node, we have put together a list of useful settings and configurations. Feel free to refer to this guide and adapt settings to suit your own use cases. For a sample config check [here](https://github.com/crypto-org-chain/cronos-mainnet/tree/master/cronosmainnet_25-1).
+In order to make it more convenient for DApps and node hosts to set up a node, we have put together a list of useful settings and configurations. Feel free to refer to this guide and adapt settings to suit your own use cases. For a sample config check [here](https://github.com/cronos-labs/cronos-mainnet/tree/master/cronosmainnet_25-1).
 
 ## config.toml
 
