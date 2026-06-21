@@ -33,7 +33,7 @@ If you are sending large numbers of transactions from your backend, consider set
 * **Cosmos RESTful**
   * [https://rest.cronos.com/](https://rest.cronos.com/)
 * **Cosmos gRPC Based**
-  * [https://grpc.cronos.com/](http://grpc.cronos.com/)
+  * [https://grpc.cronos.com/](https://grpc.cronos.com/)
 * **Swagger Rest API**
   * [https://rest.cronos.com/swagger/](https://rest.cronos.com/swagger/)
 {% endtab %}
