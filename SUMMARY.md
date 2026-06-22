@@ -51,6 +51,7 @@
   * [Blockdaemon](for-dapp-developers/dev-tools-and-integrations/blockdaemon.md)
   * [Chainstack](for-dapp-developers/dev-tools-and-integrations/chainstack.md)
   * [Caldera](for-dapp-developers/dev-tools-and-integrations/caldera.md)
+  * [Codex](for-dapp-developers/useful-projects-on-cronos/codex.md)
   * [DWELLIR](for-dapp-developers/dev-tools-and-integrations/caldera-1.md)
   * [GetBlock](for-dapp-developers/dev-tools-and-integrations/getblock.md)
   * [GoldRush](for-dapp-developers/useful-projects-on-cronos/covalent.md)
