@@ -34,7 +34,7 @@ For verification via Hardhat, refer to the example provided in [this boilerplate
 
 After the contract verification is complete, the Cronos Explorer will display details about your smart contract code like shown below.
 
-<figure><img src="../../.gitbook/assets/2024-02-08 Screenshot 07-53-20@2x.png" alt="" width="563"><figcaption><p>Cronos Explorer screenshot</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/combined.png" alt=""><figcaption><p>Cronos Explorer screenshot</p></figcaption></figure>
 
 **Contract Verification Via Explorer interface:**
 
@@ -45,7 +45,7 @@ For verification via the web interface, visit the following URLs:
 
 **Contract Verification Via Remix and Explorer:**
 
-For contracts developed in Remix, developers can follow the steps below to verify them on the Explorer:&#x20;
+For contracts developed in Remix, developers can follow the steps below to verify them on the Explorer:
 
 1. Compile the contract.
 2. Download the JSON file under `artifacts/build-info/` , and please ensure the file follows this [format](https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description).

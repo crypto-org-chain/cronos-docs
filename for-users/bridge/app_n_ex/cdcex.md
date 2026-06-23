@@ -14,7 +14,7 @@
 
 **Step 3**: Select “**Add Withdrawal Address**”
 
-![centered image](<../../../.gitbook/assets/image3 (1).png>)
+![centered image](../../../.gitbook/assets/image5.png)
 
 **Step 4**: Select the Cronos Network, add your Cronos wallet address, and save it
 

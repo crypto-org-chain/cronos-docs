@@ -4,7 +4,7 @@ icon: brain-circuit
 
 # Crypto.com AI Agent SDK
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 _Empower your dApp with AI-driven blockchain interactions_
 

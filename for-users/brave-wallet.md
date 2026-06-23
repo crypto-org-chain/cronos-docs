@@ -12,7 +12,7 @@ Let's connect your Brave Wallet to the Cronos network:
 
 * **Step 1**\
   On the top right side of the Brave browser, click the <img src="../.gitbook/assets/brave-wallet.png" alt="" data-size="line"> (Wallet) icon.\
-  If you don’t see it? Click **Update** in the toolbar for the latest version of Brave. \\
+  If you don’t see it? Click **Update** in the toolbar for the latest version of Brave.
 * **Step 2**\
   Now follow the wizard to either **create a new wallet** or **import an existing wallet.** Once you have your wallet ready, click the **three dots** in the upper right corner of your wallet view and go to "**settings".**\
   ![](<../.gitbook/assets/welcome page.png>)![](../.gitbook/assets/brave-go-to-settings.png)
@@ -31,7 +31,7 @@ Let's connect your Brave Wallet to the Cronos network:
   Under "**Search network**", select "**25 Cronos Network"** from the drop-down menu for Cronos Mainnet or "**338 Testnet"** for Testnet.\
   Now, most fields should be pre-populated, as shown below:
 
-<figure><img src="../.gitbook/assets/BraveWallet.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/brave1.png" alt=""><figcaption></figcaption></figure>
 
 * In order to display the Cronos logo, set the "**Icon URLs**" field to:
 
@@ -44,4 +44,4 @@ and click **"Submit".**
 * **Step 6**\
   Congratulations, we should now be able to see the Cronos network in the wallet view.
 
-<figure><img src="../.gitbook/assets/brave-added (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/brave-added.png" alt="" width="563"><figcaption></figcaption></figure>

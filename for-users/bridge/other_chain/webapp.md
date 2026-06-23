@@ -40,7 +40,11 @@ Before bridging a large amount, we encourage testing a transfer of a small amoun
 
 <img src="../../../.gitbook/assets/4a_confirm_wallet_txn.png" alt="" width="356">
 
+&#x20;
+
 <img src="../../../.gitbook/assets/4b_confirm_wallet_txn.png" alt="" width="355">
+
+&#x20;
 
 <img src="../../../.gitbook/assets/4c_confirm_wallet_txn.png" alt="" width="357">
 

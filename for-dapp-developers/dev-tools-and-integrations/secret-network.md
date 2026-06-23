@@ -17,5 +17,3 @@ You can integrate Secret’s CCL into an existing Cronos application, or design 
 ### Get Support[​](https://docs.kakarot.org/ecosystem/confidential-computing/secret/#get-support)
 
 To get CCL development help, you can join the Secret Network [Discord](https://discord.com/invite/secret-network-360051864110235648) or [Telegram](https://t.me/SCRTCommunity). You can also [get in touch](mailto:info@scrt.network) with the Secret Network team directly.
-
-\
