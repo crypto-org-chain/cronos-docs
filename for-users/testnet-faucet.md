@@ -11,6 +11,6 @@ In case you have reached the daily limit on faucet , you can simply send a messa
 
 {% tabs %}
 {% tab title="Cronos Testnet" %}
-* \[Cronos.org] [Cronos testnet faucet](https://cronos.org/faucet)
+* \[Cronos.com] [Cronos testnet faucet](https://faucet.cronos.com/)
 {% endtab %}
 {% endtabs %}

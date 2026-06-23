@@ -57,8 +57,8 @@ The Pyth Network smart contract is available at the following address:
 
 **Cronos EVM**
 
-* Mainnet: [0xE0d0e68297772Dd5a1f1D99897c581E2082dbA5B](https://cronoscan.com/address/0xe0d0e68297772dd5a1f1d99897c581e2082dba5b)
-* Testnet: [0x36825bf3Fbdf5a29E2d5148bfe7Dcf7B5639e320](https://cronos.org/explorer/testnet3/address/0x36825bf3Fbdf5a29E2d5148bfe7Dcf7B5639e320)
+* Mainnet: [0xE0d0e68297772Dd5a1f1D99897c581E2082dbA5B](https://explorer.cronos.com/address/0xE0d0e68297772Dd5a1f1D99897c581E2082dbA5B)
+* Testnet: [0x36825bf3Fbdf5a29E2d5148bfe7Dcf7B5639e320](https://explorer.cronos.com/testnet/address/0x36825bf3Fbdf5a29E2d5148bfe7Dcf7B5639e320)
 
 Additionally, click to access the [Pyth price-feed IDs](https://pyth.network/developers/price-feed-ids).
 

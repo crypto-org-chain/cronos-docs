@@ -6,7 +6,7 @@ This section explains how buyers (wallets, AI agents, or applications) can gener
 
 * Cronos-compatible wallet with private key or browser wallet extension
 * _USDC.E_ token balance (see [Network Constants](api-reference.md#network-constants) for contract addresses)
-  * For Cronos Testnet, you can obtain _devUSDC.e_ tokens from the [faucet](https://faucet.cronos.org/) for testing purposes
+  * For Cronos Testnet, you can obtain _devUSDC.e_ tokens from the [faucet](https://faucet.cronos.com/) for testing purposes
 
 ### Integration Steps <a href="#integration-steps" id="integration-steps"></a>
 
@@ -62,7 +62,7 @@ async function payForResource(resourceUrl, wallet) {
 // Example usage
 async function main() {
   const privateKey = process.env.PRIVATE_KEY;
-  const provider = new ethers.JsonRpcProvider('https://evm-t3.cronos.org');
+  const provider = new ethers.JsonRpcProvider('https://evm-t3.cronos.com');
   const wallet = new ethers.Wallet(privateKey, provider);
 
   const resourceUrl = 'https://seller-api.example.com/api/premium-data';

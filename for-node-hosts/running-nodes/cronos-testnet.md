@@ -28,7 +28,7 @@ meta:
       cronostestnet_338-3 in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/getting-started/cronos-testnet.html
+canonicalUrl: https://docs.cronos.com/getting-started/cronos-testnet.html
 ---
 
 # Cronos EVM Testnet
@@ -265,7 +265,7 @@ It should begin fetching blocks from the other peers. Please wait until it is fu
 *   One can check the current block height by querying the public full node by:
 
     ```bash
-    curl -s https://evm-t3.cronos.org/:26657/commit | jq "{height: .result.signed_header.header.height}"
+    curl -s https://evm-t3.cronos.com/:26657/commit | jq "{height: .result.signed_header.header.height}"
     ```
 
     and you can check your node's progress (in terms of block height) by

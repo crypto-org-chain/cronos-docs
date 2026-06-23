@@ -1,11 +1,11 @@
 # The "v1.2" upgrade guide (v1.1.\* to v1.2.0)
 
 {% hint style="warning" %}
-The Cronos v1.2.0 - "v1.2" upgrade is proposed to be scheduled at the block height of 13,520,000. Referencing estimated time can be found [here](https://explorer.cronos.org/block/countdown/13520000).
+The Cronos v1.2.0 - "v1.2" upgrade is proposed to be scheduled at the block height of 13,520,000. Referencing estimated time can be found [here](https://explorer.cronos.com/block/countdown/13520000).
 
 **DO NOT UPGRADE to the binary v1.2.0 before that suggested upgrade schedule.**
 
-You might check the current block height with the [Cronos Explorer](https://explorer.cronos.org/)
+You might check the current block height with the [Cronos Explorer](https://explorer.cronos.com/)
 {% endhint %}
 
 ## Step 0 - Don't panic

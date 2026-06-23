@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       text: "Getting Started",
-      link: "https://docs.cronos.org/getting-started/readme"
+      link: "https://docs.cronos.com/getting-started/readme"
     },
 
       {
@@ -18,35 +18,35 @@ module.exports = {
         items: [
           {
             text: "Cronos Mainnet Beta",
-            link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet"
+            link: "https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet"
           },
           {
             text: "Using Metamask",
-            link: "https://docs.cronos.org/for-users/metamask"
+            link: "https://docs.cronos.com/for-users/metamask"
           },
           {
             text: "Cronos Testnet",
-            link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-testnet"
+            link: "https://docs.cronos.com/for-node-hosts/running-nodes/cronos-testnet"
           },
           {
           text: "Cronos Gravity bridge Testnet",
-          link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-gbtestnet"
+          link: "https://docs.cronos.com/for-node-hosts/running-nodes/cronos-gbtestnet"
           },
           {
             text: "Local network deployment",
-            link: "https://docs.cronos.org/for-node-hosts/running-nodes/local-devnet"
+            link: "https://docs.cronos.com/for-node-hosts/running-nodes/local-devnet"
           },
           {
             text: "Cronos node setup best practises",
-            link: "https://docs.cronos.org/for-node-hosts/running-nodes/cronos-node-best-practises"
+            link: "https://docs.cronos.com/for-node-hosts/running-nodes/cronos-node-best-practises"
           },          
           {
             text: "Deploy Smart Contract at Cronos",
-            link: "https://docs.cronos.org/for-dapp-developers/cronos-smart-contract"
+            link: "https://docs.cronos.com/for-dapp-developers/cronos-smart-contract"
           },
           {
             text: "Best Practices for DeFi Project in Cronos",
-            link: "https://docs.cronos.org/for-dapp-developers/cronos-smart-contract/defi-practice"
+            link: "https://docs.cronos.com/for-dapp-developers/cronos-smart-contract/defi-practice"
           },
           {
             text: "Block Explorer",
@@ -64,15 +64,15 @@ module.exports = {
         items: [
           {
             text: "Introduction",
-            link: "https://docs.cronos.org/getting-started/introduction"
+            link: "https://docs.cronos.com/getting-started/introduction"
           },
           {
             text: "Design Goals",
-            link: "https://docs.cronos.org/getting-started/architecture"
+            link: "https://docs.cronos.com/getting-started/architecture"
           },
           {
             text: "Modules",
-            link: "https://docs.cronos.org/about-cronos/module_overview"
+            link: "https://docs.cronos.com/about-cronos/module_overview"
           }
         ]
       },
@@ -81,23 +81,23 @@ module.exports = {
         items: [
           {
             text: "Via Crypto.com App and Exchange",
-            link: "https://docs.cronos.org/for-users/bridge/app_n_ex"
+            link: "https://docs.cronos.com/for-users/bridge/app_n_ex"
           },
           {
             text: "From other chains (Cronos Bridge WebApp)",
-            link: "https://docs.cronos.org/for-users/bridge/other_chain/webapp"
+            link: "https://docs.cronos.com/for-users/bridge/other_chain/webapp"
           }, 
           {
             text: "From other chains (Crypto.com DeFi Wallet)",
-            link: "https://docs.cronos.org/for-users/bridge/other_chain/defiwallet"
+            link: "https://docs.cronos.com/for-users/bridge/other_chain/defiwallet"
           },      
           {
             text: "From other chains (Crypto.com DeFi Desktop Wallet)",
-            link: "https://docs.cronos.org/for-users/bridge/other_chain/desktop"
+            link: "https://docs.cronos.com/for-users/bridge/other_chain/desktop"
           },
           {
             text: "Gravity Bridge (Cronos Bridge WebApp - Testnet only)",
-            link: "https://docs.cronos.org/for-users/bridge/gb-testnet"
+            link: "https://docs.cronos.com/for-users/bridge/gb-testnet"
           }                     
         ]
       },   
@@ -106,19 +106,19 @@ module.exports = {
         items: [
           {
             text: "Introduction",
-            link: "https://docs.cronos.org/cronos-play/cronos-play",           
+            link: "https://docs.cronos.com/cronos-play/cronos-play",           
           },
           {
             text: "Unity",
-            link: "https://docs.cronos.org/cronos-play/unity",           
+            link: "https://docs.cronos.com/cronos-play/unity",           
           },
           {
             text: "Unreal Engine",
-            link: "https://docs.cronos.org/cronos-play/getting-started_unreal",           
+            link: "https://docs.cronos.com/cronos-play/getting-started_unreal",           
           },          
           {
             text: "C++ SDK",
-            link: "https://docs.cronos.org/cronos-play/getting-started_cpp",           
+            link: "https://docs.cronos.com/cronos-play/getting-started_cpp",           
           }
         ]
       },
@@ -128,19 +128,19 @@ module.exports = {
         items: [
           {
             text: "Integrating with Cronos Chain",
-            link: "https://docs.cronos.org/for-dapp-developers/chain-integration"
+            link: "https://docs.cronos.com/for-dapp-developers/chain-integration"
           },
           {
             text: "Web extension integration",
-            link: "https://docs.cronos.org/for-dapp-developers/chain-integration/web-extension-integration"
+            link: "https://docs.cronos.com/for-dapp-developers/chain-integration/web-extension-integration"
           },
           {
             text: "Technical Glossary",
-            link: "https://docs.cronos.org/about-cronos/chain-details/technical-glossary"
+            link: "https://docs.cronos.com/about-cronos/chain-details/technical-glossary"
           },
           {
             text: "Useful Projects on Cronos",
-            link: "https://docs.cronos.org/for-dapp-developers/useful-projects-on-cronos"
+            link: "https://docs.cronos.com/for-dapp-developers/useful-projects-on-cronos"
           },
         ]
       }

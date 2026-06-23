@@ -1,11 +1,11 @@
 # The "v1.4" Pallene upgrade guide (v1.3.\* to v1.4.1)
 
 {% hint style="warning" %}
-The Cronos v1.4 - "Pallene" upgrade is proposed to be scheduled at the block height of 17,155,000. Referencing estimated time can be found [here](https://explorer.cronos.org/block/countdown/17155000).
+The Cronos v1.4 - "Pallene" upgrade is proposed to be scheduled at the block height of 17,155,000. Referencing estimated time can be found [here](https://explorer.cronos.com/block/countdown/17155000).
 
 **DO NOT UPGRADE to the binary v1.4.1 before that suggested upgrade schedule.**
 
-You might check the current block height with the [Cronos Explorer](https://explorer.cronos.org/)
+You might check the current block height with the [Cronos Explorer](https://explorer.cronos.com/)
 {% endhint %}
 
 ## Step 0 - Don't panic

@@ -28,7 +28,7 @@ meta:
       command-line interface cronosd in this technical documentation.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/getting-started/
+canonicalUrl: https://docs.cronos.com/getting-started/
 description: What is Cronos? Why build on Cronos? How to connect?
 ---
 
@@ -54,7 +54,7 @@ The Cronos universe encompasses 2 chains: **Cronos EVM**, the leading Ethereum-c
 Transaction fees are paid in Cronos ($CRO), a blue chip cryptocurrency.
 
 {% hint style="info" %}
-Notice: Cronos zkEVM is being sunset, please [bridge out your assets](https://docs-zkevm.cronos.org/for-users/cronos-zkevm-bridge) before the network is fully decommissioned.
+Notice: Cronos zkEVM is being sunset, please [bridge out your assets](https://docs-zkevm.cronos.com/for-users/cronos-zkevm-bridge) before the network is fully decommissioned.
 {% endhint %}
 
 ## Why build on Cronos EVM?
@@ -81,16 +81,14 @@ Blog: [Cronos](https://blog.cronos.com/)
 
 Socials:[ X.com](https://x.com/CronosApp) | [Telegram](https://t.me/Cronos_Announcements) | [Discord](https://discord.com/invite/pahqHz26q4)&#x20;
 
-White paper: [Cronos Whitepaper](https://whitepaper.cronos.org/)
-
 Code repository: [Github](https://github.com/crypto-org-chain/cronos)
 
 **Ecosystem:**
 
-* [List of Dapps](https://discover.cronos.org)
+* [List of Dapps](https://cronos.com/ecosystem)
 * [DeFi ecosystem on Defillama](https://defillama.com/chain/Cronos)
 * [Dappradar](https://dappradar.com/rankings/protocol/cronos)
-* [Block explorer](https://explorer.cronos.org)
+* [Block explorer](https://explorer.cronos.com)
 
 **Developer tips:**
 

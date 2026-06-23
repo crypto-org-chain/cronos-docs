@@ -14,15 +14,15 @@ The Cronos x402 Facilitator enables sellers to accept on-chain stablecoin paymen
 
 #### **Documentation & Resources:**
 
-* **Faucet for&#x20;**_**`devUSDC.e`**_**&#x20; test token on Cronos Testnet:** [https://faucet.cronos.org](https://faucet.cronos.org)
+* **Faucet for&#x20;**_**`devUSDC.e`**_**&#x20; test token on Cronos Testnet:** [https://faucet.cronos.com](https://faucet.cronos.com)
 * **Cronos EVM Testnet TCRO faucet:** [https://faucet.cronos.com/](https://faucet.cronos.com/)
-* **API Documentation:** [https://docs.cronos.org/cronos-x402-facilitator/api-reference#api-endpoints](https://docs.cronos.org/cronos-x402-facilitator/api-reference#api-endpoints)
-* **Cronos Block Explorer**: [https://explorer.cronos.org](https://explorer.cronos.org/)
+* **API Documentation:** [https://docs.cronos.com/cronos-x402-facilitator/api-reference#api-endpoints](https://docs.cronos.com/cronos-x402-facilitator/api-reference#api-endpoints)
+* **Cronos Block Explorer**: [https://explorer.cronos.com](https://explorer.cronos.com/)
 * **x402 Protocol Spec**: [https://github.com/coinbase/x402](https://github.com/coinbase/x402)
 * **Developer Dashboard**: [https://developer.crypto.com](https://developer.crypto.com/)
 * **Example code:** [https://github.com/cronos-labs/x402-examples](https://github.com/cronos-labs/x402-examples)
-* **Hackers Quick Start Guide to building on Cronos:** [https://docs.cronos.org/for-dapp-developers/hacker-resources](https://docs.cronos.org/for-dapp-developers/hacker-resources)
-* **Wallet integrations:** [https://docs.cronos.org/for-dapp-developers/chain-integration/web-extension-integration](https://docs.cronos.org/for-dapp-developers/chain-integration/web-extension-integration)
+* **Hackers Quick Start Guide to building on Cronos:** [https://docs.cronos.com/for-dapp-developers/hacker-resources](https://docs.cronos.com/for-dapp-developers/hacker-resources)
+* **Wallet integrations:** [https://docs.cronos.com/for-dapp-developers/chain-integration/web-extension-integration](https://docs.cronos.com/for-dapp-developers/chain-integration/web-extension-integration)
 * **Crypto.com AI Agent SDK:** [https://ai-agent-sdk-docs.crypto.com/](https://ai-agent-sdk-docs.crypto.com/)
 * **Crypto.com Market Data MCP Server integrations:** [https://mcp.crypto.com/docs](https://mcp.crypto.com/docs)
 

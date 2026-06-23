@@ -1,11 +1,11 @@
 # The "v1.5" Smarturn upgrade guide (v1.4.\* to v1.5.1)
 
 {% hint style="warning" %}
-The Cronos v1.5 - "Smarturn" upgrade is proposed to be scheduled at the block height of 38432212. Referencing estimated time can be found [here](https://explorer.cronos.org/block/countdown/38432212).
+The Cronos v1.5 - "Smarturn" upgrade is proposed to be scheduled at the block height of 38432212. Referencing estimated time can be found [here](https://explorer.cronos.com/block/countdown/38432212).
 
 **DO NOT UPGRADE to the binary v1.5.1 before that suggested upgrade schedule.**
 
-You might check the current block height with the [Cronos Explorer](https://explorer.cronos.org/).
+You might check the current block height with the [Cronos Explorer](https://explorer.cronos.com/).
 {% endhint %}
 
 ## Step 0 - Don't panic

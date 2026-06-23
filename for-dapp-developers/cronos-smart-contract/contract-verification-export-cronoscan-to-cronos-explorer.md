@@ -6,7 +6,7 @@ hidden: true
 
 ## Cronos EVM: how to verify smart contracts on multiple blockchain explorers
 
-As a developer, you may have submitted your smart contract code to a blockchain explorer (e.g., [Cronoscan](https://cronoscan.com/)) as part of your smart contract deployment script. You can also submit it to other platforms for verification (e.g., [Cronos Explorer](https://explorer.cronos.org/)).
+As a developer, you may have submitted your smart contract code to a blockchain explorer (e.g., [Cronoscan](https://cronoscan.com/)) as part of your smart contract deployment script. You can also submit it to other platforms for verification (e.g., [Cronos Explorer](https://explorer.cronos.com/)).
 
 This guide explains how to export data from one explorer and upload it into another. However, this only works for one smart contract at a time.
 
@@ -101,7 +101,7 @@ In this case, you need to create a .JSON file by following these steps:
 
 ## Step 3: Submit contract verification into the other blockchain explorer (e.g., Cronos Explorer)
 
-Please visit the [Cronos Explorer User Interface](https://explorer.cronos.org/verifyContract), which looks like this:
+Please visit the [Cronos Explorer User Interface](https://explorer.cronos.com/verifyContract), which looks like this:
 
 <figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
 
