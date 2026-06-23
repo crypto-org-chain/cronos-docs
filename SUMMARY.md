@@ -42,7 +42,6 @@
   * [Web3-wallet](for-dapp-developers/chain-integration/web3-wallet.md)
   * [JSON-RPC methods](for-dapp-developers/chain-integration/json-rpc.md)
   * [Address Conversion](for-dapp-developers/chain-integration/adress-conversion.md)
-  * [Swagger Playground](https://cronos.org/swagger?network=mainnet)
 * [⚙️ Dev Tools & Integrations](for-dapp-developers/dev-tools-and-integrations/README.md)
   * [All Dev Tools & Integrations](for-dapp-developers/useful-projects-on-cronos/overview-of-dev-tools-and-integrations.md)
   * [Account Abstraction](for-dapp-developers/dev-tools-and-integrations/account-abstraction-experimental.md)
@@ -104,7 +103,7 @@
 ## Block Explorers
 
 * [Block Explorer and API Keys](block-explorers/block-explorer-and-api-keys.md)
-* [Cronos Explorer](https://explorer.cronos.org)
+* [Cronos Explorer](https://explorer.cronos.com)
 
 ## CRONOS CHAIN PROTOCOL
 

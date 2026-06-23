@@ -26,7 +26,7 @@ Please read this guide and review the project documentation carefully as misuse 
 
 * Metamask, Keplr, Crypto.com Onchain Wallet
 
-We are constantly working on adding new tokens and blockchains. If you have any feedback or concerns, please reach out to bridge@cronos.org.
+We are constantly working on adding new tokens and blockchains. If you have any feedback or concerns, please reach out to bridge@cronos.com.
 
 ## Via Cronos Bridge Web App
 

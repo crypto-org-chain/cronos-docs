@@ -30,7 +30,7 @@ Download the latest version of Cronosd Binary files from [Cronos Chain Github](h
 
 Extract the downloaded file (`cronos_1.4.5_Darwin_arm64.tar.gz` is used as an example). After you download and unzip the `cronosd` to the location you desire. In terminal, change directory to the `bin` folder, where `cronosd` is located.
 
-Follow the step from [Step 2-1 Initialize and Step 2-2 Configure cronosd](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet#step-2-1-initialize-cronosd) to initialize and setup `cronosd`.
+Follow the step from [Step 2-1 Initialize and Step 2-2 Configure cronosd](https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet#step-2-1-initialize-cronosd) to initialize and setup `cronosd`.
 
 Example CLI sequence:
 
@@ -44,7 +44,7 @@ Expected output:
 1.4.9
 ```
 
-Make sure you also implement the changes from [Step 0 : Notes on Network Upgrade](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet#step-0-notes-on-network-upgrade), and add these config items from [`v0.7.0`](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0) into `app.toml` before upgrade:
+Make sure you also implement the changes from [Step 0 : Notes on Network Upgrade](https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet#step-0-notes-on-network-upgrade), and add these config items from [`v0.7.0`](https://github.com/crypto-org-chain/cronos/releases/tag/v0.7.0) into `app.toml` before upgrade:
 
 <pre class="language-bash"><code class="lang-bash">### JSON RPC Configuration ###
 <strong>[json-rpc]
@@ -59,7 +59,7 @@ http-idle-timeout="120s"
 max-tx-gas-wanted=500000
 </code></pre>
 
-[Run Everything](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet#step-3.-run-everything), `Cronosd` should be able to sync.
+[Run Everything](https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet#step-3.-run-everything), `Cronosd` should be able to sync.
 
 ### Step 3: Extract Data from the Public Node Sync Snapshot
 

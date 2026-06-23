@@ -1,6 +1,6 @@
 # 🔥 Crypto Wallets
 
-Cronos is supported by more than 30 wallets, some of which are shown [here](https://cronos.org/wallets).
+Cronos is supported by more than 30 wallets, including popular providers such as MetaMask, Ruby, and Ledger.
 
 ## Crypto.com Onchain Wallet
 

@@ -31,7 +31,7 @@ meta:
       decentralised applications for the future multichain world.
   - name: twitter:image
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/chain-details/architecture.html
+canonicalUrl: https://docs.cronos.com/chain-details/architecture.html
 ---
 
 # Architecture

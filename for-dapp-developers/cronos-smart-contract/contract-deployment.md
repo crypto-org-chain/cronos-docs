@@ -2,7 +2,7 @@
 
 When developing smart contracts on Testnet, use the Testnet version of the Cronos Explorer block explorer:
 
-* Cronos Explorer Testnet URL: [https://explorer.cronos.org/testnet](https://explorer.cronos.org/testnet)
+* Cronos Explorer Testnet URL: [https://explorer.cronos.com/testnet](https://explorer.cronos.com/testnet)
 * Documentation of Cronos Explorer Testnet API: [https://explorer-api-doc.cronos.org/testnet](https://explorer-api-doc.cronos.org/testnet)
 
 ## Truffle: Deploy ERC20 Contract
@@ -44,7 +44,7 @@ PRIVATE_KEY=XXXXXXX
 
 ### Step 6. Endpoints setting
 
-By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.org/` by making changes to `networks` in `truffle-config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.com/` by making changes to `networks` in `truffle-config.js`, for example:
 
 ```json
   networks: {
@@ -53,7 +53,7 @@ By default, the script will be using your local host `"127.0.0.1"` - If you are 
       network_id: "*",       // Any network (default: none)
     },
     testnet: {
-      provider: new HDWalletProvider(getHDWallet(), "https://evm-t3.cronos.org/"), // TODO
+      provider: new HDWalletProvider(getHDWallet(), "https://evm-t3.cronos.com/"), // TODO
       network_id: "*",
       skipDryRun: true
     },
@@ -116,7 +116,7 @@ PRIVATE_KEY=XXXXXXX
 
 ### Step 6. Endpoints setting
 
-By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.org/` by making changes to `networks` in `hardhat.config.js`, for example:
+By default, the script will be using your local host `"127.0.0.1"` - If you are not running a localhost, you may leverage the public endpoint `https://evm-t3.cronos.com/` by making changes to `networks` in `hardhat.config.js`, for example:
 
 ```json
   networks: {
@@ -125,7 +125,7 @@ By default, the script will be using your local host `"127.0.0.1"` - If you are 
       accounts: getHDWallet(),
      },
     testnet: {
-      url: "https://evm-t3.cronos.org/",
+      url: "https://evm-t3.cronos.com/",
       accounts: getHDWallet(),
     },
   },

@@ -12,7 +12,7 @@ These snapshots are available for both Cronos EVM Mainnet and Testnet networks, 
 * _**Default nodes**_: standard configuration with recent state data
 * _**Pruned nodes**_**:** optimized storage with minimal historical data
 
-All Cronos EVM snapshots can be accessed at: [https://snapshot.cronos.org/](https://snapshot.cronos.org/)
+All Cronos EVM snapshots can be accessed at: [https://snapshot.cronos.com/](https://snapshot.cronos.com/)
 
 Using these snapshots significantly reduces the time required to get your Cronos node operational, allowing you to quickly join the network without waiting for a full synchronization from the genesis block.
 
@@ -53,7 +53,7 @@ Once the Cronos binary is installed and verified, you can proceed with downloadi
 
 ### Step 2: Download Cronos EVM Snapshot
 
-Download the snapshot you need. To avoid using outdated links, users is recommended to visit the [Cronos EVM Snapshots site](https://snapshot.cronos.org/) to obtain the latest available snapshot URL that matches your desired snapshot type.
+Download the snapshot you need. To avoid using outdated links, users is recommended to visit the [Cronos EVM Snapshots site](https://snapshot.cronos.com/) to obtain the latest available snapshot URL that matches your desired snapshot type.
 
 {% hint style="warning" %}
 **Please note**:\
@@ -63,7 +63,7 @@ Snapshot files are **retained for 14 days only** and automatically removed after
 If the link provided in this guide has expired at the time of downloading, replace it manually by retrieving the latest link from the snapshot site above.
 {% endhint %}
 
-<pre><code><strong>wget https://snapshot.cronos.org/cronos/mainnet-snapshot/leveldb/pruned/cronosmainnet_25-1_leveldb-pruned-20250819.tar.lz4
+<pre><code><strong>wget https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/pruned/cronosmainnet_25-1_leveldb-pruned-20250819.tar.lz4
 </strong></code></pre>
 
 ### Step 3: Unpack Cronos EVM Snapshot
@@ -116,7 +116,7 @@ OK
 Update the configuration file with the required seed nodes and timing parameters:
 
 ```
-sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"0d5cf1394a1cfde28dc8f023567222abc0f47534@cronos-seed-0.crypto.org:26656,3032073adc06d710dd512240281637c1bd0c8a7b@cronos-seed-1.crypto.org:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@cronos-seed-2.crypto.org:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"#' ~/.cronos/config/config.toml
+sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656,3032073adc06d710dd512240281637c1bd0c8a7b@seed-1.cronos.com:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@seed-2.cronos.com:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"#' ~/.cronos/config/config.toml
 
 sed -i.bak -E 's#^(create_empty_blocks_interval[[:space:]]+=[[:space:]]+).*$#\1"5s"#' ~/.cronos/config/config.toml
 

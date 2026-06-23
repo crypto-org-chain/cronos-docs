@@ -2,11 +2,11 @@
 home: true
 heroImage: CRO_icon.png
 actionText: Get Started →
-actionLink: https://docs.cronos.org/getting-started/readme
+actionLink: https://docs.cronos.com/getting-started/readme
 subscriptionText: Subscribe Now
 subscriptionLink: https://cryptoorg.substack.com/p/subscribe
 readdocText: Read Documentation
-readdocLink: https://docs.cronos.org/getting-started/readme
+readdocLink: https://docs.cronos.com/getting-started/readme
 footer: true
 meta:
   - name: "title"
@@ -31,7 +31,7 @@ meta:
     content: View our latest chain documentation on Cronos. Sign up to our newsletter to get the latest updates and read the documentation to connect to our Testnet. 
   - name: "twitter:image"
     content: https://cronos.org/og-image.png
-canonicalUrl: https://docs.cronos.org/
+canonicalUrl: https://docs.cronos.com/
 ---
 
 The documentation in this repository site is meant to provide specifications and implementation details that will be useful to third party developers or contributors to the main [repository](https://github.com/crypto-com/chain-docs-nextgen).

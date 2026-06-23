@@ -71,7 +71,7 @@ Set a unique namespace, Cronos chainId and RPC endpoint in your config. Remember
         # Highly-recommended to have at least 1 websocket endpoint
         "wss://XXX",
         # You can put multiple endpoints for failover
-        "https://evm.cronos.org"
+        "https://evm.cronos.com"
       ]
     }
   ]

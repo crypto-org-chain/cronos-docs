@@ -108,7 +108,7 @@ The "normal" state-sync only supports syncing to live height, however KYVE has v
 
 ### Step 1: Install & configure cronosd for specific upgrade height
 
-To install and configure Cronos, follow the same process as in the genesis sync part before. However, you will need to use a different binary version. You can find all upgrades with the relevant upgrade heights [here](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet#step-0--notes-on-huygen-network-upgrade).
+To install and configure Cronos, follow the same process as in the genesis sync part before. However, you will need to use a different binary version. You can find all upgrades with the relevant upgrade heights [here](https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet#step-0--notes-on-huygen-network-upgrade).
 
 ### Step 2: Run everything
 
@@ -127,7 +127,7 @@ With this process, checking the state at a certain height is greatly improved be
 
 ### Step 1: Install & configure cronosd for specific upgrade height
 
-To install and configure Cronos, follow the same process as in the historical state-sync before. You can find all upgrades with the relevant upgrade heights [here](https://docs.cronos.org/for-node-hosts/running-nodes/cronos-mainnet#step-0--notes-on-huygen-network-upgrade).
+To install and configure Cronos, follow the same process as in the historical state-sync before. You can find all upgrades with the relevant upgrade heights [here](https://docs.cronos.com/for-node-hosts/running-nodes/cronos-mainnet#step-0--notes-on-huygen-network-upgrade).
 
 ### Step 2: Run everything
 

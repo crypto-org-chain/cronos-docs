@@ -44,7 +44,7 @@ SIGNER_PKEY=0x0000000000000000000000000000000000000000000000000000000000000003
 {% hint style="info" %}
 NOTE: The above addresses of ENTRY\_POINTS contract and ACCOUNT\_FACTORY contract are on Cronos Mainnet.&#x20;
 
-And here is the ENTRY\_POINTS contract address on Cronos Testnet: [0x84D2EF0545514BF121d81769d8E94b94770670Ef](https://explorer.cronos.org/address/0x84D2EF0545514BF121d81769d8E94b94770670Ef). Feel free to deploy your own ACCOUNT\_FACTORY contract on testnet.
+And here is the ENTRY\_POINTS contract address on Cronos Testnet: [0x84D2EF0545514BF121d81769d8E94b94770670Ef](https://explorer.cronos.com/address/0x84D2EF0545514BF121d81769d8E94b94770670Ef). Feel free to deploy your own ACCOUNT\_FACTORY contract on testnet.
 {% endhint %}
 
 

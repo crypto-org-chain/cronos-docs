@@ -15,8 +15,8 @@
 **Official websites and docs**
 
 * Main website: [cronos.com](http://cronos.com/) - ecosystem & product entry points
+* Cronos Explorer (official): [explorer.cronos.com](http://explorer.cronos.com)
 * Apps on Cronos: [https://cronos.com/ecosystem/](https://cronos.com/ecosystem/)
-* [Cronos EVM Explorer](https://explorer.cronos.org/)
 * [Cronos POS Explorer](https://cronos-pos.org/explorer/)
 * [GitHub](https://github.com/crypto-org-chain)
 
@@ -32,7 +32,7 @@ The network powers the app. The app brings users, activity, and liquidity back t
 
 ### Networks you’ll hear about
 
-* [Cronos EVM](https://docs.cronos.org): Cronos EVM is an Ethereum-compatible blockchain built with the Cosmos SDK and integrated with IBC. &#x20;
-* [Cronos POS](https://docs.cronos-pos.org/): Cronos POS is the foundational blockchain of the Cronos ecosystem.
+* [Cronos EVM](https://docs.cronos.com): EVM-compatible, built with Ethermint/Cosmos SDK; launched Nov 8, 2021. &#x20;
+* [Cronos POS](https://cronos-pos.org/wallets): Cosmos chain optimized for payments/consumer use cases.
 
 A lot more info can be found in the other section of these Docs or by following the links above.

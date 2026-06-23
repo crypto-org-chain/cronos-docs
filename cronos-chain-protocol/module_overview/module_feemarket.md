@@ -69,7 +69,7 @@ The parameters can also be checked by browsing to the following REST endpoint&#x
 
 {% tabs %}
 {% tab title="Mainnet" %}
-{% embed url="https://rest.cronos.org/ethermint/feemarket/v1/params" %}
+{% embed url="https://rest.cronos.com/ethermint/feemarket/v1/params" %}
 
 ```bash
 {
@@ -89,7 +89,7 @@ The parameters can also be checked by browsing to the following REST endpoint&#x
 {% tab title="Testnet" %}
 
 
-{% embed url="https://rest-t3.cronos.org/ethermint/feemarket/v1/params" %}
+{% embed url="https://rest-t3.cronos.com/ethermint/feemarket/v1/params" %}
 
 
 
@@ -115,7 +115,7 @@ We can query the `eth_feeHistory` by JSON-RPC, the result will return the transa
 
 
 ```bash
-curl --location --request POST 'https://evm.cronos.org' \
+curl --location --request POST 'https://evm.cronos.com' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "jsonrpc": "2.0",

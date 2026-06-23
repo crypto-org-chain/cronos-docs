@@ -70,7 +70,7 @@ export default {
   methods: {
     onEnter: function () {
       window.open(
-        `https://docs.cronos.org/getting-started/readme?q=${this.input}`,
+        `https://docs.cronos.com/getting-started/readme?q=${this.input}`,
         "_blank"
       );
     },
