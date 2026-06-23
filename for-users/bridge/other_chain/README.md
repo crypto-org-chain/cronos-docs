@@ -2,7 +2,7 @@
 
 ## Introduction
 
-<img src="../../../.gitbook/assets/webappintro.png" alt="centered image" width="563">
+<figure><img src="../../../.gitbook/assets/image1_iconreplaced.png" alt="" width="563"><figcaption></figcaption></figure>
 
 The Cronos Bridge’s goal is to support the seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best DApps and earnings no matter the chain.
 
@@ -41,9 +41,3 @@ The Cronos Bridge (Beta) can be found at [https://cronos.com/bridge](https://cro
 Crypto.com Onchain Wallet has integrated with Cronos Bridge and provided a front-end UI to allow all users to seamlessly transfer assets over to Cronos straight from the app.
 
 Please visit the [Crypto.com Onchain Wallet page](https://help.crypto.com/en/articles/5645017-cronos-bridge) for details.
-
-## Via Crypto.com DeFi Desktop Wallet
-
-Crypto.com DeFi Desktop Wallet has integrated with Cronos Bridge, allowing all users to seamlessly transfer assets over to Cronos straight from the Crypto.com DeFi Desktop Wallet.
-
-Please visit section #6 on the [Crypto.com DeFi Desktop Wallet](https://help.crypto.com/en/articles/6261967-what-is-crypto-com-defi-desktop-wallet) page for details.

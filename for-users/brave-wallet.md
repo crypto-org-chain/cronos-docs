@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 🦁 Brave Wallet
 
 In this guide, you will learn how to use the Brave Wallet on Brave to interact with the Cronos network.
@@ -35,7 +39,7 @@ Let's connect your Brave Wallet to the Cronos network:
 https://cronos.org/favicon.png 
 ```
 
-and click **"Submit".**\\
+and click **"Submit".**
 
 * **Step 6**\
   Congratulations, we should now be able to see the Cronos network in the wallet view.

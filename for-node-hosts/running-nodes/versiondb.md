@@ -48,7 +48,7 @@ We will be following the following workflow:
 2. **Build** the versiondb from the change set files.
 3. **Build** a clean **application.db** from the change set files.
 
-<figure><img src="../../.gitbook/assets/versiondb (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/versiondb2.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 0
 

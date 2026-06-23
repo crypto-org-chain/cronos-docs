@@ -25,17 +25,15 @@ Crypto.com Onchain Wallet, Trust Wallet and MetaMask have mobile apps that inclu
 * Private keys are encrypted and stored locally on the user's mobile device for enhanced security
 * Protected by biometric authentication and two-factor authentication (2FA) for comprehensive security
 
-Integration with the Crypto.com Onchain Wallet provides dApp developers access to over 50 million Crypto.com customers with a seamless user experience.\
+Integration with the Crypto.com Onchain Wallet provides dApp developers access to over 50 million Crypto.com customers with a seamless user experience.\\
 
-
-**Users will be able to login with your dApp in several ways:**&#x20;
+**Users will be able to login with your dApp in several ways:**
 
 * On Mobile: Users access your dApp through the in-app browser within the Crypto.com Onchain Wallet iOS or Android applications
-* On Desktop: Users can install the Crypto.com Wallet Extension from the [Chrome Web Store](https://chromewebstore.google.com/category/extensions?utm_source=ext_sidebar\&hl=en-GB) into their Chrome, Edge or Brave browser.&#x20;
-* Hybrid Mode: The desktop extension can be connected to the Crypto.com Onchain Wallet mobile app (in which case the user will need to confirm each transaction on their mobile phone), or alternatively it can work as a standalone extension entirely in the browser.\
+* On Desktop: Users can install the Crypto.com Wallet Extension from the [Chrome Web Store](https://chromewebstore.google.com/category/extensions?utm_source=ext_sidebar\&hl=en-GB) into their Chrome, Edge or Brave browser.
+* Hybrid Mode: The desktop extension can be connected to the Crypto.com Onchain Wallet mobile app (in which case the user will need to confirm each transaction on their mobile phone), or alternatively it can work as a standalone extension entirely in the browser.
 
-
-To get your dApp listed on the dApp section of Crypto.com Onchain Wallet, follow these steps:&#x20;
+To get your dApp listed on the dApp section of Crypto.com Onchain Wallet, follow these steps:
 
 1. Get listed on DefiLlama: Submit your dApp following [How to list a DeFi Project](https://docs.llama.fi/list-your-project/submit-a-project)
 2. Wait for synchronization: Allow 48 hours for data to sync between Crypto.com Onchain Wallet and DeFiLlama
@@ -47,7 +45,7 @@ To get your dApp featured in the **Featured dApps** section of the Crypto.com On
 2. Team review: Applications are reviewed at the discretion of the Crypto.com team for featured placement
 3. Selection criteria: Listing in the featured section is subject to internal evaluation and approval processes
 
-As a developer, if you would like to offer all the mobile and desktop connection options provided by the Crypto.com Onchain Wallet, the first step is to integrate your dApp with the Crypto.com Wallet  Extension.
+As a developer, if you would like to offer all the mobile and desktop connection options provided by the Crypto.com Onchain Wallet, the first step is to integrate your dApp with the Crypto.com Wallet Extension.
 
 Once the Wallet Extension is working, all the other connection methods should start working as well, even on mobile, since they are supported by the same SDKs.
 
@@ -89,5 +87,4 @@ Once the connector is activated, your dApp can retrieve the provider using `getP
 **Some developers** may need to dig deeper into the documentation, for example if they are not using React or need more customization. In this case, please refer to:
 
 * Github: [https://github.com/crypto-com/deficonnect-monorepo](https://github.com/crypto-com/deficonnect-monorepo)
-* Document: [https://github.com/crypto-com/deficonnect-monorepo/wiki/Chrome-Extension-Wallet-Integration ](https://github.com/crypto-com/deficonnect-monorepo/wiki/Chrome-Extension-Wallet-Integration)
-
+* Document: [https://github.com/crypto-com/deficonnect-monorepo/wiki/Chrome-Extension-Wallet-Integration](https://github.com/crypto-com/deficonnect-monorepo/wiki/Chrome-Extension-Wallet-Integration)

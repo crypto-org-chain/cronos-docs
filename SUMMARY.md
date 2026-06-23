@@ -143,3 +143,7 @@
 * [🏆 Ranks & Benefits](ambassadors/ranks-and-benefits.md)
 * [🧑‍🚀 Missions & XP](ambassadors/missions-and-points.md)
 * [📖 Rules & Code of Conduct](ambassadors/rules-and-code-of-conduct.md)
+
+## Brand Kit
+
+* [Brand Kit](brand-kit/brand-kit.md)

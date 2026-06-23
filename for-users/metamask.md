@@ -65,8 +65,6 @@ First, you will need to connect your MetaMask wallet to the Cronos network:
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../.gitbook/assets/Metamask Config with new explorer link" alt="" width="375"><figcaption></figcaption></figure>
-
 * After saving the network configuration, we should be able to see the token in your address.
 
 ## Importing private keys to MetaMask
