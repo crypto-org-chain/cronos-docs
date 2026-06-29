@@ -121,6 +121,7 @@
   * [Technical glossary](cronos-chain-protocol/chain-details/technical-glossary.md)
   * [Protocol Documentation](cronos-chain-protocol/chain-details/cosmos-grpc-docs.md)
 * [Common IBC Commands](cronos-chain-protocol/common-ibc-commands.md)
+* [Cronos IBC Bridge Activity API](cronos-chain-protocol/cronos-ibc-bridge-activity-api.md)
 
 ## Cronos X402 Facilitator
 

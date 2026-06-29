@@ -58,3 +58,7 @@ Please check the transaction history table for your past transactions. If your t
 
 * As with any decentralised application, there is a degree of risk related to code exploits and hacking.
 * Our bridge code is publicly available. We leverage open-source code from the IBC protocol project.
+
+#### How to check a IBC transfer?
+
+IBC transfers do not appear in Cronos Explorer because they are processed at the Cosmos layer and do not emit EVM-compatible logs, making them invisible to standard Ethereum JSON-RPC APIs. To look up an IBC transfer, use the [Cronos IBC Bridge Activity API](../cronos-chain-protocol/cronos-ibc-bridge-activity-api.md) instead.
