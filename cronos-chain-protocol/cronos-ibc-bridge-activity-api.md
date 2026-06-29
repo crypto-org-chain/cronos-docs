@@ -116,7 +116,7 @@ Returns a single activity by source or destination transaction hash. Use when yo
 
 ### **Query parameters**
 
-<table data-header-hidden="false" data-header-sticky data-search="false"><thead><tr><th width="183">Parameter</th><th>Values/Format</th><th>Notes</th></tr></thead><tbody><tr><td>order</td><td><code>sourceBlockTime.desc</code> or <code>sourceBlockHeight.desc</code></td><td>Default is ASC. Only <code>.desc</code> accepted; <code>.asc</code> returns error. Omit for ascending.</td></tr><tr><td>status</td><td><code>pending</code>, <code>cancelled</code>, <code>counterparty_confirmed</code>, <code>failed_on_chain,</code> <code>counterparty_rejected</code></td><td>Lowercase</td></tr><tr><td>id.gt </td><td>Integer</td><td>Cursor-based pagination: records with id > value</td></tr><tr><td>createdAt.lt</td><td>RFC3339 timestamp</td><td>Created before</td></tr><tr><td>createdAt.gt</td><td>RFC3339 timestamp</td><td>Created after</td></tr><tr><td>createdAt.ago</td><td>Go duration e.g. 24h, 7d</td><td>Created before now minus duration</td></tr><tr><td>updatedAt.gt</td><td>RFC3339 timestamp</td><td>Updated after</td></tr><tr><td>sourceBlockTime.lt</td><td>RFC3339 timestamp</td><td>Source block range filter: before</td></tr><tr><td>sourceBlockTime.gt</td><td>RFC3339 timestamp</td><td>Source block range filter: after</td></tr><tr><td>sourceBlockTime.ago</td><td>Go duration e.g. 24h, 7d</td><td>Source block range filter: before now minus duration</td></tr><tr><td>destinationBlockTime.gt</td><td>RFC3339 timestamp</td><td>Destination block after</td></tr><tr><td>pagination.limit</td><td>Integer</td><td>Default 20, max 100</td></tr><tr><td>pagination.page</td><td>Integer</td><td>1-indexed</td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky data-search="false"><thead><tr><th width="206.31317138671875">Parameter</th><th>Values/Format</th><th>Notes</th></tr></thead><tbody><tr><td>order</td><td><code>sourceBlockTime.desc</code> or <code>sourceBlockHeight.desc</code></td><td>Default is ASC. Only <code>.desc</code> accepted; <code>.asc</code> returns error. Omit for ascending.</td></tr><tr><td>status</td><td><code>pending</code>, <code>cancelled</code>, <code>counterparty_confirmed</code>, <code>failed_on_chain,</code> <code>counterparty_rejected</code></td><td>Lowercase</td></tr><tr><td>id.gt </td><td>Integer</td><td>Cursor-based pagination: records with id > value</td></tr><tr><td>createdAt.lt</td><td>RFC3339 timestamp</td><td>Created before</td></tr><tr><td>createdAt.gt</td><td>RFC3339 timestamp</td><td>Created after</td></tr><tr><td>createdAt.ago</td><td>Go duration e.g. 24h, 7d</td><td>Created before now minus duration</td></tr><tr><td>updatedAt.gt</td><td>RFC3339 timestamp</td><td>Updated after</td></tr><tr><td>sourceBlockTime.lt</td><td>RFC3339 timestamp</td><td>Source block range filter: before</td></tr><tr><td>sourceBlockTime.gt</td><td>RFC3339 timestamp</td><td>Source block range filter: after</td></tr><tr><td>sourceBlockTime.ago</td><td>Go duration e.g. 24h, 7d</td><td>Source block range filter: before now minus duration</td></tr><tr><td>destinationBlockTime.gt</td><td>RFC3339 timestamp</td><td>Destination block after</td></tr><tr><td>pagination.limit</td><td>Integer</td><td>Default 20, max 100</td></tr><tr><td>pagination.page</td><td>Integer</td><td>1-indexed</td></tr></tbody></table>
 
 ### Response schema
 
@@ -124,8 +124,8 @@ Returns a single activity by source or destination transaction hash. Use when yo
 {
   "result": [
     {
-      "id": 24072,
-      "uuid": "ab2f8730-a917-44ca-a2e2-3443da79beda",
+      "id": 9314,
+      "uuid": "72bc9e5a-05a4-4cbf-b50f-ba249ddecfd5",
       "bridgeType": "IBC",
       "status": "CounterpartyConfirmed",
 
@@ -152,8 +152,8 @@ Returns a single activity by source or destination transaction hash. Use when yo
       "bridgeFeeAmount": null,
       "bridgeFeeDenom": null,
 
-      "createdAt": "2023-01-20T09:43:46.844894555Z",
-      "updatedAt": "2023-01-20T11:14:32.261898Z"
+      "createdAt": "2022-11-02T05:54:59.517138882Z",
+      "updatedAt": "2022-11-02T05:55:19.240246896Z"
     }
   ],
   "pagination": {
@@ -257,7 +257,8 @@ def fetch_all(network, account):
             d = json.load(r)
         rows.extend(d["result"])
         if page >= d["pagination"]["total_page"]:
-            break page += 1
+            break 
+        page += 1
     return rows
 
 # Examples
