@@ -82,3 +82,51 @@ A subsequent patch changed how `eth_getBlockReceipts` handles these duplicates. 
 
 Impact is concentrated on infrastructure that calls `eth_getBlockReceipts` in bulk - indexers, block-explorer backends, analytics pipelines, and bulk receipt fetchers scanning legacy blocks.
 {% endhint %}
+
+### 3. JSON-RPC Schema Differences
+
+Cronos exposes an Ethereum-compatible JSON-RPC surface, but the implementation reconstructs Ethereum wire format from Cosmos/CometBFT state, several JSON schemas diverge from standard Ethereum.
+
+#### 3a. Block Responses — Modern Fork Fields Always Present
+
+Affected methods: `eth_getBlockByNumber`, `eth_getBlockByHash`
+
+**Ethereum** omits fork-specific fields for blocks produced before the fork that introduced them. A pre-London block has no `baseFeePerGas`; a pre-Cancun block has no `blobGasUsed`, etc.
+
+**Cronos** populates the following fields for every block regardless of when it was produced:
+
+| Field | Cronos value for historical blocks |
+|---|---|
+| `baseFeePerGas` | actual fee |
+| `blobGasUsed` | always `0x0` |
+| `excessBlobGas` | always `0x0` |
+| `parentBeaconBlockRoot` | always empty hash |
+| `requestsHash` | always empty hash |
+| `withdrawals` | always `[]` |
+| `withdrawalsRoot` | always empty hash |
+
+**Why:** The block formatter reconstructs headers from CometBFT data without checking which fork was active at the queried height, so it always emits the latest field set. Clients that infer fork era from field *presence* will misread historical Cronos blocks.
+
+#### 3b. Transaction Object and Receipt Field Differences
+
+Affected methods: `eth_getTransactionByHash`, `eth_getTransactionByBlockNumberAndIndex`, `eth_getTransactionByBlockHashAndIndex`, `eth_getTransactionReceipt`
+
+**Ethereum** gates hardfork-specific fields based on when the transaction was submitted: a field only appears if the relevant fork was already active at that time. **Cronos** diverges on these fields:
+
+| Field | Object / Receipt | Ethereum | Cronos |
+|---|---|---|---|
+| `chainId` | Transaction object | EIP-155–protected or Type 1+ | All types |
+| `blobGasUsed`, `blobGasPrice` | Receipt | Actual values for Type 4 (blob) transactions | Always `0` for Type 4 |
+
+**`chainId`** — Ethereum includes this field only when the transaction carries an explicit chain ID: either a legacy (Type 0) transaction signed under EIP-155 replay protection, or a typed transaction (Type 1+, which always encode it). Pre-EIP-155 legacy transactions omit the field entirely. Cronos serializes `chainId` from the chain configuration regardless of transaction type or whether EIP-155 was used.
+
+**`blobGasUsed` / `blobGasPrice`** (receipt) — Ethereum populates these with the actual blob gas consumed and the blob base fee at inclusion time for Type 4 (EIP-4844) transactions. Cronos does not implement EIP-4844 blob gas accounting; both fields are hardcoded to `0`.
+
+#### 3c. `eth_simulateV1` — Latest Hardfork Fields in Simulated Output
+
+Simulated blocks and transactions returned by `eth_simulateV1` can include fields from forks that postdate the simulation's requested fork context — the same over-population behavior as historical blocks (3a above).
+
+Affected block fields: `baseFeePerGas`, `blobGasUsed`, `excessBlobGas`, `parentBeaconBlockRoot`, `requestsHash`, `withdrawals`, `withdrawalsRoot`
+
+Affected transaction fields: `accessList`, `authorizationList`, `blobVersionedHashes`, `chainId`, `maxFeePerBlobGas`, `maxFeePerGas`, `maxPriorityFeePerGas`, `yParity`
+
