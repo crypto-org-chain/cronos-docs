@@ -82,3 +82,19 @@ A subsequent patch changed how `eth_getBlockReceipts` handles these duplicates. 
 
 Impact is concentrated on infrastructure that calls `eth_getBlockReceipts` in bulk - indexers, block-explorer backends, analytics pipelines, and bulk receipt fetchers scanning legacy blocks.
 {% endhint %}
+
+### **3. debug\_trace traceReplay parameter**
+
+Cronos EVM `debug_traceTransaction`, `debug_traceBlock`, and `debug_traceCall` accept an optional `traceReplay` boolean in the trace config that does not exist in standard Ethereum clients (e.g., Geth).
+
+`{ "tracer": "callTracer", "traceReplay": true }`
+
+This flag is Cronos-specific, used to trace a small number of historical transactions affected by a legacy gas accounting discrepancy. When enabled and the upfront fee deduction fails, the keeper continues the trace without charging the fee.
+
+Enable it only when a `debug_trace` call against an already-committed transaction fails with a gas/balance error. It is off by default.
+
+{% hint style="warning" %}
+_Note: Do not rely on trace results with traceReplay: true for exact gas accounting. Use it to inspect execution flow only._
+{% endhint %}
+
+For the full list of affected blocks and technical details, see [debug\_trace Gas Simulation Bug page](../for-node-hosts/running-nodes/cronos-mainnet/debug_trace-methods-gas-simulation-bug-fixed-in-v1.7.8.md).                                          &#x20;
