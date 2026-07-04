@@ -98,3 +98,7 @@ The RPC endpoints below are provided by third-party services. Please conduct tho
   * [Cronos Mainnet endpoints](https://drpc.org/chainlist/cronos-mainnet-rpc)
   * [Cronos Testnet endpoints](https://drpc.org/chainlist/cronos-testnet-rpc)
   * [Service Status](https://status.drpc.org/)
+* NodeFlare:
+  * [Cronos Mainnet endpoints](https://nodeflare.app/chains/cronos)
+  * [Per-method API reference](https://nodeflare.app/docs/endpoints/cronos)
+  * [Service Status](https://nodeflare.app/status)
