@@ -1,16 +1,19 @@
 # Snapshot Downloader
 
-The Snapshot Downloader is a Rust-based automation tool that downloads a blockchain binary, snapshot (single or multi-part), and address book, then automatically extracts the binary and snapshot, initializes the node, merges custom settings into <mark style="color:orange;">`app.toml`</mark> and <mark style="color:orange;">`config.toml`</mark>, and starts the chain. It also provides lifecycle hooks to execute commands at different stages (post-download, post-extraction, post-start).
+The Snapshot Downloader is a Rust-based tool that automates setting up a Cronos node from a snapshot. It supports two modes:
 
-This guide walks you through the installation, setup, and configuration of the Snapshot Downloader for running a Cronos node. Follow the steps in order, adapting to your hardware setup (e.g. number of disks).
+* **Download only:** Run with `--profile` to download a snapshot without any configuration file.
+* **Full setup:** Configure `config.yaml` and run `cargo run` to go through the full node setup lifecycle.
+
+This guide walks you through installation, setup, and configuration. Follow the steps in order, adapting to your hardware setup (e.g. number of disks).
 
 ### Environment Setup
 
-The tool works best on Linux with Btrfs, as the tool leverages Btrfs subvolumes for efficient snapshot handling. On Linux, users can manually create snapshots of subvolumes and roll back to previous states if needed.
+The tool works best on Linux with Btrfs, as it leverages Btrfs subvolumes for efficient snapshot handling. On Linux, users can manually create snapshots of subvolumes and roll back to previous states if needed.
 
 On macOS and Windows, the downloader still supports snapshot download, extraction, and node start, but Btrfs-specific snapshot and rollback features are unavailable.
 
-**Note:** On Windows, it requires a Unix-compatible shell (e.g., Git Bash) to run the tool.
+**Note:** On Windows, it requires a Unix-compatible shell (e.g. Git Bash) to run the tool.
 
 <details>
 
@@ -102,15 +105,87 @@ $ cd snapshot-downloader2
 $ cargo build
 ```
 
-### Configure Snapshot Downloader `config.yaml`
+***
 
-The tool supports single-file or multi-part snapshots, custom lifecycle hooks, and TOML overrides for node configuration.
+### Mode 1: Download Snapshot Only
 
-This example demonstrates a multi-part archive snapshot, including an <mark style="color:orange;">`addrbook`</mark> download.
+Run with `--profile` to download a snapshot without a `config.yaml` file.
+
+```sh
+$ cargo run -- --profile cronos-{network}-{dbType}-{pruneType}
+```
+
+Full available `profile` list:
+
+{% tabs %}
+{% tab title="Cronos EVM Mainnet" %}
+```
+cronos-mainnet-leveldb-archive
+cronos-mainnet-leveldb-default
+cronos-mainnet-leveldb-pruned
+cronos-mainnet-rocksdb-archive
+cronos-mainnet-rocksdb-default
+cronos-mainnet-rocksdb-pruned
+cronos-mainnet-versiondb-archive
+cronos-mainnet-versiondb-pruned
+cronos-mainnet-versiondb-memiavl-none
+```
+{% endtab %}
+
+{% tab title="Cronos EVM Testnet" %}
+```
+cronos-testnet-leveldb-archive
+cronos-testnet-leveldb-default
+cronos-testnet-leveldb-pruned
+cronos-testnet-rocksdb-archive
+cronos-testnet-rocksdb-default
+cronos-testnet-rocksdb-pruned
+cronos-testnet-versiondb-archive
+cronos-testnet-versiondb-default
+cronos-testnet-versiondb-pruned
+cronos-testnet-versiondb-memiavl-none
+```
+{% endtab %}
+
+{% tab title="Cronos POS Mainnet" %}
+```
+cronos-pos-mainnet-leveldb-archive
+cronos-pos-mainnet-leveldb-default
+cronos-pos-mainnet-leveldb-pruned
+cronos-pos-mainnet-rocksdb-archive
+cronos-pos-mainnet-rocksdb-default
+cronos-pos-mainnet-rocksdb-pruned
+cronos-pos-mainnet-versiondb-pruned
+```
+{% endtab %}
+
+{% tab title="Cronos POS Testnet" %}
+```
+cronos-pos-testnet-leveldb-pruned
+cronos-pos-testnet-rocksdb-pruned
+cronos-pos-testnet-versiondb-pruned
+```
+{% endtab %}
+{% endtabs %}
+
+***
+
+### Mode 2: Full Node Setup with config.yaml
+
+With `config.yaml`, the downloader runs through a 6-step lifecycle to set up and start a full node automatically.
+
+**Lifecycle steps:**
+
+1. Download and extract `cronosd` binary
+2. Run `cronosd init`
+3. Download snapshot
+4. Extract snapshot
+5. Update `app.toml` and `config.toml`
+6. Start `cronosd`
 
 #### Choose Snapshot
 
-Checkout the latest snapshots at [https://snapshot.cronos.com/](https://snapshot.cronos.com/)
+Check the latest snapshots at [https://snapshot.cronos.com/](https://snapshot.cronos.com/).
 
 #### Update DB Settings
 
@@ -122,7 +197,7 @@ In `snapshot-downloader2/config.yaml`, under the `app_yaml` and `config_yaml` se
         name: "value"
 ```
 
-Below are examples of each database with pruning type `Default` , overriding  `minimum-gas-prices` and `persistent_peers`.
+Below are examples of each database with pruning type `Default`, overriding `minimum-gas-prices` and `persistent_peers`.
 
 {% tabs %}
 {% tab title="GolevelDB" %}
@@ -135,7 +210,7 @@ app_yaml:
 config_yaml:
   db_backend: "goleveldb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656,3032073adc06d710dd512240281637c1bd0c8a7b@seed-1.cronos.com:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@seed-2.cronos.com:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"
 ```
 {% endtab %}
 
@@ -149,7 +224,7 @@ app_yaml:
 config_yaml:
   db_backend: "rocksdb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656,3032073adc06d710dd512240281637c1bd0c8a7b@seed-1.cronos.com:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@seed-2.cronos.com:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"
 ```
 {% endtab %}
 
@@ -165,7 +240,7 @@ app_yaml:
 config_yaml:
   db_backend: "rocksdb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656,3032073adc06d710dd512240281637c1bd0c8a7b@seed-1.cronos.com:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@seed-2.cronos.com:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"
 ```
 {% endtab %}
 
@@ -184,7 +259,7 @@ app_yaml:
 config_yaml:
   db_backend: "rocksdb"
   p2p:
-    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656"
+    persistent_peers: "0d5cf1394a1cfde28dc8f023567222abc0f47534@seed-0.cronos.com:26656,3032073adc06d710dd512240281637c1bd0c8a7b@seed-1.cronos.com:26656,04f43116b4c6c70054d9c2b7485383df5b1ed1da@seed-2.cronos.com:26656,337377dcda43d79c537d2c4d93ad3b698ce9452e@bd-cronos-mainnet-seed-node-01.bdnodes.net:26656"
 ```
 {% endtab %}
 {% endtabs %}
@@ -193,7 +268,7 @@ config_yaml:
 
 Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update URLs, chain IDs, and settings as needed for the latest snapshots and binaries.
 
-*   **Cronos EVM Mainnet Example 1: Single File**&#x20;
+*   **Cronos EVM Mainnet Example 1: Single File**
 
     This example uses a single file snapshot for the Cronos EVM chain.
 
@@ -375,22 +450,48 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
         persistent_peers: "dc9905490007f7271d0f884a2dd659db0366c1c0@13.215.127.128:26656"
     ```
 
-### Running the Tool
+#### Run The Tool
 
-Once configured, run the tool with:
+Once configured, run:
 
 ```sh
 $ cargo run
 ```
 
-Monitor the output for progress. The tool will handle downloads, extractions, initialization, and startup. Use lifecycle hooks ( `post_snapshot_download_command` `post_snapshot_extract_command` and `post_start_command` ) for custom automation.
+The tool will go through all 6 steps in order. Use lifecycle hooks (`post_snapshot_download_command`, `post_snapshot_extract_command`, `post_start_command`) for any custom automation between steps.
+
+#### Skipping Steps
+
+You can skip one or more steps by passing skip flags. This is useful when re-running the tool after a partial run, or when certain steps have already been completed.
+
+| Flag                       | Skips                                         |
+| -------------------------- | --------------------------------------------- |
+| `--skip-binary-download`   | Step 1: Download and extract `cronosd` binary |
+| `--skip-download-snapshot` | Step 3: Download snapshot                     |
+| `--skip-extract-snapshot`  | Step 4: Extract snapshot                      |
+| `--skip-download-addrbook` | Addrbook download (if `addrbook_url` is set)  |
+| `--skip-execute-binary`    | Step 6: Start `cronosd`                       |
 
 {% hint style="info" %}
-To re-run the tool without re-downloading or re-extracting the snapshot, run:
-
-```sh
-$ cargo run --skip-download-snapshot --skip-extract-snapshot
-```
+Steps 2 (init) and 5 (update config) always run and cannot be skipped.
 {% endhint %}
 
-For troubleshooting, check logs in the workspace directory or adjust retry settings in the config. Always verify snapshot and binary URLs from official sources for the latest versions.
+**Examples**
+
+Re-run without re-downloading or re-extracting the snapshot:
+
+```sh
+$ cargo run -- --skip-download-snapshot --skip-extract-snapshot
+```
+
+Re-run from scratch but skip starting the node:
+
+```sh
+$ cargo run -- --skip-execute-binary
+```
+
+Skip everything except starting the node:
+
+```sh
+$ cargo run -- --skip-binary-download --skip-download-snapshot --skip-extract-snapshot
+```
