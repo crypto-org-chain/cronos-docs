@@ -16,7 +16,7 @@ All Cronos EVM snapshots can be accessed at: [https://snapshot.cronos.com/](http
 
 Using these snapshots significantly reduces the time required to get your Cronos node operational, allowing you to quickly join the network without waiting for a full synchronization from the genesis block.
 
-### Step 1: Installation Guide  <a href="#step-1-quicksync-download" id="step-1-quicksync-download"></a>
+### Step 1: Installation Guide <a href="#step-1-quicksync-download" id="step-1-quicksync-download"></a>
 
 Before using snapshots, you'll need to install the Cronos binary. Follow these steps to get started:
 
@@ -29,14 +29,13 @@ cd cronos-node
 
 2. Download the latest Cronos Binary [release](https://github.com/crypto-org-chain/cronos/releases):
 
-```
-curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v1.5.1/cronos_1.5.1_Darwin_arm64.tar.gz
-```
+<pre><code><strong>curl -LOJ https://github.com/crypto-org-chain/cronos/releases/download/v1.7.8/cronos_1.7.8_Darwin_arm64.tar.gz
+</strong></code></pre>
 
 3. Unpack & Install the binary files:
 
 ```
-tar -zxvf cronos_1.5.1_Darwin_arm64.tar.gz
+tar -zxvf cronos_1.7.8_Darwin_arm64.tar.gz
 ```
 
 4. Verify the installation:
@@ -45,11 +44,10 @@ tar -zxvf cronos_1.5.1_Darwin_arm64.tar.gz
 cd bin
 ./cronosd version
 Expected output:
-1.5.1
+1.7.8
 ```
 
-Once the Cronos binary is installed and verified, you can proceed with downloading and applying the appropriate snapshot for your node configuration.\
-
+Once the Cronos binary is installed and verified, you can proceed with downloading and applying the appropriate snapshot for your node configuration.
 
 ### Step 2: Download Cronos EVM Snapshot
 
@@ -58,20 +56,21 @@ Download the snapshot you need. To avoid using outdated links, users is recommen
 {% hint style="warning" %}
 **Please note**:\
 The snapshot link shown below is **only an example**.\
-Snapshot files are **retained for 14 days only** and automatically removed after that.&#x20;
+Snapshot files are **retained for 14 days only** and automatically removed after that.
 
 If the link provided in this guide has expired at the time of downloading, replace it manually by retrieving the latest link from the snapshot site above.
 {% endhint %}
 
-<pre><code><strong>wget https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/pruned/cronosmainnet_25-1_leveldb-pruned-20250819.tar.lz4
-</strong></code></pre>
+```
+wget https://snapshot-download.cronos.com/cronos/mainnet-snapshot/leveldb/pruned/cronosmainnet_25-1_leveldb-pruned-20260707.tar.lz4
+```
 
 ### Step 3: Unpack Cronos EVM Snapshot
 
 First copy or move the snapshot to the hidden `.cronos/` directory in the root. Then unpack the file:
 
 ```
-tar -zxvf cronosmainnet_25-1_leveldb-pruned-20250819.tar.lz4
+tar -zxvf cronosmainnet_25-1_leveldb-pruned-20260707.tar.lz4
 ```
 
 {% hint style="info" %}
@@ -89,7 +88,7 @@ Initialize your Cronos node with a unique identifier (moniker):
 
 The `moniker` will be the displayed name of your node when connected to the Cronos network. Make sure to replace `[moniker]` with your desired node name without the square brackets.
 
-### Step 4: Configure `cronosd`  <a href="#step-1-quicksync-download" id="step-1-quicksync-download"></a>
+### Step 4: Configure `cronosd` <a href="#step-1-quicksync-download" id="step-1-quicksync-download"></a>
 
 Now you'll need to download the genesis file and configure your node settings:
 

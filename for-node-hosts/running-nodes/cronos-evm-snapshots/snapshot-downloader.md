@@ -183,11 +183,11 @@ With `config.yaml`, the downloader runs through a 6-step lifecycle to set up and
 5. Update `app.toml` and `config.toml`
 6. Start `cronosd`
 
-#### Choose Snapshot
+#### **Choose Snapshot**
 
 Check the latest snapshots at [https://snapshot.cronos.com/](https://snapshot.cronos.com/).
 
-#### Update DB Settings
+#### **Update DB Settings**
 
 In `snapshot-downloader2/config.yaml`, under the `app_yaml` and `config_yaml` sections, update the database settings according to the target snapshot database type and pruning type, along with any other desired configurations. Follow the same pattern as:
 
@@ -264,7 +264,7 @@ config_yaml:
 {% endtab %}
 {% endtabs %}
 
-#### Full Config Examples
+#### **Full Config Examples**
 
 Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update URLs, chain IDs, and settings as needed for the latest snapshots and binaries.
 
@@ -276,7 +276,7 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
     # Snapshot Downloader Configuration
 
     # URL for the snapshot to download (for single file snapshots)
-    snapshot_url: "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20250922.tar.lz4"
+    snapshot_url: "https://snapshot-download.cronos.com/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-pruned-20260707.tar.lz4"
 
     # URLs for multi-part snapshots (alternative to snapshot_url)
     # If snapshot_urls is provided, it will be used instead of snapshot_url
@@ -290,7 +290,7 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
     # snapshot_filename: "cosmos-snapshot.tar.gz"
 
     # URL for the binary to download
-    binary_url: "https://github.com/crypto-org-chain/cronos/releases/download/v1.4.9/cronos_1.4.9_Linux_arm64.tar.gz"
+    binary_url: "https://github.com/crypto-org-chain/cronos/releases/download/v1.7.8/cronos_1.7.8_Linux_arm64.tar.gz"
 
     # Relative path to the binary within the workspace directory
     # This is used to locate the binary after extraction
@@ -367,20 +367,20 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
     # Snapshot Downloader Configuration
 
     # URL for the snapshot to download (for single file snapshots)
-    #snapshot_url: "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20250922.tar.lz4"
+    #snapshot_url: "https://snapshot-download.cronos.com/cronos/mainnet-snapshot/leveldb/default/cronosmainnet_25-1_leveldb-default-20260703.tar.lz4"
 
     # URLs for multi-part snapshots (alternative to snapshot_url)
     # If snapshot_urls is provided, it will be used instead of snapshot_url
     snapshot_urls:
-      - "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4.part001"
-      - "https://snapshot.cronos.com/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4.part002"
+      - "https://snapshot-download.cronos.com/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20260703.tar.lz4.part001"
+      - "https://snapshot-download.cronos.com/cronos/mainnet-snapshot/leveldb/archive/cronosmainnet_25-1_leveldb-archive-20260703.tar.lz4.part002"
 
     # Final filename for multi-part snapshots (REQUIRED when using snapshot_urls)
     # This specifies what the final concatenated file should be called
-    snapshot_filename: "cronosmainnet_25-1_leveldb-archive-20250923.tar.lz4"
+    snapshot_filename: "cronosmainnet_25-1_leveldb-archive-20260703.tar.lz4"
 
     # URL for the binary to download
-    binary_url: "https://github.com/crypto-org-chain/cronos/releases/download/v1.4.9/cronos_1.4.9_Linux_arm64.tar.gz"
+    binary_url: "https://github.com/crypto-org-chain/cronos/releases/download/v1.7.8/cronos_1.7.8_Linux_arm64.tar.gz"
 
     # Relative path to the binary within the workspace directory
     # This is used to locate the binary after extraction
@@ -450,7 +450,7 @@ Below are examples of `snapshot-downloader2/config.yaml` for Cronos EVM. Update 
         persistent_peers: "dc9905490007f7271d0f884a2dd659db0366c1c0@13.215.127.128:26656"
     ```
 
-#### Run The Tool
+**Run The Tool**
 
 Once configured, run:
 
@@ -460,7 +460,7 @@ $ cargo run
 
 The tool will go through all 6 steps in order. Use lifecycle hooks (`post_snapshot_download_command`, `post_snapshot_extract_command`, `post_start_command`) for any custom automation between steps.
 
-#### Skipping Steps
+**Skipping Steps**
 
 You can skip one or more steps by passing skip flags. This is useful when re-running the tool after a partial run, or when certain steps have already been completed.
 
