@@ -83,7 +83,9 @@ A subsequent patch changed how `eth_getBlockReceipts` handles these duplicates. 
 Impact is concentrated on infrastructure that calls `eth_getBlockReceipts` in bulk - indexers, block-explorer backends, analytics pipelines, and bulk receipt fetchers scanning legacy blocks.
 {% endhint %}
 
-### **3. debug\_trace traceReplay parameter**
+### **3.** API & RPC Differences
+
+#### **3.1 debug\_trace traceReplay parameter**
 
 Cronos EVM `debug_traceTransaction`, `debug_traceBlock`, and `debug_traceCall` accept an optional `traceReplay` boolean in the trace config that does not exist in standard Ethereum clients (e.g., Geth).
 
@@ -97,4 +99,10 @@ Enable it only when a `debug_trace` call against an already-committed transactio
 _Note: Do not rely on trace results with traceReplay: true for exact gas accounting. Use it to inspect execution flow only._
 {% endhint %}
 
-For the full list of affected blocks and technical details, see [debug\_trace Gas Simulation Bug page](../for-node-hosts/running-nodes/cronos-mainnet/debug_trace-methods-gas-simulation-bug-fixed-in-v1.7.8.md).                                          &#x20;
+For the full list of affected blocks and technical details, see [debug\_trace Gas Simulation Bug page](../for-node-hosts/running-nodes/cronos-mainnet/debug_trace-methods-gas-simulation-bug-fixed-in-v1.7.8.md).     &#x20;
+
+#### **3.2** EIP-4844 Blob Transactions
+
+Cronos EVM does not implement EIP-4844 blob functionality. \
+\
+Blob transaction fields are accepted for tooling compatibility but are no-op, transactions execute as standard calls. Blob-related opcodes (e.g., `BLOBHASH`, `BLOBBASEFEE`) return zero.
