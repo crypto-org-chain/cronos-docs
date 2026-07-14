@@ -259,14 +259,8 @@ This [package](https://github.com/pyth-network/pyth-examples/tree/main/lazer/evm
 
 #### Pyth Core Contract Addresses
 
-* Mainnet: [0xE0d0e68297772Dd5a1f1D99897c581E2082dbA5B](https://explorer.cronos.com/address/0xE0d0e68297772Dd5a1f1D99897c581E2082dbA5B)
-* Testnet: [0x36825bf3Fbdf5a29E2d5148bfe7Dcf7B5639e320](https://explorer.cronos.com/testnet/address/0x36825bf3Fbdf5a29E2d5148bfe7Dcf7B5639e320)
-
-{% hint style="info" %}
-Existing integrations using the current addresses will be automatically upgraded by the DAO on July 31, 2026. See the [upgrade guide](https://docs.pyth.network/price-feeds/core/upgrade/preparing) for details.
-
-The upgraded contract addresses for Cronos EVM are available on the [Pyth Core upgrade contract addresses](https://docs.pyth.network/price-feeds/core/upgrade/contracts) page.
-{% endhint %}
+* Mainnet: [0x6E7D74FA7d5c90FEF9F0512987605a6d546181Bb](https://explorer.cronos.com/address/0x6E7D74FA7d5c90FEF9F0512987605a6d546181Bb)
+* Testnet: [0xf77705A55aA859A80f60b8d8C4A03D7f69D2D7Ba](https://explorer.cronos.com/testnet/address/0xf77705A55aA859A80f60b8d8C4A03D7f69D2D7Ba)
 
 #### Pyth Pro Contract Addresses
 
