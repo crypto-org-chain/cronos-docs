@@ -98,3 +98,7 @@ The RPC endpoints below are provided by third-party services. Please conduct tho
   * [Cronos Mainnet endpoints](https://drpc.org/chainlist/cronos-mainnet-rpc)
   * [Cronos Testnet endpoints](https://drpc.org/chainlist/cronos-testnet-rpc)
   * [Service Status](https://status.drpc.org/)
+
+### Compare provider latency
+
+For a live latency comparison of the public no-key Cronos endpoints listed above, see the [OpenChainBench Cronos RPC benchmark](https://openchainbench.com/benchmarks/cronos-rpc). Endpoints are probed from three regions every minute with p50, p95 and p99 latency published under an open methodology and CC BY 4.0 data license.
