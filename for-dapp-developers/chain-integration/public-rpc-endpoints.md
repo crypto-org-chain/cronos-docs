@@ -63,12 +63,6 @@ Mainnet
 
 ### Commercial node providers
 
-{% hint style="info" %}
-Disclaimer:&#x20;
-
-The RPC endpoints below are provided by third-party services. Please conduct thorough independent research and testing before use. The use of these endpoints is at the user's sole risk.
-{% endhint %}
-
 * Moralis:
   * [Moralis Nodes](https://moralis.io/nodes/?utm_source=cronos-docs\&utm_medium=partner-docs)
   * [Moralis YouTube Tutorials](https://www.youtube.com/@MoralisWeb3)
