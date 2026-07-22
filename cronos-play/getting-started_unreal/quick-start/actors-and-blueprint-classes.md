@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Actors and Blueprint Classes
 
 ## DefiWalletCoreActor

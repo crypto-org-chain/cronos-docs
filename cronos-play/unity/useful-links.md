@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Useful Links
 
 * [Cronos official website](https://cronos.crypto.org/)

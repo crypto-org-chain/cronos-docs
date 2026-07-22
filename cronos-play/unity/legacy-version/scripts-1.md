@@ -1,4 +1,5 @@
 ---
+hidden: true
 description: >-
   A standard interface for contracts that manage multiple token types. A single
   deployed contract may include any combination of fungible tokens, non-fungible

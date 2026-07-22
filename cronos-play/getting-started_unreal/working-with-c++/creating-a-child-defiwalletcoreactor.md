@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Creating a child DefiWalletCoreActor
 
 ## Creating a child DefiWalletCoreActor

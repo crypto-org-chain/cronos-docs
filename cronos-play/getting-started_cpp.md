@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Cronos Play C++ SDK
 
 ## Cronos Play C++ API Reference&#x20;

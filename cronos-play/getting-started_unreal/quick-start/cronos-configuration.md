@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Cronos Configuration
 
 After creating **BP\_DefiWalletCore**, we should configure the Network Configuration, so that when we spawn the actor, we could get the same network settings.

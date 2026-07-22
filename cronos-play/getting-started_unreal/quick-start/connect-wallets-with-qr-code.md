@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Connect Wallets with QR Code
 
 You can connect all WalletConnect-compatible wallets, including but not limited to Defi Wallet, Metamask, TrustWallet etc. with QR Code.

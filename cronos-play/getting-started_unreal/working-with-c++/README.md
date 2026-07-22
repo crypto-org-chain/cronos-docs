@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Working with C++
 
 In addition to Blueprint projects in Unreal, Programmers can also use the plugin in C++ Projects.

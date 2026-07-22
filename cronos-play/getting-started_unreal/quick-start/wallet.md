@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Wallet
 
 {% hint style="danger" %}

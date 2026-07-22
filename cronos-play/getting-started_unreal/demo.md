@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Demo
 
 ## Pre-built Release

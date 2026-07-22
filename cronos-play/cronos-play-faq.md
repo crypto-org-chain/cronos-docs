@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Cronos Play FAQ
 
 **What is the difference between using the Cronos Play Gaming SDK and Moralis?**&#x20;

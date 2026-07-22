@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Querying a contract
 
 After creating `MyDefiWalletCoreActor`, we can switch to the source code editor and add token querying feature in the actor.

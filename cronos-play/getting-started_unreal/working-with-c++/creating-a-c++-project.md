@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Creating a C++ Project
 
 * Choose Game > Third Person > C++

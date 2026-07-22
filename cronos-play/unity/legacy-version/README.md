@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Legacy Version
 
 ### Download and install Unity

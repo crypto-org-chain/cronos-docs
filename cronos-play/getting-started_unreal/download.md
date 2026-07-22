@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Installation and Enabling
 
 ## Downloading the Plugin from Marketplace

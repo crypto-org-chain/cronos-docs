@@ -1,4 +1,5 @@
 ---
+hidden: true
 description: A standard interface for tokens.
 ---
 

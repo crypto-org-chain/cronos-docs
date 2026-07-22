@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Login Example
 
 This section will illustrate how to build the scenes to login and load a player's NFT assets.

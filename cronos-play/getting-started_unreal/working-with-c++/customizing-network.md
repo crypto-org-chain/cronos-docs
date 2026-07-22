@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Customizing Network
 
 Back to the level editor,

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Get Tokens or Transactions
 
 {% content-ref url="../../../block-explorers/block-explorer-and-api-keys.md" %}

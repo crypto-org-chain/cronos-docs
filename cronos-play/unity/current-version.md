@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Current Version
 
 ### Install via Package Manager With Open UPM

@@ -1,4 +1,5 @@
 ---
+hidden: true
 cover: ../.gitbook/assets/cronosplay.png
 coverY: 0
 ---

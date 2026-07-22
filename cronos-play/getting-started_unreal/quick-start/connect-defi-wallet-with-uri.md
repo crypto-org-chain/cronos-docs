@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Connect Defi Desktop/Onchain Wallet with URI
 
 Connecting with Defi Desktop Wallet or Onchain Wallet is accomplished with just one blueprint function: `ConnectWalletConnect` from `PlayCppSdkActor`.

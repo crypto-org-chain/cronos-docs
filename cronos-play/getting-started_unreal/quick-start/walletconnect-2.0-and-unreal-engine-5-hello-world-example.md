@@ -1,4 +1,5 @@
 ---
+hidden: true
 description: >-
   This is a straightforward blueprint example that demonstrates how to send
   transactions using WalletConnect 2.0 in Unreal Engine 5.

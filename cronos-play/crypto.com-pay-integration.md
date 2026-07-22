@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Crypto.com Pay Integration
 
 This page illustrates some integration options for the Crypto.com Pay [module](https://pay-docs.crypto.com/?shell#overview-home). The Crypto.com Pay module can be integrated directly into your game development environment.
