@@ -64,11 +64,15 @@ Mainnet
 ### Commercial node providers
 
 {% hint style="info" %}
-Disclaimer:&#x20;
+Disclaimer:
 
 The RPC endpoints below are provided by third-party services. Please conduct thorough independent research and testing before use. The use of these endpoints is at the user's sole risk.
 {% endhint %}
 
+* Alchemy:&#x20;
+  * [Cronos API Quickstart](https://www.alchemy.com/docs/reference/cronos-api-quickstart)
+  * [Cronos API Overview](https://www.alchemy.com/docs/cronos/cronos-api-overview)
+  * [Cronos API Endpoints](https://www.alchemy.com/docs/chains/cronos/cronos-api-endpoints/eth-accounts)
 * Moralis:
   * [Moralis Nodes](https://moralis.io/nodes/?utm_source=cronos-docs\&utm_medium=partner-docs)
   * [Moralis YouTube Tutorials](https://www.youtube.com/@MoralisWeb3)
@@ -98,3 +102,4 @@ The RPC endpoints below are provided by third-party services. Please conduct tho
   * [Cronos Mainnet endpoints](https://drpc.org/chainlist/cronos-mainnet-rpc)
   * [Cronos Testnet endpoints](https://drpc.org/chainlist/cronos-testnet-rpc)
   * [Service Status](https://status.drpc.org/)
+
