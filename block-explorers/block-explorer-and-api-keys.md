@@ -24,7 +24,7 @@ As a means to provide equitable access to blockchain data, we've developed the C
 
 Head over to the [**Account Registration**](https://explorer.cronos.com/register) page and provide email and password for your account.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-06-21 at 1.52.19 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-08-25 at 3.13.01 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Verify Your Email <a href="#id-2-verify-your-email" id="id-2-verify-your-email"></a>
 
