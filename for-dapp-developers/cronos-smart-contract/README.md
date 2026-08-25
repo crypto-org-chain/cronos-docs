@@ -61,5 +61,3 @@ $ git clone git@github.com:crypto-org-chain/cronos-smart-contract-example.git
 ```
 
 Once you have them all ready, now we are ready to go through the next step of contract deployment and verification!
-
-###

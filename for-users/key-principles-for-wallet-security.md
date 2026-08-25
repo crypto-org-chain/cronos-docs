@@ -4,7 +4,7 @@ Ensuring the security of your crypto wallet is crucial to protect your digital a
 
 ## Key Practices for Wallet Security
 
-* **Keep Your Recovery Phrase Safe and Private:** Your recovery phrase is the master key to your crypto wallet. Store it securely and never share it with anyone.&#x20;
+* **Keep Your Recovery Phrase Safe and Private:** Your recovery phrase is the master key to your crypto wallet. Store it securely and never share it with anyone.
 * **Lock Your Crypto Wallet When Not in Use:** Always lock your wallet to prevent unauthorised access.
 * **Revoke Access to Unused dApps:** Regularly review and revoke permissions granted to dApps you no longer use.
 * **Avoid Public WiFi:** Never access your wallet over public WiFi networks to prevent potential interceptions by hackers. If you must use Public WiFi, then use a Virtual Private Network (VPN).
@@ -13,16 +13,15 @@ Ensuring the security of your crypto wallet is crucial to protect your digital a
 
 A crypto wallet allows you to store and manage your digital assets securely. At its core, it manages and secures the **Private Key** - an alphanumeric code that gives you ownership of your crypto assets. The Private Key **should be kept private**. The corresponding **Public Key** derived from the Private Key, is used to receive cryptocurrencies, NFT’s, and other digital assets.
 
-The **Private Key** as well as the **Seed Phrase** (covered later) are the two crucial pieces of information. Keeping these safe ensures the security of your assets.\
-
+The **Private Key** as well as the **Seed Phrase** (covered later) are the two crucial pieces of information. Keeping these safe ensures the security of your assets.\\
 
 ## Types of Wallets
 
 ### Hot Wallets vs Cold Wallets
 
-**Hot Wallets:** Internet-connected wallets are typically software-based, available as mobile or desktop applications. Hot Wallets store and manage your Private Key. They are convenient but are susceptible to cyber threats.&#x20;
+**Hot Wallets:** Internet-connected wallets are typically software-based, available as mobile or desktop applications. Hot Wallets store and manage your Private Key. They are convenient but are susceptible to cyber threats.
 
-Examples include:&#x20;
+Examples include:
 
 * [Crypto.com Onchain Wallet](https://crypto.com/defi-wallet)
 * [Crypto.com App](https://crypto.com/eea/app)
@@ -59,9 +58,7 @@ Examples include:&#x20;
 
 **Hosted Wallets:** These wallets are usually provided and managed by centralised crypto exchanges (CEX). The exchange holds the private key, meaning they technically own & control the assets. E.g. the Crypto.com App ([https://crypto.com/app](https://crypto.com/uk/app))
 
-**Self-Custody Wallets:** In self-custody wallets you hold/own the private key, giving you full control over the digital assets. Crypto.com Onchain Wallet is an example of a self-custody solution ([https://crypto.com/onchain](https://crypto.com/onchain)). &#x20;
-
-
+**Self-Custody Wallets:** In self-custody wallets you hold/own the private key, giving you full control over the digital assets. Crypto.com Onchain Wallet is an example of a self-custody solution ([https://crypto.com/onchain](https://crypto.com/onchain)).
 
 ## Critical Data to Secure
 
@@ -86,10 +83,10 @@ A rug pull is a type of scam that involves a team raising money from investors a
 
 Rug pulls can be extensively orchestrated, with nefarious actors leveraging social media influencers and hype-generating campaigns to lure as many victims as possible. Some scams even use trusted key opinion leaders in the social space to gain trust. Others promise extremely high yields or offer exclusive digital goods, as seen in NFT rug pulls.
 
-Crypto rug pulls can also occur when the project’s owners manipulate the value of a particular token or coin to deceive investors and subsequently siphon off their investments. Fraudsters often attract victims with a sudden, sharp increase in the token’s value in a short period. \
+Crypto rug pulls can also occur when the project’s owners manipulate the value of a particular token or coin to deceive investors and subsequently siphon off their investments. Fraudsters often attract victims with a sudden, sharp increase in the token’s value in a short period.\
 Once the price peaks, the people behind the token sell it to generate a profit while leaving “investors” with steep losses. Rug pulls often occur on decentralized trading platforms, enabling the fraudster to benefit from the pseudonymity of DEXs.
 
-#### **Types**&#x20;
+#### **Types**
 
 Rug pulls can generally be categorized into hard and soft rug pulls.
 
@@ -110,7 +107,7 @@ Identifying and avoiding rug pulls requires a combination of diligence and cauti
 * Thorough research: Investigate the project’s team, technology, goals, and community before investing. Be cautious of anonymous teams or limited information.
 * Security audits: Reputable projects often undergo a reputable third-party security audit. Check if the project has been audited and review the audit report for vulnerabilities.
 * Community engagement: Engage with the project’s community on social media and forums. An active and engaged community is often a positive sign of legitimacy.
-* Warning signs: Be cautious of unrealistic returns and yields, excessive marketing hype, and pressure to invest quickly or unusual patterns in token distribution. &#x20;
+* Warning signs: Be cautious of unrealistic returns and yields, excessive marketing hype, and pressure to invest quickly or unusual patterns in token distribution.
 * Token Utility: Ensure the token has a clear and useful purpose rather than being created solely for speculation. Projects with practical use cases are more likely to be legitimate.
 
 ### **2. Airdrop Scams**
@@ -131,8 +128,8 @@ How to avoid Dusting Attacks
 
 * Use separate “Burner Wallets” to deposit crypto dust you receive.
 * Use a hierarchical-deterministic (HD) wallet. This type of wallet creates a new wallet address for each transaction making it more difficult to track.
-* Ignore unknown or unanticipated tokens, if you received some unknown or unanticipated tokens in your wallet, it’s best to ignore and not interact with the tokens or linked addresses.&#x20;
-* Only interact with AirDrops from official and legitimate projects. Avoid Airdrops from unfamiliar sources.&#x20;
+* Ignore unknown or unanticipated tokens, if you received some unknown or unanticipated tokens in your wallet, it’s best to ignore and not interact with the tokens or linked addresses.
+* Only interact with AirDrops from official and legitimate projects. Avoid Airdrops from unfamiliar sources.
 * Hide small balances and non-listed tokens to help shield yourself. Most wallets have features to “Hide small balances” and “Hide non-listed tokens” utilise them to reduce clutter and potential risk.
 * Refrain from sharing any personal details alongside your wallet address.
 
@@ -161,8 +158,8 @@ Scammers use various tactics to drain wallets and steal funds. Wallet drainer, s
 
 **Wallet Drainer Scams:** involve tricking users into signing a fraudulent transaction or approving a malicious contract, which grants the scammer access to their wallet and allows them to drain their funds. These attacks often occur through social engineering tactics such as:
 
-* Phishing emails or messages.&#x20;
-* Fake websites mimicking legitimate services.&#x20;
+* Phishing emails or messages.
+* Fake websites mimicking legitimate services.
 * Unsolicited offers or promotions.
 * Fake airdrops or giveaways.
 * Malicious browser extensions or software.
@@ -196,8 +193,8 @@ It is common for crypto users to only glance at the first and last several chara
 * Conduct test transactions when transferring significant amounts of digital assets. Send a small amount first to make sure that the recipient address is correct.
 * Be vigilant with copying and pasting. Malware can alter clipboard content to replace your copied address with one owned by a scammer. Always recheck the address after pasting and consider typing out some characters manually.
 
-By understanding which data is important, recognising common tactics used by scammers and taking appropriate precautions users can effectively protect their wallets and funds. Always be cautious and verify the authenticity of websites and services before interacting with them.&#x20;
+By understanding which data is important, recognising common tactics used by scammers and taking appropriate precautions users can effectively protect their wallets and funds. Always be cautious and verify the authenticity of websites and services before interacting with them.
 
-&#x20;Always ensure you only invest money you can afford to lose. Many cryptocurrency projects are experimental, and sometimes the failure of an idea can lead to the team doing a soft rug pull, which means they quietly stop supporting the project.\
+Always ensure you only invest money you can afford to lose. Many cryptocurrency projects are experimental, and sometimes the failure of an idea can lead to the team doing a soft rug pull, which means they quietly stop supporting the project.\
 \
-Remember, in the decentralised world of crypto, you are the primary custodian of your assets. Stay informed, stay vigilant, and protect your investments.\
+Remember, in the decentralised world of crypto, you are the primary custodian of your assets. Stay informed, stay vigilant, and protect your investments.

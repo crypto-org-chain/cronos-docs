@@ -67,4 +67,4 @@ Tendermint was selected by Cronos as the underlying technology for several reaso
 
 ## Further reading
 
-Follow [this link](broken-reference) for more information about the Cronos chain protocol.
+Follow [this link](https://github.com/crypto-org-chain/cronos-docs/blob/gitbook/getting-started/broken-reference/README.md) for more information about the Cronos chain protocol.

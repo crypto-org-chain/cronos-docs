@@ -25,7 +25,7 @@ Crypto.com Onchain Wallet, Trust Wallet and MetaMask have mobile apps that inclu
 * Private keys are encrypted and stored locally on the user's mobile device for enhanced security
 * Protected by biometric authentication and two-factor authentication (2FA) for comprehensive security
 
-Integration with the Crypto.com Onchain Wallet provides dApp developers access to over 50 million Crypto.com customers with a seamless user experience.\\
+Integration with the Crypto.com Onchain Wallet provides dApp developers access to over 50 million Crypto.com customers with a seamless user experience.
 
 **Users will be able to login with your dApp in several ways:**
 

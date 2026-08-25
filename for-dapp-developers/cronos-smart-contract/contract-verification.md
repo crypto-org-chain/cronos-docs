@@ -34,7 +34,7 @@ For verification via Hardhat, refer to the example provided in [this boilerplate
 
 After the contract verification is complete, the Cronos Explorer will display details about your smart contract code like shown below.
 
-<figure><img src="../../.gitbook/assets/combined.png" alt=""><figcaption><p>Cronos Explorer screenshot</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image10.png" alt=""><figcaption><p>Cronos Explorer screenshot</p></figcaption></figure>
 
 **Contract Verification Via Explorer interface:**
 

@@ -8,7 +8,7 @@ description: Quick-start resource if you are hacking and need to integrate with 
 
 [Cronos](https://cronos.com/) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by [Crypto.com](http://crypto.com), [Cronos.com](http://crypto.org) and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on DeFi and GameFi.
 
-[broken-reference](broken-reference/ "mention")
+[https://github.com/crypto-org-chain/cronos-docs/blob/gitbook/for-dapp-developers/broken-reference/README.md](https://github.com/crypto-org-chain/cronos-docs/blob/gitbook/for-dapp-developers/broken-reference/README.md "mention")
 
 ## How to stand out and win in a Web3 hackathon 🥇
 

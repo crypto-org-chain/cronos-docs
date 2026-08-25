@@ -10,8 +10,8 @@
 [web-extension-integration.md](web-extension-integration.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://github.com/crypto-org-chain/cronos-docs/blob/gitbook/for-dapp-developers/chain-integration/broken-reference/README.md" %}
+[https://github.com/crypto-org-chain/cronos-docs/blob/gitbook/for-dapp-developers/chain-integration/broken-reference/README.md](https://github.com/crypto-org-chain/cronos-docs/blob/gitbook/for-dapp-developers/chain-integration/broken-reference/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="json-rpc.md" %}

@@ -12,7 +12,7 @@ Click “**Connect Wallet**" to connect your cryptocurrency wallet. We currently
 Note 1: If you are bridging assets to or from Crypto.org, you may specify the destination wallet by pasting the address directly or connecting a second wallet to avoid manual errors.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image1_edited.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-21 at 4.20.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Step 2. Select Network and Token**
 
@@ -22,7 +22,7 @@ If you are transferring to or from Cronos POS chain, you need to specify the des
 
 Once the networks are chosen, select the asset you would like to transfer.
 
-<figure><img src="../../../.gitbook/assets/image2_edited.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-21 at 12.05.47 AM.png" alt=""><figcaption></figcaption></figure>
 
 **Step 3. Enter the amount**
 
@@ -36,7 +36,7 @@ During the promotional launch period, the network fee incurred by the bridge wil
 
 Before bridging a large amount, we encourage testing a transfer of a small amount first to ensure that all settings are correct.
 
-<figure><img src="../../../.gitbook/assets/image3_edited.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-21 at 12.08.41 AM.png" alt=""><figcaption></figcaption></figure>
 
 <img src="../../../.gitbook/assets/4a_confirm_wallet_txn.png" alt="" width="356">
 
@@ -56,7 +56,7 @@ This will send a transaction request to your wallet. Please confirm the request 
 
 After bridging the tokens, they will be converted to tokens that are supported by the destination blockchain. For more information, please see this [FAQ](../../faq.md).
 
-<figure><img src="../../../.gitbook/assets/image4_edited.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image7.png" alt=""><figcaption></figcaption></figure>
 
 **Step 5. Bridging assets**
 
@@ -68,6 +68,6 @@ Even if you dismiss, quit, or refresh the page, a small popup reminder will be a
 
 Thank you for using the Cronos Bridge and supporting the Crypto.org ecosystem.
 
-<figure><img src="../../../.gitbook/assets/image5_edited.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image6_edited.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image9.png" alt=""><figcaption></figcaption></figure>
