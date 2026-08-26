@@ -1,0 +1,22 @@
+{
+    "name": "cronos-contract-boilerplate-hardhat-v3",
+    "version": "1.0.0",
+    "description": "Cronos ERC20 / ERC721 / ERC1155 examples for Hardhat 3 (viem + Ignition)",
+    "type": "module",
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.6.0",
+        "dotenv": "^16.6.1"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-ignition": "^3.1.8",
+        "@nomicfoundation/hardhat-toolbox-viem": "^5.0.7",
+        "@types/node": "^26.3.0",
+        "hardhat": "^3.11.1"
+    }
+}

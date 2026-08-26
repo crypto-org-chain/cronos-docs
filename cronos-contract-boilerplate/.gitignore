@@ -1,0 +1,10 @@
+# Environment
+.env
+
+# IDE / OS
+.idea
+.vscode
+.DS_Store
+
+# Dependencies
+node_modules
