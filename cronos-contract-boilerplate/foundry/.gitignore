@@ -1,0 +1,14 @@
+# Foundry output
+out
+cache
+broadcast
+
+# Dependencies
+lib
+
+.env
+
+# IDE
+.idea
+.DS_Store
+.vscode

@@ -1,0 +1,6 @@
+[submodule "cronos-contract-boilerplate/foundry/lib/forge-std"]
+	path = cronos-contract-boilerplate/foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "cronos-contract-boilerplate/foundry/lib/openzeppelin-contracts"]
+	path = cronos-contract-boilerplate/foundry/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
