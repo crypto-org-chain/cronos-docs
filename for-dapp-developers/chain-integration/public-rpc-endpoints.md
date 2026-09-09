@@ -103,3 +103,6 @@ The RPC endpoints below are provided by third-party services. Please conduct tho
   * [Cronos Testnet endpoints](https://drpc.org/chainlist/cronos-testnet-rpc)
   * [Service Status](https://status.drpc.org/)
 
+* node101:
+  * [Cronos RPC plans and dedicated nodes](https://node101.io/en/rpc/cronos)
+  * Paid mainnet access, with testnet RPC and archive nodes available on request.
