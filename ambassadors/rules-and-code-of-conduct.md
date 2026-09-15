@@ -11,7 +11,7 @@ While the program focuses on growth, ambassadors may also be demoted or removed 
 
 Like promotions, demotions are limited to one rank per season. Ambassadors can regain higher ranks in future seasons by contributing actively again.
 
-The Cronos Ambassador Program is a living initiative. While this framework reflects the current structure, missions and progression paths, all details - including XP, tiers and rewards — are subject to change as the program evolves. The Cronos team reserves the final discretion on promotions, demotions and recognition to ensure the program remains fair, impactful and aligned with the long-term vision of the Cronos App and ecosystem.
+The Cronos Ambassador Program is a living initiative. While this framework reflects the current structure, missions and progression paths, all details - including XP, tiers and rewards — are subject to change as the program evolves. The Cronos team reserves the final discretion on promotions, demotions and recognition to ensure the program remains fair, impactful and aligned with the long-term vision of Ult and ecosystem.
 
 ## Code of Conduct
 
@@ -38,7 +38,7 @@ For example, give credit by QRTing the original post and/or providing a link to 
 
 **4. Constructive Feedback and Dialogue:** Adopt a mentality geared towards constructive feedback. Focus on solutions and positive outcomes rather than dwelling on problems or assigning blame.
 
-**5. Positive Community Engagement:** Strive to uplift conversations and encourage the community, especially in challenging times. Use positive language to motivate collective action and improvement.&#x20;
+**5. Positive Community Engagement:** Strive to uplift conversations and encourage the community, especially in challenging times. Use positive language to motivate collective action and improvement.
 
 **6. Privacy and Confidentiality:** Respect the privacy of individuals and confidentiality of sensitive information. Do not disclose personal information, DM screenshots, private conversations without consent or share insider information about Cronos developments that haven't been made public.
 

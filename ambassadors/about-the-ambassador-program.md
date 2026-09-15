@@ -2,7 +2,7 @@
 
 ### What is the Cronos Ambassador Program?
 
-A structured, scalable initiative that shifts growth from centralized marketing to community-led activation. Ambassadors lead local education, awareness campaigns, and user adoption of the Cronos App and the ecosystem around it.
+A structured, scalable initiative that shifts growth from centralized marketing to community-led activation. Ambassadors lead local education, awareness campaigns, and user adoption of Ult and the ecosystem around it.
 
 PS: thinking about becoming a Cronos ambassador?
 
@@ -18,7 +18,7 @@ PS: thinking about becoming a Cronos ambassador?
 
 * Propose and ship campaigns (content, events, quests) tailored to your region and audience
 * Run beginner-friendly onboarding sessions for new users and community members
-* Support users, answer questions, and help people get started with the Cronos App
+* Support users, answer questions, and help people get started with Ult
 
 **How we support you**
 
@@ -32,9 +32,9 @@ PS: thinking about becoming a Cronos ambassador?
 * 🌍 **Grow the Cronos Community #CROfam** - Increase and expand regional presence and host\
   recurring meetups in high-growth markets
 * 🧠 **Educate Users** - Provide clear guides, workshops, and localized resources
-* 🚀 Drive Adoption - Grow the Cronos App user base through regional campaigns, onboarding, and community activation
+* 🚀 Drive Adoption - Grow Ult user base through regional campaigns, onboarding, and community activation
 * 🗳️ **Decentralize Resources & Impact** - Empower self-initiated, grassroots campaigns
-* 🎯 **Measure ROI** - Track outcomes and measure our impact on the the Cronos App and community growth.
+* 🎯 **Measure ROI** - Track outcomes and measure our impact on Ult and community growth.
 
 ### What we value and how we operate
 
