@@ -2,105 +2,139 @@
 layout: editorial
 ---
 
-# GoldRush
+# GoldRush (powered by Covalent)
 
-## Introduction
+GoldRush offers the most comprehensive Cronos Data API suite for developers, analysts, and enterprises. Whether you're building a DeFi dashboard, a wallet, a trading bot, an AI agent or a compliance platform,
+our Cronos Data APIs provide fast, accurate, and developer-friendly access to the essential onchain data you need.
 
-[GoldRush](https://goldrush.dev/) is a set of foundational multichain data APIs and toolkits for easy web3 development across 100+ chains. Powered by the [Covalent Network](https://www.covalenthq.com/), which is decentralized and cryptographically secure, GoldRush offers structured onchain data, through powerful APIs, SDKs and UI Kits, including:
+### Supported APIs
 
-* Token balances
-* Historical transactions
-* Decoded event logs
-* Traces with internal transactions, state changes and input data (foundational chains only)
+<Columns cols={2}>
+  <Card title="Foundational API" icon="code" href="/goldrush-foundational-api" cta="Read docs">
+    Access structured historical blockchain data across 100+ chains using REST APIs.
+    Get token balances, transaction histories, decoded event logs, NFT assets, token holders and more.<br /><br />
+    <b>Use cases: Wallets, portfolio trackers, crypto accounting & tax tools, and DeFi dashboards.</b>
+  </Card>
+</Columns>
 
-GoldRush maintains a full archival copy of every supported blockchain, meaning every balance, transaction, log event, and NFT asset data is available from the genesis block. This data is available via:
+## Mainnet
 
-* GoldRush API (formerly known as the Unified API) - Incorporate blockchain data into your app with a familiar REST API
-* Increment - Create and embed custom charts with no-code analytics
+<Card>
+  <div style={{width: '100%', margin: '-16px', padding: '0'}}>
+    <table style={{width: '100%', margin: '0', borderCollapse: 'collapse'}}>
+      <thead style={{width: '100%'}}>
+        <tr>
+          <th style={{textAlign: 'left', padding: '12px 16px'}}><strong>Property</strong></th>
+          <th style={{textAlign: 'left', padding: '12px 16px', width: '500px'}}><strong>Value</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Chain Name</strong></td>
+          <td style={{padding: '12px 16px'}}><code>cronos-mainnet</code></td>
+        </tr>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Chain ID</strong></td>
+          <td style={{padding: '12px 16px'}}><code>25</code></td>
+        </tr>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Network Type</strong></td>
+          <td style={{padding: '12px 16px'}}>Community Chain</td>
+        </tr>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Support Level</strong></td>
+          <td style={{padding: '12px 16px'}}>community</td>
+        </tr>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Block Explorer</strong></td>
+          <td style={{padding: '12px 16px'}}><a href="https://cronoscan.com/">Explorer</a></td>
+        </tr>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Official Website</strong></td>
+          <td style={{padding: '12px 16px'}}><a href="https://cronos.org/">Cronos Website</a></td>
+        </tr>
+        <tr>
+          <td style={{padding: '12px 16px'}}><strong>Native Gas Token</strong></td>
+          <td style={{padding: '12px 16px'}}>CRO</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Card>
 
-**Consider using GoldRush if you need:**
+## API Usage
 
-* Structured and enhanced on-chain data well beyond what you get from RPC providers
-* Broad and deep multi-chain data at scale
-* Enterprise-grade performance
+To use this blockchain network in GoldRush API calls, use:
 
-[**Sign up to start building on Cronos**](https://goldrush.dev/platform/auth/login/)
+#### Chain Name
 
-&#x20;
+* `cronos-mainnet` (mainnet)
 
-## GoldRush API Features
+#### Example API Calls
 
-### GoldRush API
 
-<figure><img src="https://www.datocms-assets.com/86369/1686100423-example-api-response-json-cronos.png" alt=""><figcaption></figcaption></figure>
+  ```bash Chain Name (Mainnet)
+  
+  curl -X GET "https://api.covalenthq.com/v1/cronos-mainnet/address/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045/balances_v2/?key=API_KEY"
+  ```
 
-The GoldRush API is RESTful and offers the following for Cronos:
+#### SDK Usage
 
-| **Features**                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Response Formats**                            | JSON                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Real-Time Data Latency**                      | 2 blocks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Batch Data Latency**                          | 30 minutes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Supported Networks (`chainName`, `chainId`)** | <p>Mainnet: <code>cronos-mainnet</code>, <code>25</code><br>Testnet: <code>cronos-testnet</code>, <code>338</code></p>                                                                                                                                                                                                                                                                                                                                                                       |
-| **GoldRush Plans**                              | [Pricing Plans](https://goldrush.dev/pricing/)                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **API Categories**                              | <p><a href="https://goldrush.dev/docs/goldrush-apis#wallet-api">Balances</a><br><a href="https://goldrush.dev/docs/goldrush-apis#nft-api">NFTs</a><br><a href="https://goldrush.dev/docs/goldrush-apis#transactions-api">Transactions</a><br><a href="https://goldrush.dev/docs/goldrush-apis#security-api">Security</a><br><a href="https://goldrush.dev/docs/api-reference/utility/get-log-events-by-contract-address#get-log-events-by-contract-address">Log Events &#x26; Others</a></p> |
 
-#### Get started
+  ```typescript TypeScript SDK (Mainnet)
+  import { GoldRushClient } from "@covalenthq/client-sdk";
 
-* [API Key](https://goldrush.dev/platform/auth/register/) - sign up for free
-* [Quickstart](https://goldrush.dev/docs/quickstart) - summary of key resources to get you building immediately on blockchain
-* [API Reference](https://goldrush.dev/docs/api-reference/overview) - try all the endpoints directly from your browser
-* [Guides](https://goldrush.dev/guides/) - learn how to build dapps, fetch data and extend your Web3 knowledge
+  const client = new GoldRushClient("API_KEY");
+  const resp = await client.BalanceService.getTokenBalancesForWalletAddress({
+      chainName: "cronos-mainnet",
+      walletAddress: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+  });
+  ```
 
-### Increment
 
-<figure><img src="https://www.datocms-assets.com/86369/1684974544-increment-example-partner-docs.png" alt=""><figcaption></figcaption></figure>
+## Foundational API Support
 
-Increment is a novel no-code charting and reporting tool powered by Covalent, revolutionizing how the Web3 space approaches analytics. Many analytics tools let you write SQL to create charts, but _Increment is the only one to encode business logic - Reach, Retention, and Revenue - into an SQL compiler that can write valid SQL for you._
+This chain supports **34**  GoldRush Foundational APIs:
 
-#### Increment use cases
+#### Wallet API
 
-Increment can be used for:
+* **[Get token balances for address](/api-reference/foundational-api/balances/get-token-balances-for-address)**
+* **[Get native token balance for address](/api-reference/foundational-api/balances/get-native-token-balance)**
+* **[Get historical portfolio value over time](/api-reference/foundational-api/balances/get-historical-portfolio-value-over-time)**
+* **[Get ERC20 token transfers for address](/api-reference/foundational-api/balances/get-erc20-token-transfers-for-address)**
 
-* [Analyzing Blockchain Networks](https://www.covalenthq.com/docs/increment/data-models/chain-gdp/?utm_source=cronos\&utm_medium=partner-docs)
-* [Analyzing DEXs](https://goldrush.dev/guides/how-to-use-covalent-s-dex-api-for-defi-apps/)
-* [Analyzing NFT Marketplaces](https://www.covalenthq.com/docs/increment/data-models/jpeg-analysis/?utm_source=cronos\&utm_medium=partner-docs)
+#### Pricing API
 
-For example, click on the following table to get the latest number of active wallets, transactions and tokens by day, week, month, or year for Cronos:
+* **[Get historical token prices](/api-reference/foundational-api/utility/get-historical-token-prices)**
 
-&#x20;
+#### Security API
 
-<figure><img src="https://www.datocms-assets.com/86369/1686100924-example_network_status_increment_general.png" alt=""><figcaption></figcaption></figure>
+* **[Get token approvals for address](/api-reference/foundational-api/security/get-token-approvals-for-address)**
 
-#### Get started
+#### Activity Feed API
 
-* [Increment](https://www.covalenthq.com/platform/increment/#/?utm_source=cronos\&utm_medium=partner-docs) - login via the Covalent Platform
-* [Docs](https://www.covalenthq.com/docs/increment/?utm_source=cronos\&utm_medium=partner-docs) - learn how to use Increment to build dynamic, custom charts
-* [Data Models Demo](https://www.covalenthq.com/docs/increment/data-models/model-intro/?utm_source=cronos\&utm_medium=partner-docs) - build analytics in 3 clicks
-* [Explore Models. Seek Alpha.](https://www.covalenthq.com/platform/increment/#/pages/covalent/chain-gdp/?utm_source=cronos\&utm_medium=partner-docs) - browse all data models
-* [Use Models. Become Alpha.](https://www.covalenthq.com/platform/increment/#/sql/query_b6c88fd8604f49d5920ca86fa7/?utm_source=cronos\&utm_medium=partner-docs) - use a data model
+* **[Get a transaction](/api-reference/foundational-api/transactions/get-a-transaction)**
+* **[Get transaction summary for address](/api-reference/foundational-api/transactions/get-transaction-summary-for-address)**
+* **[Get earliest transactions for address (v3) ](/api-reference/foundational-api/transactions/get-earliest-transactions-for-address-v3)**
+* **[Get recent transactions for address (v3)](/api-reference/foundational-api/transactions/get-recent-transactions-for-address-v3)**
+* **[Get paginated transactions for address (v3)](/api-reference/foundational-api/transactions/get-paginated-transactions-for-address-v3)**
+* **[Get bulk time bucket transactions for address (v3)](/api-reference/foundational-api/transactions/get-time-bucket-transactions-for-address-v3)**
+* **[Get all transactions in a block (v3)](/api-reference/foundational-api/transactions/get-all-transactions-in-a-block)**
+* **[Get all transactions in a block by page (v3) ](/api-reference/foundational-api/transactions/get-all-transactions-in-a-block-by-page)**
 
-## Use Cases
+#### Block Explorer API
 
-The Covalent API supports a broad range of Web3 data use cases including:
+* **[Get a block](/api-reference/foundational-api/utility/get-a-block)**
+* **[Get all chain statuses](/api-reference/foundational-api/utility/get-all-chain-statuses)**
+* **[Get all chains](/api-reference/foundational-api/utility/get-all-chains)**
+* **[Get block heights](/api-reference/foundational-api/utility/get-block-heights)**
+* **[Get gas prices](/api-reference/foundational-api/utility/get-gas-prices)**
+* **[Get log events by contract address](/api-reference/foundational-api/utility/get-log-events-by-contract-address)**
+* **[Get log events by topic hash(es)](/api-reference/foundational-api/utility/get-log-events-by-topic-hash)**
+* **[Get logs](/api-reference/foundational-api/utility/get-logs)**
 
-* Gaming
-* Defi Taxes
-* KYC
-* NFTs
-* Wallets
-* Dashboards
-* Dao Data
-* Dex & Trading
-* and many more
+## Additional Resources
 
-Check out Covalent's collection of ready-to-ship [**Code Templates**](https://github.com/covalenthq/web3-resources?utm_source=cronos\&utm_medium=partner-docs) that you can use to build your Web3 data-powered dApps.
-
-## Resources
-
-Here are some additional resources to help you get started with the Covalent API:
-
-* [Cronos Network Details](https://www.covalenthq.com/docs/networks/cronos/?utm_source=cronos\&utm_medium=partner-docs)
-* [Covalent API Reference](https://covalenthq.com/docs/api/?utm_source=cronos\&utm_medium=partner-docs)
-* [API FAQs](https://www.covalenthq.com/docs/unified-api/faq/)
-* [Discord Support](https://www.covalenthq.com/discord/?utm_source=cronos\&utm_medium=partner-docs)
+* [GoldRush API Documentation](https://goldrush.dev/docs/)
+* [Supported Chains List](https://goldrush.dev/chains/)
+* [API Reference](https://goldrush.dev/docs/api-reference/)
