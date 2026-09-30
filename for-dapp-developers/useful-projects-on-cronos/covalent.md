@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: editorial
 ---
 
@@ -25,8 +26,6 @@ GoldRush maintains a full archival copy of every supported blockchain, meaning e
 * Enterprise-grade performance
 
 [**Sign up to start building on Cronos**](https://goldrush.dev/platform/auth/login/)
-
-&#x20;
 
 ## GoldRush API Features
 
@@ -67,8 +66,6 @@ Increment can be used for:
 * [Analyzing NFT Marketplaces](https://www.covalenthq.com/docs/increment/data-models/jpeg-analysis/?utm_source=cronos\&utm_medium=partner-docs)
 
 For example, click on the following table to get the latest number of active wallets, transactions and tokens by day, week, month, or year for Cronos:
-
-&#x20;
 
 <figure><img src="https://www.datocms-assets.com/86369/1686100924-example_network_status_increment_general.png" alt=""><figcaption></figcaption></figure>
 

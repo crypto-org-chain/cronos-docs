@@ -1,8 +1,9 @@
 ---
 description: Cronos Public Dataset - AWS S3 Access Guide
+hidden: true
 ---
 
-# AWS S3
+# AWS S3 - Cronos EVM Public Dataset
 
 The Cronos public blockchain dataset is hosted on Amazon S3 and is freely queryable via Athena, ClickHouse, Presto/Trino, DuckDB, or any engine that supports S3-backed Parquet or CSV data.
 

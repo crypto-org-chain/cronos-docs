@@ -1,5 +1,6 @@
 ---
 description: Quick-start resource if you are hacking and need to integrate with Cronos.
+hidden: true
 ---
 
 # 🏅 Hacker's Getting Started Resources

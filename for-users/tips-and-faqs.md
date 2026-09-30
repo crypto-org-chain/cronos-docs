@@ -1,5 +1,6 @@
 ---
 description: For end-users
+hidden: true
 ---
 
 # 💡 Tips & FAQs

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Secret Network
 
 ## Introduction

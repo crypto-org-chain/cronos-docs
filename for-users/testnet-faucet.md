@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 🚰 Testnet Faucet
 
 ### Testnet Faucets

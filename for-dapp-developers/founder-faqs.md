@@ -1,5 +1,6 @@
 ---
 description: Planning to release a dApp on Cronos? Here is what you need to know.
+hidden: true
 ---
 
 # 💡 Founder FAQs
@@ -17,12 +18,12 @@ Don’t forget to follow these Twitter accounts to receive key announcements:
 
 ## TLDR; what do I need to know if I am considering Cronos Network for my dapp?
 
-[Cronos (cronos.com)](https://cronos.com) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com and hundreds of app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 150 million people worldwide.&#x20;
+[Cronos (cronos.com)](https://cronos.com) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com and hundreds of app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 150 million people worldwide.
 
 [Cronos](https://cronos.com/) can help most dapp creators to enhance the visibility of their product in the Cronos user community. However, Cronos is generally not able to promote token or NFT sales. The following support is available to dapp creators:
 
 * Technical support via [Discord](https://crofam.me/discord) and [Telegram](https://t.me/Cronos_Announcements).
-* Project listing on our [Ecosystem page](https://cronos.com/ecosystem)&#x20;
+* Project listing on our [Ecosystem page](https://cronos.com/ecosystem)
 * Introductions to other dapps, key opinion leaders and project launchpads.
 
 ## FAQs - ecosystem

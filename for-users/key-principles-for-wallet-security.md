@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 👮 Key Principles for Wallet Security
 
 Ensuring the security of your crypto wallet is crucial to protect your digital assets from prevalent and sophisticated scams. This guide outlines essential practices to enhance the security of your wallet and prevent potential loss of assets.

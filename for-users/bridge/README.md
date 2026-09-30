@@ -1,11 +1,4 @@
 # 🌉 Bridges
 
-In this section you can find different tutorials on how to bridge your assets:
+In this section you can find different tutorials on how to bridge your asset. For most users, the easiest way to acquire $CRO cryptocurrency and fund your self-custodial wallet on Cronos is to use the [Crypto.com App](cdcapp.md) or [Crypto.com Exchange](cdcex.md).
 
-{% content-ref url="app_n_ex/" %}
-[app\_n\_ex](app\_n\_ex/)
-{% endcontent-ref %}
-
-{% content-ref url="other_chain/" %}
-[other\_chain](other\_chain/)
-{% endcontent-ref %}

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # FAQs for transactions from/to centralized exchanges
 
 #### **I transferred CRO from the other centralised exchanges (CEXs) to the Crypto.com Defi Desktop wallet, but why it is not showing up in my Crypto.com DeFi Desktop Wallet?**

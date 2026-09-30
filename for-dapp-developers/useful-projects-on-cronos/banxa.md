@@ -1,8 +1,12 @@
+---
+hidden: true
+---
+
 # Banxa
 
 ### Introduction
 
-Banxa powers the largest digital asset platforms by providing payments infrastructure and regulatory compliance across global markets. Our mission and vision is to build the bridge that provides people in every part of the world access to a fairer and more equitable financial system. Visit the [Banxa](https://docs.banxa.com/docs) documentation to find out more.&#x20;
+Banxa powers the largest digital asset platforms by providing payments infrastructure and regulatory compliance across global markets. Our mission and vision is to build the bridge that provides people in every part of the world access to a fairer and more equitable financial system. Visit the [Banxa](https://docs.banxa.com/docs) documentation to find out more.
 
 ### API Host
 
@@ -85,4 +89,3 @@ Here are additional resources to help you get started with Banxa:
 * [Generating HMAC Auth](https://docs.banxa.com/docs/step-1-prerequisites#authentication)
 * [API References](https://docs.banxa.com/reference/get-fiat-currencies)
 * [Changelog](https://docs.banxa.com/changelog)
-

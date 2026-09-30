@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Google Bigquery
 
 Introduction
@@ -14,11 +18,9 @@ By leveraging datasets in BigQuery, you can access blockchain data as easily as 
 
 Like the existing public blockchain datasets, customers are not charged for storage of the data, only for querying the data based on [BigQuery pricing](https://cloud.google.com/bigquery/pricing).
 
-
-
 ### Quickstart
 
-1. [Go to Cronos dataset](https://console.cloud.google.com/marketplace/product/bigquery-public-data/blockchain-analytics-cronos-mainnet-us?\_ga=2.57494312.344001667.1705466080-1066618470.1698651784&\_gac=1.157920072.1705465933.CjwKCAiA75itBhA6EiwAkho9e8myknN2EhHAyk2F9H-eciNzXDhip1AUtZ6GiBaCllmrfHni5MMy3BoCKroQAvD\_BwE) and click on one of the [samples](https://console.cloud.google.com/bigquery?sq=650023896125:07dd7c4b273c45639c8f38983b9b7de0).&#x20;
+1. [Go to Cronos dataset](https://console.cloud.google.com/marketplace/product/bigquery-public-data/blockchain-analytics-cronos-mainnet-us?_ga=2.57494312.344001667.1705466080-1066618470.1698651784&_gac=1.157920072.1705465933.CjwKCAiA75itBhA6EiwAkho9e8myknN2EhHAyk2F9H-eciNzXDhip1AUtZ6GiBaCllmrfHni5MMy3BoCKroQAvD_BwE) and click on one of the [samples](https://console.cloud.google.com/bigquery?sq=650023896125:07dd7c4b273c45639c8f38983b9b7de0).
 2. You will get to the console and see the Cronos dataset on the left in the explorer
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 at 12.42.47 PM.png" alt=""><figcaption></figcaption></figure>
@@ -28,14 +30,14 @@ Like the existing public blockchain datasets, customers are not charged for stor
 BigQuery charges are based on the amount of data processed by your queries, so running the query may incur charges to your account. You can find the consumption estimate in the top right corner similar to the warning of "This query will process 65.73 MB when run."
 {% endhint %}
 
-3.  If you see on the sample you should get the BigQuery SQL code to query: \
-    [Which wallets had the most number of interactions with the Wrapped Cronos contract in the past 30 days?](https://console.cloud.google.com/bigquery?sq=650023896125:07dd7c4b273c45639c8f38983b9b7de0)&#x20;
+3.  If you see on the sample you should get the BigQuery SQL code to query:\
+    [Which wallets had the most number of interactions with the Wrapped Cronos contract in the past 30 days?](https://console.cloud.google.com/bigquery?sq=650023896125:07dd7c4b273c45639c8f38983b9b7de0)
 
-    Let's click the big `RUN` button. \
+    Let's click the big `RUN` button.\
     (To save costs, replace the existing query with the one below, using a "1 day" interval instead of "30 days" in the BigQuery console).\
     \
     To start developing your own BigQuery SQL code, we refer to the following [syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax).\
-    For the Cronos data schema we refer to the [Google Cloud Cronos schema](https://cloud.google.com/blockchain-analytics/docs/schema#cronos\_mainnet).&#x20;
+    For the Cronos data schema we refer to the [Google Cloud Cronos schema](https://cloud.google.com/blockchain-analytics/docs/schema#cronos_mainnet).
 
 ```sql
 SELECT
@@ -68,8 +70,6 @@ ORDER BY
 | 1   | 0x3270c9a4558774cc8f2a19708edc190366028b96 | https://cronoscan.com/address/0x3270c9a4558774cc8f2a19708edc190366028b96 | 1                 |
 | 2   | 0xbeaf1c7fed452be2dcfd2a8fe1fcd74b241acfc7 | https://cronoscan.com/address/0x693fb96fdda3c382fde7f43a622209c3dd028b98 | 1                 |
 | 3   | 0xddb162b31f562f1be0fa585d3ca6a55786e59af3 | https://cronoscan.com/address/0x6614d26064d762922c7bc7a00337713d5169ae7c | 1                 |
-
-
 
 ### Example queries
 
@@ -188,7 +188,7 @@ AND
 
 <table data-header-hidden><thead><tr><th width="87"></th><th width="262"></th><th width="231"></th><th width="233"></th><th></th></tr></thead><tbody><tr><td><strong>Row</strong></td><td><strong>transaction_hash</strong></td><td><strong>from_address</strong></td><td><strong>to_address</strong></td><td><strong>usdt_transfer_amount</strong></td></tr><tr><td>1</td><td>0xa3b78f79dee6970f3abc763b52f24a6d46aeba3e2370943f8eb2d68ff00d788a</td><td>0xc9219731adfa70645be14cd5d30507266f2092c5</td><td>0x539b85a6853e8740cd918009197c799d205787eb</td><td>309.82</td></tr><tr><td>2</td><td>0xc2abd163669a703ee850e432ac7c1a744b63bb1ff8e9b4cdee3ec2d95768fc75</td><td>0xc9219731adfa70645be14cd5d30507266f2092c5</td><td>0xc041126c1d07b72ee0f366e1fca339b4fed537cb</td><td>9.38</td></tr><tr><td>3</td><td>0x214cdef8263b4f8cc517d09673c126375c682b9b83d55c7ad889055c57533390</td><td>0xc9219731adfa70645be14cd5d30507266f2092c5</td><td>0xfca38e2882d8a549c660ccb17a8fe0463fab060e</td><td>11.82</td></tr><tr><td>4</td><td>0x40e24cc93abc746aa7c96482144772421412b9a733210644bab6ff6290996a1e</td><td>0xc9219731adfa70645be14cd5d30507266f2092c5</td><td>0x67b652172633b451a826aac6da7ed63693133fd2</td><td>11.26</td></tr><tr><td>5</td><td>0xb211dcb87ec8bbb115a4c6eae6c5a8861e04557b8b502e5a5858e70ae512183b</td><td>0x539b85a6853e8740cd918009197c799d205787eb</td><td>0x8995909dc0960fc9c75b6031d683124a4016825b</td><td>309.82</td></tr></tbody></table>
 
-#### 6. For Dapps - Count the total number of unique transactions and users interaction with a specific smart contract on a given day&#x20;
+#### 6. For Dapps - Count the total number of unique transactions and users interaction with a specific smart contract on a given day
 
 ```sql
 SELECT

@@ -29,6 +29,7 @@ meta:
   - name: twitter:image
     content: https://cronos.org/og-image.png
 canonicalUrl: https://docs.cronos.com/getting-started/metamask.html
+hidden: true
 ---
 
 # 🦊 MetaMask Configuration
