@@ -1,0 +1,20 @@
+{
+    "name": "cronos-contract-boilerplate-hardhat-v2",
+    "version": "1.0.0",
+    "description": "Cronos ERC20 / ERC721 / ERC1155 examples for Hardhat 2 (ethers + TypeScript)",
+    "main": "index.js",
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.6.0",
+        "dotenv": "^16.6.1"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "hardhat": "^2.29.0"
+    }
+}
