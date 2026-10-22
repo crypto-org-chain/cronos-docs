@@ -1,7 +1,5 @@
 # 🔥 Crypto Wallets
 
-<figure><img src="../.gitbook/assets/Ledger-hardware-wallet.png" alt="" width="375"><figcaption></figcaption></figure>
-
 Cronos is supported by more than 30 wallets, including popular providers such as MetaMask, Ruby, and Ledger.
 
 ## Crypto.com Onchain Wallet
