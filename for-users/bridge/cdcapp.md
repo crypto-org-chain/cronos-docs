@@ -10,8 +10,6 @@ For a complete list of available assets to withdraw, please refer to the Help Ce
 
 **Step 1**: Select the token that you would like to withdraw from your Crypto Wallet.
 
-<img src="../../.gitbook/assets/cdcapp1.png" alt="" width="375">
-
 **Step 2**: Click on “**Transfer**”, then “**Withdraw**”
 
 ![](../../.gitbook/assets/cdcapp2-1.png) ![](../../.gitbook/assets/cdcapp2-2.png)

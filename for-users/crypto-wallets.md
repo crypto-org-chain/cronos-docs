@@ -56,9 +56,7 @@ You will need to connect your MetaMask wallet to the Cronos network:
 
 You can now use your Ledger hardware wallet on Cronos chain.
 
-In the Ledger Live companion app, you can see your CRO holdings on Cronos chain. This can be accomplished by selecting "Add account" and then Cronos (CRO):
-
-<figure><img src="https://docs.cronos.com/~gitbook/image?url=https%3A%2F%2F1786307500-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FqXsIo4b4WtOTfICyOIxa%252Fuploads%252FRXjQr2osn1wKmqiTZSP3%252Fimage1.png%3Falt%3Dmedia%26token%3Dc6c93f52-b301-4f3b-ac86-d080979ed43d&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=4b6b5f06&#x26;sv=2" alt="" width="375"><figcaption></figcaption></figure>
+In the Ledger Live companion app, you can see your CRO holdings on Cronos chain. This can be accomplished by selecting "Add account" and then Cronos (CRO).
 
 In order to experience the fullest range of functionalities, including interactions with dApps, we recommend to connect your Ledger hardware wallet with the Crypto.com Onchain browser extension in Standalone mode. In order to accomplish this, select "Import wallet" in the Crypto.com Onchain browser extension and then select "Connect to Ledger".
 

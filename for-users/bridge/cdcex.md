@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Centralized Exchanges: Crypto.com Exchange Deposit & Withdrawal
 
 Within the Crypto.com Exchange, you can withdraw $CRO or any of dozens of cryptocurrencies to your self-custodial cryptocurrency wallet on the Cronos (CRC20) blockchain.

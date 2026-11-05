@@ -2,8 +2,6 @@
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-08-21 at 12.05.47 AM (1).png" alt=""><figcaption></figcaption></figure>
-
 The Cronos Bridge’s goal is to support the seamless transfer of assets between blockchains to foster interoperability and for users to enjoy the best DApps and earnings no matter the chain.
 
 The Cronos Bridge (Beta) can be found at [https://cronos.com/bridge](https://cronos.com/bridge)
