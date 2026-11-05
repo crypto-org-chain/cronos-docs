@@ -4,7 +4,7 @@ In order to enable users and fellow developers to do their own research, it is i
 
 The new Cronos Explorer supports smart contract verification either through the web interface or programmatically via Hardhat (we recommend to use Hardhat).
 
-<figure><img src="../.gitbook/assets/image10.png" alt=""><figcaption><p>Cronos Explorer screenshot</p></figcaption></figure>
+
 
 #### **Contract Verification Via Explorer Interface:**
 
@@ -15,7 +15,7 @@ For verification via the web interface, visit the following URLs:
 
 After the contract verification is complete, the Cronos Explorer will display details about your smart contract code like shown below.
 
-<figure><img src="https://docs.cronos.com/~gitbook/image?url=https%3A%2F%2F1786307500-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FqXsIo4b4WtOTfICyOIxa%252Fuploads%252FdOduO8salHEuXHXQiT9k%252Fimage10.png%3Falt%3Dmedia%26token%3D76ec4837-4dfd-495a-91a4-8ea6aa905c59&#x26;width=768&#x26;dpr=2&#x26;quality=100&#x26;sign=aa857727&#x26;sv=2" alt=""><figcaption><p>Cronos Explorer screenshot</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 #### Contract Verification Via Explorer API:
 
