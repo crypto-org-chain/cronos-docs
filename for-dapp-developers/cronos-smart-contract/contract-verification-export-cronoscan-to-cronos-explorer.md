@@ -47,7 +47,7 @@ The source code field's value may be provided in one of the three following form
 In this case, you need to create a .JSON file by following these steps:
 
 * Remove the outer brackets "{" and "}"
-* "Unescape" the JSON string. This means replacing the backslashed characters with non-backslashed characters. You can use various tools for this, such as [freeformatter](https://www.freeformatter.com/json-escape.html#before-output) (click: Unescape JSON).
+* "Unescape" the JSON string. This means replacing the backslashed characters with non-backslashed characters. You can use various tools for this, such as [JSON Escape/Unescape](https://jsonviewertool.com/json-escape) (click **Unescape → Right**).
 * Paste the resulting string into a new JSON file that you can name, for example, source\_code.json. The JSON file should now be in [this format](https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description).
 
 ### Scenario 2: Source code only, with a single source file (starts with actual source code).
@@ -58,7 +58,7 @@ In this case, you need to create a .SOL file. Copy the code and paste it into a 
 
 In this case, you need to create a .JSON file by following these steps:
 
-* "Unescape" the JSON string (Once only). This means replacing the backslashed characters with non-backslashed characters. You can use various tools for this, such as [freeformatter](https://www.freeformatter.com/json-escape.html#before-output) (click: Unescape JSON).
+* "Unescape" the JSON string (Once only). This means replacing the backslashed characters with non-backslashed characters. You can use various tools for this, such as [JSON Escape/Unescape](https://jsonviewertool.com/json-escape) (click **Unescape → Right**).
 * Create a new JSON file that you can name, for example, source\_code.json, using the template below:
 
 ```json
