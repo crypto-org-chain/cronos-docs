@@ -106,6 +106,11 @@ The RPC endpoints below are provided by third-party services. Please conduct tho
   * [Cronos Mainnet endpoints](https://drpc.org/chainlist/cronos-mainnet-rpc)
   * [Cronos Testnet endpoints](https://drpc.org/chainlist/cronos-testnet-rpc)
   * [Service Status](https://status.drpc.org/)
+* Tatum:
+  * [Cronos RPC on Tatum](https://tatum.io/chain/cronos)
+  * [https://cronos-mainnet.gateway.tatum.io](https://cronos-mainnet.gateway.tatum.io) (Mainnet)
+  * [https://cronos-testnet.gateway.tatum.io](https://cronos-testnet.gateway.tatum.io) (Testnet)
+  * [Free Cronos endpoints: 5 requests per minute without an API key](https://freerpc.com/cronos)
 
 
 
