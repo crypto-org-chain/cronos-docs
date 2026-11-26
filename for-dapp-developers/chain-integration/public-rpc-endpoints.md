@@ -106,6 +106,8 @@ The RPC endpoints below are provided by third-party services. Please conduct tho
   * [Cronos Mainnet endpoints](https://drpc.org/chainlist/cronos-mainnet-rpc)
   * [Cronos Testnet endpoints](https://drpc.org/chainlist/cronos-testnet-rpc)
   * [Service Status](https://status.drpc.org/)
+* SolidRPC:
+  * [Cronos Mainnet JSON-RPC documentation](https://solidrpc.io/docs/chains/cronos)
 
 
 
